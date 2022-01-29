@@ -138,6 +138,6 @@ img {
   background: var(--secondary);
 }
 
-.all_entries_main a {
+a {
   color: green !important;
 }
