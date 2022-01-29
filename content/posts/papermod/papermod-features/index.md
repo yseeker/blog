@@ -103,6 +103,7 @@ ex: [archives.md](https://raw.githubusercontent.com/adityatelange/hugo-PaperMod/
 
 ### Home-Info Mode
 
+{: align="center"}
 ![homeinfo](images/2021-04-22-20-48-07.jpg)
 
 Use 1st entry as some Information
