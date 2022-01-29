@@ -3,3 +3,12 @@ This is just a placeholder blank stylesheet so as to support adding custom style
 
 Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-css-with-themes-assets for more info
 */
+
+.post-content a {
+  color: #4c45e6 !important;
+}
+
+img[src*="#center"] {
+  display: block;
+  margin: auto;
+}

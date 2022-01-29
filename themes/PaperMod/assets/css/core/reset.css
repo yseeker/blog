@@ -141,3 +141,8 @@ img {
 .post-content a {
   color: #4c45e6 !important;
 }
+
+img[src*="#center"] {
+  display: block;
+  margin: auto;
+}
