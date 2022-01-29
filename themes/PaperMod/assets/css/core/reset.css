@@ -138,6 +138,6 @@ img {
   background: var(--secondary);
 }
 
-.td-post-content a {
+.post-content a {
   color: green !important;
 }
