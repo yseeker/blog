@@ -2,7 +2,7 @@ baseURL: https://www.yusaito.com/blog/
 languageCode: ja-jp
 title: YS's blog
 publishDir: "docs"
-canonifyurls: true
+#canonifyurls: true
 theme: PaperMod
 
 
