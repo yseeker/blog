@@ -2,111 +2,111 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on YS&#39;s blog</title>
-    <link>https://www.yusaito.com/blog/tags/</link>
+    <link>https://yseeker.github.io/blog/tags/</link>
     <description>Recent content in Tags on YS&#39;s blog</description>
     <image>
-      <url>https://www.yusaito.com/blog/papermod-cover.png</url>
-      <link>https://www.yusaito.com/blog/papermod-cover.png</link>
+      <url>https://yseeker.github.io/blog/papermod-cover.png</url>
+      <link>https://yseeker.github.io/blog/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Wed, 20 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.yusaito.com/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 20 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://yseeker.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PaperMod</title>
-      <link>https://www.yusaito.com/blog/tags/papermod/</link>
+      <link>https://yseeker.github.io/blog/tags/papermod/</link>
       <pubDate>Wed, 20 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.yusaito.com/blog/tags/papermod/</guid>
+      <guid>https://yseeker.github.io/blog/tags/papermod/</guid>
       <description></description>
     </item>
     
     <item>
       <title>css</title>
-      <link>https://www.yusaito.com/blog/tags/css/</link>
+      <link>https://yseeker.github.io/blog/tags/css/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://www.yusaito.com/blog/tags/css/</guid>
+      <guid>https://yseeker.github.io/blog/tags/css/</guid>
       <description></description>
     </item>
     
     <item>
       <title>html</title>
-      <link>https://www.yusaito.com/blog/tags/html/</link>
+      <link>https://yseeker.github.io/blog/tags/html/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://www.yusaito.com/blog/tags/html/</guid>
+      <guid>https://yseeker.github.io/blog/tags/html/</guid>
       <description></description>
     </item>
     
     <item>
       <title>markdown</title>
-      <link>https://www.yusaito.com/blog/tags/markdown/</link>
+      <link>https://yseeker.github.io/blog/tags/markdown/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://www.yusaito.com/blog/tags/markdown/</guid>
+      <guid>https://yseeker.github.io/blog/tags/markdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>themes</title>
-      <link>https://www.yusaito.com/blog/tags/themes/</link>
+      <link>https://yseeker.github.io/blog/tags/themes/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://www.yusaito.com/blog/tags/themes/</guid>
+      <guid>https://yseeker.github.io/blog/tags/themes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>koubo</title>
-      <link>https://www.yusaito.com/blog/tags/koubo/</link>
+      <link>https://yseeker.github.io/blog/tags/koubo/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://www.yusaito.com/blog/tags/koubo/</guid>
+      <guid>https://yseeker.github.io/blog/tags/koubo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>privacy</title>
-      <link>https://www.yusaito.com/blog/tags/privacy/</link>
+      <link>https://yseeker.github.io/blog/tags/privacy/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://www.yusaito.com/blog/tags/privacy/</guid>
+      <guid>https://yseeker.github.io/blog/tags/privacy/</guid>
       <description></description>
     </item>
     
     <item>
       <title>shortcodes</title>
-      <link>https://www.yusaito.com/blog/tags/shortcodes/</link>
+      <link>https://yseeker.github.io/blog/tags/shortcodes/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://www.yusaito.com/blog/tags/shortcodes/</guid>
+      <guid>https://yseeker.github.io/blog/tags/shortcodes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>teeth</title>
-      <link>https://www.yusaito.com/blog/tags/teeth/</link>
+      <link>https://yseeker.github.io/blog/tags/teeth/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://www.yusaito.com/blog/tags/teeth/</guid>
+      <guid>https://yseeker.github.io/blog/tags/teeth/</guid>
       <description></description>
     </item>
     
     <item>
       <title>text</title>
-      <link>https://www.yusaito.com/blog/tags/text/</link>
+      <link>https://yseeker.github.io/blog/tags/text/</link>
       <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://www.yusaito.com/blog/tags/text/</guid>
+      <guid>https://yseeker.github.io/blog/tags/text/</guid>
       <description></description>
     </item>
     
     <item>
       <title>emoji</title>
-      <link>https://www.yusaito.com/blog/tags/emoji/</link>
+      <link>https://yseeker.github.io/blog/tags/emoji/</link>
       <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://www.yusaito.com/blog/tags/emoji/</guid>
+      <guid>https://yseeker.github.io/blog/tags/emoji/</guid>
       <description></description>
     </item>
     

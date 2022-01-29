@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>syntax on YS&#39;s blog</title>
-    <link>https://www.yusaito.com/blog/categories/syntax/</link>
+    <link>https://yseeker.github.io/blog/categories/syntax/</link>
     <description>Recent content in syntax on YS&#39;s blog</description>
     <image>
-      <url>https://www.yusaito.com/blog/papermod-cover.png</url>
-      <link>https://www.yusaito.com/blog/papermod-cover.png</link>
+      <url>https://yseeker.github.io/blog/papermod-cover.png</url>
+      <link>https://yseeker.github.io/blog/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://www.yusaito.com/blog/categories/syntax/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://yseeker.github.io/blog/categories/syntax/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Markdown Syntax Guide For L2</title>
-      <link>https://www.yusaito.com/blog/posts/markdown-syntax.fr/</link>
+      <link>https://yseeker.github.io/blog/posts/markdown-syntax.fr/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://www.yusaito.com/blog/posts/markdown-syntax.fr/</guid>
+      <guid>https://yseeker.github.io/blog/posts/markdown-syntax.fr/</guid>
       <description>Sample article showcasing basic Markdown syntax and formatting for HTML elements.</description>
     </item>
     
     <item>
       <title>Markdown Syntax Guide For RTL</title>
-      <link>https://www.yusaito.com/blog/posts/markdown-syntax.fa/</link>
+      <link>https://yseeker.github.io/blog/posts/markdown-syntax.fa/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://www.yusaito.com/blog/posts/markdown-syntax.fa/</guid>
+      <guid>https://yseeker.github.io/blog/posts/markdown-syntax.fa/</guid>
       <description>Sample article showcasing basic Markdown syntax and formatting for HTML elements.</description>
     </item>
     
     <item>
       <title>Markdown Syntax Guide</title>
-      <link>https://www.yusaito.com/blog/posts/markdown-syntax/</link>
+      <link>https://yseeker.github.io/blog/posts/markdown-syntax/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://www.yusaito.com/blog/posts/markdown-syntax/</guid>
+      <guid>https://yseeker.github.io/blog/posts/markdown-syntax/</guid>
       <description>Sample article showcasing basic Markdown syntax and formatting for HTML elements.</description>
     </item>
     

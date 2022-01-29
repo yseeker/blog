@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Categories on YS&#39;s blog</title>
-    <link>https://www.yusaito.com/blog/categories/</link>
+    <link>https://yseeker.github.io/blog/categories/</link>
     <description>Recent content in Categories on YS&#39;s blog</description>
     <image>
-      <url>https://www.yusaito.com/blog/papermod-cover.png</url>
-      <link>https://www.yusaito.com/blog/papermod-cover.png</link>
+      <url>https://yseeker.github.io/blog/papermod-cover.png</url>
+      <link>https://yseeker.github.io/blog/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://www.yusaito.com/blog/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://yseeker.github.io/blog/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>syntax</title>
-      <link>https://www.yusaito.com/blog/categories/syntax/</link>
+      <link>https://yseeker.github.io/blog/categories/syntax/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://www.yusaito.com/blog/categories/syntax/</guid>
+      <guid>https://yseeker.github.io/blog/categories/syntax/</guid>
       <description></description>
     </item>
     
     <item>
       <title>themes</title>
-      <link>https://www.yusaito.com/blog/categories/themes/</link>
+      <link>https://yseeker.github.io/blog/categories/themes/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://www.yusaito.com/blog/categories/themes/</guid>
+      <guid>https://yseeker.github.io/blog/categories/themes/</guid>
       <description></description>
     </item>
     
