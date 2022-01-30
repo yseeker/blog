@@ -147,12 +147,12 @@ img[src*="#center"] {
   margin: auto;
 }
 
-.post-title h1 {
+.post-title {
   font-size: 20pt !important;
 }
 
 h2 {
-  font-size: 20pt !important;
+  font-size: 22pt !important;
 }
 
 h3 {
@@ -160,15 +160,15 @@ h3 {
 }
 
 h4 {
-  font-size: 20pt !important;
+  font-size: 19pt !important;
 }
 
 h5 {
-  font-size: 20pt !important;
+  font-size: 18pt !important;
 }
 
 h6 {
-  font-size: 20pt !important;
+  font-size: 17pt !important;
 }
 
 /* .entry-title {
