@@ -147,7 +147,7 @@ img[src*="#center"] {
   margin: auto;
 }
 
-title {
+.post-title h1 {
   font-size: 20pt !important;
 }
 
@@ -170,3 +170,7 @@ h5 {
 h6 {
   font-size: 20pt !important;
 }
+
+/* .entry-title {
+  font-size: 28px !important;
+} */
