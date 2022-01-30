@@ -11,29 +11,5 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://yseeker.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>SETIコンペ参加記</title>
-      <link>https://yseeker.github.io/blog/posts/kaggle/kaggle_seti/</link>
-      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://yseeker.github.io/blog/posts/kaggle/kaggle_seti/</guid>
-      <description>SETIコンペ参加記 SETI Breakthrough Listen - E.T. Signal SearchというKaggleの画像分類コンペに参加しました。
-結果 774チーム中74位でソロ銅でした。
-コンペの概要 Overviewのページには
- In this competition, use your data science skills to help identify anomalous signals in scans of Breakthrough Listen targets. Because there are no confirmed examples of alien signals to use to train machine learning algorithms, the team included some simulated signals (that they call “needles”) in the haystack of data from the telescope. They have identified some of the hidden needles so that you can train your model to find more.</description>
-    </item>
-    
-    <item>
-      <title>SETIコンペ参加記</title>
-      <link>https://yseeker.github.io/blog/posts/kaggle/seti/</link>
-      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://yseeker.github.io/blog/posts/kaggle/seti/</guid>
-      <description>SETIコンペ参加記 SETI Breakthrough Listen - E.T. Signal SearchというKaggleの画像分類コンペに参加しました。
-結果 774チーム中74位でソロ銅でした。
-コンペの概要 Overviewのページには
- In this competition, use your data science skills to help identify anomalous signals in scans of Breakthrough Listen targets. Because there are no confirmed examples of alien signals to use to train machine learning algorithms, the team included some simulated signals (that they call “needles”) in the haystack of data from the telescope. They have identified some of the hidden needles so that you can train your model to find more.</description>
-    </item>
-    
   </channel>
 </rss>

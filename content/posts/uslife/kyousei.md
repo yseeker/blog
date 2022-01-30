@@ -1,11 +1,17 @@
 ---
 #author: "Hugo Authors"
-title: "Kyousei"
-date: "2019-03-10"
-# description: "A brief description of Hugo Shortcodes"
-tags: ["teeth"]
+title: "アメリカで矯正歯科に行った話"
+date: "2019-03-11"
+#description: "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
+tags: ["english"]
+#categories: ["themes", "syntax"]
+#series: ["Themes Guide"]
+aliases: ["/orthodontics"]
 ShowToc: true
+TocOpen: true
+draft: false
 ---
+
 
 [以前の記事](https://ys-blog.hatenadiary.com/entry/2021/06/15/143110)で書いた通り、私は渡米3ヶ月で歯の神経を抜いた。歯内療法科で専門医に歯の神経を抜いてもらった後に、すぐ隣の一般歯科の専門医に見てもらったのだが、その際に奥歯に過度な力が加わっているためこのまま放っておくと頭痛持ちになるかもしれないからどこかの矯正歯科に行ったほうが良いと言われた。当時は渡米直後ということもあり、仕事をするのに、もっと言えば生活していくのに精一杯だったためには華麗にスルーしてしまったのだが（金銭的にも余裕がなかった）、それから数ヶ月が経って一段落してやはり矯正歯科に行くことにした。お世辞にも健康で丈夫な体とは言えないので年をとってからの悩みの種を増やしたくなかったからである。それと矯正大国アメリカでの矯正を体験してみたかったというのも少しある。矯正歯科は、根管治療をしてくださった歯内療法科と一般歯科のすぐ近くにある[Santa Barbara Orthodontist](http://www.sborthodontics.com/)というところにした。これらの歯科医院は全て[Alamar Dental Center](https://www.google.com/maps/place/%E3%82%A2%E3%83%A9%E3%83%9E%E3%83%BC%E3%83%BB%E3%83%87%E3%83%B3%E3%82%BF%E3%83%AB%E3%83%BB%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC/@34.4389881,-119.7240706,15z/data=!4m5!3m4!1s0x0:0xdc20bbc76f41883c!8m2!3d34.4390077!4d-119.7240401)に連なって存在している。これら以外にもあと3つくらい別の分野を専門とする歯科医院が存在している。
 

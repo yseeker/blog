@@ -1,13 +1,16 @@
 ---
 #author: "Hugo Authors"
-title: "fellowship"
-date: "2019-03-10"
-# description: "A brief description of Hugo Shortcodes"
-tags: ["teeth"]
+title: "海外ポスドクになる方法と現地フェローシップ"
+date: "2019-03-11"
+#description: "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
+tags: ["postdoc"]
+#categories: ["themes", "syntax"]
+#series: ["Themes Guide"]
+aliases: ["/how_to_become_postdoc"]
 ShowToc: true
+TocOpen: true
+draft: false
 ---
-
-# 海外ポスドクになる方法と現地フェローシップ
 
 ポスドク（Postdoctoral Researcher; 博士研究員）のポジションは世界中に無数にあるので博士号さえ持っていれば容易になれる（なりたいかどうかはもちろん人による）。日本から海外のポスドクを目指す際に多くの人はまず第一に海外学振をとることを目指すが、少なくともアメリカに関しては、応募先のラボがある程度以上に研究費が潤沢であれば応募者側に明らかに問題がない限り（例えばコミュニケーションに極端に難がある、前所属で何らかの問題を起こしたなど）フェローシップ無しでもポスドクに応募して落ちることはまずない。"研究費に困っていない"ラボの主宰者（PI）が、応募してくるポスドクを断る理由がほぼないのである。論文が1本もないからと言って海外ポスドクを諦める人をたまに見かけるが、アメリカには論文無しで学位をとってポスドクやってる人なんて山ほどいるから全く心配無用である。従って、海外ポスドクになりたい場合はいくつか研究費が潤沢そうで["良さげなラボ"](https://ys-blog.hatenadiary.com/entry/2021/07/07/152108)の候補を決めてとりあえずメールを送ってみるのが良いと思う。ラボのPIのもとにはかなり多く（数十から100以上）の迷惑メールが届くので（メールアドレスを論文の責任著者として各論文誌のwebサイトに公開しているため）、返信がなくともめげずに何度も送って見るのが良い。もちろんメールを送る前に学会などで顔見知りになっていればなお良いと思う。
 

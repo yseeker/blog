@@ -2,7 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://yseeker.github.io/blog/posts/uslife/</loc>
+    <loc>https://yseeker.github.io/blog/tags/english/</loc>
+    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yseeker.github.io/blog/posts/kaggle/</loc>
+    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yseeker.github.io/blog/posts/other/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://yseeker.github.io/blog/tags/postdoc/</loc>
@@ -11,7 +17,19 @@
     <loc>https://yseeker.github.io/blog/posts/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://yseeker.github.io/blog/posts/kaggle/seti/</loc>
+    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://yseeker.github.io/blog/tags/</loc>
+    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yseeker.github.io/blog/posts/uslife/firstyearpd/</loc>
+    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yseeker.github.io/blog/posts/uslife/postdoc_memory/</loc>
+    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yseeker.github.io/blog/posts/uslife/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://yseeker.github.io/blog/tags/uslife/</loc>
@@ -20,62 +38,38 @@
     <loc>https://yseeker.github.io/blog/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://yseeker.github.io/blog/posts/uslife/sb_teeth/</loc>
+    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yseeker.github.io/blog/posts/uslife/kyousei/</loc>
+    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yseeker.github.io/blog/posts/uslife/lifesetup/</loc>
+    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yseeker.github.io/blog/posts/uslife/lab_choise/</loc>
+    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yseeker.github.io/blog/posts/other/cmp_rumor/</loc>
+    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yseeker.github.io/blog/posts/uslife/santabarbara_picture/</loc>
+    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yseeker.github.io/blog/posts/uslife/english/</loc>
+    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://yseeker.github.io/blog/posts/uslife/experiment/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yseeker.github.io/blog/posts/uslife/firstyearpd/firstyearpd/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yseeker.github.io/blog/posts/other/cmp_rumor/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://yseeker.github.io/blog/posts/uslife/fellowship/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yseeker.github.io/blog/tags/islavista/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yseeker.github.io/blog/tags/koubo/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yseeker.github.io/blog/posts/uslife/kyousei/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yseeker.github.io/blog/posts/other/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yseeker.github.io/blog/tags/santabarbara/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yseeker.github.io/blog/posts/kaggle/kaggle_seti/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yseeker.github.io/blog/posts/kaggle/seti/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yseeker.github.io/blog/tags/teeth/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yseeker.github.io/blog/posts/uslife/postdoc_memory/postdoc_memory/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yseeker.github.io/blog/posts/uslife/lifesetup/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yseeker.github.io/blog/posts/uslife/santabarbara_picture/santabarbara_memory/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
+    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://yseeker.github.io/blog/posts/other/ratemyprofessors/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
+    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://yseeker.github.io/blog/posts/uslife/islavista/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yseeker.github.io/blog/posts/uslife/english/</loc>
-  </url><url>
-    <loc>https://yseeker.github.io/blog/posts/uslife/lab_choise/</loc>
-  </url><url>
-    <loc>https://yseeker.github.io/blog/posts/uslife/sb_teeth/</loc>
+    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://yseeker.github.io/blog/archives/</loc>
   </url><url>

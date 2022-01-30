@@ -1,13 +1,17 @@
 ---
 #author: "Hugo Authors"
 title: "UCSBポスドク記"
-date: "2019-03-10"
-# description: "A brief description of Hugo Shortcodes"
-tags: ["teeth"]
+date: "2019-03-11"
+#description: "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
+tags: ["english"]
+#categories: ["themes", "syntax"]
+#series: ["Themes Guide"]
+aliases: ["/santabarbara_picture"]
 ShowToc: true
+TocOpen: true
+draft: false
 ---
 
-# UCSBポスドク記
 ![](imgs/![](imgs/2021-08-13-09-44-34.jpg).jpg)
 [:contents]
 

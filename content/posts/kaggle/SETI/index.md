@@ -1,10 +1,15 @@
 ---
 #author: "Hugo Authors"
 title: "SETIコンペ参加記"
-date: "2019-03-10"
-# description: "A brief description of Hugo Shortcodes"
-tags: ["teeth"]
+date: "2019-03-11"
+#description: "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
+tags: ["uslife", "postdoc"]
+#categories: ["themes", "syntax"]
+#series: ["Themes Guide"]
+aliases: ["/kaggle_seti"]
 ShowToc: true
+TocOpen: true
+draft: false
 ---
 
 # SETIコンペ参加記

@@ -1,6 +1,18 @@
-# アメリカで歯の神経を抜いた話
+---
+#author: "Hugo Authors"
+title: "アメリカで歯の神経を抜いた話"
+date: "2019-03-11"
+#description: "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
+tags: ["english"]
+#categories: ["themes", "syntax"]
+#series: ["Themes Guide"]
+aliases: ["/root_canal_treatment"]
+ShowToc: true
+TocOpen: true
+draft: false
+---
 
-結論
+## 結論
 * よく調べて良い歯医者を選ぼう
 * アメリカで歯の神経を抜く（根管治療）と保険適用で4万円（私の場合）
 

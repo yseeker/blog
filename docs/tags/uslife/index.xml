@@ -12,6 +12,27 @@
     <language>ja-jp</language>
     <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://yseeker.github.io/blog/tags/uslife/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>SETIコンペ参加記</title>
+      <link>https://yseeker.github.io/blog/posts/kaggle/seti/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://yseeker.github.io/blog/posts/kaggle/seti/</guid>
+      <description>SETIコンペ参加記 SETI Breakthrough Listen - E.T. Signal SearchというKaggleの画像分類コンペに参加しました。
+結果 774チーム中74位でソロ銅でした。
+コンペの概要 Overviewのページには
+ In this competition, use your data science skills to help identify anomalous signals in scans of Breakthrough Listen targets. Because there are no confirmed examples of alien signals to use to train machine learning algorithms, the team included some simulated signals (that they call “needles”) in the haystack of data from the telescope. They have identified some of the hidden needles so that you can train your model to find more.</description>
+    </item>
+    
+    <item>
+      <title>公募情報のうわさ</title>
+      <link>https://yseeker.github.io/blog/posts/other/cmp_rumor/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://yseeker.github.io/blog/posts/other/cmp_rumor/</guid>
+      <description>PIポジションを目指している人なら公募の状況、例えばどの大学に誰が面接まで残っているのか、という情報を知りたいのではないだろうか。アメリカの物理関連分野では、そうした公募情報の&amp;quot;うわさ&amp;quot;を掲載しているwebサイトがある。CM/AMO Rumor Millというwebサイトである。公募情報はもちろん、誰がどの大学の面接に呼ばれたか、誰がオファーを受け、誰が断ったかなどが書いてある。※あくまで&amp;quot;うわさ&amp;quot;である。</description>
+    </item>
+    
+    <item>
       <title>実際の実験内容</title>
       <link>https://yseeker.github.io/blog/posts/uslife/experiment/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
@@ -25,14 +46,13 @@
     </item>
     
     <item>
-      <title>若者の街、アイラビスタ</title>
-      <link>https://yseeker.github.io/blog/posts/uslife/islavista/</link>
-      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      <title>海外版逆評定</title>
+      <link>https://yseeker.github.io/blog/posts/other/ratemyprofessors/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://yseeker.github.io/blog/posts/uslife/islavista/</guid>
-      <description>住民の大半が学生で構成されているアイラビスタはカリフォルニア大学サンタバーバラ校（UCSB）のすぐ東側に位置する小さい町である。一年中快晴の地中海性気候（冬に少し雨が降る）のせいか、ビーチ沿いのせいか、学生街だからか、治安はとても良い。ビーチに隣接しているので街中には夏冬関係なく水着姿の学生が散見され、ビーチではサーフィンしている学生も多い（例えばある学生の一日の様子がYoutubeにある＝＞A Day in My Life at UCSB ）。下記は2021年1月に撮影したアイラビスタのビーチの写真である。(気温は15-20℃くらいだった。) デルプラヤ アイラビスタのデルプラヤ（Del Playa Drive）というビーチ沿いのストリートは現地ではかなり有名で、第３セムスター後の春休み明け（4月頭）になるとデルプラヤと呼ばれる盛大なパーティーが街中で開催される。このパーティーのために、ときにはカリフォルニア中からこの小さい街に学生が集まるとも言われている。このデルトピアのためか、UCSBは全米でも有数のパーティー大学としても有名である。もっともデルプラヤではデルトピアの日に限らずほとんど毎日各家でパーティー（日本で言うところの学生の宅飲みだが、爆音で音楽をかけながら庭で（時として上裸または水着で）謎のテーブルゲームをしながら行う点が異なる）が行われているのでパーティー三昧の学生生活を謳歌したければデルプラヤのどこかに住むのが良いし、そうでなければなるべくデルプラヤから離れた場所に部屋を借りるのが賢明である。ちなみに私は後者を選択した。
-スケボー文化 アイラビスタにはスケボーが自転車並に使われている。平時であれば自転車よりも多くみかけるかもしれない。UCSBキャンパス内にはスケボーの専用レーンがあるほどである。裸足でスケボーに乗っている人もいれば（街中には裸足の人が意外に多い）、サーフボードを抱えながら乗りこなすいたりする。
- </description>
+      <guid>https://yseeker.github.io/blog/posts/other/ratemyprofessors/</guid>
+      <description>海外版逆評定 東大に在学していた頃は時代錯誤社が発行している「逆評定」という邪神・大鬼・鬼・仏・大仏・神などの指標で学生が大学の先生を評価するキャンパスマガジンにとてもお世話になったが、そのような媒体は欧米圏（主にアメリカ）でも存在するらしい。Rate My Professorsというwebサイトである。
+ちなみに現ボス（ポスドク時代のボス）の評価はこちらである。</description>
     </item>
     
   </channel>

@@ -1,13 +1,16 @@
 ---
 #author: "Hugo Authors"
-title: "24-7"
-date: "2019-03-10"
-# description: "A brief description of Hugo Shortcodes"
-tags: ["teeth"]
-ShowToc: 
+title: "Twenty-four seven --- ポスドク1年目の思い出"
+date: "2019-03-11"
+#description: "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
+tags: ["english"]
+#categories: ["themes", "syntax"]
+#series: ["Themes Guide"]
+aliases: ["/first_year_PD"]
+ShowToc: true
+TocOpen: true
+draft: false
 ---
-
-# Twenty-four seven &#8212;&mdash; ポスドク1年目の思い出 
 
 Twenty-four seven. 24時間365日。"いつでも"を表す表現は日本語も英語もあまり変わらない。私はポスドク1年目はほぼ文字通り"いつでも"働いていた。実際には週7で1日12-13時間、365日のうち休んだのは10日くらいである。もちろん、研究自体は楽しかったし（特にはじめは新しい環境で新しいテーマだったので）、没頭できていたというのもあるが、その一方全く別の環境でもしっかりと結果を出したいという思いもあった。
 

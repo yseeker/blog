@@ -1,10 +1,15 @@
 ---
 #author: "Hugo Authors"
-title: "`公募情報のうわさ"
-date: "2019-03-10"
-# description: "A brief description of Hugo Shortcodes"
-tags: ["koubo"]
+title: "公募情報のうわさ"
+date: "2019-03-11"
+#description: "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
+tags: ["uslife", "postdoc"]
+#categories: ["themes", "syntax"]
+#series: ["Themes Guide"]
+aliases: ["/cmp_rumor"]
 ShowToc: true
+TocOpen: true
+draft: false
 ---
 
 

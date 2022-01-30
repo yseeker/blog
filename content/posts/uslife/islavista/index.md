@@ -1,12 +1,15 @@
 ---
 #author: "Hugo Authors"
 title: "若者の街、アイラビスタ"
-date: "2019-03-10"
-# description: "A brief description of Hugo Shortcodes"
-tags: ["santabarbara", "islavista", "uslife"]
-aliases: ["/islavista"]
+date: "2019-03-11"
+#description: "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
+tags: ["english"]
+#categories: ["themes", "syntax"]
+#series: ["Themes Guide"]
+aliases: ["/santabarbara_picture"]
 ShowToc: true
 TocOpen: true
+draft: false
 ---
 
 ![](images/2021-07-25-10-37-01.png#center)

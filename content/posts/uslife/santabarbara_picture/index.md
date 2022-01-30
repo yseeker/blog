@@ -1,13 +1,16 @@
 ---
 #author: "Hugo Authors"
 title: "写真で振り返るサンタバーバラ滞在記"
-date: "2019-03-10"
-# description: "A brief description of Hugo Shortcodes"
-tags: ["teeth"]
+date: "2019-03-11"
+#description: "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
+tags: ["english"]
+#categories: ["themes", "syntax"]
+#series: ["Themes Guide"]
+aliases: ["/santabarbara_picture"]
 ShowToc: true
+TocOpen: true
+draft: false
 ---
-
-# 写真で振り返るサンタバーバラ滞在記
 
 ## 渡米直後
 渡米直後に最初に住んだ部屋。アイラビスタのTrigo Rdにある7-8人くらいが住めるシェアハウス。同じ時期にICUから交換留学のような制度で女子学生が二人来ていた。彼女達は二人とも英語がペラペラでキャンパスの情報などを時折仕入れてくれたり、時には日本食をプレゼントしてくれたりなどとてもお世話になった。（学部生の彼女達からみたら私は毎日深夜頃にラボから部屋に帰ってくる異様な存在だったのではないかと思う。）
