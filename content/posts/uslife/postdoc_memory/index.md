@@ -6,7 +6,7 @@ date: "2019-03-11"
 tags: ["english"]
 #categories: ["themes", "syntax"]
 #series: ["Themes Guide"]
-aliases: ["/santabarbara_picture"]
+aliases: ["/postdoc_memory"]
 ShowToc: true
 TocOpen: true
 draft: false
