@@ -13,12 +13,12 @@ draft: false
 ---
 
 # SETIコンペ参加記
-![](images/2021-08-18-14-51-56.png)
+![](images/2021-08-18-14-51-56.png#center)
 
 [SETI Breakthrough Listen - E.T. Signal Search](https://www.kaggle.com/c/seti-breakthrough-listen/overview)というKaggleの**画像分類コンペ**に参加しました。
 
 ## 結果
-![](images/2021-08-18-17-41-09.png)
+![](images/2021-08-18-17-41-09.png#center)
 774チーム中74位でソロ銅でした。
 
 ## コンペの概要
@@ -30,13 +30,13 @@ draft: false
 
 コンペで使用するデータの例をNegative, Positiveで2つずつ挙げると（縦軸は時間、横軸は周波数）
 
-![](images/2021-08-18-15-16-48.png)
+![](images/2021-08-18-15-16-48.png#center)
 
-![](images/2021-08-18-15-19-15.png)
+![](images/2021-08-18-15-19-15.png#center)
 
 のようになっており、たしかにPositiveデータの方にはneedleらしい特徴が視認できます（赤矢印）。上のデータはわかりやすいデータをあげましたが、実際には少なくとも目で見る限りはNeedleらしい特徴なんてどこにもないPositiveデータもたくさんありました。実際の観測データでは、望遠鏡を信号を発する方向に向けた際のデータをONデータ、別の方向に向けた際のデータOFFデータとしているため、今回のデータではPositiveのONデータにのみシミュレーションによって生成した擬似的なneedle（信号）をうまく混ぜてあるようです。
 
-![](images/2021-08-18-15-55-16.png)
+![](images/2021-08-18-15-55-16.png#center)
 
 ## 参加記
 

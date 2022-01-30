@@ -18,7 +18,7 @@ Twenty-four seven. 24時間365日。"いつでも"を表す表現は日本語も
 
 Now when I got here, I dominated. They thought I worked 100 hours a day. Now, no matter what time I get in, nobody questions my ability to get the job done. Get it through your head. First impressions last. You start behind the eight ball, you’ll never get in front.
 
-![](images/2021-08-08-21-39-46.png)
-![](images/2021-08-08-21-41-33.png)
+![](images/2021-08-08-21-39-46.png#center)
+![](images/2021-08-08-21-41-33.png#center)
 
 要するに「仕事は第一印象がすべて、最初に全力で頑張ることが後の成功につながる」ということらしい。仕事の流儀というものは十人十色なので環境＋自分にあった流儀を見つけることが重要なのだと思うけど、当時はこのセリフに感化され、なんとなくアメリカってそういう感じなのかなーと思い、自ら進んで冒頭で書いたろうなハードワークをしたのである。当時ラボ内で自分が最も働いていたかと聞かれれば自信を持ってYesとは答えられないくらいに他のメンバーも働いていた。少なくとも私がラボにJoinした2018年当時はそれくらいハードワークなラボだった。Covidのパンデミック以降はだいぶは労働時間は減少した。（そもそも大流行から数ヶ月はラボに出入り禁止だったし、出入りが許可されたあとも1実験室あたり1人などの制限があった。）
