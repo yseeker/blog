@@ -12,3 +12,8 @@ img[src*="#center"] {
   display: block;
   margin: auto;
 }
+
+img {
+  display: inline-block;
+  max-width: 100%;
+}
