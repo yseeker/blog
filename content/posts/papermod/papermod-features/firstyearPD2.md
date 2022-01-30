@@ -4,6 +4,7 @@ title: "24-7b"
 date: "2019-03-10"
 # description: "A brief description of Hugo Shortcodes"
 tags: ["teeth"]
+aliases: ["/papermod-features2"]
 ShowToc: 
 ---
 
