@@ -148,7 +148,7 @@ img[src*="#center"] {
 }
 
 .post-title {
-  font-size: 22pt !important;
+  font-size: 23pt !important;
 }
 
 .post-content h2 {
@@ -156,11 +156,11 @@ img[src*="#center"] {
 }
 
 .post-content h3 {
-  font-size: 19pt !important;
+  font-size: 18pt !important;
 }
 
 .post-content h4 {
-  font-size: 18pt !important;
+  font-size: 17pt !important;
 }
 /* .entry-title {
   font-size: 28px !important;
