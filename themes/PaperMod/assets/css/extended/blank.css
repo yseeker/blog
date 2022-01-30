@@ -17,3 +17,20 @@ img {
   display: inline-block;
   max-width: 100%;
 }
+
+.post-title {
+  font-size: 24pt !important;
+}
+
+.post-content h2 {
+  font-size: 20pt !important;
+}
+
+.post-content h3 {
+  font-size: 19pt !important;
+}
+
+.post-content h4 {
+  font-size: 18pt !important;
+}
+
