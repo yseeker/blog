@@ -2,73 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://yseeker.github.io/blog/posts/papermod/papermod-installation/</loc>
-    <lastmod>2021-01-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yseeker.github.io/blog/posts/papermod/papermod-features/</loc>
-    <lastmod>2021-01-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yseeker.github.io/blog/posts/markdown-syntax.fr/</loc>
+    <loc>https://yseeker.github.io/blog/posts/uslife/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yseeker.github.io/blog/posts/markdown-syntax.fa/</loc>
+    <loc>https://yseeker.github.io/blog/tags/postdoc/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yseeker.github.io/blog/tags/papermod/</loc>
-    <lastmod>2021-01-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yseeker.github.io/blog/series/papermod/</loc>
-    <lastmod>2021-01-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yseeker.github.io/blog/posts/papermod/</loc>
-    <lastmod>2021-01-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://yseeker.github.io/blog/posts/</loc>
-    <lastmod>2021-01-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yseeker.github.io/blog/series/</loc>
-    <lastmod>2021-01-20T00:00:00+00:00</lastmod>
+    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://yseeker.github.io/blog/tags/</loc>
-    <lastmod>2021-01-20T00:00:00+00:00</lastmod>
+    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yseeker.github.io/blog/tags/uslife/</loc>
+    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://yseeker.github.io/blog/</loc>
-    <lastmod>2021-01-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yseeker.github.io/blog/categories/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yseeker.github.io/blog/tags/css/</loc>
+    <loc>https://yseeker.github.io/blog/posts/uslife/experiment/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yseeker.github.io/blog/tags/html/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yseeker.github.io/blog/tags/markdown/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yseeker.github.io/blog/posts/markdown-syntax/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yseeker.github.io/blog/categories/syntax/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yseeker.github.io/blog/tags/themes/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yseeker.github.io/blog/categories/themes/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yseeker.github.io/blog/series/themes-guide/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yseeker.github.io/blog/posts/firstyearpd/</loc>
+    <loc>https://yseeker.github.io/blog/posts/uslife/firstyearpd/firstyearpd/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yseeker.github.io/blog/posts/cmp_rumor/</loc>
+    <loc>https://yseeker.github.io/blog/posts/other/cmp_rumor/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yseeker.github.io/blog/posts/fellowship/</loc>
+    <loc>https://yseeker.github.io/blog/posts/uslife/fellowship/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://yseeker.github.io/blog/tags/islavista/</loc>
@@ -77,83 +38,54 @@
     <loc>https://yseeker.github.io/blog/tags/koubo/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yseeker.github.io/blog/posts/kyousei/</loc>
+    <loc>https://yseeker.github.io/blog/posts/uslife/kyousei/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yseeker.github.io/blog/posts/uslife/</loc>
+    <loc>https://yseeker.github.io/blog/posts/kaggle/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yseeker.github.io/blog/tags/privacy/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yseeker.github.io/blog/posts/rich-content/</loc>
+    <loc>https://yseeker.github.io/blog/posts/other/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://yseeker.github.io/blog/tags/santabarbara/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yseeker.github.io/blog/posts/kaggle_seti/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yseeker.github.io/blog/tags/shortcodes/</loc>
+    <loc>https://yseeker.github.io/blog/posts/kaggle/kaggle_seti/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://yseeker.github.io/blog/tags/teeth/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yseeker.github.io/blog/posts/postdoc_memory/</loc>
+    <loc>https://yseeker.github.io/blog/posts/uslife/postdoc_memory/postdoc_memory/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yseeker.github.io/blog/tags/uslife/</loc>
+    <loc>https://yseeker.github.io/blog/posts/uslife/lifesetup/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yseeker.github.io/blog/posts/ortho/</loc>
+    <loc>https://yseeker.github.io/blog/posts/other/life/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yseeker.github.io/blog/posts/lifesetup/</loc>
+    <loc>https://yseeker.github.io/blog/posts/uslife/santabarbara_picture/santabarbara_memory/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yseeker.github.io/blog/posts/life/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yseeker.github.io/blog/posts/santabarbara_memory/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yseeker.github.io/blog/posts/postdoclife/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yseeker.github.io/blog/posts/ratemyprofessors/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yseeker.github.io/blog/posts/islavista/</loc>
+    <loc>https://yseeker.github.io/blog/posts/other/ratemyprofessors/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://yseeker.github.io/blog/posts/uslife/islavista/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yseeker.github.io/blog/posts/placeholder-text/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
+    <loc>https://yseeker.github.io/blog/posts/uslife/english/</loc>
   </url><url>
-    <loc>https://yseeker.github.io/blog/tags/text/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
+    <loc>https://yseeker.github.io/blog/posts/uslife/lab_choise/</loc>
   </url><url>
-    <loc>https://yseeker.github.io/blog/posts/math-typesetting/</loc>
-    <lastmod>2019-03-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yseeker.github.io/blog/tags/emoji/</loc>
-    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yseeker.github.io/blog/posts/emoji-support/</loc>
-    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yseeker.github.io/blog/archives.fr/</loc>
+    <loc>https://yseeker.github.io/blog/posts/uslife/sb_teeth/</loc>
   </url><url>
     <loc>https://yseeker.github.io/blog/archives/</loc>
   </url><url>
-    <loc>https://yseeker.github.io/blog/posts/kaggle/</loc>
+    <loc>https://yseeker.github.io/blog/categories/</loc>
   </url><url>
     <loc>https://yseeker.github.io/blog/search/</loc>
   </url><url>
-    <loc>https://yseeker.github.io/blog/search.fr/</loc>
+    <loc>https://yseeker.github.io/blog/series/</loc>
   </url>
 </urlset>
