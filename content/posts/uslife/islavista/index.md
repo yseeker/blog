@@ -4,6 +4,7 @@ title: "若者の街、アイラビスタ"
 date: "2019-03-10"
 # description: "A brief description of Hugo Shortcodes"
 tags: ["teeth"]
+aliases: ["/islavista"]
 ShowToc: true
 ---
 
