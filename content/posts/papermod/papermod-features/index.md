@@ -106,7 +106,7 @@ ex: [archives.md](https://raw.githubusercontent.com/adityatelange/hugo-PaperMod/
 <!-- <div align="center">
     <img src="images/2021-04-22-20-48-07.jpg">
 </div> -->
-![r](images/2021-04-22-20-48-07.jpg#center)
+![r](images/2021-04-22-20-48-07.png#center)
 
 Use 1st entry as some Information
 
