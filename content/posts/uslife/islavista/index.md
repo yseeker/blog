@@ -6,6 +6,7 @@ date: "2019-03-10"
 tags: ["santabarbara", "islavista", "uslife"]
 aliases: ["/islavista"]
 ShowToc: true
+TocOpen: true
 ---
 
 ![](images/2021-07-25-10-37-01.png#center)
@@ -17,10 +18,7 @@ ShowToc: true
 
 ## スケボー文化
 アイラビスタにはスケボーが自転車並に使われている。平時であれば自転車よりも多くみかけるかもしれない。UCSBキャンパス内にはスケボーの専用レーンがあるほどである。裸足でスケボーに乗っている人もいれば（街中には裸足の人が意外に多い）、サーフボードを抱えながら乗りこなすいたりする。
-<p>
-  <img src="images/2021-07-25-10-37-20.png" />
-  <img src="images/2021-07-25-10-41-49.png">
-</p>
+<img src="images/2021-07-25-10-37-20.png"> <img src="images/2021-07-25-10-41-49.png">
 <!-- 
 ![ab](images/2021-07-25-10-37-20.png#center)
 ![](images/2021-07-25-10-41-49.png#center) -->
