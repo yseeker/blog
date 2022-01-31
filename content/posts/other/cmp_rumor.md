@@ -1,9 +1,9 @@
 ---
 #author: "Hugo Authors"
 title: "公募状況のうわさ"
-date: "2019-03-11"
+date: "2021-07-23"
 #description: "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
-tags: ["uslife", "postdoc"]
+tags: ["小ネタ"]
 #categories: ["themes", "syntax"]
 #series: ["Themes Guide"]
 aliases: ["/cmp_rumor"]

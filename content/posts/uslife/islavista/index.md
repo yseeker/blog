@@ -1,9 +1,9 @@
 ---
 #author: "Hugo Authors"
 title: "若者の街、アイラビスタ"
-date: "2019-03-11"
+date: "2021-08-11"
 #description: "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
-tags: ["english"]
+tags: ["サンタバーバラ", "アメリカ生活"]
 #categories: ["themes", "syntax"]
 #series: ["Themes Guide"]
 aliases: ["/santabarbara_picture"]

@@ -10,29 +10,20 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://yseeker.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://yseeker.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>english</title>
-      <link>https://yseeker.github.io/blog/tags/english/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      <title>physics</title>
+      <link>https://yseeker.github.io/blog/tags/physics/</link>
+      <pubDate>Fri, 10 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://yseeker.github.io/blog/tags/english/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>fellowship</title>
-      <link>https://yseeker.github.io/blog/tags/fellowship/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://yseeker.github.io/blog/tags/fellowship/</guid>
+      <guid>https://yseeker.github.io/blog/tags/physics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>postdoc</title>
       <link>https://yseeker.github.io/blog/tags/postdoc/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 10 Sep 2021 00:00:00 +0000</pubDate>
       
       <guid>https://yseeker.github.io/blog/tags/postdoc/</guid>
       <description></description>
@@ -41,9 +32,135 @@
     <item>
       <title>uslife</title>
       <link>https://yseeker.github.io/blog/tags/uslife/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 10 Sep 2021 00:00:00 +0000</pubDate>
       
       <guid>https://yseeker.github.io/blog/tags/uslife/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>実験</title>
+      <link>https://yseeker.github.io/blog/tags/%E5%AE%9F%E9%A8%93/</link>
+      <pubDate>Fri, 10 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://yseeker.github.io/blog/tags/%E5%AE%9F%E9%A8%93/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>物理</title>
+      <link>https://yseeker.github.io/blog/tags/%E7%89%A9%E7%90%86/</link>
+      <pubDate>Fri, 10 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://yseeker.github.io/blog/tags/%E7%89%A9%E7%90%86/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>研究</title>
+      <link>https://yseeker.github.io/blog/tags/%E7%A0%94%E7%A9%B6/</link>
+      <pubDate>Fri, 10 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://yseeker.github.io/blog/tags/%E7%A0%94%E7%A9%B6/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>fellowship</title>
+      <link>https://yseeker.github.io/blog/tags/fellowship/</link>
+      <pubDate>Wed, 08 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://yseeker.github.io/blog/tags/fellowship/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kaggle</title>
+      <link>https://yseeker.github.io/blog/tags/kaggle/</link>
+      <pubDate>Thu, 19 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://yseeker.github.io/blog/tags/kaggle/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>アメリカ生活</title>
+      <link>https://yseeker.github.io/blog/tags/%E3%82%A2%E3%83%A1%E3%83%AA%E3%82%AB%E7%94%9F%E6%B4%BB/</link>
+      <pubDate>Sat, 14 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://yseeker.github.io/blog/tags/%E3%82%A2%E3%83%A1%E3%83%AA%E3%82%AB%E7%94%9F%E6%B4%BB/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>歯</title>
+      <link>https://yseeker.github.io/blog/tags/%E6%AD%AF/</link>
+      <pubDate>Sat, 14 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://yseeker.github.io/blog/tags/%E6%AD%AF/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>矯正歯科</title>
+      <link>https://yseeker.github.io/blog/tags/%E7%9F%AF%E6%AD%A3%E6%AD%AF%E7%A7%91/</link>
+      <pubDate>Sat, 14 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://yseeker.github.io/blog/tags/%E7%9F%AF%E6%AD%A3%E6%AD%AF%E7%A7%91/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>サンタバーバラ</title>
+      <link>https://yseeker.github.io/blog/tags/%E3%82%B5%E3%83%B3%E3%82%BF%E3%83%90%E3%83%BC%E3%83%90%E3%83%A9/</link>
+      <pubDate>Wed, 11 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://yseeker.github.io/blog/tags/%E3%82%B5%E3%83%B3%E3%82%BF%E3%83%90%E3%83%BC%E3%83%90%E3%83%A9/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>小ネタ</title>
+      <link>https://yseeker.github.io/blog/tags/%E5%B0%8F%E3%83%8D%E3%82%BF/</link>
+      <pubDate>Fri, 23 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://yseeker.github.io/blog/tags/%E5%B0%8F%E3%83%8D%E3%82%BF/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>english</title>
+      <link>https://yseeker.github.io/blog/tags/english/</link>
+      <pubDate>Thu, 08 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://yseeker.github.io/blog/tags/english/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ポスドク</title>
+      <link>https://yseeker.github.io/blog/tags/%E3%83%9D%E3%82%B9%E3%83%89%E3%82%AF/</link>
+      <pubDate>Wed, 07 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://yseeker.github.io/blog/tags/%E3%83%9D%E3%82%B9%E3%83%89%E3%82%AF/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ラボ</title>
+      <link>https://yseeker.github.io/blog/tags/%E3%83%A9%E3%83%9C/</link>
+      <pubDate>Wed, 07 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://yseeker.github.io/blog/tags/%E3%83%A9%E3%83%9C/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>大学院</title>
+      <link>https://yseeker.github.io/blog/tags/%E5%A4%A7%E5%AD%A6%E9%99%A2/</link>
+      <pubDate>Wed, 07 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://yseeker.github.io/blog/tags/%E5%A4%A7%E5%AD%A6%E9%99%A2/</guid>
       <description></description>
     </item>
     

@@ -1,18 +1,17 @@
 ---
 #author: "Hugo Authors"
-title: "SETIコンペ参加記"
-date: "2019-03-11"
+title: "Kaggle：SETIコンペ参加記（ソロ銅：71th/768 teams）"
+date: "2021-08-19"
 #description: "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
-tags: ["uslife", "postdoc"]
-#categories: ["themes", "syntax"]
-#series: ["Themes Guide"]
+tags: ["kaggle"]
+categories: ["kaggle"]
+series: ["kaggle"]
 aliases: ["/kaggle_seti"]
 ShowToc: true
 TocOpen: true
 draft: false
 ---
 
-# SETIコンペ参加記
 ![](images/2021-08-18-14-51-56.png#center)
 
 [SETI Breakthrough Listen - E.T. Signal Search](https://www.kaggle.com/c/seti-breakthrough-listen/overview)というKaggleの**画像分類コンペ**に参加しました。

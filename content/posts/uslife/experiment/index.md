@@ -1,11 +1,11 @@
 ---
 #author: "Hugo Authors"
 title: "ポスドク＠UCSBでの実験について"
-date: "2019-03-11"
+date: "2021-07-27"
 #description: "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
-tags: ["uslife", "postdoc"]
-#categories: ["themes", "syntax"]
-#series: ["Themes Guide"]
+tags: ["uslife", "postdoc", "physics", "実験", "物理", "研究"]
+categories: ["santa barbara", "UCSB"]
+series: ["アメリカ生活"]
 aliases: ["/experiment"]
 ShowToc: true
 TocOpen: true

@@ -1,9 +1,9 @@
 ---
 #author: "Hugo Authors"
 title: "海外版逆評定"
-date: "2019-03-11"
+date: "2021-07-21"
 #description: "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
-tags: ["uslife", "postdoc"]
+tags: ["小ネタ"]
 #categories: ["themes", "syntax"]
 #series: ["Themes Guide"]
 aliases: ["/rate_my_professor"]

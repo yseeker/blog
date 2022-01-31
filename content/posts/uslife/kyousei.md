@@ -1,11 +1,11 @@
 ---
 #author: "Hugo Authors"
 title: "アメリカで矯正歯科に行った話"
-date: "2019-03-11"
+date: "2021-08-14"
 #description: "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
-tags: ["english"]
+tags: ["歯", "矯正歯科", "アメリカ生活"]
 #categories: ["themes", "syntax"]
-#series: ["Themes Guide"]
+series: ["アメリカ生活"]
 aliases: ["/orthodontics"]
 ShowToc: true
 TocOpen: true

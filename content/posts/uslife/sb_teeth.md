@@ -1,9 +1,9 @@
 ---
 #author: "Hugo Authors"
 title: "アメリカで歯の神経を抜いた話"
-date: "2019-03-11"
+date: "2021-06-15"
 #description: "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
-tags: ["english"]
+tags: ["歯", "アメリカ生活"]
 #categories: ["themes", "syntax"]
 #series: ["Themes Guide"]
 aliases: ["/root_canal_treatment"]

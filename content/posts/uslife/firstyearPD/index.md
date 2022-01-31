@@ -1,11 +1,11 @@
 ---
 #author: "Hugo Authors"
 title: "Twenty-four seven --- ポスドク1年目の思い出"
-date: "2019-03-11"
+date: "2021-08-12"
 #description: "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
-tags: ["english"]
-#categories: ["themes", "syntax"]
-#series: ["Themes Guide"]
+tags: ["uslife", "postdoc", "研究", "アメリカ生活"]
+#categories: ["santa barbara"]
+series: ["アメリカ生活"]
 aliases: ["/first_year_PD"]
 ShowToc: true
 TocOpen: true

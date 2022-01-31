@@ -1,11 +1,11 @@
 ---
 #author: "Hugo Authors"
 title: "UCSBポスドク記"
-date: "2019-03-11"
+date: "2021-09-10"
 #description: "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
-tags: ["english"]
-#categories: ["themes", "syntax"]
-#series: ["Themes Guide"]
+tags: ["uslife", "postdoc", "physics", "実験", "物理", "研究"]
+categories: ["santa barbara", "UCSB"]
+series: ["アメリカ生活"]
 aliases: ["/postdoc_memory"]
 ShowToc: true
 TocOpen: true
