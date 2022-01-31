@@ -162,6 +162,11 @@ img[src*="#center"] {
 .post-content h4 {
   font-size: 16pt !important;
 }
+
+.entry-header h2 {
+  font-size: 17pt !important;
+}
+
 /* .entry-title {
   font-size: 28px !important;
 } */
