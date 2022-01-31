@@ -12,12 +12,15 @@ TocOpen: true
 draft: false
 ---
 
-![](images/20210906131317.jpeg#center "Henley Gate")
-![](images/20210906132346.jpeg#center "Book and cup")
-![](images/20210906131644.jpeg#center "Campus")
-![](images/20210828123732.png#center "group picture")
-![](images/20210906132743.jpeg#center "beach")
-![](images/20210828123609.jpeg#center "yosegaki")
+![](images/20210906131317.jpeg#center)
+<p align = "center">
+Fig.1 - 4K Mountains Wallpaper
+</p>
+![](images/20210906132346.jpeg#center)
+![](images/20210906131644.jpeg#center)
+![](images/20210828123732.png#center)
+![](images/20210906132743.jpeg#center)
+![](images/20210828123609.jpeg#center)
 
 ![](images/![](images/2021-08-13-09-44-34.png#center).png#center)
 [:contents]
