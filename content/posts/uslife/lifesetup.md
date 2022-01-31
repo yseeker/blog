@@ -1,6 +1,23 @@
+---
+#author: "Hugo Authors"
+title: "アメリカ生活ミニマムセットアップ（ポスドク＠サンタバーバラ版）"
+date: "2019-03-11"
+#description: "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
+tags: ["english"]
+#categories: ["themes", "syntax"]
+#series: ["Themes Guide"]
+aliases: ["/setup_US_life"]
+ShowToc: true
+TocOpen: true
+draft: false
+---
+
 初めてアメリカに来たのは、修士1年の頃、アメリカ物理学会＠デンバー（APS March Meeting）に参加したときのことだった。それから4年半後にアメリカ（カリフォルニア・サンタバーバラ）で生活することになるとは夢にも思ってなかった。
 
 [<b>サンタバーバラ</b>](https://www.google.com/search?q=santa+barbara&sxsrf=ALeKk01J-f7kht-BS8A85ZILdmGWq5AnZw:1626373272946&source=lnms&tbm=isch&sa=X&ved=2ahUKEwi7vdLJ2OXxAhWeDjQIHalnBWgQ_AUoAXoECAEQAw&biw=1920&bih=880)は海がとてもきれいなリゾート地である一方、リゾート地であるが故に田舎なので例えばニューヨークやボストン、ロサンゼルスなどと比べたらほとんど日本人がいない。もちろん知り合いなどもいなかった。そのためネット上で日本語で検索できる情報にはかなり限りがあり、事前準備や生活のセットアップで未知数なところがいろいろあった。そこで、もしサンタバーバラを含め、アメリカの都市部/田舎でポスドクなどを始める場合に参考になればと思い、そして自分が万が一またアメリカに行くことになった場合の備忘録として自分の場合の（でもある程度汎用的な）海外生活ミニマムセットアップを書き残してみる。
+
+[:contents]
+
 ## 渡米前
 
 * **ビザの取得**（渡米2-3ヶ月前）：ビザが無ければ入国できないので最重要事項である。ポスドクで行く場合は<b>J1ビザ</b>が必要。取得は他のH1Bなどの労働ビザに比べたら圧倒的に簡単。普通は落ちないらしい。詳細情報/必要書類は[公式web](https://www.ustraveldocs.com/jp_jp/jp-niv-typej.asp)を参照。<b>DS2019</b>（滞在/労働許可証のようなものでビザと同程度に重要）などの必要書類を大学から手に入れたら（大学の事務は遅いことがあるので、必要であればリマンドを絶えず送ったほうが良い）、面接の予約が埋まってたりするので例えば出国2-3ヶ月前に準備を始めるほうが良い。
