@@ -14,16 +14,18 @@ draft: false
 
 ![](images/20210906131317.jpeg#center)
 <p align = "center">
-Fig.1 - 4K Mountains Wallpaper
+Henly Gate
 </p>
-![](images/20210906132346.jpeg#center)
-![](images/20210906131644.jpeg#center)
-![](images/20210828123732.png#center)
-![](images/20210906132743.jpeg#center)
-![](images/20210828123609.jpeg#center)
 
-![](images/![](images/2021-08-13-09-44-34.png#center).png#center)
-[:contents]
+![](images/20210906131644.jpeg#center)
+<p align = "center">
+キャンパス内
+</p>
+
+![](images/20210906132743.jpeg#center)
+<p align = "center">
+キャンパスビーチとラグーン
+</p>
 
 ## 2017年秋　海外ポスドクを志す
 昔からいつかはアメリカで研究してみたいという漠然とした思いがあった。博士号取得後の2018年4月からの勤務先は決まっていたが、もしもうまく海外ポスドク先が決まれば退職して海外へ行くという意向をボス（予定）に相談したところ快諾して頂いた。この時期から海外ポスドク先を探し始めた。ラボ選びの方針は[以前の記事](https://www.yusaito.com/blog/posts/uslife/lab_choise/)で書いた通りである。また同時期に[Elings Prize Fellowship](https://www.cnsi.ucsb.edu/resources/funding/elings-prize)にも応募した。
@@ -32,6 +34,7 @@ Fig.1 - 4K Mountains Wallpaper
 幸運にもカリフォルニア大学サンタバーバラ校からElings Prize Fellowshipのオファーレターを頂き（日本人初）、同大学の[Andrea Youngグループ](https://www.afylab.com/)に同年10月から行くことが決定した。
 
 ![](images/2021-08-09-21-51-51.png#center)
+
 ※上のオファーレターによると2018年ではElings Prize Fellowshipの年間給与予定額は60000USD (~ 660万円)だが、2021年現在は公式サイトにある通り65000USDになっている。またUCサンタバーバラのポスドクの給与は年間2%上昇する（これはフェローシップに限らない）。したがって2021年現在Elings Prize Fellowshipを獲得すると1年目65000USD, 2年目66300USD, 3年目67626USD (~ 743万円) となる。
 
 ## 2018年 3月　博士（工学）取得
@@ -125,3 +128,18 @@ COVID-19の変異種であるデルタ株が世界中で広がり始め、アメ
 
 ## 2021年 9月　日本へ本帰国予定
 3年間のポスドク生活も終え、あと少しで日本に本帰国である。
+
+![](images/20210828123609.jpeg#center)
+<p align = "center">
+寄せ書き付きノートブック
+</p>
+
+![](images/20210906132346.jpeg#center)
+<p align = "center">
+ボスからの送別のプレゼント（本）と3年間使ったマグカップ
+</p>
+
+![](images/20210828123732.png#center)
+<p align = "center">
+集合写真（2019&2021）
+</p>
