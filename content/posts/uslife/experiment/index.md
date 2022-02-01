@@ -46,8 +46,9 @@ Wet bench：試薬の使用など。
 電子ビーム蒸着装置：電極の作成に使用。装置の詳細は[こちら](https://wiki.nanotech.ucsb.edu/wiki/E-Beam_4_(CHA) )
 ![](images/2021-07-25-11-54-36.png#center)
 
-完成したデバイスの例がこちら。デバイスのサイズは10-20マイクロメートル程度である。このデバイスは実際に論文中のデータ取得に使ったもので[この論文](https://www.nature.com/articles/s41567-020-0928-3) ([arXiv版](https://arxiv.org/pdf/1911.13302.pdf))中のDevice #1と同一のものである。
-[f:id:yseeker:20210727141757p:plain]
+完成したデバイスの例がこちら。
+![](images/2021-07-25-12-09-51.png#center)
+デバイスのサイズは10-20マイクロメートル程度である。このデバイスは実際に論文中のデータ取得に使ったもので[この論文](https://www.nature.com/articles/s41567-020-0928-3) ([arXiv版](https://arxiv.org/pdf/1911.13302.pdf))中のDevice #1と同一のものである。
 実際にどのように電極がデバイスに電気的に接しているかは[こちらの論文](https://science.sciencemag.org/content/342/6158/614)を参照。
 
 ### 測定
