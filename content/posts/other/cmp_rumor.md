@@ -5,8 +5,6 @@ date: "2021-07-23"
 #description: "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
 tags: ["小ネタ"]
 #categories: ["themes", "syntax"]
-#series: ["Themes Guide"]
-aliases: ["/cmp_rumor"]
 ShowToc: true
 TocOpen: true
 draft: false

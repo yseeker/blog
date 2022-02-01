@@ -3,10 +3,8 @@
 title: "Kaggle：SETIコンペ参加記（ソロ銅：71th/768 teams）"
 date: "2021-08-19"
 #description: "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
-tags: ["kaggle"]
-categories: ["kaggle"]
-series: ["kaggle"]
-aliases: ["/kaggle_seti"]
+tags: ["Kaggle", "SETI"]
+categories: ["Kaggle"]
 ShowToc: true
 TocOpen: true
 draft: false
