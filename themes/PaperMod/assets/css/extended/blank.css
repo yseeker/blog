@@ -23,7 +23,8 @@ img {
 }
 
 .post-content h2 {
-  font-size: 18pt !important;
+  font-size: 18.5pt !important;
+  border-left: 6px solid #000080 !important;
 }
 
 .post-content h3 {
