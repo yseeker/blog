@@ -7,8 +7,12 @@ tags: ["特徴量", "richmanbtc"]
 categories: ["仮想通貨ボット"]
 ShowToc: true
 TocOpen: true
-draft: false
+draft: true
 ---
+
+<div style="text-align: center;">
+予測よりも執行
+</div>
 
 ## 相関係数
 ## Feature Imporance
@@ -16,6 +20,7 @@ draft: false
 <img src="images/feature_importance_buy.png" width=49% >
 <img src="images/feature_importance_sell.png" width=49% >
 </p>
+
 ## Permutation Feature Importance
 <p>
 <img src="images/permutation_feature_importance_buy.png" width=49% >
