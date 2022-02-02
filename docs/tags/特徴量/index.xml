@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>特徴量 on YS&#39;s blog</title>
+    <link>https://yseeker.github.io/blog/tags/%E7%89%B9%E5%BE%B4%E9%87%8F/</link>
+    <description>Recent content in 特徴量 on YS&#39;s blog</description>
+    <image>
+      <url>https://yseeker.github.io/blog/papermod-cover.png</url>
+      <link>https://yseeker.github.io/blog/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Tue, 01 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://yseeker.github.io/blog/tags/%E7%89%B9%E5%BE%B4%E9%87%8F/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>richmanbtcさんのチュートリアルで特徴量を解析してみる</title>
+      <link>https://yseeker.github.io/blog/posts/bot/richman_model_features/</link>
+      <pubDate>Tue, 01 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://yseeker.github.io/blog/posts/bot/richman_model_features/</guid>
+      <description>相関係数 Feature Imporance  ## Permutation Feature Importance  Partial Dependence Independent なんとか Shapley value (shap 値) </description>
+    </item>
+    
+  </channel>
+</rss>

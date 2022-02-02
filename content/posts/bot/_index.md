@@ -1,5 +1,5 @@
 ---
-title: USLife
+title: Bot
 summary: Contains posts related to `PaperMod`
 description: Contains posts related to PaperMod
 ---
