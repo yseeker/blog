@@ -155,7 +155,7 @@ img[src*="#center"] {
   font-size: 18pt !important;
   padding: 4px 8px !important;
   border-left: 5px solid #12007a !important;
-  line-height: 0.8 !important;
+  line-height: 1 !important;
 }
 
 .post-content h3 {
