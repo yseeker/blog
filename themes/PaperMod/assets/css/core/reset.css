@@ -153,7 +153,8 @@ img[src*="#center"] {
 
 .post-content h2 {
   font-size: 18.5pt !important;
-  border-left: 6px solid #000080 !important;
+  padding: 4px 8px !important;
+  border-left: 6px solid #12007a !important;
 }
 
 .post-content h3 {
