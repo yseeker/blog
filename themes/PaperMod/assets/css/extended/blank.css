@@ -24,7 +24,9 @@ img {
 
 .post-content h2 {
   font-size: 18.5pt !important;
-  border-left: 6px solid #000080 !important;
+  padding: 4px 8px !important;
+  border-left: 5px solid #12007a !important;
+  line-height: 1 !important;
 }
 
 .post-content h3 {
