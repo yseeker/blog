@@ -91,3 +91,9 @@ img {
     line-height: 1.65;
   }
 }
+
+@media print, screen and (max-width: 767px) {
+  .page-header h1 {
+    font-size: 20px;
+  }
+}
