@@ -27,8 +27,16 @@ img {
   max-width: 100%;
 }
 
-.post-title {
-  font-size: 22pt !important;
+@media print, screen and (min-width: 768px) {
+  .post-title {
+    font-size: 22pt !important;
+  }
+}
+
+@media print, screen and (max-width: 767px) {
+  .post-title {
+    font-size: 18pt !important;
+  }
 }
 
 @media print, screen and (min-width: 768px) {
@@ -57,7 +65,7 @@ img {
 
 @media print, screen and (max-width: 767px) {
   .post-content h3 {
-    font-size: 15pt !important;
+    font-size: 14.5pt !important;
   }
 }
 
