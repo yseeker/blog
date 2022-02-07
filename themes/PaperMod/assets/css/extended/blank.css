@@ -54,3 +54,18 @@ img {
   font-size: 19px;
   line-height: 2;
 }
+
+/* PCのみに適用(960px以上) */
+@media print, screen and (min-width: 600px) {
+  .post-content {
+    line-height: 17px;
+    margin-bottom: 1.85em;
+  }
+}
+
+@media print, screen and (max-width: 599px) {
+  .post-content {
+    line-height: 16px;
+    margin-bottom: 1.7em;
+  }
+}
