@@ -35,9 +35,9 @@ draft: false
 バスの中から見たダウンタウン
 </p>
 
-{{< youtube tGmZOtieEnA >}}
-
 ![](images/images/20210906131317.jpeg#center)
+
+{{< youtube tGmZOtieEnA >}}
 <p align = "center">
 空港への道中
 </p>
