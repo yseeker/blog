@@ -10,19 +10,19 @@ TocOpen: true
 draft: false
 ---
 
-![](2022-02-08-20-11-04.png#center)
+![](images/2022-02-08-20-11-04.png#center)
 
-![](2022-02-08-20-11-49.png#center)
+![](images/2022-02-08-20-11-49.png#center)
 
-![](2022-02-08-20-10-16.png#center)
+![](images/2022-02-08-20-10-16.png#center)
 
-![](2022-02-08-20-14-02.png#center)
+![](images/2022-02-08-20-14-02.png#center)
 
-![](2022-02-08-20-13-04.png#center)
+![](images/2022-02-08-20-13-04.png#center)
 
 {{< youtube tGmZOtieEnA >}}
 
-![](images/20210906131317.jpeg#center)
+![](images/images/20210906131317.jpeg#center)
 <p align = "center">
 Henly Gate
 </p>
