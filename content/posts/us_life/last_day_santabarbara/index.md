@@ -22,7 +22,7 @@ draft: false
 
 ![](images/2022-02-08-20-10-16.png#center)
 <p align = "center">
-キッチン＆ダイニング
+アパートと壺
 </p>
 
 ![](images/2022-02-08-20-14-02.png#center)
@@ -34,8 +34,6 @@ draft: false
 <p align = "center">
 バスの中から見たダウンタウン
 </p>
-
-![](images/images/20210906131317.jpeg#center)
 
 {{< youtube tGmZOtieEnA >}}
 <p align = "center">
