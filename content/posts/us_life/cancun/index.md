@@ -1,3 +1,16 @@
+---
+#author: "Hugo Authors"
+title: "Cancun"
+date: "2021-08-06"
+#description: "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
+tags: ["uslife", "cancun", "カンクン"]
+categories: ["アメリカ生活"]
+ShowToc: true
+TocOpen: true
+draft: false
+---
+
+
 ![](images2022-02-09-22-26-33.png#center)
 
 ![](images2022-02-09-22-29-47.png#center)
