@@ -42,6 +42,7 @@ draft: false
 
 ## Downtown
 赤い屋根が特徴的なスペイン風の美しい建物が多い。ワイナリーや海鮮系のレストランも多い。
+![](images/2022-02-09-21-54-40.png#center)
 ![](images/2021-07-25-11-39-31.png#center)
 ![](images/2021-07-25-11-40-06.png#center)
 ![](images/2021-07-25-11-40-27.png#center)

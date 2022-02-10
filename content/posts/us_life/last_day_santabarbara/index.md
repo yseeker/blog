@@ -40,4 +40,6 @@ draft: false
 空港への道中
 </p>
 
+![](images/2022-02-09-21-49-41.png#center)
+
 
