@@ -17,6 +17,10 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
   color: #4c45e6 !important;
 }
 
+.dark .post-content a {
+  color: #a6a2f3 !important;
+}
+
 img[src*="#center"] {
   display: block;
   margin: auto;
