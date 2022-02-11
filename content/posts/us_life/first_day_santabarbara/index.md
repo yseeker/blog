@@ -11,8 +11,16 @@ draft: false
 ---
 
 ![](images/2022-02-10-22-02-45.png#center)
-![](images/2022-02-10-22-03-08.png#center)
-![](images/2022-02-10-22-04-11.png#center)
-![](images/2022-02-10-22-04-24.png#center)
-![](images/2022-02-10-22-03-21.png#center)
+
+<p>
+<img src="images/2022-02-10-22-03-08.png" width=49% >
+<img src="images/2022-02-10-22-03-21.png" width=49% >
+</p>
+
 ![](images/2022-02-10-22-02-03.png#center)
+
+<p>
+<img src="images/2022-02-10-22-04-11.png" width=49% >
+<img src="images/2022-02-10-22-04-24.png" width=49% >
+</p>
+
