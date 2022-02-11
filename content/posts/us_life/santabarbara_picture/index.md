@@ -42,12 +42,13 @@ draft: false
 
 ## Downtown
 赤い屋根が特徴的なスペイン風の美しい建物が多い。ワイナリーや海鮮系のレストランも多い。
-![](images/2022-02-09-21-54-40.png#center)
-![](images/2021-07-25-11-39-31.png#center)
 ![](images/2021-07-25-11-40-06.png#center)
-![](images/2021-07-25-11-40-27.png#center)
 ![](images/2021-07-25-11-41-11.png#center)
-
+![](images/2022-02-10-14-11-16.png#center)
+![](images/2021-07-25-11-39-31.png#center)
+![](images/2022-02-09-21-54-40.png#center)
+![](images/2022-02-10-14-01-40.png#center)
+![](images/2022-02-10-21-56-14.png#center)
 サンタバーバラはウニの名産地なので、Sushi Go GoとShell fish companyというお店で妻とウニを食べた。
 ![](images/2021-07-25-11-33-34.png#center)
 ![](images/2021-08-14-21-21-14.png#center)
