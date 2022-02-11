@@ -31,19 +31,19 @@ img {
   max-width: 100%;
 }
 
-@media print, screen and (min-width: 768px) {
+@media print, screen and (min-width: 480px) {
   .post-title {
     font-size: 21pt !important;
   }
 }
 
-@media print, screen and (max-width: 767px) {
+@media print, screen and (max-width: 479px) {
   .post-title {
     font-size: 18pt !important;
   }
 }
 
-@media print, screen and (min-width: 768px) {
+@media print, screen and (min-width: 480px) {
   .post-content h2 {
     font-size: 16pt !important;
     padding: 4px 8px !important;
@@ -52,7 +52,7 @@ img {
   }
 }
 
-@media print, screen and (max-width: 767px) {
+@media print, screen and (max-width: 479px) {
   .post-content h2 {
     font-size: 14pt !important;
     padding: 4px 8px !important;
@@ -61,7 +61,7 @@ img {
   }
 }
 
-@media print, screen and (min-width: 768px) {
+@media print, screen and (min-width: 480px) {
   .dark .post-content h2 {
     font-size: 16pt !important;
     padding: 4px 8px !important;
@@ -70,7 +70,7 @@ img {
   }
 }
 
-@media print, screen and (max-width: 767px) {
+@media print, screen and (max-width: 479px) {
   .dark .post-content h2 {
     font-size: 14pt !important;
     padding: 4px 8px !important;
@@ -79,13 +79,13 @@ img {
   }
 }
 
-@media print, screen and (min-width: 768px) {
+@media print, screen and (min-width: 480px) {
   .post-content h3 {
     font-size: 15pt !important;
   }
 }
 
-@media print, screen and (max-width: 767px) {
+@media print, screen and (max-width: 479px) {
   .post-content h3 {
     font-size: 13pt !important;
     line-height: 1.2 !important;
@@ -93,28 +93,28 @@ img {
 }
 
 /* PCのみに適用(960px以上) */
-@media print, screen and (min-width: 768px) {
+@media print, screen and (min-width: 480px) {
   .post-content {
     font-size: 17px;
     line-height: 2;
   }
 }
 
-@media print, screen and (max-width: 767px) {
+@media print, screen and (max-width: 479px) {
   .post-content {
     font-size: 16px;
     line-height: 1.7;
   }
 }
 
-@media print, screen and (max-width: 767px) {
+@media print, screen and (max-width: 479px) {
   .toc {
     font-size: 15.5px;
     line-height: 1.65;
   }
 }
 
-@media print, screen and (max-width: 767px) {
+@media print, screen and (max-width: 479px) {
   .page-header h1 {
     font-size: 30px;
   }
