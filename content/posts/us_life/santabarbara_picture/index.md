@@ -3,7 +3,7 @@
 title: "写真で振り返るサンタバーバラ滞在記"
 date: "2021-08-15"
 #description: "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
-tags: ["uslife", "postdoc", "physics", "サンタバーバラ"]
+tags: ["uslife", "postdoc", "サンタバーバラ"]
 categories: ["アメリカ生活"]
 ShowToc: true
 TocOpen: true
