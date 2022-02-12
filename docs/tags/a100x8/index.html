@@ -10,7 +10,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 <link rel="canonical" href="https://yseeker.github.io/blog/tags/a100x8/" />
-<link crossorigin="anonymous" href="/blog/assets/css/stylesheet.min.e71c2992171361440a333d1cd1c0ee3d1ea243a441adb1cadb115af786de22f6.css" integrity="sha256-5xwpkhcTYUQKMz0c0cDuPR6iQ6RBrbHK2xFa94beIvY=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/blog/assets/css/stylesheet.min.ff6f4411f0c9cef23867d5fafb4559581e5c64f4c45ffe8200ab26a9b13e2c50.css" integrity="sha256-/29EEfDJzvI4Z9X6&#43;0VZWB5cZPTEX/6CAKsmqbE&#43;LFA=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://yseeker.github.io/blog/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://yseeker.github.io/blog/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://yseeker.github.io/blog/favicon-32x32.png">
@@ -145,7 +145,7 @@
   <section class="entry-content">
     <p>Azure の web で VM インスタンスを作成 VM インスタンスの作成はこちら 秘密鍵をダウンロードして、read 権限を与えていおく。
 cp ~/Downloads/your_key_name.pem ~/.ssh/keys/azure_vm_key.pem chmod 400 ~/.ssh/keys/azure_vm_key.pem ssh を使って VM にアクセス
-ssh -i ~/.ssh/keys/azure_vm_key.pem azureuser@&lt;public ip address of VM instance&gt; Cuda をインストール wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/cuda-ubuntu1804.pin sudo mv cuda-ubuntu1804.pin /etc/apt/preferences.d/cuda-repository-pin-600 wget https://developer.download.nvidia.com/compute/cuda/11.5.0/local_installers/cuda-repo-ubuntu1804-11-5-local_11.5.0-495.29.05-1_amd64.deb sudo dpkg -i cuda-repo-ubuntu1804-11-5-local_11.5.0-495.29.05-1_amd64.deb sudo apt-key add /var/cuda-repo-ubuntu1804-11-5-local/7fa2af80.pub sudo apt-get update sudo apt-get -y install cuda Data Center GPU manager のインストール bandwidthTest を行う（A100x8 ではここでエラーが出る、V100x4 では出ない） 詳細は、こちらを参照
+ssh -i ~/.ssh/keys/azure_vm_key.pem azureuser@&lt;public ip address of VM instance&gt; Cuda をインストール wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/cuda-ubuntu1804.pin sudo mv cuda-ubuntu1804.pin /etc/apt/preferences.d/cuda-repository-pin-600 wget https://developer.download.nvidia.com/compute/cuda/11.5.0/local_installers/cuda-repo-ubuntu1804-11-5-local_11.5.0-495.29.05-1_amd64.deb sudo dpkg -i cuda-repo-ubuntu1804-11-5-local_11.5.0-495.29.05-1_amd64.deb sudo apt-key add /var/cuda-repo-ubuntu1804-11-5-local/7fa2af80.pub sudo apt-get update sudo apt-get -y install cuda Data Center GPU manager のインストール bandwidthTest を行う 詳細は、こちらを参照。 A100x8 ではここでエラーが出る、V100x4 では出ない
 git clone https://github.com/NVIDIA/cuda-samples.git cd cuda-samples/Samples/bandwidthTest make ....</p>
   </section>
   <footer class="entry-footer"><span title='2022-01-11 00:00:00 +0000 UTC'>January 11, 2022</span></footer>

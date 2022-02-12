@@ -49,9 +49,10 @@ sudo apt-get -y install cuda
 
 ## Data Center GPU manager のインストール
 
-### bandwidthTest を行う（A100x8 ではここでエラーが出る、V100x4 では出ない）
+### bandwidthTest を行う
 
-詳細は、[こちら](https://github.com/pytorch/pytorch/issues/35710#issuecomment-901013741)を参照
+詳細は、[こちら](https://github.com/pytorch/pytorch/issues/35710#issuecomment-901013741)を参照。
+A100x8 ではここでエラーが出る、V100x4 では出ない
 
 ```
 git clone https://github.com/NVIDIA/cuda-samples.git
