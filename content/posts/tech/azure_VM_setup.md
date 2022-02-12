@@ -3,7 +3,16 @@
 title: "AzureでA100x8（V100x4）のPytorch環境構築とエラー対処"
 date: "2022-01-11"
 #description: "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
-tags: ["Azure", "GPU", "cuda", "docker", "A100x8"]
+tags:
+  [
+    "Azure",
+    "GPU",
+    "cuda",
+    "docker",
+    "A100x8",
+    "Data Center GPU manager",
+    "fabricmanager",
+  ]
 categories: ["技術", "エラー"]
 ShowToc: true
 TocOpen: true
