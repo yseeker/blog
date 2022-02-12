@@ -1,5 +1,5 @@
 ---
 title: US_Life
-summary: Contains posts related to `PaperMod`
-description: Contains posts related to PaperMod
+summary: Contains posts related to `US Life`
+description: アメリカ生活に関する記事です。
 ---

@@ -4,7 +4,7 @@ title: "Cancun"
 date: "2021-08-06"
 #description: "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
 tags: ["uslife", "cancun", "カンクン"]
-categories: ["アメリカ生活"]
+categories: ["アメリカ生活", "海外"]
 ShowToc: true
 TocOpen: true
 draft: false

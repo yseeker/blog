@@ -3,7 +3,7 @@
 title: "国際会議ハイライト"
 date: "2019-10-01"
 #description: "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
-tags: ["学会", "海外"]
+tags: ["国際学会", "海外"]
 categories: ["海外"]
 ShowToc: true
 TocOpen: true

@@ -1,5 +1,5 @@
 ---
-title: Bot
-summary: Contains posts related to `PaperMod`
-description: Contains posts related to PaperMod
+title: crypto-auto-trade
+summary: Contains posts related to `crypto-autotrade`
+description: 仮想通貨botに関する記事です。
 ---

@@ -1,5 +1,5 @@
 ---
 title: Kaggle
-summary: Contains posts related to `PaperMod`
-description: Contains posts related to PaperMod
+summary: Contains posts related to `Kaggle`
+description: Kaggleに関する記事です。
 ---
