@@ -1,9 +1,9 @@
 ---
 #author: "Hugo Authors"
 title: "AzureでA100x8（V100x4）のVMの環境構築とエラー対処"
-date: "2021-08-14"
+date: "2022-01-11"
 #description: "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
-tags: ["Azure", "GPU", "cuda", "docker"]
+tags: ["Azure", "GPU", "cuda", "docker", "A100x8"]
 categories: ["技術", "エラー"]
 ShowToc: true
 TocOpen: true
@@ -23,13 +23,12 @@ chmod 400 ~/.ssh/keys/azure_vm_key.pem
 ssh を使って VM にアクセス
 
 ```bash
-ssh -i ~/.ssh/keys/yusaito5.pem azureuser@[public ip address]
+ssh -i ~/.ssh/keys/azure_vm_key.pem azureuser@[public ip address of VM instance]
 ```
 
-# Azure
+## Cuda をインストール
 
-# cuda install
-
+```bash
 wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/cuda-ubuntu1804.pin
 sudo mv cuda-ubuntu1804.pin /etc/apt/preferences.d/cuda-repository-pin-600
 wget https://developer.download.nvidia.com/compute/cuda/11.5.0/local_installers/cuda-repo-ubuntu1804-11-5-local_11.5.0-495.29.05-1_amd64.deb
@@ -37,22 +36,63 @@ sudo dpkg -i cuda-repo-ubuntu1804-11-5-local_11.5.0-495.29.05-1_amd64.deb
 sudo apt-key add /var/cuda-repo-ubuntu1804-11-5-local/7fa2af80.pub
 sudo apt-get update
 sudo apt-get -y install cuda
+```
 
-# Error 対処
+## bandwidthTest を行う（A100x8 ではここでエラーが出る、V100x4 では出ない）
 
+```
 git clone https://github.com/NVIDIA/cuda-samples.git
 cd cuda-samples/Samples/bandwidthTest
 make
 ./bandwidthTest
+```
 
+## A100x8 の場合のエラー対策
+
+詳細は、[こちら](https://github.com/pytorch/pytorch/issues/35710#issuecomment-901013741)を参照
+
+A100x8 の場合は上の bandwidth テストで下記のようなエラーが出る。
+
+```
+cudaGetDeviceProperties returned 802
+-> system not yet initialized
+CUDA error at bandwidthTest.cu:256 code=802(cudaErrorSystemNotReady) "cudaSetDevice(currentDevice)"
+it means that the Data Center GPU manager is not installed. What you want to do is to install the nvidia DCGM, fetch the repository keys:
+```
+
+Data Center GPU manager をインストールする
+
+```bash
 wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-ubuntu2004.pin
 sudo mv cuda-ubuntu2004.pin /etc/apt/preferences.d/cuda-repository-pin-600
 sudo apt-key adv --keyserver-options http-proxy=http://proxy-chain.intel.com:911 --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/7fa2af80.pub
+```
 
-sudo apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/7fa2af80.pub
+```
+Executing: /tmp/apt-key-gpghome.qjhmgicscb/gpg.1.sh --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/7fa2af80.pub
+gpg: requesting key from 'https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/7fa2af80.pub'
+gpg: WARNING: unable to fetch URI https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/7fa2af80.pub: Connection timed out
+you may need to manually set the proxy:
+```
+
+sudo apt-key adv --keyserver-options http-proxy=<PROXY-ADDRESS:PORT> --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/7fa2af80.pub
+then you can install the repository and the package:
+
 sudo add-apt-repository "deb https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/ /"
 sudo apt-get update
 sudo apt-get install -y datacenter-gpu-manager
+terminate the host engine:
+
+sudo nv-hostengine -t
+and start the fabricmanager
+
+sudo service nvidia-fabricmanager start
+
+Failed to start nvidia-fabricmanager.service: Unit nvidia-fabricmanager.service not found.
+install the fabric manager and start it:
+
+sudo apt-get install cuda-drivers-fabricmanager-<version>
+sudo service nvidia-fabricmanager start
 
 sudo nv-hostengine -t
 

@@ -10,7 +10,19 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sat, 11 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://yseeker.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 11 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://yseeker.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AzureでA100x8（V100x4）のVMの環境構築とエラー対処</title>
+      <link>https://yseeker.github.io/blog/posts/tech/azure_vm_setup/</link>
+      <pubDate>Tue, 11 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://yseeker.github.io/blog/posts/tech/azure_vm_setup/</guid>
+      <description>Azure の web で VM インスタンスを作成 VM インスタンスの作成はこちら 秘密鍵をダウンロードして、read 権限を与えていおく。
+cp ~/Downloads/your_key_name.pem ~/.ssh/keys/azure_vm_key.pem chmod 400 ~/.ssh/keys/azure_vm_key.pem ssh を使って VM にアクセス
+ssh -i ~/.ssh/keys/azure_vm_key.pem azureuser@[public ip address of VM instance] Cuda をインストール wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/cuda-ubuntu1804.pin sudo mv cuda-ubuntu1804.pin /etc/apt/preferences.d/cuda-repository-pin-600 wget https://developer.download.nvidia.com/compute/cuda/11.5.0/local_installers/cuda-repo-ubuntu1804-11-5-local_11.5.0-495.29.05-1_amd64.deb sudo dpkg -i cuda-repo-ubuntu1804-11-5-local_11.5.0-495.29.05-1_amd64.deb sudo apt-key add /var/cuda-repo-ubuntu1804-11-5-local/7fa2af80.pub sudo apt-get update sudo apt-get -y install cuda bandwidthTest を行う（A100x8 ではここでエラーが出る、V100x4 では出ない） git clone https://github.com/NVIDIA/cuda-samples.git cd cuda-samples/Samples/bandwidthTest make ./bandwidthTest A100x8 の場合のエラー対策 詳細は、こちらを参照
+A100x8 の場合は上の bandwidth テストで下記のようなエラーが出る。</description>
+    </item>
+    
     <item>
       <title>Last day in Santa Barbara</title>
       <link>https://yseeker.github.io/blog/posts/us_life/last_day_santabarbara/</link>
@@ -76,19 +88,6 @@
 カリフォルニア大学サンタバーバラ校（UCSB） 多分 UCSB の正門（キャンパスの東側にある）。めったに使わない。 キャンパス内 キャンパスビーチ 研究で疲れたときはぼーっとビーチを見ると癒やされる。 Downtown 赤い屋根が特徴的なスペイン風の美しい建物が多い。ワイナリーや海鮮系のレストランも多い。 サンタバーバラはウニの名産地なので、Sushi Go Go と Shell fish company というお店で妻とウニを食べた。 以下はサンタバーバラ外の場所である。
 チャンネル諸島（Channel island） @ Ventura チャンネル諸島は、サンタバーバラ近くにベンチュラ郡に属する 8 つの島々で構成される諸島で国立公園にもなっている。シマハイイロギツネ(Island fox)という小柄なキツネが多数生息する。かなり人馴れしている。 リンダウ・ノーベル賞受賞者会議 @ Linadu, Germany 毎年 30 名程度のノーベル賞受賞者が世界中から招待され、若手研究者（大学院生やポスドク）に対して講演やディスカッションを行って下さる会議でドイツのリンダウで開催されている。 日本人は 10 名程度参加していた。詳細はこちら
 The Institute of Photonic Sciences @ Castelldefels, Spain リンダウの帰りにスペインのカステイダフェルス（Castelldefels）にある ICFO（The Institute of Photonic Sciences）という研究機関の中の Dimitri Efetov 研を訪問した。Prof. Efetov の大学院時代の研究テーマが私の大学院時代の研究テーマと似た内容だったために興味をもってもらい、大学院時代の研究テーマでセミナーをさせて頂いた。 ニューヨーク大学 @ NYC 2019 年 12 月頃（covid19 が中国で発見されたあたり？）にベクトルマグネット付きの希釈冷凍機を借りるためにニューヨーク大学の Javad Shabani 研究室を訪問した。冬のニューヨーク市は極寒で日によってはマイナス 10 度を下回ったりして顔中凍るかと思った。ニューヨーク市滞在中に体調を崩し、そこそこの熱（38 度以上）とひどい咳が出た。これがコロナの症状だったかどうかは今となっては知る由もない。ちなみに実験はうまくいかなかった（サンプルが全滅した）。 </description>
-    </item>
-    
-    <item>
-      <title>AzureでA100x8（V100x4）のVMの環境構築とエラー対処</title>
-      <link>https://yseeker.github.io/blog/posts/tech/azure_vm_setup/</link>
-      <pubDate>Sat, 14 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://yseeker.github.io/blog/posts/tech/azure_vm_setup/</guid>
-      <description>Azure の web で VM インスタンスを作成 VM インスタンスの作成はこちら 秘密鍵をダウンロードして、read 権限を与えていおく。
-cp ~/Downloads/your_key_name.pem ~/.ssh/keys/azure_vm_key.pem chmod 400 ~/.ssh/keys/azure_vm_key.pem ssh を使って VM にアクセス
-ssh -i ~/.ssh/keys/yusaito5.pem azureuser@[public ip address] Azure cuda install wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/cuda-ubuntu1804.pin sudo mv cuda-ubuntu1804.pin /etc/apt/preferences.d/cuda-repository-pin-600 wget https://developer.download.nvidia.com/compute/cuda/11.5.0/local_installers/cuda-repo-ubuntu1804-11-5-local_11.5.0-495.29.05-1_amd64.deb sudo dpkg -i cuda-repo-ubuntu1804-11-5-local_11.5.0-495.29.05-1_amd64.deb sudo apt-key add /var/cuda-repo-ubuntu1804-11-5-local/7fa2af80.pub sudo apt-get update sudo apt-get -y install cuda
-Error 対処 git clone https://github.com/NVIDIA/cuda-samples.git cd cuda-samples/Samples/bandwidthTest make ./bandwidthTest
-wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-ubuntu2004.pin sudo mv cuda-ubuntu2004.pin /etc/apt/preferences.d/cuda-repository-pin-600 sudo apt-key adv &amp;ndash;keyserver-options http-proxy=http://proxy-chain.</description>
     </item>
     
     <item>

@@ -10,7 +10,52 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sat, 11 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://yseeker.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 11 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://yseeker.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A100x8</title>
+      <link>https://yseeker.github.io/blog/tags/a100x8/</link>
+      <pubDate>Tue, 11 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://yseeker.github.io/blog/tags/a100x8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Azure</title>
+      <link>https://yseeker.github.io/blog/tags/azure/</link>
+      <pubDate>Tue, 11 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://yseeker.github.io/blog/tags/azure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cuda</title>
+      <link>https://yseeker.github.io/blog/tags/cuda/</link>
+      <pubDate>Tue, 11 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://yseeker.github.io/blog/tags/cuda/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>docker</title>
+      <link>https://yseeker.github.io/blog/tags/docker/</link>
+      <pubDate>Tue, 11 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://yseeker.github.io/blog/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GPU</title>
+      <link>https://yseeker.github.io/blog/tags/gpu/</link>
+      <pubDate>Tue, 11 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://yseeker.github.io/blog/tags/gpu/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>postdoc</title>
       <link>https://yseeker.github.io/blog/tags/postdoc/</link>
@@ -116,42 +161,6 @@
       <pubDate>Thu, 19 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://yseeker.github.io/blog/tags/seti/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Azure</title>
-      <link>https://yseeker.github.io/blog/tags/azure/</link>
-      <pubDate>Sat, 14 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://yseeker.github.io/blog/tags/azure/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>cuda</title>
-      <link>https://yseeker.github.io/blog/tags/cuda/</link>
-      <pubDate>Sat, 14 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://yseeker.github.io/blog/tags/cuda/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>docker</title>
-      <link>https://yseeker.github.io/blog/tags/docker/</link>
-      <pubDate>Sat, 14 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://yseeker.github.io/blog/tags/docker/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>GPU</title>
-      <link>https://yseeker.github.io/blog/tags/gpu/</link>
-      <pubDate>Sat, 14 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://yseeker.github.io/blog/tags/gpu/</guid>
       <description></description>
     </item>
     

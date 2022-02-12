@@ -2,8 +2,44 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://yseeker.github.io/blog/tags/a100x8/</loc>
+    <lastmod>2022-01-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yseeker.github.io/blog/tags/azure/</loc>
+    <lastmod>2022-01-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yseeker.github.io/blog/posts/tech/azure_vm_setup/</loc>
+    <lastmod>2022-01-11T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://yseeker.github.io/blog/categories/</loc>
-    <lastmod>2021-09-11T00:00:00+00:00</lastmod>
+    <lastmod>2022-01-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yseeker.github.io/blog/tags/cuda/</loc>
+    <lastmod>2022-01-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yseeker.github.io/blog/tags/docker/</loc>
+    <lastmod>2022-01-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yseeker.github.io/blog/tags/gpu/</loc>
+    <lastmod>2022-01-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yseeker.github.io/blog/posts/</loc>
+    <lastmod>2022-01-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yseeker.github.io/blog/tags/</loc>
+    <lastmod>2022-01-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yseeker.github.io/blog/posts/tech/</loc>
+    <lastmod>2022-01-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yseeker.github.io/blog/</loc>
+    <lastmod>2022-01-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yseeker.github.io/blog/categories/%E3%82%A8%E3%83%A9%E3%83%BC/</loc>
+    <lastmod>2022-01-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yseeker.github.io/blog/categories/%E6%8A%80%E8%A1%93/</loc>
+    <lastmod>2022-01-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://yseeker.github.io/blog/posts/us_life/last_day_santabarbara/</loc>
     <lastmod>2021-09-11T00:00:00+00:00</lastmod>
@@ -11,19 +47,10 @@
     <loc>https://yseeker.github.io/blog/tags/postdoc/</loc>
     <lastmod>2021-09-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yseeker.github.io/blog/posts/</loc>
-    <lastmod>2021-09-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yseeker.github.io/blog/tags/</loc>
-    <lastmod>2021-09-11T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://yseeker.github.io/blog/posts/us_life/</loc>
     <lastmod>2021-09-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://yseeker.github.io/blog/tags/uslife/</loc>
-    <lastmod>2021-09-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yseeker.github.io/blog/</loc>
     <lastmod>2021-09-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://yseeker.github.io/blog/categories/%E3%82%A2%E3%83%A1%E3%83%AA%E3%82%AB%E7%94%9F%E6%B4%BB/</loc>
@@ -80,37 +107,13 @@
     <loc>https://yseeker.github.io/blog/categories/%E6%B5%B7%E5%A4%96/</loc>
     <lastmod>2021-08-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yseeker.github.io/blog/tags/azure/</loc>
-    <lastmod>2021-08-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yseeker.github.io/blog/posts/tech/azure_vm_setup/</loc>
-    <lastmod>2021-08-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yseeker.github.io/blog/tags/cuda/</loc>
-    <lastmod>2021-08-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yseeker.github.io/blog/tags/docker/</loc>
-    <lastmod>2021-08-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yseeker.github.io/blog/tags/gpu/</loc>
-    <lastmod>2021-08-14T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://yseeker.github.io/blog/posts/us_life/shellfish_company/</loc>
-    <lastmod>2021-08-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yseeker.github.io/blog/posts/tech/</loc>
     <lastmod>2021-08-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://yseeker.github.io/blog/posts/us_life/-orthodontics/</loc>
     <lastmod>2021-08-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yseeker.github.io/blog/categories/%E3%82%A8%E3%83%A9%E3%83%BC/</loc>
-    <lastmod>2021-08-14T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://yseeker.github.io/blog/tags/%E3%83%95%E3%83%BC%E3%83%89/</loc>
-    <lastmod>2021-08-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yseeker.github.io/blog/categories/%E6%8A%80%E8%A1%93/</loc>
     <lastmod>2021-08-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://yseeker.github.io/blog/tags/%E6%AD%AF/</loc>
