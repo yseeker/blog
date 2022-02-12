@@ -38,7 +38,11 @@ sudo apt-get update
 sudo apt-get -y install cuda
 ```
 
-## bandwidthTest を行う（A100x8 ではここでエラーが出る、V100x4 では出ない）
+## Data Center GPU manager のインストール
+
+### bandwidthTest を行う（A100x8 ではここでエラーが出る、V100x4 では出ない）
+
+詳細は、[こちら](https://github.com/pytorch/pytorch/issues/35710#issuecomment-901013741)を参照
 
 ```
 git clone https://github.com/NVIDIA/cuda-samples.git
@@ -47,11 +51,7 @@ make
 ./bandwidthTest
 ```
 
-## Data Center GPU manager のインストール
-
-詳細は、[こちら](https://github.com/pytorch/pytorch/issues/35710#issuecomment-901013741)を参照
-
-A100x8 の場合は上の bandwidth テストで下記のようなエラーが出る。
+### エラー：CUDA error at bandwidthTest.cu:256 code=802(cudaErrorSystemNotReady) "cudaSetDevice(currentDevice)"
 
 ```
 cudaGetDeviceProperties returned 802
@@ -60,7 +60,7 @@ CUDA error at bandwidthTest.cu:256 code=802(cudaErrorSystemNotReady) "cudaSetDev
 it means that the Data Center GPU manager is not installed. What you want to do is to install the nvidia DCGM, fetch the repository keys:
 ```
 
-Data Center GPU manager をインストールする
+### Data Center GPU manager のインストール
 
 ```bash
 wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-ubuntu2004.pin
@@ -68,7 +68,7 @@ sudo mv cuda-ubuntu2004.pin /etc/apt/preferences.d/cuda-repository-pin-600
 sudo apt-key adv --keyserver-options http-proxy=http://proxy-chain.intel.com:911 --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/7fa2af80.pub
 ```
 
-おそらく下記のエラーが出る。
+### エラー：Connection timed out 　 you may need to manually set the proxy:
 
 ```
 Executing: /tmp/apt-key-gpghome.qjhmgicscb/gpg.1.sh --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/7fa2af80.pub
@@ -77,7 +77,7 @@ gpg: WARNING: unable to fetch URI https://developer.download.nvidia.com/compute/
 you may need to manually set the proxy:
 ```
 
-マニュアルでプロキシを設定し、再度 Data center GPU manger をインストール
+### マニュアルでプロキシを設定し、再度 Data center GPU manger をインストール
 
 ```
 sudo apt-key adv --keyserver-options http-proxy=<PROXY-ADDRESS:PORT> --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/7fa2af80.pub
@@ -86,39 +86,39 @@ sudo apt-get update
 sudo apt-get install -y datacenter-gpu-manager
 ```
 
-ホストエンジンの停止
+### ホストエンジンの停止
 
 ```bash
 sudo nv-hostengine -t
 ```
 
-fabricmanager を再起動
+### fabricmanager を再起動
 
 ```bash
 sudo service nvidia-fabricmanager start
 ```
 
-そうすると下記のエラーが出る。
+### エラー：Failed to start nvidia-fabricmanager.service: Unit nvidia-fabricmanager.service not found.
 
 ```
 Failed to start nvidia-fabricmanager.service: Unit nvidia-fabricmanager.service not found.
 install the fabric manager and start it:
 ```
 
-fabricmanager のインストール
+### fabricmanager のインストール
 
 ```bash
 sudo apt-get install cuda-drivers-fabricmanager-495
 sudo service nvidia-fabricmanager start
 ```
 
-bandwidthTest を行う
+### bandwidthTest を行ってエラーが無いことを確認
 
 ```
 ./bandwidthTest
 ```
 
-## Docker インストールとPytorchコンテナの確認
+## Docker インストールと Pytorch コンテナの確認
 
 ```
 sudo apt update
@@ -130,33 +130,21 @@ sudo docker pull nvcr.io/nvidia/pytorch:21.10-py3
 sudo docker run -it --gpus all --shm-size 8g --rm -v $PWD:/work -w /work 030c24bd72ba /bin/bash
 ```
 
+### エラー:　 docker: Error response from daemon: could not select device driver “” with capabilities: [[gpu]].
+
 ```
-import torch
-torch.cuda.is_available()
+docker: Error response from daemon: could not select device driver “” with capabilities: [[gpu]]
 ```
 
-# error 対処２
+### 解決方法
 
+[こちら](https://www.yurui-deep-learning.com/2021/08/17/docker-error-response-from-daemon-could-not-select-device-driver-with-capabilities-gpu/)を参照
+
+```
 curl -s -L https://nvidia.github.io/nvidia-container-runtime/gpgkey | sudo apt-key add -
 distribution=$(. /etc/os-release;echo $ID$VERSION_ID)
 curl -s -L https://nvidia.github.io/nvidia-container-runtime/$distribution/nvidia-container-runtime.list | sudo tee /etc/apt/sources.list.d/nvidia-container-runtime.list
 sudo apt-get update
 sudo apt-get install -y nvidia-container-runtime
 sudo service docker restart
-
-#データ転送
-cd
-git clone -b rosinality https://github.com/dtgrid/stylegan2-pytorch stylegan2-pytorch-rosinality
-
-# local
-
-mkdir results data
-scp -r saito@192.168.3.254:/home/saito/jpface005_lmdb ~/Downloads/
-scp -r -i ~/.ssh/keys/yusaito12.pem ~/Downloads/jpface005_lmdb azureuser@20.97.53.123:stylegan2-pytorch-rosinality/data/
-scp -r -i ~/.ssh/keys/yusaito12.pem /Users/yusaito/Downloads/checkpoint/250000.pt azureuser@20.97.53.123:stylegan2-pytorch-rosinality/checkpoint/
-
-tmux new -s pytorch
-sudo docker run -it --gpus all --shm-size 16g --rm -v $PWD:/work -w /work 030c24bd72ba /bin/bash
-
-python -m torch.distributed.launch --nproc_per_node=8 --master_port=8890 train.py --ckpt checkpoint/250000.pt --batch 8 --iter 380000 --augment --no_pl_reg data/jpface005_lmdb
-python -m torch.distributed.launch --nproc_per_node=8 --master_port=8890 train.py --batch 16 --iter 68000 --name 20211222_jpfac13_512 --size 512 --augment --no_pl_reg data/jpface013_512_lmdb2
+```
