@@ -67,6 +67,7 @@ wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/
 sudo mv cuda-ubuntu2004.pin /etc/apt/preferences.d/cuda-repository-pin-600
 sudo apt-key adv --keyserver-options http-proxy=http://proxy-chain.intel.com:911 --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/7fa2af80.pub
 ```
+おそらく下記のエラーが出る。
 
 ```
 Executing: /tmp/apt-key-gpghome.qjhmgicscb/gpg.1.sh --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/7fa2af80.pub
@@ -75,43 +76,52 @@ gpg: WARNING: unable to fetch URI https://developer.download.nvidia.com/compute/
 you may need to manually set the proxy:
 ```
 
+マニュアルでプロキシを設定し、再度Data center GPU mangerをインストール
+```
 sudo apt-key adv --keyserver-options http-proxy=<PROXY-ADDRESS:PORT> --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/7fa2af80.pub
-then you can install the repository and the package:
-
 sudo add-apt-repository "deb https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/ /"
 sudo apt-get update
 sudo apt-get install -y datacenter-gpu-manager
+```
+
 terminate the host engine:
-
+```
 sudo nv-hostengine -t
-and start the fabricmanager
+```
 
+start the fabricmanager
+```
 sudo service nvidia-fabricmanager start
+```
 
 Failed to start nvidia-fabricmanager.service: Unit nvidia-fabricmanager.service not found.
 install the fabric manager and start it:
 
-sudo apt-get install cuda-drivers-fabricmanager-<version>
+```
+sudo apt-get install cuda-drivers-fabricmanager-495
 sudo service nvidia-fabricmanager start
-
-sudo nv-hostengine -t
-
-sudo service nvidia-fabricmanager start
+```
 
 sudo apt-get install -y cuda-drivers-fabricmanager-495
 sudo service nvidia-fabricmanager start
 
 ./bandwidthTest
 
-#docker install イメージチェック
+## Docker のインストール
+```
 sudo apt update
 sudo apt install -y docker.io
 sudo docker pull nvcr.io/nvidia/pytorch:21.10-py3
+```
 
-sudo docker run -it --gpus all --shm-size 16g --rm -v $PWD:/work -w /work 030c24bd72ba /bin/bash
+```
+sudo docker run -it --gpus all --shm-size 8g --rm -v $PWD:/work -w /work 030c24bd72ba /bin/bash
+```
 
+```
 import torch
 torch.cuda.is_available()
+```
 
 # error 対処２
 
