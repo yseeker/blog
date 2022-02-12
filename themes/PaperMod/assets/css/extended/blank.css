@@ -34,14 +34,12 @@ img {
 @media print, screen and (min-width: 480px) {
   .post-title {
     font-size: 21pt !important;
-    line-height: 1.5pt !important;
   }
 }
 
 @media print, screen and (max-width: 479px) {
   .post-title {
     font-size: 18pt !important;
-    line-height: 1.3pt !important;
   }
 }
 
