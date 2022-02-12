@@ -1,6 +1,6 @@
 ---
 #author: "Hugo Authors"
-title: "AzureでA100x8（V100x4）のVMの環境構築とエラー対処"
+title: "AzureでA100x8（V100x4）のPytorch環境構築とエラー対処"
 date: "2022-01-11"
 #description: "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
 tags: ["Azure", "GPU", "cuda", "docker", "A100x8"]
@@ -23,7 +23,7 @@ chmod 400 ~/.ssh/keys/azure_vm_key.pem
 ssh を使って VM にアクセス
 
 ```bash
-ssh -i ~/.ssh/keys/azure_vm_key.pem azureuser@[public ip address of VM instance]
+ssh -i ~/.ssh/keys/azure_vm_key.pem azureuser@<public ip address of VM instance>
 ```
 
 ## Cuda をインストール
@@ -47,7 +47,7 @@ make
 ./bandwidthTest
 ```
 
-## A100x8 の場合のエラー対策
+## Data Center GPU manager のインストール
 
 詳細は、[こちら](https://github.com/pytorch/pytorch/issues/35710#issuecomment-901013741)を参照
 
@@ -67,6 +67,7 @@ wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/
 sudo mv cuda-ubuntu2004.pin /etc/apt/preferences.d/cuda-repository-pin-600
 sudo apt-key adv --keyserver-options http-proxy=http://proxy-chain.intel.com:911 --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/7fa2af80.pub
 ```
+
 おそらく下記のエラーが出る。
 
 ```
@@ -76,7 +77,8 @@ gpg: WARNING: unable to fetch URI https://developer.download.nvidia.com/compute/
 you may need to manually set the proxy:
 ```
 
-マニュアルでプロキシを設定し、再度Data center GPU mangerをインストール
+マニュアルでプロキシを設定し、再度 Data center GPU manger をインストール
+
 ```
 sudo apt-key adv --keyserver-options http-proxy=<PROXY-ADDRESS:PORT> --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/7fa2af80.pub
 sudo add-apt-repository "deb https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/ /"
@@ -84,30 +86,40 @@ sudo apt-get update
 sudo apt-get install -y datacenter-gpu-manager
 ```
 
-terminate the host engine:
-```
+ホストエンジンの停止
+
+```bash
 sudo nv-hostengine -t
 ```
 
-start the fabricmanager
-```
+fabricmanager を再起動
+
+```bash
 sudo service nvidia-fabricmanager start
 ```
 
-Failed to start nvidia-fabricmanager.service: Unit nvidia-fabricmanager.service not found.
-install the fabric manager and start it:
+そうすると下記のエラーが出る。
 
 ```
+Failed to start nvidia-fabricmanager.service: Unit nvidia-fabricmanager.service not found.
+install the fabric manager and start it:
+```
+
+fabricmanager のインストール
+
+```bash
 sudo apt-get install cuda-drivers-fabricmanager-495
 sudo service nvidia-fabricmanager start
 ```
 
-sudo apt-get install -y cuda-drivers-fabricmanager-495
-sudo service nvidia-fabricmanager start
+bandwidthTest を行う
 
+```
 ./bandwidthTest
+```
 
-## Docker のインストール
+## Docker インストールとPytorchコンテナの確認
+
 ```
 sudo apt update
 sudo apt install -y docker.io
