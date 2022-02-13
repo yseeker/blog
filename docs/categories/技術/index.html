@@ -139,6 +139,20 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2>loggerとprintとtqdmの併用
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>logger と print と tqdm を併用する場合は以下のコードをコピペする。
+参考
+ https://github.com/tqdm/tqdm#redirecting-writing https://qiita.com/mino-38/items/f09251d18fe3181bfbfd https://waregawa-log.hatenablog.com/entry/2020/01/01/100000 https://stackoverflow.com/questions/384076/how-can-i-color-python-logging-output  import contextlib import logging import logging.handlers import sys from time import sleep from tqdm import tqdm from tqdm.contrib import DummyTqdmFile class TqdmLoggingHandler(logging.Handler): colors = {&#34;INFO&#34;: &#34;\033[37m{}\033[0m&#34;, &#34;ERROR&#34;: &#34;\033[31m{}\033[0m&#34;} def __init__(self, level=logging.NOTSET): super().__init__(level) def emit(self, record): try: record.msg = TqdmLoggingHandler.colors.get(record.levelname, &#34;{}&#34;).format( record.msg ) msg = self.format(record) tqdm.write(msg, file=sys.stderr) self.flush() except Exception: self.handleError(record) class CustomFormatter(logging.Formatter): grey = &#34;\x1b[38;20m&#34; green = &#34;\x1b[32;20m&#34; yellow = &#34;\x1b[33;20m&#34; red = &#34;\x1b[31;20m&#34; bold_red = &#34;\x1b[31;1m&#34; reset = &#34;\x1b[0m&#34; format = &#34;[%(asctime)s] [%(levelname)s] [%(process)d] [%(name)s] [%(funcName)s] [%(lineno)d] %(message)s&#34; FORMATS = { logging....</p>
+  </section>
+  <footer class="entry-footer"><span title='2022-02-13 00:00:00 +0000 UTC'>February 13, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to loggerとprintとtqdmの併用" href="https://yseeker.github.io/blog/posts/tech/tqdm_logging/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2>AzureでA100x8（V100x4）のPytorch環境構築とエラー対処
     </h2>
   </header>

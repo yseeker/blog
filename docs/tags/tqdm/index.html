@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Technology | YS&#39;s blog</title>
+<title>tqdm | YS&#39;s blog</title>
 <meta name="keywords" content="" />
-<meta name="description" content="技術関連の記事を書きます。">
+<meta name="description" content="">
 <meta name="author" content="">
-<link rel="canonical" href="https://yseeker.github.io/blog/posts/tech/" />
+<link rel="canonical" href="https://yseeker.github.io/blog/tags/tqdm/" />
 <link crossorigin="anonymous" href="/blog/assets/css/stylesheet.min.3ba018f00189f7c5a65fcd82c3b57ccb79287a460ca825af96aa1532b7137b5f.css" integrity="sha256-O6AY8AGJ98WmX82Cw7V8y3koekYMqCWvlqoVMrcTe18=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://yseeker.github.io/blog/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://yseeker.github.io/blog/favicon-16x16.png">
@@ -19,7 +19,7 @@
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
 <meta name="generator" content="Hugo 0.91.2" />
-<link rel="alternate" type="application/rss+xml" href="https://yseeker.github.io/blog/posts/tech/index.xml">
+<link rel="alternate" type="application/rss+xml" href="https://yseeker.github.io/blog/tags/tqdm/index.xml">
 <noscript>
     <style>
         #theme-toggle,
@@ -56,38 +56,17 @@
         }
 
     </style>
-</noscript><meta property="og:title" content="Technology" />
-<meta property="og:description" content="技術関連の記事を書きます。" />
+</noscript><meta property="og:title" content="tqdm" />
+<meta property="og:description" content="" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://yseeker.github.io/blog/posts/tech/" /><meta property="og:image" content="https://yseeker.github.io/blog/papermod-cover.png"/>
+<meta property="og:url" content="https://yseeker.github.io/blog/tags/tqdm/" /><meta property="og:image" content="https://yseeker.github.io/blog/papermod-cover.png"/>
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://yseeker.github.io/blog/papermod-cover.png"/>
 
-<meta name="twitter:title" content="Technology"/>
-<meta name="twitter:description" content="技術関連の記事を書きます。"/>
+<meta name="twitter:title" content="tqdm"/>
+<meta name="twitter:description" content=""/>
 
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Posts",
-      "item": "https://yseeker.github.io/blog/posts/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "Technology",
-      "item": "https://yseeker.github.io/blog/posts/tech/"
-    }
-  ]
-}
-</script>
 </head>
 
 <body class="list" id="top">
@@ -154,14 +133,11 @@
     </nav>
 </header>
 <main class="main"> 
-<header class="page-header"><div class="breadcrumbs"><a href="https://yseeker.github.io/blog/">Home</a>&nbsp;»&nbsp;<a href="https://yseeker.github.io/blog/posts/">Posts</a></div>
-  <h1>Technology</h1>
-  <div class="post-description">
-    技術関連の記事を書きます。
-  </div>
+<header class="page-header"><div class="breadcrumbs"><a href="https://yseeker.github.io/blog/">Home</a>&nbsp;»&nbsp;<a href="https://yseeker.github.io/blog/tags/">Tags</a></div>
+  <h1>tqdm</h1>
 </header>
 
-<article class="post-entry"> 
+<article class="post-entry tag-entry"> 
   <header class="entry-header">
     <h2>loggerとprintとtqdmの併用
     </h2>
@@ -173,21 +149,6 @@
   </section>
   <footer class="entry-footer"><span title='2022-02-13 00:00:00 +0000 UTC'>February 13, 2022</span></footer>
   <a class="entry-link" aria-label="post link to loggerとprintとtqdmの併用" href="https://yseeker.github.io/blog/posts/tech/tqdm_logging/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>AzureでA100x8（V100x4）のPytorch環境構築とエラー対処
-    </h2>
-  </header>
-  <section class="entry-content">
-    <p>Azure の web で VM インスタンスを作成 VM インスタンスの作成はこちら 秘密鍵をダウンロードして、read 権限を与えていおく。
-cp ~/Downloads/your_key_name.pem ~/.ssh/keys/azure_vm_key.pem chmod 400 ~/.ssh/keys/azure_vm_key.pem ssh を使って VM にアクセス
-ssh -i ~/.ssh/keys/azure_vm_key.pem azureuser@&lt;public ip address of VM instance&gt; Cuda をインストール wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/cuda-ubuntu1804.pin sudo mv cuda-ubuntu1804.pin /etc/apt/preferences.d/cuda-repository-pin-600 wget https://developer.download.nvidia.com/compute/cuda/11.5.0/local_installers/cuda-repo-ubuntu1804-11-5-local_11.5.0-495.29.05-1_amd64.deb sudo dpkg -i cuda-repo-ubuntu1804-11-5-local_11.5.0-495.29.05-1_amd64.deb sudo apt-key add /var/cuda-repo-ubuntu1804-11-5-local/7fa2af80.pub sudo apt-get update sudo apt-get -y install cuda Data Center GPU manager のインストール（A100x8 の場合） bandwidthTest を行う 詳細は、こちらを参照。 A100x8 ではここでエラーが出る、V100x4 では出ない
-git clone https://github.com/NVIDIA/cuda-samples.git cd cuda-samples/Samples/bandwidthTest make ....</p>
-  </section>
-  <footer class="entry-footer"><span title='2022-01-11 00:00:00 +0000 UTC'>January 11, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to AzureでA100x8（V100x4）のPytorch環境構築とエラー対処" href="https://yseeker.github.io/blog/posts/tech/azure_vm_setup/"></a>
 </article>
     </main>
     

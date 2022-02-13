@@ -2,6 +2,39 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://yseeker.github.io/blog/categories/</loc>
+    <lastmod>2022-02-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yseeker.github.io/blog/posts/tech/tqdm_logging/</loc>
+    <lastmod>2022-02-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yseeker.github.io/blog/tags/logging/</loc>
+    <lastmod>2022-02-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yseeker.github.io/blog/posts/</loc>
+    <lastmod>2022-02-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yseeker.github.io/blog/tags/print/</loc>
+    <lastmod>2022-02-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yseeker.github.io/blog/tags/</loc>
+    <lastmod>2022-02-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yseeker.github.io/blog/posts/tech/</loc>
+    <lastmod>2022-02-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yseeker.github.io/blog/tags/tqdm/</loc>
+    <lastmod>2022-02-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yseeker.github.io/blog/</loc>
+    <lastmod>2022-02-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yseeker.github.io/blog/categories/%E6%8A%80%E8%A1%93/</loc>
+    <lastmod>2022-02-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yseeker.github.io/blog/tags/%E6%A8%99%E6%BA%96%E5%87%BA%E5%8A%9B/</loc>
+    <lastmod>2022-02-13T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://yseeker.github.io/blog/tags/a100x8/</loc>
     <lastmod>2022-01-11T00:00:00+00:00</lastmod>
   </url><url>
@@ -9,9 +42,6 @@
     <lastmod>2022-01-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://yseeker.github.io/blog/posts/tech/azure_vm_setup/</loc>
-    <lastmod>2022-01-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yseeker.github.io/blog/categories/</loc>
     <lastmod>2022-01-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://yseeker.github.io/blog/tags/cuda/</loc>
@@ -29,22 +59,7 @@
     <loc>https://yseeker.github.io/blog/tags/gpu/</loc>
     <lastmod>2022-01-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yseeker.github.io/blog/posts/</loc>
-    <lastmod>2022-01-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yseeker.github.io/blog/tags/</loc>
-    <lastmod>2022-01-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yseeker.github.io/blog/posts/tech/</loc>
-    <lastmod>2022-01-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yseeker.github.io/blog/</loc>
-    <lastmod>2022-01-11T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://yseeker.github.io/blog/categories/%E3%82%A8%E3%83%A9%E3%83%BC/</loc>
-    <lastmod>2022-01-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yseeker.github.io/blog/categories/%E6%8A%80%E8%A1%93/</loc>
     <lastmod>2022-01-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://yseeker.github.io/blog/posts/us_life/last_day_santabarbara/</loc>
