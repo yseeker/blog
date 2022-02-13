@@ -128,7 +128,12 @@ sudo service nvidia-fabricmanager start
 ./bandwidthTest
 ```
 
-###　（2 回目以降）VM インスタンス立ち上げ時にホストエンジンを停止し、fabric manager を再起動
+### VM インスタンス立ち上げ時にホストエンジンを停止し、fabric manager を再起動 （VM 立ち上げ２回目以降）
+
+```bash
+sudo nv-hostengine -t
+sudo service nvidia-fabricmanager start
+```
 
 ## Docker インストールと Pytorch コンテナの確認
 
