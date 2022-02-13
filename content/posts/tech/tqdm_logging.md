@@ -31,7 +31,7 @@ from tqdm.contrib import DummyTqdmFile
 
 
 class TqdmLoggingHandler(logging.Handler):
-    colors = {"INFO": "\033[37m{}\033[0m", "ERROR": "\033[31m{}\033[0m"}
+    colors = {"INFO": "\033[37m{}\033[0m"}
 
     def __init__(self, level=logging.NOTSET):
         super().__init__(level)
@@ -89,15 +89,6 @@ def setup_logger(name, logfile="log.log"):
     # create console handler with a INFO log level
     ch = TqdmLoggingHandler()
     ch.setLevel(logging.INFO)
-    # coloredlogs.install(
-    #     level="INFO",
-    #     logger=logger,
-    #     fmt="%(asctime)s : %(message)s",
-    #     datefmt="%Y/%m/%d %H:%M:%S",
-    # )
-    ch_formatter = logging.Formatter(
-        "[%(asctime)s] [%(levelname)s] [%(process)d] [%(name)s] [%(funcName)s] [%(lineno)d] %(message)s"
-    )
     ch.setFormatter(CustomFormatter())
 
     # add the handlers to the logger
@@ -138,5 +129,4 @@ with std_out_err_redirect_tqdm() as orig_stdout:
 
 # After the `with`, printing is restored
 print("Done!")
-
 ```
