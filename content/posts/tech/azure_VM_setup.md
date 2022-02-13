@@ -47,7 +47,7 @@ sudo apt-get update
 sudo apt-get -y install cuda
 ```
 
-## Data Center GPU manager のインストール
+## Data Center GPU manager のインストール（A100x8 の場合）
 
 ### bandwidthTest を行う
 
@@ -127,6 +127,8 @@ sudo service nvidia-fabricmanager start
 ```
 ./bandwidthTest
 ```
+
+###　[2 回目以降]　 VM インスタンス立ち上げ時にホストエンジンを停止し、fabric manager を再起動
 
 ## Docker インストールと Pytorch コンテナの確認
 
