@@ -2,8 +2,8 @@
 {{ with $related }}
 <h3>See Also</h3>
 <ul>
-	{{ range . }}
+	{{range . }}
 	<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-	{{ end }}
+	{{- end }}
 </ul>
 {{ end }}
