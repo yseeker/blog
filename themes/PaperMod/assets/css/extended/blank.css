@@ -120,10 +120,10 @@ img {
   }
 }
 
-.highlight .code {
-  font-size: 20px;
-}
-
 .post-footer ul {
   padding-inline-start: 20px;
+}
+
+.post-footer a {
+  text-decoration: underline;
 }
