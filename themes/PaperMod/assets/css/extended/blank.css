@@ -126,5 +126,19 @@ img {
 
 .post-footer a {
   text-decoration: underline;
-  line-height: 1.2;
+  line-height: 1.8;
+}
+
+@media print, screen and (min-width: 480px) {
+  .post-footer {
+    font-size: 17px;
+    line-height: 2;
+  }
+}
+
+@media print, screen and (max-width: 479px) {
+  .post-footer {
+    font-size: 16px;
+    line-height: 1.7;
+  }
 }
