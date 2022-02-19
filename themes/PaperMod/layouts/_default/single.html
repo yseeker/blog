@@ -36,6 +36,7 @@
   {{- end }}
 
   <footer class="post-footer">
+    {{ partial "related.html" . }}
     {{- if .Params.tags }}
     <ul class="post-tags">
       {{- range ($.GetTerms "tags") }}
@@ -55,5 +56,4 @@
   {{- partial "comments.html" . }}
   {{- end }}
 </article>
-{{ partial "related.html" . }}
 {{- end }}{{/* end main */}}
