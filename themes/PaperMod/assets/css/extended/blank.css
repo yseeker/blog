@@ -120,6 +120,8 @@ img {
   }
 }
 
-.highlight {
-  font-size: 18pt !important;
+@media print, screen and (min-width: 480px) {
+  .highlight {
+    font-size: 15pt !important;
+  }
 }
