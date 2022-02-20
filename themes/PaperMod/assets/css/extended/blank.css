@@ -122,6 +122,6 @@ img {
 
 @media print, screen and (min-width: 480px) {
   .highlight {
-    font-size: 15pt !important;
+    font-size: 14pt !important;
   }
 }
