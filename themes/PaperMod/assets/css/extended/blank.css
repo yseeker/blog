@@ -129,7 +129,7 @@ img {
 
 @media print, screen and (max-width: 479px) {
   .highlight {
-    font-size: 8pt !important;
+    font-size: 9pt !important;
     line-height: 1.8 !important;
   }
 }
