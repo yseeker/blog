@@ -189,3 +189,19 @@ pre[class*="language-"] {
 .token.style {
   color: #ffc56d;
 }
+
+pre {
+  margin: 1.3rem 0;
+  background: #1a2638;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 0.7em;
+  box-shadow: 0 4px 6px -1px #000e1e26;
+  word-break: normal;
+  word-wrap: normal;
+  display: flex;
+}
+
+.line-highlight {
+  background: #1a2638;
+}
