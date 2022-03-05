@@ -166,12 +166,10 @@ related:
   includeNewer: true
   indices:
     - name: tags
-      weight: 70
+      weight: 80
     - name: categories
       weight: 60
     - name: keywords
       weight: 50
-    - name: date
-      weight: 20
-  threshold: 70
+  threshold: 80
   toLower: true
