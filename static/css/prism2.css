@@ -107,17 +107,7 @@ pre[class*="language-"] {
 .token.prolog {
   color: #94a1b3;
 }
-.language-css .token.string,
-.style .token.string,
-.token.attr-name,
-.token.boolean,
-.token.entity,
-.token.number,
-.token.operator,
-.token.string,
-.token.url {
-  color: #ffc56d;
-}
+
 .token.atrule,
 .token.attr-value,
 .token.deleted,
@@ -180,6 +170,18 @@ pre[class*="language-"] {
 .token.attr-name {
   color: #ff8fa3;
 }
+/* .language-css .token.string,
+.style .token.string,
+.token.attr-name,
+.token.boolean,
+.token.entity,
+.token.number,
+.token.operator,
+.token.string,
+.token.url {
+  color: #ffc56d;
+} */
+
 /* .token.attr-value,
 .token.script,
 .token.script .token.keyword,
@@ -190,6 +192,18 @@ pre[class*="language-"] {
 .token.statement {
   color: #ffc56d;
 } */
+
+.language-css .token.string,
+.style .token.string,
+.token.attr-name,
+.token.boolean,
+.token.entity,
+.token.number,
+.token.operator,
+.token.string,
+.token.url {
+  color: #f3c57f;
+}
 
 .token.attr-value,
 .token.script,
