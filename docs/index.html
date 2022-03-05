@@ -208,6 +208,18 @@ git clone https://github.com/NVIDIA/cuda-samples.git cd cuda-samples/Samples/ban
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2>Ryzen Threadripper 3970XとRTX 3090を使ってnumpy, cupy ベンチマーク
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>numpy でベンチマーク # ファイル名: numpy_benchmark.py import os os.environ[&#34;OPENBLAS_NUM_THREADS&#34;] = &#34;32&#34; # import mkl # mkl.set_num_threads(32) import numpy as np import time from threadpoolctl import threadpool_info from pprint import pp pp(threadpool_info()) np.show_config() N_LOOP = 5 calc_eigh_time_list = [] calc_inv_time_list = [] calc_dot_time_list = [] calc_norm_time_list = [] for size in [5000, 10000, 20000]: print(f&#34;size : {size}&#34;) for i in range(3): np.random.seed(i) X = np.random.randn(size, size) t_start = time.time() np.linalg.eigh(X @ X.T) calc_eigh_time_list....</p>
+  </section>
+  <footer class="entry-footer"><span title='2022-01-11 00:00:00 +0000 UTC'>January 11, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to Ryzen Threadripper 3970XとRTX 3090を使ってnumpy, cupy ベンチマーク" href="https://yseeker.github.io/blog/posts/tech/benchmark/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2>Last day in Santa Barbara
     </h2>
   </header>
@@ -312,21 +324,6 @@ The Institute of Photonic Sciences @ Castelldefels, Spain リンダウの帰り�
   </section>
   <footer class="entry-footer"><span title='2021-08-14 00:00:00 +0000 UTC'>August 14, 2021</span></footer>
   <a class="entry-link" aria-label="post link to アメリカで矯正歯科に行った話" href="https://yseeker.github.io/blog/posts/us_life/-orthodontics/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Twenty-four seven --- ポスドク1年目の思い出
-    </h2>
-  </header>
-  <section class="entry-content">
-    <p>Twenty-four seven. 24時間365日。“いつでも&#34;を表す表現は日本語も英語もあまり変わらない。私はポスドク1年目はほぼ文字通り&#34;いつでも&#34;働いていた。実際には週7で1日12-13時間、365日のうち休んだのは10日くらいである。もちろん、研究自体は楽しかったし（特にはじめは新しい環境で新しいテーマだったので）、没頭できていたというのもあるが、その一方全く別の環境でもしっかりと結果を出したいという思いもあった。
-渡米前に英語の勉強を兼ねて&#34;Suits&#34;という弁護士が主役の法律事務所が舞台のアメリカドラマを見ていたのたが、そのメインキャラの一人であるHarvey SpecterがもうひとりのメインキャラであるMike Ross（当時はHarveyの弟子的ポジション）に次のようなことを言っていた。
- Now when I got here, I dominated. They thought I worked 100 hours a day. Now, no matter what time I get in, nobody questions my ability to get the job done. Get it through your head. First impressions last. Suits シーズン1 第３話
- 要するに「仕事は第一印象がすべて、最初に全力で頑張ることで信頼が得られる。」ということらしい。仕事の流儀というものは十人十色なので環境＋自分にあった流儀を見つけることが重要なのだと思うけど、当時はこのセリフに感化され、なんとなくアメリカってそういう感じなのかなと思い、自ら進んで冒頭で書いたようなハードワークをしたのである。当時ラボ内で自分が最も働いていたかと聞かれれば自信を持ってYesとは答えられないくらいに他のメンバーも働いていた。少なくとも私がラボにJoinした2018年当時はそれくらいハードワークなラボだった。そのハードワークの甲斐あってラボ内で数ヶ月である技術にとても詳しくなり（英語がかなり片言でも）信頼されるようになった。Covidのパンデミック以降は数ヶ月はラボに出入り禁止になり、出入りが許可されたあとも1実験室あたり1人などの制限が長期間続いたこともあり、私も含めラボ全体の労働時間は減った。</p>
-  </section>
-  <footer class="entry-footer"><span title='2021-08-12 00:00:00 +0000 UTC'>August 12, 2021</span></footer>
-  <a class="entry-link" aria-label="post link to Twenty-four seven --- ポスドク1年目の思い出" href="https://yseeker.github.io/blog/posts/us_life/first_year_pd/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
