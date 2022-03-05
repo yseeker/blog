@@ -125,3 +125,9 @@ img {
     font-size: 10pt !important;
   }
 }
+
+@media print, screen and (max-width: 479px) {
+  .highlight {
+    font-size: 9pt !important;
+  }
+}
