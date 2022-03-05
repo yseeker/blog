@@ -287,8 +287,8 @@ cp.linalg.norm : 11.1704 s
 | linalg.norm |    7.7727 sec     |    6.0329 sec    | 11.1704 sec |
 | linalg.eigh |    61.9019 sec    |   138.9376 sec   | 37.9862 sec |
 
-この４つの評価項目だと linalig.eigh （固有値計算） 以外は numpy (OpenBLAS)で良くて、固有値 は cupy で計算すれば良さそう。行列のサイズがもっと大きくなれば結果が変わるかもしれない。
+この４つの評価項目だと linalig.eigh （固有値計算） 以外は numpy (OpenBLAS)で良くて、固有値 は cupy で計算すれば良さそう。行列のサイズがもっと大きくなれば結果が変わるかもしれない。<br>
 （一概に CPU と GPU の比較といっても CPU 側ではスレッド数と BLAS でだいぶ結果が変わるので単純に比較はできなさそう。）
 
-**雑な結論**：サイズが 20000 までの行列なら Ryzen Threadripper 3970X ＆ numpy でだいたい OK。
+**雑な結論**：サイズが 20000 までの行列なら Ryzen Threadripper 3970X ＆ numpy でだいたい OK。<br>
 （ま、とは言っても普段行列計算しないんですけどね。）
