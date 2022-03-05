@@ -151,10 +151,7 @@ pre[class*="language-"] {
 .token.coord {
   color: #aad4ff;
 }
-.token.regex,
-.token.statement {
-  color: #ffc56d;
-}
+
 .token.placeholder,
 .token.variable {
   color: #fff;
@@ -183,11 +180,26 @@ pre[class*="language-"] {
 .token.attr-name {
   color: #ff8fa3;
 }
-.token.attr-value,
+/* .token.attr-value,
 .token.script,
 .token.script .token.keyword,
 .token.style {
   color: #ffc56d;
+}
+.token.regex,
+.token.statement {
+  color: #ffc56d;
+} */
+
+.token.attr-value,
+.token.script,
+.token.script .token.keyword,
+.token.style {
+  color: #f3c57f;
+}
+.token.regex,
+.token.statement {
+  color: #f3c57f;
 }
 
 pre {
