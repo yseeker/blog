@@ -202,18 +202,18 @@ pre[class*="language-"] {
 .token.operator,
 .token.string,
 .token.url {
-  color: #f3c57f;
+  color: #e7c187;
 }
 
 .token.attr-value,
 .token.script,
 .token.script .token.keyword,
 .token.style {
-  color: #f3c57f;
+  color: #e7c187;
 }
 .token.regex,
 .token.statement {
-  color: #f3c57f;
+  color: #e7c187;
 }
 
 pre {
