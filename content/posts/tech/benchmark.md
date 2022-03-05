@@ -1,6 +1,6 @@
 ---
 #author: "Hugo Authors"
-title: "Ryzen Threadripper 3970XとNvidia RTX 3090を使ってnumpy(Intel MKL and OpenBLAS)とcupyでベンチマーク"
+title: "Ryzen Threadripper 3970XとNVIDIA RTX 3090を使ってnumpy(Intel MKL and OpenBLAS)とcupyでベンチマーク"
 date: "2022-03-05"
 #description: "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
 tags:
@@ -9,7 +9,7 @@ tags:
     "cupy",
     "cuda",
     "Ryzen Threadripper 3970X",
-    "Nvidia RTX 3090",
+    "NVIDIA RTX 3090",
     "ベンチマーク",
   ]
 categories: ["技術", "ベンチマーク"]
