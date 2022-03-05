@@ -80,7 +80,7 @@ for size in [5000, 10000, 20000]:
 docker run --init --rm --shm-size 8g -v $PWD:/work -w /work  continuumio/anaconda3 python numpy_benchmark.py
 ```
 
-```bash
+```
 [{'filepath': '/opt/conda/lib/libmkl_rt.so.1',
   'prefix': 'libmkl_rt',
   'user_api': 'blas',
@@ -141,7 +141,7 @@ np.linalg.norm : 7.7727 s
 docker run --init --rm --shm-size 8g -v $PWD:/work -w /work  nvcr.io/nvidia/pytorch:21.11-py3 python numpy_benchmark.py
 ```
 
-```bash
+```
 [{'user_api': 'blas',
   'internal_api': 'openblas',
   'prefix': 'libopenblas',
@@ -260,7 +260,7 @@ for size in [5000, 10000, 20000]:
 docker run --init --rm --shm-size 8g --gpus all -v $PWD:/work -w /work  nvcr.io/nvidia/pytorch:21.11-py3 python cupy_benchmark.py
 ```
 
-```bash
+```
 size : 5000
 cp.linalg.eigh : 2.1541 s
 cp.linalg.inv : 0.8055 s

@@ -281,7 +281,7 @@ sudo apt-get -y install cuda
 <h3 id="bandwidthtest-を行う">bandwidthTest を行う<a hidden class="anchor" aria-hidden="true" href="#bandwidthtest-を行う">#</a></h3>
 <p>詳細は、<a href="https://github.com/pytorch/pytorch/issues/35710#issuecomment-901013741">こちら</a>を参照。
 A100x8 ではここでエラーが出る、V100x4 では出ない</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">git clone https://github.com/NVIDIA/cuda-samples.git
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone https://github.com/NVIDIA/cuda-samples.git
 cd cuda-samples/Samples/bandwidthTest
 make
 ./bandwidthTest
@@ -300,8 +300,8 @@ gpg: requesting key from &#39;https://developer.download.nvidia.com/compute/cuda
 gpg: WARNING: unable to fetch URI https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/7fa2af80.pub: Connection timed out
 you may need to manually set the proxy:
 </code></pre></div><h3 id="マニュアルでプロキシを設定し再度-data-center-gpu-manger-をインストール">マニュアルでプロキシを設定し、再度 Data center GPU manger をインストール<a hidden class="anchor" aria-hidden="true" href="#マニュアルでプロキシを設定し再度-data-center-gpu-manger-をインストール">#</a></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">sudo apt-key adv --keyserver-options http-proxy=&lt;PROXY-ADDRESS:PORT&gt; --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/7fa2af80.pub
-sudo add-apt-repository &#34;deb https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/ /&#34;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt-key adv --keyserver-options http-proxy<span style="color:#f92672">=</span>&lt;PROXY-ADDRESS:PORT&gt; --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/7fa2af80.pub
+sudo add-apt-repository <span style="color:#e6db74">&#34;deb https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/ /&#34;</span>
 sudo apt-get update
 sudo apt-get install -y datacenter-gpu-manager
 </code></pre></div><h3 id="ホストエンジンの停止">ホストエンジンの停止<a hidden class="anchor" aria-hidden="true" href="#ホストエンジンの停止">#</a></h3>
@@ -315,21 +315,21 @@ install the fabric manager and start it:
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt-get install cuda-drivers-fabricmanager-495
 sudo service nvidia-fabricmanager start
 </code></pre></div><h3 id="bandwidthtest-を行ってエラーが無いことを確認">bandwidthTest を行ってエラーが無いことを確認<a hidden class="anchor" aria-hidden="true" href="#bandwidthtest-を行ってエラーが無いことを確認">#</a></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">./bandwidthTest
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">./bandwidthTest
 </code></pre></div><h3 id="vm-インスタンス立ち上げ時にホストエンジンを停止しfabric-manager-を再起動-vm-立ち上げ２回目以降">VM インスタンス立ち上げ時にホストエンジンを停止し、fabric manager を再起動 （VM 立ち上げ２回目以降）<a hidden class="anchor" aria-hidden="true" href="#vm-インスタンス立ち上げ時にホストエンジンを停止しfabric-manager-を再起動-vm-立ち上げ２回目以降">#</a></h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo nv-hostengine -t
 sudo service nvidia-fabricmanager start
 </code></pre></div><h2 id="docker-インストールと-pytorch-コンテナの確認">Docker インストールと Pytorch コンテナの確認<a hidden class="anchor" aria-hidden="true" href="#docker-インストールと-pytorch-コンテナの確認">#</a></h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">sudo apt update
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt update
 sudo apt install -y docker.io
 sudo docker pull nvcr.io/nvidia/pytorch:21.10-py3
-</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">sudo docker run -it --gpus all --shm-size 8g --rm -v $PWD:/work -w /work 030c24bd72ba /bin/bash
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo docker run -it --gpus all --shm-size 8g --rm -v $PWD:/work -w /work 030c24bd72ba /bin/bash
 </code></pre></div><h3 id="エラー-docker-error-response-from-daemon-could-not-select-device-driver--with-capabilities-gpu">エラー:　 docker: Error response from daemon: could not select device driver “” with capabilities: [[gpu]].<a hidden class="anchor" aria-hidden="true" href="#エラー-docker-error-response-from-daemon-could-not-select-device-driver--with-capabilities-gpu">#</a></h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">docker: Error response from daemon: could not select device driver “” with capabilities: [[gpu]]
 </code></pre></div><h3 id="解決方法">解決方法<a hidden class="anchor" aria-hidden="true" href="#解決方法">#</a></h3>
 <p><a href="https://www.yurui-deep-learning.com/2021/08/17/docker-error-response-from-daemon-could-not-select-device-driver-with-capabilities-gpu/">こちら</a>を参照</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">curl -s -L https://nvidia.github.io/nvidia-container-runtime/gpgkey | sudo apt-key add -
-distribution=$(. /etc/os-release;echo $ID$VERSION_ID)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">curl -s -L https://nvidia.github.io/nvidia-container-runtime/gpgkey | sudo apt-key add -
+distribution<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>. /etc/os-release;echo $ID$VERSION_ID<span style="color:#66d9ef">)</span>
 curl -s -L https://nvidia.github.io/nvidia-container-runtime/$distribution/nvidia-container-runtime.list | sudo tee /etc/apt/sources.list.d/nvidia-container-runtime.list
 sudo apt-get update
 sudo apt-get install -y nvidia-container-runtime

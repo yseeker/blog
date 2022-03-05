@@ -54,7 +54,7 @@ sudo apt-get -y install cuda
 詳細は、[こちら](https://github.com/pytorch/pytorch/issues/35710#issuecomment-901013741)を参照。
 A100x8 ではここでエラーが出る、V100x4 では出ない
 
-```
+```bash
 git clone https://github.com/NVIDIA/cuda-samples.git
 cd cuda-samples/Samples/bandwidthTest
 make
@@ -89,7 +89,7 @@ you may need to manually set the proxy:
 
 ### マニュアルでプロキシを設定し、再度 Data center GPU manger をインストール
 
-```
+```bash
 sudo apt-key adv --keyserver-options http-proxy=<PROXY-ADDRESS:PORT> --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/7fa2af80.pub
 sudo add-apt-repository "deb https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/ /"
 sudo apt-get update
@@ -124,7 +124,7 @@ sudo service nvidia-fabricmanager start
 
 ### bandwidthTest を行ってエラーが無いことを確認
 
-```
+```bash
 ./bandwidthTest
 ```
 
@@ -137,13 +137,13 @@ sudo service nvidia-fabricmanager start
 
 ## Docker インストールと Pytorch コンテナの確認
 
-```
+```bash
 sudo apt update
 sudo apt install -y docker.io
 sudo docker pull nvcr.io/nvidia/pytorch:21.10-py3
 ```
 
-```
+```bash
 sudo docker run -it --gpus all --shm-size 8g --rm -v $PWD:/work -w /work 030c24bd72ba /bin/bash
 ```
 
@@ -157,7 +157,7 @@ docker: Error response from daemon: could not select device driver “” with c
 
 [こちら](https://www.yurui-deep-learning.com/2021/08/17/docker-error-response-from-daemon-could-not-select-device-driver-with-capabilities-gpu/)を参照
 
-```
+```bash
 curl -s -L https://nvidia.github.io/nvidia-container-runtime/gpgkey | sudo apt-key add -
 distribution=$(. /etc/os-release;echo $ID$VERSION_ID)
 curl -s -L https://nvidia.github.io/nvidia-container-runtime/$distribution/nvidia-container-runtime.list | sudo tee /etc/apt/sources.list.d/nvidia-container-runtime.list

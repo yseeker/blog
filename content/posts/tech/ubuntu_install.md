@@ -15,11 +15,11 @@ ubuntu 導入
 ログインエラー　
 ctrl + alt + F2 tty 仮想コンソール
 
-```
+```bash
 dpkg -l | grep nvidia
 ```
 
-```
+```bash
 sudo ubuntu-drivers install
 sudo reboot
 ```
@@ -37,8 +37,10 @@ https://tech.librastudio.co.jp/entry/index.php/2017/12/20/post-1756/
 
 ## docker 導入
 
+```bash
 curl -fsSL https://get.docker.com -o get-docker.sh
 DRY_RUN=1 sh ./get-docker.sh
+```
 
 docker 自動起動
 sudo systemctl start docker && sudo systemctl enable docker
