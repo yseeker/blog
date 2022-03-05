@@ -12,7 +12,7 @@ pre[class*="language-"] {
   word-spacing: normal;
   word-break: normal;
   word-wrap: normal;
-  line-height: 1.5;
+  line-height: 1.8 !important;
   -moz-tab-size: 4;
   -o-tab-size: 4;
   tab-size: 4;
@@ -204,7 +204,7 @@ pre[class*="language-"] {
 
 pre {
   margin: 1.3rem 0;
-  background: #1a2638;
+  background: #1a2638 !important;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   border-radius: 0.7em;
@@ -212,8 +212,10 @@ pre {
   word-break: normal;
   word-wrap: normal;
   display: flex;
+  line-height: 1.8 !important;
 }
 
 .line-highlight {
-  background: #1a2638;
+  background: #1a2638 !important;
+  line-height: 1.8 !important;
 }
