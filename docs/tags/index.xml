@@ -10,7 +10,61 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sun, 13 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://yseeker.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 05 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://yseeker.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>cuda</title>
+      <link>https://yseeker.github.io/blog/tags/cuda/</link>
+      <pubDate>Sat, 05 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://yseeker.github.io/blog/tags/cuda/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cupy</title>
+      <link>https://yseeker.github.io/blog/tags/cupy/</link>
+      <pubDate>Sat, 05 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://yseeker.github.io/blog/tags/cupy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>numpy</title>
+      <link>https://yseeker.github.io/blog/tags/numpy/</link>
+      <pubDate>Sat, 05 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://yseeker.github.io/blog/tags/numpy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nvidia RTX 3090</title>
+      <link>https://yseeker.github.io/blog/tags/nvidia-rtx-3090/</link>
+      <pubDate>Sat, 05 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://yseeker.github.io/blog/tags/nvidia-rtx-3090/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ryzen Threadripper 3970X</title>
+      <link>https://yseeker.github.io/blog/tags/ryzen-threadripper-3970x/</link>
+      <pubDate>Sat, 05 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://yseeker.github.io/blog/tags/ryzen-threadripper-3970x/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ベンチマーク</title>
+      <link>https://yseeker.github.io/blog/tags/%E3%83%99%E3%83%B3%E3%83%81%E3%83%9E%E3%83%BC%E3%82%AF/</link>
+      <pubDate>Sat, 05 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://yseeker.github.io/blog/tags/%E3%83%99%E3%83%B3%E3%83%81%E3%83%9E%E3%83%BC%E3%82%AF/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>logging</title>
       <link>https://yseeker.github.io/blog/tags/logging/</link>
@@ -66,24 +120,6 @@
     </item>
     
     <item>
-      <title>cuda</title>
-      <link>https://yseeker.github.io/blog/tags/cuda/</link>
-      <pubDate>Tue, 11 Jan 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://yseeker.github.io/blog/tags/cuda/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>cupy</title>
-      <link>https://yseeker.github.io/blog/tags/cupy/</link>
-      <pubDate>Tue, 11 Jan 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://yseeker.github.io/blog/tags/cupy/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Data Center GPU manager</title>
       <link>https://yseeker.github.io/blog/tags/data-center-gpu-manager/</link>
       <pubDate>Tue, 11 Jan 2022 00:00:00 +0000</pubDate>
@@ -116,42 +152,6 @@
       <pubDate>Tue, 11 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>https://yseeker.github.io/blog/tags/gpu/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>numpy</title>
-      <link>https://yseeker.github.io/blog/tags/numpy/</link>
-      <pubDate>Tue, 11 Jan 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://yseeker.github.io/blog/tags/numpy/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>RTX 3090</title>
-      <link>https://yseeker.github.io/blog/tags/rtx-3090/</link>
-      <pubDate>Tue, 11 Jan 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://yseeker.github.io/blog/tags/rtx-3090/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Ryzen Threadripper 3970X</title>
-      <link>https://yseeker.github.io/blog/tags/ryzen-threadripper-3970x/</link>
-      <pubDate>Tue, 11 Jan 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://yseeker.github.io/blog/tags/ryzen-threadripper-3970x/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ベンチマーク</title>
-      <link>https://yseeker.github.io/blog/tags/%E3%83%99%E3%83%B3%E3%83%81%E3%83%9E%E3%83%BC%E3%82%AF/</link>
-      <pubDate>Tue, 11 Jan 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://yseeker.github.io/blog/tags/%E3%83%99%E3%83%B3%E3%83%81%E3%83%9E%E3%83%BC%E3%82%AF/</guid>
       <description></description>
     </item>
     

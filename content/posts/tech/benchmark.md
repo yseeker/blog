@@ -1,7 +1,7 @@
 ---
 #author: "Hugo Authors"
-title: "Ryzen Threadripper 3970XとRTX 3090を使ってnumpy, cupy ベンチマーク"
-date: "2022-01-11"
+title: "Ryzen Threadripper 3970XとNvidia RTX 3090を使ってnumpy(Intel MKL and OpenBLAS)とcupyでベンチマーク"
+date: "2022-03-05"
 #description: "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
 tags:
   [
@@ -9,7 +9,7 @@ tags:
     "cupy",
     "cuda",
     "Ryzen Threadripper 3970X",
-    "RTX 3090",
+    "Nvidia RTX 3090",
     "ベンチマーク",
   ]
 categories: ["技術", "ベンチマーク"]
@@ -74,7 +74,7 @@ for size in [5000, 10000, 20000]:
     print(f"np.linalg.norm : {np.average(calc_norm_time_ndarr):.4f} s")
 ```
 
-### intel MKL の場合（スレッド数：32）
+### Intel MKL の場合（スレッド数：32）
 
 ```bash
 docker run --init --rm --shm-size 8g -v $PWD:/work -w /work  continuumio/anaconda3 python numpy_benchmark.py

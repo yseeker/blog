@@ -10,7 +10,7 @@ TocOpen: true
 draft: false
 ---
 
-この日にサンタバーバラに来てからあっという間に３年間が経った。２年間住んだ Berkshire Terrace ともお別れである。
+[この日](https://www.yusaito.com/blog/posts/us_life/first_day_santabarbara/)にサンタバーバラに来てからあっという間に３年間が経った。２年間住んだ Berkshire Terrace ともお別れである。
 家具の大部分は FaceBook のコミュニティを通して UCSB の学生に買い取ってもらったので大きいもので捨てるものはほとんど無かった。
 
 ![](images/2022-02-08-20-11-04.png#center)
