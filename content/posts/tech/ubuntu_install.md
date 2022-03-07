@@ -88,3 +88,9 @@ IPQoS none
 .ssh/config
 Host \*
 IPQoS none
+
+vscode 設定
+ファイルの上限を上げておく
+black, mypy, flake8, isort をインストール
+/usr/bin/python3 -m pip install -U mypy
+USER ではなく、ssh 側を設定
