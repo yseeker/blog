@@ -280,12 +280,14 @@ cp.linalg.norm : 11.1704 s
 
 ## 結果（size = 20000 の場合）
 
+<center>
 |     TH      | numpy (Intel MKL) | numpy (OpenBLAS) |    cupy     |
 | :---------: | :---------------: | :--------------: | :---------: |
 |     dot     |    7.9529 sec     |    6.3217 sec    | 11.0195 sec |
 | linalg.inv  |    10.3558 sec    |   10.5088 sec    | 15.2210 sec |
 | linalg.norm |    7.7727 sec     |    6.0329 sec    | 11.1704 sec |
 | linalg.eigh |    61.9019 sec    |   138.9376 sec   | 37.9862 sec |
+</center>
 
 この４つの評価項目だと linalig.eigh （固有値計算） 以外は numpy (OpenBLAS)で良くて、固有値 は cupy で計算すれば良さそう。行列のサイズがもっと大きくなれば結果が変わるかもしれない。<br>
 （一概に CPU と GPU の比較といっても CPU 側ではスレッド数と BLAS でだいぶ結果が変わるので単純に比較はできなさそう。）

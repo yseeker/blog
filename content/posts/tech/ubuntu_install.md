@@ -91,6 +91,17 @@ IPQoS none
 
 vscode 設定
 ファイルの上限を上げておく
+"Visual Studio Code is unable to watch for file changes in this large workspace" (error ENOSPC)#
+When you see this notification, it indicates that the VS Code file watcher is running out of handles because the workspace is large and contains many files. Before adjusting platform limits, make sure that potentially large folders, such as Python .venv, are added to the files.watcherExclude setting (more details below). The current limit can be viewed by running:
+
+cat /proc/sys/fs/inotify/max_user_watches
+The limit can be increased to its maximum by editing /etc/sysctl.conf (except on Arch Linux, read below) and adding this line to the end of the file:
+
+fs.inotify.max_user_watches=524288
+The new value can then be loaded in by running sudo sysctl -p.
+
+python と pylance の extention をインストール
 black, mypy, flake8, isort をインストール
 /usr/bin/python3 -m pip install -U mypy
 USER ではなく、ssh 側を設定
+error lense の delay の設定
