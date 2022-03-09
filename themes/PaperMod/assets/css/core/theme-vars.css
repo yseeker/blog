@@ -8,7 +8,8 @@
   --radius: 8px;
   --theme: rgb(255, 255, 255);
   --entry: rgb(255, 255, 255);
-  --primary: rgb(30, 30, 30);
+  --primary: rgb(45, 45, 45);
+  /* --primary: rgb(30, 30, 30); */
   --secondary: rgb(131, 131, 131);
   --tertiary: rgb(214, 214, 214);
   --content: rgb(31, 31, 31);
