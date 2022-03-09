@@ -4,7 +4,7 @@ title: "loggerとprintとtqdmの併用"
 date: "2022-02-13"
 #description: "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
 tags: ["tqdm", "logging", "print", "標準出力"]
-categories: ["技術"]
+categories: ["Tech"]
 ShowToc: true
 TocOpen: true
 draft: false

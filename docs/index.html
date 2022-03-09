@@ -181,6 +181,21 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2>自宅サーバー（Ubuntu 20.04 LTS）セットアップと諸々の初期設定
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>Ubuntu 20.04 LTS の導入 こちらの記事に従って、Ubuntu を入れた。
+ライブ USB の作成  Rufus をダウンロード iso ファイルをダウンロード USB を挿して、Rufus を使ってライブ USB を作成  Ubuntu のインストール  細かい設定はこちらの記事を参照  ##　インストール後にログインループになってログインできなくなった
+ ctrl &#43; alt &#43; F2で tty 仮想コンソールを開く Nvidia ドライバ, cuda があるかどうか確認  dpkg -l | grep nvidia dpkg -l | grep cuda ※もしですでにある場合は削除しておく
+sudo apt-get --purge remove nvidia-* sudo apt-get --purge remove cuda-*  GPU ドライバが無かったら下記で Nvidia ドライバを入れる  sudo ubuntu-drivers install sudo reboot または version 指定して入れる。...</p>
+  </section>
+  <footer class="entry-footer"><span title='2022-03-09 00:00:00 +0000 UTC'>March 9, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to 自宅サーバー（Ubuntu 20.04 LTS）セットアップと諸々の初期設定" href="https://yseeker.github.io/blog/posts/tech/ubuntu_install/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2>Ryzen Threadripper 3970XとNVIDIA RTX 3090を使ってnumpy(Intel MKL and OpenBLAS)とcupyでベンチマーク
     </h2>
   </header>
@@ -313,19 +328,6 @@ The Institute of Photonic Sciences @ Castelldefels, Spain リンダウの帰り�
   </section>
   <footer class="entry-footer"><span title='2021-08-14 00:00:00 +0000 UTC'>August 14, 2021</span></footer>
   <a class="entry-link" aria-label="post link to Shell Fish Company" href="https://yseeker.github.io/blog/posts/us_life/shellfish_company/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>アメリカで矯正歯科に行った話
-    </h2>
-  </header>
-  <section class="entry-content">
-    <p>以前の記事で書いた通り、私は渡米3ヶ月で歯の神経を抜いた。歯内療法科で専門医に歯の神経を抜いてもらった後に、すぐ隣の一般歯科の専門医に見てもらったのだが、その際に奥歯に過度な力が加わっているためこのまま放っておくと頭痛持ちになるかもしれないからどこかの矯正歯科に行ったほうが良いと言われた。当時は渡米直後ということもあり、仕事をするのに、もっと言えば生活していくのに精一杯だったためには華麗にスルーしてしまったのだが（金銭的にも余裕がなかった）、それから数ヶ月が経って一段落してやはり矯正歯科に行くことにした。お世辞にも健康で丈夫な体とは言えないので年をとってからの悩みの種を増やしたくなかったからである。それと矯正大国アメリカでの矯正を体験してみたかったというのも少しある。矯正歯科は、根管治療をしてくださった歯内療法科と一般歯科のすぐ近くにあるSanta Barbara Orthodontistというところにした。これらの歯科医院は全てAlamar Dental Centerに連なって存在している。これら以外にもあと3つくらい別の分野を専門とする歯科医院が存在している。
-初回相談でレントゲン写真などをとってもらい（無料）、治療完了までの予想期間や費用、完成予想図などを説明された。さて米国での治療費は日本に比べてかなり高いと言われるが、その数少ない例外が歯科矯正の治療費だと思う。アメリカでの平均治療費は約50万（うわさ）で、これは日本の平均的な治療費である約100万円（いくつかのサイトを適当に見て平均した）の半分である。その例に漏れず、私の場合も治療費は49万円だった。内訳は、表側治療の透明ブラケット＆ワイヤーで基本治療費56万円＋透明なブラケット3万円－保険適用10万円＝49万円である。この他に上下左右の真ん中あたりの歯の4本を&#34;同時に&#34;抜いたので、この矯正の費用とは別に一般歯科で数万円かかった。治療完了までの予想期間は2年弱と言われた。何事もなければ本帰国予定までちょうど2年だったのでまあ間に合うだろうと思っていた。もちろん当時はその後、Covid-19によるパンデミックが起こるとは夢にも思っていなかった。そんなこんなで帰国1ヶ月になって、主治医からは&#34;ぎりぎり間に合わない&#34;と言われて、日本で継続治療をできる矯正歯科医を絶賛探し中である。</p>
-  </section>
-  <footer class="entry-footer"><span title='2021-08-14 00:00:00 +0000 UTC'>August 14, 2021</span></footer>
-  <a class="entry-link" aria-label="post link to アメリカで矯正歯科に行った話" href="https://yseeker.github.io/blog/posts/us_life/-orthodontics/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

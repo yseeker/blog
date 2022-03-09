@@ -12,7 +12,7 @@ tags:
     "NVIDIA RTX 3090",
     "ベンチマーク",
   ]
-categories: ["技術", "ベンチマーク"]
+categories: ["Tech", "ベンチマーク"]
 ShowToc: true
 TocOpen: true
 draft: false

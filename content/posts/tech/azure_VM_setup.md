@@ -13,7 +13,7 @@ tags:
     "Data Center GPU manager",
     "fabricmanager",
   ]
-categories: ["技術", "エラー"]
+categories: ["Tech", "エラー"]
 ShowToc: true
 TocOpen: true
 draft: false

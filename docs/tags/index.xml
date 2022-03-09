@@ -10,7 +10,43 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sat, 05 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://yseeker.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 09 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://yseeker.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>docker</title>
+      <link>https://yseeker.github.io/blog/tags/docker/</link>
+      <pubDate>Wed, 09 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://yseeker.github.io/blog/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ssh</title>
+      <link>https://yseeker.github.io/blog/tags/ssh/</link>
+      <pubDate>Wed, 09 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://yseeker.github.io/blog/tags/ssh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ubunu</title>
+      <link>https://yseeker.github.io/blog/tags/ubunu/</link>
+      <pubDate>Wed, 09 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://yseeker.github.io/blog/tags/ubunu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>自宅サーバー</title>
+      <link>https://yseeker.github.io/blog/tags/%E8%87%AA%E5%AE%85%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC/</link>
+      <pubDate>Wed, 09 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://yseeker.github.io/blog/tags/%E8%87%AA%E5%AE%85%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>cuda</title>
       <link>https://yseeker.github.io/blog/tags/cuda/</link>
@@ -125,15 +161,6 @@
       <pubDate>Tue, 11 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>https://yseeker.github.io/blog/tags/data-center-gpu-manager/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>docker</title>
-      <link>https://yseeker.github.io/blog/tags/docker/</link>
-      <pubDate>Tue, 11 Jan 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://yseeker.github.io/blog/tags/docker/</guid>
       <description></description>
     </item>
     
