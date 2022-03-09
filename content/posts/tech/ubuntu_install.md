@@ -17,14 +17,14 @@ draft: false
 ### ライブ USB の作成
 
 - Rufus をダウンロード
-- iso ファイルをダウンロード
+- ubuntu の iso ファイルをダウンロード
 - USB を挿して、Rufus を使ってライブ USB を作成
 
 ### Ubuntu のインストール
 
 - 細かい設定は[こちらの記事](https://qiita.com/koba-jon/items/019a3b4eac4f60ca89c9)を参照
 
-##　インストール後にログインループになってログインできなくなった
+### インストール後にログインループになってログインできなくなった
 
 - `ctrl + alt + F2`で tty 仮想コンソールを開く
 - Nvidia ドライバ, cuda があるかどうか確認
