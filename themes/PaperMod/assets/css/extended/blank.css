@@ -97,7 +97,7 @@ img {
   .post-content {
     font-size: 17px;
     line-height: 2.1;
-    color: #3a3a3a !important;
+    color: #3f3f3f !important;
   }
 }
 
@@ -124,13 +124,13 @@ img {
 @media print, screen and (min-width: 480px) {
   .highlight {
     font-size: 11pt !important;
-    line-height: 1.7 !important;
+    line-height: 1.6 !important;
   }
 }
 
 @media print, screen and (max-width: 479px) {
   .highlight {
     font-size: 9pt !important;
-    line-height: 1.8 !important;
+    line-height: 1.6 !important;
   }
 }
