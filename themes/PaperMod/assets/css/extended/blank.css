@@ -63,7 +63,7 @@ img {
 
 @media print, screen and (min-width: 480px) {
   .dark .post-content h2 {
-    font-size: 16pt !important;
+    font-size: 17pt !important;
     padding: 4px 8px !important;
     border-left: 5px solid #8f89ff !important;
     line-height: 1.2 !important;
