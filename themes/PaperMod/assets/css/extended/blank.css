@@ -124,7 +124,7 @@ img {
 @media print, screen and (min-width: 480px) {
   .highlight {
     font-size: 11pt !important;
-    line-height: 1.5 !important;
+    line-height: 1 !important;
   }
 }
 
