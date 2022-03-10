@@ -226,10 +226,10 @@ pre {
   word-break: normal;
   word-wrap: normal;
   display: flex;
-  line-height: 1.8 !important;
+  line-height: 1.7 !important;
 }
 
 .line-highlight {
   background: #1a2638 !important;
-  line-height: 1.8 !important;
+  line-height: 1.7 !important;
 }
