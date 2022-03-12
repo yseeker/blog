@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>ポスドク on YS&#39;s blog</title>
-    <link>https://www.yusaito.com/blog/tags/%E3%83%9D%E3%82%B9%E3%83%89%E3%82%AF/</link>
+    <link>https://yseeker.github.io/blog/tags/%E3%83%9D%E3%82%B9%E3%83%89%E3%82%AF/</link>
     <description>Recent content in ポスドク on YS&#39;s blog</description>
     <image>
-      <url>https://www.yusaito.com/blog/papermod-cover.png</url>
-      <link>https://www.yusaito.com/blog/papermod-cover.png</link>
+      <url>https://yseeker.github.io/blog/papermod-cover.png</url>
+      <link>https://yseeker.github.io/blog/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Fri, 16 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.yusaito.com/blog/tags/%E3%83%9D%E3%82%B9%E3%83%89%E3%82%AF/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 16 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://yseeker.github.io/blog/tags/%E3%83%9D%E3%82%B9%E3%83%89%E3%82%AF/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>アメリカ生活ミニマムセットアップ（ポスドク＠サンタバーバラ版）</title>
-      <link>https://www.yusaito.com/blog/posts/us_life/lifesetup/</link>
+      <link>https://yseeker.github.io/blog/posts/us_life/lifesetup/</link>
       <pubDate>Fri, 16 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.yusaito.com/blog/posts/us_life/lifesetup/</guid>
+      <guid>https://yseeker.github.io/blog/posts/us_life/lifesetup/</guid>
       <description>初めてアメリカに来たのは、修士 1 年の頃、アメリカ物理学会＠デンバー（APS March Meeting）に参加したときのことだった。それから 4 年半後にアメリカ（カリフォルニア・サンタバーバラ）で生活することになるとは夢にも思ってなかった。
 サンタバーバラは海がとてもきれいなリゾート地である一方、リゾート地であるが故に田舎なので例えばニューヨークやボストン、ロサンゼルスなどと比べたらほとんど日本人がいない。もちろん知り合いなどもいなかった。そのためネット上で日本語で検索できる情報にはかなり限りがあり、事前準備や生活のセットアップで未知数なところがいろいろあった。そこで、もしサンタバーバラを含め、アメリカの都市部/田舎でポスドクなどを始める場合に参考になればと思い、そして自分が万が一またアメリカに行くことになった場合の備忘録として自分の場合の（でもある程度汎用的な）海外生活ミニマムセットアップを書き残してみる。
 渡米前  ビザの取得（渡米 2-3 ヶ月前）：ビザが無ければ入国できないので最重要事項である。ポスドクで行く場合はJ1 ビザが必要。取得は他の H1B などの労働ビザに比べたら圧倒的に簡単。普通は落ちないらしい。詳細情報/必要書類は公式 webを参照。DS2019（滞在/労働許可証のようなものでビザと同程度に重要）などの必要書類を大学から手に入れたら（大学の事務は遅いことがあるので、必要であればリマンドを絶えず送ったほうが良い）、面接の予約が埋まってたりするので例えば出国 2-3 ヶ月前に準備を始めるほうが良い。  ※以下の渡米前の準備は必ずしも必須ではないし、個人の価値観に左右される部分だと思う。私は渡米直後の面倒を最小限にするために行った。
@@ -28,10 +28,10 @@
     
     <item>
       <title>ラボの選び方</title>
-      <link>https://www.yusaito.com/blog/posts/us_life/lab_choice/</link>
+      <link>https://yseeker.github.io/blog/posts/us_life/lab_choice/</link>
       <pubDate>Wed, 07 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.yusaito.com/blog/posts/us_life/lab_choice/</guid>
+      <guid>https://yseeker.github.io/blog/posts/us_life/lab_choice/</guid>
       <description>一般論 人生は生きてるだけで丸儲けである。生き続けるためには心身を健康に保つことが大切である。したがって、ラボ選びで重要なのは、国内国外限らず心身を健康に保てることができるラボを選ぶことである。特に心理的安全性が保障されているラボを選ぶことが重要であると思う。そんなこと当たり前じゃないかと思う人も多いかもしれないが、当たり前と思っていても実行できないのが人間である。ラボ選びは人生を左右するといっても過言ではないと思う。（さてこんなことを冒頭から偉そうに書いている自分は心身の健康を気にしてラボを選んだのかと言われると後述の通り全くそんなことはないので、私も人間であるし、全くもって説得力がない。）アカハラやパワハラが存在すると予めわかっているならばそういうラボは避けたほうが良いのは言うまでもない。あからさまなアカハラやパワハラが存在しなくともボスやスタッフとの相性が悪く、精神的に来る場合もあるので難しいところである。ある人にとってベストな上司が別の人にとってベストな上司とは限らない。
 次に実験系のラボの場合（ここでいう実験系というのは研究がパソコンだけで完結せず、試薬や生物、大規模な実験装置、ロボットなどを用いる分野を指す）は、なるべく研究設備が整っていて、可能な限り研究費が潤沢なラボを選ぶほうが良い。研究設備とお金が潤沢にあればやりたいことはだいたいなんでもできる。時々研究テーマ&amp;quot;だけで&amp;quot;ラボを選ぶ人を見かけるが、研究テーマだけでラボを選んでも、そもそもそのテーマをやらせてもらえないかもしれないし、研究設備とお金がなければ研究の土俵に立てないかもしれないし、研究の興味が時間とともに変わるかもしれない、のであまりおすすめはしない。（理論系のラボの場合は研究テーマ重視で選んでも問題ないと思う。）研究テーマに関しては&amp;quot;興味がある&amp;quot;あるいは少なくとも&amp;quot;興味がなくはない&amp;quot;くらいでスクリーニングして、あとはなるべく研究設備が整っていてと研究費がたくさんあるラボに行くほうが多くの経験を積めると思う。
 さて以下の2つはオプショナルである。上で書いたことに比べたら些細な違いなのであまり気にしなくていいと個人的に思う。
