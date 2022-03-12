@@ -1,3 +1,3 @@
 User-agent: *
 Disallow:
-Sitemap: https://yseeker.github.io/blog/sitemap.xml
+Sitemap: https://www.yusaito.com/blog/sitemap.xml
