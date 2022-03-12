@@ -178,6 +178,161 @@
 
     </footer>
 </article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>自宅サーバー（Ubuntu 20.04 LTS）セットアップと諸々の初期設定
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>Ubuntu 20.04 LTS の導入 こちらの記事に従って、Ubuntu を入れた。
+ライブ USB の作成  Rufus をダウンロード ubuntu の iso ファイルをダウンロード USB を挿して、Rufus を使ってライブ USB を作成  Ubuntu のインストール  細かい設定はこちらの記事を参照  インストール後にログインループになってログインできなくなった  ctrl &#43; alt &#43; F2で tty 仮想コンソールを開く Nvidia ドライバ, cuda があるかどうか確認  dpkg -l | grep nvidia dpkg -l | grep cuda ※もしですでにある場合は削除しておく
+sudo apt-get --purge remove nvidia-* sudo apt-get --purge remove cuda-*  GPU ドライバが無かったら下記で Nvidia ドライバを入れる  sudo ubuntu-drivers install sudo reboot または version 指定して入れる。...</p>
+  </section>
+  <footer class="entry-footer"><span title='2022-03-09 00:00:00 +0000 UTC'>March 9, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to 自宅サーバー（Ubuntu 20.04 LTS）セットアップと諸々の初期設定" href="https://www.yusaito.com/blog/posts/tech/ubuntu_install/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>Ryzen Threadripper 3970XとNVIDIA RTX 3090を使ってnumpy(Intel MKL and OpenBLAS)とcupyでベンチマーク
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>numpy でベンチマーク # ファイル名: numpy_benchmark.py import os os.environ[&#34;OPENBLAS_NUM_THREADS&#34;] = &#34;32&#34; # import mkl # mkl.set_num_threads(32) import numpy as np import time from threadpoolctl import threadpool_info from pprint import pp pp(threadpool_info()) np.show_config() N_LOOP = 5 calc_eigh_time_list = [] calc_inv_time_list = [] calc_dot_time_list = [] calc_norm_time_list = [] for size in [5000, 10000, 20000]: print(f&#34;size : {size}&#34;) for i in range(3): np.random.seed(i) X = np.random.randn(size, size) t_start = time.time() np.linalg.eigh(X @ X.T) calc_eigh_time_list....</p>
+  </section>
+  <footer class="entry-footer"><span title='2022-03-05 00:00:00 +0000 UTC'>March 5, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to Ryzen Threadripper 3970XとNVIDIA RTX 3090を使ってnumpy(Intel MKL and OpenBLAS)とcupyでベンチマーク" href="https://www.yusaito.com/blog/posts/tech/benchmark/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>loggerとprintとtqdmの併用
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>logger と print と tqdm を併用する場合は以下のコードをコピペする。
+参考
+ https://github.com/tqdm/tqdm#redirecting-writing https://qiita.com/mino-38/items/f09251d18fe3181bfbfd https://waregawa-log.hatenablog.com/entry/2020/01/01/100000 https://stackoverflow.com/questions/384076/how-can-i-color-python-logging-output  import contextlib import logging import logging.handlers import sys from time import sleep from tqdm import tqdm from tqdm.contrib import DummyTqdmFile class TqdmLoggingHandler(logging.Handler): colors = {&#34;INFO&#34;: &#34;\033[37m{}\033[0m&#34;} def __init__(self, level=logging.NOTSET): super().__init__(level) def emit(self, record): try: record.msg = TqdmLoggingHandler.colors.get(record.levelname, &#34;{}&#34;).format( record.msg ) msg = self.format(record) tqdm.write(msg, file=sys.stderr) self.flush() except Exception: self.handleError(record) class CustomFormatter(logging.Formatter): grey = &#34;\x1b[38;20m&#34; green = &#34;\x1b[32;20m&#34; yellow = &#34;\x1b[33;20m&#34; red = &#34;\x1b[31;20m&#34; bold_red = &#34;\x1b[31;1m&#34; reset = &#34;\x1b[0m&#34; format = &#34;[%(asctime)s] [%(levelname)s] [%(process)d] [%(name)s] [%(funcName)s] [%(lineno)d] %(message)s&#34; FORMATS = { logging....</p>
+  </section>
+  <footer class="entry-footer"><span title='2022-02-13 00:00:00 +0000 UTC'>February 13, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to loggerとprintとtqdmの併用" href="https://www.yusaito.com/blog/posts/tech/tqdm_logging/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>AzureでA100x8（V100x4）のPytorch環境構築とエラー対処
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>Azure の web で VM インスタンスを作成 VM インスタンスの作成はこちら 秘密鍵をダウンロードして、read 権限を与えていおく。
+cp ~/Downloads/your_key_name.pem ~/.ssh/keys/azure_vm_key.pem chmod 400 ~/.ssh/keys/azure_vm_key.pem ssh を使って VM にアクセス
+ssh -i ~/.ssh/keys/azure_vm_key.pem azureuser@&lt;public ip address of VM instance&gt; Cuda をインストール wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/cuda-ubuntu1804.pin sudo mv cuda-ubuntu1804.pin /etc/apt/preferences.d/cuda-repository-pin-600 wget https://developer.download.nvidia.com/compute/cuda/11.5.0/local_installers/cuda-repo-ubuntu1804-11-5-local_11.5.0-495.29.05-1_amd64.deb sudo dpkg -i cuda-repo-ubuntu1804-11-5-local_11.5.0-495.29.05-1_amd64.deb sudo apt-key add /var/cuda-repo-ubuntu1804-11-5-local/7fa2af80.pub sudo apt-get update sudo apt-get -y install cuda Data Center GPU manager のインストール（A100x8 の場合） bandwidthTest を行う 詳細は、こちらを参照。 A100x8 ではここでエラーが出る、V100x4 では出ない
+git clone https://github.com/NVIDIA/cuda-samples.git cd cuda-samples/Samples/bandwidthTest make ....</p>
+  </section>
+  <footer class="entry-footer"><span title='2022-01-11 00:00:00 +0000 UTC'>January 11, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to AzureでA100x8（V100x4）のPytorch環境構築とエラー対処" href="https://www.yusaito.com/blog/posts/tech/azure_vm_setup/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>Last day in Santa Barbara
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>この日にサンタバーバラに来てからあっという間に３年間が経った。２年間住んだ Berkshire Terrace ともお別れである。 家具の大部分は FaceBook のコミュニティを通して UCSB の学生に買い取ってもらったので大きいもので捨てるものはほとんど無かった。
+窓際のL字型の机キッチン＆ダイニングアパートと壺2年間住んだアパート。Berkshire Terraceバスの中から見たダウンタウン  空港への道中</p>
+  </section>
+  <footer class="entry-footer"><span title='2021-09-11 00:00:00 +0000 UTC'>September 11, 2021</span></footer>
+  <a class="entry-link" aria-label="post link to Last day in Santa Barbara" href="https://www.yusaito.com/blog/posts/us_life/last_day_santabarbara/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>UCSBポスドク記
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>Henly Gateキャンパス内キャンパスビーチとラグーン2017年秋　海外ポスドクを志す 昔からいつかはアメリカで研究してみたいという漠然とした思いがあった。博士号取得後の2018年4月からの勤務先は決まっていたが、もしもうまく海外ポスドク先が決まれば退職して海外へ行くという意向をボス（予定）に相談したところ快諾して頂いた。この時期から海外ポスドク先を探し始めた。ラボ選びの方針は以前の記事で書いた通りである。また同時期にElings Prize Fellowshipにも応募した。
+2018年 2月 Elings Prize Fellowship のオファー 幸運にもカリフォルニア大学サンタバーバラ校からElings Prize Fellowshipのオファーレターを頂き（日本人初）、同大学のAndrea Youngグループに同年10月から行くことが決定した。
+※上のオファーレターによると2018年ではElings Prize Fellowshipの年間給与予定額は60000USD (~ 660万円)だが、2021年現在は公式サイトにある通り65000USDになっている。またUCサンタバーバラのポスドクの給与は年間2%上昇する（これはフェローシップに限らない）。したがって2021年現在Elings Prize Fellowshipを獲得すると1年目65000USD, 2年目66300USD, 3年目67626USD (~ 743万円) となる。
+2018年 3月　博士（工学）取得 博論審査を無事に通過して、東大から博士号が授与された。同時期に幸運にも日本学術振興会育志賞も頂いた。
+2018年 9月27日　渡米 アイラビスタの学生街でシェアハウスで暮らし始める。最初の1ヶ月は英語が分からなすぎて非常につらかった。 初見の装置の使い方の説明を理解するのが特に大変だった。食事に関しても、とりあえず空腹をしのいで明日生きていればそれで良いくらいの精神で朝夜菓子パンと昼はキャンパスのYOSHINOYAで食べていた。それから程なくして食事処をいくつか見つけ、朝はカロリーメイト、昼はサブウェイ、夜はサブウェイまたはインドカレーというスタイルになった。インドカレーは東京だとナンがデフォルトだがアイラビスタのインドカレー屋はライスがデフォルトだった。カレーは美味しかったが、ライスは美味しくなかった。またサブウェイをあまりに食べ過ぎていた時期もあり、一時期サブウェイを全く受けつけなくなった。家に帰るのは&#34;毎日&#34;夜10-12時くらいだった。以前の記事でも書いたが、アイラビスタは学生街でとても治安が良いので夜１時にぼーっと歩いていても全く身の危険を感じたことはない（アメリカの他の多くの場所ではこうはいかないと思う）。むしろ、頭上からかなり太めの枝が突然落ちてきたり（頭に落ちたら怪我では済まないかもしれない）、目の前で倒木したりなど人以外の要素で危険が多い。
+2018年 11月　ソーシャルセキュリティーナンバー（SSN）取得 アメリカ人にとって命の次に大事なSSN（納税者番号）を取得した。これがないとタックスリターンなどの場面で困る。
+2018年 12月　研究テーマ大幅変更 当初予定していた研究、つまりフェローシップ獲得用の書類で書いた研究計画、は非常に難しいことが分かったので、渡米から3ヶ月も経たずにあきらめ、全く別の研究テーマに切り替えた。 以後、フェローシップ獲得用の書類で書いた研究は一度も行っていない。
+2019年 1月　歯の神経を抜く この記事で書いたが、歯の神経を抜いた。アメリカで根管治療をうけるのはなかなか無い経験ではないかと思う。（もう一度したいとは思わない。）
+2019年 3月　アメリカ物理学会＠ボストン ボストンで開催されたアメリカ物理学会（正式にはAPS March Meeting）に参加した。大雪だった。ちなみにサンタバーバラは雪が降らない。翌年の同学会は開催２日前にCOVID-19の影響で突然キャンセルされた。
+2019年 6月　2人の学部生のメンターになる 自分が直接メンターをするUCSBの学部生（2年生と3年生）を２人受け持つことになった。２人には主に私の実験で使うサンプル作製の前半の部分を担当してもらった。
+2019年 6月下旬　引っ越し 妻が渡米してきてくれ、これを機に同じアイラビスタにある1bedroom (ほぼ1LDK) の部屋（前のシェアハウスから徒歩10-15分）に引っ越した。以後は妻が料理を作ってくれたおかげで、カロリーメイト、サブウェイ、インドカレー、そしてYOSHINOYAのローテーションからは卒業した。
+新しいアパート2019年 7-8月　リンダウ・ノーベル賞受賞者会議に参加 毎年、ドイツのリンダウに30名程度のノーベル賞受賞者が世界中から招待され、若手研究者（大学院生やポスドク）に対して講演やディスカッションを行って下さる会議に参加した。 日本人は10名程度参加していた。詳細はこちら。...</p>
+  </section>
+  <footer class="entry-footer"><span title='2021-09-10 00:00:00 +0000 UTC'>September 10, 2021</span></footer>
+  <a class="entry-link" aria-label="post link to UCSBポスドク記" href="https://www.yusaito.com/blog/posts/us_life/postdoc_memory/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>海外ポスドクになる方法と現地フェローシップ
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>ポスドク（Postdoctoral Researcher; 博士研究員）のポジションは世界中に無数にあるので博士号さえ持っていれば容易になれる（なりたいかどうかはもちろん人による）。日本から海外のポスドクを目指す際に多くの人はまず第一に海外学振をとることを目指すと思うが、少なくともアメリカに関しては、応募先のラボがある程度以上に研究費が潤沢であれば応募者側に明らかに問題がない限り（例えばコミュニケーションに極端に難がある、前所属で何らかの問題を起こしたなど）フェローシップ無しでもポスドクに応募して落ちることはまずない。“研究費に困っていない&#34;ラボの主宰者（PI）が、応募してくるポスドクを断る理由がほぼないのである。論文が 1 本もないからと言って海外ポスドクを諦める人をたまに見かけるが、アメリカには論文無しで学位をとってポスドクやってる人なんて山ほどいるから基本的には問題にはならないと思う。従って、海外ポスドクになりたい場合はいくつか研究費が潤沢そうで“良さげなラボ”の候補を決めてとりあえずメールを送ってみるのが良いと思う。ラボの PI のもとにはかなり多く（数十から 100 以上）の迷惑メールが届くので（メールアドレスを論文の責任著者として各論文誌の web サイトに公開しているため）、返信がなくともめげずに何度も送って見るのが良い。もちろんメールを送る前に学会などで顔見知りになっていればなお良いと思う。
+海外ポスドクになるには、1) フェローシップ無しで現地のラボに直接応募する（アメリカでは最も一般的）、2) 海外学振を獲得する、以外にも 3) 現地のフェローシップを獲得するという方法がある。現地のフェローシップというの国や地域、そして各研究機関が出しているフェローシップのことである。フェローシップ獲得のメリットは、お給料が同じ研究機関のポスドクよりも 100 万円前後高くなる（特に各研究機関が出している場合）のと、アカデミックキャリアを目指すのであれば研究費獲得実績と言う点でプラスになることである。デメリットは倍率が高い（例えば 30 倍-100 倍以上）のである程度は運である点である。例えば私が知っている物理関連分野で応募できるものをぱっと上げると
+ Pappalardo Fellowship (MIT, 物理分野) Miller Research Fellowship (UC Berkeley, 基礎研究全般) Kavli Institute at Cornell Postdoctoral Fellowships (Cornell, ナノサイエンス) Materials Science Postdoctoral Fellowship (Princeton, 材料科学) Elings Prize Fellowship (UC Santa Barbara, ナノサイエンス)  地域・国単位だと例えば
+ Marie Skłodowska-Curie Fellowship (ヨーロッパ) Banting Postdoctoral Fellowships (カナダ)  などがある。
+どの fellowship も似たような書類が要求される。例えば私が獲得した Elings Prize Fellowship の公式サイトから要求される書類を見てみると（特に太字の箇所はどこの応募する際にも要求されると思う）、...</p>
+  </section>
+  <footer class="entry-footer"><span title='2021-09-08 00:00:00 +0000 UTC'>September 8, 2021</span></footer>
+  <a class="entry-link" aria-label="post link to 海外ポスドクになる方法と現地フェローシップ" href="https://www.yusaito.com/blog/posts/us_life/fellowship/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>Kaggle：SETIコンペ参加記（ソロ銅：71th/768 teams）
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>SETI Breakthrough Listen - E.T. Signal SearchというKaggleの画像分類コンペに参加しました。
+結果 774チーム中74位でソロ銅でした。
+コンペの概要 Overviewのページには
+ In this competition, use your data science skills to help identify anomalous signals in scans of Breakthrough Listen targets. Because there are no confirmed examples of alien signals to use to train machine learning algorithms, the team included some simulated signals (that they call “needles”) in the haystack of data from the telescope. They have identified some of the hidden needles so that you can train your model to find more....</p>
+  </section>
+  <footer class="entry-footer"><span title='2021-08-19 00:00:00 +0000 UTC'>August 19, 2021</span></footer>
+  <a class="entry-link" aria-label="post link to Kaggle：SETIコンペ参加記（ソロ銅：71th/768 teams）" href="https://www.yusaito.com/blog/posts/kaggle/seti/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>写真で振り返るサンタバーバラ滞在記
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>渡米直後 渡米直後に最初に住んだ部屋。アイラビスタの Trigo Rd にある 7-8 人くらいが住めるシェアハウス。同じ時期に ICU から交換留学のような制度で女子学生が二人来ていた。彼女達は二人とも英語がペラペラでキャンパスの情報などを時折仕入れてくれたり、時には日本食をプレゼントしてくれたりなどとてもお世話になった。（学部生の彼女達からみたら私は毎日深夜頃にラボから部屋に帰ってくる異様な存在だったのではないかと思う。）
+アイラビスタの街並み アイラビスタは人口の大半が学生の街である。スケボーに乗ってる人やサーフボードを持ってる人を多数見かける。治安はとても良い。ニューヨークと比べて時間がとてもゆっくり流れていて、穏やかな人が多く、これといった（人種）差別を受けたことは 3 年間で一度もない。ただし、たまによそ見をしているスケボーダーが突っ込んできたり、スケボーダーが転んだ際にボードがこちらに突っ込んでくることがあるので注意。
+カリフォルニア大学サンタバーバラ校（UCSB） 多分 UCSB の正門（キャンパスの東側にある）。めったに使わない。 キャンパス内 キャンパスビーチ 研究で疲れたときはぼーっとビーチを見ると癒やされる。 Downtown 赤い屋根が特徴的なスペイン風の美しい建物が多い。ワイナリーや海鮮系のレストランも多い。 サンタバーバラはウニの名産地なので、Sushi Go Go と Shell fish company というお店で妻とウニを食べた。 以下はサンタバーバラ外の場所である。
+チャンネル諸島（Channel island） @ Ventura チャンネル諸島は、サンタバーバラ近くにベンチュラ郡に属する 8 つの島々で構成される諸島で国立公園にもなっている。シマハイイロギツネ(Island fox)という小柄なキツネが多数生息する。かなり人馴れしている。 リンダウ・ノーベル賞受賞者会議 @ Linadu, Germany 毎年 30 名程度のノーベル賞受賞者が世界中から招待され、若手研究者（大学院生やポスドク）に対して講演やディスカッションを行って下さる会議でドイツのリンダウで開催されている。 日本人は 10 名程度参加していた。詳細はこちら
+The Institute of Photonic Sciences @ Castelldefels, Spain リンダウの帰りにスペインのカステイダフェルス（Castelldefels）にある ICFO（The Institute of Photonic Sciences）という研究機関の中の Dimitri Efetov 研を訪問した。Prof. Efetov の大学院時代の研究テーマが私の大学院時代の研究テーマと似た内容だったために興味をもってもらい、大学院時代の研究テーマでセミナーをさせて頂いた。 ニューヨーク大学 @ NYC 2019 年 12 月頃（covid19 が中国で発見されたあたり？）にベクトルマグネット付きの希釈冷凍機を借りるためにニューヨーク大学の Javad Shabani 研究室を訪問した。冬のニューヨーク市は極寒で日によってはマイナス 10 度を下回ったりして顔中凍るかと思った。ニューヨーク市滞在中に体調を崩し、そこそこの熱（38 度以上）とひどい咳が出た。これがコロナの症状だったかどうかは今となっては知る由もない。ちなみに実験はうまくいかなかった（サンプルが全滅した）。 </p>
+  </section>
+  <footer class="entry-footer"><span title='2021-08-15 00:00:00 +0000 UTC'>August 15, 2021</span></footer>
+  <a class="entry-link" aria-label="post link to 写真で振り返るサンタバーバラ滞在記" href="https://www.yusaito.com/blog/posts/us_life/santabarbara_picture/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>Shell Fish Company
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>サンタバーバラのスターンズワーフの先端にあるShell Fish Companyという甲殻類がメインの海鮮料理店に行った。サンタバーバラはウニの名産地なので目的はウニだった。 ホタテの上に乗ったウニがとても美味しかった。</p>
+  </section>
+  <footer class="entry-footer"><span title='2021-08-14 00:00:00 +0000 UTC'>August 14, 2021</span></footer>
+  <a class="entry-link" aria-label="post link to Shell Fish Company" href="https://www.yusaito.com/blog/posts/us_life/shellfish_company/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="next" href="https://www.yusaito.com/blog/page/2/">Next Page »</a>
+  </nav>
+</footer>
     </main>
     
 <footer class="footer">

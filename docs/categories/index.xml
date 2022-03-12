@@ -9,6 +9,61 @@
       <link>https://www.yusaito.com/blog/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ja-jp</language><atom:link href="https://www.yusaito.com/blog/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>ja-jp</language>
+    <lastBuildDate>Wed, 09 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.yusaito.com/blog/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech</title>
+      <link>https://www.yusaito.com/blog/categories/tech/</link>
+      <pubDate>Wed, 09 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/categories/tech/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ベンチマーク</title>
+      <link>https://www.yusaito.com/blog/categories/%E3%83%99%E3%83%B3%E3%83%81%E3%83%9E%E3%83%BC%E3%82%AF/</link>
+      <pubDate>Sat, 05 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/categories/%E3%83%99%E3%83%B3%E3%83%81%E3%83%9E%E3%83%BC%E3%82%AF/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>エラー</title>
+      <link>https://www.yusaito.com/blog/categories/%E3%82%A8%E3%83%A9%E3%83%BC/</link>
+      <pubDate>Tue, 11 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/categories/%E3%82%A8%E3%83%A9%E3%83%BC/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>アメリカ生活</title>
+      <link>https://www.yusaito.com/blog/categories/%E3%82%A2%E3%83%A1%E3%83%AA%E3%82%AB%E7%94%9F%E6%B4%BB/</link>
+      <pubDate>Sat, 11 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/categories/%E3%82%A2%E3%83%A1%E3%83%AA%E3%82%AB%E7%94%9F%E6%B4%BB/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kaggle</title>
+      <link>https://www.yusaito.com/blog/categories/kaggle/</link>
+      <pubDate>Thu, 19 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/categories/kaggle/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>海外</title>
+      <link>https://www.yusaito.com/blog/categories/%E6%B5%B7%E5%A4%96/</link>
+      <pubDate>Sun, 15 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/categories/%E6%B5%B7%E5%A4%96/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
