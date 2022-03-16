@@ -58,7 +58,18 @@ sudo apt-get --purge remove nvidia-* sudo apt-get --purge remove cuda-*  GPU ド
         }
 
     </style>
-</noscript><meta property="og:title" content="自宅サーバー（Ubuntu 20.04 LTS）セットアップと諸々の初期設定" />
+</noscript>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-X5LTDFN76J"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-X5LTDFN76J', { 'anonymize_ip': false });
+}
+</script>
+<meta property="og:title" content="自宅サーバー（Ubuntu 20.04 LTS）セットアップと諸々の初期設定" />
 <meta property="og:description" content="Ubuntu 20.04 LTS の導入 こちらの記事に従って、Ubuntu を入れた。
 ライブ USB の作成  Rufus をダウンロード ubuntu の iso ファイルをダウンロード USB を挿して、Rufus を使ってライブ USB を作成  Ubuntu のインストール  細かい設定はこちらの記事を参照  インストール後にログインループになってログインできなくなった  ctrl &#43; alt &#43; F2で tty 仮想コンソールを開く Nvidia ドライバ, cuda があるかどうか確認  dpkg -l | grep nvidia dpkg -l | grep cuda ※もしですでにある場合は削除しておく
 sudo apt-get --purge remove nvidia-* sudo apt-get --purge remove cuda-*  GPU ドライバが無かったら下記で Nvidia ドライバを入れる  sudo ubuntu-drivers install sudo reboot または version 指定して入れる。" />

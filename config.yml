@@ -41,6 +41,7 @@ outputs:
     - RSS
     - JSON
 
+googleAnalytics: G-X5LTDFN76J
 params:
   assets:
     disableHLJS: true
@@ -98,7 +99,7 @@ params:
 
   # analytics:
   #     google:
-  #         SiteVerificationTag: "XYZabc"
+  #         SiteVerificationTag: "G-X5LTDFN76J"
 
   # assets:
   #     favicon: "<link / abs url>"
