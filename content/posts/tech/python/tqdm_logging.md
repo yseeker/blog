@@ -8,6 +8,8 @@ categories: ["Tech"]
 ShowToc: true
 TocOpen: true
 draft: false
+aliases:
+  - /posts/tech/tqdm_logging/
 ---
 
 logger と print と tqdm を併用する場合は以下のコードをコピペする。

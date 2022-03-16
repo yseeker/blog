@@ -16,6 +16,8 @@ categories: ["Tech", "ベンチマーク"]
 ShowToc: true
 TocOpen: true
 draft: false
+aliases:
+  - /posts/tech/benchmark/
 ---
 
 ## numpy でベンチマーク

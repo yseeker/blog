@@ -17,6 +17,8 @@ categories: ["Tech", "エラー"]
 ShowToc: true
 TocOpen: true
 draft: false
+aliases:
+  - /posts/tech/azure_vm_setup/
 ---
 
 ## Azure の web で VM インスタンスを作成

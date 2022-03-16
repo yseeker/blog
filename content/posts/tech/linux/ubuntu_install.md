@@ -8,6 +8,8 @@ categories: ["Tech"]
 ShowToc: true
 TocOpen: true
 draft: false
+aliases:
+  - /posts/tech/ubuntu_install/
 ---
 
 ## Ubuntu 20.04 LTS の導入

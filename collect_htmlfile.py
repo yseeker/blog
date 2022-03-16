@@ -76,7 +76,7 @@ for file_path in correct_html_list:
     file_path = "/".join(file_path.split("/")[1:-1])
     url_list.append(main_url + file_path + "/")
 
-len(f"total number of URLs : {len(url_list)}")
+print(len(f"total number of URLs : {len(url_list)}"))
 
 for url in url_list:
     content = {}
