@@ -1,7 +1,23 @@
 import datetime
 import glob
+import json
 import os
 import time
+
+import httplib2
+from oauth2client.service_account import ServiceAccountCredentials
+
+JSON_KEY_FILE = "client_secrets.json"
+
+SCOPES = ["https://www.googleapis.com/auth/indexing"]
+ENDPOINT = "https://indexing.googleapis.com/v3/urlNotifications:publish"
+
+
+# Authorize credentials
+credentials = ServiceAccountCredentials.from_json_keyfile_name(
+    JSON_KEY_FILE, scopes=SCOPES
+)
+http = credentials.authorize(httplib2.Http())
 
 
 def get_file_list(input_dir):
@@ -15,7 +31,7 @@ def get_file_list(input_dir):
     )
 
 
-def get_all_url():
+def get_all_file_path():
     file_list = get_file_list("docs/posts")
     main_url = "https://www.yusaito.com/blog/"
     tgt = []
@@ -34,52 +50,33 @@ def get_all_url():
             and len(file_path.split("/")) >= 5
         ):
             res.append(file_path)
-            # file_path = "/".join(file_path.split("/")[1:-1])
-            # res.append(main_url + file_path + "/")
 
     return res
 
 
-import json
-
-import httplib2
-from oauth2client.service_account import ServiceAccountCredentials
-
-JSON_KEY_FILE = "client_secrets.json"
-
-SCOPES = ["https://www.googleapis.com/auth/indexing"]
-ENDPOINT = "https://indexing.googleapis.com/v3/urlNotifications:publish"
-
-
-# Authorize credentials
-credentials = ServiceAccountCredentials.from_json_keyfile_name(
-    JSON_KEY_FILE, scopes=SCOPES
-)
-http = credentials.authorize(httplib2.Http())
-
-# Build the request body
-url_list = get_all_url()
+file_path_list = get_all_file_path()
 xml_list = set()
-for url in url_list:
-    if url.split(".")[-1] == "xml":
-        xml_list.add(url[:-3])
+for file_path in file_path_list:
+    if file_path.split(".")[-1] == "xml":
+        xml_list.add(file_path[:-3])
 html_list = []
-for url in url_list:
-    if url.split(".")[-1] == "html":
-        html_list.append(url)
+for file_path in file_path_list:
+    if file_path.split(".")[-1] == "html":
+        html_list.append(file_path)
 
 correct_html_list = []
-for url in html_list:
-    if url[:-4] not in xml_list:
-        correct_html_list.append(url)
+for file_path in html_list:
+    if file_path[:-4] not in xml_list:
+        correct_html_list.append(file_path)
 
-print(len(url_list), len(html_list), len(correct_html_list))
 
 url_list = []
 main_url = "https://www.yusaito.com/blog/"
 for file_path in correct_html_list:
     file_path = "/".join(file_path.split("/")[1:-1])
     url_list.append(main_url + file_path + "/")
+
+len(f"total number of URLs : {len(url_list)}")
 
 for url in url_list:
     content = {}
