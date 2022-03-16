@@ -8,7 +8,10 @@
     <loc>https://www.yusaito.com/blog/tags/docker/</loc>
     <lastmod>2022-03-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.yusaito.com/blog/tech/linux/</loc>
+    <loc>https://www.yusaito.com/blog/posts/tech/linux/</loc>
+    <lastmod>2022-03-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.yusaito.com/blog/posts/</loc>
     <lastmod>2022-03-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.yusaito.com/blog/tags/ssh/</loc>
@@ -20,7 +23,7 @@
     <loc>https://www.yusaito.com/blog/categories/tech/</loc>
     <lastmod>2022-03-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.yusaito.com/blog/tech/</loc>
+    <loc>https://www.yusaito.com/blog/posts/tech/</loc>
     <lastmod>2022-03-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.yusaito.com/blog/tags/ubunu/</loc>
@@ -32,7 +35,7 @@
     <loc>https://www.yusaito.com/blog/tags/%E8%87%AA%E5%AE%85%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC/</loc>
     <lastmod>2022-03-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.yusaito.com/blog/tech/linux/ubuntu_install/</loc>
+    <loc>https://www.yusaito.com/blog/posts/tech/linux/ubuntu_install/</loc>
     <lastmod>2022-03-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.yusaito.com/blog/tags/cuda/</loc>
@@ -47,13 +50,13 @@
     <loc>https://www.yusaito.com/blog/tags/nvidia-rtx-3090/</loc>
     <lastmod>2022-03-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.yusaito.com/blog/tech/python/</loc>
+    <loc>https://www.yusaito.com/blog/posts/tech/python/</loc>
     <lastmod>2022-03-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.yusaito.com/blog/tags/ryzen-threadripper-3970x/</loc>
     <lastmod>2022-03-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.yusaito.com/blog/tech/python/benchmark/</loc>
+    <loc>https://www.yusaito.com/blog/posts/tech/python/benchmark/</loc>
     <lastmod>2022-03-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.yusaito.com/blog/tags/%E3%83%99%E3%83%B3%E3%83%81%E3%83%9E%E3%83%BC%E3%82%AF/</loc>
@@ -62,7 +65,7 @@
     <loc>https://www.yusaito.com/blog/categories/%E3%83%99%E3%83%B3%E3%83%81%E3%83%9E%E3%83%BC%E3%82%AF/</loc>
     <lastmod>2022-03-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.yusaito.com/blog/tech/python/tqdm_logging/</loc>
+    <loc>https://www.yusaito.com/blog/posts/tech/python/tqdm_logging/</loc>
     <lastmod>2022-02-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.yusaito.com/blog/tags/logging/</loc>
@@ -83,7 +86,7 @@
     <loc>https://www.yusaito.com/blog/tags/azure/</loc>
     <lastmod>2022-01-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.yusaito.com/blog/tech/linux/azure_vm_setup/</loc>
+    <loc>https://www.yusaito.com/blog/posts/tech/linux/azure_vm_setup/</loc>
     <lastmod>2022-01-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.yusaito.com/blog/tags/data-center-gpu-manager/</loc>
@@ -149,10 +152,10 @@
     <loc>https://www.yusaito.com/blog/categories/kaggle/</loc>
     <lastmod>2021-08-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.yusaito.com/blog/tech/kaggle/</loc>
+    <loc>https://www.yusaito.com/blog/posts/tech/kaggle/</loc>
     <lastmod>2021-08-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.yusaito.com/blog/tech/kaggle/seti/</loc>
+    <loc>https://www.yusaito.com/blog/posts/tech/kaggle/seti/</loc>
     <lastmod>2021-08-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.yusaito.com/blog/tags/seti/</loc>
@@ -282,12 +285,12 @@
   </url><url>
     <loc>https://www.yusaito.com/blog/books/</loc>
   </url><url>
-    <loc>https://www.yusaito.com/blog/tech/bot/</loc>
+    <loc>https://www.yusaito.com/blog/posts/tech/bot/</loc>
   </url><url>
     <loc>https://www.yusaito.com/blog/search/</loc>
   </url><url>
     <loc>https://www.yusaito.com/blog/series/</loc>
   </url><url>
-    <loc>https://www.yusaito.com/blog/tech/leetcode_atcoder/</loc>
+    <loc>https://www.yusaito.com/blog/posts/tech/leetcode_atcoder/</loc>
   </url>
 </urlset>
