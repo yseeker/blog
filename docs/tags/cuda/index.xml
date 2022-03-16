@@ -13,19 +13,19 @@
     <lastBuildDate>Sat, 05 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.yusaito.com/blog/tags/cuda/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ryzen Threadripper 3970XとNVIDIA RTX 3090を使ってnumpy(Intel MKL and OpenBLAS)とcupyでベンチマーク</title>
-      <link>https://www.yusaito.com/blog/tech/python/benchmark/</link>
+      <link>https://www.yusaito.com/blog/posts/tech/python/benchmark/</link>
       <pubDate>Sat, 05 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.yusaito.com/blog/tech/python/benchmark/</guid>
+      <guid>https://www.yusaito.com/blog/posts/tech/python/benchmark/</guid>
       <description>numpy でベンチマーク # ファイル名: numpy_benchmark.py import os os.environ[&amp;#34;OPENBLAS_NUM_THREADS&amp;#34;] = &amp;#34;32&amp;#34; # import mkl # mkl.set_num_threads(32) import numpy as np import time from threadpoolctl import threadpool_info from pprint import pp pp(threadpool_info()) np.show_config() N_LOOP = 5 calc_eigh_time_list = [] calc_inv_time_list = [] calc_dot_time_list = [] calc_norm_time_list = [] for size in [5000, 10000, 20000]: print(f&amp;#34;size : {size}&amp;#34;) for i in range(3): np.random.seed(i) X = np.random.randn(size, size) t_start = time.time() np.linalg.eigh(X @ X.T) calc_eigh_time_list.</description>
     </item>
     
     <item>
       <title>AzureでA100x8（V100x4）のPytorch環境構築とエラー対処</title>
-      <link>https://www.yusaito.com/blog/us_life/azure_vm_setup/</link>
+      <link>https://www.yusaito.com/blog/posts/tech/linux/azure_vm_setup/</link>
       <pubDate>Tue, 11 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.yusaito.com/blog/us_life/azure_vm_setup/</guid>
+      <guid>https://www.yusaito.com/blog/posts/tech/linux/azure_vm_setup/</guid>
       <description>Azure の web で VM インスタンスを作成 VM インスタンスの作成はこちら 秘密鍵をダウンロードして、read 権限を与えていおく。
 cp ~/Downloads/your_key_name.pem ~/.ssh/keys/azure_vm_key.pem chmod 400 ~/.ssh/keys/azure_vm_key.pem ssh を使って VM にアクセス
 ssh -i ~/.ssh/keys/azure_vm_key.pem azureuser@&amp;lt;public ip address of VM instance&amp;gt; Cuda をインストール wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/cuda-ubuntu1804.pin sudo mv cuda-ubuntu1804.pin /etc/apt/preferences.d/cuda-repository-pin-600 wget https://developer.download.nvidia.com/compute/cuda/11.5.0/local_installers/cuda-repo-ubuntu1804-11-5-local_11.5.0-495.29.05-1_amd64.deb sudo dpkg -i cuda-repo-ubuntu1804-11-5-local_11.5.0-495.29.05-1_amd64.deb sudo apt-key add /var/cuda-repo-ubuntu1804-11-5-local/7fa2af80.pub sudo apt-get update sudo apt-get -y install cuda Data Center GPU manager のインストール（A100x8 の場合） bandwidthTest を行う 詳細は、こちらを参照。 A100x8 ではここでエラーが出る、V100x4 では出ない

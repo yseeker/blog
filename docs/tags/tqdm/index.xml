@@ -13,10 +13,10 @@
     <lastBuildDate>Sun, 13 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.yusaito.com/blog/tags/tqdm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>loggerとprintとtqdmの併用</title>
-      <link>https://www.yusaito.com/blog/tech/python/tqdm_logging/</link>
+      <link>https://www.yusaito.com/blog/posts/tech/python/tqdm_logging/</link>
       <pubDate>Sun, 13 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.yusaito.com/blog/tech/python/tqdm_logging/</guid>
+      <guid>https://www.yusaito.com/blog/posts/tech/python/tqdm_logging/</guid>
       <description>logger と print と tqdm を併用する場合は以下のコードをコピペする。
 参考
  https://github.com/tqdm/tqdm#redirecting-writing https://qiita.com/mino-38/items/f09251d18fe3181bfbfd https://waregawa-log.hatenablog.com/entry/2020/01/01/100000 https://stackoverflow.com/questions/384076/how-can-i-color-python-logging-output  import contextlib import logging import logging.handlers import sys from time import sleep from tqdm import tqdm from tqdm.contrib import DummyTqdmFile class TqdmLoggingHandler(logging.Handler): colors = {&amp;#34;INFO&amp;#34;: &amp;#34;\033[37m{}\033[0m&amp;#34;} def __init__(self, level=logging.NOTSET): super().__init__(level) def emit(self, record): try: record.msg = TqdmLoggingHandler.colors.get(record.levelname, &amp;#34;{}&amp;#34;).format( record.msg ) msg = self.format(record) tqdm.write(msg, file=sys.stderr) self.flush() except Exception: self.handleError(record) class CustomFormatter(logging.Formatter): grey = &amp;#34;\x1b[38;20m&amp;#34; green = &amp;#34;\x1b[32;20m&amp;#34; yellow = &amp;#34;\x1b[33;20m&amp;#34; red = &amp;#34;\x1b[31;20m&amp;#34; bold_red = &amp;#34;\x1b[31;1m&amp;#34; reset = &amp;#34;\x1b[0m&amp;#34; format = &amp;#34;[%(asctime)s] [%(levelname)s] [%(process)d] [%(name)s] [%(funcName)s] [%(lineno)d] %(message)s&amp;#34; FORMATS = { logging.</description>
