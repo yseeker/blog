@@ -31,10 +31,11 @@ def get_all_url():
     for file_path, _ in sorted_file_list_with_timestamp:
         if (
             not ("page" in file_path or ".png" in file_path or ".jpg" in file_path)
-            and len(file_path.split("/")) == 5
+            and len(file_path.split("/")) >= 5
         ):
-            file_path = "/".join(file_path.split("/")[1:-1])
-            res.append(main_url + file_path + "/")
+            res.append(file_path)
+            # file_path = "/".join(file_path.split("/")[1:-1])
+            # res.append(main_url + file_path + "/")
 
     return res
 
@@ -58,6 +59,27 @@ http = credentials.authorize(httplib2.Http())
 
 # Build the request body
 url_list = get_all_url()
+xml_list = set()
+for url in url_list:
+    if url.split(".")[-1] == "xml":
+        xml_list.add(url[:-3])
+html_list = []
+for url in url_list:
+    if url.split(".")[-1] == "html":
+        html_list.append(url)
+
+correct_html_list = []
+for url in html_list:
+    if url[:-4] not in xml_list:
+        correct_html_list.append(url)
+
+print(len(url_list), len(html_list), len(correct_html_list))
+
+url_list = []
+main_url = "https://www.yusaito.com/blog/"
+for file_path in correct_html_list:
+    file_path = "/".join(file_path.split("/")[1:-1])
+    url_list.append(main_url + file_path + "/")
 
 for url in url_list:
     content = {}
