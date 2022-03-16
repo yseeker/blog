@@ -1,5 +1,5 @@
 ---
-title: Python
-summary: Contains posts related to `python`
-description: Python関連の記事を書きます。
+title: Linux
+summary: Contains posts related to `linux`
+description: Linuxやサーバー関連の記事を書きます。
 ---
