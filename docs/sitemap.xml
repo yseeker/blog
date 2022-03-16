@@ -8,9 +8,6 @@
     <loc>https://www.yusaito.com/blog/tags/docker/</loc>
     <lastmod>2022-03-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.yusaito.com/blog/tech/linux/</loc>
-    <lastmod>2022-03-09T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://www.yusaito.com/blog/tags/ssh/</loc>
     <lastmod>2022-03-09T00:00:00+00:00</lastmod>
   </url><url>
@@ -32,7 +29,7 @@
     <loc>https://www.yusaito.com/blog/tags/%E8%87%AA%E5%AE%85%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC/</loc>
     <lastmod>2022-03-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.yusaito.com/blog/tech/linux/ubuntu_install/</loc>
+    <loc>https://www.yusaito.com/blog/tech/ubuntu_install/</loc>
     <lastmod>2022-03-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.yusaito.com/blog/tags/cuda/</loc>
@@ -83,7 +80,7 @@
     <loc>https://www.yusaito.com/blog/tags/azure/</loc>
     <lastmod>2022-01-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.yusaito.com/blog/tech/linux/azure_vm_setup/</loc>
+    <loc>https://www.yusaito.com/blog/tech/azure_vm_setup/</loc>
     <lastmod>2022-01-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.yusaito.com/blog/tags/data-center-gpu-manager/</loc>
