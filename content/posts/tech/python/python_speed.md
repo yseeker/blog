@@ -8,8 +8,6 @@ categories: ["Kaggle"]
 ShowToc: true
 TocOpen: true
 draft: true
-aliases:
-  - /posts/tech/benchmark/
 ---
 
 https://qiita.com/sotasato/items/cc36a532ba6487dd3dba#1-1-python%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88%E3%81%AE%E6%9B%B8%E3%81%8D%E6%96%B9%E3%82%92%E8%A6%8B%E7%9B%B4%E3%81%99
