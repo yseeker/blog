@@ -7,7 +7,7 @@
 <meta name="robots" content="index, follow">
 <title>Ryzen Threadripper 3970XとNVIDIA RTX 3090を使ってnumpy(Intel MKL and OpenBLAS)とcupyでベンチマーク | YS&#39;s blog</title>
 <meta name="keywords" content="numpy, cupy, cuda, Ryzen Threadripper 3970X, NVIDIA RTX 3090, ベンチマーク" />
-<meta name="description" content="numpy でベンチマーク # ファイル名: numpy_benchmark.py import os os.environ[&#34;OPENBLAS_NUM_THREADS&#34;] = &#34;32&#34; # import mkl # mkl.set_num_threads(32) import numpy as np import time from threadpoolctl import threadpool_info from pprint import pp pp(threadpool_info()) np.show_config() N_LOOP = 5 calc_eigh_time_list = [] calc_inv_time_list = [] calc_dot_time_list = [] calc_norm_time_list = [] for size in [5000, 10000, 20000]: print(f&#34;size : {size}&#34;) for i in range(3): np.random.seed(i) X = np.random.randn(size, size) t_start = time.time() np.linalg.eigh(X @ X.T) calc_eigh_time_list.">
+<meta name="description" content="Ryzen Threadripper 3970Xは最強">
 <meta name="author" content="">
 <link rel="canonical" href="https://www.yusaito.com/blog/posts/tech/python/numpy-benchmark-ryzen-threadripper/" />
 <meta name="google-site-verification" content="7pz_dAQx7-r3P-mr6XGvIVQx47QN5DmiWRVLEocHAIM" />
@@ -68,7 +68,7 @@ if (!doNotTrack) {
 }
 </script>
 <meta property="og:title" content="Ryzen Threadripper 3970XとNVIDIA RTX 3090を使ってnumpy(Intel MKL and OpenBLAS)とcupyでベンチマーク" />
-<meta property="og:description" content="numpy でベンチマーク # ファイル名: numpy_benchmark.py import os os.environ[&#34;OPENBLAS_NUM_THREADS&#34;] = &#34;32&#34; # import mkl # mkl.set_num_threads(32) import numpy as np import time from threadpoolctl import threadpool_info from pprint import pp pp(threadpool_info()) np.show_config() N_LOOP = 5 calc_eigh_time_list = [] calc_inv_time_list = [] calc_dot_time_list = [] calc_norm_time_list = [] for size in [5000, 10000, 20000]: print(f&#34;size : {size}&#34;) for i in range(3): np.random.seed(i) X = np.random.randn(size, size) t_start = time.time() np.linalg.eigh(X @ X.T) calc_eigh_time_list." />
+<meta property="og:description" content="Ryzen Threadripper 3970Xは最強" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.yusaito.com/blog/posts/tech/python/numpy-benchmark-ryzen-threadripper/" /><meta property="og:image" content="https://www.yusaito.com/blog/papermod-cover.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-03-05T00:00:00&#43;00:00" />
@@ -78,7 +78,7 @@ if (!doNotTrack) {
 <meta name="twitter:image" content="https://www.yusaito.com/blog/papermod-cover.png"/>
 
 <meta name="twitter:title" content="Ryzen Threadripper 3970XとNVIDIA RTX 3090を使ってnumpy(Intel MKL and OpenBLAS)とcupyでベンチマーク"/>
-<meta name="twitter:description" content="numpy でベンチマーク # ファイル名: numpy_benchmark.py import os os.environ[&#34;OPENBLAS_NUM_THREADS&#34;] = &#34;32&#34; # import mkl # mkl.set_num_threads(32) import numpy as np import time from threadpoolctl import threadpool_info from pprint import pp pp(threadpool_info()) np.show_config() N_LOOP = 5 calc_eigh_time_list = [] calc_inv_time_list = [] calc_dot_time_list = [] calc_norm_time_list = [] for size in [5000, 10000, 20000]: print(f&#34;size : {size}&#34;) for i in range(3): np.random.seed(i) X = np.random.randn(size, size) t_start = time.time() np.linalg.eigh(X @ X.T) calc_eigh_time_list."/>
+<meta name="twitter:description" content="Ryzen Threadripper 3970Xは最強"/>
 
 
 <script type="application/ld+json">
@@ -119,7 +119,7 @@ if (!doNotTrack) {
   "@type": "BlogPosting",
   "headline": "Ryzen Threadripper 3970XとNVIDIA RTX 3090を使ってnumpy(Intel MKL and OpenBLAS)とcupyでベンチマーク",
   "name": "Ryzen Threadripper 3970XとNVIDIA RTX 3090を使ってnumpy(Intel MKL and OpenBLAS)とcupyでベンチマーク",
-  "description": "numpy でベンチマーク # ファイル名: numpy_benchmark.py import os os.environ[\u0026#34;OPENBLAS_NUM_THREADS\u0026#34;] = \u0026#34;32\u0026#34; # import mkl # mkl.set_num_threads(32) import numpy as np import time from threadpoolctl import threadpool_info from pprint import pp pp(threadpool_info()) np.show_config() N_LOOP = 5 calc_eigh_time_list = [] calc_inv_time_list = [] calc_dot_time_list = [] calc_norm_time_list = [] for size in [5000, 10000, 20000]: print(f\u0026#34;size : {size}\u0026#34;) for i in range(3): np.random.seed(i) X = np.random.randn(size, size) t_start = time.time() np.linalg.eigh(X @ X.T) calc_eigh_time_list.",
+  "description": "Ryzen Threadripper 3970Xは最強",
   "keywords": [
     "numpy", "cupy", "cuda", "Ryzen Threadripper 3970X", "NVIDIA RTX 3090", "ベンチマーク"
   ],
@@ -211,6 +211,9 @@ if (!doNotTrack) {
     <h1 class="post-title">
       Ryzen Threadripper 3970XとNVIDIA RTX 3090を使ってnumpy(Intel MKL and OpenBLAS)とcupyでベンチマーク
     </h1>
+    <div class="post-description">
+      Ryzen Threadripper 3970Xは最強
+    </div>
     <div class="post-meta"><span title='2022-03-05 00:00:00 +0000 UTC'>March 5, 2022</span>
 
 </div>

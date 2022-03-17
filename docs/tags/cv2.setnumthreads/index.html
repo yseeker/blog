@@ -154,7 +154,7 @@ if (!doNotTrack) {
     <p>openCV でマルチプロセスがシングルプロセスになっている問題に遭遇 Python で openCV を使った処理をマルチプロセス化してみたのだが、どうもシングルプロセスになってしまうという問題に遭遇した。
 解決策：cv2.setNumThreads(0)＆マルチプロセスをやめる。 cv2.setNumThreads(0) を加えて、かつマルチスレッド化（例えば、concurrent.future.ThreadPoolExecuterなど）することで効率的に並列処理可能になることが分かった。 cv2.setNumThreads(0)有りでもconcurrent.future.ProcessPoolExecuterでは、正しくマルチプロセスされなかった。
 以下テンプレート。
-import cv2 from concurrent.futures import ThreadPoolExecutor cv2.setNumThreads(0) def task_using_cv2(param): do_some_process_using_cv2() return with ThreadPoolExecutor() as executor: results = list(executor.map(task_using_cv2, param)) 参考   -- </p>
+import cv2 from concurrent.futures import ThreadPoolExecutor cv2.setNumThreads(0) def task_using_cv2(param): do_some_process_using_cv2() return with ThreadPoolExecutor() as executor: results = list(executor.map(task_using_cv2, param)) 参考   </p>
   </section>
   <footer class="entry-footer"><span title='2022-03-17 00:00:00 +0000 UTC'>March 17, 2022</span></footer>
   <a class="entry-link" aria-label="post link to openCVで並列化" href="https://www.yusaito.com/blog/posts/tech/python/opencv-setnumthreads-multithreading/"></a>

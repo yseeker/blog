@@ -7,9 +7,7 @@
 <meta name="robots" content="index, follow">
 <title>loggerとprintとtqdmの併用 | YS&#39;s blog</title>
 <meta name="keywords" content="tqdm, logging, print, 標準出力" />
-<meta name="description" content="logger と print と tqdm を併用する場合は以下のコードをコピペする。
-参考
- https://github.com/tqdm/tqdm#redirecting-writing https://qiita.com/mino-38/items/f09251d18fe3181bfbfd https://waregawa-log.hatenablog.com/entry/2020/01/01/100000 https://stackoverflow.com/questions/384076/how-can-i-color-python-logging-output  import contextlib import logging import logging.handlers import sys from time import sleep from tqdm import tqdm from tqdm.contrib import DummyTqdmFile class TqdmLoggingHandler(logging.Handler): colors = {&#34;INFO&#34;: &#34;\033[37m{}\033[0m&#34;} def __init__(self, level=logging.NOTSET): super().__init__(level) def emit(self, record): try: record.msg = TqdmLoggingHandler.colors.get(record.levelname, &#34;{}&#34;).format( record.msg ) msg = self.format(record) tqdm.write(msg, file=sys.stderr) self.flush() except Exception: self.handleError(record) class CustomFormatter(logging.Formatter): grey = &#34;\x1b[38;20m&#34; green = &#34;\x1b[32;20m&#34; yellow = &#34;\x1b[33;20m&#34; red = &#34;\x1b[31;20m&#34; bold_red = &#34;\x1b[31;1m&#34; reset = &#34;\x1b[0m&#34; format = &#34;[%(asctime)s] [%(levelname)s] [%(process)d] [%(name)s] [%(funcName)s] [%(lineno)d] %(message)s&#34; FORMATS = { logging.">
+<meta name="description" content="loggerとprintとtqdmの併用が、loggerのほうがよく使う">
 <meta name="author" content="">
 <link rel="canonical" href="https://www.yusaito.com/blog/posts/tech/python/tqdm-logging-print/" />
 <meta name="google-site-verification" content="7pz_dAQx7-r3P-mr6XGvIVQx47QN5DmiWRVLEocHAIM" />
@@ -70,9 +68,7 @@ if (!doNotTrack) {
 }
 </script>
 <meta property="og:title" content="loggerとprintとtqdmの併用" />
-<meta property="og:description" content="logger と print と tqdm を併用する場合は以下のコードをコピペする。
-参考
- https://github.com/tqdm/tqdm#redirecting-writing https://qiita.com/mino-38/items/f09251d18fe3181bfbfd https://waregawa-log.hatenablog.com/entry/2020/01/01/100000 https://stackoverflow.com/questions/384076/how-can-i-color-python-logging-output  import contextlib import logging import logging.handlers import sys from time import sleep from tqdm import tqdm from tqdm.contrib import DummyTqdmFile class TqdmLoggingHandler(logging.Handler): colors = {&#34;INFO&#34;: &#34;\033[37m{}\033[0m&#34;} def __init__(self, level=logging.NOTSET): super().__init__(level) def emit(self, record): try: record.msg = TqdmLoggingHandler.colors.get(record.levelname, &#34;{}&#34;).format( record.msg ) msg = self.format(record) tqdm.write(msg, file=sys.stderr) self.flush() except Exception: self.handleError(record) class CustomFormatter(logging.Formatter): grey = &#34;\x1b[38;20m&#34; green = &#34;\x1b[32;20m&#34; yellow = &#34;\x1b[33;20m&#34; red = &#34;\x1b[31;20m&#34; bold_red = &#34;\x1b[31;1m&#34; reset = &#34;\x1b[0m&#34; format = &#34;[%(asctime)s] [%(levelname)s] [%(process)d] [%(name)s] [%(funcName)s] [%(lineno)d] %(message)s&#34; FORMATS = { logging." />
+<meta property="og:description" content="loggerとprintとtqdmの併用が、loggerのほうがよく使う" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.yusaito.com/blog/posts/tech/python/tqdm-logging-print/" /><meta property="og:image" content="https://www.yusaito.com/blog/papermod-cover.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-02-13T00:00:00&#43;00:00" />
@@ -82,9 +78,7 @@ if (!doNotTrack) {
 <meta name="twitter:image" content="https://www.yusaito.com/blog/papermod-cover.png"/>
 
 <meta name="twitter:title" content="loggerとprintとtqdmの併用"/>
-<meta name="twitter:description" content="logger と print と tqdm を併用する場合は以下のコードをコピペする。
-参考
- https://github.com/tqdm/tqdm#redirecting-writing https://qiita.com/mino-38/items/f09251d18fe3181bfbfd https://waregawa-log.hatenablog.com/entry/2020/01/01/100000 https://stackoverflow.com/questions/384076/how-can-i-color-python-logging-output  import contextlib import logging import logging.handlers import sys from time import sleep from tqdm import tqdm from tqdm.contrib import DummyTqdmFile class TqdmLoggingHandler(logging.Handler): colors = {&#34;INFO&#34;: &#34;\033[37m{}\033[0m&#34;} def __init__(self, level=logging.NOTSET): super().__init__(level) def emit(self, record): try: record.msg = TqdmLoggingHandler.colors.get(record.levelname, &#34;{}&#34;).format( record.msg ) msg = self.format(record) tqdm.write(msg, file=sys.stderr) self.flush() except Exception: self.handleError(record) class CustomFormatter(logging.Formatter): grey = &#34;\x1b[38;20m&#34; green = &#34;\x1b[32;20m&#34; yellow = &#34;\x1b[33;20m&#34; red = &#34;\x1b[31;20m&#34; bold_red = &#34;\x1b[31;1m&#34; reset = &#34;\x1b[0m&#34; format = &#34;[%(asctime)s] [%(levelname)s] [%(process)d] [%(name)s] [%(funcName)s] [%(lineno)d] %(message)s&#34; FORMATS = { logging."/>
+<meta name="twitter:description" content="loggerとprintとtqdmの併用が、loggerのほうがよく使う"/>
 
 
 <script type="application/ld+json">
@@ -125,7 +119,7 @@ if (!doNotTrack) {
   "@type": "BlogPosting",
   "headline": "loggerとprintとtqdmの併用",
   "name": "loggerとprintとtqdmの併用",
-  "description": "logger と print と tqdm を併用する場合は以下のコードをコピペする。\n参考\n https://github.com/tqdm/tqdm#redirecting-writing https://qiita.com/mino-38/items/f09251d18fe3181bfbfd https://waregawa-log.hatenablog.com/entry/2020/01/01/100000 https://stackoverflow.com/questions/384076/how-can-i-color-python-logging-output  import contextlib import logging import logging.handlers import sys from time import sleep from tqdm import tqdm from tqdm.contrib import DummyTqdmFile class TqdmLoggingHandler(logging.Handler): colors = {\u0026#34;INFO\u0026#34;: \u0026#34;\\033[37m{}\\033[0m\u0026#34;} def __init__(self, level=logging.NOTSET): super().__init__(level) def emit(self, record): try: record.msg = TqdmLoggingHandler.colors.get(record.levelname, \u0026#34;{}\u0026#34;).format( record.msg ) msg = self.format(record) tqdm.write(msg, file=sys.stderr) self.flush() except Exception: self.handleError(record) class CustomFormatter(logging.Formatter): grey = \u0026#34;\\x1b[38;20m\u0026#34; green = \u0026#34;\\x1b[32;20m\u0026#34; yellow = \u0026#34;\\x1b[33;20m\u0026#34; red = \u0026#34;\\x1b[31;20m\u0026#34; bold_red = \u0026#34;\\x1b[31;1m\u0026#34; reset = \u0026#34;\\x1b[0m\u0026#34; format = \u0026#34;[%(asctime)s] [%(levelname)s] [%(process)d] [%(name)s] [%(funcName)s] [%(lineno)d] %(message)s\u0026#34; FORMATS = { logging.",
+  "description": "loggerとprintとtqdmの併用が、loggerのほうがよく使う",
   "keywords": [
     "tqdm", "logging", "print", "標準出力"
   ],
@@ -217,6 +211,9 @@ if (!doNotTrack) {
     <h1 class="post-title">
       loggerとprintとtqdmの併用
     </h1>
+    <div class="post-description">
+      loggerとprintとtqdmの併用が、loggerのほうがよく使う
+    </div>
     <div class="post-meta"><span title='2022-02-13 00:00:00 +0000 UTC'>February 13, 2022</span>
 
 </div>
@@ -343,6 +340,13 @@ print(<span style="color:#e6db74">&#34;Done!&#34;</span>)
 
     <br>
     
+
+<h3>Related Posts</h3>
+<ul>
+	
+	<li><a href="/blog/posts/tech/python/opencv-setnumthreads-multithreading/">openCVで並列化</a></li>
+	
+</ul>
 
   </div>
 
