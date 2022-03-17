@@ -197,7 +197,7 @@ if (!doNotTrack) {
 import cv2 from concurrent.futures import ThreadPoolExecutor cv2.setNumThreads(0) def task_using_cv2(param): do_some_process_using_cv2() return with ThreadPoolExecutor() as executor: results = list(executor.map(task_using_cv2, param)) 参考   </p>
   </section>
   <footer class="entry-footer"><span title='2022-03-17 00:00:00 +0000 UTC'>March 17, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to openCVで並列化" href="https://www.yusaito.com/blog/posts/tech/python/opencv_setnumthreads_multithreading/"></a>
+  <a class="entry-link" aria-label="post link to openCVで並列化" href="https://www.yusaito.com/blog/posts/tech/python/opencv-setnumthreads-multithreading/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -223,7 +223,7 @@ sudo apt-get --purge remove nvidia-* sudo apt-get --purge remove cuda-*  GPU ド
     <p>numpy でベンチマーク # ファイル名: numpy_benchmark.py import os os.environ[&#34;OPENBLAS_NUM_THREADS&#34;] = &#34;32&#34; # import mkl # mkl.set_num_threads(32) import numpy as np import time from threadpoolctl import threadpool_info from pprint import pp pp(threadpool_info()) np.show_config() N_LOOP = 5 calc_eigh_time_list = [] calc_inv_time_list = [] calc_dot_time_list = [] calc_norm_time_list = [] for size in [5000, 10000, 20000]: print(f&#34;size : {size}&#34;) for i in range(3): np.random.seed(i) X = np.random.randn(size, size) t_start = time.time() np.linalg.eigh(X @ X.T) calc_eigh_time_list....</p>
   </section>
   <footer class="entry-footer"><span title='2022-03-05 00:00:00 +0000 UTC'>March 5, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to Ryzen Threadripper 3970XとNVIDIA RTX 3090を使ってnumpy(Intel MKL and OpenBLAS)とcupyでベンチマーク" href="https://www.yusaito.com/blog/posts/tech/python/benchmark/"></a>
+  <a class="entry-link" aria-label="post link to Ryzen Threadripper 3970XとNVIDIA RTX 3090を使ってnumpy(Intel MKL and OpenBLAS)とcupyでベンチマーク" href="https://www.yusaito.com/blog/posts/tech/python/numpy-benchmark-ryzen-threadripper/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -237,7 +237,7 @@ sudo apt-get --purge remove nvidia-* sudo apt-get --purge remove cuda-*  GPU ド
  https://github.com/tqdm/tqdm#redirecting-writing https://qiita.com/mino-38/items/f09251d18fe3181bfbfd https://waregawa-log.hatenablog.com/entry/2020/01/01/100000 https://stackoverflow.com/questions/384076/how-can-i-color-python-logging-output  import contextlib import logging import logging.handlers import sys from time import sleep from tqdm import tqdm from tqdm.contrib import DummyTqdmFile class TqdmLoggingHandler(logging.Handler): colors = {&#34;INFO&#34;: &#34;\033[37m{}\033[0m&#34;} def __init__(self, level=logging.NOTSET): super().__init__(level) def emit(self, record): try: record.msg = TqdmLoggingHandler.colors.get(record.levelname, &#34;{}&#34;).format( record.msg ) msg = self.format(record) tqdm.write(msg, file=sys.stderr) self.flush() except Exception: self.handleError(record) class CustomFormatter(logging.Formatter): grey = &#34;\x1b[38;20m&#34; green = &#34;\x1b[32;20m&#34; yellow = &#34;\x1b[33;20m&#34; red = &#34;\x1b[31;20m&#34; bold_red = &#34;\x1b[31;1m&#34; reset = &#34;\x1b[0m&#34; format = &#34;[%(asctime)s] [%(levelname)s] [%(process)d] [%(name)s] [%(funcName)s] [%(lineno)d] %(message)s&#34; FORMATS = { logging....</p>
   </section>
   <footer class="entry-footer"><span title='2022-02-13 00:00:00 +0000 UTC'>February 13, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to loggerとprintとtqdmの併用" href="https://www.yusaito.com/blog/posts/tech/python/tqdm_logging/"></a>
+  <a class="entry-link" aria-label="post link to loggerとprintとtqdmの併用" href="https://www.yusaito.com/blog/posts/tech/python/tqdm-logging-print/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -265,7 +265,7 @@ git clone https://github.com/NVIDIA/cuda-samples.git cd cuda-samples/Samples/ban
 窓際のL字型の机キッチン＆ダイニングアパートと壺2年間住んだアパート。Berkshire Terraceバスの中から見たダウンタウン  空港への道中</p>
   </section>
   <footer class="entry-footer"><span title='2021-09-11 00:00:00 +0000 UTC'>September 11, 2021</span></footer>
-  <a class="entry-link" aria-label="post link to Last day in Santa Barbara" href="https://www.yusaito.com/blog/posts/us_life/last_day_santabarbara/"></a>
+  <a class="entry-link" aria-label="post link to Last day in Santa Barbara" href="https://www.yusaito.com/blog/posts/us-life/last-day-santabarbara/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -288,7 +288,7 @@ git clone https://github.com/NVIDIA/cuda-samples.git cd cuda-samples/Samples/ban
 新しいアパート2019年 7-8月　リンダウ・ノーベル賞受賞者会議に参加 毎年、ドイツのリンダウに30名程度のノーベル賞受賞者が世界中から招待され、若手研究者（大学院生やポスドク）に対して講演やディスカッションを行って下さる会議に参加した。 日本人は10名程度参加していた。詳細はこちら。...</p>
   </section>
   <footer class="entry-footer"><span title='2021-09-10 00:00:00 +0000 UTC'>September 10, 2021</span></footer>
-  <a class="entry-link" aria-label="post link to UCSBポスドク記" href="https://www.yusaito.com/blog/posts/us_life/postdoc_memory/"></a>
+  <a class="entry-link" aria-label="post link to UCSBポスドク記" href="https://www.yusaito.com/blog/posts/us-life/postdoc-memory/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -304,7 +304,7 @@ git clone https://github.com/NVIDIA/cuda-samples.git cd cuda-samples/Samples/ban
 どの fellowship も似たような書類が要求される。例えば私が獲得した Elings Prize Fellowship の公式サイトから要求される書類を見てみると（特に太字の箇所はどこの応募する際にも要求されると思う）、...</p>
   </section>
   <footer class="entry-footer"><span title='2021-09-08 00:00:00 +0000 UTC'>September 8, 2021</span></footer>
-  <a class="entry-link" aria-label="post link to 海外ポスドクになる方法と現地フェローシップ" href="https://www.yusaito.com/blog/posts/us_life/fellowship/"></a>
+  <a class="entry-link" aria-label="post link to 海外ポスドクになる方法と現地フェローシップ" href="https://www.yusaito.com/blog/posts/us-life/how-to-get-fellowship/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -335,7 +335,7 @@ git clone https://github.com/NVIDIA/cuda-samples.git cd cuda-samples/Samples/ban
 The Institute of Photonic Sciences @ Castelldefels, Spain リンダウの帰りにスペインのカステイダフェルス（Castelldefels）にある ICFO（The Institute of Photonic Sciences）という研究機関の中の Dimitri Efetov 研を訪問した。Prof. Efetov の大学院時代の研究テーマが私の大学院時代の研究テーマと似た内容だったために興味をもってもらい、大学院時代の研究テーマでセミナーをさせて頂いた。 ニューヨーク大学 @ NYC 2019 年 12 月頃（covid19 が中国で発見されたあたり？）にベクトルマグネット付きの希釈冷凍機を借りるためにニューヨーク大学の Javad Shabani 研究室を訪問した。冬のニューヨーク市は極寒で日によってはマイナス 10 度を下回ったりして顔中凍るかと思った。ニューヨーク市滞在中に体調を崩し、そこそこの熱（38 度以上）とひどい咳が出た。これがコロナの症状だったかどうかは今となっては知る由もない。ちなみに実験はうまくいかなかった（サンプルが全滅した）。 </p>
   </section>
   <footer class="entry-footer"><span title='2021-08-15 00:00:00 +0000 UTC'>August 15, 2021</span></footer>
-  <a class="entry-link" aria-label="post link to 写真で振り返るサンタバーバラ滞在記" href="https://www.yusaito.com/blog/posts/us_life/santabarbara_picture/"></a>
+  <a class="entry-link" aria-label="post link to 写真で振り返るサンタバーバラ滞在記" href="https://www.yusaito.com/blog/posts/us-life/santabarbara-pictures/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
