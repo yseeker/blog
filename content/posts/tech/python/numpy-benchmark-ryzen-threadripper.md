@@ -11,6 +11,8 @@ tags:
     "Ryzen Threadripper 3970X",
     "NVIDIA RTX 3090",
     "ベンチマーク",
+    "Intel MKL",
+    "openBLAS",
   ]
 categories: ["Tech", "ベンチマーク"]
 ShowToc: true
@@ -18,6 +20,7 @@ TocOpen: true
 draft: false
 aliases:
   - /posts/tech/benchmark/
+  - /posts/tech/python/benchmark/
 ---
 
 ## numpy でベンチマーク

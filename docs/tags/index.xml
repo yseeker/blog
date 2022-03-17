@@ -138,6 +138,15 @@
     </item>
     
     <item>
+      <title>Intel MKL</title>
+      <link>https://www.yusaito.com/blog/tags/intel-mkl/</link>
+      <pubDate>Sat, 05 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/tags/intel-mkl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>numpy</title>
       <link>https://www.yusaito.com/blog/tags/numpy/</link>
       <pubDate>Sat, 05 Mar 2022 00:00:00 +0000</pubDate>
@@ -152,6 +161,15 @@
       <pubDate>Sat, 05 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/tags/nvidia-rtx-3090/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>openBLAS</title>
+      <link>https://www.yusaito.com/blog/tags/openblas/</link>
+      <pubDate>Sat, 05 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/tags/openblas/</guid>
       <description></description>
     </item>
     
