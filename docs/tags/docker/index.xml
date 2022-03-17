@@ -13,10 +13,10 @@
     <lastBuildDate>Wed, 09 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.yusaito.com/blog/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>自宅サーバー（Ubuntu 20.04 LTS）セットアップと諸々の初期設定</title>
-      <link>https://www.yusaito.com/blog/posts/tech/linux/ubuntu_install/</link>
+      <link>https://www.yusaito.com/blog/posts/tech/linux/ubuntu-server-ssh-docker-setup/</link>
       <pubDate>Wed, 09 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.yusaito.com/blog/posts/tech/linux/ubuntu_install/</guid>
+      <guid>https://www.yusaito.com/blog/posts/tech/linux/ubuntu-server-ssh-docker-setup/</guid>
       <description>Ubuntu 20.04 LTS の導入 こちらの記事に従って、Ubuntu を入れた。
 ライブ USB の作成  Rufus をダウンロード ubuntu の iso ファイルをダウンロード USB を挿して、Rufus を使ってライブ USB を作成  Ubuntu のインストール  細かい設定はこちらの記事を参照  インストール後にログインループになってログインできなくなった  ctrl + alt + F2で tty 仮想コンソールを開く Nvidia ドライバ, cuda があるかどうか確認  dpkg -l | grep nvidia dpkg -l | grep cuda ※もしですでにある場合は削除しておく
 sudo apt-get --purge remove nvidia-* sudo apt-get --purge remove cuda-*  GPU ドライバが無かったら下記で Nvidia ドライバを入れる  sudo ubuntu-drivers install sudo reboot または version 指定して入れる。</description>
@@ -24,10 +24,10 @@ sudo apt-get --purge remove nvidia-* sudo apt-get --purge remove cuda-*  GPU ド
     
     <item>
       <title>AzureでA100x8（V100x4）のPytorch環境構築とエラー対処</title>
-      <link>https://www.yusaito.com/blog/posts/tech/linux/azure_vm_setup/</link>
+      <link>https://www.yusaito.com/blog/posts/tech/linux/azure-vm-cuda-docker-setup/</link>
       <pubDate>Tue, 11 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.yusaito.com/blog/posts/tech/linux/azure_vm_setup/</guid>
+      <guid>https://www.yusaito.com/blog/posts/tech/linux/azure-vm-cuda-docker-setup/</guid>
       <description>Azure の web で VM インスタンスを作成 VM インスタンスの作成はこちら 秘密鍵をダウンロードして、read 権限を与えていおく。
 cp ~/Downloads/your_key_name.pem ~/.ssh/keys/azure_vm_key.pem chmod 400 ~/.ssh/keys/azure_vm_key.pem ssh を使って VM にアクセス
 ssh -i ~/.ssh/keys/azure_vm_key.pem azureuser@&amp;lt;public ip address of VM instance&amp;gt; Cuda をインストール wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/cuda-ubuntu1804.pin sudo mv cuda-ubuntu1804.pin /etc/apt/preferences.d/cuda-repository-pin-600 wget https://developer.download.nvidia.com/compute/cuda/11.5.0/local_installers/cuda-repo-ubuntu1804-11-5-local_11.5.0-495.29.05-1_amd64.deb sudo dpkg -i cuda-repo-ubuntu1804-11-5-local_11.5.0-495.29.05-1_amd64.deb sudo apt-key add /var/cuda-repo-ubuntu1804-11-5-local/7fa2af80.pub sudo apt-get update sudo apt-get -y install cuda Data Center GPU manager のインストール（A100x8 の場合） bandwidthTest を行う 詳細は、こちらを参照。 A100x8 ではここでエラーが出る、V100x4 では出ない

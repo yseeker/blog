@@ -1,6 +1,6 @@
 ---
 #author: "Hugo Authors"
-title: "プログラムでは相対パスを有効化活用する"
+title: "プログラムでは相対パスを有効活用する"
 date: "2022-03-17"
 description: "cv2.setNumThreads(0)＆マルチプロセスをやめる"
 tags:
@@ -24,7 +24,7 @@ draft: true
 import csv
 from pathlib import Path
 
-this_dir = Path(__file).parent
+this_dir = Path(__file__).parent
 file_path = this_dir / "file.txt"
 
 ```
