@@ -7,7 +7,7 @@ tags: ["template", "template"]
 categories: ["template"]
 ShowToc: true
 TocOpen: true
-draft: false
+draft: true
 aliases:
   - /posts/kaggle/seti/
 ---

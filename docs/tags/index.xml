@@ -10,7 +10,79 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Wed, 09 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.yusaito.com/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 17 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.yusaito.com/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>cv2.setNumThreads</title>
+      <link>https://www.yusaito.com/blog/tags/cv2.setnumthreads/</link>
+      <pubDate>Thu, 17 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/tags/cv2.setnumthreads/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>multithreading</title>
+      <link>https://www.yusaito.com/blog/tags/multithreading/</link>
+      <pubDate>Thu, 17 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/tags/multithreading/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>openCV</title>
+      <link>https://www.yusaito.com/blog/tags/opencv/</link>
+      <pubDate>Thu, 17 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/tags/opencv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ProcessPoolExecuter</title>
+      <link>https://www.yusaito.com/blog/tags/processpoolexecuter/</link>
+      <pubDate>Thu, 17 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/tags/processpoolexecuter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ThreadPoolExecuter</title>
+      <link>https://www.yusaito.com/blog/tags/threadpoolexecuter/</link>
+      <pubDate>Thu, 17 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/tags/threadpoolexecuter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>マルチスレッド</title>
+      <link>https://www.yusaito.com/blog/tags/%E3%83%9E%E3%83%AB%E3%83%81%E3%82%B9%E3%83%AC%E3%83%83%E3%83%89/</link>
+      <pubDate>Thu, 17 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/tags/%E3%83%9E%E3%83%AB%E3%83%81%E3%82%B9%E3%83%AC%E3%83%83%E3%83%89/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>並列化</title>
+      <link>https://www.yusaito.com/blog/tags/%E4%B8%A6%E5%88%97%E5%8C%96/</link>
+      <pubDate>Thu, 17 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/tags/%E4%B8%A6%E5%88%97%E5%8C%96/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>高速化</title>
+      <link>https://www.yusaito.com/blog/tags/%E9%AB%98%E9%80%9F%E5%8C%96/</link>
+      <pubDate>Thu, 17 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/tags/%E9%AB%98%E9%80%9F%E5%8C%96/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>docker</title>
       <link>https://www.yusaito.com/blog/tags/docker/</link>
@@ -287,15 +359,6 @@
       <pubDate>Thu, 19 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/tags/seti/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>template</title>
-      <link>https://www.yusaito.com/blog/tags/template/</link>
-      <pubDate>Thu, 19 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.yusaito.com/blog/tags/template/</guid>
       <description></description>
     </item>
     

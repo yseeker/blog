@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>template | YS&#39;s blog</title>
+<title>ThreadPoolExecuter | YS&#39;s blog</title>
 <meta name="keywords" content="" />
 <meta name="description" content="">
 <meta name="author" content="">
-<link rel="canonical" href="https://www.yusaito.com/blog/categories/template/" />
+<link rel="canonical" href="https://www.yusaito.com/blog/tags/threadpoolexecuter/" />
 <meta name="google-site-verification" content="7pz_dAQx7-r3P-mr6XGvIVQx47QN5DmiWRVLEocHAIM" />
 <link crossorigin="anonymous" href="/blog/assets/css/stylesheet.min.c6658695b6dbb9fcf8e6b5c4fa4bbb35a836cb1737eb964c1edb220199e8bc6d.css" integrity="sha256-xmWGlbbbufz45rXE&#43;ku7Nag2yxc365ZMHtsiAZnovG0=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://www.yusaito.com/blog/favicon.ico">
@@ -20,7 +20,7 @@
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
 <meta name="generator" content="Hugo 0.91.2" />
-<link rel="alternate" type="application/rss+xml" href="https://www.yusaito.com/blog/categories/template/index.xml">
+<link rel="alternate" type="application/rss+xml" href="https://www.yusaito.com/blog/tags/threadpoolexecuter/index.xml">
 <noscript>
     <style>
         #theme-toggle,
@@ -68,15 +68,15 @@ if (!doNotTrack) {
 	gtag('config', 'G-X5LTDFN76J', { 'anonymize_ip': false });
 }
 </script>
-<meta property="og:title" content="template" />
+<meta property="og:title" content="ThreadPoolExecuter" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.yusaito.com/blog/categories/template/" /><meta property="og:image" content="https://www.yusaito.com/blog/papermod-cover.png"/>
+<meta property="og:url" content="https://www.yusaito.com/blog/tags/threadpoolexecuter/" /><meta property="og:image" content="https://www.yusaito.com/blog/papermod-cover.png"/>
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://www.yusaito.com/blog/papermod-cover.png"/>
 
-<meta name="twitter:title" content="template"/>
+<meta name="twitter:title" content="ThreadPoolExecuter"/>
 <meta name="twitter:description" content=""/>
 
 </head>
@@ -141,20 +141,23 @@ if (!doNotTrack) {
     </nav>
 </header>
 <main class="main"> 
-<header class="page-header"><div class="breadcrumbs"><a href="https://www.yusaito.com/blog/">Home</a>&nbsp;»&nbsp;<a href="https://www.yusaito.com/blog/categories/">Categories</a></div>
-  <h1>template</h1>
+<header class="page-header"><div class="breadcrumbs"><a href="https://www.yusaito.com/blog/">Home</a>&nbsp;»&nbsp;<a href="https://www.yusaito.com/blog/tags/">Tags</a></div>
+  <h1>ThreadPoolExecuter</h1>
 </header>
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
-    <h2>Kaggle：SETIコンペ参加記（ソロ銅：71th/768 teams）
+    <h2>openCVで並列化
     </h2>
   </header>
   <section class="entry-content">
-    <p> </p>
+    <p>openCV でマルチプロセスがシングルプロセスになっている問題に遭遇 Python で openCV を使った処理をマルチプロセス化してみたのだが、どうもシングルプロセスになってしまうという問題に遭遇した。
+解決策：cv2.setNumThreads(0)＆マルチプロセスをやめる。 cv2.setNumThreads(0) を加えて、かつマルチスレッド化（例えば、concurrent.future.ThreadPoolExecuterなど）することで効率的に並列処理可能になることが分かった。 cv2.setNumThreads(0)有りでもconcurrent.future.ProcessPoolExecuterでは、正しくマルチプロセスされなかった。
+以下テンプレート。
+import cv2 from concurrent.futures import ThreadPoolExecutor cv2.setNumThreads(0) def task_using_cv2(param): do_some_process_using_cv2() return with ThreadPoolExecutor() as executor: results = list(executor.map(task_using_cv2, param)) 参考   </p>
   </section>
-  <footer class="entry-footer"><span title='2021-08-19 00:00:00 +0000 UTC'>August 19, 2021</span></footer>
-  <a class="entry-link" aria-label="post link to Kaggle：SETIコンペ参加記（ソロ銅：71th/768 teams）" href="https://www.yusaito.com/blog/posts/template/template/"></a>
+  <footer class="entry-footer"><span title='2022-03-17 00:00:00 +0000 UTC'>March 17, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to openCVで並列化" href="https://www.yusaito.com/blog/posts/tech/python/opencv_setnumthreads_multithreading/"></a>
 </article>
     </main>
     
