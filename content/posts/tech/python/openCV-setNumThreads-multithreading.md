@@ -51,6 +51,6 @@ with ThreadPoolExecutor() as executor:
 
 ## 参考
 
-<iframe class="hatenablogcard" style="width:100%;height:155px;margin:15px 0;max-width:720px;" title="opencv × multiprocessing がどうもうまくいかない【cv2.cvtColor】" src="https://hatenablog-parts.com/embed?url=https://twdlab.hatenablog.com/entry/2018/08/13/015842" frameborder="0" scrolling="no"></iframe>
+<!-- <iframe class="hatenablogcard" style="width:100%;height:155px;margin:15px 0;max-width:720px;" title="opencv × multiprocessing がどうもうまくいかない【cv2.cvtColor】" src="https://hatenablog-parts.com/embed?url=https://twdlab.hatenablog.com/entry/2018/08/13/015842" frameborder="0" scrolling="no"></iframe>
 
-<iframe class="hatenablogcard" style="width:100%;height:155px;margin:15px 0;max-width:720px;" title="opencv" src="https://hatenablog-parts.com/embed?url=https://hatenablog-parts.com/embed?url=https://github.com/opencv/opencv/issues/5150" frameborder="0" scrolling="no"></iframe>
+<iframe class="hatenablogcard" style="width:100%;height:155px;margin:15px 0;max-width:720px;" title="opencv" src="https://hatenablog-parts.com/embed?url=https://hatenablog-parts.com/embed?url=https://github.com/opencv/opencv/issues/5150" frameborder="0" scrolling="no"></iframe> -->
