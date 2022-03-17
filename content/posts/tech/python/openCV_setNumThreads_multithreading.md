@@ -14,7 +14,7 @@ tags:
     "cv2.setNumThreads",
     "ProcessPoolExecuter",
   ]
-categories: ["Kaggle"]
+categories: ["Python"]
 ShowToc: true
 TocOpen: true
 draft: false
