@@ -22,8 +22,6 @@ aliases:
 
 ## numpy でベンチマーク
 
-<iframe class="hatenablogcard" style="width:100%;height:155px;margin:15px 0;max-width:680px;" title="はてなのブログカード機能で埋め込みコード生成" src="https://hatenablog-parts.com/embed?url=https://www.inomaso.com/post/2020/08/hugo-blogcard-generate/" frameborder="0" scrolling="no"></iframe>
-
 ```python
 # ファイル名: numpy_benchmark.py
 

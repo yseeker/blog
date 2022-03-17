@@ -205,7 +205,7 @@ sudo apt-get --purge remove nvidia-* sudo apt-get --purge remove cuda-*  GPU ド
     </h2>
   </header>
   <section class="entry-content">
-    <p>numpy でベンチマーク  # ファイル名: numpy_benchmark.py import os os.environ[&#34;OPENBLAS_NUM_THREADS&#34;] = &#34;32&#34; # import mkl # mkl.set_num_threads(32) import numpy as np import time from threadpoolctl import threadpool_info from pprint import pp pp(threadpool_info()) np.show_config() N_LOOP = 5 calc_eigh_time_list = [] calc_inv_time_list = [] calc_dot_time_list = [] calc_norm_time_list = [] for size in [5000, 10000, 20000]: print(f&#34;size : {size}&#34;) for i in range(3): np.random.seed(i) X = np.random.randn(size, size) t_start = time.time() np.linalg.eigh(X @ X....</p>
+    <p>numpy でベンチマーク # ファイル名: numpy_benchmark.py import os os.environ[&#34;OPENBLAS_NUM_THREADS&#34;] = &#34;32&#34; # import mkl # mkl.set_num_threads(32) import numpy as np import time from threadpoolctl import threadpool_info from pprint import pp pp(threadpool_info()) np.show_config() N_LOOP = 5 calc_eigh_time_list = [] calc_inv_time_list = [] calc_dot_time_list = [] calc_norm_time_list = [] for size in [5000, 10000, 20000]: print(f&#34;size : {size}&#34;) for i in range(3): np.random.seed(i) X = np.random.randn(size, size) t_start = time.time() np.linalg.eigh(X @ X.T) calc_eigh_time_list....</p>
   </section>
   <footer class="entry-footer"><span title='2022-03-05 00:00:00 +0000 UTC'>March 5, 2022</span></footer>
   <a class="entry-link" aria-label="post link to Ryzen Threadripper 3970XとNVIDIA RTX 3090を使ってnumpy(Intel MKL and OpenBLAS)とcupyでベンチマーク" href="https://www.yusaito.com/blog/posts/tech/python/benchmark/"></a>
@@ -309,6 +309,18 @@ git clone https://github.com/NVIDIA/cuda-samples.git cd cuda-samples/Samples/ban
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2>Kaggle：SETIコンペ参加記（ソロ銅：71th/768 teams）
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p> </p>
+  </section>
+  <footer class="entry-footer"><span title='2021-08-19 00:00:00 +0000 UTC'>August 19, 2021</span></footer>
+  <a class="entry-link" aria-label="post link to Kaggle：SETIコンペ参加記（ソロ銅：71th/768 teams）" href="https://www.yusaito.com/blog/posts/template/template/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2>写真で振り返るサンタバーバラ滞在記
     </h2>
   </header>
@@ -321,18 +333,6 @@ The Institute of Photonic Sciences @ Castelldefels, Spain リンダウの帰り�
   </section>
   <footer class="entry-footer"><span title='2021-08-15 00:00:00 +0000 UTC'>August 15, 2021</span></footer>
   <a class="entry-link" aria-label="post link to 写真で振り返るサンタバーバラ滞在記" href="https://www.yusaito.com/blog/posts/us_life/santabarbara_picture/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Shell Fish Company
-    </h2>
-  </header>
-  <section class="entry-content">
-    <p>サンタバーバラのスターンズワーフの先端にあるShell Fish Companyという甲殻類がメインの海鮮料理店に行った。サンタバーバラはウニの名産地なので目的はウニだった。 ホタテの上に乗ったウニがとても美味しかった。</p>
-  </section>
-  <footer class="entry-footer"><span title='2021-08-14 00:00:00 +0000 UTC'>August 14, 2021</span></footer>
-  <a class="entry-link" aria-label="post link to Shell Fish Company" href="https://www.yusaito.com/blog/posts/us_life/shellfish_company/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

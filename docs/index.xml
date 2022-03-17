@@ -28,7 +28,7 @@ sudo apt-get --purge remove nvidia-* sudo apt-get --purge remove cuda-*  GPU ド
       <pubDate>Sat, 05 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/posts/tech/python/benchmark/</guid>
-      <description>numpy でベンチマーク  # ファイル名: numpy_benchmark.py import os os.environ[&amp;#34;OPENBLAS_NUM_THREADS&amp;#34;] = &amp;#34;32&amp;#34; # import mkl # mkl.set_num_threads(32) import numpy as np import time from threadpoolctl import threadpool_info from pprint import pp pp(threadpool_info()) np.show_config() N_LOOP = 5 calc_eigh_time_list = [] calc_inv_time_list = [] calc_dot_time_list = [] calc_norm_time_list = [] for size in [5000, 10000, 20000]: print(f&amp;#34;size : {size}&amp;#34;) for i in range(3): np.random.seed(i) X = np.random.randn(size, size) t_start = time.time() np.linalg.eigh(X @ X.</description>
+      <description>numpy でベンチマーク # ファイル名: numpy_benchmark.py import os os.environ[&amp;#34;OPENBLAS_NUM_THREADS&amp;#34;] = &amp;#34;32&amp;#34; # import mkl # mkl.set_num_threads(32) import numpy as np import time from threadpoolctl import threadpool_info from pprint import pp pp(threadpool_info()) np.show_config() N_LOOP = 5 calc_eigh_time_list = [] calc_inv_time_list = [] calc_dot_time_list = [] calc_norm_time_list = [] for size in [5000, 10000, 20000]: print(f&amp;#34;size : {size}&amp;#34;) for i in range(3): np.random.seed(i) X = np.random.randn(size, size) t_start = time.time() np.linalg.eigh(X @ X.T) calc_eigh_time_list.</description>
     </item>
     
     <item>
@@ -107,6 +107,15 @@ git clone https://github.com/NVIDIA/cuda-samples.git cd cuda-samples/Samples/ban
 結果 774 チーム中 74 位でソロ銅でした。
 コンペの概要 Overview のページには
  In this competition, use your data science skills to help identify anomalous signals in scans of Breakthrough Listen targets. Because there are no confirmed examples of alien signals to use to train machine learning algorithms, the team included some simulated signals (that they call “needles”) in the haystack of data from the telescope.</description>
+    </item>
+    
+    <item>
+      <title>Kaggle：SETIコンペ参加記（ソロ銅：71th/768 teams）</title>
+      <link>https://www.yusaito.com/blog/posts/template/template/</link>
+      <pubDate>Thu, 19 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/posts/template/template/</guid>
+      <description> </description>
     </item>
     
     <item>
