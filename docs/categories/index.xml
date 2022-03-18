@@ -30,11 +30,11 @@
     </item>
     
     <item>
-      <title>ベンチマーク</title>
-      <link>https://www.yusaito.com/blog/categories/%E3%83%99%E3%83%B3%E3%83%81%E3%83%9E%E3%83%BC%E3%82%AF/</link>
-      <pubDate>Sat, 05 Mar 2022 00:00:00 +0000</pubDate>
+      <title>Linux</title>
+      <link>https://www.yusaito.com/blog/categories/linux/</link>
+      <pubDate>Wed, 09 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.yusaito.com/blog/categories/%E3%83%99%E3%83%B3%E3%83%81%E3%83%9E%E3%83%BC%E3%82%AF/</guid>
+      <guid>https://www.yusaito.com/blog/categories/linux/</guid>
       <description></description>
     </item>
     
@@ -71,6 +71,15 @@
       <pubDate>Sun, 15 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/categories/%E6%B5%B7%E5%A4%96/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>小ネタ</title>
+      <link>https://www.yusaito.com/blog/categories/%E5%B0%8F%E3%83%8D%E3%82%BF/</link>
+      <pubDate>Fri, 23 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/categories/%E5%B0%8F%E3%83%8D%E3%82%BF/</guid>
       <description></description>
     </item>
     

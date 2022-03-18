@@ -3,8 +3,8 @@
 title: "海外版逆評定"
 date: "2021-07-21"
 description: "学生が大学の先生を評価する媒体は世界中どこにでもあるらしい"
-tags: ["小ネタ"]
-#categories: ["themes", "syntax"]
+tags: ["先生の評価", "アメリカ", "逆評定"]
+categories: ["小ネタ"]
 ShowToc: true
 TocOpen: true
 draft: false

@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Python | YS&#39;s blog</title>
+<title>小ネタ | YS&#39;s blog</title>
 <meta name="keywords" content="" />
 <meta name="description" content="">
 <meta name="author" content="">
-<link rel="canonical" href="https://www.yusaito.com/blog/categories/python/" />
+<link rel="canonical" href="https://www.yusaito.com/blog/categories/%E5%B0%8F%E3%83%8D%E3%82%BF/" />
 <meta name="google-site-verification" content="7pz_dAQx7-r3P-mr6XGvIVQx47QN5DmiWRVLEocHAIM" />
 <link crossorigin="anonymous" href="/blog/assets/css/stylesheet.min.c6658695b6dbb9fcf8e6b5c4fa4bbb35a836cb1737eb964c1edb220199e8bc6d.css" integrity="sha256-xmWGlbbbufz45rXE&#43;ku7Nag2yxc365ZMHtsiAZnovG0=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://www.yusaito.com/blog/favicon.ico">
@@ -20,7 +20,7 @@
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
 <meta name="generator" content="Hugo 0.91.2" />
-<link rel="alternate" type="application/rss+xml" href="https://www.yusaito.com/blog/categories/python/index.xml">
+<link rel="alternate" type="application/rss+xml" href="https://www.yusaito.com/blog/categories/%E5%B0%8F%E3%83%8D%E3%82%BF/index.xml">
 <noscript>
     <style>
         #theme-toggle,
@@ -68,15 +68,15 @@ if (!doNotTrack) {
 	gtag('config', 'G-X5LTDFN76J', { 'anonymize_ip': false });
 }
 </script>
-<meta property="og:title" content="Python" />
+<meta property="og:title" content="小ネタ" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.yusaito.com/blog/categories/python/" /><meta property="og:image" content="https://www.yusaito.com/blog/papermod-cover.png"/>
+<meta property="og:url" content="https://www.yusaito.com/blog/categories/%E5%B0%8F%E3%83%8D%E3%82%BF/" /><meta property="og:image" content="https://www.yusaito.com/blog/papermod-cover.png"/>
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://www.yusaito.com/blog/papermod-cover.png"/>
 
-<meta name="twitter:title" content="Python"/>
+<meta name="twitter:title" content="小ネタ"/>
 <meta name="twitter:description" content=""/>
 
 </head>
@@ -142,48 +142,32 @@ if (!doNotTrack) {
 </header>
 <main class="main"> 
 <header class="page-header"><div class="breadcrumbs"><a href="https://www.yusaito.com/blog/">Home</a>&nbsp;»&nbsp;<a href="https://www.yusaito.com/blog/categories/">Categories</a></div>
-  <h1>Python</h1>
+  <h1>小ネタ</h1>
 </header>
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
-    <h2>openCVで並列化
+    <h2>公募状況のうわさ
     </h2>
   </header>
   <section class="entry-content">
-    <p>openCV でマルチプロセスがシングルプロセスになっている問題に遭遇 Python で openCV を使った処理をマルチプロセス化してみたのだが、どうもシングルプロセスになってしまうという問題に遭遇した。
-解決策：cv2.setNumThreads(0)＆マルチプロセスをやめる。 cv2.setNumThreads(0) を加えて、かつマルチスレッド化（例えば、concurrent.future.ThreadPoolExecuterなど）することで効率的に並列処理可能になることが分かった。 cv2.setNumThreads(0)有りでもconcurrent.future.ProcessPoolExecuterでは、正しくマルチプロセスされなかった。
-以下テンプレート。
-import cv2 from concurrent.futures import ThreadPoolExecutor cv2.setNumThreads(0) def task_using_cv2(param): do_some_process_using_cv2() return with ThreadPoolExecutor() as executor: results = list(executor.map(task_using_cv2, param)) 参考   </p>
+    <p>PI ポジションを目指している人なら公募の状況、例えばどの大学に誰が面接まで残っているのか、という情報を知りたいのではないだろうか。アメリカの物理関連分野では、そうした公募情報の&#34;うわさ&#34;を掲載している web サイトがある。CM/AMO Rumor Millである。公募情報はもちろん、誰がどの大学の面接に呼ばれたか、誰がオファーを受け、誰が断ったかなどが書いてある。※あくまで&#34;うわさ&#34;である。</p>
   </section>
-  <footer class="entry-footer"><span title='2022-03-17 00:00:00 +0000 UTC'>March 17, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to openCVで並列化" href="https://www.yusaito.com/blog/posts/tech/python/opencv-setnumthreads-multithreading/"></a>
+  <footer class="entry-footer"><span title='2021-07-23 00:00:00 +0000 UTC'>July 23, 2021</span></footer>
+  <a class="entry-link" aria-label="post link to 公募状況のうわさ" href="https://www.yusaito.com/blog/posts/other/cmp-rumor/"></a>
 </article>
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
-    <h2>Ryzen Threadripper 3970XとNVIDIA RTX 3090を使ってnumpy(Intel MKL and OpenBLAS)とcupyでベンチマーク
+    <h2>海外版逆評定
     </h2>
   </header>
   <section class="entry-content">
-    <p>numpy でベンチマーク # ファイル名: numpy_benchmark.py import os os.environ[&#34;OPENBLAS_NUM_THREADS&#34;] = &#34;32&#34; # import mkl # mkl.set_num_threads(32) import numpy as np import time from threadpoolctl import threadpool_info from pprint import pp pp(threadpool_info()) np.show_config() N_LOOP = 5 calc_eigh_time_list = [] calc_inv_time_list = [] calc_dot_time_list = [] calc_norm_time_list = [] for size in [5000, 10000, 20000]: print(f&#34;size : {size}&#34;) for i in range(3): np.random.seed(i) X = np.random.randn(size, size) t_start = time.time() np.linalg.eigh(X @ X.T) calc_eigh_time_list....</p>
+    <p>東大に在学していた頃は時代錯誤社が発行している「逆評定」という邪神・大鬼・鬼・仏・大仏・神などの指標で学生が大学の先生を評価するキャンパスマガジンにとてもお世話になったが、そのような媒体は欧米圏（主にアメリカ）でも存在するらしい。Rate My Professorsという web サイトである。
+ちなみに現ボス（ポスドク時代のボス）の評価はこちらである。</p>
   </section>
-  <footer class="entry-footer"><span title='2022-03-05 00:00:00 +0000 UTC'>March 5, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to Ryzen Threadripper 3970XとNVIDIA RTX 3090を使ってnumpy(Intel MKL and OpenBLAS)とcupyでベンチマーク" href="https://www.yusaito.com/blog/posts/tech/python/numpy-benchmark-ryzen-threadripper/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2>loggerとprintとtqdmの併用
-    </h2>
-  </header>
-  <section class="entry-content">
-    <p>logger と print と tqdm を併用する場合は以下のコードをコピペする。
-参考
- https://github.com/tqdm/tqdm#redirecting-writing https://qiita.com/mino-38/items/f09251d18fe3181bfbfd https://waregawa-log.hatenablog.com/entry/2020/01/01/100000 https://stackoverflow.com/questions/384076/how-can-i-color-python-logging-output  import contextlib import logging import logging.handlers import sys from time import sleep from tqdm import tqdm from tqdm.contrib import DummyTqdmFile class TqdmLoggingHandler(logging.Handler): colors = {&#34;INFO&#34;: &#34;\033[37m{}\033[0m&#34;} def __init__(self, level=logging.NOTSET): super().__init__(level) def emit(self, record): try: record.msg = TqdmLoggingHandler.colors.get(record.levelname, &#34;{}&#34;).format( record.msg ) msg = self.format(record) tqdm.write(msg, file=sys.stderr) self.flush() except Exception: self.handleError(record) class CustomFormatter(logging.Formatter): grey = &#34;\x1b[38;20m&#34; green = &#34;\x1b[32;20m&#34; yellow = &#34;\x1b[33;20m&#34; red = &#34;\x1b[31;20m&#34; bold_red = &#34;\x1b[31;1m&#34; reset = &#34;\x1b[0m&#34; format = &#34;[%(asctime)s] [%(levelname)s] [%(process)d] [%(name)s] [%(funcName)s] [%(lineno)d] %(message)s&#34; FORMATS = { logging....</p>
-  </section>
-  <footer class="entry-footer"><span title='2022-02-13 00:00:00 +0000 UTC'>February 13, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to loggerとprintとtqdmの併用" href="https://www.yusaito.com/blog/posts/tech/python/tqdm-logging-print/"></a>
+  <footer class="entry-footer"><span title='2021-07-21 00:00:00 +0000 UTC'>July 21, 2021</span></footer>
+  <a class="entry-link" aria-label="post link to 海外版逆評定" href="https://www.yusaito.com/blog/posts/other/rate-my-professors/"></a>
 </article>
     </main>
     

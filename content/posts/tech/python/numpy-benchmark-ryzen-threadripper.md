@@ -14,7 +14,7 @@ tags:
     "Intel MKL",
     "OpenBLAS",
   ]
-categories: ["Tech", "ベンチマーク"]
+categories: ["Tech", "Python"]
 ShowToc: true
 TocOpen: true
 draft: false

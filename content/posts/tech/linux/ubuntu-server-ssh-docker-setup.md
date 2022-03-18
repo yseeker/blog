@@ -4,7 +4,7 @@ title: "自宅サーバー（Ubuntu 20.04 LTS）セットアップとリモー�
 date: "2022-03-09"
 description: "最速で自宅サーバーを立ち上げ、ssh接続してdockerを動かす。"
 tags: ["Ubunu", "自宅サーバー", "docker", "ssh"]
-categories: ["Tech"]
+categories: ["Tech", "Linux"]
 ShowToc: true
 TocOpen: true
 draft: false

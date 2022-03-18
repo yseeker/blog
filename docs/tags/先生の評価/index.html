@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>ベンチマーク | YS&#39;s blog</title>
+<title>先生の評価 | YS&#39;s blog</title>
 <meta name="keywords" content="" />
 <meta name="description" content="">
 <meta name="author" content="">
-<link rel="canonical" href="https://www.yusaito.com/blog/categories/%E3%83%99%E3%83%B3%E3%83%81%E3%83%9E%E3%83%BC%E3%82%AF/" />
+<link rel="canonical" href="https://www.yusaito.com/blog/tags/%E5%85%88%E7%94%9F%E3%81%AE%E8%A9%95%E4%BE%A1/" />
 <meta name="google-site-verification" content="7pz_dAQx7-r3P-mr6XGvIVQx47QN5DmiWRVLEocHAIM" />
 <link crossorigin="anonymous" href="/blog/assets/css/stylesheet.min.c6658695b6dbb9fcf8e6b5c4fa4bbb35a836cb1737eb964c1edb220199e8bc6d.css" integrity="sha256-xmWGlbbbufz45rXE&#43;ku7Nag2yxc365ZMHtsiAZnovG0=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://www.yusaito.com/blog/favicon.ico">
@@ -20,7 +20,7 @@
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
 <meta name="generator" content="Hugo 0.91.2" />
-<link rel="alternate" type="application/rss+xml" href="https://www.yusaito.com/blog/categories/%E3%83%99%E3%83%B3%E3%83%81%E3%83%9E%E3%83%BC%E3%82%AF/index.xml">
+<link rel="alternate" type="application/rss+xml" href="https://www.yusaito.com/blog/tags/%E5%85%88%E7%94%9F%E3%81%AE%E8%A9%95%E4%BE%A1/index.xml">
 <noscript>
     <style>
         #theme-toggle,
@@ -68,15 +68,15 @@ if (!doNotTrack) {
 	gtag('config', 'G-X5LTDFN76J', { 'anonymize_ip': false });
 }
 </script>
-<meta property="og:title" content="ベンチマーク" />
+<meta property="og:title" content="先生の評価" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.yusaito.com/blog/categories/%E3%83%99%E3%83%B3%E3%83%81%E3%83%9E%E3%83%BC%E3%82%AF/" /><meta property="og:image" content="https://www.yusaito.com/blog/papermod-cover.png"/>
+<meta property="og:url" content="https://www.yusaito.com/blog/tags/%E5%85%88%E7%94%9F%E3%81%AE%E8%A9%95%E4%BE%A1/" /><meta property="og:image" content="https://www.yusaito.com/blog/papermod-cover.png"/>
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://www.yusaito.com/blog/papermod-cover.png"/>
 
-<meta name="twitter:title" content="ベンチマーク"/>
+<meta name="twitter:title" content="先生の評価"/>
 <meta name="twitter:description" content=""/>
 
 </head>
@@ -141,20 +141,21 @@ if (!doNotTrack) {
     </nav>
 </header>
 <main class="main"> 
-<header class="page-header"><div class="breadcrumbs"><a href="https://www.yusaito.com/blog/">Home</a>&nbsp;»&nbsp;<a href="https://www.yusaito.com/blog/categories/">Categories</a></div>
-  <h1>ベンチマーク</h1>
+<header class="page-header"><div class="breadcrumbs"><a href="https://www.yusaito.com/blog/">Home</a>&nbsp;»&nbsp;<a href="https://www.yusaito.com/blog/tags/">Tags</a></div>
+  <h1>先生の評価</h1>
 </header>
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
-    <h2>Ryzen Threadripper 3970XとNVIDIA RTX 3090を使ってnumpy(Intel MKL and OpenBLAS)とcupyでベンチマーク
+    <h2>海外版逆評定
     </h2>
   </header>
   <section class="entry-content">
-    <p>numpy でベンチマーク # ファイル名: numpy_benchmark.py import os os.environ[&#34;OPENBLAS_NUM_THREADS&#34;] = &#34;32&#34; # import mkl # mkl.set_num_threads(32) import numpy as np import time from threadpoolctl import threadpool_info from pprint import pp pp(threadpool_info()) np.show_config() N_LOOP = 5 calc_eigh_time_list = [] calc_inv_time_list = [] calc_dot_time_list = [] calc_norm_time_list = [] for size in [5000, 10000, 20000]: print(f&#34;size : {size}&#34;) for i in range(3): np.random.seed(i) X = np.random.randn(size, size) t_start = time.time() np.linalg.eigh(X @ X.T) calc_eigh_time_list....</p>
+    <p>東大に在学していた頃は時代錯誤社が発行している「逆評定」という邪神・大鬼・鬼・仏・大仏・神などの指標で学生が大学の先生を評価するキャンパスマガジンにとてもお世話になったが、そのような媒体は欧米圏（主にアメリカ）でも存在するらしい。Rate My Professorsという web サイトである。
+ちなみに現ボス（ポスドク時代のボス）の評価はこちらである。</p>
   </section>
-  <footer class="entry-footer"><span title='2022-03-05 00:00:00 +0000 UTC'>March 5, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to Ryzen Threadripper 3970XとNVIDIA RTX 3090を使ってnumpy(Intel MKL and OpenBLAS)とcupyでベンチマーク" href="https://www.yusaito.com/blog/posts/tech/python/numpy-benchmark-ryzen-threadripper/"></a>
+  <footer class="entry-footer"><span title='2021-07-21 00:00:00 +0000 UTC'>July 21, 2021</span></footer>
+  <a class="entry-link" aria-label="post link to 海外版逆評定" href="https://www.yusaito.com/blog/posts/other/rate-my-professors/"></a>
 </article>
     </main>
     

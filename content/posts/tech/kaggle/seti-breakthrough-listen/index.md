@@ -2,8 +2,8 @@
 #author: "Hugo Authors"
 title: "Kaggle：SETIコンペ参加記（ソロ銅：71th/768 teams）"
 date: "2021-08-19"
-#description: "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
-tags: ["Kaggle", "SETI"]
+description: "地球外知的生命体からの信号を検出するコンペ"
+tags: ["Kaggle", "SETI", "画像コンペ"]
 categories: ["Kaggle"]
 ShowToc: true
 TocOpen: true

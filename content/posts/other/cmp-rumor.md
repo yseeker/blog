@@ -3,8 +3,8 @@
 title: "公募状況のうわさ"
 date: "2021-07-23"
 description: "アメリカの物理関連分野用の公募状況の噂サイト"
-tags: ["小ネタ"]
-#categories: ["themes", "syntax"]
+tags: ["公募情報", "アメリカ", "物理"]
+categories: ["小ネタ"]
 ShowToc: true
 TocOpen: true
 draft: false
