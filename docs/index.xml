@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>プログラムではPathlibで相対パスを有効活用する</title>
+      <link>https://www.yusaito.com/blog/posts/tech/python/relative-path-with-pathlib/</link>
+      <pubDate>Thu, 17 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/posts/tech/python/relative-path-with-pathlib/</guid>
+      <description>from pathlib import Path　は便利</description>
+    </item>
+    
+    <item>
       <title>自宅サーバー（Ubuntu 20.04 LTS）セットアップとリモート環境用の諸々の初期設定（docker &#43; ssh &#43; vscode）</title>
       <link>https://www.yusaito.com/blog/posts/tech/linux/ubuntu-server-ssh-docker-setup/</link>
       <pubDate>Wed, 09 Mar 2022 00:00:00 +0000</pubDate>
@@ -234,6 +243,15 @@
       
       <guid>https://www.yusaito.com/blog/posts/us-life/first-day-in-santabarbara/</guid>
       <description>サンタバーバラでの最初の日</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.yusaito.com/blog/posts/tech/python/classmethod_property_dataclass/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/posts/tech/python/classmethod_property_dataclass/</guid>
+      <description></description>
     </item>
     
     

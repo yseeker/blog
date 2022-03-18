@@ -1,30 +1,40 @@
 ---
 #author: "Hugo Authors"
-title: "プログラムでは相対パスを有効活用する"
+title: "プログラムではPathlibで相対パスを有効活用する"
 date: "2022-03-17"
-description: "cv2.setNumThreads(0)＆マルチプロセスをやめる"
+description: "from pathlib import Path　は便利"
 tags:
   [
-    "multithreading",
-    "並列化",
-    "高速化",
-    "マルチスレッド",
-    "openCV",
-    "ThreadPoolExecuter",
-    "cv2.setNumThreads",
-    "ProcessPoolExecuter",
+    "Pathlib",
+    "Path",
+    "Pyhton",
+    "相対パス",
+    "自走プログラマー~Python の先輩が教えるプロジェクト開発のベストプラクティス 120",
   ]
 categories: ["Tech", "Python"]
 ShowToc: true
 TocOpen: true
-draft: true
+draft: false
 ---
+
+[自走プログラマー~Python の先輩が教えるプロジェクト開発のベストプラクティス 120](https://amzn.to/3iA52lL)を読んだのでその中で気になった「ファイルパスはプログラムからの相対パスで組み立てるという箇所は実践的でとても勉強になったのでメモしておく。
+
+```
+├──　run.py
+├──　data
+  ├── input.txt
+  └── images
+```
+
+みたいなディレクトリがある場合は
 
 ```python
 import csv
 from pathlib import Path
 
-this_dir = Path(__file__).parent
-file_path = this_dir / "file.txt"
-
+current_dir = Path(__file__).parent
+image_path = current_dir / "data" / "images"
+inuput_path = current_dir / "input_txt"
 ```
+
+とすればよい。

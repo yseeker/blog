@@ -1,6 +1,6 @@
 ---
 #author: "Hugo Authors"
-title: "Python高速化メモ"
+title: "Python実装での個人的に意識していること"
 date: "2021-08-19"
 #description: "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
 tags: ["Kaggle", "SETI"]
@@ -10,10 +10,7 @@ TocOpen: true
 draft: true
 ---
 
-https://qiita.com/sotasato/items/cc36a532ba6487dd3dba#1-1-python%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88%E3%81%AE%E6%9B%B8%E3%81%8D%E6%96%B9%E3%82%92%E8%A6%8B%E7%9B%B4%E3%81%99
-https://cafeunder.github.io/rosenblock-chainers-blog/2018/04/24/Python-Tips.html
-https://qiita.com/shaka/items/f180ae4dc945dc7b9066#21-%E5%8F%82%E7%85%A7%E3%81%AE%E4%BB%95%E6%96%B9%E3%81%AB%E6%B3%A8%E6%84%8F
-https://nonbiri-tereka.hatenablog.com/entry/2016/09/01/072402#%E3%83%AA%E3%82%B9%E3%83%88%E3%81%AE%E7%94%9F%E6%88%90
+## 高速化
 
 ## ドットを使わない
 
@@ -36,3 +33,10 @@ https://nonbiri-tereka.hatenablog.com/entry/2016/09/01/072402#%E3%83%AA%E3%82%B9
 
 - cython
 - numba.jit, numba.cuda.jit
+
+## 変数名
+
+https://qiita.com/sotasato/items/cc36a532ba6487dd3dba#1-1-python%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88%E3%81%AE%E6%9B%B8%E3%81%8D%E6%96%B9%E3%82%92%E8%A6%8B%E7%9B%B4%E3%81%99
+https://cafeunder.github.io/rosenblock-chainers-blog/2018/04/24/Python-Tips.html
+https://qiita.com/shaka/items/f180ae4dc945dc7b9066#21-%E5%8F%82%E7%85%A7%E3%81%AE%E4%BB%95%E6%96%B9%E3%81%AB%E6%B3%A8%E6%84%8F
+https://nonbiri-tereka.hatenablog.com/entry/2016/09/01/072402#%E3%83%AA%E3%82%B9%E3%83%88%E3%81%AE%E7%94%9F%E6%88%90
