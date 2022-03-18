@@ -2,12 +2,14 @@
 #author: "Hugo Authors"
 title: "Cancun"
 date: "2021-08-06"
-#description: "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
-tags: ["uslife", "cancun", "カンクン"]
+description: "アメリカ生活最後の思い出として、妻とメキシコのカンクンへ旅行に行った。"
+tags: ["uslife", "cancun", "カンクン", "海外旅行"]
 categories: ["アメリカ生活", "海外"]
 ShowToc: true
 TocOpen: true
 draft: false
+aliases:
+  - /posts/uslife/cancun/
 ---
 
 アメリカ生活最後の思い出として、妻とメキシコのカンクンへ旅行に行った。

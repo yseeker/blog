@@ -2,12 +2,14 @@
 #author: "Hugo Authors"
 title: "Last day in Santa Barbara"
 date: "2021-09-11"
-#description: "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
+description: "サンタバーバラ滞在最後の日"
 tags: ["uslife", "postdoc", "サンタバーバラ"]
 categories: ["アメリカ生活"]
 ShowToc: true
 TocOpen: true
 draft: false
+aliases:
+  - /posts/uslife/last_day_santabarbara/
 ---
 
 [この日](https://www.yusaito.com/blog/posts/us_life/first_day_santabarbara/)にサンタバーバラに来てからあっという間に３年間が経った。２年間住んだ Berkshire Terrace ともお別れである。

@@ -2,12 +2,14 @@
 #author: "Hugo Authors"
 title: "First day in Santa Barbara"
 date: "2018-09-29"
-#description: "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
+description: "サンタバーバラでの最初の日"
 tags: ["uslife", "サンタバーバラ"]
 categories: ["アメリカ生活"]
 ShowToc: true
 TocOpen: true
 draft: false
+aliases:
+  - /posts/uslife/first_day_santabarbara/
 ---
 
 今日からカリフォルニア・サンタバーバラでの生活が始まった。
@@ -19,7 +21,7 @@ draft: false
 <img src="images/2022-02-10-22-03-21.png" width=49% >
 </p>
 
-アイラビスタのTrigo Rd.にあるシェアハウスでまず生活を立げていく。
+アイラビスタの Trigo Rd.にあるシェアハウスでまず生活を立げていく。
 
 ![](images/2022-02-10-22-02-03.png#center)
 
@@ -27,4 +29,3 @@ draft: false
 <img src="images/2022-02-10-22-04-11.png" width=49% >
 <img src="images/2022-02-10-22-04-24.png" width=49% >
 </p>
-

@@ -10,6 +10,7 @@ TocOpen: true
 draft: false
 aliases:
   - /posts/kaggle/seti/
+  - /posts/tech/kaggle/seti/
 ---
 
 ![](images/2021-08-18-14-51-56.png#center)

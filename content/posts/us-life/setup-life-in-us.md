@@ -2,12 +2,14 @@
 #author: "Hugo Authors"
 title: "アメリカ生活ミニマムセットアップ（ポスドク＠サンタバーバラ版）"
 date: "2021-07-16"
-#description: "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
-tags: ["生活", "立ち上げ", "アメリカ", "ポスドク"]
+description: "最速で渡米準備をする。"
+tags: ["生活", "立ち上げ", "アメリカ", "渡米準備", "ポスドク", "SSN"]
 categories: ["アメリカ生活"]
 ShowToc: true
 TocOpen: true
 draft: false
+aliases:
+  - /posts/uslife/setuplife_in_us/
 ---
 
 初めてアメリカに来たのは、修士 1 年の頃、アメリカ物理学会＠デンバー（APS March Meeting）に参加したときのことだった。それから 4 年半後にアメリカ（カリフォルニア・サンタバーバラ）で生活することになるとは夢にも思ってなかった。

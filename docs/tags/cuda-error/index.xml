@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>CUDA error on YS&#39;s blog</title>
+    <link>https://www.yusaito.com/blog/tags/cuda-error/</link>
+    <description>Recent content in CUDA error on YS&#39;s blog</description>
+    <image>
+      <url>https://www.yusaito.com/blog/papermod-cover.png</url>
+      <link>https://www.yusaito.com/blog/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Tue, 11 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.yusaito.com/blog/tags/cuda-error/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AzureでA100x8（V100x4）のPytorch環境構築とエラー対処</title>
+      <link>https://www.yusaito.com/blog/posts/tech/linux/azure-vm-cuda-docker-setup/</link>
+      <pubDate>Tue, 11 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/posts/tech/linux/azure-vm-cuda-docker-setup/</guid>
+      <description>Azure A100x8の特有のエラーに遭遇</description>
+    </item>
+    
+  </channel>
+</rss>

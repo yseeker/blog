@@ -2,7 +2,7 @@
 #author: "Hugo Authors"
 title: "AzureでA100x8（V100x4）のPytorch環境構築とエラー対処"
 date: "2022-01-11"
-#description: "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
+description: "Azure A100x8の特有のエラーに遭遇"
 tags:
   [
     "Azure",
@@ -12,6 +12,8 @@ tags:
     "A100x8",
     "Data Center GPU manager",
     "fabricmanager",
+    "CUDA error",
+    "docker: Error response from daemon: could not select device driver “” with capabilities: [[gpu]]",
   ]
 categories: ["Tech", "エラー"]
 ShowToc: true
@@ -19,6 +21,7 @@ TocOpen: true
 draft: false
 aliases:
   - /posts/tech/azure_vm_setup/
+  - /posts/tech/linux/azure_vm_setup/
 ---
 
 ## Azure の web で VM インスタンスを作成

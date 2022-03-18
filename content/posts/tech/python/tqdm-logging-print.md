@@ -2,7 +2,7 @@
 #author: "Hugo Authors"
 title: "loggerとprintとtqdmの併用"
 date: "2022-02-13"
-description: "loggerとprintとtqdmの併用が、loggerのほうがよく使う"
+description: "loggerとprintとtqdmを併用できるようにする"
 tags: ["tqdm", "logging", "print", "標準出力"]
 categories: ["Tech", "Python"]
 ShowToc: true
@@ -10,6 +10,7 @@ TocOpen: true
 draft: false
 aliases:
   - /posts/tech/tqdm_logging/
+  - /posts/tech/python/tqdm_logging/
 ---
 
 logger と print と tqdm を併用する場合は以下のコードをコピペする。

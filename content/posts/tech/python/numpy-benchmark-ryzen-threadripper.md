@@ -12,7 +12,7 @@ tags:
     "NVIDIA RTX 3090",
     "ベンチマーク",
     "Intel MKL",
-    "openBLAS",
+    "OpenBLAS",
   ]
 categories: ["Tech", "ベンチマーク"]
 ShowToc: true

@@ -1,8 +1,8 @@
 ---
 #author: "Hugo Authors"
-title: "自宅サーバー（Ubuntu 20.04 LTS）セットアップと諸々の初期設定"
+title: "自宅サーバー（Ubuntu 20.04 LTS）セットアップとリモート環境用の諸々の初期設定（docker + ssh）"
 date: "2022-03-09"
-#description: "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
+description: "最速で自宅サーバーを立ち上げ、ssh接続してdockerを動かす。"
 tags: ["Ubunu", "自宅サーバー", "docker", "ssh"]
 categories: ["Tech"]
 ShowToc: true
@@ -10,6 +10,7 @@ TocOpen: true
 draft: false
 aliases:
   - /posts/tech/ubuntu_install/
+  - /posts/tech/linux/ubuntu_install/
 ---
 
 ## Ubuntu 20.04 LTS の導入
