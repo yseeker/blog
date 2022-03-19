@@ -7,7 +7,10 @@
 <meta name="robots" content="index, follow">
 <title>PythonとopenCVで並列化 | YS&#39;s blog</title>
 <meta name="keywords" content="multithreading, 並列化, 高速化, マルチスレッド, マルチプロセス, openCV, ThreadPoolExecuter, cv2.setNumThreads, ProcessPoolExecuter" />
-<meta name="description" content="cv2.setNumThreads(0)＆マルチプロセスをやめる">
+<meta name="description" content="openCV でマルチプロセス化しようとしてもシングルプロセスになっている問題に遭遇 Python で openCV を使った処理をマルチプロセス化してみたのだが、どうもシングルプロセスになってしまうという問題に遭遇した。
+解決策：cv2.setNumThreads(0)＆マルチプロセスをやめる。 cv2.setNumThreads(0) を加えて、かつマルチスレッド化（例えば、concurrent.future.ThreadPoolExecuterなど）することで効率的に並列処理可能になることが分かった。 cv2.setNumThreads(0)有りでもconcurrent.future.ProcessPoolExecuterでは、正しくマルチプロセスされなかった。
+以下テンプレート。
+import cv2 from concurrent.futures import ThreadPoolExecutor cv2.setNumThreads(0) def task_using_cv2(param): do_some_process_using_cv2() return with ThreadPoolExecutor() as executor: results = list(executor.map(task_using_cv2, param)) 参考   ">
 <meta name="author" content="">
 <link rel="canonical" href="https://www.yusaito.com/blog/posts/tech/python/opencv-setnumthreads-multithreading/" />
 <meta name="google-site-verification" content="7pz_dAQx7-r3P-mr6XGvIVQx47QN5DmiWRVLEocHAIM" />
@@ -68,7 +71,10 @@ if (!doNotTrack) {
 }
 </script>
 <meta property="og:title" content="PythonとopenCVで並列化" />
-<meta property="og:description" content="cv2.setNumThreads(0)＆マルチプロセスをやめる" />
+<meta property="og:description" content="openCV でマルチプロセス化しようとしてもシングルプロセスになっている問題に遭遇 Python で openCV を使った処理をマルチプロセス化してみたのだが、どうもシングルプロセスになってしまうという問題に遭遇した。
+解決策：cv2.setNumThreads(0)＆マルチプロセスをやめる。 cv2.setNumThreads(0) を加えて、かつマルチスレッド化（例えば、concurrent.future.ThreadPoolExecuterなど）することで効率的に並列処理可能になることが分かった。 cv2.setNumThreads(0)有りでもconcurrent.future.ProcessPoolExecuterでは、正しくマルチプロセスされなかった。
+以下テンプレート。
+import cv2 from concurrent.futures import ThreadPoolExecutor cv2.setNumThreads(0) def task_using_cv2(param): do_some_process_using_cv2() return with ThreadPoolExecutor() as executor: results = list(executor.map(task_using_cv2, param)) 参考   " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.yusaito.com/blog/posts/tech/python/opencv-setnumthreads-multithreading/" /><meta property="og:image" content="https://www.yusaito.com/blog/papermod-cover.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-03-18T00:00:00&#43;00:00" />
@@ -78,7 +84,10 @@ if (!doNotTrack) {
 <meta name="twitter:image" content="https://www.yusaito.com/blog/papermod-cover.png"/>
 
 <meta name="twitter:title" content="PythonとopenCVで並列化"/>
-<meta name="twitter:description" content="cv2.setNumThreads(0)＆マルチプロセスをやめる"/>
+<meta name="twitter:description" content="openCV でマルチプロセス化しようとしてもシングルプロセスになっている問題に遭遇 Python で openCV を使った処理をマルチプロセス化してみたのだが、どうもシングルプロセスになってしまうという問題に遭遇した。
+解決策：cv2.setNumThreads(0)＆マルチプロセスをやめる。 cv2.setNumThreads(0) を加えて、かつマルチスレッド化（例えば、concurrent.future.ThreadPoolExecuterなど）することで効率的に並列処理可能になることが分かった。 cv2.setNumThreads(0)有りでもconcurrent.future.ProcessPoolExecuterでは、正しくマルチプロセスされなかった。
+以下テンプレート。
+import cv2 from concurrent.futures import ThreadPoolExecutor cv2.setNumThreads(0) def task_using_cv2(param): do_some_process_using_cv2() return with ThreadPoolExecutor() as executor: results = list(executor.map(task_using_cv2, param)) 参考   "/>
 
 
 <script type="application/ld+json">
@@ -119,7 +128,7 @@ if (!doNotTrack) {
   "@type": "BlogPosting",
   "headline": "PythonとopenCVで並列化",
   "name": "PythonとopenCVで並列化",
-  "description": "cv2.setNumThreads(0)＆マルチプロセスをやめる",
+  "description": "openCV でマルチプロセス化しようとしてもシングルプロセスになっている問題に遭遇 Python で openCV を使った処理をマルチプロセス化してみたのだが、どうもシングルプロセスになってしまうという問題に遭遇した。\n解決策：cv2.setNumThreads(0)＆マルチプロセスをやめる。 cv2.setNumThreads(0) を加えて、かつマルチスレッド化（例えば、concurrent.future.ThreadPoolExecuterなど）することで効率的に並列処理可能になることが分かった。 cv2.setNumThreads(0)有りでもconcurrent.future.ProcessPoolExecuterでは、正しくマルチプロセスされなかった。\n以下テンプレート。\nimport cv2 from concurrent.futures import ThreadPoolExecutor cv2.setNumThreads(0) def task_using_cv2(param): do_some_process_using_cv2() return with ThreadPoolExecutor() as executor: results = list(executor.map(task_using_cv2, param)) 参考   ",
   "keywords": [
     "multithreading", "並列化", "高速化", "マルチスレッド", "マルチプロセス", "openCV", "ThreadPoolExecuter", "cv2.setNumThreads", "ProcessPoolExecuter"
   ],
@@ -211,9 +220,6 @@ if (!doNotTrack) {
     <h1 class="post-title">
       PythonとopenCVで並列化
     </h1>
-    <div class="post-description">
-      cv2.setNumThreads(0)＆マルチプロセスをやめる
-    </div>
     <div class="post-meta"><span title='2022-03-18 00:00:00 +0000 UTC'>March 18, 2022</span>
 
 </div>

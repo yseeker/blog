@@ -17,7 +17,10 @@
       <pubDate>Fri, 18 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/posts/tech/python/opencv-setnumthreads-multithreading/</guid>
-      <description>cv2.setNumThreads(0)＆マルチプロセスをやめる</description>
+      <description>openCV でマルチプロセス化しようとしてもシングルプロセスになっている問題に遭遇 Python で openCV を使った処理をマルチプロセス化してみたのだが、どうもシングルプロセスになってしまうという問題に遭遇した。
+解決策：cv2.setNumThreads(0)＆マルチプロセスをやめる。 cv2.setNumThreads(0) を加えて、かつマルチスレッド化（例えば、concurrent.future.ThreadPoolExecuterなど）することで効率的に並列処理可能になることが分かった。 cv2.setNumThreads(0)有りでもconcurrent.future.ProcessPoolExecuterでは、正しくマルチプロセスされなかった。
+以下テンプレート。
+import cv2 from concurrent.futures import ThreadPoolExecutor cv2.setNumThreads(0) def task_using_cv2(param): do_some_process_using_cv2() return with ThreadPoolExecutor() as executor: results = list(executor.map(task_using_cv2, param)) 参考   </description>
     </item>
     
     <item>
@@ -53,7 +56,9 @@
       <pubDate>Fri, 18 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/posts/tech/python/relative-path-with-pathlib/</guid>
-      <description>current_dir = Path(__file__).parentを使う。</description>
+      <description>自走プログラマー~Python の先輩が教えるプロジェクト開発のベストプラクティス 120を読んだのでその中で気になった「ファイルパスはプログラムからの相対パスで組み立てるという箇所は実践的でとても勉強になったのでメモしておく。
+├──　run.py ├──　data ├── input.txt └── images みたいなディレクトリがある場合は
+import csv from pathlib import Path current_dir = Path(__file__).parent image_path = current_dir / &amp;#34;data&amp;#34; / &amp;#34;images&amp;#34; inuput_path = current_dir / &amp;#34;input_txt&amp;#34; とすればよい。</description>
     </item>
     
     <item>
@@ -98,7 +103,10 @@
       <pubDate>Tue, 11 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/posts/tech/linux/azure-vm-cuda-docker-setup/</guid>
-      <description>Azure A100x8の特有のエラーに遭遇</description>
+      <description>Azure の web で VM インスタンスを作成 VM インスタンスの作成はこちら 秘密鍵をダウンロードして、read 権限を与えていおく。
+cp ~/Downloads/your_key_name.pem ~/.ssh/keys/azure_vm_key.pem chmod 400 ~/.ssh/keys/azure_vm_key.pem ssh を使って VM にアクセス
+ssh -i ~/.ssh/keys/azure_vm_key.pem azureuser@&amp;lt;public ip address of VM instance&amp;gt; Cuda をインストール wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/cuda-ubuntu1804.pin sudo mv cuda-ubuntu1804.pin /etc/apt/preferences.d/cuda-repository-pin-600 wget https://developer.download.nvidia.com/compute/cuda/11.5.0/local_installers/cuda-repo-ubuntu1804-11-5-local_11.5.0-495.29.05-1_amd64.deb sudo dpkg -i cuda-repo-ubuntu1804-11-5-local_11.5.0-495.29.05-1_amd64.deb sudo apt-key add /var/cuda-repo-ubuntu1804-11-5-local/7fa2af80.pub sudo apt-get update sudo apt-get -y install cuda Data Center GPU manager のインストール（A100x8 の場合） bandwidthTest を行う 詳細は、こちらを参照。 A100x8 ではここでエラーが出る、V100x4 では出ない
+git clone https://github.com/NVIDIA/cuda-samples.git cd cuda-samples/Samples/bandwidthTest make .</description>
     </item>
     
     <item>

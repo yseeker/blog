@@ -17,7 +17,9 @@
       <pubDate>Fri, 18 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/posts/tech/python/relative-path-with-pathlib/</guid>
-      <description>current_dir = Path(__file__).parentを使う。</description>
+      <description>自走プログラマー~Python の先輩が教えるプロジェクト開発のベストプラクティス 120を読んだのでその中で気になった「ファイルパスはプログラムからの相対パスで組み立てるという箇所は実践的でとても勉強になったのでメモしておく。
+├──　run.py ├──　data ├── input.txt └── images みたいなディレクトリがある場合は
+import csv from pathlib import Path current_dir = Path(__file__).parent image_path = current_dir / &amp;#34;data&amp;#34; / &amp;#34;images&amp;#34; inuput_path = current_dir / &amp;#34;input_txt&amp;#34; とすればよい。</description>
     </item>
     
   </channel>
