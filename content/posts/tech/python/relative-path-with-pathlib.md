@@ -1,13 +1,13 @@
 ---
 #author: "Hugo Authors"
 title: "プログラムではPathlibで相対パスを有効活用する"
-date: "2022-03-17"
-description: "from pathlib import Path　は便利"
+date: "2022-03-18"
+description: "pathlibは便利"
 tags:
   [
     "Pathlib",
     "Path",
-    "Pyhton",
+    "Python",
     "相対パス",
     "自走プログラマー~Python の先輩が教えるプロジェクト開発のベストプラクティス 120",
   ]
