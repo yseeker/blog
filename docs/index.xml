@@ -13,6 +13,15 @@
     <lastBuildDate>Sat, 19 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.yusaito.com/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pathlibの使い方</title>
+      <link>https://www.yusaito.com/blog/posts/tech/python/classmethod-property-dataclass/</link>
+      <pubDate>Sat, 19 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/posts/tech/python/classmethod-property-dataclass/</guid>
+      <description>pathlibは便利</description>
+    </item>
+    
+    <item>
+      <title>Pathlibの使い方</title>
       <link>https://www.yusaito.com/blog/posts/tech/python/how-to-use-pathlib/</link>
       <pubDate>Sat, 19 Mar 2022 00:00:00 +0000</pubDate>
       
@@ -21,16 +30,43 @@
     </item>
     
     <item>
-      <title>プログラムではPathlibで相対パスを有効活用する</title>
+      <title>Pythonでjpgからpngへ一括変換</title>
+      <link>https://www.yusaito.com/blog/posts/tech/python/multiprocess-image-convert/</link>
+      <pubDate>Sat, 19 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/posts/tech/python/multiprocess-image-convert/</guid>
+      <description>jpg2pngとmultiprocess</description>
+    </item>
+    
+    <item>
+      <title>Pythonでファイルリストからの並列処理</title>
+      <link>https://www.yusaito.com/blog/posts/tech/python/multiprocess-multithreading-utils/</link>
+      <pubDate>Sat, 19 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/posts/tech/python/multiprocess-multithreading-utils/</guid>
+      <description>concurrent.futuresとjoblibの場合</description>
+    </item>
+    
+    <item>
+      <title>PythonとOpenCVで画像リストから動画を作成</title>
+      <link>https://www.yusaito.com/blog/posts/tech/python/create-video-from-images-opencv/</link>
+      <pubDate>Sat, 19 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/posts/tech/python/create-video-from-images-opencv/</guid>
+      <description>cv2.VideoWriterを使う.</description>
+    </item>
+    
+    <item>
+      <title>Pathlibで相対パスを有効活用する</title>
       <link>https://www.yusaito.com/blog/posts/tech/python/relative-path-with-pathlib/</link>
       <pubDate>Fri, 18 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/posts/tech/python/relative-path-with-pathlib/</guid>
-      <description>pathlibは便利</description>
+      <description>current_dir = Path(__file__).parentを使う。</description>
     </item>
     
     <item>
-      <title>openCVで並列化</title>
+      <title>PythonとopenCVで並列化</title>
       <link>https://www.yusaito.com/blog/posts/tech/python/opencv-setnumthreads-multithreading/</link>
       <pubDate>Thu, 17 Mar 2022 00:00:00 +0000</pubDate>
       
@@ -39,7 +75,7 @@
     </item>
     
     <item>
-      <title>自宅サーバー（Ubuntu 20.04 LTS）セットアップとリモート環境用の諸々の初期設定（docker &#43; ssh &#43; vscode）</title>
+      <title>Ubuntu 20.04 LTSセットアップ（自宅サーバー用）とリモート環境用の諸々の初期設定（docker &#43; ssh &#43; vscode）</title>
       <link>https://www.yusaito.com/blog/posts/tech/linux/ubuntu-server-ssh-docker-setup/</link>
       <pubDate>Wed, 09 Mar 2022 00:00:00 +0000</pubDate>
       
@@ -54,6 +90,15 @@
       
       <guid>https://www.yusaito.com/blog/posts/tech/python/numpy-benchmark-ryzen-threadripper/</guid>
       <description>Ryzen Threadripper 3970Xは最強</description>
+    </item>
+    
+    <item>
+      <title>エラーメモ：IOError: image file is truncated</title>
+      <link>https://www.yusaito.com/blog/posts/tech/python/ioe-image-file-is-truncated/</link>
+      <pubDate>Sat, 05 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/posts/tech/python/ioe-image-file-is-truncated/</guid>
+      <description>ImageFile.LOAD_TRUNCATED_IMAGES = Trueで解決.</description>
     </item>
     
     <item>
@@ -256,10 +301,10 @@
     
     <item>
       <title></title>
-      <link>https://www.yusaito.com/blog/posts/tech/python/classmethod-property-dataclass/</link>
+      <link>https://www.yusaito.com/blog/posts/tech/python/remove-background-with-rembg/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.yusaito.com/blog/posts/tech/python/classmethod-property-dataclass/</guid>
+      <guid>https://www.yusaito.com/blog/posts/tech/python/remove-background-with-rembg/</guid>
       <description></description>
     </item>
     

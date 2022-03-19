@@ -36,7 +36,7 @@ path = Path("./dir/filename.txt")
 - 同じ階層に別名ファイルを作成 : `path.with_name('file_new.txt').touch()`
 - 同じ階層に別拡張子ファイルを作成 : `path.with_suffix('png').touch()`
 - 同じ階層のファイルとディレクトリ一覧を返す：`path.iterdir()`
-- ファイルの存在ディレクトリのパスを取得：`current_dir = Path(__file__).parent`
+- ファイルの存在ディレクトリのパスを取得：`Path(__file__).parent`
 
 ## 個人的によく使うモジュール
 

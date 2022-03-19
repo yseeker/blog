@@ -1,6 +1,6 @@
 ---
 #author: "Hugo Authors"
-title: "自宅サーバー（Ubuntu 20.04 LTS）セットアップとリモート環境用の諸々の初期設定（docker + ssh + vscode）"
+title: "Ubuntu 20.04 LTSセットアップ（自宅サーバー用）とリモート環境用の諸々の初期設定（docker + ssh + vscode）"
 date: "2022-03-09"
 description: "最速で自宅サーバーを立ち上げ、ssh接続してdockerを動かす。"
 tags:

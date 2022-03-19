@@ -1,8 +1,8 @@
 ---
 #author: "Hugo Authors"
-title: "プログラムではPathlibで相対パスを有効活用する"
+title: "Pathlibで相対パスを有効活用する"
 date: "2022-03-18"
-description: "pathlibは便利"
+description: "current_dir = Path(__file__).parentを使う。"
 tags:
   [
     "Pathlib",

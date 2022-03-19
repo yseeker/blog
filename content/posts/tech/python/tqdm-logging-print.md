@@ -15,13 +15,6 @@ aliases:
 
 logger と print と tqdm を併用する場合は以下のコードをコピペする。
 
-参考
-
-- [https://github.com/tqdm/tqdm#redirecting-writing](https://github.com/tqdm/tqdm#redirecting-writing)
-- [https://qiita.com/mino-38/items/f09251d18fe3181bfbfd](https://qiita.com/mino-38/items/f09251d18fe3181bfbfd)
-- [https://waregawa-log.hatenablog.com/entry/2020/01/01/100000](https://waregawa-log.hatenablog.com/entry/2020/01/01/100000)
-- [https://stackoverflow.com/questions/384076/how-can-i-color-python-logging-output](https://stackoverflow.com/questions/384076/how-can-i-color-python-logging-output)
-
 ```python
 import contextlib
 import logging
@@ -133,3 +126,10 @@ with std_out_err_redirect_tqdm() as orig_stdout:
 # After the `with`, printing is restored
 print("Done!")
 ```
+
+## 参考
+
+- [https://github.com/tqdm/tqdm#redirecting-writing](https://github.com/tqdm/tqdm#redirecting-writing)
+- [https://qiita.com/mino-38/items/f09251d18fe3181bfbfd](https://qiita.com/mino-38/items/f09251d18fe3181bfbfd)
+- [https://waregawa-log.hatenablog.com/entry/2020/01/01/100000](https://waregawa-log.hatenablog.com/entry/2020/01/01/100000)
+- [https://stackoverflow.com/questions/384076/how-can-i-color-python-logging-output](https://stackoverflow.com/questions/384076/how-can-i-color-python-logging-output)

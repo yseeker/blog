@@ -1,6 +1,6 @@
 ---
 #author: "Hugo Authors"
-title: "openCVで並列化"
+title: "PythonとopenCVで並列化"
 date: "2022-03-17"
 description: "cv2.setNumThreads(0)＆マルチプロセスをやめる"
 tags:
@@ -9,6 +9,7 @@ tags:
     "並列化",
     "高速化",
     "マルチスレッド",
+    "マルチプロセス",
     "openCV",
     "ThreadPoolExecuter",
     "cv2.setNumThreads",

@@ -123,8 +123,8 @@ if (!doNotTrack) {
   "keywords": [
     "Pathlib", "Path", "Python", "glob"
   ],
-  "articleBody": "基本操作 ファイル名取得 ディレクトリ名取得 from pathlib import Path path = Path(\"./dir/filename.txt\")  ファイル名を取得 : path.name ファイル名拡張子抜き : path.stem ファイルの拡張子のみ : path.suffix ファイルのディレクトリを取得 : path.parents (list) パス連結 : / 演算子を使う（path.joinpath()） パスの存在確認：path.exists() ファイルかどうか確認 : path.is_file() ディレクトリかどうか確認 : path.is_dir() ディレクトリの作成 : path.mkdir(exist_ok=True, parents=True) ディレクトリの削除 : path.rmdir() ファイル/ディレクトリパス変更 : path.replace(tgt) ファイル/ディレクトリパス変更（末尾のみ）: path.rename(new_file_apth) 同じ階層に別名ファイルを作成 : path.with_name('file_new.txt').touch() 同じ階層に別拡張子ファイルを作成 : path.with_suffix('png').touch() 同じ階層のファイルとディレクトリ一覧を返す：path.iterdir() ファイルの存在ディレクトリのパスを取得：current_dir = Path(__file__).parent  個人的によく使うモジュール ファイルを再帰的に探索  Pathlib の場合  # Pathlibの場合 from pathlib import Path from typing import List def list_file_paths(dir_path: str) - List[str]: \"\"\" List file paths in a directory. Parameters ---------- dir_path : str Path for the directory Returns ------- List[str] List of the file paths in the directory \"\"\" return sorted([str(path) for path in Path(dir_path).rglob(\"*\") if path.is_file()])  os + glob の場合  # os + globの場合 import os import glob from typing import List def list_file_paths(dir_path: str) - List[str]: \"\"\" List file paths in a directory. Parameters ---------- dir_path : str Path for the directory Returns ------- List[str] List of the file paths in the directory \"\"\" return sorted( [ path for path in glob.glob(os.path.join(dir_path, \"**\"), recursive=True) if os.path.isfile(path) ] ) ファイル名の一括変換 def add_suffix_to_all_file_paths(dir_path: str) - List[str]: \"\"\" Add suffix to all the file name Parameters ---------- dir_path : str Path for the directory Returns ------- List[str] List of the file paths in the directory \"\"\" return sorted( [ str( path.rename( str(path.parent / Path(path.stem + \"_suffix\" + path.suffix)) ) ) for path in Path(dir_path).rglob(\"*\") if path.is_file() ] ) ",
-  "wordCount" : "231",
+  "articleBody": "基本操作 ファイル名取得 ディレクトリ名取得 from pathlib import Path path = Path(\"./dir/filename.txt\")  ファイル名を取得 : path.name ファイル名拡張子抜き : path.stem ファイルの拡張子のみ : path.suffix ファイルのディレクトリを取得 : path.parents (list) パス連結 : / 演算子を使う（path.joinpath()） パスの存在確認：path.exists() ファイルかどうか確認 : path.is_file() ディレクトリかどうか確認 : path.is_dir() ディレクトリの作成 : path.mkdir(exist_ok=True, parents=True) ディレクトリの削除 : path.rmdir() ファイル/ディレクトリパス変更 : path.replace(tgt) ファイル/ディレクトリパス変更（末尾のみ）: path.rename(new_file_apth) 同じ階層に別名ファイルを作成 : path.with_name('file_new.txt').touch() 同じ階層に別拡張子ファイルを作成 : path.with_suffix('png').touch() 同じ階層のファイルとディレクトリ一覧を返す：path.iterdir() ファイルの存在ディレクトリのパスを取得：Path(__file__).parent  個人的によく使うモジュール ファイルを再帰的に探索  Pathlib の場合  # Pathlibの場合 from pathlib import Path from typing import List def list_file_paths(dir_path: str) - List[str]: \"\"\" List file paths in a directory. Parameters ---------- dir_path : str Path for the directory Returns ------- List[str] List of the file paths in the directory \"\"\" return sorted([str(path) for path in Path(dir_path).rglob(\"*\") if path.is_file()])  os + glob の場合  # os + globの場合 import os import glob from typing import List def list_file_paths(dir_path: str) - List[str]: \"\"\" List file paths in a directory. Parameters ---------- dir_path : str Path for the directory Returns ------- List[str] List of the file paths in the directory \"\"\" return sorted( [ path for path in glob.glob(os.path.join(dir_path, \"**\"), recursive=True) if os.path.isfile(path) ] ) ファイル名の一括変換 def add_suffix_to_all_file_paths(dir_path: str) - List[str]: \"\"\" Add suffix to all the file name Parameters ---------- dir_path : str Path for the directory Returns ------- List[str] List of the file paths in the directory \"\"\" return sorted( [ str( path.rename( str(path.parent / Path(path.stem + \"_suffix\" + path.suffix)) ) ) for path in Path(dir_path).rglob(\"*\") if path.is_file() ] ) ",
+  "wordCount" : "229",
   "inLanguage": "en",
   "datePublished": "2022-03-19T00:00:00Z",
   "dateModified": "2022-03-19T00:00:00Z",
@@ -268,7 +268,7 @@ path <span style="color:#f92672">=</span> Path(<span style="color:#e6db74">&#34;
 <li>同じ階層に別名ファイルを作成 : <code>path.with_name('file_new.txt').touch()</code></li>
 <li>同じ階層に別拡張子ファイルを作成 : <code>path.with_suffix('png').touch()</code></li>
 <li>同じ階層のファイルとディレクトリ一覧を返す：<code>path.iterdir()</code></li>
-<li>ファイルの存在ディレクトリのパスを取得：<code>current_dir = Path(__file__).parent</code></li>
+<li>ファイルの存在ディレクトリのパスを取得：<code>Path(__file__).parent</code></li>
 </ul>
 <h2 id="個人的によく使うモジュール">個人的によく使うモジュール<a hidden class="anchor" aria-hidden="true" href="#個人的によく使うモジュール">#</a></h2>
 <h3 id="ファイルを再帰的に探索">ファイルを再帰的に探索<a hidden class="anchor" aria-hidden="true" href="#ファイルを再帰的に探索">#</a></h3>
@@ -357,13 +357,17 @@ path <span style="color:#f92672">=</span> Path(<span style="color:#e6db74">&#34;
 <h3>Related Posts</h3>
 <ul>
 	
-	<li><a href="/blog/posts/tech/python/relative-path-with-pathlib/">プログラムではPathlibで相対パスを有効活用する</a></li>
+	<li><a href="/blog/posts/tech/python/classmethod-property-dataclass/">Pathlibの使い方</a></li>
 	
-	<li><a href="/blog/posts/tech/python/opencv-setnumthreads-multithreading/">openCVで並列化</a></li>
+	<li><a href="/blog/posts/tech/python/relative-path-with-pathlib/">Pathlibで相対パスを有効活用する</a></li>
 	
-	<li><a href="/blog/posts/tech/python/numpy-benchmark-ryzen-threadripper/">Ryzen Threadripper 3970XとNVIDIA RTX 3090を使ってnumpy(Intel MKL and OpenBLAS)とcupyでベンチマーク</a></li>
+	<li><a href="/blog/posts/tech/python/multiprocess-multithreading-utils/">Pythonでファイルリストからの並列処理</a></li>
 	
-	<li><a href="/blog/posts/tech/python/tqdm-logging-print/">loggerとprintとtqdmの併用</a></li>
+	<li><a href="/blog/posts/tech/python/multiprocess-image-convert/">Pythonでjpgからpngへ一括変換</a></li>
+	
+	<li><a href="/blog/posts/tech/python/create-video-from-images-opencv/">PythonとOpenCVで画像リストから動画を作成</a></li>
+	
+	<li><a href="/blog/posts/tech/python/ioe-image-file-is-truncated/">エラーメモ：IOError: image file is truncated</a></li>
 	
 </ul>
 
@@ -377,10 +381,15 @@ path <span style="color:#f92672">=</span> Path(<span style="color:#e6db74">&#34;
       <li><a href="https://www.yusaito.com/blog/tags/glob/">glob</a></li>
     </ul>
 <nav class="paginav">
-  <a class="next" href="https://www.yusaito.com/blog/posts/tech/python/relative-path-with-pathlib/">
+  <a class="prev" href="https://www.yusaito.com/blog/posts/tech/python/classmethod-property-dataclass/">
+    <span class="title">« Prev Page</span>
+    <br>
+    <span>Pathlibの使い方</span>
+  </a>
+  <a class="next" href="https://www.yusaito.com/blog/posts/tech/python/multiprocess-image-convert/">
     <span class="title">Next Page »</span>
     <br>
-    <span>プログラムではPathlibで相対パスを有効活用する</span>
+    <span>Pythonでjpgからpngへ一括変換</span>
   </a>
 </nav>
 

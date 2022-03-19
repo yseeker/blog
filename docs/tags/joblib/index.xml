@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>joblib on YS&#39;s blog</title>
+    <link>https://www.yusaito.com/blog/tags/joblib/</link>
+    <description>Recent content in joblib on YS&#39;s blog</description>
+    <image>
+      <url>https://www.yusaito.com/blog/papermod-cover.png</url>
+      <link>https://www.yusaito.com/blog/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Sat, 19 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.yusaito.com/blog/tags/joblib/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pythonでファイルリストからの並列処理</title>
+      <link>https://www.yusaito.com/blog/posts/tech/python/multiprocess-multithreading-utils/</link>
+      <pubDate>Sat, 19 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/posts/tech/python/multiprocess-multithreading-utils/</guid>
+      <description>concurrent.futuresとjoblibの場合</description>
+    </item>
+    
+  </channel>
+</rss>
