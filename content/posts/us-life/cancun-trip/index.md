@@ -2,7 +2,6 @@
 #author: "Hugo Authors"
 title: "Cancun"
 date: "2021-08-06"
-description: "アメリカ生活最後の思い出として、妻とメキシコのカンクンへ旅行に行った。"
 tags: ["uslife", "cancun", "カンクン", "海外旅行"]
 categories: ["アメリカ生活", "海外"]
 ShowToc: true

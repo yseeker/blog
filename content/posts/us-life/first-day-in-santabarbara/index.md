@@ -2,7 +2,6 @@
 #author: "Hugo Authors"
 title: "First day in Santa Barbara"
 date: "2018-09-29"
-description: "サンタバーバラでの最初の日"
 tags: ["uslife", "サンタバーバラ"]
 categories: ["アメリカ生活"]
 ShowToc: true

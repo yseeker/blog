@@ -2,7 +2,6 @@
 #author: "Hugo Authors"
 title: "Jamie Sloan Wines"
 date: "2021-08-06"
-description: "サンタバーバラダウンタウンで評判のワイナリー"
 tags: ["uslife", "サンタバーバラ", "ワイン", "ワイナリー"]
 categories: ["アメリカ生活"]
 ShowToc: true

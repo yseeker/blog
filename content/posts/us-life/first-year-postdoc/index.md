@@ -2,7 +2,6 @@
 #author: "Hugo Authors"
 title: "Twenty-four seven --- ポスドク1年目の思い出"
 date: "2021-08-12"
-description: "ポスドク１年目の働き方の心構え"
 tags: ["uslife", "postdoc", "研究", "アメリカ生活", "働き方"]
 categories: ["アメリカ生活"]
 ShowToc: true

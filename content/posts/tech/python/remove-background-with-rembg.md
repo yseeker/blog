@@ -2,7 +2,6 @@
 #author: "Hugo Authors"
 title: "ffmpeg"
 date: "2022-03-17"
-description: "cv2.setNumThreads(0)＆マルチプロセスをやめる"
 tags:
   [
     "multithreading",

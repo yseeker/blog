@@ -29,7 +29,9 @@ import cv2 from concurrent.futures import ThreadPoolExecutor cv2.setNumThreads(0
       <pubDate>Sat, 05 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/posts/tech/linux/ubuntu-server-ssh-docker-setup/</guid>
-      <description>最速で自宅サーバーを立ち上げ、ssh接続してdockerを動かす。</description>
+      <description>Ubuntu 20.04 LTS の導入 こちらの記事に従って、Ubuntu を入れた。
+ライブ USB の作成  Rufus をダウンロード ubuntu の iso ファイルをダウンロード USB を挿して、Rufus を使ってライブ USB を作成  Ubuntu のインストール  細かい設定はこちらの記事を参照  インストール後にログインループになってログインできなくなった  ctrl + alt + F2で tty 仮想コンソールを開く Nvidia ドライバ, cuda があるかどうか確認  dpkg -l | grep nvidia dpkg -l | grep cuda ※もしですでにある場合は削除しておく
+sudo apt-get --purge remove nvidia-* sudo apt-get --purge remove cuda-*  GPU ドライバが無かったら下記で Nvidia ドライバを入れる  sudo ubuntu-drivers install sudo reboot または version 指定して入れる。</description>
     </item>
     
     <item>
@@ -38,7 +40,7 @@ import cv2 from concurrent.futures import ThreadPoolExecutor cv2.setNumThreads(0
       <pubDate>Mon, 28 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/posts/tech/python/numpy-benchmark-ryzen-threadripper/</guid>
-      <description>Ryzen Threadripper 3970Xは最強</description>
+      <description>numpy でベンチマーク # ファイル名: numpy_benchmark.py import os os.environ[&amp;#34;OPENBLAS_NUM_THREADS&amp;#34;] = &amp;#34;32&amp;#34; # import mkl # mkl.set_num_threads(32) import numpy as np import time from threadpoolctl import threadpool_info from pprint import pp pp(threadpool_info()) np.show_config() N_LOOP = 5 calc_eigh_time_list = [] calc_inv_time_list = [] calc_dot_time_list = [] calc_norm_time_list = [] for size in [5000, 10000, 20000]: print(f&amp;#34;size : {size}&amp;#34;) for i in range(3): np.random.seed(i) X = np.random.randn(size, size) t_start = time.time() np.linalg.eigh(X @ X.T) calc_eigh_time_list.</description>
     </item>
     
     <item>
@@ -47,7 +49,7 @@ import cv2 from concurrent.futures import ThreadPoolExecutor cv2.setNumThreads(0
       <pubDate>Sat, 26 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/posts/tech/python/create-video-from-images-opencv/</guid>
-      <description>cv2.VideoWriterを使う.</description>
+      <description>openCV を使って画像リストから動画を作成する。 from pathlib import Path from typing import List import cv2 def list_file_paths(dir_path: str) -&amp;gt; List[str]: &amp;#34;&amp;#34;&amp;#34; List file paths in a directory. Parameters ---------- dir_path : str Path of the directory Returns ------- List[str] List of the file paths in the directory &amp;#34;&amp;#34;&amp;#34; return sorted([str(path) for path in Path(dir_path).rglob(&amp;#34;*&amp;#34;) if path.is_file()]) def create_mp4_video_from_image_path_list( output_video_path: str, image_path_list: List[str], fps: int, ) -&amp;gt; None: &amp;#34;&amp;#34;&amp;#34; Create mp4 video file from a image path list Parameters ---------- output_video_path : str Path of the output video image_path_list : List[str] Path of image file list fps : int fps (frames per second) &amp;#34;&amp;#34;&amp;#34; height, width, _ = cv2.</description>
     </item>
     
     <item>
@@ -67,7 +69,8 @@ import csv from pathlib import Path current_dir = Path(__file__).parent image_pa
       <pubDate>Sun, 13 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/posts/tech/python/tqdm-logging-print/</guid>
-      <description>loggerとprintとtqdmを併用できるようにする</description>
+      <description>logger と print と tqdm を併用する場合は以下のコードをコピペする。
+import contextlib import logging import logging.handlers import sys from time import sleep from tqdm import tqdm from tqdm.contrib import DummyTqdmFile class TqdmLoggingHandler(logging.Handler): colors = {&amp;#34;INFO&amp;#34;: &amp;#34;\033[37m{}\033[0m&amp;#34;} def __init__(self, level=logging.NOTSET): super().__init__(level) def emit(self, record): try: record.msg = TqdmLoggingHandler.colors.get(record.levelname, &amp;#34;{}&amp;#34;).format( record.msg ) msg = self.format(record) tqdm.write(msg, file=sys.stderr) self.flush() except Exception: self.handleError(record) class CustomFormatter(logging.Formatter): grey = &amp;#34;\x1b[38;20m&amp;#34; green = &amp;#34;\x1b[32;20m&amp;#34; yellow = &amp;#34;\x1b[33;20m&amp;#34; red = &amp;#34;\x1b[31;20m&amp;#34; bold_red = &amp;#34;\x1b[31;1m&amp;#34; reset = &amp;#34;\x1b[0m&amp;#34; format = &amp;#34;[%(asctime)s] [%(levelname)s] [%(process)d] [%(name)s] [%(funcName)s] [%(lineno)d] %(message)s&amp;#34; FORMATS = { logging.</description>
     </item>
     
     <item>
@@ -76,7 +79,7 @@ import csv from pathlib import Path current_dir = Path(__file__).parent image_pa
       <pubDate>Thu, 03 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/posts/tech/python/multiprocess-multithreading-utils/</guid>
-      <description>concurrent.futuresとjoblibの場合</description>
+      <description>ファイルのリストを受け取って何らかの並列処理をする。 from concurrent.futures import ProcessPoolExecutor, ThreadPoolExecutor from functools import partial from pathlib import Path from typing import List def list_file_paths(dir_path: str) -&amp;gt; List[str]: &amp;#34;&amp;#34;&amp;#34; List file paths in a directory. Parameters ---------- dir_path : str Path of the directory Returns ------- List[str] List of the file paths in the directory &amp;#34;&amp;#34;&amp;#34; return sorted([str(path) for path in Path(dir_path).rglob(&amp;#34;*&amp;#34;) if path.is_file()]) def task(same_value, same_value2, diffent_values): return None def multiprocess_task(task, same_value, same_value2, diffent_values): with ProcessPoolExecutor() as executor: results = list(executor.</description>
     </item>
     
     <item>
@@ -85,7 +88,7 @@ import csv from pathlib import Path current_dir = Path(__file__).parent image_pa
       <pubDate>Tue, 25 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/posts/tech/python/image-convert-jpg-png-multiprocess/</guid>
-      <description>jpg2pngとmultiprocess</description>
+      <description>jpg から png への一括変換 (マルチプロセス) from concurrent.futures import ProcessPoolExecutor, ThreadPoolExecutor from functools import partial from pathlib import Path from typing import List from PIL import Image, ImageFile ImageFile.LOAD_TRUNCATED_IMAGES = True def list_file_paths(dir_path: str) -&amp;gt; List[str]: &amp;#34;&amp;#34;&amp;#34; List file paths in a directory. Parameters ---------- dir_path : str Path of the directory Returns ------- List[str] List of the file paths in the directory &amp;#34;&amp;#34;&amp;#34; return sorted([str(path) for path in Path(dir_path).rglob(&amp;#34;*&amp;#34;) if path.</description>
     </item>
     
     <item>
@@ -94,7 +97,7 @@ import csv from pathlib import Path current_dir = Path(__file__).parent image_pa
       <pubDate>Wed, 19 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/posts/tech/python/how-to-use-pathlib/</guid>
-      <description>pathlibは便利</description>
+      <description>基本操作 ファイル名取得 ディレクトリ名取得 from pathlib import Path path = Path(&amp;#34;./dir/filename.txt&amp;#34;)  ファイル名を取得 : path.name ファイル名拡張子抜き : path.stem ファイルの拡張子のみ : path.suffix ファイルのディレクトリを取得 : path.parents (list) パス連結 : / 演算子を使う（path.joinpath()） パスの存在確認：path.exists() ファイルかどうか確認 : path.is_file() ディレクトリかどうか確認 : path.is_dir() ディレクトリの作成 : path.mkdir(exist_ok=True, parents=True) ディレクトリの削除 : path.rmdir() ファイル/ディレクトリパス変更 : path.replace(tgt) ファイル/ディレクトリパス変更（末尾のみ）: path.rename(new_file_apth) 同じ階層に別名ファイルを作成 : path.with_name(&#39;file_new.txt&#39;).touch() 同じ階層に別拡張子ファイルを作成 : path.with_suffix(&#39;png&#39;).touch() 同じ階層のファイルとディレクトリ一覧を返す：path.iterdir() ファイルの存在ディレクトリのパスを取得：Path(__file__).parent  個人的によく使うモジュール ファイルを再帰的に探索  Pathlib の場合  # Pathlibの場合 from pathlib import Path from typing import List def list_file_paths(dir_path: str) -&amp;gt; List[str]: &amp;#34;&amp;#34;&amp;#34; List file paths in a directory.</description>
     </item>
     
     <item>
@@ -115,7 +118,8 @@ git clone https://github.com/NVIDIA/cuda-samples.git cd cuda-samples/Samples/ban
       <pubDate>Mon, 03 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/posts/tech/python/ioerror-image-file-is-truncated/</guid>
-      <description>ImageFile.LOAD_TRUNCATED_IMAGES = Trueで解決.</description>
+      <description>IOError: image file is truncated jpg で結構大きめの画像を Pillow で読み込むときに下記のエラーが出た。
+IOError: image file is truncated 解決策 from PIL import ImageFile ImageFile.LOAD_TRUNCATED_IMAGES = True 参考  </description>
     </item>
     
   </channel>

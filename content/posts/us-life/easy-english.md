@@ -2,7 +2,6 @@
 #author: "Hugo Authors"
 title: "初見では難しい、でも単語は簡単な英語表現"
 date: "2021-07-08"
-description: "I would try this experiment."
 tags: ["英語", "海外生活"]
 categories: ["アメリカ生活"]
 ShowToc: true

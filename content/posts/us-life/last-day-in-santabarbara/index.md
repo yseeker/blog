@@ -2,7 +2,6 @@
 #author: "Hugo Authors"
 title: "Last day in Santa Barbara"
 date: "2021-09-11"
-description: "サンタバーバラ滞在最後の日"
 tags: ["uslife", "postdoc", "サンタバーバラ"]
 categories: ["アメリカ生活"]
 ShowToc: true

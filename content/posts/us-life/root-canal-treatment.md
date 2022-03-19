@@ -2,7 +2,6 @@
 #author: "Hugo Authors"
 title: "アメリカで歯の神経を抜いた話"
 date: "2021-06-15"
-description: "歯は大事。そして意外と治療費は高くない。"
 tags: ["歯", "根幹治療"]
 categories: ["アメリカ生活"]
 ShowToc: true

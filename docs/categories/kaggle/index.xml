@@ -17,7 +17,10 @@
       <pubDate>Thu, 19 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/posts/tech/kaggle/seti-breakthrough-listen/</guid>
-      <description>地球外知的生命体からの信号を検出するコンペ</description>
+      <description>SETI Breakthrough Listen - E.T. Signal Searchという Kaggle の画像分類コンペに参加しました。
+結果 774 チーム中 74 位でソロ銅でした。
+コンペの概要 Overview のページには
+ In this competition, use your data science skills to help identify anomalous signals in scans of Breakthrough Listen targets. Because there are no confirmed examples of alien signals to use to train machine learning algorithms, the team included some simulated signals (that they call “needles”) in the haystack of data from the telescope.</description>
     </item>
     
   </channel>

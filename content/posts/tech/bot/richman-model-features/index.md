@@ -2,7 +2,6 @@
 #author: "Hugo Authors"
 title: "richmanbtcさんのチュートリアルで特徴量を解析してみる"
 date: "2022-02-01"
-#description: "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
 tags: ["特徴量", "richmanbtc"]
 categories: ["仮想通貨ボット"]
 ShowToc: true
@@ -10,7 +9,7 @@ TocOpen: true
 draft: true
 ---
 
-richmanbtcさんの機械学習ボットのチュートリアルが面白そうだったので少し特徴量を解析してみました。ただ、機械学習で重要なのはrichmanbtcさん自身が[FAQ](https://note.com/btcml/n/ne5f730bb7c64)で「執行の改善と特徴量の改善、どちらが寄与が大きい？」という問いに対して「執行の改善」と答えていたり、界隈で有名な方が
+richmanbtc さんの機械学習ボットのチュートリアルが面白そうだったので少し特徴量を解析してみました。ただ、機械学習で重要なのは richmanbtc さん自身が[FAQ](https://note.com/btcml/n/ne5f730bb7c64)で「執行の改善と特徴量の改善、どちらが寄与が大きい？」という問いに対して「執行の改善」と答えていたり、界隈で有名な方が
 [「予測より執行」について](https://bittokoinn.tokyo/posts/prediction_and_execution/)
 [予測力と執行戦略について](https://note.com/hht/n/nb7fcfe538c59)
 という記事を出している通り、特徴量エンジニアリングするより強い執行を導入する方が重要なのかなと思ってます。（何が強い執行かは戦略とか時間足によって変わると思う。）
@@ -88,12 +87,14 @@ def visualize_importance(models, features):
     fig.tight_layout()
     return fig, ax
 ```
+
 <p>
 <img src="images/feature_importance_buy.png" width=49% >
 <img src="images/feature_importance_sell.png" width=49% >
 </p>
 
 ## Permutation Feature Importance
+
 ```python
 def rmse(y_true, y_pred):
     return np.sqrt(mean_squared_error(y_true, y_pred))
@@ -112,6 +113,7 @@ def get_permutation_importance(df, model, features, target):
     )
     return result["importances_mean"]
 ```
+
 <p>
 <img src="images/permutation_feature_importance_buy.png" width=49% >
 <img src="images/permutation_feature_importance_sell.png" width=49% >
@@ -122,7 +124,9 @@ def get_permutation_importance(df, model, features, target):
 ## Independent なんとか
 
 ## Shapley value (shap 値)
+
 ```python
 
 ```
+
 ![](images/2022-02-01-21-45-08.png#center)

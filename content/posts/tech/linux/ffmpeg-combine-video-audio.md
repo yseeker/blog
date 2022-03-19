@@ -2,7 +2,6 @@
 #author: "Hugo Authors"
 title: "ffmpeg"
 date: "2022-03-17"
-description: "cv2.setNumThreads(0)＆マルチプロセスをやめる"
 tags:
   [
     "multithreading",
@@ -36,7 +35,6 @@ ffmpeg -loop 1 -i ima.jpg -i audio.wav -c:v libx264 -tune stillimage -c:a aac -b
 ffmpeg -i _.mp4 -i _.wav -c:v copy -c:a aac -strict experimental -map 0:v -map 1:a output.mp4
 ffmpeg -i "video.mp4" -i "audio.mp3" -vcodec copy -acodec copy "my_video.mp4"
 ffmpeg -i INPUT_FILE.mp4 -i AUDIO.wav -c:v copy -c:a aac OUTPUT_FILE.mp4
-
 
 https://dev.classmethod.jp/articles/ffmpeg-create-movie-by-audio/
 https://superuser.com/questions/1137612/ffmpeg-replace-audio-in-video

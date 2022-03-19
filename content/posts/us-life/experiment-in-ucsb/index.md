@@ -2,7 +2,6 @@
 #author: "Hugo Authors"
 title: "ポスドク＠UCSBでの実験について"
 date: "2021-07-27"
-description: "カリフォルニア大学サンタバーバラ校でやっていた研究内容について簡単にご紹介"
 tags:
   [
     "postdoc",

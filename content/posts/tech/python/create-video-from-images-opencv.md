@@ -2,7 +2,6 @@
 #author: "Hugo Authors"
 title: "PythonとOpenCVで画像リストから動画を作成"
 date: "2022-02-26"
-description: "cv2.VideoWriterを使う."
 tags: ["python", "video", "opencv", "動画", "画像", "mp4", "cv2.VideoWriter"]
 categories: ["Tech", "Python", "OpenCV"]
 ShowToc: true

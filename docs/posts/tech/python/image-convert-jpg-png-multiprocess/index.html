@@ -7,7 +7,7 @@
 <meta name="robots" content="index, follow">
 <title>Pythonでjpgからpngへ一括変換 | YS&#39;s blog</title>
 <meta name="keywords" content="Pathlib, image convert, multiprocess, ProcessPoolExecutor, 拡張子変換, png, jpg, マルチプロセス" />
-<meta name="description" content="jpg2pngとmultiprocess">
+<meta name="description" content="jpg から png への一括変換 (マルチプロセス) from concurrent.futures import ProcessPoolExecutor, ThreadPoolExecutor from functools import partial from pathlib import Path from typing import List from PIL import Image, ImageFile ImageFile.LOAD_TRUNCATED_IMAGES = True def list_file_paths(dir_path: str) -&gt; List[str]: &#34;&#34;&#34; List file paths in a directory. Parameters ---------- dir_path : str Path of the directory Returns ------- List[str] List of the file paths in the directory &#34;&#34;&#34; return sorted([str(path) for path in Path(dir_path).rglob(&#34;*&#34;) if path.">
 <meta name="author" content="">
 <link rel="canonical" href="https://www.yusaito.com/blog/posts/tech/python/image-convert-jpg-png-multiprocess/" />
 <meta name="google-site-verification" content="7pz_dAQx7-r3P-mr6XGvIVQx47QN5DmiWRVLEocHAIM" />
@@ -68,7 +68,7 @@ if (!doNotTrack) {
 }
 </script>
 <meta property="og:title" content="Pythonでjpgからpngへ一括変換" />
-<meta property="og:description" content="jpg2pngとmultiprocess" />
+<meta property="og:description" content="jpg から png への一括変換 (マルチプロセス) from concurrent.futures import ProcessPoolExecutor, ThreadPoolExecutor from functools import partial from pathlib import Path from typing import List from PIL import Image, ImageFile ImageFile.LOAD_TRUNCATED_IMAGES = True def list_file_paths(dir_path: str) -&gt; List[str]: &#34;&#34;&#34; List file paths in a directory. Parameters ---------- dir_path : str Path of the directory Returns ------- List[str] List of the file paths in the directory &#34;&#34;&#34; return sorted([str(path) for path in Path(dir_path).rglob(&#34;*&#34;) if path." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.yusaito.com/blog/posts/tech/python/image-convert-jpg-png-multiprocess/" /><meta property="og:image" content="https://www.yusaito.com/blog/papermod-cover.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-01-25T00:00:00&#43;00:00" />
@@ -78,7 +78,7 @@ if (!doNotTrack) {
 <meta name="twitter:image" content="https://www.yusaito.com/blog/papermod-cover.png"/>
 
 <meta name="twitter:title" content="Pythonでjpgからpngへ一括変換"/>
-<meta name="twitter:description" content="jpg2pngとmultiprocess"/>
+<meta name="twitter:description" content="jpg から png への一括変換 (マルチプロセス) from concurrent.futures import ProcessPoolExecutor, ThreadPoolExecutor from functools import partial from pathlib import Path from typing import List from PIL import Image, ImageFile ImageFile.LOAD_TRUNCATED_IMAGES = True def list_file_paths(dir_path: str) -&gt; List[str]: &#34;&#34;&#34; List file paths in a directory. Parameters ---------- dir_path : str Path of the directory Returns ------- List[str] List of the file paths in the directory &#34;&#34;&#34; return sorted([str(path) for path in Path(dir_path).rglob(&#34;*&#34;) if path."/>
 
 
 <script type="application/ld+json">
@@ -119,7 +119,7 @@ if (!doNotTrack) {
   "@type": "BlogPosting",
   "headline": "Pythonでjpgからpngへ一括変換",
   "name": "Pythonでjpgからpngへ一括変換",
-  "description": "jpg2pngとmultiprocess",
+  "description": "jpg から png への一括変換 (マルチプロセス) from concurrent.futures import ProcessPoolExecutor, ThreadPoolExecutor from functools import partial from pathlib import Path from typing import List from PIL import Image, ImageFile ImageFile.LOAD_TRUNCATED_IMAGES = True def list_file_paths(dir_path: str) -\u0026gt; List[str]: \u0026#34;\u0026#34;\u0026#34; List file paths in a directory. Parameters ---------- dir_path : str Path of the directory Returns ------- List[str] List of the file paths in the directory \u0026#34;\u0026#34;\u0026#34; return sorted([str(path) for path in Path(dir_path).rglob(\u0026#34;*\u0026#34;) if path.",
   "keywords": [
     "Pathlib", "image convert", "multiprocess", "ProcessPoolExecutor", "拡張子変換", "png", "jpg", "マルチプロセス"
   ],
@@ -211,9 +211,6 @@ if (!doNotTrack) {
     <h1 class="post-title">
       Pythonでjpgからpngへ一括変換
     </h1>
-    <div class="post-description">
-      jpg2pngとmultiprocess
-    </div>
     <div class="post-meta"><span title='2022-01-25 00:00:00 +0000 UTC'>January 25, 2022</span>
 
 </div>

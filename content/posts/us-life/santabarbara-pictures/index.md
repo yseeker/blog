@@ -2,7 +2,6 @@
 #author: "Hugo Authors"
 title: "写真で振り返るサンタバーバラ滞在記"
 date: "2021-08-15"
-description: "サンタバーバラでの思い出の写真"
 tags: ["uslife", "postdoc", "サンタバーバラ"]
 categories: ["アメリカ生活", "海外"]
 ShowToc: true

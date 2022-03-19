@@ -2,7 +2,6 @@
 #author: "Hugo Authors"
 title: "アメリカで矯正歯科に行った話"
 date: "2021-08-14"
-description: "矯正大国アメリカ"
 tags: ["歯", "矯正歯科"]
 categories: ["アメリカ生活"]
 ShowToc: true

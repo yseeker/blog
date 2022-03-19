@@ -2,7 +2,6 @@
 #author: "Hugo Authors"
 title: "Shell Fish Company"
 date: "2021-08-14"
-description: "スターンズワーフの先端にある甲殻類料理店"
 tags: ["uslife", "サンタバーバラ", "フード"]
 categories: ["アメリカ生活"]
 ShowToc: true

@@ -2,7 +2,6 @@
 #author: "Hugo Authors"
 title: "AzureでA100x8（V100x4）のPytorch環境構築とエラー対処"
 date: "2022-01-11"
-#description: "Azure A100x8の特有のエラーに遭遇"
 tags:
   [
     "Azure",

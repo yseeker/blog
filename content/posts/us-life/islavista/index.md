@@ -2,7 +2,6 @@
 #author: "Hugo Authors"
 title: "若者の街、アイラビスタ"
 date: "2021-08-11"
-description: "UCSBの近くにある、住民の大半が学生で構成されている街、アイラビスタ"
 tags: ["サンタバーバラ", "アイラビスタ"]
 categories: ["アメリカ生活"]
 ShowToc: true

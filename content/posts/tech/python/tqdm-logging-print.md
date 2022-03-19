@@ -2,7 +2,6 @@
 #author: "Hugo Authors"
 title: "loggerとprintとtqdmの併用"
 date: "2022-02-13"
-description: "loggerとprintとtqdmを併用できるようにする"
 tags: ["tqdm", "logging", "print", "標準出力"]
 categories: ["Tech", "Python"]
 ShowToc: true

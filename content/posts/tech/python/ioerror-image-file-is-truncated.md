@@ -2,7 +2,6 @@
 #author: "Hugo Authors"
 title: "エラーメモ：IOError: image file is truncated"
 date: "2022-01-03"
-description: "ImageFile.LOAD_TRUNCATED_IMAGES = Trueで解決."
 tags:
   [
     "python",

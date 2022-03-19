@@ -2,7 +2,6 @@
 #author: "Hugo Authors"
 title: "海外ポスドクになる方法と現地フェローシップ"
 date: "2021-09-08"
-description: "海外ポスドクになる方法は海外学振だけではない。"
 tags: ["postdoc", "fellowship", "海外ポスドク", "フェローシップ"]
 categories: ["アメリカ生活"]
 ShowToc: true

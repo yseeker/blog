@@ -2,7 +2,6 @@
 #author: "Hugo Authors"
 title: "ラボの選び方"
 date: "2021-07-07"
-description: "どの研究室を選ぶかで人生が左右されるかもしれません。"
 tags: ["ラボ", "ポスドク", "大学院"]
 categories: ["アメリカ生活"]
 ShowToc: true

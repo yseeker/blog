@@ -2,7 +2,6 @@
 #author: "Hugo Authors"
 title: "Python実装での個人的に意識していること"
 date: "2021-08-19"
-#description: "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
 tags: ["Kaggle", "SETI"]
 categories: ["Kaggle"]
 ShowToc: true
