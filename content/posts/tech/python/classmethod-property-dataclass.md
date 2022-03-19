@@ -7,7 +7,7 @@ tags: ["Pathlib", "Path", "Python", "glob"]
 categories: ["Tech", "Python"]
 ShowToc: true
 TocOpen: true
-draft: false
+draft: true
 ---
 
 ## 並列処理テンプレート

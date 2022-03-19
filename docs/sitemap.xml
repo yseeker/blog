@@ -38,9 +38,6 @@
     <loc>https://www.yusaito.com/blog/tags/pathlib/</loc>
     <lastmod>2022-03-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.yusaito.com/blog/posts/tech/python/classmethod-property-dataclass/</loc>
-    <lastmod>2022-03-19T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://www.yusaito.com/blog/posts/tech/python/how-to-use-pathlib/</loc>
     <lastmod>2022-03-19T00:00:00+00:00</lastmod>
   </url><url>
@@ -53,13 +50,13 @@
     <loc>https://www.yusaito.com/blog/tags/processpoolexecutor/</loc>
     <lastmod>2022-03-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.yusaito.com/blog/tags/python/</loc>
-    <lastmod>2022-03-19T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://www.yusaito.com/blog/categories/python/</loc>
     <lastmod>2022-03-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.yusaito.com/blog/posts/tech/python/</loc>
+    <lastmod>2022-03-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.yusaito.com/blog/tags/python/</loc>
     <lastmod>2022-03-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.yusaito.com/blog/posts/tech/python/multiprocess-image-convert/</loc>
@@ -451,8 +448,6 @@
   </url><url>
     <loc>https://www.yusaito.com/blog/posts/us-life/first-day-in-santabarbara/</loc>
     <lastmod>2018-09-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.yusaito.com/blog/posts/tech/python/remove-background-with-rembg/</loc>
   </url><url>
     <loc>https://www.yusaito.com/blog/archives/</loc>
   </url><url>

@@ -54,6 +54,18 @@ def get_all_file_path():
     return res
 
 
+from bs4 import BeautifulSoup
+
+
+# スクレイピング対象のhtmlファイルからsoupを作成
+def check_noindex(html_path):
+    soup = BeautifulSoup(open(html_path), "html.parser")
+
+    links = soup.find_all("meta")  # 全てのaタグ要素を取得# 配列を作成
+
+    return len(links) != 3  # aタグのテキストデータを配列に格納
+
+
 file_path_list = get_all_file_path()
 xml_list = set()
 for file_path in file_path_list:
@@ -69,25 +81,29 @@ for file_path in html_list:
     if file_path[:-4] not in xml_list:
         correct_html_list.append(file_path)
 
+for path in correct_html_list:
+    check_noindex(path)
 
 url_list = []
 main_url = "https://www.yusaito.com/blog/"
 for file_path in correct_html_list:
-    file_path = "/".join(file_path.split("/")[1:-1])
-    url_list.append(main_url + file_path + "/")
+    if check_noindex(file_path):
+        file_path = "/".join(file_path.split("/")[1:-1])
+        url_list.append(main_url + file_path + "/")
 
-print(len(f"total number of URLs : {len(url_list)}"))
+print(f"total number of URLs : {len(url_list)}")
 
-for url in url_list:
-    content = {}
-    content["url"] = url
-    content["type"] = "URL_UPDATED"
-    json_content = json.dumps(content)
+print(url_list[25])
+# for url in url_list:
+#     content = {}
+#     content["url"] = url
+#     content["type"] = "URL_UPDATED"
+#     json_content = json.dumps(content)
 
-    response, content = http.request(ENDPOINT, method="POST", body=json_content)
-    result = json.loads(content.decode())
-    dt_now = datetime.datetime.now()
-    print(
-        f"status : {response.status} | {dt_now.strftime('%Y-%m-%d %H:%M:%S')} | URL : {url}"
-    )
-    time.sleep(1.1)
+#     response, content = http.request(ENDPOINT, method="POST", body=json_content)
+#     result = json.loads(content.decode())
+#     dt_now = datetime.datetime.now()
+#     print(
+#         f"status : {response.status} | {dt_now.strftime('%Y-%m-%d %H:%M:%S')} | URL : {url}"
+#     )
+#     time.sleep(1.1)
