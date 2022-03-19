@@ -71,8 +71,8 @@ if (!doNotTrack) {
 <meta property="og:description" content="concurrent.futuresとjoblibの場合" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.yusaito.com/blog/posts/tech/python/multiprocess-multithreading-utils/" /><meta property="og:image" content="https://www.yusaito.com/blog/papermod-cover.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-03-19T00:00:00&#43;00:00" />
-<meta property="article:modified_time" content="2022-03-19T00:00:00&#43;00:00" />
+<meta property="article:published_time" content="2022-02-03T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2022-02-03T00:00:00&#43;00:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://www.yusaito.com/blog/papermod-cover.png"/>
@@ -126,8 +126,8 @@ if (!doNotTrack) {
   "articleBody": "ファイルのリストを受け取って何らかの並列処理をする。 from concurrent.futures import ProcessPoolExecutor, ThreadPoolExecutor from functools import partial from pathlib import Path from typing import List def list_file_paths(dir_path: str) - List[str]: \"\"\" List file paths in a directory. Parameters ---------- dir_path : str Path of the directory Returns ------- List[str] List of the file paths in the directory \"\"\" return sorted([str(path) for path in Path(dir_path).rglob(\"*\") if path.is_file()]) def task(same_value, same_value2, diffent_values): return None def multiprocess_task(task, same_value, same_value2, diffent_values): with ProcessPoolExecutor() as executor: results = list(executor.map( partial(task, same_value, same_value2), different_values )) def multithreading_task(task, same_value, same_value2, diffent_values): with ThreadPoolExecutor() as executor: results = list(executor.map( partial(task, same_value, same_value2), different_values )) def joblib_multiprocess_task(task : function, same_value, same_value2, diffent_values): results = joblib.Parallel(n_jobs=-1)( joblib.delayed(partial(task, same_value, same_value2))(different_value) for different_value in different_values) ",
   "wordCount" : "116",
   "inLanguage": "en",
-  "datePublished": "2022-03-19T00:00:00Z",
-  "dateModified": "2022-03-19T00:00:00Z",
+  "datePublished": "2022-02-03T00:00:00Z",
+  "dateModified": "2022-02-03T00:00:00Z",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://www.yusaito.com/blog/posts/tech/python/multiprocess-multithreading-utils/"
@@ -214,7 +214,7 @@ if (!doNotTrack) {
     <div class="post-description">
       concurrent.futuresとjoblibの場合
     </div>
-    <div class="post-meta"><span title='2022-03-19 00:00:00 +0000 UTC'>March 19, 2022</span>
+    <div class="post-meta"><span title='2022-02-03 00:00:00 +0000 UTC'>February 3, 2022</span>
 
 </div>
   </header> <div class="toc">
@@ -285,19 +285,19 @@ if (!doNotTrack) {
 	
 	<li><a href="/blog/posts/tech/python/image-convert-jpg-png-multiprocess/">Pythonでjpgからpngへ一括変換</a></li>
 	
-	<li><a href="/blog/posts/tech/python/how-to-use-pathlib/">Pathlibの使い方</a></li>
+	<li><a href="/blog/posts/tech/python/opencv-setnumthreads-multithreading/">PythonとopenCVで並列化</a></li>
 	
 	<li><a href="/blog/posts/tech/python/relative-path-with-pathlib/">Pathlibで相対パスを有効活用する</a></li>
 	
-	<li><a href="/blog/posts/tech/python/opencv-setnumthreads-multithreading/">PythonとopenCVで並列化</a></li>
-	
-	<li><a href="/blog/posts/tech/python/create-video-from-images-opencv/">PythonとOpenCVで画像リストから動画を作成</a></li>
+	<li><a href="/blog/posts/tech/python/how-to-use-pathlib/">Pathlibの使い方</a></li>
 	
 	<li><a href="/blog/posts/tech/python/numpy-benchmark-ryzen-threadripper/">Ryzen Threadripper 3970XとNVIDIA RTX 3090を使ってnumpy(Intel MKL and OpenBLAS)とcupyでベンチマーク</a></li>
 	
-	<li><a href="/blog/posts/tech/python/ioe-image-file-is-truncated/">エラーメモ：IOError: image file is truncated</a></li>
+	<li><a href="/blog/posts/tech/python/create-video-from-images-opencv/">PythonとOpenCVで画像リストから動画を作成</a></li>
 	
 	<li><a href="/blog/posts/tech/python/tqdm-logging-print/">loggerとprintとtqdmの併用</a></li>
+	
+	<li><a href="/blog/posts/tech/python/ioerror-image-file-is-truncated/">エラーメモ：IOError: image file is truncated</a></li>
 	
 </ul>
 
@@ -315,15 +315,15 @@ if (!doNotTrack) {
       <li><a href="https://www.yusaito.com/blog/tags/%E3%83%9E%E3%83%AB%E3%83%81%E3%82%B9%E3%83%AC%E3%83%83%E3%83%89/">マルチスレッド</a></li>
     </ul>
 <nav class="paginav">
-  <a class="prev" href="https://www.yusaito.com/blog/posts/tech/python/image-convert-jpg-png-multiprocess/">
+  <a class="prev" href="https://www.yusaito.com/blog/posts/tech/python/tqdm-logging-print/">
     <span class="title">« Prev Page</span>
     <br>
-    <span>Pythonでjpgからpngへ一括変換</span>
+    <span>loggerとprintとtqdmの併用</span>
   </a>
-  <a class="next" href="https://www.yusaito.com/blog/posts/tech/python/create-video-from-images-opencv/">
+  <a class="next" href="https://www.yusaito.com/blog/posts/tech/python/image-convert-jpg-png-multiprocess/">
     <span class="title">Next Page »</span>
     <br>
-    <span>PythonとOpenCVで画像リストから動画を作成</span>
+    <span>Pythonでjpgからpngへ一括変換</span>
   </a>
 </nav>
 

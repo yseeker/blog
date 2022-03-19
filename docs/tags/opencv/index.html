@@ -147,18 +147,6 @@ if (!doNotTrack) {
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
-    <h2>PythonとOpenCVで画像リストから動画を作成
-    </h2>
-  </header>
-  <section class="entry-content">
-    <p>openCV を使って画像リストから動画を作成する。 from pathlib import Path from typing import List import cv2 def list_file_paths(dir_path: str) -&gt; List[str]: &#34;&#34;&#34; List file paths in a directory. Parameters ---------- dir_path : str Path of the directory Returns ------- List[str] List of the file paths in the directory &#34;&#34;&#34; return sorted([str(path) for path in Path(dir_path).rglob(&#34;*&#34;) if path.is_file()]) def create_mp4_video_from_image_path_list( output_video_path: str, image_path_list: List[str], fps: int, ) -&gt; None: &#34;&#34;&#34; Create mp4 video file from a image path list Parameters ---------- output_video_path : str Path of the output video image_path_list : List[str] Path of image file list fps : int fps (frames per second) &#34;&#34;&#34; height, width, _ = cv2....</p>
-  </section>
-  <footer class="entry-footer"><span title='2022-03-19 00:00:00 +0000 UTC'>March 19, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to PythonとOpenCVで画像リストから動画を作成" href="https://www.yusaito.com/blog/posts/tech/python/create-video-from-images-opencv/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
     <h2>PythonとopenCVで並列化
     </h2>
   </header>
@@ -168,8 +156,20 @@ if (!doNotTrack) {
 以下テンプレート。
 import cv2 from concurrent.futures import ThreadPoolExecutor cv2.setNumThreads(0) def task_using_cv2(param): do_some_process_using_cv2() return with ThreadPoolExecutor() as executor: results = list(executor.map(task_using_cv2, param)) 参考   </p>
   </section>
-  <footer class="entry-footer"><span title='2022-03-17 00:00:00 +0000 UTC'>March 17, 2022</span></footer>
+  <footer class="entry-footer"><span title='2022-03-18 00:00:00 +0000 UTC'>March 18, 2022</span></footer>
   <a class="entry-link" aria-label="post link to PythonとopenCVで並列化" href="https://www.yusaito.com/blog/posts/tech/python/opencv-setnumthreads-multithreading/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>PythonとOpenCVで画像リストから動画を作成
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>openCV を使って画像リストから動画を作成する。 from pathlib import Path from typing import List import cv2 def list_file_paths(dir_path: str) -&gt; List[str]: &#34;&#34;&#34; List file paths in a directory. Parameters ---------- dir_path : str Path of the directory Returns ------- List[str] List of the file paths in the directory &#34;&#34;&#34; return sorted([str(path) for path in Path(dir_path).rglob(&#34;*&#34;) if path.is_file()]) def create_mp4_video_from_image_path_list( output_video_path: str, image_path_list: List[str], fps: int, ) -&gt; None: &#34;&#34;&#34; Create mp4 video file from a image path list Parameters ---------- output_video_path : str Path of the output video image_path_list : List[str] Path of image file list fps : int fps (frames per second) &#34;&#34;&#34; height, width, _ = cv2....</p>
+  </section>
+  <footer class="entry-footer"><span title='2022-02-26 00:00:00 +0000 UTC'>February 26, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to PythonとOpenCVで画像リストから動画を作成" href="https://www.yusaito.com/blog/posts/tech/python/create-video-from-images-opencv/"></a>
 </article>
     </main>
     

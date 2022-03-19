@@ -1,7 +1,7 @@
 ---
 #author: "Hugo Authors"
 title: "Pythonでjpgからpngへ一括変換"
-date: "2022-03-19"
+date: "2022-01-25"
 description: "jpg2pngとmultiprocess"
 tags:
   [

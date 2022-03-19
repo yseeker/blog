@@ -1,7 +1,7 @@
 ---
 #author: "Hugo Authors"
 title: "Pythonでファイルリストからの並列処理"
-date: "2022-03-19"
+date: "2022-02-03"
 description: "concurrent.futuresとjoblibの場合"
 tags:
   [

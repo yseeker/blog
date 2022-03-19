@@ -147,68 +147,6 @@ if (!doNotTrack) {
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
-    <h2>Pathlibの使い方
-    </h2>
-  </header>
-  <section class="entry-content">
-    <p>基本操作 ファイル名取得 ディレクトリ名取得 from pathlib import Path path = Path(&#34;./dir/filename.txt&#34;)  ファイル名を取得 : path.name ファイル名拡張子抜き : path.stem ファイルの拡張子のみ : path.suffix ファイルのディレクトリを取得 : path.parents (list) パス連結 : / 演算子を使う（path.joinpath()） パスの存在確認：path.exists() ファイルかどうか確認 : path.is_file() ディレクトリかどうか確認 : path.is_dir() ディレクトリの作成 : path.mkdir(exist_ok=True, parents=True) ディレクトリの削除 : path.rmdir() ファイル/ディレクトリパス変更 : path.replace(tgt) ファイル/ディレクトリパス変更（末尾のみ）: path.rename(new_file_apth) 同じ階層に別名ファイルを作成 : path.with_name(&#39;file_new.txt&#39;).touch() 同じ階層に別拡張子ファイルを作成 : path.with_suffix(&#39;png&#39;).touch() 同じ階層のファイルとディレクトリ一覧を返す：path.iterdir() ファイルの存在ディレクトリのパスを取得：Path(__file__).parent  個人的によく使うモジュール ファイルを再帰的に探索  Pathlib の場合  # Pathlibの場合 from pathlib import Path from typing import List def list_file_paths(dir_path: str) -&gt; List[str]: &#34;&#34;&#34; List file paths in a directory....</p>
-  </section>
-  <footer class="entry-footer"><span title='2022-03-19 00:00:00 +0000 UTC'>March 19, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to Pathlibの使い方" href="https://www.yusaito.com/blog/posts/tech/python/how-to-use-pathlib/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2>Pythonでjpgからpngへ一括変換
-    </h2>
-  </header>
-  <section class="entry-content">
-    <p>jpg から png への一括変換 (マルチプロセス) from concurrent.futures import ProcessPoolExecutor, ThreadPoolExecutor from functools import partial from pathlib import Path from typing import List from PIL import Image, ImageFile ImageFile.LOAD_TRUNCATED_IMAGES = True def list_file_paths(dir_path: str) -&gt; List[str]: &#34;&#34;&#34; List file paths in a directory. Parameters ---------- dir_path : str Path of the directory Returns ------- List[str] List of the file paths in the directory &#34;&#34;&#34; return sorted([str(path) for path in Path(dir_path).rglob(&#34;*&#34;) if path....</p>
-  </section>
-  <footer class="entry-footer"><span title='2022-03-19 00:00:00 +0000 UTC'>March 19, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to Pythonでjpgからpngへ一括変換" href="https://www.yusaito.com/blog/posts/tech/python/image-convert-jpg-png-multiprocess/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2>Pythonでファイルリストからの並列処理
-    </h2>
-  </header>
-  <section class="entry-content">
-    <p>ファイルのリストを受け取って何らかの並列処理をする。 from concurrent.futures import ProcessPoolExecutor, ThreadPoolExecutor from functools import partial from pathlib import Path from typing import List def list_file_paths(dir_path: str) -&gt; List[str]: &#34;&#34;&#34; List file paths in a directory. Parameters ---------- dir_path : str Path of the directory Returns ------- List[str] List of the file paths in the directory &#34;&#34;&#34; return sorted([str(path) for path in Path(dir_path).rglob(&#34;*&#34;) if path.is_file()]) def task(same_value, same_value2, diffent_values): return None def multiprocess_task(task, same_value, same_value2, diffent_values): with ProcessPoolExecutor() as executor: results = list(executor....</p>
-  </section>
-  <footer class="entry-footer"><span title='2022-03-19 00:00:00 +0000 UTC'>March 19, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to Pythonでファイルリストからの並列処理" href="https://www.yusaito.com/blog/posts/tech/python/multiprocess-multithreading-utils/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2>PythonとOpenCVで画像リストから動画を作成
-    </h2>
-  </header>
-  <section class="entry-content">
-    <p>openCV を使って画像リストから動画を作成する。 from pathlib import Path from typing import List import cv2 def list_file_paths(dir_path: str) -&gt; List[str]: &#34;&#34;&#34; List file paths in a directory. Parameters ---------- dir_path : str Path of the directory Returns ------- List[str] List of the file paths in the directory &#34;&#34;&#34; return sorted([str(path) for path in Path(dir_path).rglob(&#34;*&#34;) if path.is_file()]) def create_mp4_video_from_image_path_list( output_video_path: str, image_path_list: List[str], fps: int, ) -&gt; None: &#34;&#34;&#34; Create mp4 video file from a image path list Parameters ---------- output_video_path : str Path of the output video image_path_list : List[str] Path of image file list fps : int fps (frames per second) &#34;&#34;&#34; height, width, _ = cv2....</p>
-  </section>
-  <footer class="entry-footer"><span title='2022-03-19 00:00:00 +0000 UTC'>March 19, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to PythonとOpenCVで画像リストから動画を作成" href="https://www.yusaito.com/blog/posts/tech/python/create-video-from-images-opencv/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2>Pathlibで相対パスを有効活用する
-    </h2>
-  </header>
-  <section class="entry-content">
-    <p>自走プログラマー~Python の先輩が教えるプロジェクト開発のベストプラクティス 120を読んだのでその中で気になった「ファイルパスはプログラムからの相対パスで組み立てるという箇所は実践的でとても勉強になったのでメモしておく。
-├──　run.py ├──　data ├── input.txt └── images みたいなディレクトリがある場合は
-import csv from pathlib import Path current_dir = Path(__file__).parent image_path = current_dir / &#34;data&#34; / &#34;images&#34; inuput_path = current_dir / &#34;input_txt&#34; とすればよい。</p>
-  </section>
-  <footer class="entry-footer"><span title='2022-03-18 00:00:00 +0000 UTC'>March 18, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to Pathlibで相対パスを有効活用する" href="https://www.yusaito.com/blog/posts/tech/python/relative-path-with-pathlib/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
     <h2>PythonとopenCVで並列化
     </h2>
   </header>
@@ -218,7 +156,7 @@ import csv from pathlib import Path current_dir = Path(__file__).parent image_pa
 以下テンプレート。
 import cv2 from concurrent.futures import ThreadPoolExecutor cv2.setNumThreads(0) def task_using_cv2(param): do_some_process_using_cv2() return with ThreadPoolExecutor() as executor: results = list(executor.map(task_using_cv2, param)) 参考   </p>
   </section>
-  <footer class="entry-footer"><span title='2022-03-17 00:00:00 +0000 UTC'>March 17, 2022</span></footer>
+  <footer class="entry-footer"><span title='2022-03-18 00:00:00 +0000 UTC'>March 18, 2022</span></footer>
   <a class="entry-link" aria-label="post link to PythonとopenCVで並列化" href="https://www.yusaito.com/blog/posts/tech/python/opencv-setnumthreads-multithreading/"></a>
 </article>
 
@@ -232,7 +170,7 @@ import cv2 from concurrent.futures import ThreadPoolExecutor cv2.setNumThreads(0
 ライブ USB の作成  Rufus をダウンロード ubuntu の iso ファイルをダウンロード USB を挿して、Rufus を使ってライブ USB を作成  Ubuntu のインストール  細かい設定はこちらの記事を参照  インストール後にログインループになってログインできなくなった  ctrl &#43; alt &#43; F2で tty 仮想コンソールを開く Nvidia ドライバ, cuda があるかどうか確認  dpkg -l | grep nvidia dpkg -l | grep cuda ※もしですでにある場合は削除しておく
 sudo apt-get --purge remove nvidia-* sudo apt-get --purge remove cuda-*  GPU ドライバが無かったら下記で Nvidia ドライバを入れる  sudo ubuntu-drivers install sudo reboot または version 指定して入れる。...</p>
   </section>
-  <footer class="entry-footer"><span title='2022-03-09 00:00:00 +0000 UTC'>March 9, 2022</span></footer>
+  <footer class="entry-footer"><span title='2022-03-05 00:00:00 +0000 UTC'>March 5, 2022</span></footer>
   <a class="entry-link" aria-label="post link to Ubuntu 20.04 LTSセットアップ（自宅サーバー用）とリモート環境用の諸々の初期設定（docker &#43; ssh &#43; vscode）" href="https://www.yusaito.com/blog/posts/tech/linux/ubuntu-server-ssh-docker-setup/"></a>
 </article>
 
@@ -244,21 +182,34 @@ sudo apt-get --purge remove nvidia-* sudo apt-get --purge remove cuda-*  GPU ド
   <section class="entry-content">
     <p>numpy でベンチマーク # ファイル名: numpy_benchmark.py import os os.environ[&#34;OPENBLAS_NUM_THREADS&#34;] = &#34;32&#34; # import mkl # mkl.set_num_threads(32) import numpy as np import time from threadpoolctl import threadpool_info from pprint import pp pp(threadpool_info()) np.show_config() N_LOOP = 5 calc_eigh_time_list = [] calc_inv_time_list = [] calc_dot_time_list = [] calc_norm_time_list = [] for size in [5000, 10000, 20000]: print(f&#34;size : {size}&#34;) for i in range(3): np.random.seed(i) X = np.random.randn(size, size) t_start = time.time() np.linalg.eigh(X @ X.T) calc_eigh_time_list....</p>
   </section>
-  <footer class="entry-footer"><span title='2022-03-05 00:00:00 +0000 UTC'>March 5, 2022</span></footer>
+  <footer class="entry-footer"><span title='2022-02-28 00:00:00 +0000 UTC'>February 28, 2022</span></footer>
   <a class="entry-link" aria-label="post link to Ryzen Threadripper 3970XとNVIDIA RTX 3090を使ってnumpy(Intel MKL and OpenBLAS)とcupyでベンチマーク" href="https://www.yusaito.com/blog/posts/tech/python/numpy-benchmark-ryzen-threadripper/"></a>
 </article>
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
-    <h2>エラーメモ：IOError: image file is truncated
+    <h2>PythonとOpenCVで画像リストから動画を作成
     </h2>
   </header>
   <section class="entry-content">
-    <p>IOError: image file is truncated jpg で結構大きめの画像を Pillow で読み込むときに下記のエラーが出た。
-IOError: image file is truncated 解決策 from PIL import ImageFile ImageFile.LOAD_TRUNCATED_IMAGES = True 参考  </p>
+    <p>openCV を使って画像リストから動画を作成する。 from pathlib import Path from typing import List import cv2 def list_file_paths(dir_path: str) -&gt; List[str]: &#34;&#34;&#34; List file paths in a directory. Parameters ---------- dir_path : str Path of the directory Returns ------- List[str] List of the file paths in the directory &#34;&#34;&#34; return sorted([str(path) for path in Path(dir_path).rglob(&#34;*&#34;) if path.is_file()]) def create_mp4_video_from_image_path_list( output_video_path: str, image_path_list: List[str], fps: int, ) -&gt; None: &#34;&#34;&#34; Create mp4 video file from a image path list Parameters ---------- output_video_path : str Path of the output video image_path_list : List[str] Path of image file list fps : int fps (frames per second) &#34;&#34;&#34; height, width, _ = cv2....</p>
   </section>
-  <footer class="entry-footer"><span title='2022-03-05 00:00:00 +0000 UTC'>March 5, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to エラーメモ：IOError: image file is truncated" href="https://www.yusaito.com/blog/posts/tech/python/ioe-image-file-is-truncated/"></a>
+  <footer class="entry-footer"><span title='2022-02-26 00:00:00 +0000 UTC'>February 26, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to PythonとOpenCVで画像リストから動画を作成" href="https://www.yusaito.com/blog/posts/tech/python/create-video-from-images-opencv/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>Pathlibで相対パスを有効活用する
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>自走プログラマー~Python の先輩が教えるプロジェクト開発のベストプラクティス 120を読んだのでその中で気になった「ファイルパスはプログラムからの相対パスで組み立てるという箇所は実践的でとても勉強になったのでメモしておく。
+├──　run.py ├──　data ├── input.txt └── images みたいなディレクトリがある場合は
+import csv from pathlib import Path current_dir = Path(__file__).parent image_path = current_dir / &#34;data&#34; / &#34;images&#34; inuput_path = current_dir / &#34;input_txt&#34; とすればよい。</p>
+  </section>
+  <footer class="entry-footer"><span title='2022-02-18 00:00:00 +0000 UTC'>February 18, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to Pathlibで相対パスを有効活用する" href="https://www.yusaito.com/blog/posts/tech/python/relative-path-with-pathlib/"></a>
 </article>
 
 <article class="post-entry tag-entry"> 
@@ -272,6 +223,57 @@ import contextlib import logging import logging.handlers import sys from time im
   </section>
   <footer class="entry-footer"><span title='2022-02-13 00:00:00 +0000 UTC'>February 13, 2022</span></footer>
   <a class="entry-link" aria-label="post link to loggerとprintとtqdmの併用" href="https://www.yusaito.com/blog/posts/tech/python/tqdm-logging-print/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>Pythonでファイルリストからの並列処理
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>ファイルのリストを受け取って何らかの並列処理をする。 from concurrent.futures import ProcessPoolExecutor, ThreadPoolExecutor from functools import partial from pathlib import Path from typing import List def list_file_paths(dir_path: str) -&gt; List[str]: &#34;&#34;&#34; List file paths in a directory. Parameters ---------- dir_path : str Path of the directory Returns ------- List[str] List of the file paths in the directory &#34;&#34;&#34; return sorted([str(path) for path in Path(dir_path).rglob(&#34;*&#34;) if path.is_file()]) def task(same_value, same_value2, diffent_values): return None def multiprocess_task(task, same_value, same_value2, diffent_values): with ProcessPoolExecutor() as executor: results = list(executor....</p>
+  </section>
+  <footer class="entry-footer"><span title='2022-02-03 00:00:00 +0000 UTC'>February 3, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to Pythonでファイルリストからの並列処理" href="https://www.yusaito.com/blog/posts/tech/python/multiprocess-multithreading-utils/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>Pythonでjpgからpngへ一括変換
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>jpg から png への一括変換 (マルチプロセス) from concurrent.futures import ProcessPoolExecutor, ThreadPoolExecutor from functools import partial from pathlib import Path from typing import List from PIL import Image, ImageFile ImageFile.LOAD_TRUNCATED_IMAGES = True def list_file_paths(dir_path: str) -&gt; List[str]: &#34;&#34;&#34; List file paths in a directory. Parameters ---------- dir_path : str Path of the directory Returns ------- List[str] List of the file paths in the directory &#34;&#34;&#34; return sorted([str(path) for path in Path(dir_path).rglob(&#34;*&#34;) if path....</p>
+  </section>
+  <footer class="entry-footer"><span title='2022-01-25 00:00:00 +0000 UTC'>January 25, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to Pythonでjpgからpngへ一括変換" href="https://www.yusaito.com/blog/posts/tech/python/image-convert-jpg-png-multiprocess/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>Pathlibの使い方
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>基本操作 ファイル名取得 ディレクトリ名取得 from pathlib import Path path = Path(&#34;./dir/filename.txt&#34;)  ファイル名を取得 : path.name ファイル名拡張子抜き : path.stem ファイルの拡張子のみ : path.suffix ファイルのディレクトリを取得 : path.parents (list) パス連結 : / 演算子を使う（path.joinpath()） パスの存在確認：path.exists() ファイルかどうか確認 : path.is_file() ディレクトリかどうか確認 : path.is_dir() ディレクトリの作成 : path.mkdir(exist_ok=True, parents=True) ディレクトリの削除 : path.rmdir() ファイル/ディレクトリパス変更 : path.replace(tgt) ファイル/ディレクトリパス変更（末尾のみ）: path.rename(new_file_apth) 同じ階層に別名ファイルを作成 : path.with_name(&#39;file_new.txt&#39;).touch() 同じ階層に別拡張子ファイルを作成 : path.with_suffix(&#39;png&#39;).touch() 同じ階層のファイルとディレクトリ一覧を返す：path.iterdir() ファイルの存在ディレクトリのパスを取得：Path(__file__).parent  個人的によく使うモジュール ファイルを再帰的に探索  Pathlib の場合  # Pathlibの場合 from pathlib import Path from typing import List def list_file_paths(dir_path: str) -&gt; List[str]: &#34;&#34;&#34; List file paths in a directory....</p>
+  </section>
+  <footer class="entry-footer"><span title='2022-01-19 00:00:00 +0000 UTC'>January 19, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to Pathlibの使い方" href="https://www.yusaito.com/blog/posts/tech/python/how-to-use-pathlib/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>AzureでA100x8（V100x4）のPytorch環境構築とエラー対処
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>Azure の web で VM インスタンスを作成 VM インスタンスの作成はこちら 秘密鍵をダウンロードして、read 権限を与えていおく。
+cp ~/Downloads/your_key_name.pem ~/.ssh/keys/azure_vm_key.pem chmod 400 ~/.ssh/keys/azure_vm_key.pem ssh を使って VM にアクセス
+ssh -i ~/.ssh/keys/azure_vm_key.pem azureuser@&lt;public ip address of VM instance&gt; Cuda をインストール wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/cuda-ubuntu1804.pin sudo mv cuda-ubuntu1804.pin /etc/apt/preferences.d/cuda-repository-pin-600 wget https://developer.download.nvidia.com/compute/cuda/11.5.0/local_installers/cuda-repo-ubuntu1804-11-5-local_11.5.0-495.29.05-1_amd64.deb sudo dpkg -i cuda-repo-ubuntu1804-11-5-local_11.5.0-495.29.05-1_amd64.deb sudo apt-key add /var/cuda-repo-ubuntu1804-11-5-local/7fa2af80.pub sudo apt-get update sudo apt-get -y install cuda Data Center GPU manager のインストール（A100x8 の場合） bandwidthTest を行う 詳細は、こちらを参照。 A100x8 ではここでエラーが出る、V100x4 では出ない
+git clone https://github.com/NVIDIA/cuda-samples.git cd cuda-samples/Samples/bandwidthTest make ....</p>
+  </section>
+  <footer class="entry-footer"><span title='2022-01-11 00:00:00 +0000 UTC'>January 11, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to AzureでA100x8（V100x4）のPytorch環境構築とエラー対処" href="https://www.yusaito.com/blog/posts/tech/linux/azure-vm-cuda-docker-setup/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

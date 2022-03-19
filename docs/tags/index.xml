@@ -10,209 +10,11 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sat, 19 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.yusaito.com/blog/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>cv2.VideoWriter</title>
-      <link>https://www.yusaito.com/blog/tags/cv2.videowriter/</link>
-      <pubDate>Sat, 19 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.yusaito.com/blog/tags/cv2.videowriter/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>glob</title>
-      <link>https://www.yusaito.com/blog/tags/glob/</link>
-      <pubDate>Sat, 19 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.yusaito.com/blog/tags/glob/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>image convert</title>
-      <link>https://www.yusaito.com/blog/tags/image-convert/</link>
-      <pubDate>Sat, 19 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.yusaito.com/blog/tags/image-convert/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>joblib</title>
-      <link>https://www.yusaito.com/blog/tags/joblib/</link>
-      <pubDate>Sat, 19 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.yusaito.com/blog/tags/joblib/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>jpg</title>
-      <link>https://www.yusaito.com/blog/tags/jpg/</link>
-      <pubDate>Sat, 19 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.yusaito.com/blog/tags/jpg/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>mp4</title>
-      <link>https://www.yusaito.com/blog/tags/mp4/</link>
-      <pubDate>Sat, 19 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.yusaito.com/blog/tags/mp4/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>multiprocess</title>
-      <link>https://www.yusaito.com/blog/tags/multiprocess/</link>
-      <pubDate>Sat, 19 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.yusaito.com/blog/tags/multiprocess/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>opencv</title>
-      <link>https://www.yusaito.com/blog/tags/opencv/</link>
-      <pubDate>Sat, 19 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.yusaito.com/blog/tags/opencv/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Path</title>
-      <link>https://www.yusaito.com/blog/tags/path/</link>
-      <pubDate>Sat, 19 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.yusaito.com/blog/tags/path/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pathlib</title>
-      <link>https://www.yusaito.com/blog/tags/pathlib/</link>
-      <pubDate>Sat, 19 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.yusaito.com/blog/tags/pathlib/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>png</title>
-      <link>https://www.yusaito.com/blog/tags/png/</link>
-      <pubDate>Sat, 19 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.yusaito.com/blog/tags/png/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ProcessPoolExecutor</title>
-      <link>https://www.yusaito.com/blog/tags/processpoolexecutor/</link>
-      <pubDate>Sat, 19 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.yusaito.com/blog/tags/processpoolexecutor/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>python</title>
-      <link>https://www.yusaito.com/blog/tags/python/</link>
-      <pubDate>Sat, 19 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.yusaito.com/blog/tags/python/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ThreadPoolExecutor</title>
-      <link>https://www.yusaito.com/blog/tags/threadpoolexecutor/</link>
-      <pubDate>Sat, 19 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.yusaito.com/blog/tags/threadpoolexecutor/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>video</title>
-      <link>https://www.yusaito.com/blog/tags/video/</link>
-      <pubDate>Sat, 19 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.yusaito.com/blog/tags/video/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>マルチスレッド</title>
-      <link>https://www.yusaito.com/blog/tags/%E3%83%9E%E3%83%AB%E3%83%81%E3%82%B9%E3%83%AC%E3%83%83%E3%83%89/</link>
-      <pubDate>Sat, 19 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.yusaito.com/blog/tags/%E3%83%9E%E3%83%AB%E3%83%81%E3%82%B9%E3%83%AC%E3%83%83%E3%83%89/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>マルチプロセス</title>
-      <link>https://www.yusaito.com/blog/tags/%E3%83%9E%E3%83%AB%E3%83%81%E3%83%97%E3%83%AD%E3%82%BB%E3%82%B9/</link>
-      <pubDate>Sat, 19 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.yusaito.com/blog/tags/%E3%83%9E%E3%83%AB%E3%83%81%E3%83%97%E3%83%AD%E3%82%BB%E3%82%B9/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>動画</title>
-      <link>https://www.yusaito.com/blog/tags/%E5%8B%95%E7%94%BB/</link>
-      <pubDate>Sat, 19 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.yusaito.com/blog/tags/%E5%8B%95%E7%94%BB/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>拡張子変換</title>
-      <link>https://www.yusaito.com/blog/tags/%E6%8B%A1%E5%BC%B5%E5%AD%90%E5%A4%89%E6%8F%9B/</link>
-      <pubDate>Sat, 19 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.yusaito.com/blog/tags/%E6%8B%A1%E5%BC%B5%E5%AD%90%E5%A4%89%E6%8F%9B/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>画像</title>
-      <link>https://www.yusaito.com/blog/tags/%E7%94%BB%E5%83%8F/</link>
-      <pubDate>Sat, 19 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.yusaito.com/blog/tags/%E7%94%BB%E5%83%8F/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>相対パス</title>
-      <link>https://www.yusaito.com/blog/tags/%E7%9B%B8%E5%AF%BE%E3%83%91%E3%82%B9/</link>
-      <pubDate>Fri, 18 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.yusaito.com/blog/tags/%E7%9B%B8%E5%AF%BE%E3%83%91%E3%82%B9/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>自走プログラマー~Python の先輩が教えるプロジェクト開発のベストプラクティス 120</title>
-      <link>https://www.yusaito.com/blog/tags/%E8%87%AA%E8%B5%B0%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9E%E3%83%BC~python-%E3%81%AE%E5%85%88%E8%BC%A9%E3%81%8C%E6%95%99%E3%81%88%E3%82%8B%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E9%96%8B%E7%99%BA%E3%81%AE%E3%83%99%E3%82%B9%E3%83%88%E3%83%97%E3%83%A9%E3%82%AF%E3%83%86%E3%82%A3%E3%82%B9-120/</link>
-      <pubDate>Fri, 18 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.yusaito.com/blog/tags/%E8%87%AA%E8%B5%B0%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9E%E3%83%BC~python-%E3%81%AE%E5%85%88%E8%BC%A9%E3%81%8C%E6%95%99%E3%81%88%E3%82%8B%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E9%96%8B%E7%99%BA%E3%81%AE%E3%83%99%E3%82%B9%E3%83%88%E3%83%97%E3%83%A9%E3%82%AF%E3%83%86%E3%82%A3%E3%82%B9-120/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Fri, 18 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.yusaito.com/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>cv2.setNumThreads</title>
       <link>https://www.yusaito.com/blog/tags/cv2.setnumthreads/</link>
-      <pubDate>Thu, 17 Mar 2022 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 18 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/tags/cv2.setnumthreads/</guid>
       <description></description>
@@ -221,16 +23,25 @@
     <item>
       <title>multithreading</title>
       <link>https://www.yusaito.com/blog/tags/multithreading/</link>
-      <pubDate>Thu, 17 Mar 2022 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 18 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/tags/multithreading/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>opencv</title>
+      <link>https://www.yusaito.com/blog/tags/opencv/</link>
+      <pubDate>Fri, 18 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/tags/opencv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>ProcessPoolExecuter</title>
       <link>https://www.yusaito.com/blog/tags/processpoolexecuter/</link>
-      <pubDate>Thu, 17 Mar 2022 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 18 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/tags/processpoolexecuter/</guid>
       <description></description>
@@ -239,16 +50,34 @@
     <item>
       <title>ThreadPoolExecuter</title>
       <link>https://www.yusaito.com/blog/tags/threadpoolexecuter/</link>
-      <pubDate>Thu, 17 Mar 2022 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 18 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/tags/threadpoolexecuter/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>マルチスレッド</title>
+      <link>https://www.yusaito.com/blog/tags/%E3%83%9E%E3%83%AB%E3%83%81%E3%82%B9%E3%83%AC%E3%83%83%E3%83%89/</link>
+      <pubDate>Fri, 18 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/tags/%E3%83%9E%E3%83%AB%E3%83%81%E3%82%B9%E3%83%AC%E3%83%83%E3%83%89/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>マルチプロセス</title>
+      <link>https://www.yusaito.com/blog/tags/%E3%83%9E%E3%83%AB%E3%83%81%E3%83%97%E3%83%AD%E3%82%BB%E3%82%B9/</link>
+      <pubDate>Fri, 18 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/tags/%E3%83%9E%E3%83%AB%E3%83%81%E3%83%97%E3%83%AD%E3%82%BB%E3%82%B9/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>並列化</title>
       <link>https://www.yusaito.com/blog/tags/%E4%B8%A6%E5%88%97%E5%8C%96/</link>
-      <pubDate>Thu, 17 Mar 2022 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 18 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/tags/%E4%B8%A6%E5%88%97%E5%8C%96/</guid>
       <description></description>
@@ -257,7 +86,7 @@
     <item>
       <title>高速化</title>
       <link>https://www.yusaito.com/blog/tags/%E9%AB%98%E9%80%9F%E5%8C%96/</link>
-      <pubDate>Thu, 17 Mar 2022 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 18 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/tags/%E9%AB%98%E9%80%9F%E5%8C%96/</guid>
       <description></description>
@@ -266,7 +95,7 @@
     <item>
       <title>docker</title>
       <link>https://www.yusaito.com/blog/tags/docker/</link>
-      <pubDate>Wed, 09 Mar 2022 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 05 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/tags/docker/</guid>
       <description></description>
@@ -275,7 +104,7 @@
     <item>
       <title>openssh-server</title>
       <link>https://www.yusaito.com/blog/tags/openssh-server/</link>
-      <pubDate>Wed, 09 Mar 2022 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 05 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/tags/openssh-server/</guid>
       <description></description>
@@ -284,7 +113,7 @@
     <item>
       <title>ssh</title>
       <link>https://www.yusaito.com/blog/tags/ssh/</link>
-      <pubDate>Wed, 09 Mar 2022 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 05 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/tags/ssh/</guid>
       <description></description>
@@ -293,7 +122,7 @@
     <item>
       <title>Ubuntu 20.04 LTS</title>
       <link>https://www.yusaito.com/blog/tags/ubuntu-20.04-lts/</link>
-      <pubDate>Wed, 09 Mar 2022 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 05 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/tags/ubuntu-20.04-lts/</guid>
       <description></description>
@@ -302,7 +131,7 @@
     <item>
       <title>Ubunu</title>
       <link>https://www.yusaito.com/blog/tags/ubunu/</link>
-      <pubDate>Wed, 09 Mar 2022 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 05 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/tags/ubunu/</guid>
       <description></description>
@@ -311,7 +140,7 @@
     <item>
       <title>vscode</title>
       <link>https://www.yusaito.com/blog/tags/vscode/</link>
-      <pubDate>Wed, 09 Mar 2022 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 05 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/tags/vscode/</guid>
       <description></description>
@@ -320,7 +149,7 @@
     <item>
       <title>自宅サーバー</title>
       <link>https://www.yusaito.com/blog/tags/%E8%87%AA%E5%AE%85%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC/</link>
-      <pubDate>Wed, 09 Mar 2022 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 05 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/tags/%E8%87%AA%E5%AE%85%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC/</guid>
       <description></description>
@@ -329,7 +158,7 @@
     <item>
       <title>cuda</title>
       <link>https://www.yusaito.com/blog/tags/cuda/</link>
-      <pubDate>Sat, 05 Mar 2022 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 28 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/tags/cuda/</guid>
       <description></description>
@@ -338,43 +167,25 @@
     <item>
       <title>cupy</title>
       <link>https://www.yusaito.com/blog/tags/cupy/</link>
-      <pubDate>Sat, 05 Mar 2022 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 28 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/tags/cupy/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>ImageFile.LOAD_TRUNCATED_IMAGES = True</title>
-      <link>https://www.yusaito.com/blog/tags/imagefile.load_truncated_images-true/</link>
-      <pubDate>Sat, 05 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.yusaito.com/blog/tags/imagefile.load_truncated_images-true/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Intel MKL</title>
       <link>https://www.yusaito.com/blog/tags/intel-mkl/</link>
-      <pubDate>Sat, 05 Mar 2022 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 28 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/tags/intel-mkl/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>IOError: image file is truncated</title>
-      <link>https://www.yusaito.com/blog/tags/ioerror-image-file-is-truncated/</link>
-      <pubDate>Sat, 05 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.yusaito.com/blog/tags/ioerror-image-file-is-truncated/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>numpy</title>
       <link>https://www.yusaito.com/blog/tags/numpy/</link>
-      <pubDate>Sat, 05 Mar 2022 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 28 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/tags/numpy/</guid>
       <description></description>
@@ -383,7 +194,7 @@
     <item>
       <title>NVIDIA RTX 3090</title>
       <link>https://www.yusaito.com/blog/tags/nvidia-rtx-3090/</link>
-      <pubDate>Sat, 05 Mar 2022 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 28 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/tags/nvidia-rtx-3090/</guid>
       <description></description>
@@ -392,25 +203,16 @@
     <item>
       <title>OpenBLAS</title>
       <link>https://www.yusaito.com/blog/tags/openblas/</link>
-      <pubDate>Sat, 05 Mar 2022 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 28 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/tags/openblas/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Pillow</title>
-      <link>https://www.yusaito.com/blog/tags/pillow/</link>
-      <pubDate>Sat, 05 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.yusaito.com/blog/tags/pillow/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Ryzen Threadripper 3970X</title>
       <link>https://www.yusaito.com/blog/tags/ryzen-threadripper-3970x/</link>
-      <pubDate>Sat, 05 Mar 2022 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 28 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/tags/ryzen-threadripper-3970x/</guid>
       <description></description>
@@ -419,9 +221,99 @@
     <item>
       <title>ベンチマーク</title>
       <link>https://www.yusaito.com/blog/tags/%E3%83%99%E3%83%B3%E3%83%81%E3%83%9E%E3%83%BC%E3%82%AF/</link>
-      <pubDate>Sat, 05 Mar 2022 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 28 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/tags/%E3%83%99%E3%83%B3%E3%83%81%E3%83%9E%E3%83%BC%E3%82%AF/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cv2.VideoWriter</title>
+      <link>https://www.yusaito.com/blog/tags/cv2.videowriter/</link>
+      <pubDate>Sat, 26 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/tags/cv2.videowriter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mp4</title>
+      <link>https://www.yusaito.com/blog/tags/mp4/</link>
+      <pubDate>Sat, 26 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/tags/mp4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://www.yusaito.com/blog/tags/python/</link>
+      <pubDate>Sat, 26 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>video</title>
+      <link>https://www.yusaito.com/blog/tags/video/</link>
+      <pubDate>Sat, 26 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/tags/video/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>動画</title>
+      <link>https://www.yusaito.com/blog/tags/%E5%8B%95%E7%94%BB/</link>
+      <pubDate>Sat, 26 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/tags/%E5%8B%95%E7%94%BB/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>画像</title>
+      <link>https://www.yusaito.com/blog/tags/%E7%94%BB%E5%83%8F/</link>
+      <pubDate>Sat, 26 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/tags/%E7%94%BB%E5%83%8F/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Path</title>
+      <link>https://www.yusaito.com/blog/tags/path/</link>
+      <pubDate>Fri, 18 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/tags/path/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pathlib</title>
+      <link>https://www.yusaito.com/blog/tags/pathlib/</link>
+      <pubDate>Fri, 18 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/tags/pathlib/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>相対パス</title>
+      <link>https://www.yusaito.com/blog/tags/%E7%9B%B8%E5%AF%BE%E3%83%91%E3%82%B9/</link>
+      <pubDate>Fri, 18 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/tags/%E7%9B%B8%E5%AF%BE%E3%83%91%E3%82%B9/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>自走プログラマー~Python の先輩が教えるプロジェクト開発のベストプラクティス 120</title>
+      <link>https://www.yusaito.com/blog/tags/%E8%87%AA%E8%B5%B0%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9E%E3%83%BC~python-%E3%81%AE%E5%85%88%E8%BC%A9%E3%81%8C%E6%95%99%E3%81%88%E3%82%8B%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E9%96%8B%E7%99%BA%E3%81%AE%E3%83%99%E3%82%B9%E3%83%88%E3%83%97%E3%83%A9%E3%82%AF%E3%83%86%E3%82%A3%E3%82%B9-120/</link>
+      <pubDate>Fri, 18 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/tags/%E8%87%AA%E8%B5%B0%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9E%E3%83%BC~python-%E3%81%AE%E5%85%88%E8%BC%A9%E3%81%8C%E6%95%99%E3%81%88%E3%82%8B%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E9%96%8B%E7%99%BA%E3%81%AE%E3%83%99%E3%82%B9%E3%83%88%E3%83%97%E3%83%A9%E3%82%AF%E3%83%86%E3%82%A3%E3%82%B9-120/</guid>
       <description></description>
     </item>
     
@@ -458,6 +350,87 @@
       <pubDate>Sun, 13 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/tags/%E6%A8%99%E6%BA%96%E5%87%BA%E5%8A%9B/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>joblib</title>
+      <link>https://www.yusaito.com/blog/tags/joblib/</link>
+      <pubDate>Thu, 03 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/tags/joblib/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>multiprocess</title>
+      <link>https://www.yusaito.com/blog/tags/multiprocess/</link>
+      <pubDate>Thu, 03 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/tags/multiprocess/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ProcessPoolExecutor</title>
+      <link>https://www.yusaito.com/blog/tags/processpoolexecutor/</link>
+      <pubDate>Thu, 03 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/tags/processpoolexecutor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ThreadPoolExecutor</title>
+      <link>https://www.yusaito.com/blog/tags/threadpoolexecutor/</link>
+      <pubDate>Thu, 03 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/tags/threadpoolexecutor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>image convert</title>
+      <link>https://www.yusaito.com/blog/tags/image-convert/</link>
+      <pubDate>Tue, 25 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/tags/image-convert/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>jpg</title>
+      <link>https://www.yusaito.com/blog/tags/jpg/</link>
+      <pubDate>Tue, 25 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/tags/jpg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>png</title>
+      <link>https://www.yusaito.com/blog/tags/png/</link>
+      <pubDate>Tue, 25 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/tags/png/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>拡張子変換</title>
+      <link>https://www.yusaito.com/blog/tags/%E6%8B%A1%E5%BC%B5%E5%AD%90%E5%A4%89%E6%8F%9B/</link>
+      <pubDate>Tue, 25 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/tags/%E6%8B%A1%E5%BC%B5%E5%AD%90%E5%A4%89%E6%8F%9B/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>glob</title>
+      <link>https://www.yusaito.com/blog/tags/glob/</link>
+      <pubDate>Wed, 19 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/tags/glob/</guid>
       <description></description>
     </item>
     
@@ -521,6 +494,33 @@
       <pubDate>Tue, 11 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/tags/gpu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ImageFile.LOAD_TRUNCATED_IMAGES = True</title>
+      <link>https://www.yusaito.com/blog/tags/imagefile.load_truncated_images-true/</link>
+      <pubDate>Mon, 03 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/tags/imagefile.load_truncated_images-true/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>IOError: image file is truncated</title>
+      <link>https://www.yusaito.com/blog/tags/ioerror-image-file-is-truncated/</link>
+      <pubDate>Mon, 03 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/tags/ioerror-image-file-is-truncated/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pillow</title>
+      <link>https://www.yusaito.com/blog/tags/pillow/</link>
+      <pubDate>Mon, 03 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/tags/pillow/</guid>
       <description></description>
     </item>
     

@@ -10,20 +10,11 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sat, 19 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.yusaito.com/blog/tags/python/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Pathlibの使い方</title>
-      <link>https://www.yusaito.com/blog/posts/tech/python/how-to-use-pathlib/</link>
-      <pubDate>Sat, 19 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.yusaito.com/blog/posts/tech/python/how-to-use-pathlib/</guid>
-      <description>pathlibは便利</description>
-    </item>
-    
+    <lastBuildDate>Sat, 26 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.yusaito.com/blog/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PythonとOpenCVで画像リストから動画を作成</title>
       <link>https://www.yusaito.com/blog/posts/tech/python/create-video-from-images-opencv/</link>
-      <pubDate>Sat, 19 Mar 2022 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 26 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/posts/tech/python/create-video-from-images-opencv/</guid>
       <description>cv2.VideoWriterを使う.</description>
@@ -32,18 +23,27 @@
     <item>
       <title>Pathlibで相対パスを有効活用する</title>
       <link>https://www.yusaito.com/blog/posts/tech/python/relative-path-with-pathlib/</link>
-      <pubDate>Fri, 18 Mar 2022 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 18 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/posts/tech/python/relative-path-with-pathlib/</guid>
       <description>current_dir = Path(__file__).parentを使う。</description>
     </item>
     
     <item>
-      <title>エラーメモ：IOError: image file is truncated</title>
-      <link>https://www.yusaito.com/blog/posts/tech/python/ioe-image-file-is-truncated/</link>
-      <pubDate>Sat, 05 Mar 2022 00:00:00 +0000</pubDate>
+      <title>Pathlibの使い方</title>
+      <link>https://www.yusaito.com/blog/posts/tech/python/how-to-use-pathlib/</link>
+      <pubDate>Wed, 19 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.yusaito.com/blog/posts/tech/python/ioe-image-file-is-truncated/</guid>
+      <guid>https://www.yusaito.com/blog/posts/tech/python/how-to-use-pathlib/</guid>
+      <description>pathlibは便利</description>
+    </item>
+    
+    <item>
+      <title>エラーメモ：IOError: image file is truncated</title>
+      <link>https://www.yusaito.com/blog/posts/tech/python/ioerror-image-file-is-truncated/</link>
+      <pubDate>Mon, 03 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/posts/tech/python/ioerror-image-file-is-truncated/</guid>
       <description>ImageFile.LOAD_TRUNCATED_IMAGES = Trueで解決.</description>
     </item>
     

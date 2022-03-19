@@ -177,38 +177,29 @@ if (!doNotTrack) {
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>Pathlibの使い方
+    <h2>PythonとopenCVで並列化
     </h2>
   </header>
   <section class="entry-content">
-    <p>基本操作 ファイル名取得 ディレクトリ名取得 from pathlib import Path path = Path(&#34;./dir/filename.txt&#34;)  ファイル名を取得 : path.name ファイル名拡張子抜き : path.stem ファイルの拡張子のみ : path.suffix ファイルのディレクトリを取得 : path.parents (list) パス連結 : / 演算子を使う（path.joinpath()） パスの存在確認：path.exists() ファイルかどうか確認 : path.is_file() ディレクトリかどうか確認 : path.is_dir() ディレクトリの作成 : path.mkdir(exist_ok=True, parents=True) ディレクトリの削除 : path.rmdir() ファイル/ディレクトリパス変更 : path.replace(tgt) ファイル/ディレクトリパス変更（末尾のみ）: path.rename(new_file_apth) 同じ階層に別名ファイルを作成 : path.with_name(&#39;file_new.txt&#39;).touch() 同じ階層に別拡張子ファイルを作成 : path.with_suffix(&#39;png&#39;).touch() 同じ階層のファイルとディレクトリ一覧を返す：path.iterdir() ファイルの存在ディレクトリのパスを取得：Path(__file__).parent  個人的によく使うモジュール ファイルを再帰的に探索  Pathlib の場合  # Pathlibの場合 from pathlib import Path from typing import List def list_file_paths(dir_path: str) -&gt; List[str]: &#34;&#34;&#34; List file paths in a directory....</p>
+    <p>openCV でマルチプロセス化しようとしてもシングルプロセスになっている問題に遭遇 Python で openCV を使った処理をマルチプロセス化してみたのだが、どうもシングルプロセスになってしまうという問題に遭遇した。
+解決策：cv2.setNumThreads(0)＆マルチプロセスをやめる。 cv2.setNumThreads(0) を加えて、かつマルチスレッド化（例えば、concurrent.future.ThreadPoolExecuterなど）することで効率的に並列処理可能になることが分かった。 cv2.setNumThreads(0)有りでもconcurrent.future.ProcessPoolExecuterでは、正しくマルチプロセスされなかった。
+以下テンプレート。
+import cv2 from concurrent.futures import ThreadPoolExecutor cv2.setNumThreads(0) def task_using_cv2(param): do_some_process_using_cv2() return with ThreadPoolExecutor() as executor: results = list(executor.map(task_using_cv2, param)) 参考   </p>
   </section>
-  <footer class="entry-footer"><span title='2022-03-19 00:00:00 +0000 UTC'>March 19, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to Pathlibの使い方" href="https://www.yusaito.com/blog/posts/tech/python/how-to-use-pathlib/"></a>
+  <footer class="entry-footer"><span title='2022-03-18 00:00:00 +0000 UTC'>March 18, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to PythonとopenCVで並列化" href="https://www.yusaito.com/blog/posts/tech/python/opencv-setnumthreads-multithreading/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>Pythonでjpgからpngへ一括変換
+    <h2>Ryzen Threadripper 3970XとNVIDIA RTX 3090を使ってnumpy(Intel MKL and OpenBLAS)とcupyでベンチマーク
     </h2>
   </header>
   <section class="entry-content">
-    <p>jpg から png への一括変換 (マルチプロセス) from concurrent.futures import ProcessPoolExecutor, ThreadPoolExecutor from functools import partial from pathlib import Path from typing import List from PIL import Image, ImageFile ImageFile.LOAD_TRUNCATED_IMAGES = True def list_file_paths(dir_path: str) -&gt; List[str]: &#34;&#34;&#34; List file paths in a directory. Parameters ---------- dir_path : str Path of the directory Returns ------- List[str] List of the file paths in the directory &#34;&#34;&#34; return sorted([str(path) for path in Path(dir_path).rglob(&#34;*&#34;) if path....</p>
+    <p>numpy でベンチマーク # ファイル名: numpy_benchmark.py import os os.environ[&#34;OPENBLAS_NUM_THREADS&#34;] = &#34;32&#34; # import mkl # mkl.set_num_threads(32) import numpy as np import time from threadpoolctl import threadpool_info from pprint import pp pp(threadpool_info()) np.show_config() N_LOOP = 5 calc_eigh_time_list = [] calc_inv_time_list = [] calc_dot_time_list = [] calc_norm_time_list = [] for size in [5000, 10000, 20000]: print(f&#34;size : {size}&#34;) for i in range(3): np.random.seed(i) X = np.random.randn(size, size) t_start = time.time() np.linalg.eigh(X @ X.T) calc_eigh_time_list....</p>
   </section>
-  <footer class="entry-footer"><span title='2022-03-19 00:00:00 +0000 UTC'>March 19, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to Pythonでjpgからpngへ一括変換" href="https://www.yusaito.com/blog/posts/tech/python/image-convert-jpg-png-multiprocess/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Pythonでファイルリストからの並列処理
-    </h2>
-  </header>
-  <section class="entry-content">
-    <p>ファイルのリストを受け取って何らかの並列処理をする。 from concurrent.futures import ProcessPoolExecutor, ThreadPoolExecutor from functools import partial from pathlib import Path from typing import List def list_file_paths(dir_path: str) -&gt; List[str]: &#34;&#34;&#34; List file paths in a directory. Parameters ---------- dir_path : str Path of the directory Returns ------- List[str] List of the file paths in the directory &#34;&#34;&#34; return sorted([str(path) for path in Path(dir_path).rglob(&#34;*&#34;) if path.is_file()]) def task(same_value, same_value2, diffent_values): return None def multiprocess_task(task, same_value, same_value2, diffent_values): with ProcessPoolExecutor() as executor: results = list(executor....</p>
-  </section>
-  <footer class="entry-footer"><span title='2022-03-19 00:00:00 +0000 UTC'>March 19, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to Pythonでファイルリストからの並列処理" href="https://www.yusaito.com/blog/posts/tech/python/multiprocess-multithreading-utils/"></a>
+  <footer class="entry-footer"><span title='2022-02-28 00:00:00 +0000 UTC'>February 28, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to Ryzen Threadripper 3970XとNVIDIA RTX 3090を使ってnumpy(Intel MKL and OpenBLAS)とcupyでベンチマーク" href="https://www.yusaito.com/blog/posts/tech/python/numpy-benchmark-ryzen-threadripper/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -219,7 +210,7 @@ if (!doNotTrack) {
   <section class="entry-content">
     <p>openCV を使って画像リストから動画を作成する。 from pathlib import Path from typing import List import cv2 def list_file_paths(dir_path: str) -&gt; List[str]: &#34;&#34;&#34; List file paths in a directory. Parameters ---------- dir_path : str Path of the directory Returns ------- List[str] List of the file paths in the directory &#34;&#34;&#34; return sorted([str(path) for path in Path(dir_path).rglob(&#34;*&#34;) if path.is_file()]) def create_mp4_video_from_image_path_list( output_video_path: str, image_path_list: List[str], fps: int, ) -&gt; None: &#34;&#34;&#34; Create mp4 video file from a image path list Parameters ---------- output_video_path : str Path of the output video image_path_list : List[str] Path of image file list fps : int fps (frames per second) &#34;&#34;&#34; height, width, _ = cv2....</p>
   </section>
-  <footer class="entry-footer"><span title='2022-03-19 00:00:00 +0000 UTC'>March 19, 2022</span></footer>
+  <footer class="entry-footer"><span title='2022-02-26 00:00:00 +0000 UTC'>February 26, 2022</span></footer>
   <a class="entry-link" aria-label="post link to PythonとOpenCVで画像リストから動画を作成" href="https://www.yusaito.com/blog/posts/tech/python/create-video-from-images-opencv/"></a>
 </article>
 
@@ -233,48 +224,8 @@ if (!doNotTrack) {
 ├──　run.py ├──　data ├── input.txt └── images みたいなディレクトリがある場合は
 import csv from pathlib import Path current_dir = Path(__file__).parent image_path = current_dir / &#34;data&#34; / &#34;images&#34; inuput_path = current_dir / &#34;input_txt&#34; とすればよい。</p>
   </section>
-  <footer class="entry-footer"><span title='2022-03-18 00:00:00 +0000 UTC'>March 18, 2022</span></footer>
+  <footer class="entry-footer"><span title='2022-02-18 00:00:00 +0000 UTC'>February 18, 2022</span></footer>
   <a class="entry-link" aria-label="post link to Pathlibで相対パスを有効活用する" href="https://www.yusaito.com/blog/posts/tech/python/relative-path-with-pathlib/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>PythonとopenCVで並列化
-    </h2>
-  </header>
-  <section class="entry-content">
-    <p>openCV でマルチプロセス化しようとしてもシングルプロセスになっている問題に遭遇 Python で openCV を使った処理をマルチプロセス化してみたのだが、どうもシングルプロセスになってしまうという問題に遭遇した。
-解決策：cv2.setNumThreads(0)＆マルチプロセスをやめる。 cv2.setNumThreads(0) を加えて、かつマルチスレッド化（例えば、concurrent.future.ThreadPoolExecuterなど）することで効率的に並列処理可能になることが分かった。 cv2.setNumThreads(0)有りでもconcurrent.future.ProcessPoolExecuterでは、正しくマルチプロセスされなかった。
-以下テンプレート。
-import cv2 from concurrent.futures import ThreadPoolExecutor cv2.setNumThreads(0) def task_using_cv2(param): do_some_process_using_cv2() return with ThreadPoolExecutor() as executor: results = list(executor.map(task_using_cv2, param)) 参考   </p>
-  </section>
-  <footer class="entry-footer"><span title='2022-03-17 00:00:00 +0000 UTC'>March 17, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to PythonとopenCVで並列化" href="https://www.yusaito.com/blog/posts/tech/python/opencv-setnumthreads-multithreading/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Ryzen Threadripper 3970XとNVIDIA RTX 3090を使ってnumpy(Intel MKL and OpenBLAS)とcupyでベンチマーク
-    </h2>
-  </header>
-  <section class="entry-content">
-    <p>numpy でベンチマーク # ファイル名: numpy_benchmark.py import os os.environ[&#34;OPENBLAS_NUM_THREADS&#34;] = &#34;32&#34; # import mkl # mkl.set_num_threads(32) import numpy as np import time from threadpoolctl import threadpool_info from pprint import pp pp(threadpool_info()) np.show_config() N_LOOP = 5 calc_eigh_time_list = [] calc_inv_time_list = [] calc_dot_time_list = [] calc_norm_time_list = [] for size in [5000, 10000, 20000]: print(f&#34;size : {size}&#34;) for i in range(3): np.random.seed(i) X = np.random.randn(size, size) t_start = time.time() np.linalg.eigh(X @ X.T) calc_eigh_time_list....</p>
-  </section>
-  <footer class="entry-footer"><span title='2022-03-05 00:00:00 +0000 UTC'>March 5, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to Ryzen Threadripper 3970XとNVIDIA RTX 3090を使ってnumpy(Intel MKL and OpenBLAS)とcupyでベンチマーク" href="https://www.yusaito.com/blog/posts/tech/python/numpy-benchmark-ryzen-threadripper/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>エラーメモ：IOError: image file is truncated
-    </h2>
-  </header>
-  <section class="entry-content">
-    <p>IOError: image file is truncated jpg で結構大きめの画像を Pillow で読み込むときに下記のエラーが出た。
-IOError: image file is truncated 解決策 from PIL import ImageFile ImageFile.LOAD_TRUNCATED_IMAGES = True 参考  </p>
-  </section>
-  <footer class="entry-footer"><span title='2022-03-05 00:00:00 +0000 UTC'>March 5, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to エラーメモ：IOError: image file is truncated" href="https://www.yusaito.com/blog/posts/tech/python/ioe-image-file-is-truncated/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -288,6 +239,55 @@ import contextlib import logging import logging.handlers import sys from time im
   </section>
   <footer class="entry-footer"><span title='2022-02-13 00:00:00 +0000 UTC'>February 13, 2022</span></footer>
   <a class="entry-link" aria-label="post link to loggerとprintとtqdmの併用" href="https://www.yusaito.com/blog/posts/tech/python/tqdm-logging-print/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>Pythonでファイルリストからの並列処理
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>ファイルのリストを受け取って何らかの並列処理をする。 from concurrent.futures import ProcessPoolExecutor, ThreadPoolExecutor from functools import partial from pathlib import Path from typing import List def list_file_paths(dir_path: str) -&gt; List[str]: &#34;&#34;&#34; List file paths in a directory. Parameters ---------- dir_path : str Path of the directory Returns ------- List[str] List of the file paths in the directory &#34;&#34;&#34; return sorted([str(path) for path in Path(dir_path).rglob(&#34;*&#34;) if path.is_file()]) def task(same_value, same_value2, diffent_values): return None def multiprocess_task(task, same_value, same_value2, diffent_values): with ProcessPoolExecutor() as executor: results = list(executor....</p>
+  </section>
+  <footer class="entry-footer"><span title='2022-02-03 00:00:00 +0000 UTC'>February 3, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to Pythonでファイルリストからの並列処理" href="https://www.yusaito.com/blog/posts/tech/python/multiprocess-multithreading-utils/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>Pythonでjpgからpngへ一括変換
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>jpg から png への一括変換 (マルチプロセス) from concurrent.futures import ProcessPoolExecutor, ThreadPoolExecutor from functools import partial from pathlib import Path from typing import List from PIL import Image, ImageFile ImageFile.LOAD_TRUNCATED_IMAGES = True def list_file_paths(dir_path: str) -&gt; List[str]: &#34;&#34;&#34; List file paths in a directory. Parameters ---------- dir_path : str Path of the directory Returns ------- List[str] List of the file paths in the directory &#34;&#34;&#34; return sorted([str(path) for path in Path(dir_path).rglob(&#34;*&#34;) if path....</p>
+  </section>
+  <footer class="entry-footer"><span title='2022-01-25 00:00:00 +0000 UTC'>January 25, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to Pythonでjpgからpngへ一括変換" href="https://www.yusaito.com/blog/posts/tech/python/image-convert-jpg-png-multiprocess/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>Pathlibの使い方
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>基本操作 ファイル名取得 ディレクトリ名取得 from pathlib import Path path = Path(&#34;./dir/filename.txt&#34;)  ファイル名を取得 : path.name ファイル名拡張子抜き : path.stem ファイルの拡張子のみ : path.suffix ファイルのディレクトリを取得 : path.parents (list) パス連結 : / 演算子を使う（path.joinpath()） パスの存在確認：path.exists() ファイルかどうか確認 : path.is_file() ディレクトリかどうか確認 : path.is_dir() ディレクトリの作成 : path.mkdir(exist_ok=True, parents=True) ディレクトリの削除 : path.rmdir() ファイル/ディレクトリパス変更 : path.replace(tgt) ファイル/ディレクトリパス変更（末尾のみ）: path.rename(new_file_apth) 同じ階層に別名ファイルを作成 : path.with_name(&#39;file_new.txt&#39;).touch() 同じ階層に別拡張子ファイルを作成 : path.with_suffix(&#39;png&#39;).touch() 同じ階層のファイルとディレクトリ一覧を返す：path.iterdir() ファイルの存在ディレクトリのパスを取得：Path(__file__).parent  個人的によく使うモジュール ファイルを再帰的に探索  Pathlib の場合  # Pathlibの場合 from pathlib import Path from typing import List def list_file_paths(dir_path: str) -&gt; List[str]: &#34;&#34;&#34; List file paths in a directory....</p>
+  </section>
+  <footer class="entry-footer"><span title='2022-01-19 00:00:00 +0000 UTC'>January 19, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to Pathlibの使い方" href="https://www.yusaito.com/blog/posts/tech/python/how-to-use-pathlib/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>エラーメモ：IOError: image file is truncated
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>IOError: image file is truncated jpg で結構大きめの画像を Pillow で読み込むときに下記のエラーが出た。
+IOError: image file is truncated 解決策 from PIL import ImageFile ImageFile.LOAD_TRUNCATED_IMAGES = True 参考  </p>
+  </section>
+  <footer class="entry-footer"><span title='2022-01-03 00:00:00 +0000 UTC'>January 3, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to エラーメモ：IOError: image file is truncated" href="https://www.yusaito.com/blog/posts/tech/python/ioerror-image-file-is-truncated/"></a>
 </article>
     </main>
     

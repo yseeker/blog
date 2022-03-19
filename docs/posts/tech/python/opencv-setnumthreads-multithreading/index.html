@@ -71,8 +71,8 @@ if (!doNotTrack) {
 <meta property="og:description" content="cv2.setNumThreads(0)＆マルチプロセスをやめる" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.yusaito.com/blog/posts/tech/python/opencv-setnumthreads-multithreading/" /><meta property="og:image" content="https://www.yusaito.com/blog/papermod-cover.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-03-17T00:00:00&#43;00:00" />
-<meta property="article:modified_time" content="2022-03-17T00:00:00&#43;00:00" />
+<meta property="article:published_time" content="2022-03-18T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2022-03-18T00:00:00&#43;00:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://www.yusaito.com/blog/papermod-cover.png"/>
@@ -126,8 +126,8 @@ if (!doNotTrack) {
   "articleBody": "openCV でマルチプロセス化しようとしてもシングルプロセスになっている問題に遭遇 Python で openCV を使った処理をマルチプロセス化してみたのだが、どうもシングルプロセスになってしまうという問題に遭遇した。\n解決策：cv2.setNumThreads(0)＆マルチプロセスをやめる。 cv2.setNumThreads(0) を加えて、かつマルチスレッド化（例えば、concurrent.future.ThreadPoolExecuterなど）することで効率的に並列処理可能になることが分かった。 cv2.setNumThreads(0)有りでもconcurrent.future.ProcessPoolExecuterでは、正しくマルチプロセスされなかった。\n以下テンプレート。\nimport cv2 from concurrent.futures import ThreadPoolExecutor cv2.setNumThreads(0) def task_using_cv2(param): do_some_process_using_cv2() return with ThreadPoolExecutor() as executor: results = list(executor.map(task_using_cv2, param)) 参考   ",
   "wordCount" : "31",
   "inLanguage": "en",
-  "datePublished": "2022-03-17T00:00:00Z",
-  "dateModified": "2022-03-17T00:00:00Z",
+  "datePublished": "2022-03-18T00:00:00Z",
+  "dateModified": "2022-03-18T00:00:00Z",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://www.yusaito.com/blog/posts/tech/python/opencv-setnumthreads-multithreading/"
@@ -214,7 +214,7 @@ if (!doNotTrack) {
     <div class="post-description">
       cv2.setNumThreads(0)＆マルチプロセスをやめる
     </div>
-    <div class="post-meta"><span title='2022-03-17 00:00:00 +0000 UTC'>March 17, 2022</span>
+    <div class="post-meta"><span title='2022-03-18 00:00:00 +0000 UTC'>March 18, 2022</span>
 
 </div>
   </header> <div class="toc">
@@ -269,19 +269,19 @@ cv2<span style="color:#f92672">.</span>setNumThreads(<span style="color:#ae81ff"
 	
 	<li><a href="/blog/posts/tech/python/multiprocess-multithreading-utils/">Pythonでファイルリストからの並列処理</a></li>
 	
-	<li><a href="/blog/posts/tech/python/image-convert-jpg-png-multiprocess/">Pythonでjpgからpngへ一括変換</a></li>
-	
 	<li><a href="/blog/posts/tech/python/create-video-from-images-opencv/">PythonとOpenCVで画像リストから動画を作成</a></li>
 	
-	<li><a href="/blog/posts/tech/python/how-to-use-pathlib/">Pathlibの使い方</a></li>
-	
-	<li><a href="/blog/posts/tech/python/relative-path-with-pathlib/">Pathlibで相対パスを有効活用する</a></li>
+	<li><a href="/blog/posts/tech/python/image-convert-jpg-png-multiprocess/">Pythonでjpgからpngへ一括変換</a></li>
 	
 	<li><a href="/blog/posts/tech/python/numpy-benchmark-ryzen-threadripper/">Ryzen Threadripper 3970XとNVIDIA RTX 3090を使ってnumpy(Intel MKL and OpenBLAS)とcupyでベンチマーク</a></li>
 	
-	<li><a href="/blog/posts/tech/python/ioe-image-file-is-truncated/">エラーメモ：IOError: image file is truncated</a></li>
+	<li><a href="/blog/posts/tech/python/relative-path-with-pathlib/">Pathlibで相対パスを有効活用する</a></li>
 	
 	<li><a href="/blog/posts/tech/python/tqdm-logging-print/">loggerとprintとtqdmの併用</a></li>
+	
+	<li><a href="/blog/posts/tech/python/how-to-use-pathlib/">Pathlibの使い方</a></li>
+	
+	<li><a href="/blog/posts/tech/python/ioerror-image-file-is-truncated/">エラーメモ：IOError: image file is truncated</a></li>
 	
 </ul>
 
@@ -300,11 +300,6 @@ cv2<span style="color:#f92672">.</span>setNumThreads(<span style="color:#ae81ff"
       <li><a href="https://www.yusaito.com/blog/tags/processpoolexecuter/">ProcessPoolExecuter</a></li>
     </ul>
 <nav class="paginav">
-  <a class="prev" href="https://www.yusaito.com/blog/posts/tech/python/relative-path-with-pathlib/">
-    <span class="title">« Prev Page</span>
-    <br>
-    <span>Pathlibで相対パスを有効活用する</span>
-  </a>
   <a class="next" href="https://www.yusaito.com/blog/posts/tech/linux/ubuntu-server-ssh-docker-setup/">
     <span class="title">Next Page »</span>
     <br>

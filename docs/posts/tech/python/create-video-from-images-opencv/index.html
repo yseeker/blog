@@ -71,8 +71,8 @@ if (!doNotTrack) {
 <meta property="og:description" content="cv2.VideoWriterを使う." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.yusaito.com/blog/posts/tech/python/create-video-from-images-opencv/" /><meta property="og:image" content="https://www.yusaito.com/blog/papermod-cover.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-03-19T00:00:00&#43;00:00" />
-<meta property="article:modified_time" content="2022-03-19T00:00:00&#43;00:00" />
+<meta property="article:published_time" content="2022-02-26T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2022-02-26T00:00:00&#43;00:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://www.yusaito.com/blog/papermod-cover.png"/>
@@ -126,8 +126,8 @@ if (!doNotTrack) {
   "articleBody": "openCV を使って画像リストから動画を作成する。 from pathlib import Path from typing import List import cv2 def list_file_paths(dir_path: str) - List[str]: \"\"\" List file paths in a directory. Parameters ---------- dir_path : str Path of the directory Returns ------- List[str] List of the file paths in the directory \"\"\" return sorted([str(path) for path in Path(dir_path).rglob(\"*\") if path.is_file()]) def create_mp4_video_from_image_path_list( output_video_path: str, image_path_list: List[str], fps: int, ) - None: \"\"\" Create mp4 video file from a image path list Parameters ---------- output_video_path : str Path of the output video image_path_list : List[str] Path of image file list fps : int fps (frames per second) \"\"\" height, width, _ = cv2.imread(image_path_list[0]).shape writer = cv2.VideoWriter( output_video_path, cv2.VideoWriter_fourcc(\"m\", \"p\", \"4\", \"v\"), fps, (width, height), True, ) for image_file_path in image_path_list: writer.write(cv2.imread(image_file_path)) writer.release() cv2.destroyAllWindows() file_list = list_file_paths(\"images\") create_mp4_video_from_image_path_list(\"output.mp4\", file_list, 30) ",
   "wordCount" : "131",
   "inLanguage": "en",
-  "datePublished": "2022-03-19T00:00:00Z",
-  "dateModified": "2022-03-19T00:00:00Z",
+  "datePublished": "2022-02-26T00:00:00Z",
+  "dateModified": "2022-02-26T00:00:00Z",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://www.yusaito.com/blog/posts/tech/python/create-video-from-images-opencv/"
@@ -214,7 +214,7 @@ if (!doNotTrack) {
     <div class="post-description">
       cv2.VideoWriterを使う.
     </div>
-    <div class="post-meta"><span title='2022-03-19 00:00:00 +0000 UTC'>March 19, 2022</span>
+    <div class="post-meta"><span title='2022-02-26 00:00:00 +0000 UTC'>February 26, 2022</span>
 
 </div>
   </header> <div class="toc">
@@ -298,21 +298,21 @@ create_mp4_video_from_image_path_list(<span style="color:#e6db74">&#34;output.mp
 <h3>Related Posts</h3>
 <ul>
 	
-	<li><a href="/blog/posts/tech/python/how-to-use-pathlib/">Pathlibの使い方</a></li>
+	<li><a href="/blog/posts/tech/python/opencv-setnumthreads-multithreading/">PythonとopenCVで並列化</a></li>
 	
 	<li><a href="/blog/posts/tech/python/relative-path-with-pathlib/">Pathlibで相対パスを有効活用する</a></li>
 	
-	<li><a href="/blog/posts/tech/python/opencv-setnumthreads-multithreading/">PythonとopenCVで並列化</a></li>
+	<li><a href="/blog/posts/tech/python/how-to-use-pathlib/">Pathlibの使い方</a></li>
 	
-	<li><a href="/blog/posts/tech/python/ioe-image-file-is-truncated/">エラーメモ：IOError: image file is truncated</a></li>
-	
-	<li><a href="/blog/posts/tech/python/image-convert-jpg-png-multiprocess/">Pythonでjpgからpngへ一括変換</a></li>
-	
-	<li><a href="/blog/posts/tech/python/multiprocess-multithreading-utils/">Pythonでファイルリストからの並列処理</a></li>
+	<li><a href="/blog/posts/tech/python/ioerror-image-file-is-truncated/">エラーメモ：IOError: image file is truncated</a></li>
 	
 	<li><a href="/blog/posts/tech/python/numpy-benchmark-ryzen-threadripper/">Ryzen Threadripper 3970XとNVIDIA RTX 3090を使ってnumpy(Intel MKL and OpenBLAS)とcupyでベンチマーク</a></li>
 	
 	<li><a href="/blog/posts/tech/python/tqdm-logging-print/">loggerとprintとtqdmの併用</a></li>
+	
+	<li><a href="/blog/posts/tech/python/multiprocess-multithreading-utils/">Pythonでファイルリストからの並列処理</a></li>
+	
+	<li><a href="/blog/posts/tech/python/image-convert-jpg-png-multiprocess/">Pythonでjpgからpngへ一括変換</a></li>
 	
 </ul>
 
@@ -329,10 +329,10 @@ create_mp4_video_from_image_path_list(<span style="color:#e6db74">&#34;output.mp
       <li><a href="https://www.yusaito.com/blog/tags/cv2.videowriter/">cv2.VideoWriter</a></li>
     </ul>
 <nav class="paginav">
-  <a class="prev" href="https://www.yusaito.com/blog/posts/tech/python/multiprocess-multithreading-utils/">
+  <a class="prev" href="https://www.yusaito.com/blog/posts/tech/python/numpy-benchmark-ryzen-threadripper/">
     <span class="title">« Prev Page</span>
     <br>
-    <span>Pythonでファイルリストからの並列処理</span>
+    <span>Ryzen Threadripper 3970XとNVIDIA RTX 3090を使ってnumpy(Intel MKL and OpenBLAS)とcupyでベンチマーク</span>
   </a>
   <a class="next" href="https://www.yusaito.com/blog/posts/tech/python/relative-path-with-pathlib/">
     <span class="title">Next Page »</span>

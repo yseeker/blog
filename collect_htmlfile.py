@@ -94,16 +94,16 @@ for file_path in correct_html_list:
 print(f"total number of URLs : {len(url_list)}")
 
 print(url_list[25])
-# for url in url_list:
-#     content = {}
-#     content["url"] = url
-#     content["type"] = "URL_UPDATED"
-#     json_content = json.dumps(content)
+for url in url_list:
+    content = {}
+    content["url"] = url
+    content["type"] = "URL_UPDATED"
+    json_content = json.dumps(content)
 
-#     response, content = http.request(ENDPOINT, method="POST", body=json_content)
-#     result = json.loads(content.decode())
-#     dt_now = datetime.datetime.now()
-#     print(
-#         f"status : {response.status} | {dt_now.strftime('%Y-%m-%d %H:%M:%S')} | URL : {url}"
-#     )
-#     time.sleep(1.1)
+    response, content = http.request(ENDPOINT, method="POST", body=json_content)
+    result = json.loads(content.decode())
+    dt_now = datetime.datetime.now()
+    print(
+        f"status : {response.status} | {dt_now.strftime('%Y-%m-%d %H:%M:%S')} | URL : {url}"
+    )
+    time.sleep(1.1)
