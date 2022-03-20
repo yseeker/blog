@@ -110,6 +110,14 @@ img {
 }
 
 @media print, screen and (max-width: 479px) {
+  .dark .post-content {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #dbdbdb !important;
+  }
+}
+
+@media print, screen and (max-width: 479px) {
   .post-content {
     font-size: 16px;
     line-height: 1.7;
@@ -142,6 +150,20 @@ img {
   .highlight {
     font-size: 9pt !important;
     line-height: 1.5 !important;
+  }
+}
+
+@media print, screen and (min-width: 480px) {
+  .code {
+    font-size: 16pt !important;
+    line-height: 1.7;
+  }
+}
+
+@media print, screen and (max-width: 479px) {
+  .code {
+    font-size: 15.5pt !important;
+    line-height: 1.65;
   }
 }
 

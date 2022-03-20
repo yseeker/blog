@@ -29,12 +29,11 @@ pip install mpire
 ```python
 from mpire import WorkerPool
 
-def time_consuming_function(x):
-    time.sleep(1)  # Simulate that this function takes long to complete
-    return ...
+def time_consuming_function(param):
+    return None
 
-with WorkerPool(n_jobs=5) as pool:
-    results = pool.map(time_consuming_function, range(10), progress_bar=True)
+with WorkerPool(n_jobs=8) as pool:
+    results = pool.map(time_consuming_function, interator, progress_bar=True)
 
 ```
 
