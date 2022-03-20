@@ -147,14 +147,14 @@ img {
 
 @media print, screen and (min-width: 480px) {
   .highlight {
-    font-size: 14pt !important;
+    font-size: 15pt !important;
     line-height: 1.6 !important;
   }
 }
 
 @media print, screen and (max-width: 479px) {
   .highlight {
-    font-size: 12pt !important;
+    font-size: 13pt !important;
     line-height: 1.5 !important;
   }
 }
