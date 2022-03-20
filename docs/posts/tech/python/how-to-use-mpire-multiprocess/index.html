@@ -8,7 +8,7 @@
 <title>Python並列処理：MPIREの使い方 | YS&#39;s blog</title>
 <meta name="keywords" content="Python, マルチプロセス, 並列化, MPIRE, MPIRE for Python: MultiProcessing Is Really Easy" />
 <meta name="description" content="Python では joblib や concurrent.futures などで簡単にマルチプロセスできるが、&ldquo;MultiProcessing Is Really Easy&quot;という名の MPIRE というライブラリを見つけたので備忘録として残しておく。この記事によると、特定の場合では joblib や concurrent.futures よりも性能が良いらしい。
-MPIRE のインストール pip install mpire MPIRE の使い方 from mpire import WorkerPool def time_consuming_function(param): return None with WorkerPool(n_jobs=8) as pool: results = pool.map(time_consuming_function, interator, progress_bar=True) 参考   ">
+MPIRE のインストール pip install mpire MPIRE の使い方 from mpire import WorkerPool def time_consuming_function(param): return None with WorkerPool(n_jobs=8) as pool: results = pool.map_unordered(time_consuming_function, interator, progress_bar=True) 参考   ">
 <meta name="author" content="">
 <link rel="canonical" href="https://www.yusaito.com/blog/posts/tech/python/how-to-use-mpire-multiprocess/" />
 <meta name="google-site-verification" content="7pz_dAQx7-r3P-mr6XGvIVQx47QN5DmiWRVLEocHAIM" />
@@ -70,7 +70,7 @@ if (!doNotTrack) {
 </script>
 <meta property="og:title" content="Python並列処理：MPIREの使い方" />
 <meta property="og:description" content="Python では joblib や concurrent.futures などで簡単にマルチプロセスできるが、&ldquo;MultiProcessing Is Really Easy&quot;という名の MPIRE というライブラリを見つけたので備忘録として残しておく。この記事によると、特定の場合では joblib や concurrent.futures よりも性能が良いらしい。
-MPIRE のインストール pip install mpire MPIRE の使い方 from mpire import WorkerPool def time_consuming_function(param): return None with WorkerPool(n_jobs=8) as pool: results = pool.map(time_consuming_function, interator, progress_bar=True) 参考   " />
+MPIRE のインストール pip install mpire MPIRE の使い方 from mpire import WorkerPool def time_consuming_function(param): return None with WorkerPool(n_jobs=8) as pool: results = pool.map_unordered(time_consuming_function, interator, progress_bar=True) 参考   " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.yusaito.com/blog/posts/tech/python/how-to-use-mpire-multiprocess/" /><meta property="og:image" content="https://www.yusaito.com/blog/papermod-cover.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-03-19T00:00:00&#43;00:00" />
@@ -81,7 +81,7 @@ MPIRE のインストール pip install mpire MPIRE の使い方 from mpire impo
 
 <meta name="twitter:title" content="Python並列処理：MPIREの使い方"/>
 <meta name="twitter:description" content="Python では joblib や concurrent.futures などで簡単にマルチプロセスできるが、&ldquo;MultiProcessing Is Really Easy&quot;という名の MPIRE というライブラリを見つけたので備忘録として残しておく。この記事によると、特定の場合では joblib や concurrent.futures よりも性能が良いらしい。
-MPIRE のインストール pip install mpire MPIRE の使い方 from mpire import WorkerPool def time_consuming_function(param): return None with WorkerPool(n_jobs=8) as pool: results = pool.map(time_consuming_function, interator, progress_bar=True) 参考   "/>
+MPIRE のインストール pip install mpire MPIRE の使い方 from mpire import WorkerPool def time_consuming_function(param): return None with WorkerPool(n_jobs=8) as pool: results = pool.map_unordered(time_consuming_function, interator, progress_bar=True) 参考   "/>
 
 
 <script type="application/ld+json">
@@ -122,11 +122,11 @@ MPIRE のインストール pip install mpire MPIRE の使い方 from mpire impo
   "@type": "BlogPosting",
   "headline": "Python並列処理：MPIREの使い方",
   "name": "Python並列処理：MPIREの使い方",
-  "description": "Python では joblib や concurrent.futures などで簡単にマルチプロセスできるが、\u0026ldquo;MultiProcessing Is Really Easy\u0026quot;という名の MPIRE というライブラリを見つけたので備忘録として残しておく。この記事によると、特定の場合では joblib や concurrent.futures よりも性能が良いらしい。\nMPIRE のインストール pip install mpire MPIRE の使い方 from mpire import WorkerPool def time_consuming_function(param): return None with WorkerPool(n_jobs=8) as pool: results = pool.map(time_consuming_function, interator, progress_bar=True) 参考   ",
+  "description": "Python では joblib や concurrent.futures などで簡単にマルチプロセスできるが、\u0026ldquo;MultiProcessing Is Really Easy\u0026quot;という名の MPIRE というライブラリを見つけたので備忘録として残しておく。この記事によると、特定の場合では joblib や concurrent.futures よりも性能が良いらしい。\nMPIRE のインストール pip install mpire MPIRE の使い方 from mpire import WorkerPool def time_consuming_function(param): return None with WorkerPool(n_jobs=8) as pool: results = pool.map_unordered(time_consuming_function, interator, progress_bar=True) 参考   ",
   "keywords": [
     "Python", "マルチプロセス", "並列化", "MPIRE", "MPIRE for Python: MultiProcessing Is Really Easy"
   ],
-  "articleBody": "Python では joblib や concurrent.futures などで簡単にマルチプロセスできるが、“MultiProcessing Is Really Easy\"という名の MPIRE というライブラリを見つけたので備忘録として残しておく。この記事によると、特定の場合では joblib や concurrent.futures よりも性能が良いらしい。\nMPIRE のインストール pip install mpire MPIRE の使い方 from mpire import WorkerPool def time_consuming_function(param): return None with WorkerPool(n_jobs=8) as pool: results = pool.map(time_consuming_function, interator, progress_bar=True) 参考   ",
+  "articleBody": "Python では joblib や concurrent.futures などで簡単にマルチプロセスできるが、“MultiProcessing Is Really Easy\"という名の MPIRE というライブラリを見つけたので備忘録として残しておく。この記事によると、特定の場合では joblib や concurrent.futures よりも性能が良いらしい。\nMPIRE のインストール pip install mpire MPIRE の使い方 from mpire import WorkerPool def time_consuming_function(param): return None with WorkerPool(n_jobs=8) as pool: results = pool.map_unordered(time_consuming_function, interator, progress_bar=True) 参考   ",
   "wordCount" : "40",
   "inLanguage": "en",
   "datePublished": "2022-03-19T00:00:00Z",
@@ -246,7 +246,7 @@ MPIRE のインストール pip install mpire MPIRE の使い方 from mpire impo
     <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">None</span>
 
 <span style="color:#66d9ef">with</span> WorkerPool(n_jobs<span style="color:#f92672">=</span><span style="color:#ae81ff">8</span>) <span style="color:#66d9ef">as</span> pool:
-    results <span style="color:#f92672">=</span> pool<span style="color:#f92672">.</span>map(time_consuming_function, interator, progress_bar<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
+    results <span style="color:#f92672">=</span> pool<span style="color:#f92672">.</span>map_unordered(time_consuming_function, interator, progress_bar<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
 
 </code></pre></div><h2 id="参考">参考<a hidden class="anchor" aria-hidden="true" href="#参考">#</a></h2>
 <iframe class="hatenablogcard" style="width:100%;height:155px;margin:15px 0;max-width:720px;" title="Getting started" src="https://hatenablog-parts.com/embed?url=https://slimmer-ai.github.io/mpire/getting_started.html" frameborder="0" scrolling="no"></iframe>

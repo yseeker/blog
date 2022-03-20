@@ -18,7 +18,7 @@
       
       <guid>https://www.yusaito.com/blog/posts/tech/python/how-to-use-mpire-multiprocess/</guid>
       <description>Python では joblib や concurrent.futures などで簡単にマルチプロセスできるが、&amp;ldquo;MultiProcessing Is Really Easy&amp;quot;という名の MPIRE というライブラリを見つけたので備忘録として残しておく。この記事によると、特定の場合では joblib や concurrent.futures よりも性能が良いらしい。
-MPIRE のインストール pip install mpire MPIRE の使い方 from mpire import WorkerPool def time_consuming_function(param): return None with WorkerPool(n_jobs=8) as pool: results = pool.map(time_consuming_function, interator, progress_bar=True) 参考   </description>
+MPIRE のインストール pip install mpire MPIRE の使い方 from mpire import WorkerPool def time_consuming_function(param): return None with WorkerPool(n_jobs=8) as pool: results = pool.map_unordered(time_consuming_function, interator, progress_bar=True) 参考   </description>
     </item>
     
     <item>

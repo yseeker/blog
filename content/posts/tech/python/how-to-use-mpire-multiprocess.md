@@ -33,7 +33,7 @@ def time_consuming_function(param):
     return None
 
 with WorkerPool(n_jobs=8) as pool:
-    results = pool.map(time_consuming_function, interator, progress_bar=True)
+    results = pool.map_unordered(time_consuming_function, interator, progress_bar=True)
 
 ```
 
