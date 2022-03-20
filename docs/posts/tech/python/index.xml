@@ -99,5 +99,14 @@ import contextlib import logging import logging.handlers import sys from time im
 IOError: image file is truncated 解決策 from PIL import ImageFile ImageFile.LOAD_TRUNCATED_IMAGES = True 参考  </description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://www.yusaito.com/blog/posts/tech/python/pandas-dataframe-series-to-numpy-tolist/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/posts/tech/python/pandas-dataframe-series-to-numpy-tolist/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
