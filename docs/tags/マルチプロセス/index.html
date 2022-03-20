@@ -147,6 +147,19 @@ if (!doNotTrack) {
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2>Python並列処理：MPIREの使い方
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>Python では joblib や concurrent.futures などで簡単にマルチプロセスできるが、“MultiProcessing Is Really Easy&#34;という名の MPIRE というライブラリを見つけたので備忘録として残しておく。この記事によると、特定の場合では joblib や concurrent.futures よりも性能が良いらしい。
+MPIRE のインストール pip install mpire MPIRE の使い方 from mpire import WorkerPool def time_consuming_function(x): time.sleep(1) # Simulate that this function takes long to complete return ... with WorkerPool(n_jobs=5) as pool: results = pool.map(time_consuming_function, range(10), progress_bar=True) 参考   </p>
+  </section>
+  <footer class="entry-footer"><span title='2022-03-19 00:00:00 +0000 UTC'>March 19, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to Python並列処理：MPIREの使い方" href="https://www.yusaito.com/blog/posts/tech/python/how-to-use-mpire-multiprocess/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2>PythonとopenCVで並列化
     </h2>
   </header>

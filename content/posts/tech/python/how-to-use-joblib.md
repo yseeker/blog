@@ -16,7 +16,7 @@ tags:
 categories: ["Tech", "Python"]
 ShowToc: true
 TocOpen: true
-draft: true
+draft: false
 ---
 
 joblib には主な機能として、1) 時間がかかる処理のキャッシュ化, 2)並列処理, 3)圧縮書き出しと読み込み、がある。

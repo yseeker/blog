@@ -10,7 +10,17 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sat, 26 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.yusaito.com/blog/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 19 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.yusaito.com/blog/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python並列処理：MPIREの使い方</title>
+      <link>https://www.yusaito.com/blog/posts/tech/python/how-to-use-mpire-multiprocess/</link>
+      <pubDate>Sat, 19 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/posts/tech/python/how-to-use-mpire-multiprocess/</guid>
+      <description>Python では joblib や concurrent.futures などで簡単にマルチプロセスできるが、&amp;ldquo;MultiProcessing Is Really Easy&amp;quot;という名の MPIRE というライブラリを見つけたので備忘録として残しておく。この記事によると、特定の場合では joblib や concurrent.futures よりも性能が良いらしい。
+MPIRE のインストール pip install mpire MPIRE の使い方 from mpire import WorkerPool def time_consuming_function(x): time.sleep(1) # Simulate that this function takes long to complete return ... with WorkerPool(n_jobs=5) as pool: results = pool.map(time_consuming_function, range(10), progress_bar=True) 参考   </description>
+    </item>
+    
     <item>
       <title>PythonとOpenCVで画像リストから動画を作成</title>
       <link>https://www.yusaito.com/blog/posts/tech/python/create-video-from-images-opencv/</link>
