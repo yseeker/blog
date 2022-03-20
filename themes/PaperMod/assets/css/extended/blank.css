@@ -130,22 +130,22 @@ img {
 }
 
 /* prism */
-/* @media print, screen and (min-width: 480px) {
+@media print, screen and (min-width: 480px) {
   .highlight {
     font-size: 11pt !important;
     line-height: 1.6 !important;
   }
-} */
+}
 
 /* prism */
-/* @media print, screen and (max-width: 479px) {
+@media print, screen and (max-width: 479px) {
   .highlight {
     font-size: 9pt !important;
     line-height: 1.5 !important;
   }
-} */
+}
 
-@media print, screen and (min-width: 480px) {
+/* @media print, screen and (min-width: 480px) {
   .highlight {
     font-size: 15pt !important;
     line-height: 1.6 !important;
@@ -157,4 +157,4 @@ img {
     font-size: 13pt !important;
     line-height: 1.5 !important;
   }
-}
+} */
