@@ -8,6 +8,8 @@ categories: ["海外"]
 ShowToc: true
 TocOpen: true
 draft: false
+aliases:
+  - /posts/other/conference_highlight/
 ---
 
 ## 2014/03 APS March Meeting @ デンバー, USA

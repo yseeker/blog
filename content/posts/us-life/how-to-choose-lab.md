@@ -8,8 +8,8 @@ ShowToc: true
 TocOpen: true
 draft: false
 aliases:
-  - /posts/uslife/lab_choise/
-  - /posts/us_life/lab_choise/
+  - /posts/uslife/lab_choice/
+  - /posts/us_life/lab_choice/
 ---
 
 ## 一般論

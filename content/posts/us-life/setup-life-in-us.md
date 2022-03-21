@@ -10,6 +10,7 @@ draft: false
 aliases:
   - /posts/uslife/setuplife_in_us/
   - /posts/us_life/setuplife_in_us/
+  - /posts/us_life/lifesetup/
 ---
 
 初めてアメリカに来たのは、修士 1 年の頃、アメリカ物理学会＠デンバー（APS March Meeting）に参加したときのことだった。それから 4 年半後にアメリカ（カリフォルニア・サンタバーバラ）で生活することになるとは夢にも思ってなかった。

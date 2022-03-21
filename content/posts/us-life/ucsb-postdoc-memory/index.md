@@ -10,6 +10,7 @@ TocOpen: true
 draft: false
 aliases:
   - /posts/uslife/postdoc_memory/
+  - /posts/us_life/postdoc_memory/
 ---
 
 ![](images/20210906131317.jpeg#center)
