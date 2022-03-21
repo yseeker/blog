@@ -159,6 +159,19 @@ git clone https://github.com/NVIDIA/cuda-samples.git cd cuda-samples/Samples/ban
   <footer class="entry-footer"><span title='2022-01-11 00:00:00 +0000 UTC'>January 11, 2022</span></footer>
   <a class="entry-link" aria-label="post link to AzureでA100x8（V100x4）のPytorch環境構築とエラー対処" href="https://www.yusaito.com/blog/posts/tech/linux/azure-vm-cuda-docker-setup/"></a>
 </article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>エラーメモ：IOError: image file is truncated
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>IOError: image file is truncated jpg で結構大きめの画像を Pillow で読み込むときに下記のエラーが出た。
+IOError: image file is truncated 解決策 from PIL import ImageFile ImageFile.LOAD_TRUNCATED_IMAGES = True 参考  </p>
+  </section>
+  <footer class="entry-footer"><span title='2022-01-03 00:00:00 +0000 UTC'>January 3, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to エラーメモ：IOError: image file is truncated" href="https://www.yusaito.com/blog/posts/tech/python/ioerror-image-file-is-truncated/"></a>
+</article>
     </main>
     
 <footer class="footer">

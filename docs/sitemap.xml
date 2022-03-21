@@ -167,10 +167,10 @@
     <loc>https://www.yusaito.com/blog/categories/opencv/</loc>
     <lastmod>2022-02-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.yusaito.com/blog/posts/tech/python/how-to-use-functools-partial/</loc>
+    <loc>https://www.yusaito.com/blog/posts/tech/python/create-video-from-images-opencv/</loc>
     <lastmod>2022-02-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.yusaito.com/blog/posts/tech/python/create-video-from-images-opencv/</loc>
+    <loc>https://www.yusaito.com/blog/posts/tech/python/how-to-use-functools-partial/</loc>
     <lastmod>2022-02-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.yusaito.com/blog/tags/video/</loc>
@@ -243,6 +243,9 @@
     <lastmod>2022-01-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.yusaito.com/blog/tags/glob/</loc>
+    <lastmod>2022-01-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.yusaito.com/blog/tags/os/</loc>
     <lastmod>2022-01-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.yusaito.com/blog/posts/tech/python/how-to-use-pathlib/</loc>

@@ -21,13 +21,13 @@ draft: false
 
 joblib には主な機能として、1) 時間がかかる処理のキャッシュ化, 2)並列処理, 3)圧縮書き出しと読み込み、がある。
 
-## joblib のインストール
+## [joblib のインストール](https://joblib.readthedocs.io/en/latest/installing.html)
 
 ```bash
 pip install joblib
 ```
 
-## joblib の主な機能
+## [joblib の主な機能](https://joblib.readthedocs.io/en/latest/index.html#main-features)
 
 ### 時間がかかる処理のキャッシュ化 (Memory)
 
@@ -41,7 +41,7 @@ square = mem.cache(heavy_task_func)
 b = do_time_consuming_func(a)
 ```
 
-###　並列処理 (Parallel, delayed)
+### 並列処理 (Parallel, delayed)
 
 デフォルトはマルチプロセスだが、マルチスレッドも選択可能。
 

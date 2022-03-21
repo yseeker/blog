@@ -2,12 +2,14 @@
 #author: "Hugo Authors"
 title: "Pathlibの使い方"
 date: "2022-01-19"
-tags: ["Pathlib", "Path", "Python", "glob"]
+tags: ["Pathlib", "Path", "Python", "os", "glob"]
 categories: ["Tech", "Python"]
 ShowToc: true
 TocOpen: true
 draft: false
 ---
+
+今までパス操作は、組み込みの`os`と`glob`, `pathlib`が便利そうだったので調べてみる。
 
 ## 基本操作
 

@@ -23,5 +23,15 @@ ssh -i ~/.ssh/keys/azure_vm_key.pem azureuser@&amp;lt;public ip address of VM in
 git clone https://github.com/NVIDIA/cuda-samples.git cd cuda-samples/Samples/bandwidthTest make .</description>
     </item>
     
+    <item>
+      <title>エラーメモ：IOError: image file is truncated</title>
+      <link>https://www.yusaito.com/blog/posts/tech/python/ioerror-image-file-is-truncated/</link>
+      <pubDate>Mon, 03 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/posts/tech/python/ioerror-image-file-is-truncated/</guid>
+      <description>IOError: image file is truncated jpg で結構大きめの画像を Pillow で読み込むときに下記のエラーが出た。
+IOError: image file is truncated 解決策 from PIL import ImageFile ImageFile.LOAD_TRUNCATED_IMAGES = True 参考  </description>
+    </item>
+    
   </channel>
 </rss>

@@ -9,7 +9,7 @@ tags:
     "IOError: image file is truncated",
     "ImageFile.LOAD_TRUNCATED_IMAGES = True",
   ]
-categories: ["Tech", "Python", "Pillow"]
+categories: ["Tech", "Python", "Pillow", "エラー"]
 ShowToc: true
 TocOpen: true
 draft: false
