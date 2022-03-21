@@ -9,6 +9,7 @@ TocOpen: true
 draft: false
 aliases:
   - /posts/uslife/shellfish_company/
+  - /posts/us_life/shellfish_company/
 ---
 
 サンタバーバラのスターンズワーフの先端にある Shell Fish Company という甲殻類がメインの海鮮料理店に行った。サンタバーバラはウニの名産地なので目的はウニだった。

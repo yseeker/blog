@@ -9,6 +9,7 @@ TocOpen: true
 draft: false
 aliases:
   - /posts/uslife/jammiesloan/
+  - /posts/us_life/jammiesloan/
 ---
 
 ダウンタウンのワイナリーでとても良い雰囲気な所を見つけた。店員の方がワインの産地についてとても詳しく説明してくれたが英語が早すぎて３ − ４割分からなかった。

@@ -9,6 +9,7 @@ TocOpen: true
 draft: false
 aliases:
   - /posts/uslife/last_day_santabarbara/
+  - /posts/us_life/last_day_santabarbara/
 ---
 
 [この日](https://www.yusaito.com/blog/posts/us-life/first-day-in-santabarbara/)にサンタバーバラに来てからあっという間に３年間が経った。２年間住んだ Berkshire Terrace ともお別れである。

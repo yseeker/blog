@@ -2,7 +2,7 @@
 #author: "Hugo Authors"
 title: "Python:functools.partial 関数の引数を一部固定"
 date: "2022-02-26"
-tags: ["python", "functools.partial", "functools.partial", "functools"]
+tags: ["python", "functools.partial", "functools", "引数固定"]
 categories: ["Tech", "Python"]
 ShowToc: true
 TocOpen: true
@@ -11,7 +11,7 @@ draft: false
 
 functools.partial は、関数の特定の引数を固定したい場合に使う 個人的に concurrent.futures の ProcessPoolExecuter や ThreadPoolExecuter の map を使うときに併用することが多い。
 
-## 定義
+## functools.partial の定義
 
 ```python
 # ref. https://docs.python.org/ja/3/library/functools.html#functools.partial
@@ -26,7 +26,7 @@ def partial(func, /, *args, **keywords):
     return newfunc
 ```
 
-## 使い方
+## 使い方：引数を固定する
 
 ```python
 from functools import partial

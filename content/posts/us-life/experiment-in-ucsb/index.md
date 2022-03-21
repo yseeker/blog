@@ -19,6 +19,7 @@ TocOpen: true
 draft: false
 aliases:
   - /posts/uslife/experiment_in_ucsb/
+  - /posts/us_life/experiment_in_ucsb/
 ---
 
 ## Broida Hall (物理学棟)

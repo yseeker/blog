@@ -9,6 +9,7 @@ TocOpen: true
 draft: false
 aliases:
   - /posts/uslife/root_canal_treatment/
+  - /posts/us_life/root_canal_treatment/
 ---
 
 ## 結論

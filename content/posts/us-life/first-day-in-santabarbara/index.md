@@ -9,6 +9,7 @@ TocOpen: true
 draft: false
 aliases:
   - /posts/uslife/first_day_santabarbara/
+  - /posts/us_life/first_day_santabarbara/
 ---
 
 今日からカリフォルニア・サンタバーバラでの生活が始まった。

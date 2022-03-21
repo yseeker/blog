@@ -9,6 +9,7 @@ TocOpen: true
 draft: false
 aliases:
   - /posts/uslife/islavista/
+  - /posts/us_life/islavista/
 ---
 
 住民の大半が学生で構成されているアイラビスタはカリフォルニア大学サンタバーバラ校（UCSB）のすぐ東側に位置する小さい町である。

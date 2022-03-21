@@ -9,6 +9,7 @@ TocOpen: true
 draft: false
 aliases:
   - /posts/uslife/cancun/
+  - /posts/us_life/cancun/
 ---
 
 アメリカ生活最後の思い出として、妻とメキシコのカンクンへ旅行に行った。

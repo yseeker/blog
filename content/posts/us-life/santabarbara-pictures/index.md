@@ -9,6 +9,7 @@ TocOpen: true
 draft: false
 aliases:
   - /posts/uslife/santabarbara_picture/
+  - /posts/us_life/santabarbara_picture/
 ---
 
 ## 渡米直後

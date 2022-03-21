@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>引数固定 on YS&#39;s blog</title>
+    <link>https://www.yusaito.com/blog/tags/%E5%BC%95%E6%95%B0%E5%9B%BA%E5%AE%9A/</link>
+    <description>Recent content in 引数固定 on YS&#39;s blog</description>
+    <image>
+      <url>https://www.yusaito.com/blog/papermod-cover.png</url>
+      <link>https://www.yusaito.com/blog/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Sat, 26 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.yusaito.com/blog/tags/%E5%BC%95%E6%95%B0%E5%9B%BA%E5%AE%9A/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python:functools.partial 関数の引数を一部固定</title>
+      <link>https://www.yusaito.com/blog/posts/tech/python/how-to-use-functools-partial/</link>
+      <pubDate>Sat, 26 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/posts/tech/python/how-to-use-functools-partial/</guid>
+      <description>functools.partial は、関数の特定の引数を固定したい場合に使う 個人的に concurrent.futures の ProcessPoolExecuter や ThreadPoolExecuter の map を使うときに併用することが多い。
+functools.partial の定義 # ref. https://docs.python.org/ja/3/library/functools.html#functools.partial def partial(func, /, *args, **keywords): def newfunc(*fargs, **fkeywords): newkeywords = {**keywords, **fkeywords} return func(*args, *fargs, **newkeywords) newfunc.func = func newfunc.args = args newfunc.keywords = keywords return newfunc 使い方：引数を固定する from functools import partial def product_xyz(x, y, z): return x * y * z # xとyの値を固定する product_z = partial(product_xyz, x=2, y=3) product_z(4) # 24 参考  </description>
+    </item>
+    
+  </channel>
+</rss>
