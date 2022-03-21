@@ -42,4 +42,4 @@ product_z(4)
 
 ## 参考
 
-<iframe class="hatenablogcard" style="width:100%;height:155px;margin:15px 0;max-width:600px;" title="https://docs.python.org/ja/3/library/functools.html#functools.partial" src="https://hatenablog-parts.com/embed?url=https://docs.python.org/ja/3/library/functools.html#functools.partial" frameborder="0" scrolling="no"></iframe>
+<iframe class="hatenablogcard" style="width:100%;height:155px;margin:15px 0;max-width:560px;" title="https://docs.python.org/ja/3/library/functools.html#functools.partial" src="https://hatenablog-parts.com/embed?url=https://docs.python.org/ja/3/library/functools.html#functools.partial" frameborder="0" scrolling="no"></iframe>
