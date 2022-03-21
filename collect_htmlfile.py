@@ -81,19 +81,22 @@ for file_path in html_list:
     if file_path[:-4] not in xml_list:
         correct_html_list.append(file_path)
 
-for path in correct_html_list:
-    check_noindex(path)
+
+# url_list = []
+# main_url = "https://www.yusaito.com/blog/"
+# for file_path in correct_html_list:
+#     if check_noindex(file_path):
+#         file_path = "/".join(file_path.split("/")[1:-1])
+#         url_list.append(main_url + file_path + "/")
 
 url_list = []
 main_url = "https://www.yusaito.com/blog/"
 for file_path in correct_html_list:
-    if check_noindex(file_path):
-        file_path = "/".join(file_path.split("/")[1:-1])
-        url_list.append(main_url + file_path + "/")
+    file_path = "/".join(file_path.split("/")[1:-1])
+    url_list.append(main_url + file_path + "/")
 
 print(f"total number of URLs : {len(url_list)}")
 
-print(url_list[25])
 for url in url_list:
     content = {}
     content["url"] = url

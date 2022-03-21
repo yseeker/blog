@@ -13,6 +13,8 @@ categories: ["Tech", "Python", "Pillow"]
 ShowToc: true
 TocOpen: true
 draft: false
+aliases:
+  - /posts/tech/python/ioe-image-file-is-truncated/
 ---
 
 ## IOError: image file is truncated
