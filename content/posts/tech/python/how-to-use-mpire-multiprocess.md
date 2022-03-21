@@ -39,4 +39,4 @@ with WorkerPool(n_jobs=8) as pool:
 
 ## 参考
 
-<iframe class="hatenablogcard" style="width:100%;height:155px;margin:15px 0;max-width:720px;" title="MPIRE for Python: MultiProcessing Is Really Easy" src="https://hatenablog-parts.com/embed?url=https://towardsdatascience.com/mpire-for-python-multiprocessing-is-really-easy-d2ae7999a3e9/" frameborder="0" scrolling="no"></iframe>
+<iframe class="hatenablogcard" style="width:100%;height:155px;margin:15px 0;max-width:560px;" title="MPIRE for Python: MultiProcessing Is Really Easy" src="https://hatenablog-parts.com/embed?url=https://towardsdatascience.com/mpire-for-python-multiprocessing-is-really-easy-d2ae7999a3e9/" frameborder="0" scrolling="no"></iframe>

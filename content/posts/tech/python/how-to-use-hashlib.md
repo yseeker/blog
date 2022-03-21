@@ -34,4 +34,4 @@ file_path = f"dir_name/{hs[:3]}/{file_name}"
 
 ## 参考
 
-<iframe class="hatenablogcard" style="width:100%;height:155px;margin:15px 0;max-width:720px;" title="hashlib --- セキュアハッシュおよびメッセージダイジェスト" src="https://hatenablog-parts.com/embed?url=https://docs.python.org/ja/3/library/hashlib.html" frameborder="0" scrolling="no"></iframe>
+<iframe class="hatenablogcard" style="width:100%;height:155px;margin:15px 0;max-width:560px;" title="hashlib --- セキュアハッシュおよびメッセージダイジェスト" src="https://hatenablog-parts.com/embed?url=https://docs.python.org/ja/3/library/hashlib.html" frameborder="0" scrolling="no"></iframe>
