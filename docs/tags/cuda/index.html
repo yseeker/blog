@@ -147,6 +147,20 @@ if (!doNotTrack) {
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2>Ubuntu 20.04 LTSセットアップ（自宅サーバー用）とリモート環境用の諸々の初期設定（docker &#43; cuda &#43; ssh &#43; vscode）
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>Ubuntu 20.04 LTS の導入 こちらの記事に従って、Ubuntu 20.04 LTS を入れた。
+ライブ USB の作成  Rufus をダウンロード ubuntu の iso ファイルをダウンロード USB を挿して、Rufus を使ってライブ USB を作成  Ubuntu 20.04 LTS のインストール  細かい設定はこちらの記事を参照  インストール後にログインループになってログインできなくなった  ctrl &#43; alt &#43; F2で tty 仮想コンソールを開く Nvidia ドライバ, cuda があるかどうか確認  dpkg -l | grep nvidia dpkg -l | grep cuda ※もしですでにある場合は削除しておく
+sudo apt-get --purge remove nvidia-* sudo apt-get --purge remove cuda-*  Nvidia ドライバが無かったら下記で Nvidia ドライバと cuda を入れる  sudo ubuntu-drivers install sudo reboot または version 指定して入れる。...</p>
+  </section>
+  <footer class="entry-footer"><span title='2022-03-05 00:00:00 +0000 UTC'>March 5, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to Ubuntu 20.04 LTSセットアップ（自宅サーバー用）とリモート環境用の諸々の初期設定（docker &#43; cuda &#43; ssh &#43; vscode）" href="https://www.yusaito.com/blog/posts/tech/linux/ubuntu-server-ssh-docker-setup/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2>Ryzen Threadripper 3970XとNVIDIA RTX 3090を使ってnumpy(Intel MKL and OpenBLAS)とcupyでベンチマーク
     </h2>
   </header>

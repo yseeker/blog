@@ -183,11 +183,29 @@
     </item>
     
     <item>
+      <title>cuda</title>
+      <link>https://www.yusaito.com/blog/tags/cuda/</link>
+      <pubDate>Sat, 05 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/tags/cuda/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>docker</title>
       <link>https://www.yusaito.com/blog/tags/docker/</link>
       <pubDate>Sat, 05 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nvidia-driver</title>
+      <link>https://www.yusaito.com/blog/tags/nvidia-driver/</link>
+      <pubDate>Sat, 05 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/tags/nvidia-driver/</guid>
       <description></description>
     </item>
     
@@ -210,11 +228,11 @@
     </item>
     
     <item>
-      <title>Ubuntu 20.04 LTS</title>
-      <link>https://www.yusaito.com/blog/tags/ubuntu-20.04-lts/</link>
+      <title>ubuntu20.04</title>
+      <link>https://www.yusaito.com/blog/tags/ubuntu20.04/</link>
       <pubDate>Sat, 05 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.yusaito.com/blog/tags/ubuntu-20.04-lts/</guid>
+      <guid>https://www.yusaito.com/blog/tags/ubuntu20.04/</guid>
       <description></description>
     </item>
     
@@ -242,15 +260,6 @@
       <pubDate>Sat, 05 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/tags/%E8%87%AA%E5%AE%85%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>cuda</title>
-      <link>https://www.yusaito.com/blog/tags/cuda/</link>
-      <pubDate>Mon, 28 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.yusaito.com/blog/tags/cuda/</guid>
       <description></description>
     </item>
     
@@ -323,6 +332,24 @@
       <pubDate>Sat, 26 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/tags/cv2.videowriter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>functools</title>
+      <link>https://www.yusaito.com/blog/tags/functools/</link>
+      <pubDate>Sat, 26 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/tags/functools/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>functools.partial</title>
+      <link>https://www.yusaito.com/blog/tags/functools.partial/</link>
+      <pubDate>Sat, 26 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/tags/functools.partial/</guid>
       <description></description>
     </item>
     

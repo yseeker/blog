@@ -92,6 +92,9 @@
     <loc>https://www.yusaito.com/blog/tags/%E4%BD%BF%E3%81%84%E6%96%B9/</loc>
     <lastmod>2022-03-15T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://www.yusaito.com/blog/tags/cuda/</loc>
+    <lastmod>2022-03-05T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://www.yusaito.com/blog/tags/docker/</loc>
     <lastmod>2022-03-05T00:00:00+00:00</lastmod>
   </url><url>
@@ -101,16 +104,19 @@
     <loc>https://www.yusaito.com/blog/posts/tech/linux/</loc>
     <lastmod>2022-03-05T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://www.yusaito.com/blog/tags/nvidia-driver/</loc>
+    <lastmod>2022-03-05T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://www.yusaito.com/blog/tags/openssh-server/</loc>
     <lastmod>2022-03-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.yusaito.com/blog/tags/ssh/</loc>
     <lastmod>2022-03-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.yusaito.com/blog/tags/ubuntu-20.04-lts/</loc>
+    <loc>https://www.yusaito.com/blog/posts/tech/linux/ubuntu-server-ssh-docker-setup/</loc>
     <lastmod>2022-03-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.yusaito.com/blog/posts/tech/linux/ubuntu-server-ssh-docker-setup/</loc>
+    <loc>https://www.yusaito.com/blog/tags/ubuntu20.04/</loc>
     <lastmod>2022-03-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.yusaito.com/blog/tags/ubunu/</loc>
@@ -121,9 +127,6 @@
   </url><url>
     <loc>https://www.yusaito.com/blog/tags/%E8%87%AA%E5%AE%85%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC/</loc>
     <lastmod>2022-03-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.yusaito.com/blog/tags/cuda/</loc>
-    <lastmod>2022-02-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.yusaito.com/blog/tags/cupy/</loc>
     <lastmod>2022-02-28T00:00:00+00:00</lastmod>
@@ -152,10 +155,19 @@
     <loc>https://www.yusaito.com/blog/tags/cv2.videowriter/</loc>
     <lastmod>2022-02-26T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://www.yusaito.com/blog/tags/functools/</loc>
+    <lastmod>2022-02-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.yusaito.com/blog/tags/functools.partial/</loc>
+    <lastmod>2022-02-26T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://www.yusaito.com/blog/tags/mp4/</loc>
     <lastmod>2022-02-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.yusaito.com/blog/categories/opencv/</loc>
+    <lastmod>2022-02-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.yusaito.com/blog/posts/tech/python/how-to-use-functools-partial/</loc>
     <lastmod>2022-02-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.yusaito.com/blog/posts/tech/python/create-video-from-images-opencv/</loc>

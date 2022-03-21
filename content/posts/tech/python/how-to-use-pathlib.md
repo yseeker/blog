@@ -24,7 +24,7 @@ path = Path("./dir/filename.txt")
 - ファイル名拡張子抜き : `path.stem`
 - ファイルの拡張子のみ : `path.suffix`
 - ファイルのディレクトリを取得 : `path.parents` (list)
-- パス連結 : `/` 演算子を使う（path.joinpath()）
+- パス連結 : `/` 演算子を使う（`path.joinpath()`）
 - パスの存在確認：`path.exists()`
 - ファイルかどうか確認 : `path.is_file()`
 - ディレクトリかどうか確認 : `path.is_dir()`

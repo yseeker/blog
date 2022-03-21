@@ -1,14 +1,16 @@
 ---
 #author: "Hugo Authors"
-title: "Ubuntu 20.04 LTSセットアップ（自宅サーバー用）とリモート環境用の諸々の初期設定（docker + ssh + vscode）"
+title: "Ubuntu 20.04 LTSセットアップ（自宅サーバー用）とリモート環境用の諸々の初期設定（docker + cuda + ssh + vscode）"
 date: "2022-03-05"
 tags:
   [
     "Ubunu",
     "自宅サーバー",
+    "ubuntu20.04",
+    "cuda",
+    "nvidia-driver",
     "docker",
     "ssh",
-    "Ubuntu 20.04 LTS",
     "openssh-server",
     "vscode",
   ]
@@ -23,7 +25,7 @@ aliases:
 
 ## Ubuntu 20.04 LTS の導入
 
-[こちらの記事](https://qiita.com/koba-jon/items/019a3b4eac4f60ca89c9)に従って、Ubuntu を入れた。
+[こちらの記事](https://qiita.com/koba-jon/items/019a3b4eac4f60ca89c9)に従って、Ubuntu 20.04 LTS を入れた。
 
 ### ライブ USB の作成
 
@@ -31,7 +33,7 @@ aliases:
 - ubuntu の iso ファイルをダウンロード
 - USB を挿して、Rufus を使ってライブ USB を作成
 
-### Ubuntu のインストール
+### Ubuntu 20.04 LTS のインストール
 
 - 細かい設定は[こちらの記事](https://qiita.com/koba-jon/items/019a3b4eac4f60ca89c9)を参照
 
@@ -52,7 +54,7 @@ sudo apt-get --purge remove nvidia-*
 sudo apt-get --purge remove cuda-*
 ```
 
-- GPU ドライバが無かったら下記で Nvidia ドライバを入れる
+- Nvidia ドライバが無かったら下記で Nvidia ドライバと cuda を入れる
 
 ```bash
 sudo ubuntu-drivers install

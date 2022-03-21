@@ -47,14 +47,14 @@ from joblib import Memory cachedir = &amp;#39;cache_dir&amp;#39; mem = Memory(ca
     </item>
     
     <item>
-      <title>Ubuntu 20.04 LTSセットアップ（自宅サーバー用）とリモート環境用の諸々の初期設定（docker &#43; ssh &#43; vscode）</title>
+      <title>Ubuntu 20.04 LTSセットアップ（自宅サーバー用）とリモート環境用の諸々の初期設定（docker &#43; cuda &#43; ssh &#43; vscode）</title>
       <link>https://www.yusaito.com/blog/posts/tech/linux/ubuntu-server-ssh-docker-setup/</link>
       <pubDate>Sat, 05 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/posts/tech/linux/ubuntu-server-ssh-docker-setup/</guid>
-      <description>Ubuntu 20.04 LTS の導入 こちらの記事に従って、Ubuntu を入れた。
-ライブ USB の作成  Rufus をダウンロード ubuntu の iso ファイルをダウンロード USB を挿して、Rufus を使ってライブ USB を作成  Ubuntu のインストール  細かい設定はこちらの記事を参照  インストール後にログインループになってログインできなくなった  ctrl + alt + F2で tty 仮想コンソールを開く Nvidia ドライバ, cuda があるかどうか確認  dpkg -l | grep nvidia dpkg -l | grep cuda ※もしですでにある場合は削除しておく
-sudo apt-get --purge remove nvidia-* sudo apt-get --purge remove cuda-*  GPU ドライバが無かったら下記で Nvidia ドライバを入れる  sudo ubuntu-drivers install sudo reboot または version 指定して入れる。</description>
+      <description>Ubuntu 20.04 LTS の導入 こちらの記事に従って、Ubuntu 20.04 LTS を入れた。
+ライブ USB の作成  Rufus をダウンロード ubuntu の iso ファイルをダウンロード USB を挿して、Rufus を使ってライブ USB を作成  Ubuntu 20.04 LTS のインストール  細かい設定はこちらの記事を参照  インストール後にログインループになってログインできなくなった  ctrl + alt + F2で tty 仮想コンソールを開く Nvidia ドライバ, cuda があるかどうか確認  dpkg -l | grep nvidia dpkg -l | grep cuda ※もしですでにある場合は削除しておく
+sudo apt-get --purge remove nvidia-* sudo apt-get --purge remove cuda-*  Nvidia ドライバが無かったら下記で Nvidia ドライバと cuda を入れる  sudo ubuntu-drivers install sudo reboot または version 指定して入れる。</description>
     </item>
     
     <item>
@@ -64,6 +64,16 @@ sudo apt-get --purge remove nvidia-* sudo apt-get --purge remove cuda-*  GPU ド
       
       <guid>https://www.yusaito.com/blog/posts/tech/python/numpy-benchmark-ryzen-threadripper/</guid>
       <description>numpy でベンチマーク # ファイル名: numpy_benchmark.py import os os.environ[&amp;#34;OPENBLAS_NUM_THREADS&amp;#34;] = &amp;#34;32&amp;#34; # import mkl # mkl.set_num_threads(32) import numpy as np import time from threadpoolctl import threadpool_info from pprint import pp pp(threadpool_info()) np.show_config() N_LOOP = 5 calc_eigh_time_list = [] calc_inv_time_list = [] calc_dot_time_list = [] calc_norm_time_list = [] for size in [5000, 10000, 20000]: print(f&amp;#34;size : {size}&amp;#34;) for i in range(3): np.random.seed(i) X = np.random.randn(size, size) t_start = time.time() np.linalg.eigh(X @ X.T) calc_eigh_time_list.</description>
+    </item>
+    
+    <item>
+      <title>Python:functools.partial 関数の引数を一部固定</title>
+      <link>https://www.yusaito.com/blog/posts/tech/python/how-to-use-functools-partial/</link>
+      <pubDate>Sat, 26 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/posts/tech/python/how-to-use-functools-partial/</guid>
+      <description>functools.partial は、関数の特定の引数を固定したい場合に使う 個人的に concurrent.futures の ProcessPoolExecuter や ThreadPoolExecuter の map を使うときに併用することが多い。
+定義 # ref. https://docs.python.org/ja/3/library/functools.html#functools.partial def partial(func, /, *args, **keywords): def newfunc(*fargs, **fkeywords): newkeywords = {**keywords, **fkeywords} return func(*args, *fargs, **newkeywords) newfunc.func = func newfunc.args = args newfunc.keywords = keywords return newfunc 使い方 from functools import partial def product_xyz(x, y, z): return x * y * z # xとyの値を固定する product_z = partial(product_xyz, x=2, y=3) product_z(4) # 24 参考  </description>
     </item>
     
     <item>

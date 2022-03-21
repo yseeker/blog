@@ -12,14 +12,14 @@
     <language>ja-jp</language>
     <lastBuildDate>Sat, 05 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.yusaito.com/blog/tags/openssh-server/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Ubuntu 20.04 LTSセットアップ（自宅サーバー用）とリモート環境用の諸々の初期設定（docker &#43; ssh &#43; vscode）</title>
+      <title>Ubuntu 20.04 LTSセットアップ（自宅サーバー用）とリモート環境用の諸々の初期設定（docker &#43; cuda &#43; ssh &#43; vscode）</title>
       <link>https://www.yusaito.com/blog/posts/tech/linux/ubuntu-server-ssh-docker-setup/</link>
       <pubDate>Sat, 05 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/posts/tech/linux/ubuntu-server-ssh-docker-setup/</guid>
-      <description>Ubuntu 20.04 LTS の導入 こちらの記事に従って、Ubuntu を入れた。
-ライブ USB の作成  Rufus をダウンロード ubuntu の iso ファイルをダウンロード USB を挿して、Rufus を使ってライブ USB を作成  Ubuntu のインストール  細かい設定はこちらの記事を参照  インストール後にログインループになってログインできなくなった  ctrl + alt + F2で tty 仮想コンソールを開く Nvidia ドライバ, cuda があるかどうか確認  dpkg -l | grep nvidia dpkg -l | grep cuda ※もしですでにある場合は削除しておく
-sudo apt-get --purge remove nvidia-* sudo apt-get --purge remove cuda-*  GPU ドライバが無かったら下記で Nvidia ドライバを入れる  sudo ubuntu-drivers install sudo reboot または version 指定して入れる。</description>
+      <description>Ubuntu 20.04 LTS の導入 こちらの記事に従って、Ubuntu 20.04 LTS を入れた。
+ライブ USB の作成  Rufus をダウンロード ubuntu の iso ファイルをダウンロード USB を挿して、Rufus を使ってライブ USB を作成  Ubuntu 20.04 LTS のインストール  細かい設定はこちらの記事を参照  インストール後にログインループになってログインできなくなった  ctrl + alt + F2で tty 仮想コンソールを開く Nvidia ドライバ, cuda があるかどうか確認  dpkg -l | grep nvidia dpkg -l | grep cuda ※もしですでにある場合は削除しておく
+sudo apt-get --purge remove nvidia-* sudo apt-get --purge remove cuda-*  Nvidia ドライバが無かったら下記で Nvidia ドライバと cuda を入れる  sudo ubuntu-drivers install sudo reboot または version 指定して入れる。</description>
     </item>
     
   </channel>
