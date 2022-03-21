@@ -12,7 +12,7 @@
     <language>ja-jp</language>
     <lastBuildDate>Sun, 20 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.yusaito.com/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Python : ハッシュ値を求める</title>
+      <title>Python : hashlibを使って、ハッシュ値を求める</title>
       <link>https://www.yusaito.com/blog/posts/tech/python/how-to-use-hashlib/</link>
       <pubDate>Sun, 20 Mar 2022 00:00:00 +0000</pubDate>
       
@@ -102,7 +102,7 @@ functools.partial の定義 # ref. https://docs.python.org/ja/3/library/functool
       <guid>https://www.yusaito.com/blog/posts/tech/python/relative-path-with-pathlib/</guid>
       <description>自走プログラマー~Python の先輩が教えるプロジェクト開発のベストプラクティス 120を読んだのでその中で気になった「ファイルパスはプログラムからの相対パスで組み立てるという箇所は実践的でとても勉強になったのでメモしておく。
 ├──　run.py ├──　data ├── input.txt └── images みたいなディレクトリがある場合は
-import csv from pathlib import Path current_dir = Path(__file__).parent image_path = current_dir / &amp;#34;data&amp;#34; / &amp;#34;images&amp;#34; inuput_path = current_dir / &amp;#34;input_txt&amp;#34; とすればよい。</description>
+import csv from pathlib import Path current_dir = Path(__file__).parent image_path = current_dir / &amp;#34;data&amp;#34; / &amp;#34;images&amp;#34; inuput_path = current_dir / &amp;#34;input.txt&amp;#34; とすればよい。</description>
     </item>
     
     <item>

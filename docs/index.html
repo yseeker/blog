@@ -187,7 +187,7 @@ if (!doNotTrack) {
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>Python : ハッシュ値を求める
+    <h2>Python : hashlibを使って、ハッシュ値を求める
     </h2>
   </header>
   <section class="entry-content">
@@ -195,7 +195,7 @@ if (!doNotTrack) {
 例 file_name = &#34;important_file.dat&#34; hs = hashlib.md5(file_name.encode()).hexdigest() file_path = f&#34;dir_name/{hs[:3]}/{file_name}&#34; 参考  </p>
   </section>
   <footer class="entry-footer"><span title='2022-03-20 00:00:00 +0000 UTC'>March 20, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to Python : ハッシュ値を求める" href="https://www.yusaito.com/blog/posts/tech/python/how-to-use-hashlib/"></a>
+  <a class="entry-link" aria-label="post link to Python : hashlibを使って、ハッシュ値を求める" href="https://www.yusaito.com/blog/posts/tech/python/how-to-use-hashlib/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -300,7 +300,7 @@ functools.partial の定義 # ref. https://docs.python.org/ja/3/library/functool
   <section class="entry-content">
     <p>自走プログラマー~Python の先輩が教えるプロジェクト開発のベストプラクティス 120を読んだのでその中で気になった「ファイルパスはプログラムからの相対パスで組み立てるという箇所は実践的でとても勉強になったのでメモしておく。
 ├──　run.py ├──　data ├── input.txt └── images みたいなディレクトリがある場合は
-import csv from pathlib import Path current_dir = Path(__file__).parent image_path = current_dir / &#34;data&#34; / &#34;images&#34; inuput_path = current_dir / &#34;input_txt&#34; とすればよい。</p>
+import csv from pathlib import Path current_dir = Path(__file__).parent image_path = current_dir / &#34;data&#34; / &#34;images&#34; inuput_path = current_dir / &#34;input.txt&#34; とすればよい。</p>
   </section>
   <footer class="entry-footer"><span title='2022-02-18 00:00:00 +0000 UTC'>February 18, 2022</span></footer>
   <a class="entry-link" aria-label="post link to Pathlibで相対パスを有効活用する" href="https://www.yusaito.com/blog/posts/tech/python/relative-path-with-pathlib/"></a>

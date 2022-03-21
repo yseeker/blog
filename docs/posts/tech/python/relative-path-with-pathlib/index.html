@@ -9,7 +9,7 @@
 <meta name="keywords" content="Pathlib, Path, Python, 相対パス, 自走プログラマー~Python の先輩が教えるプロジェクト開発のベストプラクティス 120" />
 <meta name="description" content="自走プログラマー~Python の先輩が教えるプロジェクト開発のベストプラクティス 120を読んだのでその中で気になった「ファイルパスはプログラムからの相対パスで組み立てるという箇所は実践的でとても勉強になったのでメモしておく。
 ├──　run.py ├──　data ├── input.txt └── images みたいなディレクトリがある場合は
-import csv from pathlib import Path current_dir = Path(__file__).parent image_path = current_dir / &#34;data&#34; / &#34;images&#34; inuput_path = current_dir / &#34;input_txt&#34; とすればよい。">
+import csv from pathlib import Path current_dir = Path(__file__).parent image_path = current_dir / &#34;data&#34; / &#34;images&#34; inuput_path = current_dir / &#34;input.txt&#34; とすればよい。">
 <meta name="author" content="">
 <link rel="canonical" href="https://www.yusaito.com/blog/posts/tech/python/relative-path-with-pathlib/" />
 <meta name="google-site-verification" content="7pz_dAQx7-r3P-mr6XGvIVQx47QN5DmiWRVLEocHAIM" />
@@ -72,7 +72,7 @@ if (!doNotTrack) {
 <meta property="og:title" content="Pathlibで相対パスを有効活用する" />
 <meta property="og:description" content="自走プログラマー~Python の先輩が教えるプロジェクト開発のベストプラクティス 120を読んだのでその中で気になった「ファイルパスはプログラムからの相対パスで組み立てるという箇所は実践的でとても勉強になったのでメモしておく。
 ├──　run.py ├──　data ├── input.txt └── images みたいなディレクトリがある場合は
-import csv from pathlib import Path current_dir = Path(__file__).parent image_path = current_dir / &#34;data&#34; / &#34;images&#34; inuput_path = current_dir / &#34;input_txt&#34; とすればよい。" />
+import csv from pathlib import Path current_dir = Path(__file__).parent image_path = current_dir / &#34;data&#34; / &#34;images&#34; inuput_path = current_dir / &#34;input.txt&#34; とすればよい。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.yusaito.com/blog/posts/tech/python/relative-path-with-pathlib/" /><meta property="og:image" content="https://www.yusaito.com/blog/papermod-cover.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-02-18T00:00:00&#43;00:00" />
@@ -84,7 +84,7 @@ import csv from pathlib import Path current_dir = Path(__file__).parent image_pa
 <meta name="twitter:title" content="Pathlibで相対パスを有効活用する"/>
 <meta name="twitter:description" content="自走プログラマー~Python の先輩が教えるプロジェクト開発のベストプラクティス 120を読んだのでその中で気になった「ファイルパスはプログラムからの相対パスで組み立てるという箇所は実践的でとても勉強になったのでメモしておく。
 ├──　run.py ├──　data ├── input.txt └── images みたいなディレクトリがある場合は
-import csv from pathlib import Path current_dir = Path(__file__).parent image_path = current_dir / &#34;data&#34; / &#34;images&#34; inuput_path = current_dir / &#34;input_txt&#34; とすればよい。"/>
+import csv from pathlib import Path current_dir = Path(__file__).parent image_path = current_dir / &#34;data&#34; / &#34;images&#34; inuput_path = current_dir / &#34;input.txt&#34; とすればよい。"/>
 
 
 <script type="application/ld+json">
@@ -125,11 +125,11 @@ import csv from pathlib import Path current_dir = Path(__file__).parent image_pa
   "@type": "BlogPosting",
   "headline": "Pathlibで相対パスを有効活用する",
   "name": "Pathlibで相対パスを有効活用する",
-  "description": "自走プログラマー~Python の先輩が教えるプロジェクト開発のベストプラクティス 120を読んだのでその中で気になった「ファイルパスはプログラムからの相対パスで組み立てるという箇所は実践的でとても勉強になったのでメモしておく。\n├──　run.py ├──　data ├── input.txt └── images みたいなディレクトリがある場合は\nimport csv from pathlib import Path current_dir = Path(__file__).parent image_path = current_dir / \u0026#34;data\u0026#34; / \u0026#34;images\u0026#34; inuput_path = current_dir / \u0026#34;input_txt\u0026#34; とすればよい。",
+  "description": "自走プログラマー~Python の先輩が教えるプロジェクト開発のベストプラクティス 120を読んだのでその中で気になった「ファイルパスはプログラムからの相対パスで組み立てるという箇所は実践的でとても勉強になったのでメモしておく。\n├──　run.py ├──　data ├── input.txt └── images みたいなディレクトリがある場合は\nimport csv from pathlib import Path current_dir = Path(__file__).parent image_path = current_dir / \u0026#34;data\u0026#34; / \u0026#34;images\u0026#34; inuput_path = current_dir / \u0026#34;input.txt\u0026#34; とすればよい。",
   "keywords": [
     "Pathlib", "Path", "Python", "相対パス", "自走プログラマー~Python の先輩が教えるプロジェクト開発のベストプラクティス 120"
   ],
-  "articleBody": "自走プログラマー~Python の先輩が教えるプロジェクト開発のベストプラクティス 120を読んだのでその中で気になった「ファイルパスはプログラムからの相対パスで組み立てるという箇所は実践的でとても勉強になったのでメモしておく。\n├──　run.py ├──　data ├── input.txt └── images みたいなディレクトリがある場合は\nimport csv from pathlib import Path current_dir = Path(__file__).parent image_path = current_dir / \"data\" / \"images\" inuput_path = current_dir / \"input_txt\" とすればよい。\n",
+  "articleBody": "自走プログラマー~Python の先輩が教えるプロジェクト開発のベストプラクティス 120を読んだのでその中で気になった「ファイルパスはプログラムからの相対パスで組み立てるという箇所は実践的でとても勉強になったのでメモしておく。\n├──　run.py ├──　data ├── input.txt └── images みたいなディレクトリがある場合は\nimport csv from pathlib import Path current_dir = Path(__file__).parent image_path = current_dir / \"data\" / \"images\" inuput_path = current_dir / \"input.txt\" とすればよい。\n",
   "wordCount" : "34",
   "inLanguage": "en",
   "datePublished": "2022-02-18T00:00:00Z",
@@ -233,7 +233,7 @@ import csv from pathlib import Path current_dir = Path(__file__).parent image_pa
 
 current_dir <span style="color:#f92672">=</span> Path(__file__)<span style="color:#f92672">.</span>parent
 image_path <span style="color:#f92672">=</span> current_dir <span style="color:#f92672">/</span> <span style="color:#e6db74">&#34;data&#34;</span> <span style="color:#f92672">/</span> <span style="color:#e6db74">&#34;images&#34;</span>
-inuput_path <span style="color:#f92672">=</span> current_dir <span style="color:#f92672">/</span> <span style="color:#e6db74">&#34;input_txt&#34;</span>
+inuput_path <span style="color:#f92672">=</span> current_dir <span style="color:#f92672">/</span> <span style="color:#e6db74">&#34;input.txt&#34;</span>
 </code></pre></div><p>とすればよい。</p>
 
 
@@ -247,7 +247,7 @@ inuput_path <span style="color:#f92672">=</span> current_dir <span style="color:
 	
 	<li><a href="/blog/posts/tech/python/multiprocess-multithreading-utils/">Pythonでファイルリストからの並列処理</a></li>
 	
-	<li><a href="/blog/posts/tech/python/how-to-use-hashlib/">Python : ハッシュ値を求める</a></li>
+	<li><a href="/blog/posts/tech/python/how-to-use-hashlib/">Python : hashlibを使って、ハッシュ値を求める</a></li>
 	
 	<li><a href="/blog/posts/tech/python/how-to-use-mpire-multiprocess/">Python並列処理：MPIREの使い方</a></li>
 	

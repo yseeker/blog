@@ -1,6 +1,6 @@
 ---
 #author: "Hugo Authors"
-title: "Python : ハッシュ値を求める"
+title: "Python : hashlibを使って、ハッシュ値を求める"
 date: "2022-03-20"
 tags: ["python", "ハッシュ", "hashlib", "md5", "sha224"]
 categories: ["Tech", "Python"]

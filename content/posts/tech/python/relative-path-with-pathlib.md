@@ -33,7 +33,7 @@ from pathlib import Path
 
 current_dir = Path(__file__).parent
 image_path = current_dir / "data" / "images"
-inuput_path = current_dir / "input_txt"
+inuput_path = current_dir / "input.txt"
 ```
 
 とすればよい。
