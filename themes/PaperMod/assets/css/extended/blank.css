@@ -33,19 +33,19 @@ img {
 
 @media print, screen and (min-width: 480px) {
   .post-title {
-    font-size: 21pt !important;
+    font-size: 21px !important;
   }
 }
 
 @media print, screen and (max-width: 479px) {
   .post-title {
-    font-size: 18pt !important;
+    font-size: 18px !important;
   }
 }
 
 @media print, screen and (min-width: 480px) {
   .post-content h2 {
-    font-size: 16pt !important;
+    font-size: 16px !important;
     padding: 4px 8px !important;
     border-left: 5px solid #12007a !important;
     line-height: 1.2 !important;
@@ -54,7 +54,7 @@ img {
 
 @media print, screen and (max-width: 479px) {
   .post-content h2 {
-    font-size: 14pt !important;
+    font-size: 14px !important;
     padding: 4px 8px !important;
     border-left: 5px solid #12007a !important;
     line-height: 1.2 !important;
@@ -63,7 +63,7 @@ img {
 
 @media print, screen and (min-width: 480px) {
   .dark .post-content h2 {
-    font-size: 17pt !important;
+    font-size: 17px !important;
     padding: 4px 8px !important;
     border-left: 5px solid #8f89ff !important;
     line-height: 1.2 !important;
@@ -72,7 +72,7 @@ img {
 
 @media print, screen and (max-width: 479px) {
   .dark .post-content h2 {
-    font-size: 14pt !important;
+    font-size: 14px !important;
     padding: 4px 8px !important;
     border-left: 5px solid #8f89ff !important;
     line-height: 1.2 !important;
@@ -81,26 +81,26 @@ img {
 
 @media print, screen and (min-width: 480px) {
   .post-content h3 {
-    font-size: 15pt !important;
+    font-size: 15px !important;
   }
 }
 
 @media print, screen and (max-width: 479px) {
   .post-content h3 {
-    font-size: 13pt !important;
+    font-size: 13px !important;
     line-height: 1.2 !important;
   }
 }
 
 @media print, screen and (min-width: 480px) {
   .post-content h4 {
-    font-size: 14pt !important;
+    font-size: 14px !important;
   }
 }
 
 @media print, screen and (max-width: 479px) {
   .post-content h4 {
-    font-size: 12pt !important;
+    font-size: 12px !important;
     line-height: 1.2 !important;
   }
 }
@@ -168,14 +168,14 @@ img {
 
 @media print, screen and (min-width: 480px) {
   .code {
-    font-size: 16pt !important;
+    font-size: 16px !important;
     line-height: 1.7;
   }
 }
 
 @media print, screen and (max-width: 479px) {
   .code {
-    font-size: 15.5pt !important;
+    font-size: 15.5px !important;
     line-height: 1.65;
   }
 }
