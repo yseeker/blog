@@ -161,7 +161,7 @@ img {
 /* prism */
 @media print, screen and (max-width: 479px) {
   .highlight {
-    font-size: 10pt !important;
+    font-size: 9pt !important;
     line-height: 1.5 !important;
   }
 }
