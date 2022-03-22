@@ -1,6 +1,6 @@
 ---
 #author: "Hugo Authors"
-title: "Python並列処理：MPIREの使い方"
+title: "Pythonで並列処理 : MPIREの使い方"
 date: "2022-03-19"
 tags:
   [

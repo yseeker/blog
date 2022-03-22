@@ -1,6 +1,6 @@
 ---
 #author: "Hugo Authors"
-title: "Python：functools.partial 関数の引数を一部固定"
+title: "Python : functools.partial 関数の引数を一部固定"
 date: "2022-02-26"
 tags: ["python", "functools.partial", "functools", "引数固定"]
 categories: ["Tech", "Python"]

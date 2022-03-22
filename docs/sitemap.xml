@@ -182,10 +182,10 @@
     <loc>https://www.yusaito.com/blog/categories/opencv/</loc>
     <lastmod>2022-02-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.yusaito.com/blog/posts/tech/python/create-video-from-images-opencv/</loc>
+    <loc>https://www.yusaito.com/blog/posts/tech/python/how-to-use-functools-partial/</loc>
     <lastmod>2022-02-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.yusaito.com/blog/posts/tech/python/how-to-use-functools-partial/</loc>
+    <loc>https://www.yusaito.com/blog/posts/tech/python/create-video-from-images-opencv/</loc>
     <lastmod>2022-02-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.yusaito.com/blog/tags/video/</loc>
@@ -307,6 +307,39 @@
   </url><url>
     <loc>https://www.yusaito.com/blog/posts/tech/python/ioerror-image-file-is-truncated/</loc>
     <lastmod>2022-01-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.yusaito.com/blog/tags/itertools/</loc>
+    <lastmod>2021-12-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.yusaito.com/blog/tags/itertools-groupby/</loc>
+    <lastmod>2021-12-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.yusaito.com/blog/tags/itertools-isslice/</loc>
+    <lastmod>2021-12-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.yusaito.com/blog/tags/itertools-permutations/</loc>
+    <lastmod>2021-12-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.yusaito.com/blog/tags/itertools-product/</loc>
+    <lastmod>2021-12-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.yusaito.com/blog/tags/itertools-%E7%B5%84%E3%81%BF%E5%90%88%E3%82%8F%E3%81%9B/</loc>
+    <lastmod>2021-12-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.yusaito.com/blog/posts/tech/python/how-to-use-itertools-2/</loc>
+    <lastmod>2021-12-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.yusaito.com/blog/tags/itertools-chain/</loc>
+    <lastmod>2021-12-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.yusaito.com/blog/tags/itertools-combinations/</loc>
+    <lastmod>2021-12-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.yusaito.com/blog/tags/itertools-count/</loc>
+    <lastmod>2021-12-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.yusaito.com/blog/posts/tech/python/how-to-use-itertools-1/</loc>
+    <lastmod>2021-12-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.yusaito.com/blog/posts/us-life/last-day-in-santabarbara/</loc>
     <lastmod>2021-09-11T00:00:00+00:00</lastmod>
@@ -476,7 +509,13 @@
     <loc>https://www.yusaito.com/blog/tags/%E7%AB%8B%E3%81%A1%E4%B8%8A%E3%81%92/</loc>
     <lastmod>2021-07-16T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://www.yusaito.com/blog/tags/english/</loc>
+    <lastmod>2021-07-08T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://www.yusaito.com/blog/posts/us-life/easy-english/</loc>
+    <lastmod>2021-07-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.yusaito.com/blog/tags/%E5%88%9D%E8%A6%8B%E6%AE%BA%E3%81%97/</loc>
     <lastmod>2021-07-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.yusaito.com/blog/tags/%E6%B5%B7%E5%A4%96%E7%94%9F%E6%B4%BB/</loc>

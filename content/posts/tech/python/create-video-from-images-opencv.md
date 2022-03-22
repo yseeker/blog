@@ -11,6 +11,8 @@ draft: false
 
 ## openCV を使って画像リストから動画を作成する。
 
+画像リストがあったときにそこから動画を生成するときに使う。
+
 ```python
 from pathlib import Path
 from typing import List

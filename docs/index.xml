@@ -22,7 +22,7 @@
     </item>
     
     <item>
-      <title>Python並列処理：MPIREの使い方</title>
+      <title>Pythonで並列処理 : MPIREの使い方</title>
       <link>https://www.yusaito.com/blog/posts/tech/python/how-to-use-mpire-multiprocess/</link>
       <pubDate>Sat, 19 Mar 2022 00:00:00 +0000</pubDate>
       
@@ -76,22 +76,23 @@ sudo apt-get --purge remove nvidia-* sudo apt-get --purge remove cuda-*  Nvidia 
     </item>
     
     <item>
-      <title>PythonとOpenCVで画像リストから動画を作成</title>
-      <link>https://www.yusaito.com/blog/posts/tech/python/create-video-from-images-opencv/</link>
-      <pubDate>Sat, 26 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.yusaito.com/blog/posts/tech/python/create-video-from-images-opencv/</guid>
-      <description>openCV を使って画像リストから動画を作成する。 from pathlib import Path from typing import List import cv2 def list_file_paths(dir_path: str) -&amp;gt; List[str]: &amp;#34;&amp;#34;&amp;#34; List file paths in a directory. Parameters ---------- dir_path : str Path of the directory Returns ------- List[str] List of the file paths in the directory &amp;#34;&amp;#34;&amp;#34; return sorted([str(path) for path in Path(dir_path).rglob(&amp;#34;*&amp;#34;) if path.is_file()]) def create_mp4_video_from_image_path_list( output_video_path: str, image_path_list: List[str], fps: int, ) -&amp;gt; None: &amp;#34;&amp;#34;&amp;#34; Create mp4 video file from a image path list Parameters ---------- output_video_path : str Path of the output video image_path_list : List[str] Path of image file list fps : int fps (frames per second) &amp;#34;&amp;#34;&amp;#34; height, width, _ = cv2.</description>
-    </item>
-    
-    <item>
-      <title>Python：functools.partial 関数の引数を一部固定</title>
+      <title>Python : functools.partial 関数の引数を一部固定</title>
       <link>https://www.yusaito.com/blog/posts/tech/python/how-to-use-functools-partial/</link>
       <pubDate>Sat, 26 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/posts/tech/python/how-to-use-functools-partial/</guid>
       <description>functools.partial は、関数の特定の引数を固定したい場合に使う 個人的に concurrent.futures の ProcessPoolExecuter や ThreadPoolExecuter の map を使うときに併用することが多い。
 functools.partial の定義 # ref. https://docs.python.org/ja/3/library/functools.html#functools.partial def partial(func, /, *args, **keywords): def newfunc(*fargs, **fkeywords): newkeywords = {**keywords, **fkeywords} return func(*args, *fargs, **newkeywords) newfunc.func = func newfunc.args = args newfunc.keywords = keywords return newfunc 使い方：引数を固定する from functools import partial def product_xyz(x, y, z): return x * y * z # xとyの値を固定する product_z = partial(product_xyz, x=2, y=3) product_z(4) # 24 参考  </description>
+    </item>
+    
+    <item>
+      <title>PythonとOpenCVで画像リストから動画を作成</title>
+      <link>https://www.yusaito.com/blog/posts/tech/python/create-video-from-images-opencv/</link>
+      <pubDate>Sat, 26 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/posts/tech/python/create-video-from-images-opencv/</guid>
+      <description>openCV を使って画像リストから動画を作成する。 画像リストがあったときにそこから動画を生成するときに使う。
+from pathlib import Path from typing import List import cv2 def list_file_paths(dir_path: str) -&amp;gt; List[str]: &amp;#34;&amp;#34;&amp;#34; List file paths in a directory. Parameters ---------- dir_path : str Path of the directory Returns ------- List[str] List of the file paths in the directory &amp;#34;&amp;#34;&amp;#34; return sorted([str(path) for path in Path(dir_path).rglob(&amp;#34;*&amp;#34;) if path.is_file()]) def create_mp4_video_from_image_path_list( output_video_path: str, image_path_list: List[str], fps: int, ) -&amp;gt; None: &amp;#34;&amp;#34;&amp;#34; Create mp4 video file from a image path list Parameters ---------- output_video_path : str Path of the output video image_path_list : List[str] Path of image file list fps : int fps (frames per second) &amp;#34;&amp;#34;&amp;#34; height, width, _ = cv2.</description>
     </item>
     
     <item>
@@ -163,6 +164,34 @@ git clone https://github.com/NVIDIA/cuda-samples.git cd cuda-samples/Samples/ban
       <guid>https://www.yusaito.com/blog/posts/tech/python/ioerror-image-file-is-truncated/</guid>
       <description>IOError: image file is truncated jpg で結構大きめの画像を Pillow で読み込むときに下記のエラーが出た。
 IOError: image file is truncated 解決策 from PIL import ImageFile ImageFile.LOAD_TRUNCATED_IMAGES = True 参考  </description>
+    </item>
+    
+    <item>
+      <title>Python : itertoolsの使い方 -その２-</title>
+      <link>https://www.yusaito.com/blog/posts/tech/python/how-to-use-itertools-2/</link>
+      <pubDate>Tue, 21 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/posts/tech/python/how-to-use-itertools-2/</guid>
+      <description>product は便利そうだけど、starmap は一行別で生成したほうが分かりやすそう。
+itertools.groupby 同じキーをもつような要素からなる イテレーターのグループに対して、キーとグループを返すようなイテレータを作成する。通常、イテレーターは同じキー関数でソート済みである必要がある。
+使い方 for k, g in itertools.groupby(&amp;#39;AAAABBBCCDAABBB&amp;#39;): print(k) # --&amp;gt; A B C D A B for k, g in itertools.groupby(&amp;#39;AAAABBBCCD&amp;#39;): print(list(g)) # --&amp;gt; AAAA BBB CC D itertools.islice 要素を選択・スライスして返すイテレータを生成。
+使い方 for n in itertools.islice(&amp;#39;ABCDEFG&amp;#39;, 2): print(n) # --&amp;gt; A B itertools.pairwise 隣同士をペアにしたイテレータを返す。
+使い方 for n in itertools.pairwise(&amp;#39;ABCDEFG&amp;#39;): print(n) # --&amp;gt; AB BC CD DE EF FG itertools.permutations 特定の長さの順列を返す。
+使い方 for n in itertools.permutations(&amp;#39;ABCD&amp;#39;, 2): print(n) # --&amp;gt; AB AC AD BA BC BD CA CB CD DA DB DC itertools.</description>
+    </item>
+    
+    <item>
+      <title>Python : itertoolsの使い方 -その１-</title>
+      <link>https://www.yusaito.com/blog/posts/tech/python/how-to-use-itertools-1/</link>
+      <pubDate>Mon, 20 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/posts/tech/python/how-to-use-itertools-1/</guid>
+      <description>Atcoder などを昔解いていたときに itertools 便利だなーと思いつつも使いこなせていなかったので総まとめ。
+itertools の解説その１ itertools.accumulate 累積和を返すイテレータを作成できる。
+使い方 for n in itertools.accumulate([1,2,3,4,5]): print(n) # --&amp;gt; 1 3 6 10 15 itertools.chain ２つのシーケンスを１つのシーケンスとして扱う。
+使い方 for n in itertools.chain(&amp;#39;ABC&amp;#39;, &amp;#39;DEF&amp;#39;): print(n) # --&amp;gt; A B C D E F itertools.combinations 特定の長さの組み合わせを返す。出力は辞書式でソートされている。
+使い方 for n in itertools.combinations(&amp;#39;ABCD&amp;#39;, 2): print(n) # --&amp;gt; AB AC AD BC BD CD itertools.combinations_with_replacement 特定の長さの組み合わせを返す。出力は辞書式でソートされている。同じ要素が複数回現れることを許容。
+使い方 for n in itertools.combinations_with_replacement(&amp;#39;ABC&amp;#39;, 2): print(n) # --&amp;gt; AA AB AC BB BC CC itertools.</description>
     </item>
     
     <item>
@@ -341,13 +370,12 @@ The Institute of Photonic Sciences @ Castelldefels, Spain リンダウの帰り�
       <pubDate>Thu, 08 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/posts/us-life/easy-english/</guid>
-      <description>渡米直後は半分以上英語が聞き取れず、非常に苦労した。聞くだけでもこんなに苦労したのだから、話す方が 3 歳児以下だったのは想像に難くない。今考えても（話せなさすぎて）クビにならなかったのが不思議なくらいである。クビにならなかったのは、ラボのデフォルトのコミュニケーションツールが slack だったからかもしれない。（slack, もっといえば email がない時代だったら僕は 1 週間でクビになるレベルだったし、そもそも採用されていないと思う）対面でも最大限コミュニケーションをとるように努力したとはいえ、最初の 3 ヶ月いや半年くらいはコミュニケーションの面で非常に迷惑をかけてしまったと思うと大変申し訳ない。これでも渡米前の半年は英会話教室に行きつつ、海外ドラマを英語字幕で見るなど一応の努力はしたつもりだった。あれほど英語がしゃべれたら、あるいはリスニングだけでも日本語レベルでできればと思った期間はなかったと思う。3 年弱の間、メンバーの半分くらいがネイティブの環境で仕事をしたかいもあり、少なくともリスニング力に関しては格段に向上したと思う（当社比）。専門のディスカッションではあれば（知らない単語がない限り）90%は聞き取れる&amp;quot;気がするし&amp;quot;, 日常会話でもローカルネタでなければ 80%は聞き取れるようになった&amp;quot;気がする&amp;quot;。スピーキングも毛が生えた程度には向上したと思う。
-渡米当初の英語の苦労の要因はいろいろあるが、発音がわからず聞き取れない以外で大きな要因を上げるとしたら、日本の中学で習うような単語の組み合わせのはずなのに聞き取れても初見で意味を汲み取れないものが思いの他多かった点だと思う。特に頻出だった初見で難しい、しかし簡単な英語表現をいくつか列挙してみる。以下の各コメントは、完全に私の主観で、英語の専門家の解説では決してない。1 と 2 が個人的にぶっちぎりで初見殺しの表現である。
-  I would 〜
-(例) I would try this experiment.
+      <description>前書き 渡米直後は半分以上英語が聞き取れず、非常に苦労した。聞くだけでもこんなに苦労したのだから、話す方が 3 歳児以下だったのは想像に難くない。今考えても（話せなさすぎて）クビにならなかったのが不思議なくらいである。クビにならなかったのは、ラボのデフォルトのコミュニケーションツールが slack だったからかもしれない。（slack, もっといえば email がない時代だったら僕は 1 週間でクビになるレベルだったし、そもそも採用されていないと思う）対面でも最大限コミュニケーションをとるように努力したとはいえ、最初の 3 ヶ月いや半年くらいはコミュニケーションの面で非常に迷惑をかけてしまったと思うと大変申し訳ない。これでも渡米前の半年は英会話教室に行きつつ、海外ドラマを英語字幕で見るなど一応の努力はしたつもりだった。あれほど英語がしゃべれたら、あるいはリスニングだけでも日本語レベルでできればと思った期間はなかったと思う。3 年弱の間、メンバーの半分くらいがネイティブの環境で仕事をしたかいもあり、少なくともリスニング力に関しては格段に向上したと思う（当社比）。専門のディスカッションではあれば（知らない単語がない限り）90%は聞き取れる&amp;quot;気がするし&amp;quot;, 日常会話でもローカルネタでなければ 80%は聞き取れるようになった&amp;quot;気がする&amp;quot;。スピーキングも毛が生えた程度には向上したと思う。
+本題 渡米当初の英語の苦労の要因はいろいろあるが、発音がわからず聞き取れない以外で大きな要因を上げるとしたら、日本の中学で習うような単語の組み合わせのはずなのに聞き取れても初見で意味を汲み取れないものが思いの他多かった点だと思う。特に頻出だった初見で難しい、しかし簡単な英語表現をいくつか列挙してみる。以下の各コメントは、完全に私の主観で、英語の専門家の解説では決してない。1 と 2 が個人的にぶっちぎりで初見殺しの表現である。
+I would 〜 (例) I would try this experiment.
 (訳) 私&amp;quot;なら&amp;quot;この実験をする＝＞この実験をやってくれ。（丁寧な命令表現）
 I would 自体は例えば丁寧な表現、あるいは婉曲するために使われるというのはどこかで習った気がするし、これは間違いではないと思う。ただ上記の I would の使い方は初見殺しで、どこかの web ページによると If I were you, が省略されている仮定法の表現らしい。したがって訳は、私&amp;quot;なら&amp;quot;この実験をする、つまり、この実験をやってくれ（これを命令と捉えるか、提案ととらえるかは文脈にもよる）、となる。多分仕事を指示する、あるいは代案を提案する場面だと頻出の使い方なのではないかと思う。ついつい You should と言ってしまいたくなる場面で I would を使えるとネイティブに一歩近づけるのではないかと思う。これとは違う使い方だけど、I think の婉曲版に I would say というのもあって、これも一日に何回も聞く表現である。
-  want to 〜 (例) Wanna grab food? (正式 ver. Do you want to grab food?</description>
+want to 〜 (例) Wanna grab food? (正式 ver. Do you want to grab food?</description>
     </item>
     
     <item>

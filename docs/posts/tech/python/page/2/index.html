@@ -11,7 +11,7 @@
 <meta name="author" content="">
 <link rel="canonical" href="https://www.yusaito.com/blog/posts/tech/python/" />
 <meta name="google-site-verification" content="7pz_dAQx7-r3P-mr6XGvIVQx47QN5DmiWRVLEocHAIM" />
-<link crossorigin="anonymous" href="/blog/assets/css/stylesheet.min.9b85e7de6da904a1f21b8c6a0016ef912be6076628ca4b3cca8682f454d150da.css" integrity="sha256-m4Xn3m2pBKHyG4xqABbvkSvmB2Yoyks8yoaC9FTRUNo=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/blog/assets/css/stylesheet.min.fe3c21f0eb74b1f32c6f176ede756c8ee6056bd4ef76ddcdcb92105a979e38ac.css" integrity="sha256-/jwh8Ot0sfMsbxdu3nVsjuYFa9Tvdt3Ny5IQWpeeOKw=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://www.yusaito.com/blog/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://www.yusaito.com/blog/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://www.yusaito.com/blog/favicon-32x32.png">
@@ -211,6 +211,40 @@ IOError: image file is truncated 解決策 from PIL import ImageFile ImageFile.L
   </section>
   <footer class="entry-footer"><span title='2022-01-03 00:00:00 +0000 UTC'>January 3, 2022</span></footer>
   <a class="entry-link" aria-label="post link to エラーメモ：IOError: image file is truncated" href="https://www.yusaito.com/blog/posts/tech/python/ioerror-image-file-is-truncated/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>Python : itertoolsの使い方 -その２-
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>product は便利そうだけど、starmap は一行別で生成したほうが分かりやすそう。
+itertools.groupby 同じキーをもつような要素からなる イテレーターのグループに対して、キーとグループを返すようなイテレータを作成する。通常、イテレーターは同じキー関数でソート済みである必要がある。
+使い方 for k, g in itertools.groupby(&#39;AAAABBBCCDAABBB&#39;): print(k) # --&gt; A B C D A B for k, g in itertools.groupby(&#39;AAAABBBCCD&#39;): print(list(g)) # --&gt; AAAA BBB CC D itertools.islice 要素を選択・スライスして返すイテレータを生成。
+使い方 for n in itertools.islice(&#39;ABCDEFG&#39;, 2): print(n) # --&gt; A B itertools.pairwise 隣同士をペアにしたイテレータを返す。
+使い方 for n in itertools.pairwise(&#39;ABCDEFG&#39;): print(n) # --&gt; AB BC CD DE EF FG itertools.permutations 特定の長さの順列を返す。
+使い方 for n in itertools.permutations(&#39;ABCD&#39;, 2): print(n) # --&gt; AB AC AD BA BC BD CA CB CD DA DB DC itertools....</p>
+  </section>
+  <footer class="entry-footer"><span title='2021-12-21 00:00:00 +0000 UTC'>December 21, 2021</span></footer>
+  <a class="entry-link" aria-label="post link to Python : itertoolsの使い方 -その２-" href="https://www.yusaito.com/blog/posts/tech/python/how-to-use-itertools-2/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>Python : itertoolsの使い方 -その１-
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>Atcoder などを昔解いていたときに itertools 便利だなーと思いつつも使いこなせていなかったので総まとめ。
+itertools の解説その１ itertools.accumulate 累積和を返すイテレータを作成できる。
+使い方 for n in itertools.accumulate([1,2,3,4,5]): print(n) # --&gt; 1 3 6 10 15 itertools.chain ２つのシーケンスを１つのシーケンスとして扱う。
+使い方 for n in itertools.chain(&#39;ABC&#39;, &#39;DEF&#39;): print(n) # --&gt; A B C D E F itertools.combinations 特定の長さの組み合わせを返す。出力は辞書式でソートされている。
+使い方 for n in itertools.combinations(&#39;ABCD&#39;, 2): print(n) # --&gt; AB AC AD BC BD CD itertools.combinations_with_replacement 特定の長さの組み合わせを返す。出力は辞書式でソートされている。同じ要素が複数回現れることを許容。
+使い方 for n in itertools.combinations_with_replacement(&#39;ABC&#39;, 2): print(n) # --&gt; AA AB AC BB BC CC itertools....</p>
+  </section>
+  <footer class="entry-footer"><span title='2021-12-20 00:00:00 +0000 UTC'>December 20, 2021</span></footer>
+  <a class="entry-link" aria-label="post link to Python : itertoolsの使い方 -その１-" href="https://www.yusaito.com/blog/posts/tech/python/how-to-use-itertools-1/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

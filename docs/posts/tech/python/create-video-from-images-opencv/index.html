@@ -7,11 +7,12 @@
 <meta name="robots" content="index, follow">
 <title>PythonとOpenCVで画像リストから動画を作成 | YS&#39;s blog</title>
 <meta name="keywords" content="python, video, opencv, 動画, 画像, mp4, cv2.VideoWriter" />
-<meta name="description" content="openCV を使って画像リストから動画を作成する。 from pathlib import Path from typing import List import cv2 def list_file_paths(dir_path: str) -&gt; List[str]: &#34;&#34;&#34; List file paths in a directory. Parameters ---------- dir_path : str Path of the directory Returns ------- List[str] List of the file paths in the directory &#34;&#34;&#34; return sorted([str(path) for path in Path(dir_path).rglob(&#34;*&#34;) if path.is_file()]) def create_mp4_video_from_image_path_list( output_video_path: str, image_path_list: List[str], fps: int, ) -&gt; None: &#34;&#34;&#34; Create mp4 video file from a image path list Parameters ---------- output_video_path : str Path of the output video image_path_list : List[str] Path of image file list fps : int fps (frames per second) &#34;&#34;&#34; height, width, _ = cv2.">
+<meta name="description" content="openCV を使って画像リストから動画を作成する。 画像リストがあったときにそこから動画を生成するときに使う。
+from pathlib import Path from typing import List import cv2 def list_file_paths(dir_path: str) -&gt; List[str]: &#34;&#34;&#34; List file paths in a directory. Parameters ---------- dir_path : str Path of the directory Returns ------- List[str] List of the file paths in the directory &#34;&#34;&#34; return sorted([str(path) for path in Path(dir_path).rglob(&#34;*&#34;) if path.is_file()]) def create_mp4_video_from_image_path_list( output_video_path: str, image_path_list: List[str], fps: int, ) -&gt; None: &#34;&#34;&#34; Create mp4 video file from a image path list Parameters ---------- output_video_path : str Path of the output video image_path_list : List[str] Path of image file list fps : int fps (frames per second) &#34;&#34;&#34; height, width, _ = cv2.">
 <meta name="author" content="">
 <link rel="canonical" href="https://www.yusaito.com/blog/posts/tech/python/create-video-from-images-opencv/" />
 <meta name="google-site-verification" content="7pz_dAQx7-r3P-mr6XGvIVQx47QN5DmiWRVLEocHAIM" />
-<link crossorigin="anonymous" href="/blog/assets/css/stylesheet.min.9b85e7de6da904a1f21b8c6a0016ef912be6076628ca4b3cca8682f454d150da.css" integrity="sha256-m4Xn3m2pBKHyG4xqABbvkSvmB2Yoyks8yoaC9FTRUNo=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/blog/assets/css/stylesheet.min.fe3c21f0eb74b1f32c6f176ede756c8ee6056bd4ef76ddcdcb92105a979e38ac.css" integrity="sha256-/jwh8Ot0sfMsbxdu3nVsjuYFa9Tvdt3Ny5IQWpeeOKw=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://www.yusaito.com/blog/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://www.yusaito.com/blog/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://www.yusaito.com/blog/favicon-32x32.png">
@@ -68,7 +69,8 @@ if (!doNotTrack) {
 }
 </script>
 <meta property="og:title" content="PythonとOpenCVで画像リストから動画を作成" />
-<meta property="og:description" content="openCV を使って画像リストから動画を作成する。 from pathlib import Path from typing import List import cv2 def list_file_paths(dir_path: str) -&gt; List[str]: &#34;&#34;&#34; List file paths in a directory. Parameters ---------- dir_path : str Path of the directory Returns ------- List[str] List of the file paths in the directory &#34;&#34;&#34; return sorted([str(path) for path in Path(dir_path).rglob(&#34;*&#34;) if path.is_file()]) def create_mp4_video_from_image_path_list( output_video_path: str, image_path_list: List[str], fps: int, ) -&gt; None: &#34;&#34;&#34; Create mp4 video file from a image path list Parameters ---------- output_video_path : str Path of the output video image_path_list : List[str] Path of image file list fps : int fps (frames per second) &#34;&#34;&#34; height, width, _ = cv2." />
+<meta property="og:description" content="openCV を使って画像リストから動画を作成する。 画像リストがあったときにそこから動画を生成するときに使う。
+from pathlib import Path from typing import List import cv2 def list_file_paths(dir_path: str) -&gt; List[str]: &#34;&#34;&#34; List file paths in a directory. Parameters ---------- dir_path : str Path of the directory Returns ------- List[str] List of the file paths in the directory &#34;&#34;&#34; return sorted([str(path) for path in Path(dir_path).rglob(&#34;*&#34;) if path.is_file()]) def create_mp4_video_from_image_path_list( output_video_path: str, image_path_list: List[str], fps: int, ) -&gt; None: &#34;&#34;&#34; Create mp4 video file from a image path list Parameters ---------- output_video_path : str Path of the output video image_path_list : List[str] Path of image file list fps : int fps (frames per second) &#34;&#34;&#34; height, width, _ = cv2." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.yusaito.com/blog/posts/tech/python/create-video-from-images-opencv/" /><meta property="og:image" content="https://www.yusaito.com/blog/papermod-cover.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-02-26T00:00:00&#43;00:00" />
@@ -78,7 +80,8 @@ if (!doNotTrack) {
 <meta name="twitter:image" content="https://www.yusaito.com/blog/papermod-cover.png"/>
 
 <meta name="twitter:title" content="PythonとOpenCVで画像リストから動画を作成"/>
-<meta name="twitter:description" content="openCV を使って画像リストから動画を作成する。 from pathlib import Path from typing import List import cv2 def list_file_paths(dir_path: str) -&gt; List[str]: &#34;&#34;&#34; List file paths in a directory. Parameters ---------- dir_path : str Path of the directory Returns ------- List[str] List of the file paths in the directory &#34;&#34;&#34; return sorted([str(path) for path in Path(dir_path).rglob(&#34;*&#34;) if path.is_file()]) def create_mp4_video_from_image_path_list( output_video_path: str, image_path_list: List[str], fps: int, ) -&gt; None: &#34;&#34;&#34; Create mp4 video file from a image path list Parameters ---------- output_video_path : str Path of the output video image_path_list : List[str] Path of image file list fps : int fps (frames per second) &#34;&#34;&#34; height, width, _ = cv2."/>
+<meta name="twitter:description" content="openCV を使って画像リストから動画を作成する。 画像リストがあったときにそこから動画を生成するときに使う。
+from pathlib import Path from typing import List import cv2 def list_file_paths(dir_path: str) -&gt; List[str]: &#34;&#34;&#34; List file paths in a directory. Parameters ---------- dir_path : str Path of the directory Returns ------- List[str] List of the file paths in the directory &#34;&#34;&#34; return sorted([str(path) for path in Path(dir_path).rglob(&#34;*&#34;) if path.is_file()]) def create_mp4_video_from_image_path_list( output_video_path: str, image_path_list: List[str], fps: int, ) -&gt; None: &#34;&#34;&#34; Create mp4 video file from a image path list Parameters ---------- output_video_path : str Path of the output video image_path_list : List[str] Path of image file list fps : int fps (frames per second) &#34;&#34;&#34; height, width, _ = cv2."/>
 
 
 <script type="application/ld+json">
@@ -119,12 +122,12 @@ if (!doNotTrack) {
   "@type": "BlogPosting",
   "headline": "PythonとOpenCVで画像リストから動画を作成",
   "name": "PythonとOpenCVで画像リストから動画を作成",
-  "description": "openCV を使って画像リストから動画を作成する。 from pathlib import Path from typing import List import cv2 def list_file_paths(dir_path: str) -\u0026gt; List[str]: \u0026#34;\u0026#34;\u0026#34; List file paths in a directory. Parameters ---------- dir_path : str Path of the directory Returns ------- List[str] List of the file paths in the directory \u0026#34;\u0026#34;\u0026#34; return sorted([str(path) for path in Path(dir_path).rglob(\u0026#34;*\u0026#34;) if path.is_file()]) def create_mp4_video_from_image_path_list( output_video_path: str, image_path_list: List[str], fps: int, ) -\u0026gt; None: \u0026#34;\u0026#34;\u0026#34; Create mp4 video file from a image path list Parameters ---------- output_video_path : str Path of the output video image_path_list : List[str] Path of image file list fps : int fps (frames per second) \u0026#34;\u0026#34;\u0026#34; height, width, _ = cv2.",
+  "description": "openCV を使って画像リストから動画を作成する。 画像リストがあったときにそこから動画を生成するときに使う。\nfrom pathlib import Path from typing import List import cv2 def list_file_paths(dir_path: str) -\u0026gt; List[str]: \u0026#34;\u0026#34;\u0026#34; List file paths in a directory. Parameters ---------- dir_path : str Path of the directory Returns ------- List[str] List of the file paths in the directory \u0026#34;\u0026#34;\u0026#34; return sorted([str(path) for path in Path(dir_path).rglob(\u0026#34;*\u0026#34;) if path.is_file()]) def create_mp4_video_from_image_path_list( output_video_path: str, image_path_list: List[str], fps: int, ) -\u0026gt; None: \u0026#34;\u0026#34;\u0026#34; Create mp4 video file from a image path list Parameters ---------- output_video_path : str Path of the output video image_path_list : List[str] Path of image file list fps : int fps (frames per second) \u0026#34;\u0026#34;\u0026#34; height, width, _ = cv2.",
   "keywords": [
     "python", "video", "opencv", "動画", "画像", "mp4", "cv2.VideoWriter"
   ],
-  "articleBody": "openCV を使って画像リストから動画を作成する。 from pathlib import Path from typing import List import cv2 def list_file_paths(dir_path: str) - List[str]: \"\"\" List file paths in a directory. Parameters ---------- dir_path : str Path of the directory Returns ------- List[str] List of the file paths in the directory \"\"\" return sorted([str(path) for path in Path(dir_path).rglob(\"*\") if path.is_file()]) def create_mp4_video_from_image_path_list( output_video_path: str, image_path_list: List[str], fps: int, ) - None: \"\"\" Create mp4 video file from a image path list Parameters ---------- output_video_path : str Path of the output video image_path_list : List[str] Path of image file list fps : int fps (frames per second) \"\"\" height, width, _ = cv2.imread(image_path_list[0]).shape writer = cv2.VideoWriter( output_video_path, cv2.VideoWriter_fourcc(\"m\", \"p\", \"4\", \"v\"), fps, (width, height), True, ) for image_file_path in image_path_list: writer.write(cv2.imread(image_file_path)) writer.release() cv2.destroyAllWindows() file_list = list_file_paths(\"images\") create_mp4_video_from_image_path_list(\"output.mp4\", file_list, 30) ",
-  "wordCount" : "131",
+  "articleBody": "openCV を使って画像リストから動画を作成する。 画像リストがあったときにそこから動画を生成するときに使う。\nfrom pathlib import Path from typing import List import cv2 def list_file_paths(dir_path: str) - List[str]: \"\"\" List file paths in a directory. Parameters ---------- dir_path : str Path of the directory Returns ------- List[str] List of the file paths in the directory \"\"\" return sorted([str(path) for path in Path(dir_path).rglob(\"*\") if path.is_file()]) def create_mp4_video_from_image_path_list( output_video_path: str, image_path_list: List[str], fps: int, ) - None: \"\"\" Create mp4 video file from a image path list Parameters ---------- output_video_path : str Path of the output video image_path_list : List[str] Path of image file list fps : int fps (frames per second) \"\"\" height, width, _ = cv2.imread(image_path_list[0]).shape writer = cv2.VideoWriter( output_video_path, cv2.VideoWriter_fourcc(\"m\", \"p\", \"4\", \"v\"), fps, (width, height), True, ) for image_file_path in image_path_list: writer.write(cv2.imread(image_file_path)) writer.release() cv2.destroyAllWindows() file_list = list_file_paths(\"images\") create_mp4_video_from_image_path_list(\"output.mp4\", file_list, 30) ",
+  "wordCount" : "132",
   "inLanguage": "en",
   "datePublished": "2022-02-26T00:00:00Z",
   "dateModified": "2022-02-26T00:00:00Z",
@@ -230,6 +233,7 @@ if (!doNotTrack) {
 </div>
 
   <div class="post-content"><h2 id="opencv-を使って画像リストから動画を作成する">openCV を使って画像リストから動画を作成する。<a hidden class="anchor" aria-hidden="true" href="#opencv-を使って画像リストから動画を作成する">#</a></h2>
+<p>画像リストがあったときにそこから動画を生成するときに使う。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> pathlib <span style="color:#f92672">import</span> Path
 <span style="color:#f92672">from</span> typing <span style="color:#f92672">import</span> List
 
@@ -297,11 +301,11 @@ create_mp4_video_from_image_path_list(<span style="color:#e6db74">&#34;output.mp
 	
 	<li><a href="/blog/posts/tech/python/how-to-use-hashlib/">Python : hashlibを使って、ハッシュ値を求める</a></li>
 	
-	<li><a href="/blog/posts/tech/python/how-to-use-mpire-multiprocess/">Python並列処理：MPIREの使い方</a></li>
+	<li><a href="/blog/posts/tech/python/how-to-use-mpire-multiprocess/">Pythonで並列処理 : MPIREの使い方</a></li>
 	
 	<li><a href="/blog/posts/tech/python/opencv-setnumthreads-multithreading/">PythonとopenCVで並列化</a></li>
 	
-	<li><a href="/blog/posts/tech/python/how-to-use-functools-partial/">Python：functools.partial 関数の引数を一部固定</a></li>
+	<li><a href="/blog/posts/tech/python/how-to-use-functools-partial/">Python : functools.partial 関数の引数を一部固定</a></li>
 	
 	<li><a href="/blog/posts/tech/python/relative-path-with-pathlib/">Pathlibで相対パスを有効活用する</a></li>
 	
@@ -326,15 +330,15 @@ create_mp4_video_from_image_path_list(<span style="color:#e6db74">&#34;output.mp
       <li><a href="https://www.yusaito.com/blog/tags/cv2.videowriter/">cv2.VideoWriter</a></li>
     </ul>
 <nav class="paginav">
-  <a class="prev" href="https://www.yusaito.com/blog/posts/tech/python/numpy-benchmark-ryzen-threadripper/">
+  <a class="prev" href="https://www.yusaito.com/blog/posts/tech/python/how-to-use-functools-partial/">
     <span class="title">« Prev Page</span>
     <br>
-    <span>Ryzen Threadripper 3970XとNVIDIA RTX 3090を使ってnumpy(Intel MKL and OpenBLAS)とcupyでベンチマーク</span>
+    <span>Python : functools.partial 関数の引数を一部固定</span>
   </a>
-  <a class="next" href="https://www.yusaito.com/blog/posts/tech/python/how-to-use-functools-partial/">
+  <a class="next" href="https://www.yusaito.com/blog/posts/tech/python/relative-path-with-pathlib/">
     <span class="title">Next Page »</span>
     <br>
-    <span>Python：functools.partial 関数の引数を一部固定</span>
+    <span>Pathlibで相対パスを有効活用する</span>
   </a>
 </nav>
 

@@ -22,7 +22,7 @@
     </item>
     
     <item>
-      <title>Python並列処理：MPIREの使い方</title>
+      <title>Pythonで並列処理 : MPIREの使い方</title>
       <link>https://www.yusaito.com/blog/posts/tech/python/how-to-use-mpire-multiprocess/</link>
       <pubDate>Sat, 19 Mar 2022 00:00:00 +0000</pubDate>
       
@@ -32,22 +32,23 @@ MPIRE のインストール pip install mpire MPIRE の使い方 from mpire impo
     </item>
     
     <item>
-      <title>PythonとOpenCVで画像リストから動画を作成</title>
-      <link>https://www.yusaito.com/blog/posts/tech/python/create-video-from-images-opencv/</link>
-      <pubDate>Sat, 26 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.yusaito.com/blog/posts/tech/python/create-video-from-images-opencv/</guid>
-      <description>openCV を使って画像リストから動画を作成する。 from pathlib import Path from typing import List import cv2 def list_file_paths(dir_path: str) -&amp;gt; List[str]: &amp;#34;&amp;#34;&amp;#34; List file paths in a directory. Parameters ---------- dir_path : str Path of the directory Returns ------- List[str] List of the file paths in the directory &amp;#34;&amp;#34;&amp;#34; return sorted([str(path) for path in Path(dir_path).rglob(&amp;#34;*&amp;#34;) if path.is_file()]) def create_mp4_video_from_image_path_list( output_video_path: str, image_path_list: List[str], fps: int, ) -&amp;gt; None: &amp;#34;&amp;#34;&amp;#34; Create mp4 video file from a image path list Parameters ---------- output_video_path : str Path of the output video image_path_list : List[str] Path of image file list fps : int fps (frames per second) &amp;#34;&amp;#34;&amp;#34; height, width, _ = cv2.</description>
-    </item>
-    
-    <item>
-      <title>Python：functools.partial 関数の引数を一部固定</title>
+      <title>Python : functools.partial 関数の引数を一部固定</title>
       <link>https://www.yusaito.com/blog/posts/tech/python/how-to-use-functools-partial/</link>
       <pubDate>Sat, 26 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/posts/tech/python/how-to-use-functools-partial/</guid>
       <description>functools.partial は、関数の特定の引数を固定したい場合に使う 個人的に concurrent.futures の ProcessPoolExecuter や ThreadPoolExecuter の map を使うときに併用することが多い。
 functools.partial の定義 # ref. https://docs.python.org/ja/3/library/functools.html#functools.partial def partial(func, /, *args, **keywords): def newfunc(*fargs, **fkeywords): newkeywords = {**keywords, **fkeywords} return func(*args, *fargs, **newkeywords) newfunc.func = func newfunc.args = args newfunc.keywords = keywords return newfunc 使い方：引数を固定する from functools import partial def product_xyz(x, y, z): return x * y * z # xとyの値を固定する product_z = partial(product_xyz, x=2, y=3) product_z(4) # 24 参考  </description>
+    </item>
+    
+    <item>
+      <title>PythonとOpenCVで画像リストから動画を作成</title>
+      <link>https://www.yusaito.com/blog/posts/tech/python/create-video-from-images-opencv/</link>
+      <pubDate>Sat, 26 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/posts/tech/python/create-video-from-images-opencv/</guid>
+      <description>openCV を使って画像リストから動画を作成する。 画像リストがあったときにそこから動画を生成するときに使う。
+from pathlib import Path from typing import List import cv2 def list_file_paths(dir_path: str) -&amp;gt; List[str]: &amp;#34;&amp;#34;&amp;#34; List file paths in a directory. Parameters ---------- dir_path : str Path of the directory Returns ------- List[str] List of the file paths in the directory &amp;#34;&amp;#34;&amp;#34; return sorted([str(path) for path in Path(dir_path).rglob(&amp;#34;*&amp;#34;) if path.is_file()]) def create_mp4_video_from_image_path_list( output_video_path: str, image_path_list: List[str], fps: int, ) -&amp;gt; None: &amp;#34;&amp;#34;&amp;#34; Create mp4 video file from a image path list Parameters ---------- output_video_path : str Path of the output video image_path_list : List[str] Path of image file list fps : int fps (frames per second) &amp;#34;&amp;#34;&amp;#34; height, width, _ = cv2.</description>
     </item>
     
     <item>
