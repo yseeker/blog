@@ -33,74 +33,74 @@ img {
 
 @media print, screen and (min-width: 480px) {
   .post-title {
-    font-size: 21px !important;
+    font-size: 24px !important;
   }
 }
 
 @media print, screen and (max-width: 479px) {
   .post-title {
+    font-size: 22px !important;
+  }
+}
+
+@media print, screen and (min-width: 480px) {
+  .post-content h2 {
+    font-size: 22px !important;
+    padding: 4px 8px !important;
+    border-left: 5px solid #12007a !important;
+    line-height: 1.2 !important;
+  }
+}
+
+@media print, screen and (max-width: 479px) {
+  .post-content h2 {
+    font-size: 20px !important;
+    padding: 4px 8px !important;
+    border-left: 5px solid #12007a !important;
+    line-height: 1.2 !important;
+  }
+}
+
+@media print, screen and (min-width: 480px) {
+  .dark .post-content h2 {
+    font-size: 20px !important;
+    padding: 4px 8px !important;
+    border-left: 5px solid #8f89ff !important;
+    line-height: 1.2 !important;
+  }
+}
+
+@media print, screen and (max-width: 479px) {
+  .dark .post-content h2 {
+    font-size: 19px !important;
+    padding: 4px 8px !important;
+    border-left: 5px solid #8f89ff !important;
+    line-height: 1.2 !important;
+  }
+}
+
+@media print, screen and (min-width: 480px) {
+  .post-content h3 {
     font-size: 18px !important;
   }
 }
 
-@media print, screen and (min-width: 480px) {
-  .post-content h2 {
-    font-size: 16px !important;
-    padding: 4px 8px !important;
-    border-left: 5px solid #12007a !important;
-    line-height: 1.2 !important;
-  }
-}
-
 @media print, screen and (max-width: 479px) {
-  .post-content h2 {
-    font-size: 14px !important;
-    padding: 4px 8px !important;
-    border-left: 5px solid #12007a !important;
-    line-height: 1.2 !important;
-  }
-}
-
-@media print, screen and (min-width: 480px) {
-  .dark .post-content h2 {
+  .post-content h3 {
     font-size: 17px !important;
-    padding: 4px 8px !important;
-    border-left: 5px solid #8f89ff !important;
-    line-height: 1.2 !important;
-  }
-}
-
-@media print, screen and (max-width: 479px) {
-  .dark .post-content h2 {
-    font-size: 14px !important;
-    padding: 4px 8px !important;
-    border-left: 5px solid #8f89ff !important;
-    line-height: 1.2 !important;
-  }
-}
-
-@media print, screen and (min-width: 480px) {
-  .post-content h3 {
-    font-size: 15px !important;
-  }
-}
-
-@media print, screen and (max-width: 479px) {
-  .post-content h3 {
-    font-size: 13px !important;
     line-height: 1.2 !important;
   }
 }
 
 @media print, screen and (min-width: 480px) {
   .post-content h4 {
-    font-size: 14px !important;
+    font-size: 17px !important;
   }
 }
 
 @media print, screen and (max-width: 479px) {
   .post-content h4 {
-    font-size: 12px !important;
+    font-size: 16px !important;
     line-height: 1.2 !important;
   }
 }
