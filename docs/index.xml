@@ -181,7 +181,10 @@ IOError: image file is truncated 解決策 from PIL import ImageFile ImageFile.L
       <pubDate>Fri, 10 Sep 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/posts/us-life/ucsb-postdoc-memory/</guid>
-      <description>カリフォルニア大学サンタバーバラ校での３年間の研究の日々</description>
+      <description>Henly Gateキャンパス内キャンパスビーチとラグーン2017 年秋　海外ポスドクを志す 昔からいつかはアメリカで研究してみたいという漠然とした思いがあった。博士号取得後の 2018 年 4 月からの勤務先は決まっていたが、もしもうまく海外ポスドク先が決まれば退職して海外へ行くという意向をボス（予定）に相談したところ快諾して頂いた。この時期から海外ポスドク先を探し始めた。ラボ選びの方針は以前の記事で書いた通りである。また同時期にElings Prize Fellowshipにも応募した。
+2018 年 2 月 Elings Prize Fellowship のオファー 幸運にもカリフォルニア大学サンタバーバラ校から Elings Prize Fellowship のオファーレターを頂き（日本人初）、同大学のAndrea Young グループに同年 10 月から行くことが決定した。
+※上のオファーレターによると 2018 年では Elings Prize Fellowship の年間給与予定額は 60000USD (~ 660 万円)だが、2021 年現在は公式サイトにある通り 65000USD になっている。また UC サンタバーバラのポスドクの給与は年間 2%上昇する（これはフェローシップに限らない）。したがって 2021 年現在 Elings Prize Fellowship を獲得すると 1 年目 65000USD, 2 年目 66300USD, 3 年目 67626USD (~ 743 万円) となる。
+2018 年 3 月　博士（工学）取得 博論審査を無事に通過して、東大から博士号が授与された。同時期に幸運にも日本学術振興会育志賞も頂いた。</description>
     </item>
     
     <item>
@@ -303,7 +306,7 @@ The Institute of Photonic Sciences @ Castelldefels, Spain リンダウの帰り�
       <pubDate>Fri, 23 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/posts/other/cmp-rumor/</guid>
-      <description>アメリカの物理関連分野用の公募状況の噂サイト</description>
+      <description>PI ポジションを目指している人なら公募の状況、例えばどの大学に誰が面接まで残っているのか、という情報を知りたいのではないだろうか。アメリカの物理関連分野では、そうした公募情報の&amp;quot;うわさ&amp;quot;を掲載している web サイトがある。CM/AMO Rumor Millである。公募情報はもちろん、誰がどの大学の面接に呼ばれたか、誰がオファーを受け、誰が断ったかなどが書いてある。※あくまで&amp;quot;うわさ&amp;quot;である。</description>
     </item>
     
     <item>
@@ -312,7 +315,8 @@ The Institute of Photonic Sciences @ Castelldefels, Spain リンダウの帰り�
       <pubDate>Wed, 21 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/posts/other/rate-my-professors/</guid>
-      <description>学生が大学の先生を評価する媒体は世界中どこにでもあるらしい</description>
+      <description>東大に在学していた頃は時代錯誤社が発行している「逆評定」という邪神・大鬼・鬼・仏・大仏・神などの指標で学生が大学の先生を評価するキャンパスマガジンにとてもお世話になったが、そのような媒体は欧米圏（主にアメリカ）でも存在するらしい。Rate My Professorsという web サイトである。
+ちなみに現ボス（ポスドク時代のボス）の評価はこちらである。</description>
     </item>
     
     <item>

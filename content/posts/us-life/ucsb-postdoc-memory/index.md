@@ -2,7 +2,6 @@
 #author: "Hugo Authors"
 title: "UCSBポスドク記"
 date: "2021-09-10"
-description: "カリフォルニア大学サンタバーバラ校での３年間の研究の日々"
 tags: ["uslife", "postdoc", "physics", "実験", "物理", "研究", "サンタバーバラ"]
 categories: ["アメリカ生活"]
 ShowToc: true
