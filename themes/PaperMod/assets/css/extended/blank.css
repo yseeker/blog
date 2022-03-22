@@ -33,7 +33,7 @@ img {
 
 @media print, screen and (min-width: 480px) {
   .post-title {
-    font-size: 24px !important;
+    font-size: 30px !important;
   }
 }
 
@@ -63,7 +63,7 @@ img {
 
 @media print, screen and (min-width: 480px) {
   .dark .post-content h2 {
-    font-size: 20px !important;
+    font-size: 22px !important;
     padding: 4px 8px !important;
     border-left: 5px solid #8f89ff !important;
     line-height: 1.2 !important;
@@ -72,7 +72,7 @@ img {
 
 @media print, screen and (max-width: 479px) {
   .dark .post-content h2 {
-    font-size: 19px !important;
+    font-size: 20px !important;
     padding: 4px 8px !important;
     border-left: 5px solid #8f89ff !important;
     line-height: 1.2 !important;
@@ -81,26 +81,26 @@ img {
 
 @media print, screen and (min-width: 480px) {
   .post-content h3 {
-    font-size: 18px !important;
+    font-size: 20px !important;
   }
 }
 
 @media print, screen and (max-width: 479px) {
   .post-content h3 {
-    font-size: 17px !important;
+    font-size: 18px !important;
     line-height: 1.2 !important;
   }
 }
 
 @media print, screen and (min-width: 480px) {
   .post-content h4 {
-    font-size: 17px !important;
+    font-size: 19px !important;
   }
 }
 
 @media print, screen and (max-width: 479px) {
   .post-content h4 {
-    font-size: 16px !important;
+    font-size: 17px !important;
     line-height: 1.2 !important;
   }
 }
@@ -153,7 +153,7 @@ img {
 /* prism */
 @media print, screen and (min-width: 480px) {
   .highlight {
-    font-size: 15px !important;
+    font-size: 16px !important;
     line-height: 1.6 !important;
   }
 }
@@ -161,7 +161,7 @@ img {
 /* prism */
 @media print, screen and (max-width: 479px) {
   .highlight {
-    font-size: 15px !important;
+    font-size: 13px !important;
     line-height: 1.5 !important;
   }
 }
