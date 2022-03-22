@@ -33,7 +33,7 @@ img {
 
 @media print, screen and (min-width: 480px) {
   .post-title {
-    font-size: 30px !important;
+    font-size: 28px !important;
   }
 }
 
@@ -161,7 +161,7 @@ img {
 /* prism */
 @media print, screen and (max-width: 479px) {
   .highlight {
-    font-size: 13px !important;
+    font-size: 10px !important;
     line-height: 1.5 !important;
   }
 }
