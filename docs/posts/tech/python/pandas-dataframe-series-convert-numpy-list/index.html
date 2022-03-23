@@ -8,7 +8,7 @@
 <title>Pandas.DataFrame/Series と numpy.ndarray と list の相互変換 | YS&#39;s blog</title>
 <meta name="keywords" content="python, pandas, Pandas.DataFrame, 変換, numpy, array, numpy.ndarray, list" />
 <meta name="description" content="Pandas.DataFrame/Series と numpy.ndarray と list の相互変換 (複数の) list から pd.DataFrame へ変換 大きく２つの方法がある。
-df = pd.DataFrame({&#39;list_1&#39;:list_1, &#39;list_2&#39;:list_2, &#39;list_3&#39;=list_3}) df = pd.DataFrame(data=zip(list_1,list_2,list_3),columns=[&#39;list_1&#39;,&#39;list_2&#39;,&#39;list_3&#39;]) numpy.ndarray から pd.DataFrame へ変換 # numpy_array # [[ 0 1 2] # [ 3 4 5] # [ 6 7 8]] df = pd.DataFrame(data=numpy_array,columns=[&#39;col_1&#39;,&#39;col_2&#39;,&#39;col_3&#39;]) # col_1 col_2 col_3 # 0 0.0 1.0 2.0 # 1 3.0 4.0 5.0 # 2 6.0 7.0 8.0 pd.DataFrame（Series） から list へ変換 # pandas.DataFrame to numpy.">
+df = pd.DataFrame({&#39;list_1&#39;:list_1, &#39;list_2&#39;:list_2, &#39;list_3&#39;=list_3}) df = pd.DataFrame( data=zip(list_1, list_2, list_3), columns=[&#34;list_1&#34;, &#34;list_2&#34;, &#34;list_3&#34;], ) numpy.ndarray から pd.DataFrame へ変換 # numpy_array # [[ 0 1 2] # [ 3 4 5] # [ 6 7 8]] df = pd.DataFrame(data=numpy_array,columns=[&#39;col_1&#39;,&#39;col_2&#39;,&#39;col_3&#39;]) # col_1 col_2 col_3 # 0 0.0 1.0 2.0 # 1 3.0 4.0 5.0 # 2 6.0 7.0 8.0 pd.">
 <meta name="author" content="">
 <link rel="canonical" href="https://www.yusaito.com/blog/posts/tech/python/pandas-dataframe-series-convert-numpy-list/" />
 <meta name="google-site-verification" content="7pz_dAQx7-r3P-mr6XGvIVQx47QN5DmiWRVLEocHAIM" />
@@ -70,7 +70,7 @@ if (!doNotTrack) {
 </script>
 <meta property="og:title" content="Pandas.DataFrame/Series と numpy.ndarray と list の相互変換" />
 <meta property="og:description" content="Pandas.DataFrame/Series と numpy.ndarray と list の相互変換 (複数の) list から pd.DataFrame へ変換 大きく２つの方法がある。
-df = pd.DataFrame({&#39;list_1&#39;:list_1, &#39;list_2&#39;:list_2, &#39;list_3&#39;=list_3}) df = pd.DataFrame(data=zip(list_1,list_2,list_3),columns=[&#39;list_1&#39;,&#39;list_2&#39;,&#39;list_3&#39;]) numpy.ndarray から pd.DataFrame へ変換 # numpy_array # [[ 0 1 2] # [ 3 4 5] # [ 6 7 8]] df = pd.DataFrame(data=numpy_array,columns=[&#39;col_1&#39;,&#39;col_2&#39;,&#39;col_3&#39;]) # col_1 col_2 col_3 # 0 0.0 1.0 2.0 # 1 3.0 4.0 5.0 # 2 6.0 7.0 8.0 pd.DataFrame（Series） から list へ変換 # pandas.DataFrame to numpy." />
+df = pd.DataFrame({&#39;list_1&#39;:list_1, &#39;list_2&#39;:list_2, &#39;list_3&#39;=list_3}) df = pd.DataFrame( data=zip(list_1, list_2, list_3), columns=[&#34;list_1&#34;, &#34;list_2&#34;, &#34;list_3&#34;], ) numpy.ndarray から pd.DataFrame へ変換 # numpy_array # [[ 0 1 2] # [ 3 4 5] # [ 6 7 8]] df = pd.DataFrame(data=numpy_array,columns=[&#39;col_1&#39;,&#39;col_2&#39;,&#39;col_3&#39;]) # col_1 col_2 col_3 # 0 0.0 1.0 2.0 # 1 3.0 4.0 5.0 # 2 6.0 7.0 8.0 pd." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.yusaito.com/blog/posts/tech/python/pandas-dataframe-series-convert-numpy-list/" /><meta property="og:image" content="https://www.yusaito.com/blog/papermod-cover.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-12-02T00:00:00&#43;00:00" />
@@ -81,7 +81,7 @@ df = pd.DataFrame({&#39;list_1&#39;:list_1, &#39;list_2&#39;:list_2, &#39;list_3
 
 <meta name="twitter:title" content="Pandas.DataFrame/Series と numpy.ndarray と list の相互変換"/>
 <meta name="twitter:description" content="Pandas.DataFrame/Series と numpy.ndarray と list の相互変換 (複数の) list から pd.DataFrame へ変換 大きく２つの方法がある。
-df = pd.DataFrame({&#39;list_1&#39;:list_1, &#39;list_2&#39;:list_2, &#39;list_3&#39;=list_3}) df = pd.DataFrame(data=zip(list_1,list_2,list_3),columns=[&#39;list_1&#39;,&#39;list_2&#39;,&#39;list_3&#39;]) numpy.ndarray から pd.DataFrame へ変換 # numpy_array # [[ 0 1 2] # [ 3 4 5] # [ 6 7 8]] df = pd.DataFrame(data=numpy_array,columns=[&#39;col_1&#39;,&#39;col_2&#39;,&#39;col_3&#39;]) # col_1 col_2 col_3 # 0 0.0 1.0 2.0 # 1 3.0 4.0 5.0 # 2 6.0 7.0 8.0 pd.DataFrame（Series） から list へ変換 # pandas.DataFrame to numpy."/>
+df = pd.DataFrame({&#39;list_1&#39;:list_1, &#39;list_2&#39;:list_2, &#39;list_3&#39;=list_3}) df = pd.DataFrame( data=zip(list_1, list_2, list_3), columns=[&#34;list_1&#34;, &#34;list_2&#34;, &#34;list_3&#34;], ) numpy.ndarray から pd.DataFrame へ変換 # numpy_array # [[ 0 1 2] # [ 3 4 5] # [ 6 7 8]] df = pd.DataFrame(data=numpy_array,columns=[&#39;col_1&#39;,&#39;col_2&#39;,&#39;col_3&#39;]) # col_1 col_2 col_3 # 0 0.0 1.0 2.0 # 1 3.0 4.0 5.0 # 2 6.0 7.0 8.0 pd."/>
 
 
 <script type="application/ld+json">
@@ -122,12 +122,12 @@ df = pd.DataFrame({&#39;list_1&#39;:list_1, &#39;list_2&#39;:list_2, &#39;list_3
   "@type": "BlogPosting",
   "headline": "Pandas.DataFrame/Series と numpy.ndarray と list の相互変換",
   "name": "Pandas.DataFrame\/Series と numpy.ndarray と list の相互変換",
-  "description": "Pandas.DataFrame/Series と numpy.ndarray と list の相互変換 (複数の) list から pd.DataFrame へ変換 大きく２つの方法がある。\ndf = pd.DataFrame({\u0026#39;list_1\u0026#39;:list_1, \u0026#39;list_2\u0026#39;:list_2, \u0026#39;list_3\u0026#39;=list_3}) df = pd.DataFrame(data=zip(list_1,list_2,list_3),columns=[\u0026#39;list_1\u0026#39;,\u0026#39;list_2\u0026#39;,\u0026#39;list_3\u0026#39;]) numpy.ndarray から pd.DataFrame へ変換 # numpy_array # [[ 0 1 2] # [ 3 4 5] # [ 6 7 8]] df = pd.DataFrame(data=numpy_array,columns=[\u0026#39;col_1\u0026#39;,\u0026#39;col_2\u0026#39;,\u0026#39;col_3\u0026#39;]) # col_1 col_2 col_3 # 0 0.0 1.0 2.0 # 1 3.0 4.0 5.0 # 2 6.0 7.0 8.0 pd.DataFrame（Series） から list へ変換 # pandas.DataFrame to numpy.",
+  "description": "Pandas.DataFrame/Series と numpy.ndarray と list の相互変換 (複数の) list から pd.DataFrame へ変換 大きく２つの方法がある。\ndf = pd.DataFrame({\u0026#39;list_1\u0026#39;:list_1, \u0026#39;list_2\u0026#39;:list_2, \u0026#39;list_3\u0026#39;=list_3}) df = pd.DataFrame( data=zip(list_1, list_2, list_3), columns=[\u0026#34;list_1\u0026#34;, \u0026#34;list_2\u0026#34;, \u0026#34;list_3\u0026#34;], ) numpy.ndarray から pd.DataFrame へ変換 # numpy_array # [[ 0 1 2] # [ 3 4 5] # [ 6 7 8]] df = pd.DataFrame(data=numpy_array,columns=[\u0026#39;col_1\u0026#39;,\u0026#39;col_2\u0026#39;,\u0026#39;col_3\u0026#39;]) # col_1 col_2 col_3 # 0 0.0 1.0 2.0 # 1 3.0 4.0 5.0 # 2 6.0 7.0 8.0 pd.",
   "keywords": [
     "python", "pandas", "Pandas.DataFrame", "変換", "numpy", "array", "numpy.ndarray", "list"
   ],
-  "articleBody": "Pandas.DataFrame/Series と numpy.ndarray と list の相互変換 (複数の) list から pd.DataFrame へ変換 大きく２つの方法がある。\ndf = pd.DataFrame({'list_1':list_1, 'list_2':list_2, 'list_3'=list_3}) df = pd.DataFrame(data=zip(list_1,list_2,list_3),columns=['list_1','list_2','list_3']) numpy.ndarray から pd.DataFrame へ変換 # numpy_array # [[ 0 1 2] # [ 3 4 5] # [ 6 7 8]] df = pd.DataFrame(data=numpy_array,columns=['col_1','col_2','col_3']) # col_1 col_2 col_3 # 0 0.0 1.0 2.0 # 1 3.0 4.0 5.0 # 2 6.0 7.0 8.0 pd.DataFrame（Series） から list へ変換 # pandas.DataFrame to numpy.ndarray to list list_2d = df.to_numpy().tolist() # pandas.Series to numpy.ndarray to list list_1d = df[\"list_1d\"].to_numpy().tolist() 注意 df.values でも numpy.ndarray が取得できるが、現在は非推奨であり、df.to_numpy() が推奨されている。\n参考  ",
-  "wordCount" : "92",
+  "articleBody": "Pandas.DataFrame/Series と numpy.ndarray と list の相互変換 (複数の) list から pd.DataFrame へ変換 大きく２つの方法がある。\ndf = pd.DataFrame({'list_1':list_1, 'list_2':list_2, 'list_3'=list_3}) df = pd.DataFrame( data=zip(list_1, list_2, list_3), columns=[\"list_1\", \"list_2\", \"list_3\"], ) numpy.ndarray から pd.DataFrame へ変換 # numpy_array # [[ 0 1 2] # [ 3 4 5] # [ 6 7 8]] df = pd.DataFrame(data=numpy_array,columns=['col_1','col_2','col_3']) # col_1 col_2 col_3 # 0 0.0 1.0 2.0 # 1 3.0 4.0 5.0 # 2 6.0 7.0 8.0 pd.DataFrame（Series） から list へ変換 # pandas.DataFrame to numpy.ndarray to list list_2d = df.to_numpy().tolist() # pandas.Series to numpy.ndarray to list list_1d = df[\"list_1d\"].to_numpy().tolist() 注意 df.values でも numpy.ndarray が取得できるが、現在は非推奨であり、df.to_numpy() が推奨されている。\n参考  ",
+  "wordCount" : "99",
   "inLanguage": "en",
   "datePublished": "2021-12-02T00:00:00Z",
   "dateModified": "2021-12-02T00:00:00Z",
@@ -250,7 +250,11 @@ df = pd.DataFrame({&#39;list_1&#39;:list_1, &#39;list_2&#39;:list_2, &#39;list_3
 <h3 id="複数の-list-から-pddataframe-へ変換">(複数の) list から pd.DataFrame へ変換<a hidden class="anchor" aria-hidden="true" href="#複数の-list-から-pddataframe-へ変換">#</a></h3>
 <p>大きく２つの方法がある。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame({<span style="color:#e6db74">&#39;list_1&#39;</span>:list_1, <span style="color:#e6db74">&#39;list_2&#39;</span>:list_2, <span style="color:#e6db74">&#39;list_3&#39;</span><span style="color:#f92672">=</span>list_3})
-df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame(data<span style="color:#f92672">=</span>zip(list_1,list_2,list_3),columns<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#39;list_1&#39;</span>,<span style="color:#e6db74">&#39;list_2&#39;</span>,<span style="color:#e6db74">&#39;list_3&#39;</span>])
+
+df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame(
+    data<span style="color:#f92672">=</span>zip(list_1, list_2, list_3),
+    columns<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;list_1&#34;</span>, <span style="color:#e6db74">&#34;list_2&#34;</span>, <span style="color:#e6db74">&#34;list_3&#34;</span>],
+)
 </code></pre></div><h3 id="numpyndarray-から-pddataframe-へ変換">numpy.ndarray から pd.DataFrame へ変換<a hidden class="anchor" aria-hidden="true" href="#numpyndarray-から-pddataframe-へ変換">#</a></h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># numpy_array</span>
 <span style="color:#75715e"># [[ 0  1  2]</span>

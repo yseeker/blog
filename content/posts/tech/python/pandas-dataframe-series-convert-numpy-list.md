@@ -27,7 +27,11 @@ draft: false
 
 ```python
 df = pd.DataFrame({'list_1':list_1, 'list_2':list_2, 'list_3'=list_3})
-df = pd.DataFrame(data=zip(list_1,list_2,list_3),columns=['list_1','list_2','list_3'])
+
+df = pd.DataFrame(
+    data=zip(list_1, list_2, list_3),
+    columns=["list_1", "list_2", "list_3"],
+)
 ```
 
 ### numpy.ndarray から pd.DataFrame へ変換

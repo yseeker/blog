@@ -21,7 +21,7 @@ draft: false
 
 ## NGC 提供の Pytorch イメージを使って docker コンテナを立ち上げる。
 
-[NVIDIA NGC | CATALOG](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/pytorch)から NGC(NVIDIA GPU CLOUD)が提供している、Pytorch をとりあえず`docker run`をしてみる。
+[NVIDIA NGC | CATALOG](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/pytorch)から NGC(NVIDIA GPU CLOUD)が提供している、Pytorch の docker イメージをとりあえず`docker run`をしてみる。
 
 ```bash
 docker run --gpus all -it --rm nvcr.io/nvidia/pytorch:21.12-py3 /bin/bash
