@@ -124,16 +124,16 @@ img {
 
 @media print, screen and (max-width: 479px) {
   .dark .post-content {
-    font-size: 17px;
-    line-height: 1.8;
+    font-size: 16px;
+    line-height: 1.9;
     color: #dbdbdb !important;
   }
 }
 
 @media print, screen and (max-width: 479px) {
   .post-content {
-    font-size: 17px;
-    line-height: 1.8;
+    font-size: 16px;
+    line-height: 1.9;
   }
 }
 
