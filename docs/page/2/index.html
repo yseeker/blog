@@ -158,19 +158,6 @@ if (!doNotTrack) {
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>PythonとOpenCVで画像リストから動画を作成
-    </h2>
-  </header>
-  <section class="entry-content">
-    <p>openCV を使って画像リストから動画を作成する。 画像リストがあったときにそこから動画を生成するときに使う。
-from pathlib import Path from typing import List import cv2 def list_file_paths(dir_path: str) -&gt; List[str]: &#34;&#34;&#34; List file paths in a directory. Parameters ---------- dir_path : str Path of the directory Returns ------- List[str] List of the file paths in the directory &#34;&#34;&#34; return sorted([str(path) for path in Path(dir_path).rglob(&#34;*&#34;) if path.is_file()]) def create_mp4_video_from_image_path_list( output_video_path: str, image_path_list: List[str], fps: int, ) -&gt; None: &#34;&#34;&#34; Create mp4 video file from a image path list Parameters ---------- output_video_path : str Path of the output video image_path_list : List[str] Path of image file list fps : int fps (frames per second) &#34;&#34;&#34; height, width, _ = cv2....</p>
-  </section>
-  <footer class="entry-footer"><span title='2022-02-26 00:00:00 +0000 UTC'>February 26, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to PythonとOpenCVで画像リストから動画を作成" href="https://www.yusaito.com/blog/posts/tech/python/create-video-from-images-opencv/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
     <h2>Pathlibで相対パスを有効活用する
     </h2>
   </header>
@@ -293,6 +280,19 @@ itertools の解説その１ itertools.accumulate 累積和を返すイテレー
   </section>
   <footer class="entry-footer"><span title='2021-12-20 00:00:00 +0000 UTC'>December 20, 2021</span></footer>
   <a class="entry-link" aria-label="post link to Python : itertoolsの使い方 -その１-" href="https://www.yusaito.com/blog/posts/tech/python/how-to-use-itertools-1/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>Last day in Santa Barbara
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>この日にサンタバーバラに来てからあっという間に３年間が経った。２年間住んだ Berkshire Terrace ともお別れである。 家具の大部分は FaceBook のコミュニティを通して UCSB の学生に買い取ってもらったので大きいもので捨てるものはほとんど無かった。
+窓際のL字型の机キッチン＆ダイニングアパートと壺2年間住んだアパート。Berkshire Terraceバスの中から見たダウンタウン  空港への道中</p>
+  </section>
+  <footer class="entry-footer"><span title='2021-09-11 00:00:00 +0000 UTC'>September 11, 2021</span></footer>
+  <a class="entry-link" aria-label="post link to Last day in Santa Barbara" href="https://www.yusaito.com/blog/posts/us-life/last-day-in-santabarbara/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

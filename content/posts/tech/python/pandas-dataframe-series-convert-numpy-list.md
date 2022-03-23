@@ -1,9 +1,19 @@
 ---
 #author: "Hugo Authors"
-title: "Template"
-date: "2022-03-19"
-tags: ["template"]
-categories: ["Tech", "template"]
+title: "Pandas.DataFrame/Series と numpy.ndarray と list の相互変換"
+date: "2022-12-02"
+tags:
+  [
+    "python",
+    "pandas",
+    "Pandas.DataFrame",
+    "変換",
+    "numpy",
+    "array",
+    "numpy.ndarray",
+    "list",
+  ]
+categories: ["Tech", "Python"]
 ShowToc: true
 TocOpen: true
 draft: false
