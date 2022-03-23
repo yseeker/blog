@@ -40,7 +40,7 @@ img {
 @media print, screen and (max-width: 479px) {
   .post-title {
     font-size: 21px !important;
-    line-height: 2 !important;
+    line-height: 1.6 !important;
   }
 }
 
