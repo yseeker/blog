@@ -165,7 +165,7 @@ NOTE: The SHMEM allocation limit is set to the default of 64MB. This may be insu
     </h2>
   </header>
   <section class="entry-content">
-    <p>問題：Pandas で csv を読むと謎の Unnamed:0 というコラムが出現 解決策 その１ : pd.read_csv で index_col = 0 を指定 df = pd.read_csv(&#39;test.csv&#39;, index_col=0) その２ : そもそも保存するときに index を消す. df = pd.to_csv(&#39;test.csv&#39;, index = False) pandas の中身 ちなみに Unnamed:0 はこの辺りで追加されているらしい。
+    <p>問題：Pandas で csv を読むと謎の Unnamed:0 というコラムが出現 解決策 その１ : pd.read_csv で index_col = 0 を指定 df = pd.read_csv(&#39;test.csv&#39;, index_col=0) その２ : そもそも保存するときに index を消す df = pd.to_csv(&#39;test.csv&#39;, index = False) pandas の中身 ちなみに Unnamed:0 はこの辺りで追加されているらしい。
 # ref. https://github.com/pandas-dev/pandas/blob/ad190575aa75962d2d0eade2de81a5fe5a2e285b/pandas/tests/io/parser/test_mangle_dupes.py#L120-L140 @skip_pyarrow def test_mangled_unnamed_placeholders(all_parsers): # xref gh-13017 orig_key = &#34;0&#34; parser = all_parsers orig_value = [1, 2, 3] df = DataFrame({orig_key: orig_value}) # This test recursively updates `df`. for i in range(3): expected = DataFrame() for j in range(i &#43; 1): col_name = &#34;Unnamed: 0&#34; &#43; f&#34;....</p>
   </section>
   <footer class="entry-footer"><span title='2022-03-22 00:00:00 +0000 UTC'>March 22, 2022</span></footer>

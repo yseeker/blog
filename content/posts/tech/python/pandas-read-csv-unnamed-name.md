@@ -19,7 +19,7 @@ draft: False
 df = pd.read_csv('test.csv', index_col=0)
 ```
 
-### その２ : そもそも保存するときに index を消す.
+#### その２ : そもそも保存するときに index を消す
 
 ```python
 df = pd.to_csv('test.csv', index = False)

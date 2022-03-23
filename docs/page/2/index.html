@@ -284,15 +284,15 @@ itertools の解説その１ itertools.accumulate 累積和を返すイテレー
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>Last day in Santa Barbara
+    <h2>Pandas.DataFrame/Series と numpy.ndarray と list の相互変換
     </h2>
   </header>
   <section class="entry-content">
-    <p>この日にサンタバーバラに来てからあっという間に３年間が経った。２年間住んだ Berkshire Terrace ともお別れである。 家具の大部分は FaceBook のコミュニティを通して UCSB の学生に買い取ってもらったので大きいもので捨てるものはほとんど無かった。
-窓際のL字型の机キッチン＆ダイニングアパートと壺2年間住んだアパート。Berkshire Terraceバスの中から見たダウンタウン  空港への道中</p>
+    <p>Pandas.DataFrame/Series と numpy.ndarray と list の相互変換 (複数の) list から pd.DataFrame へ変換 大きく２つの方法がある。
+df = pd.DataFrame({&#39;list_1&#39;:list_1, &#39;list_2&#39;:list_2, &#39;list_3&#39;=list_3}) df = pd.DataFrame(data=zip(list_1,list_2,list_3),columns=[&#39;list_1&#39;,&#39;list_2&#39;,&#39;list_3&#39;]) numpy.ndarray から pd.DataFrame へ変換 # numpy_array # [[ 0 1 2] # [ 3 4 5] # [ 6 7 8]] df = pd.DataFrame(data=numpy_array,columns=[&#39;col_1&#39;,&#39;col_2&#39;,&#39;col_3&#39;]) # col_1 col_2 col_3 # 0 0.0 1.0 2.0 # 1 3.0 4.0 5.0 # 2 6.0 7.0 8.0 pd.DataFrame（Series） から list へ変換 # pandas.DataFrame to numpy....</p>
   </section>
-  <footer class="entry-footer"><span title='2021-09-11 00:00:00 +0000 UTC'>September 11, 2021</span></footer>
-  <a class="entry-link" aria-label="post link to Last day in Santa Barbara" href="https://www.yusaito.com/blog/posts/us-life/last-day-in-santabarbara/"></a>
+  <footer class="entry-footer"><span title='2021-12-02 00:00:00 +0000 UTC'>December 2, 2021</span></footer>
+  <a class="entry-link" aria-label="post link to Pandas.DataFrame/Series と numpy.ndarray と list の相互変換" href="https://www.yusaito.com/blog/posts/tech/python/pandas-dataframe-series-convert-numpy-list/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
