@@ -171,5 +171,14 @@ itertools の解説その１ itertools.accumulate 累積和を返すイテレー
 使い方 for n in itertools.combinations_with_replacement(&amp;#39;ABC&amp;#39;, 2): print(n) # --&amp;gt; AA AB AC BB BC CC itertools.</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://www.yusaito.com/blog/posts/tech/python/pandas-unnamed/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/posts/tech/python/pandas-unnamed/</guid>
+      <description>data = pd.read_csv(&amp;lsquo;a.csv&amp;rsquo;, index_col=0) data = pd.read_csv(&amp;lsquo;a.csv&amp;rsquo;)</description>
+    </item>
+    
   </channel>
 </rss>

@@ -39,7 +39,8 @@ img {
 
 @media print, screen and (max-width: 479px) {
   .post-title {
-    font-size: 22px !important;
+    font-size: 21px !important;
+    line-height: 2 !important;
   }
 }
 
