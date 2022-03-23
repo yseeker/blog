@@ -10,7 +10,28 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sun, 20 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.yusaito.com/blog/categories/tech/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 23 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.yusaito.com/blog/categories/tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>nvcr.io/nvidia/pytorchのイメージからdockerコンテナを作成したときのNOTE</title>
+      <link>https://www.yusaito.com/blog/posts/tech/linux/docker-nvcr-pytorch-ipc-host-ulimit-memlock.md/</link>
+      <pubDate>Wed, 23 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/posts/tech/linux/docker-nvcr-pytorch-ipc-host-ulimit-memlock.md/</guid>
+      <description>NGC 提供の Pytorch イメージを使って docker コンテナを立ち上げる。 NVIDIA NGC | CATALOGから NGC(NVIDIA GPU CLOUD)が提供している、Pytorch をとりあえずdocker runをしてみる。
+docker run --gpus all -it --rm nvcr.io/nvidia/pytorch:21.12-py3 /bin/bash すると、下記のような NOTE が一番下に現れたので調べてみた。
+NOTE: The SHMEM allocation limit is set to the default of 64MB. This may be insufficient for PyTorch. NVIDIA recommends the use of the following flags: docker run --gpus all --ipc=host --ulimit memlock=-1 --ulimit stack=67108864 ... The SHMEM allocation limit is set to the default of 64MB 一時ファイル領域の/dev/shm のサイズでデフォルト値は 64GB。--shm-size 2g みたいにしておけばよい。</description>
+    </item>
+    
+    <item>
+      <title>Pandasでread_csvしたときに出現するUnnamed:0を消す方法</title>
+      <link>https://www.yusaito.com/blog/posts/tech/python/pandas-read-csv-unnamed-name/</link>
+      <pubDate>Tue, 22 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/posts/tech/python/pandas-read-csv-unnamed-name/</guid>
+      <description>問題：Pandas で csv を読むと謎の Unnamed:0 というコラムが出現 解決策 その１ : pd.read_csv で index_col = 0 を指定 df = pd.read_csv(&amp;#39;test.csv&amp;#39;, index_col=0) その２ : そもそも保存するときに index を消す. df = pd.to_csv(&amp;#39;test.csv&amp;#39;, index = False) pandas の中身 ちなみに Unnamed:0 はこの辺りで追加されているらしい。
+# ref. https://github.com/pandas-dev/pandas/blob/ad190575aa75962d2d0eade2de81a5fe5a2e285b/pandas/tests/io/parser/test_mangle_dupes.py#L120-L140 @skip_pyarrow def test_mangled_unnamed_placeholders(all_parsers): # xref gh-13017 orig_key = &amp;#34;0&amp;#34; parser = all_parsers orig_value = [1, 2, 3] df = DataFrame({orig_key: orig_value}) # This test recursively updates `df`. for i in range(3): expected = DataFrame() for j in range(i + 1): col_name = &amp;#34;Unnamed: 0&amp;#34; + f&amp;#34;.</description>
+    </item>
+    
     <item>
       <title>Python : hashlibを使って、ハッシュ値を求める</title>
       <link>https://www.yusaito.com/blog/posts/tech/python/how-to-use-hashlib/</link>
@@ -29,6 +50,16 @@
       <guid>https://www.yusaito.com/blog/posts/tech/python/how-to-use-mpire-multiprocess/</guid>
       <description>Python では joblib や concurrent.futures などで簡単にマルチプロセスできるが、&amp;ldquo;MultiProcessing Is Really Easy&amp;quot;という名の MPIRE というライブラリを見つけたので備忘録として残しておく。この記事によると、特定の場合では joblib や concurrent.futures よりも性能が良いらしい。
 MPIRE のインストール pip install mpire MPIRE の使い方 from mpire import WorkerPool def time_consuming_function(param): return None with WorkerPool(n_jobs=8) as pool: results = pool.map_unordered(time_consuming_function, interator, progress_bar=True) 参考  </description>
+    </item>
+    
+    <item>
+      <title>Template</title>
+      <link>https://www.yusaito.com/blog/posts/tech/python/pandas-dataframe-series-convert-numpy-list/</link>
+      <pubDate>Sat, 19 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/posts/tech/python/pandas-dataframe-series-convert-numpy-list/</guid>
+      <description>Pandas.DataFrame/Series と numpy.ndarray と list の相互変換 (複数の) list から pd.DataFrame へ変換 大きく２つの方法がある。
+df = pd.DataFrame({&amp;#39;list_1&amp;#39;:list_1, &amp;#39;list_2&amp;#39;:list_2, &amp;#39;list_3&amp;#39;=list_3}) df = pd.DataFrame(data=zip(list_1,list_2,list_3),columns=[&amp;#39;list_1&amp;#39;,&amp;#39;list_2&amp;#39;,&amp;#39;list_3&amp;#39;]) numpy.ndarray から pd.DataFrame へ変換 # numpy_array # [[ 0 1 2] # [ 3 4 5] # [ 6 7 8]] df = pd.DataFrame(data=numpy_array,columns=[&amp;#39;col_1&amp;#39;,&amp;#39;col_2&amp;#39;,&amp;#39;col_3&amp;#39;]) # col_1 col_2 col_3 # 0 0.0 1.0 2.0 # 1 3.0 4.0 5.0 # 2 6.0 7.0 8.0 pd.DataFrame（Series） から list へ変換 # pandas.DataFrame to numpy.</description>
     </item>
     
     <item>

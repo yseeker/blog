@@ -10,7 +10,28 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sun, 20 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.yusaito.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 23 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.yusaito.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>nvcr.io/nvidia/pytorchのイメージからdockerコンテナを作成したときのNOTE</title>
+      <link>https://www.yusaito.com/blog/posts/tech/linux/docker-nvcr-pytorch-ipc-host-ulimit-memlock.md/</link>
+      <pubDate>Wed, 23 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/posts/tech/linux/docker-nvcr-pytorch-ipc-host-ulimit-memlock.md/</guid>
+      <description>NGC 提供の Pytorch イメージを使って docker コンテナを立ち上げる。 NVIDIA NGC | CATALOGから NGC(NVIDIA GPU CLOUD)が提供している、Pytorch をとりあえずdocker runをしてみる。
+docker run --gpus all -it --rm nvcr.io/nvidia/pytorch:21.12-py3 /bin/bash すると、下記のような NOTE が一番下に現れたので調べてみた。
+NOTE: The SHMEM allocation limit is set to the default of 64MB. This may be insufficient for PyTorch. NVIDIA recommends the use of the following flags: docker run --gpus all --ipc=host --ulimit memlock=-1 --ulimit stack=67108864 ... The SHMEM allocation limit is set to the default of 64MB 一時ファイル領域の/dev/shm のサイズでデフォルト値は 64GB。--shm-size 2g みたいにしておけばよい。</description>
+    </item>
+    
+    <item>
+      <title>Pandasでread_csvしたときに出現するUnnamed:0を消す方法</title>
+      <link>https://www.yusaito.com/blog/posts/tech/python/pandas-read-csv-unnamed-name/</link>
+      <pubDate>Tue, 22 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/posts/tech/python/pandas-read-csv-unnamed-name/</guid>
+      <description>問題：Pandas で csv を読むと謎の Unnamed:0 というコラムが出現 解決策 その１ : pd.read_csv で index_col = 0 を指定 df = pd.read_csv(&amp;#39;test.csv&amp;#39;, index_col=0) その２ : そもそも保存するときに index を消す. df = pd.to_csv(&amp;#39;test.csv&amp;#39;, index = False) pandas の中身 ちなみに Unnamed:0 はこの辺りで追加されているらしい。
+# ref. https://github.com/pandas-dev/pandas/blob/ad190575aa75962d2d0eade2de81a5fe5a2e285b/pandas/tests/io/parser/test_mangle_dupes.py#L120-L140 @skip_pyarrow def test_mangled_unnamed_placeholders(all_parsers): # xref gh-13017 orig_key = &amp;#34;0&amp;#34; parser = all_parsers orig_value = [1, 2, 3] df = DataFrame({orig_key: orig_value}) # This test recursively updates `df`. for i in range(3): expected = DataFrame() for j in range(i + 1): col_name = &amp;#34;Unnamed: 0&amp;#34; + f&amp;#34;.</description>
+    </item>
+    
     <item>
       <title>Python : hashlibを使って、ハッシュ値を求める</title>
       <link>https://www.yusaito.com/blog/posts/tech/python/how-to-use-hashlib/</link>
@@ -29,6 +50,16 @@
       <guid>https://www.yusaito.com/blog/posts/tech/python/how-to-use-mpire-multiprocess/</guid>
       <description>Python では joblib や concurrent.futures などで簡単にマルチプロセスできるが、&amp;ldquo;MultiProcessing Is Really Easy&amp;quot;という名の MPIRE というライブラリを見つけたので備忘録として残しておく。この記事によると、特定の場合では joblib や concurrent.futures よりも性能が良いらしい。
 MPIRE のインストール pip install mpire MPIRE の使い方 from mpire import WorkerPool def time_consuming_function(param): return None with WorkerPool(n_jobs=8) as pool: results = pool.map_unordered(time_consuming_function, interator, progress_bar=True) 参考  </description>
+    </item>
+    
+    <item>
+      <title>Template</title>
+      <link>https://www.yusaito.com/blog/posts/tech/python/pandas-dataframe-series-convert-numpy-list/</link>
+      <pubDate>Sat, 19 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/posts/tech/python/pandas-dataframe-series-convert-numpy-list/</guid>
+      <description>Pandas.DataFrame/Series と numpy.ndarray と list の相互変換 (複数の) list から pd.DataFrame へ変換 大きく２つの方法がある。
+df = pd.DataFrame({&amp;#39;list_1&amp;#39;:list_1, &amp;#39;list_2&amp;#39;:list_2, &amp;#39;list_3&amp;#39;=list_3}) df = pd.DataFrame(data=zip(list_1,list_2,list_3),columns=[&amp;#39;list_1&amp;#39;,&amp;#39;list_2&amp;#39;,&amp;#39;list_3&amp;#39;]) numpy.ndarray から pd.DataFrame へ変換 # numpy_array # [[ 0 1 2] # [ 3 4 5] # [ 6 7 8]] df = pd.DataFrame(data=numpy_array,columns=[&amp;#39;col_1&amp;#39;,&amp;#39;col_2&amp;#39;,&amp;#39;col_3&amp;#39;]) # col_1 col_2 col_3 # 0 0.0 1.0 2.0 # 1 3.0 4.0 5.0 # 2 6.0 7.0 8.0 pd.DataFrame（Series） から list へ変換 # pandas.DataFrame to numpy.</description>
     </item>
     
     <item>
@@ -390,8 +421,8 @@ want to 〜 (例) Wanna grab food? (正式 ver. Do you want to grab food?</descr
   大規模な研究室（例えば 20 人以上、この辺の感覚は分野によって違うと思う）か小規模な研究室（5 人くらい？）：どちらも一長一短で英語で検索するとこの手の議論がたくさん出てくるので興味があれば読むと良いといいと思う。
   いわゆる大御所のラボか立ち上げ直後のラボ：これもラボの立ち上げに関わりたいかそうでないかによる。ちなみに大御所のラボにいっても必ずしも成果が出るとは限らない。成果を出したいなら（そのラボからの）成果が直近でたくさん出ているラボに行ったほうが良いと思う。
   海外ラボの場合 上記に加え、海外ラボの場合はなるべく非英語圏の特定の人種に偏っていないラボに行くことが重要だと思う。例えば中国人が 90％以上を占めるラボで使われる言語は間違いなく中国語だし、このようなラボに中国人以外の方が入って、数ヶ月や 1 年で去る話はいくつか聞いても、大活躍して論文を出しまくっている例は見たことも聞いたこともない。（もちろん中国語が堪能なら話は違う。）日本人に限らずこの点を見落とす人は意外にも多い。私はネイティブっぽいメンバーが半分以上いるところだけをラボ選びの際に探した。
-自分の場合 学部＆大学院：私の出身の東大物理工学科では研究室選びは 4 年次の最初のじゃんけん大会（2012 年の話、現在はくじ引きらしい）で決まる。希望の研究室を黒板に書いて定員よりも多かったらじゃんけんをして決める。負けたら&amp;quot;相対的に&amp;quot;人気のない研究室に行くことになる。この毎年恒例のじゃんけん大会は、学科のイベントとして１年で最も盛り上がる日の 1 つだったのではないかと思う。私は当時研究テーマだけでラボを選び、運良くじゃんけんを制し、そのラボで学部 4 年から博士 3 年までの 6 年を過ごした。
-海外ポスドク：アメリカに行くならカリフォルニア、研究するならカリフォルニア、住むならカリフォルニアという感じで圧倒的にカリフォルニアバイアスがかかった状態でラボ選びを行った。天気が良ければ全てハッピーくらいの能天気ぶりである。学部＆大学院時代のボスが当時 60 歳くらいの教授だったので、逆に独立から数年以内のラボに行ってみたかった。カリフォルニアという条件を除いても、自分の興味、独立から数年以内という条件、上記の通り人種の偏りが少ないという条件、現在成果を出している/これから成果を出しそうという&amp;quot;雰囲気を感じる&amp;quot;ラボはニューヨークに 1 つ、カリフォルニア・サンタバーバラに 1 つ（現在所属のラボ）しかなかった。ちなみに現在所属している UCSB のラボ（雰囲気を感じた方）は、当時ボスが独立から 2 年目のラボだったということもあり、私がメールで応募したとき（2017 年 8-9 月くらい）にはラボの出版論文は 1 つもなかったし、大学院時代のボスは現ボスのことを全く知らなかった。（大学院時代のボスからはコネのあるラボをいくつか紹介されたが、若手のラボではなかったか、もしくは上記の人種のバランスの条件を満たさなかったので、最優先の候補にはしなかった。）メールで応募し、スカイプインタビューなどをした数カ月後、運良く現地の研究機関からElings Prize Fellowshipというポスドクフェローシップを頂けることが決定し、現在所属のラボに行けることになった。当時は論文がまだ 1 本も出ていない立ち上げから間もないラボに行くことに一抹の不安を感じたが、&amp;ldquo;ええい、ままよ&amp;quot;式の意思決定は自分の人生経験上意外にも成功することが多いので、とりあえず出たとこ勝負という気持ちで行くことにして、念願のカリフォルニアでのポスドク生活が始まった。</description>
+自分の場合 学部＆大学院 私の出身の東大物理工学科では研究室選びは 4 年次の最初のじゃんけん大会（2012 年の話、現在はくじ引きらしい）で決まる。希望の研究室を黒板に書いて定員よりも多かったらじゃんけんをして決める。負けたら&amp;quot;相対的に&amp;quot;人気のない研究室に行くことになる。この毎年恒例のじゃんけん大会は、学科のイベントとして１年で最も盛り上がる日の 1 つだったのではないかと思う。私は当時研究テーマだけでラボを選び、運良くじゃんけんを制し、そのラボで学部 4 年から博士 3 年までの 6 年を過ごした。
+海外ポスドク アメリカに行くならカリフォルニア、研究するならカリフォルニア、住むならカリフォルニアという感じで圧倒的にカリフォルニアバイアスがかかった状態でラボ選びを行った。天気が良ければ全てハッピーくらいの能天気ぶりである。学部＆大学院時代のボスが当時 60 歳くらいの教授だったので、逆に独立から数年以内のラボに行ってみたかった。カリフォルニアという条件を除いても、自分の興味、独立から数年以内という条件、上記の通り人種の偏りが少ないという条件、現在成果を出している/これから成果を出しそうという&amp;quot;雰囲気を感じる&amp;quot;ラボはニューヨークに 1 つ、カリフォルニア・サンタバーバラに 1 つ（現在所属のラボ）しかなかった。ちなみに現在所属している UCSB のラボ（雰囲気を感じた方）は、当時ボスが独立から 2 年目のラボだったということもあり、私がメールで応募したとき（2017 年 8-9 月くらい）にはラボの出版論文は 1 つもなかったし、大学院時代のボスは現ボスのことを全く知らなかった。（大学院時代のボスからはコネのあるラボをいくつか紹介されたが、若手のラボではなかったか、もしくは上記の人種のバランスの条件を満たさなかったので、最優先の候補にはしなかった。）メールで応募し、スカイプインタビューなどをした数カ月後、運良く現地の研究機関からElings Prize Fellowshipというポスドクフェローシップを頂けることが決定し、現在所属のラボに行けることになった。当時は論文がまだ 1 本も出ていない立ち上げから間もないラボに行くことに一抹の不安を感じたが、&amp;ldquo;ええい、ままよ&amp;quot;式の意思決定は自分の人生経験上意外にも成功することが多いので、とりあえず出たとこ勝負という気持ちで行くことにして、念願のカリフォルニアでのポスドク生活が始まった。</description>
     </item>
     
     <item>
@@ -424,15 +455,6 @@ want to 〜 (例) Wanna grab food? (正式 ver. Do you want to grab food?</descr
       <guid>https://www.yusaito.com/blog/posts/us-life/first-day-in-santabarbara/</guid>
       <description>今日からカリフォルニア・サンタバーバラでの生活が始まった。 ロサンゼルス空港から出たあとはサンターバーバラシャトルバスに乗ってサンタバーバラに向かう。  アイラビスタの Trigo Rd.にあるシェアハウスでまず生活を立げていく。
  </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://www.yusaito.com/blog/posts/tech/python/pandas-unnamed/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.yusaito.com/blog/posts/tech/python/pandas-unnamed/</guid>
-      <description>data = pd.read_csv(&amp;lsquo;a.csv&amp;rsquo;, index_col=0) data = pd.read_csv(&amp;lsquo;a.csv&amp;rsquo;)</description>
     </item>
     
     

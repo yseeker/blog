@@ -177,6 +177,19 @@ if (!doNotTrack) {
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2>Pandasでread_csvしたときに出現するUnnamed:0を消す方法
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>問題：Pandas で csv を読むと謎の Unnamed:0 というコラムが出現 解決策 その１ : pd.read_csv で index_col = 0 を指定 df = pd.read_csv(&#39;test.csv&#39;, index_col=0) その２ : そもそも保存するときに index を消す. df = pd.to_csv(&#39;test.csv&#39;, index = False) pandas の中身 ちなみに Unnamed:0 はこの辺りで追加されているらしい。
+# ref. https://github.com/pandas-dev/pandas/blob/ad190575aa75962d2d0eade2de81a5fe5a2e285b/pandas/tests/io/parser/test_mangle_dupes.py#L120-L140 @skip_pyarrow def test_mangled_unnamed_placeholders(all_parsers): # xref gh-13017 orig_key = &#34;0&#34; parser = all_parsers orig_value = [1, 2, 3] df = DataFrame({orig_key: orig_value}) # This test recursively updates `df`. for i in range(3): expected = DataFrame() for j in range(i &#43; 1): col_name = &#34;Unnamed: 0&#34; &#43; f&#34;....</p>
+  </section>
+  <footer class="entry-footer"><span title='2022-03-22 00:00:00 +0000 UTC'>March 22, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to Pandasでread_csvしたときに出現するUnnamed:0を消す方法" href="https://www.yusaito.com/blog/posts/tech/python/pandas-read-csv-unnamed-name/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2>Python : hashlibを使って、ハッシュ値を求める
     </h2>
   </header>
@@ -199,6 +212,19 @@ MPIRE のインストール pip install mpire MPIRE の使い方 from mpire impo
   </section>
   <footer class="entry-footer"><span title='2022-03-19 00:00:00 +0000 UTC'>March 19, 2022</span></footer>
   <a class="entry-link" aria-label="post link to Pythonで並列処理 : MPIREの使い方" href="https://www.yusaito.com/blog/posts/tech/python/how-to-use-mpire-multiprocess/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>Template
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>Pandas.DataFrame/Series と numpy.ndarray と list の相互変換 (複数の) list から pd.DataFrame へ変換 大きく２つの方法がある。
+df = pd.DataFrame({&#39;list_1&#39;:list_1, &#39;list_2&#39;:list_2, &#39;list_3&#39;=list_3}) df = pd.DataFrame(data=zip(list_1,list_2,list_3),columns=[&#39;list_1&#39;,&#39;list_2&#39;,&#39;list_3&#39;]) numpy.ndarray から pd.DataFrame へ変換 # numpy_array # [[ 0 1 2] # [ 3 4 5] # [ 6 7 8]] df = pd.DataFrame(data=numpy_array,columns=[&#39;col_1&#39;,&#39;col_2&#39;,&#39;col_3&#39;]) # col_1 col_2 col_3 # 0 0.0 1.0 2.0 # 1 3.0 4.0 5.0 # 2 6.0 7.0 8.0 pd.DataFrame（Series） から list へ変換 # pandas.DataFrame to numpy....</p>
+  </section>
+  <footer class="entry-footer"><span title='2022-03-19 00:00:00 +0000 UTC'>March 19, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to Template" href="https://www.yusaito.com/blog/posts/tech/python/pandas-dataframe-series-convert-numpy-list/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -281,31 +307,6 @@ import csv from pathlib import Path current_dir = Path(__file__).parent image_pa
   </section>
   <footer class="entry-footer"><span title='2022-02-18 00:00:00 +0000 UTC'>February 18, 2022</span></footer>
   <a class="entry-link" aria-label="post link to Pathlibで相対パスを有効活用する" href="https://www.yusaito.com/blog/posts/tech/python/relative-path-with-pathlib/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>loggerとprintとtqdmの併用
-    </h2>
-  </header>
-  <section class="entry-content">
-    <p>logger と print と tqdm を併用する場合は以下のコードをコピペする。
-import contextlib import logging import logging.handlers import sys from time import sleep from tqdm import tqdm from tqdm.contrib import DummyTqdmFile class TqdmLoggingHandler(logging.Handler): colors = {&#34;INFO&#34;: &#34;\033[37m{}\033[0m&#34;} def __init__(self, level=logging.NOTSET): super().__init__(level) def emit(self, record): try: record.msg = TqdmLoggingHandler.colors.get(record.levelname, &#34;{}&#34;).format( record.msg ) msg = self.format(record) tqdm.write(msg, file=sys.stderr) self.flush() except Exception: self.handleError(record) class CustomFormatter(logging.Formatter): grey = &#34;\x1b[38;20m&#34; green = &#34;\x1b[32;20m&#34; yellow = &#34;\x1b[33;20m&#34; red = &#34;\x1b[31;20m&#34; bold_red = &#34;\x1b[31;1m&#34; reset = &#34;\x1b[0m&#34; format = &#34;[%(asctime)s] [%(levelname)s] [%(process)d] [%(name)s] [%(funcName)s] [%(lineno)d] %(message)s&#34; FORMATS = { logging....</p>
-  </section>
-  <footer class="entry-footer"><span title='2022-02-13 00:00:00 +0000 UTC'>February 13, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to loggerとprintとtqdmの併用" href="https://www.yusaito.com/blog/posts/tech/python/tqdm-logging-print/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Pythonでファイルリストからの並列処理
-    </h2>
-  </header>
-  <section class="entry-content">
-    <p>ファイルのリストを受け取って何らかの並列処理をする。 from concurrent.futures import ProcessPoolExecutor, ThreadPoolExecutor from functools import partial from pathlib import Path from typing import List def list_file_paths(dir_path: str) -&gt; List[str]: &#34;&#34;&#34; List file paths in a directory. Parameters ---------- dir_path : str Path of the directory Returns ------- List[str] List of the file paths in the directory &#34;&#34;&#34; return sorted([str(path) for path in Path(dir_path).rglob(&#34;*&#34;) if path.is_file()]) def task(same_value, same_value2, diffent_values): return None def multiprocess_task(task, same_value, same_value2, diffent_values): with ProcessPoolExecutor() as executor: results = list(executor....</p>
-  </section>
-  <footer class="entry-footer"><span title='2022-02-03 00:00:00 +0000 UTC'>February 3, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to Pythonでファイルリストからの並列処理" href="https://www.yusaito.com/blog/posts/tech/python/multiprocess-multithreading-utils/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
