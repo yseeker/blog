@@ -30,9 +30,10 @@ docker run --gpus all -it --rm nvcr.io/nvidia/pytorch:21.12-py3 /bin/bash
 すると、下記のような NOTE が一番下に現れたので調べてみた。
 
 ```
-NOTE: The SHMEM allocation limit is set to the default of 64MB.  This may be
-   insufficient for PyTorch.  NVIDIA recommends the use of the following flags:
-   docker run --gpus all --ipc=host --ulimit memlock=-1 --ulimit stack=67108864 ...
+NOTE: The SHMEM allocation limit is set to the default of 64MB.
+This may be insufficient for PyTorch.  NVIDIA recommends the use
+of the following flags: docker run --gpus all --ipc=host --ulimit
+memlock=-1 --ulimit stack=67108864 ...
 ```
 
 ### The SHMEM allocation limit is set to the default of 64MB
@@ -53,4 +54,4 @@ NOTE: The SHMEM allocation limit is set to the default of 64MB.  This may be
 
 ## 参考
 
-<iframe class="hatenablogcard" style="width:100%;height:155px;margin:15px 0;max-width:560px;" title="PIL IOError: image file truncated with big images" src="https://hatenablog-parts.com/embed?url=https://stackoverflow.com/questions/12984426/pil-ioerror-image-file-truncated-with-big-images" frameborder="0" scrolling="no"></iframe>
+<iframe class="hatenablogcard" style="width:100%;height:155px;margin:15px 0;max-width:560px;" title="Docs » Engine リファレンス » コマンドライン・リファレンス » run" src="https://hatenablog-parts.com/embed?url=http://docs.docker.jp/v19.03/engine/reference/commandline/run.html" frameborder="0" scrolling="no"></iframe>

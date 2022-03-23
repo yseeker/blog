@@ -251,9 +251,10 @@ NOTE: The SHMEM allocation limit is set to the default of 64MB. This may be insu
 <p><a href="https://catalog.ngc.nvidia.com/orgs/nvidia/containers/pytorch">NVIDIA NGC | CATALOG</a>から NGC(NVIDIA GPU CLOUD)が提供している、Pytorch をとりあえず<code>docker run</code>をしてみる。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker run --gpus all -it --rm nvcr.io/nvidia/pytorch:21.12-py3 /bin/bash
 </code></pre></div><p>すると、下記のような NOTE が一番下に現れたので調べてみた。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">NOTE: The SHMEM allocation limit is set to the default of 64MB.  This may be
-   insufficient for PyTorch.  NVIDIA recommends the use of the following flags:
-   docker run --gpus all --ipc=host --ulimit memlock=-1 --ulimit stack=67108864 ...
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">NOTE: The SHMEM allocation limit is set to the default of 64MB.
+This may be insufficient for PyTorch.  NVIDIA recommends the use
+of the following flags: docker run --gpus all --ipc=host --ulimit
+memlock=-1 --ulimit stack=67108864 ...
 </code></pre></div><h3 id="the-shmem-allocation-limit-is-set-to-the-default-of-64mb">The SHMEM allocation limit is set to the default of 64MB<a hidden class="anchor" aria-hidden="true" href="#the-shmem-allocation-limit-is-set-to-the-default-of-64mb">#</a></h3>
 <p>一時ファイル領域の<code>/dev/shm</code> のサイズでデフォルト値は 64GB。<code>--shm-size 2g</code> みたいにしておけばよい。</p>
 <h3 id="--ipchost">&ndash;ipc=host<a hidden class="anchor" aria-hidden="true" href="#--ipchost">#</a></h3>
@@ -263,7 +264,7 @@ NOTE: The SHMEM allocation limit is set to the default of 64MB. This may be insu
 <h3 id="--ulimit-stack67108864">&ndash;ulimit stack=67108864<a hidden class="anchor" aria-hidden="true" href="#--ulimit-stack67108864">#</a></h3>
 <p>スタック領域サイズの上限いっぱいまであげる。</p>
 <h2 id="参考">参考<a hidden class="anchor" aria-hidden="true" href="#参考">#</a></h2>
-<iframe class="hatenablogcard" style="width:100%;height:155px;margin:15px 0;max-width:560px;" title="PIL IOError: image file truncated with big images" src="https://hatenablog-parts.com/embed?url=https://stackoverflow.com/questions/12984426/pil-ioerror-image-file-truncated-with-big-images" frameborder="0" scrolling="no"></iframe>
+<iframe class="hatenablogcard" style="width:100%;height:155px;margin:15px 0;max-width:560px;" title="Docs » Engine リファレンス » コマンドライン・リファレンス » run" src="https://hatenablog-parts.com/embed?url=http://docs.docker.jp/v19.03/engine/reference/commandline/run.html" frameborder="0" scrolling="no"></iframe>
 
 
     <br>
