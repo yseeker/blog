@@ -45,7 +45,7 @@ outputs:
 googleAnalytics: G-X5LTDFN76J
 params:
   assets:
-    disableHLJS: true
+    disableHLJS: false
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   #description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
   #author: Theme PaperMod
