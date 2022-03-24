@@ -111,7 +111,8 @@ img {
 @media print, screen and (min-width: 480px) {
   .post-content {
     font-size: 18px;
-    line-height: 2;
+    line-height: 1.9;
+    /* line-height: 2; */
     color: #363636 !important;
   }
 }
@@ -119,7 +120,8 @@ img {
 @media print, screen and (min-width: 480px) {
   .dark .post-content {
     font-size: 18px;
-    line-height: 2;
+    line-height: 1.9;
+    /* line-height: 2; */
     color: #dbdbdb !important;
   }
 }
