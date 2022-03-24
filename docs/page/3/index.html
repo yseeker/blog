@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><script type='text/javascript' defer src="https://www.yusaito.com/blog//js/prism.js"></script>
-<meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
@@ -109,7 +108,7 @@ if (!doNotTrack) {
 </script>
 
 <header class="header">
-
+    <script type='text/javascript' defer src="https://www.yusaito.com/blog//js/prism.js"></script>
     <nav class="nav">
         <div class="logo">
             <a href="https://www.yusaito.com/blog/" accesskey="h" title="YS&#39;s blog (Alt + H)">YS&#39;s blog</a>
@@ -156,6 +155,19 @@ if (!doNotTrack) {
     </nav>
 </header>
 <main class="main"> 
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>Pandas.DataFrame/Series と numpy.ndarray と list の相互変換
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>Pandas.DataFrame/Series と numpy.ndarray と list の相互変換 (複数の) list から pd.DataFrame へ変換 大きく２つの方法がある。
+df = pd.DataFrame({&#39;list_1&#39;:list_1, &#39;list_2&#39;:list_2, &#39;list_3&#39;=list_3}) df = pd.DataFrame( data=zip(list_1, list_2, list_3), columns=[&#34;list_1&#34;, &#34;list_2&#34;, &#34;list_3&#34;], ) numpy.ndarray から pd.DataFrame へ変換 # numpy_array # [[ 0 1 2] # [ 3 4 5] # [ 6 7 8]] df = pd.DataFrame(data=numpy_array,columns=[&#39;col_1&#39;,&#39;col_2&#39;,&#39;col_3&#39;]) # col_1 col_2 col_3 # 0 0.0 1.0 2.0 # 1 3.0 4.0 5.0 # 2 6.0 7.0 8.0 pd....</p>
+  </section>
+  <footer class="entry-footer"><span title='2021-12-02 00:00:00 +0000 UTC'>December 2, 2021</span></footer>
+  <a class="entry-link" aria-label="post link to Pandas.DataFrame/Series と numpy.ndarray と list の相互変換" href="https://www.yusaito.com/blog/posts/tech/python/pandas-dataframe-series-convert-numpy-list/"></a>
+</article>
 
 <article class="post-entry"> 
   <header class="entry-header">
@@ -284,21 +296,6 @@ The Institute of Photonic Sciences @ Castelldefels, Spain リンダウの帰り�
   </section>
   <footer class="entry-footer"><span title='2021-08-11 00:00:00 +0000 UTC'>August 11, 2021</span></footer>
   <a class="entry-link" aria-label="post link to 若者の街、アイラビスタ" href="https://www.yusaito.com/blog/posts/us-life/islavista/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Cancun
-    </h2>
-  </header>
-  <section class="entry-content">
-    <p>アメリカ生活最後の思い出として、妻とメキシコのカンクンへ旅行に行った。 宿泊したホテルはハイアット・ジラーラという所で年齢制限があるため子供は宿泊できない大人オンリーの空間である。ホテル内のプールから望むカリブ海は絶景だった。 オールインクルーシブプランのためホテル内のレストランであればどこでも食べ放題でとても豪華なひとときを過ごした。
-午前１１時くらいからホテル中央のバーでお酒も飲み放題になる。 アジア料理店アシアナとメキシコ料理店マリアマリエ インターナショナルビュッフェのスパイス。朝食はだいたいここで食べた。 シェフズプレート。豪華なコース料理を頂いた。
- VELTRA のツアーを使ってマヤ文明やセノーテの観光にも行った。ガイドの MAMI さんにはとてもお世話になった。
-チチェンイッツァ遺跡 セノーテ スイトゥン セノーテ イキル セノーテイキルのお土産屋で買える珍しい蜂蜜酒 </p>
-  </section>
-  <footer class="entry-footer"><span title='2021-08-06 00:00:00 +0000 UTC'>August 6, 2021</span></footer>
-  <a class="entry-link" aria-label="post link to Cancun" href="https://www.yusaito.com/blog/posts/us-life/cancun-trip/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

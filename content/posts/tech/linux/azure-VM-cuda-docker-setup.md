@@ -14,7 +14,7 @@ tags:
     "CUDA error",
     "docker: Error response from daemon: could not select device driver “” with capabilities: [[gpu]]",
   ]
-categories: ["Tech", "Linux", "エラー"]
+categories: ["Tech", "Linux"]
 ShowToc: true
 TocOpen: true
 draft: false

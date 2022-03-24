@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><script type='text/javascript' defer src="https://www.yusaito.com/blog//js/prism.js"></script>
-<meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
@@ -95,7 +94,7 @@ if (!doNotTrack) {
 </script>
 
 <header class="header">
-
+    <script type='text/javascript' defer src="https://www.yusaito.com/blog//js/prism.js"></script>
     <nav class="nav">
         <div class="logo">
             <a href="https://www.yusaito.com/blog/" accesskey="h" title="YS&#39;s blog (Alt + H)">YS&#39;s blog</a>
@@ -145,6 +144,20 @@ if (!doNotTrack) {
 <header class="page-header"><div class="breadcrumbs"><a href="https://www.yusaito.com/blog/">Home</a>&nbsp;»&nbsp;<a href="https://www.yusaito.com/blog/categories/">Categories</a></div>
   <h1>Linux</h1>
 </header>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>nvcr.io/nvidia/pytorchのイメージからdockerコンテナを作成したときのNOTE
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>NGC 提供の Pytorch イメージを使って docker コンテナを立ち上げる。 NVIDIA NGC | CATALOGから NGC(NVIDIA GPU CLOUD)が提供している、Pytorch の docker イメージをとりあえずdocker runをしてみる。
+docker run --gpus all -it --rm nvcr.io/nvidia/pytorch:21.12-py3 /bin/bash すると、下記のような NOTE が一番下に現れたので調べてみた。
+NOTE: The SHMEM allocation limit is set to the default of 64MB. This may be insufficient for PyTorch. NVIDIA recommends the use of the following flags: docker run --gpus all --ipc=host --ulimit memlock=-1 --ulimit stack=67108864 ... The SHMEM allocation limit is set to the default of 64MB 一時ファイル領域の/dev/shm のサイズでデフォルト値は 64GB。--shm-size 2g みたいにしておけばよい。...</p>
+  </section>
+  <footer class="entry-footer"><span title='2022-03-23 00:00:00 +0000 UTC'>March 23, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to nvcr.io/nvidia/pytorchのイメージからdockerコンテナを作成したときのNOTE" href="https://www.yusaito.com/blog/posts/tech/linux/docker-nvcr-pytorch-ipc-host-ulimit-memlock.md/"></a>
+</article>
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">

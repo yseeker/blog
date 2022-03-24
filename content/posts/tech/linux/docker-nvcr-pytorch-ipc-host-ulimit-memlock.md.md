@@ -13,7 +13,7 @@ tags:
     "--ulimit memlock=-1",
     "--ulimit stack=67108864",
   ]
-categories: ["Tech", "Python", "Pytorch"]
+categories: ["Tech", "Linux"]
 ShowToc: true
 TocOpen: true
 draft: false

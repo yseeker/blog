@@ -17,6 +17,9 @@
     <loc>https://www.yusaito.com/blog/tags/docker/</loc>
     <lastmod>2022-03-23T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://www.yusaito.com/blog/categories/linux/</loc>
+    <lastmod>2022-03-23T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://www.yusaito.com/blog/posts/tech/linux/</loc>
     <lastmod>2022-03-23T00:00:00+00:00</lastmod>
   </url><url>
@@ -29,16 +32,10 @@
     <loc>https://www.yusaito.com/blog/posts/</loc>
     <lastmod>2022-03-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.yusaito.com/blog/categories/python/</loc>
-    <lastmod>2022-03-23T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://www.yusaito.com/blog/tags/python/</loc>
     <lastmod>2022-03-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.yusaito.com/blog/tags/pytorch/</loc>
-    <lastmod>2022-03-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.yusaito.com/blog/categories/pytorch/</loc>
     <lastmod>2022-03-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.yusaito.com/blog/tags/</loc>
@@ -57,6 +54,9 @@
     <lastmod>2022-03-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.yusaito.com/blog/posts/tech/python/pandas-read-csv-unnamed-name/</loc>
+    <lastmod>2022-03-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.yusaito.com/blog/categories/python/</loc>
     <lastmod>2022-03-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.yusaito.com/blog/posts/tech/python/</loc>
@@ -152,9 +152,6 @@
     <loc>https://www.yusaito.com/blog/tags/cuda/</loc>
     <lastmod>2022-03-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.yusaito.com/blog/categories/linux/</loc>
-    <lastmod>2022-03-05T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://www.yusaito.com/blog/tags/nvidia-driver/</loc>
     <lastmod>2022-03-05T00:00:00+00:00</lastmod>
   </url><url>
@@ -178,6 +175,30 @@
   </url><url>
     <loc>https://www.yusaito.com/blog/tags/%E8%87%AA%E5%AE%85%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC/</loc>
     <lastmod>2022-03-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.yusaito.com/blog/tags/defer/</loc>
+    <lastmod>2022-03-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.yusaito.com/blog/tags/hugo/</loc>
+    <lastmod>2022-03-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.yusaito.com/blog/categories/hugo/</loc>
+    <lastmod>2022-03-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.yusaito.com/blog/posts/tech/other/hugo-papermod-prism-pagespeed-web-dev/</loc>
+    <lastmod>2022-03-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.yusaito.com/blog/tags/javascript/</loc>
+    <lastmod>2022-03-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.yusaito.com/blog/tags/papermod/</loc>
+    <lastmod>2022-03-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.yusaito.com/blog/tags/prism.js/</loc>
+    <lastmod>2022-03-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.yusaito.com/blog/posts/tech/other/</loc>
+    <lastmod>2022-03-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.yusaito.com/blog/tags/cupy/</loc>
     <lastmod>2022-02-28T00:00:00+00:00</lastmod>
@@ -213,9 +234,6 @@
     <lastmod>2022-02-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.yusaito.com/blog/tags/mp4/</loc>
-    <lastmod>2022-02-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.yusaito.com/blog/categories/opencv/</loc>
     <lastmod>2022-02-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.yusaito.com/blog/posts/tech/python/how-to-use-functools-partial/</loc>
@@ -326,9 +344,6 @@
     <loc>https://www.yusaito.com/blog/tags/gpu/</loc>
     <lastmod>2022-01-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.yusaito.com/blog/categories/%E3%82%A8%E3%83%A9%E3%83%BC/</loc>
-    <lastmod>2022-01-11T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://www.yusaito.com/blog/tags/imagefile.load_truncated_images-true/</loc>
     <lastmod>2022-01-03T00:00:00+00:00</lastmod>
   </url><url>
@@ -336,9 +351,6 @@
     <lastmod>2022-01-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.yusaito.com/blog/tags/pillow/</loc>
-    <lastmod>2022-01-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.yusaito.com/blog/categories/pillow/</loc>
     <lastmod>2022-01-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.yusaito.com/blog/posts/tech/python/ioerror-image-file-is-truncated/</loc>
