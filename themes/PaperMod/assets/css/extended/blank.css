@@ -127,7 +127,8 @@ img {
 @media print, screen and (max-width: 479px) {
   .dark .post-content {
     font-size: 16px;
-    line-height: 1.9;
+    /* line-height: 1.9; */
+    line-height: 1.8;
     color: #dbdbdb !important;
   }
 }
@@ -135,7 +136,8 @@ img {
 @media print, screen and (max-width: 479px) {
   .post-content {
     font-size: 16px;
-    line-height: 1.9;
+    /* line-height: 1.9; */
+    line-height: 1.8;
   }
 }
 
