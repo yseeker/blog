@@ -1,8 +1,8 @@
 ---
 #author: "Hugo Authors"
-title: "tqdmがターミナルの横幅を狭めるとバグる問題を解消する"
+title: "tqdmでターミナルの横幅を狭めるとバグる問題を解消する"
 date: "2022-02-17"
-tags: ["tqdm", "logging", "print", "dynamic_ncols", "標準出力"]
+tags: ["python", "tqdm", "logging", "print", "dynamic_ncols", "標準出力"]
 categories: ["Tech", "Python"]
 ShowToc: true
 TocOpen: true

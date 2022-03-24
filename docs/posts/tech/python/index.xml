@@ -106,7 +106,7 @@ import csv from pathlib import Path current_dir = Path(__file__).parent image_pa
     </item>
     
     <item>
-      <title>tqdmがターミナルの横幅を狭めるとバグる問題を解消する</title>
+      <title>tqdmでターミナルの横幅を狭めるとバグる問題を解消する</title>
       <link>https://www.yusaito.com/blog/posts/tech/python/tqdm-dynamic-ncols/</link>
       <pubDate>Thu, 17 Feb 2022 00:00:00 +0000</pubDate>
       

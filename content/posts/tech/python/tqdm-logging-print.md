@@ -2,7 +2,7 @@
 #author: "Hugo Authors"
 title: "loggerとprintとtqdmの併用"
 date: "2022-02-13"
-tags: ["tqdm", "logging", "print", "標準出力"]
+tags: ["python", "tqdm", "logging", "print", "標準出力"]
 categories: ["Tech", "Python"]
 ShowToc: true
 TocOpen: true
