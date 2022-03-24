@@ -52,8 +52,6 @@ memlock=-1 --ulimit stack=67108864 ...
 
 スタック領域サイズの上限いっぱいまであげる。
 
-<fieldset><legend>Box Info</legend><ul><li>Name: <a href=https://app.hackthebox.eu/machines/Horizontall><code>Horizontall</code></a></li><li>OS: <code>Linux</code></li><li>Difficulty: <code>Easy</code></li><li>IP: <code>10.10.11.105</code></li><li>Points: <code>20</code></li><li>Machine Creator: <a href=https://app.hackthebox.eu/users/4005><code>wail99</code></a></li></ul></fieldset>
-
 ## 参考
 
 <iframe class="hatenablogcard" style="width:100%;height:155px;margin:15px 0;max-width:560px;" title="Docs » Engine リファレンス » コマンドライン・リファレンス » run" src="https://hatenablog-parts.com/embed?url=http://docs.docker.jp/v19.03/engine/reference/commandline/run.html" frameborder="0" scrolling="no"></iframe>

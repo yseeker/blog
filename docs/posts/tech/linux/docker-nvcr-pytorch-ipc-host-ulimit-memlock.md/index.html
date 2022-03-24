@@ -129,8 +129,8 @@ NOTE: The SHMEM allocation limit is set to the default of 64MB. This may be insu
   "keywords": [
     "Pytorch", "python", "docker", "nvcr.io/nvidia/pytorch", "NGC", "--ipc=host", "--ulimit memlock=-1", "--ulimit stack=67108864"
   ],
-  "articleBody": "NGC 提供の Pytorch イメージを使って docker コンテナを立ち上げる。 NVIDIA NGC | CATALOGから NGC(NVIDIA GPU CLOUD)が提供している、Pytorch の docker イメージをとりあえずdocker runをしてみる。\ndocker run --gpus all -it --rm nvcr.io/nvidia/pytorch:21.12-py3 /bin/bash すると、下記のような NOTE が一番下に現れたので調べてみた。\nNOTE: The SHMEM allocation limit is set to the default of 64MB. This may be insufficient for PyTorch. NVIDIA recommends the use of the following flags: docker run --gpus all --ipc=host --ulimit memlock=-1 --ulimit stack=67108864 ... The SHMEM allocation limit is set to the default of 64MB 一時ファイル領域の/dev/shm のサイズでデフォルト値は 64GB。--shm-size 2g みたいにしておけばよい。\n–ipc=host コンテナとホスト間でメモリ共有するためにつけるらしい。自分の場合は普段使わなそう。\n–ulimit memlock=-1 占有可能なメモリスペースを無限にする。\n–ulimit stack=67108864 スタック領域サイズの上限いっぱいまであげる。\nBox InfoName: HorizontallOS: LinuxDifficulty: EasyIP: 10.10.11.105Points: 20Machine Creator: wail99 参考  ",
-  "wordCount" : "98",
+  "articleBody": "NGC 提供の Pytorch イメージを使って docker コンテナを立ち上げる。 NVIDIA NGC | CATALOGから NGC(NVIDIA GPU CLOUD)が提供している、Pytorch の docker イメージをとりあえずdocker runをしてみる。\ndocker run --gpus all -it --rm nvcr.io/nvidia/pytorch:21.12-py3 /bin/bash すると、下記のような NOTE が一番下に現れたので調べてみた。\nNOTE: The SHMEM allocation limit is set to the default of 64MB. This may be insufficient for PyTorch. NVIDIA recommends the use of the following flags: docker run --gpus all --ipc=host --ulimit memlock=-1 --ulimit stack=67108864 ... The SHMEM allocation limit is set to the default of 64MB 一時ファイル領域の/dev/shm のサイズでデフォルト値は 64GB。--shm-size 2g みたいにしておけばよい。\n–ipc=host コンテナとホスト間でメモリ共有するためにつけるらしい。自分の場合は普段使わなそう。\n–ulimit memlock=-1 占有可能なメモリスペースを無限にする。\n–ulimit stack=67108864 スタック領域サイズの上限いっぱいまであげる。\n参考  ",
+  "wordCount" : "89",
   "inLanguage": "en",
   "datePublished": "2022-03-23T00:00:00Z",
   "dateModified": "2022-03-23T00:00:00Z",
@@ -263,7 +263,6 @@ memlock=-1 --ulimit stack=67108864 ...
 <p>占有可能なメモリスペースを無限にする。</p>
 <h3 id="--ulimit-stack67108864">&ndash;ulimit stack=67108864<a hidden class="anchor" aria-hidden="true" href="#--ulimit-stack67108864">#</a></h3>
 <p>スタック領域サイズの上限いっぱいまであげる。</p>
-<fieldset><legend>Box Info</legend><ul><li>Name: <a href=https://app.hackthebox.eu/machines/Horizontall><code>Horizontall</code></a></li><li>OS: <code>Linux</code></li><li>Difficulty: <code>Easy</code></li><li>IP: <code>10.10.11.105</code></li><li>Points: <code>20</code></li><li>Machine Creator: <a href=https://app.hackthebox.eu/users/4005><code>wail99</code></a></li></ul></fieldset>
 <h2 id="参考">参考<a hidden class="anchor" aria-hidden="true" href="#参考">#</a></h2>
 <iframe class="hatenablogcard" style="width:100%;height:155px;margin:15px 0;max-width:560px;" title="Docs » Engine リファレンス » コマンドライン・リファレンス » run" src="https://hatenablog-parts.com/embed?url=http://docs.docker.jp/v19.03/engine/reference/commandline/run.html" frameborder="0" scrolling="no"></iframe>
 
