@@ -110,17 +110,17 @@ img {
 /* PCのみに適用(960px以上) */
 @media print, screen and (min-width: 480px) {
   .post-content {
-    font-size: 18px;
-    line-height: 1.9;
-    /* line-height: 2; */
+    font-size: 18px !important;
+    line-height: 1.9 !important;
+    /* line-height: 2 !important; */
     color: #363636 !important;
   }
 }
 
 @media print, screen and (min-width: 480px) {
   .dark .post-content {
-    font-size: 18px;
-    line-height: 1.9;
+    font-size: 18px !important;
+    line-height: 1.9 !important;
     /* line-height: 2; */
     color: #dbdbdb !important;
   }
