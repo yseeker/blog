@@ -17,9 +17,9 @@
       <pubDate>Thu, 03 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/posts/tech/other/hugo-papermod-prism-pagespeed-web-dev/</guid>
-      <description>この web サイトは PaperMod というテンプレートから作成しているのだが、シンタックスハイライトをいい感じにする Prism.js を導入したら遅くなったので改善メモ。
+      <description>この web サイトは PaperMod というテンプレートから作成しているのが、シンタックスハイライトをいい感じにする Prism.js を導入したらPageSpeed Insightsのパフォーマンスが悪くなったので改善メモ。
 Javascript の読み込み時に defer を導入 Before モバイルでのパフォーマンスは、40-50 くらいだった。
-&amp;lt;script src=&amp;#34;{{ .Site.BaseURL }}/js/prism.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; After モバイルでのパフォーマンスは、65-75 くらいに改善した。
+&amp;lt;script src=&amp;#34;{{ .Site.BaseURL }}/js/prism.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; After モバイルでのパフォーマンスが、65-75 くらいに改善した。
 &amp;lt;script type=&amp;#34;text/javascript&amp;#34; defer src=&amp;#34;{{ .Site.BaseURL }}/js/prism.js&amp;#34; &amp;gt;&amp;lt;/script&amp;gt; 余談 ちなみに PaperMod はデフォルトでパフォーマンスが90-99くらい出る超高速なテンプレートである。（Prism.js の読み込みで大幅に速度が低下した。）
 上の javascript の読み込み部分をコメントアウトするとパフォーマンスは 90 以上まで戻る（笑）
 参考  </description>

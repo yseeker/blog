@@ -9,7 +9,7 @@ TocOpen: true
 draft: false
 ---
 
-この web サイトは [PaperMod](https://adityatelange.github.io/hugo-PaperMod/) というテンプレートから作成しているのだが、シンタックスハイライトをいい感じにする Prism.js を導入したら遅くなったので改善メモ。
+この web サイトは [PaperMod](https://adityatelange.github.io/hugo-PaperMod/) というテンプレートから作成しているのが、シンタックスハイライトをいい感じにする Prism.js を導入したら[PageSpeed Insights](https://pagespeed.web.dev/)のパフォーマンスが悪くなったので改善メモ。
 
 ## Javascript の読み込み時に defer を導入
 
@@ -23,7 +23,7 @@ draft: false
 
 ### After
 
-モバイルでのパフォーマンスは、**65-75** くらいに改善した。
+モバイルでのパフォーマンスが、**65-75** くらいに改善した。
 
 ```html
 <script
