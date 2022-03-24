@@ -298,15 +298,15 @@ import csv from pathlib import Path current_dir = Path(__file__).parent image_pa
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>loggerとprintとtqdmの併用
+    <h2>tqdmがターミナルの横幅を狭めるとバグる問題を解消する
     </h2>
   </header>
   <section class="entry-content">
-    <p>logger と print と tqdm を併用する場合は以下のコードをコピペする。
-import contextlib import logging import logging.handlers import sys from time import sleep from tqdm import tqdm from tqdm.contrib import DummyTqdmFile class TqdmLoggingHandler(logging.Handler): colors = {&#34;INFO&#34;: &#34;\033[37m{}\033[0m&#34;} def __init__(self, level=logging.NOTSET): super().__init__(level) def emit(self, record): try: record.msg = TqdmLoggingHandler.colors.get(record.levelname, &#34;{}&#34;).format( record.msg ) msg = self.format(record) tqdm.write(msg, file=sys.stderr) self.flush() except Exception: self.handleError(record) class CustomFormatter(logging.Formatter): grey = &#34;\x1b[38;20m&#34; green = &#34;\x1b[32;20m&#34; yellow = &#34;\x1b[33;20m&#34; red = &#34;\x1b[31;20m&#34; bold_red = &#34;\x1b[31;1m&#34; reset = &#34;\x1b[0m&#34; format = &#34;[%(asctime)s] [%(levelname)s] [%(process)d] [%(name)s] [%(funcName)s] [%(lineno)d] %(message)s&#34; FORMATS = { logging....</p>
+    <p>問題 : tqdm を標準出力している状態でターミナルの横幅を狭めるとバグる 解決策 : dynamic_ncols=True にする 下記のように tqdm を定義すればよい（参考）
+from functools import partial from tqdm import tqdm as std_tqdm tqdm = partial(std_tqdm, dynamic_ncols=True) 参考  </p>
   </section>
-  <footer class="entry-footer"><span title='2022-02-13 00:00:00 +0000 UTC'>February 13, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to loggerとprintとtqdmの併用" href="https://www.yusaito.com/blog/posts/tech/python/tqdm-logging-print/"></a>
+  <footer class="entry-footer"><span title='2022-02-17 00:00:00 +0000 UTC'>February 17, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to tqdmがターミナルの横幅を狭めるとバグる問題を解消する" href="https://www.yusaito.com/blog/posts/tech/python/tqdm-dynamic-ncols/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
