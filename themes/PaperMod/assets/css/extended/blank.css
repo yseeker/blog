@@ -71,7 +71,7 @@ img {
   .post-content h2 {
     font-size: 19px !important;
     padding: 4px 8px !important;
-    margin-top: 60px !important;
+    margin-top: 50px !important;
     margin-bottom: 10px !important;
     border-left: 5px solid #12007a !important;
     line-height: 1.3 !important;
@@ -82,7 +82,7 @@ img {
   .dark .post-content h2 {
     font-size: 19px !important;
     padding: 4px 8px !important;
-    margin-top: 60px !important;
+    margin-top: 50px !important;
     margin-bottom: 10px !important;
     border-left: 5px solid #8f89ff !important;
     line-height: 1.3 !important;
@@ -116,7 +116,7 @@ img {
 
 @media print, screen and (max-width: 479px) {
   .post-content h4 {
-    font-size: 17px !important;
+    font-size: 16px !important;
     line-height: 1.3 !important;
   }
 }
