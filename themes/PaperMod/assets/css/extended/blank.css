@@ -188,13 +188,13 @@ img {
 
 @media print, screen and (min-width: 480px) {
   .entry-header h2 {
-    font-size: 24px !important;
+    font-size: 22px !important;
   }
 }
 
 @media print, screen and (max-width: 479px) {
   .entry-header h2 {
-    font-size: 20px !important;
+    font-size: 19px !important;
   }
 }
 /* @media print, screen and (min-width: 480px) {
