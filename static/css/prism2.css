@@ -229,6 +229,7 @@ pre {
   word-wrap: normal;
   display: flex;
   line-height: 1.6 !important;
+  padding-top: 10px !important;
 }
 
 .line-highlight {
