@@ -11,6 +11,10 @@ draft: false
 
 ## [ハッシュ値を求める](https://docs.python.org/ja/3/library/hashlib.html)
 
+<div style="border-radius: 10px; background: beige; padding: 10px;">
+  Rounded
+</div>
+
 ```python
 import hashlib
 

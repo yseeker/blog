@@ -218,7 +218,7 @@ NOTE: The SHMEM allocation limit is set to the default of 64MB. This may be insu
     </h2>
   </header>
   <section class="entry-content">
-    <p>ハッシュ値を求める import hashlib file_name = &#34;important_file.dat&#34; # MD5 ハッシュを生成する hs = hashlib.md5(file_name.encode()).hexdigest() # SHA224 ハッシュを生成する hs = hashlib.sha224(file_name.encode()).hexdigest() 自走プログラマー~Python の先輩が教えるプロジェクト開発のベストプラクティス 120の中でファイル名からハッシュ値を求め、そのハッシュ値の頭 3 文字を中間ディレクトリにして、１つのディレクトリにファイルを集中させないという手法が紹介されていた。
+    <p>ハッシュ値を求める Rounded  import hashlib file_name = &#34;important_file.dat&#34; # MD5 ハッシュを生成する hs = hashlib.md5(file_name.encode()).hexdigest() # SHA224 ハッシュを生成する hs = hashlib.sha224(file_name.encode()).hexdigest() 自走プログラマー~Python の先輩が教えるプロジェクト開発のベストプラクティス 120の中でファイル名からハッシュ値を求め、そのハッシュ値の頭 3 文字を中間ディレクトリにして、１つのディレクトリにファイルを集中させないという手法が紹介されていた。
 例 file_name = &#34;important_file.dat&#34; hs = hashlib.md5(file_name.encode()).hexdigest() file_path = f&#34;dir_name/{hs[:3]}/{file_name}&#34; 参考  </p>
   </section>
   <footer class="entry-footer"><span title='2022-03-20 00:00:00 +0000 UTC'>March 20, 2022</span></footer>
