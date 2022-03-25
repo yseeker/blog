@@ -199,3 +199,7 @@ img {
     line-height: 1.5 !important;
   }
 } */
+
+.entry-header h2 {
+  font-size: 16px !important;
+}
