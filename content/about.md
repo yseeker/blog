@@ -14,6 +14,7 @@ draft: false
 - [**LinkedIn**](https://www.linkedin.com/in/yu-saito-03080088/)
 - [**GitHub**](https://github.com/yseeker)
 - [**Google Scholar**](https://scholar.google.com/citations?hl=en&user=M3gyCrUAAAAJ)
+- [**Kaggle**]()
 
 - [UCSB ポスドク時代](https://www.yusaito.com/blog/posts/us-life/ucsb-postdoc-memory/)は[このような実験](https://www.yusaito.com/blog/posts/us-life/experiment-in-ucsb/)をやっていました。
 
@@ -49,25 +50,22 @@ draft: false
 
 ### プロジェクトレベル
 
-- ナノデバイスの作製と超低温測定の技術 (原子間力顕微鏡, 電子ビーム描画装置, 蒸着機, 希釈冷凍機など)
-- 実験系固体物理、特に量子物質（超伝導体、グラフェンなど）に関する知見
+- ナノデバイスの作製と超低温測定の技術 (原子間力顕微鏡, 電子ビーム描画装置, 電子ビーム蒸着機, 希釈冷凍機など)
+- 実験系固体物理、特に量子物質（超伝導体、グラフェンなど）全般に関する知見
+- LabRAD を用いた同時ハードウェア制御
 - 深層生成モデルの開発と改良（特にデジタルヒューマンと創薬領域）
-- FastAPI などを用いたバックエンド開発
+- FastAPI などを用いた ML バックエンド開発（主に非同期処理、並列化処理による高速化に注力）
 - Kaggle におけるデータ分析
 - R&D 全般のプロジェクトマネジメント
 
 ### 言語、ツール、ライブラリなど
 
-Analysis of financial time series data for auto-trading cryptocurrencies
-Project management on R&D
-computer related
-Languages: Python(Advanced, 3+years), C/C++(basic), Go(basic), Rust(basic), shell script (basic)
-Backend Framework: FastAPI, Flask
-Hardware control : LabRAD
-Pipeline : Gokart, Luigi, MLflow
-Cloud: Azure, GCP
-Tools: Git, Docker
-Kaggle Competition Expert, Atcoder [green]
+- 言語 : Python(Advanced, 3+years), C/C++(basic), Go(basic), Rust(basic), shell script (basic)
+- Backend Framework: FastAPI, Flask
+- Hardware control : LabRAD
+- Pipeline : Gokart, Luigi, MLflow
+- Cloud: Azure, GCP
+- Tools: Git, Docker
 
 ## 趣味・特技
 
@@ -75,13 +73,8 @@ Kaggle Competition Expert, Atcoder [green]
 
 - 5 年ぶりに[Kaggle](https://www.kaggle.com/yseeker)を再開しました。
 
-- Splatoon2 はオール X（最高～ 2200）。ゲームを結構やったのは中学（バイオ, FF、ポケモン）以来でした。
-
 - 卓球と将棋は学生時代に部活/サークルでやっていたので少しできます。
 
-- 昔はよく小説を読んでました。「下町ロケット」「デセプションポイント」「深海のＹｒｒ」「青の炎」「初恋ソムリエ」「新世界より」「オックスフォード連続殺人」「トワイライト」シリーズ
-  などが好きでした。
-
 - ドラマ鑑賞。主に海外ドラマ（たまに洋画）、大学生時代までは日本のドラマを見ています。
-  印象に残っている海外ドラマは「デスパレートな妻たち」「フラッシュ」「Good Place」「クイーンズ・ギャンビット」「運命の大統領」「Community（コミカレ）」「愛の不時着」「インセプション」「マネー・ショート」など。
+  印象に残っている海外ドラマは「デスパレートな妻たち」「フラッシュ」「Good Place」「クイーンズ・ギャンビット」「運命の大統領」「Community（コミカレ）」「インセプション」「マネー・ショート」など。
   日本のドラマは古い方から「TRICK」「女王の教室」「ブラッディ・マンデイ」「ライアーゲーム」「ブザービート」「全開ガール」「リーガルハイ」「半沢直樹」など。

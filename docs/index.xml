@@ -74,6 +74,7 @@ import cv2 from concurrent.futures import ThreadPoolExecutor cv2.setNumThreads(0
   LinkedIn
   GitHub
   Google Scholar
+  Kaggle
   UCSB ポスドク時代はこのような実験をやっていました。
   ##　略歴
  2006 年 4 月 - 2009 年 3 月 福島県立安積高等学校 普通科 2009 年 4 月 - 2013 年 3 月 東京大学 理科 I 類 → 工学部 物理工学科 2013 年 4 月 - 2018 年 3 月 東京大学 大学院工学系研究科 物理工学専攻 博士（工学） 2018 年 4 月 - 2018 年 9 月 理化学研究所 革新知能統合研究センター 特別研究員 2018 年 4 月 - 2020 年 9 月 カリフォルニア大学サンタバーバラ校 Elings Prize Fellow 2021 年 10 月 - 株式会社データグリッド シニアエンジニア  主な研究成果  Isospin Pomeranchuk 効果の発見（Y.</description>
