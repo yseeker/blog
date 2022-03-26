@@ -64,12 +64,12 @@
   }
 }
 
-@media print, screen and (min-width: 479px) {
+/* @media print, screen and (min-width: 479px) {
   .hljs {
     font-size: 10pt !important;
     line-height: 1.5 !important;
   }
-}
+} */
 
 .hljs-emphasis {
   font-style: italic;
