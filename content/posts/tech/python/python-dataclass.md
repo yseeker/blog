@@ -27,7 +27,7 @@ from dataclasses import dataclass
 @dataclass
 class DataclassPerson:
     gender: str = "female"
-    name: int = 20
+    age: int = 20
 ```
 
 ## DataClass の利点

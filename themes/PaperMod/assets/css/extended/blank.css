@@ -186,26 +186,26 @@ img {
   }
 }
 
-@media print, screen and (min-width: 480px) {
-  .code {
-    font-size: 20px !important;
-    line-height: 1.7;
-  }
-}
-
 /* @media print, screen and (min-width: 480px) {
-  code {
+  .code {
     font-size: 20px !important;
     line-height: 1.7;
   }
 } */
 
-@media print, screen and (max-width: 479px) {
+/* @media print, screen and (min-width: 480px) {
+  code {
+    font-size: 20px;
+    line-height: 1.7;
+  }
+} */
+
+/* @media print, screen and (max-width: 479px) {
   .code {
     font-size: 15.5px !important;
     line-height: 1.65;
   }
-}
+} */
 
 @media print, screen and (min-width: 480px) {
   .entry-header h2 {
