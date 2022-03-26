@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>マルチスレッド on YS&#39;s blog</title>
+    <link>https://www.yusaito.com/blog/tags/%E3%83%9E%E3%83%AB%E3%83%81%E3%82%B9%E3%83%AC%E3%83%83%E3%83%89/</link>
+    <description>Recent content in マルチスレッド on YS&#39;s blog</description>
+    <image>
+      <url>https://www.yusaito.com/blog/papermod-cover.png</url>
+      <link>https://www.yusaito.com/blog/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Fri, 18 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.yusaito.com/blog/tags/%E3%83%9E%E3%83%AB%E3%83%81%E3%82%B9%E3%83%AC%E3%83%83%E3%83%89/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PythonとopenCVで並列化</title>
+      <link>https://www.yusaito.com/blog/posts/tech/python/opencv-setnumthreads-multithreading/</link>
+      <pubDate>Fri, 18 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/posts/tech/python/opencv-setnumthreads-multithreading/</guid>
+      <description>openCV でマルチプロセス化しようとしてもシングルプロセスになっている問題に遭遇 Python で openCV を使った処理をマルチプロセス化してみたのだが、どうもシングルプロセスになってしまうという問題に遭遇した。
+解決策：cv2.setNumThreads(0)＆マルチプロセスをやめる。 cv2.setNumThreads(0) を加えて、かつマルチスレッド化（例えば、concurrent.future.ThreadPoolExecuterなど）することで効率的に並列処理可能になることが分かった。 cv2.setNumThreads(0)有りでもconcurrent.future.ProcessPoolExecuterでは、正しくマルチプロセスされなかった。
+以下テンプレート。
+import cv2 from concurrent.futures import ThreadPoolExecutor cv2.setNumThreads(0) def task_using_cv2(param): do_some_process_using_cv2() return with ThreadPoolExecutor() as executor: results = list(executor.map(task_using_cv2, param)) 参考   </description>
+    </item>
+    
+    <item>
+      <title>Pythonでファイルリストからの並列処理</title>
+      <link>https://www.yusaito.com/blog/posts/tech/python/multiprocess-multithreading-utils/</link>
+      <pubDate>Thu, 03 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/posts/tech/python/multiprocess-multithreading-utils/</guid>
+      <description>ファイルのリストを受け取って何らかの並列処理をする。 from concurrent.futures import ProcessPoolExecutor, ThreadPoolExecutor from functools import partial from pathlib import Path from typing import List def list_file_paths(dir_path: str) -&amp;gt; List[str]: &amp;#34;&amp;#34;&amp;#34; List file paths in a directory. Parameters ---------- dir_path : str Path of the directory Returns ------- List[str] List of the file paths in the directory &amp;#34;&amp;#34;&amp;#34; return sorted([str(path) for path in Path(dir_path).rglob(&amp;#34;*&amp;#34;) if path.is_file()]) def task(same_value, same_value2, diffent_values): return None def multiprocess_task(task, same_value, same_value2, diffent_values): with ProcessPoolExecutor() as executor: results = list(executor.</description>
+    </item>
+    
+  </channel>
+</rss>

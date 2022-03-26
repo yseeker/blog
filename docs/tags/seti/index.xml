@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>SETI on YS&#39;s blog</title>
+    <link>https://www.yusaito.com/blog/tags/seti/</link>
+    <description>Recent content in SETI on YS&#39;s blog</description>
+    <image>
+      <url>https://www.yusaito.com/blog/papermod-cover.png</url>
+      <link>https://www.yusaito.com/blog/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Thu, 19 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.yusaito.com/blog/tags/seti/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kaggle：SETIコンペ参加記（ソロ銅：71th/768 teams）</title>
+      <link>https://www.yusaito.com/blog/posts/tech/kaggle/seti-breakthrough-listen/</link>
+      <pubDate>Thu, 19 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/posts/tech/kaggle/seti-breakthrough-listen/</guid>
+      <description>SETI Breakthrough Listen - E.T. Signal Searchという Kaggle の画像分類コンペに参加しました。
+結果 774 チーム中 74 位でソロ銅でした。
+コンペの概要 Overview のページには
+ In this competition, use your data science skills to help identify anomalous signals in scans of Breakthrough Listen targets. Because there are no confirmed examples of alien signals to use to train machine learning algorithms, the team included some simulated signals (that they call “needles”) in the haystack of data from the telescope.</description>
+    </item>
+    
+  </channel>
+</rss>
