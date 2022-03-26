@@ -34,14 +34,5 @@ Lambda PC（GPU Workstation）なども検討したが、RTX3090 をフルで回
 組み立て後の PC の中身 MO-RA3 360 PRO (冷却用ラジエーター) 主なパーツ  マザーボード : ASUS ROG Zenith II Extreme Alpha CPU : Ryzen Threadripper 3970X GPU : ASUS EKWB RTX3090 24GB GDD6X RAM メモリ : G.Skill F4-3200C 16D-32GTZRX SSD : SAMSUNG 980 PRO MZ-V8PT0B 冷却用ラジエーター 1 : Watercool MO-RA3 360 PRO stainless steel 冷却用ラジエーター 2 : Black Ice Nemesis 480GTS CPU ウォーターブロック : EK WaterBlocks EK-Quantum Velocity sTR4 D-RGB - Full Nickel  本格水冷の効果 RTX3090 ２枚をフルで回しても、nvidia-smi で確認する限りは 45 度くらいまでしか GPU の温度は上昇しなかった。空冷だと経験上 65-70 度くらいまで上昇するので、水冷の冷却効果が極めて高いことが分かった。</description>
     </item>
     
-    <item>
-      <title>Python : Dataclassを試してみる</title>
-      <link>https://www.yusaito.com/blog/posts/tech/python/python-dataclass/</link>
-      <pubDate>Tue, 18 Jan 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.yusaito.com/blog/posts/tech/python/python-dataclass/</guid>
-      <description>通常の class と Dataclass の比較 通常の class class Person: def __init__(self, age = 20, gender = &amp;#34;female&amp;#34;): self.gender = gender self.age = age Dataclass from dataclasses import dataclass @dataclass class DataclassPerson: gender: str = &amp;#34;female&amp;#34; name: int = 20 DataClass の利点  可読性が高まる。 型アノテーションができる。 asdict で（ネストされたものでも）辞書に変換可能  参考  </description>
-    </item>
-    
   </channel>
 </rss>

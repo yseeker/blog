@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
 <title>Python : Dataclassを試してみる | YS&#39;s blog</title>
-<meta name="keywords" content="Python, dataclass, 有線LAN, RT-AX86U, ASUS" />
+<meta name="keywords" content="Python, dataclass" />
 <meta name="description" content="通常の class と Dataclass の比較 通常の class class Person: def __init__(self, age = 20, gender = &#34;female&#34;): self.gender = gender self.age = age Dataclass from dataclasses import dataclass @dataclass class DataclassPerson: gender: str = &#34;female&#34; name: int = 20 DataClass の利点  可読性が高まる。 型アノテーションができる。 asdict で（ネストされたものでも）辞書に変換可能  参考  ">
 <meta name="author" content="">
 <link rel="canonical" href="https://www.yusaito.com/blog/posts/tech/python/python-dataclass/" />
@@ -123,7 +123,7 @@ if (!doNotTrack) {
   "name": "Python : Dataclassを試してみる",
   "description": "通常の class と Dataclass の比較 通常の class class Person: def __init__(self, age = 20, gender = \u0026#34;female\u0026#34;): self.gender = gender self.age = age Dataclass from dataclasses import dataclass @dataclass class DataclassPerson: gender: str = \u0026#34;female\u0026#34; name: int = 20 DataClass の利点  可読性が高まる。 型アノテーションができる。 asdict で（ネストされたものでも）辞書に変換可能  参考  ",
   "keywords": [
-    "Python", "dataclass", "有線LAN", "RT-AX86U", "ASUS"
+    "Python", "dataclass"
   ],
   "articleBody": "通常の class と Dataclass の比較 通常の class class Person: def __init__(self, age = 20, gender = \"female\"): self.gender = gender self.age = age Dataclass from dataclasses import dataclass @dataclass class DataclassPerson: gender: str = \"female\" name: int = 20 DataClass の利点  可読性が高まる。 型アノテーションができる。 asdict で（ネストされたものでも）辞書に変換可能  参考  ",
   "wordCount" : "46",
@@ -274,12 +274,6 @@ if (!doNotTrack) {
 <h3>Related Posts</h3>
 <ul>
 	
-	<li><a href="/blog/posts/tech/pc/wifi-setup-rt-ax86u/">家のネット環境の改善</a></li>
-	
-	<li><a href="/blog/posts/tech/pc/fully-water-cooled-3090-pc-arrived/">本格水冷 GPU マシンを導入した (ASUS EKWB RTX3090 &#43; Ryzen Threadripper 3970X)</a></li>
-	
-	<li><a href="/blog/posts/tech/linux/docker-nvcr-pytorch-ipc-host-ulimit-memlock/">nvcr.io/nvidia/pytorchのイメージからdockerコンテナを作成したときのNOTE</a></li>
-	
 	<li><a href="/blog/posts/tech/python/pandas-read-csv-unnamed-name/">Pandasでread_csvしたときに出現するUnnamed:0を消す方法</a></li>
 	
 	<li><a href="/blog/posts/tech/python/how-to-use-hashlib/">Python : hashlibを使って、ハッシュ値を求める</a></li>
@@ -290,6 +284,12 @@ if (!doNotTrack) {
 	
 	<li><a href="/blog/posts/tech/python/create-video-from-images-opencv/">PythonとOpenCVで画像リストから動画を作成</a></li>
 	
+	<li><a href="/blog/posts/tech/python/relative-path-with-pathlib/">Pathlibで相対パスを有効活用する</a></li>
+	
+	<li><a href="/blog/posts/tech/python/tqdm-dynamic-ncols/">tqdmでターミナルの横幅を狭めるとバグる問題を解消する</a></li>
+	
+	<li><a href="/blog/posts/tech/python/tqdm-logging-print/">loggerとprintとtqdmの併用</a></li>
+	
 </ul>
 
   </div>
@@ -298,9 +298,6 @@ if (!doNotTrack) {
     <ul class="post-tags">
       <li><a href="https://www.yusaito.com/blog/tags/python/">python</a></li>
       <li><a href="https://www.yusaito.com/blog/tags/dataclass/">dataclass</a></li>
-      <li><a href="https://www.yusaito.com/blog/tags/%E6%9C%89%E7%B7%9Alan/">有線LAN</a></li>
-      <li><a href="https://www.yusaito.com/blog/tags/rt-ax86u/">RT-AX86U</a></li>
-      <li><a href="https://www.yusaito.com/blog/tags/asus/">ASUS</a></li>
     </ul>
 <nav class="paginav">
   <a class="prev" href="https://www.yusaito.com/blog/posts/tech/python/how-to-use-pathlib/">
@@ -318,7 +315,7 @@ if (!doNotTrack) {
 
 <div class="share-buttons">
     <a target="_blank" rel="noopener noreferrer" aria-label="share Python : Dataclassを試してみる on twitter"
-        href="https://twitter.com/intent/tweet/?text=Python%20%3a%20Dataclass%e3%82%92%e8%a9%a6%e3%81%97%e3%81%a6%e3%81%bf%e3%82%8b&amp;url=https%3a%2f%2fwww.yusaito.com%2fblog%2fposts%2ftech%2fpython%2fpython-dataclass%2f&amp;hashtags=Python%2cdataclass%2c%e6%9c%89%e7%b7%9aLAN%2cRT-AX86U%2cASUS">
+        href="https://twitter.com/intent/tweet/?text=Python%20%3a%20Dataclass%e3%82%92%e8%a9%a6%e3%81%97%e3%81%a6%e3%81%bf%e3%82%8b&amp;url=https%3a%2f%2fwww.yusaito.com%2fblog%2fposts%2ftech%2fpython%2fpython-dataclass%2f&amp;hashtags=Python%2cdataclass">
         <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
             <path
                 d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-253.927,424.544c135.939,0 210.268,-112.643 210.268,-210.268c0,-3.218 0,-6.437 -0.153,-9.502c14.406,-10.421 26.973,-23.448 36.935,-38.314c-13.18,5.824 -27.433,9.809 -42.452,11.648c15.326,-9.196 26.973,-23.602 32.49,-40.92c-14.252,8.429 -30.038,14.56 -46.896,17.931c-13.487,-14.406 -32.644,-23.295 -53.946,-23.295c-40.767,0 -73.87,33.104 -73.87,73.87c0,5.824 0.613,11.494 1.992,16.858c-61.456,-3.065 -115.862,-32.49 -152.337,-77.241c-6.284,10.881 -9.962,23.601 -9.962,37.088c0,25.594 13.027,48.276 32.95,61.456c-12.107,-0.307 -23.448,-3.678 -33.41,-9.196l0,0.92c0,35.862 25.441,65.594 59.311,72.49c-6.13,1.686 -12.72,2.606 -19.464,2.606c-4.751,0 -9.348,-0.46 -13.946,-1.38c9.349,29.426 36.628,50.728 68.965,51.341c-25.287,19.771 -57.164,31.571 -91.8,31.571c-5.977,0 -11.801,-0.306 -17.625,-1.073c32.337,21.15 71.264,33.41 112.95,33.41Z" />

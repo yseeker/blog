@@ -2,8 +2,8 @@
 #author: "Hugo Authors"
 title: "Python : Dataclassを試してみる"
 date: "2022-01-18"
-tags: ["Python", "dataclass", "有線LAN", "RT-AX86U", "ASUS"]
-categories: ["Tech", "PC"]
+tags: ["Python", "dataclass"]
+categories: ["Tech", "Python"]
 ShowToc: true
 TocOpen: true
 draft: false
