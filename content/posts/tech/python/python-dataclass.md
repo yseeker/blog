@@ -9,6 +9,8 @@ TocOpen: true
 draft: false
 ---
 
+Python3.7 から加わった Dataclass に関して全く知らなかったので参考煮上げた記事を読みながらメモ.
+
 ## 通常の class と Dataclass の比較
 
 ### 通常の class

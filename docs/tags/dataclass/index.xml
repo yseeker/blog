@@ -17,7 +17,8 @@
       <pubDate>Tue, 18 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/posts/tech/python/python-dataclass/</guid>
-      <description>通常の class と Dataclass の比較 通常の class class Person: def __init__(self, age = 20, gender = &amp;#34;female&amp;#34;): self.gender = gender self.age = age Dataclass from dataclasses import dataclass @dataclass class DataclassPerson: gender: str = &amp;#34;female&amp;#34; age: int = 20 DataClass の利点  可読性が高まる。 型アノテーションができる。 asdict で（ネストされたものでも）辞書に変換可能  参考  </description>
+      <description>Python3.7 から加わった Dataclass に関して全く知らなかったので参考煮上げた記事を読みながらメモ.
+通常の class と Dataclass の比較 通常の class class Person: def __init__(self, age = 20, gender = &amp;#34;female&amp;#34;): self.gender = gender self.age = age Dataclass from dataclasses import dataclass @dataclass class DataclassPerson: gender: str = &amp;#34;female&amp;#34; age: int = 20 DataClass の利点  可読性が高まる。 型アノテーションができる。 asdict で（ネストされたものでも）辞書に変換可能  参考  </description>
     </item>
     
   </channel>
