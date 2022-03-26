@@ -34,7 +34,7 @@ languages:
           weight: 15
         - name: About
           url: about/
-          weight: 15
+          weight: 20
         # - name: Tags
         #   url: tags/
         #   weight: 10
