@@ -13,10 +13,12 @@ draft: false
 
 [UCSB ポスドク時代](https://www.yusaito.com/blog/posts/us-life/ucsb-postdoc-memory/)は[このような実験](https://www.yusaito.com/blog/posts/us-life/experiment-in-ucsb/)をやっていました。
 
-- [**LinkedIn**](https://www.linkedin.com/in/yu-saito-03080088/)
-- [**GitHub**](https://github.com/yseeker)
-- [**Google Scholar**](https://scholar.google.com/citations?hl=en&user=M3gyCrUAAAAJ)
-- [**Kaggle**](https://www.kaggle.com/Yseeker)
+### リンク
+
+- [LinkedIn](https://www.linkedin.com/in/yu-saito-03080088/)
+- [GitHub](https://github.com/yseeker)
+- [Google Scholar](https://scholar.google.com/citations?hl=en&user=M3gyCrUAAAAJ)
+- [Kaggle](https://www.kaggle.com/Yseeker)
 
 ## 略歴
 
@@ -62,7 +64,7 @@ draft: false
 
 ### 言語、ツール、ライブラリなど
 
-- 言語 : Python(Advanced, 3+years), C/C++(basic), Go(basic), Rust(basic), shell script (basic)
+- 言語 : Python(Advanced, 3+years), C/C++(basic), Go(basic), shell script (basic)
 - Backend Framework: FastAPI, Flask
 - Hardware control : LabRAD
 - Pipeline : Gokart, Luigi, MLflow
