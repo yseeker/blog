@@ -11,14 +11,14 @@ draft: false
 
 [東京大学大学院](https://www.u-tokyo.ac.jp/en/index.html)の[岩佐研究室](http://iwasa.t.u-tokyo.ac.jp/)にて[電界誘起 2 次元超伝導の研究](https://ci.nii.ac.jp/naid/500001415739)を行い、2018 年 3 月に博士（工学）を取得。その後理化学研究所 AIP[分子情報科学チーム](https://www.riken.jp/research/labs/aip/goalorient_tech/mol_inf/index.html)を経て、[カリフォルニア大学サンタバーバラ校](https://www.ucsb.edu/)の[Andrea Young グループ](https://www.afylab.com/)で日本人初の[Elings Prize Fellow](https://www.cnsi.ucsb.edu/resources/funding/elings-prize/fellows)として、twisted 2 層グラフェンの超伝導・電子相関・トポロジカル物性の研究に取り組む。現在は[データグリッド](https://datagrid.co.jp/)のシニアエンジニアとして機械学習関連プロジェクトに従事。研究内容の詳細は[こちら](https://www.yusaito.com/research/)
 
+[UCSB ポスドク時代](https://www.yusaito.com/blog/posts/us-life/ucsb-postdoc-memory/)は[このような実験](https://www.yusaito.com/blog/posts/us-life/experiment-in-ucsb/)をやっていました。
+
 - [**LinkedIn**](https://www.linkedin.com/in/yu-saito-03080088/)
 - [**GitHub**](https://github.com/yseeker)
 - [**Google Scholar**](https://scholar.google.com/citations?hl=en&user=M3gyCrUAAAAJ)
-- [**Kaggle**]()
+- [**Kaggle**](https://www.kaggle.com/Yseeker)
 
-- [UCSB ポスドク時代](https://www.yusaito.com/blog/posts/us-life/ucsb-postdoc-memory/)は[このような実験](https://www.yusaito.com/blog/posts/us-life/experiment-in-ucsb/)をやっていました。
-
-##　略歴
+## 略歴
 
 - 2006 年 4 月 - 2009 年 3 月 福島県立安積高等学校 普通科
 - 2009 年 4 月 - 2013 年 3 月 東京大学 理科 I 類 → 工学部 物理工学科
@@ -28,6 +28,8 @@ draft: false
 - 2021 年 10 月 - 現在まで 株式会社データグリッド シニアエンジニア
 
 ## 主な研究成果
+
+その他の研究成果は[こちら](https://www.yusaito.com/publications/)
 
 1. Isospin Pomeranchuk 効果の発見（[Y. Saito et al. Nature (2021)](https://www.nature.com/articles/s41586-021-03409-2)）
 2. ホフスタッターバンド由来の強磁性的 Chern 絶縁体の発見（[Y. Saito et al. Nature Physics (2021)](https://www.nature.com/articles/s41567-020-01129-4)）
@@ -75,6 +77,5 @@ draft: false
 
 - 卓球と将棋は学生時代に部活/サークルでやっていたので少しできます。
 
-- ドラマ鑑賞。主に海外ドラマ（たまに洋画）、大学生時代までは日本のドラマを見ています。
+- 海外ドラマ（たまに洋画）をよく見ています。
   印象に残っている海外ドラマは「デスパレートな妻たち」「フラッシュ」「Good Place」「クイーンズ・ギャンビット」「運命の大統領」「Community（コミカレ）」「インセプション」「マネー・ショート」など。
-  日本のドラマは古い方から「TRICK」「女王の教室」「ブラッディ・マンデイ」「ライアーゲーム」「ブザービート」「全開ガール」「リーガルハイ」「半沢直樹」など。
