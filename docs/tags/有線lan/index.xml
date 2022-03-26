@@ -22,5 +22,14 @@
 ドアの隙間から有線 LAN を通す。 上で導入した RT-AX86 は部屋の外においてあるので、なんとか部屋の中にあるサーバーに有線 LAN を通したいということでドアの隙間から通せるエレコム LAN ケーブル 0.4m 隙間 CAT6A 準拠 シルバー LD-VAPF6A/SV04 を購入した。写真の通り、ドアの隙間から LAN を通すことに成功し、700-900Mbps を維持することができた。 </description>
     </item>
     
+    <item>
+      <title>Python : Dataclassを試してみる</title>
+      <link>https://www.yusaito.com/blog/posts/tech/python/python-dataclass/</link>
+      <pubDate>Tue, 18 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/posts/tech/python/python-dataclass/</guid>
+      <description>通常の class と Dataclass の比較 通常の class class Person: def __init__(self, age = 20, gender = &amp;#34;female&amp;#34;): self.gender = gender self.age = age Dataclass from dataclasses import dataclass @dataclass class DataclassPerson: gender: str = &amp;#34;female&amp;#34; name: int = 20 DataClass の利点  可読性が高まる。 型アノテーションができる。 asdict で（ネストされたものでも）辞書に変換可能  参考  </description>
+    </item>
+    
   </channel>
 </rss>

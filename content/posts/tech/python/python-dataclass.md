@@ -1,3 +1,14 @@
+---
+#author: "Hugo Authors"
+title: "Python : Dataclassを試してみる"
+date: "2022-01-18"
+tags: ["Python", "dataclass", "有線LAN", "RT-AX86U", "ASUS"]
+categories: ["Tech", "PC"]
+ShowToc: true
+TocOpen: true
+draft: false
+---
+
 ## 通常の class と Dataclass の比較
 
 ### 通常の class
@@ -23,7 +34,7 @@ class DataclassPerson:
 
 - 可読性が高まる。
 - 型アノテーションができる。
-- asdict で辞書に変換可能
+- asdict で（ネストされたものでも）辞書に変換可能
 
 ## 参考
 

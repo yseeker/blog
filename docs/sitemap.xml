@@ -362,6 +362,12 @@
     <loc>https://www.yusaito.com/blog/posts/tech/python/how-to-use-pathlib/</loc>
     <lastmod>2022-01-19T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://www.yusaito.com/blog/tags/dataclass/</loc>
+    <lastmod>2022-01-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.yusaito.com/blog/posts/tech/python/python-dataclass/</loc>
+    <lastmod>2022-01-18T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://www.yusaito.com/blog/tags/a100x8/</loc>
     <lastmod>2022-01-11T00:00:00+00:00</lastmod>
   </url><url>
@@ -661,8 +667,6 @@
   </url><url>
     <loc>https://www.yusaito.com/blog/posts/us-life/first-day-in-santabarbara/</loc>
     <lastmod>2018-09-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.yusaito.com/blog/posts/tech/python/python-dataclass/</loc>
   </url><url>
     <loc>https://www.yusaito.com/blog/archives/</loc>
   </url><url>
