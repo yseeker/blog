@@ -11,13 +11,13 @@ draft: false
 
 [東京大学大学院](https://www.u-tokyo.ac.jp/en/index.html)の[岩佐研究室](http://iwasa.t.u-tokyo.ac.jp/)にて[電界誘起 2 次元超伝導の研究](https://ci.nii.ac.jp/naid/500001415739)を行い、2018 年 3 月に博士（工学）を取得。その後理化学研究所 AIP[分子情報科学チーム](https://www.riken.jp/research/labs/aip/goalorient_tech/mol_inf/index.html)を経て、[カリフォルニア大学サンタバーバラ校](https://www.ucsb.edu/)の[Andrea Young グループ](https://www.afylab.com/)で日本人初の[Elings Prize Fellow](https://www.cnsi.ucsb.edu/resources/funding/elings-prize/fellows)として、twisted 2 層グラフェンの超伝導・電子相関・トポロジカル物性の研究に取り組む。現在は[データグリッド](https://datagrid.co.jp/)のシニアエンジニアとして機械学習関連プロジェクトに従事。研究内容の詳細は[こちら](https://www.yusaito.com/research/)
 
-[LinkedIn](https://www.linkedin.com/in/yu-saito-03080088/), [GitHub](https://github.com/yseeker), [Google Scholar](https://scholar.google.com/citations?hl=en&user=M3gyCrUAAAAJ)
+- [**LinkedIn**](https://www.linkedin.com/in/yu-saito-03080088/)
+- [**GitHub**](https://github.com/yseeker)
+- [**Google Scholar**](https://scholar.google.com/citations?hl=en&user=M3gyCrUAAAAJ)
 
-Personal web は[こちら](https://www.yusaito.com)。
+- [UCSB ポスドク時代](https://www.yusaito.com/blog/posts/us-life/ucsb-postdoc-memory/)は[このような実験](https://www.yusaito.com/blog/posts/us-life/experiment-in-ucsb/)をやっていました。
 
-- [UCSB ポスドク時代](https://ys-blog.hatenadiary.com/entry/2021/08/15/133141)は[このような実験](https://ys-blog.hatenadiary.com/entry/2021/07/27/142301)をやっていました。
-
-####略歴
+##　略歴
 
 - 2006 年 4 月 - 2009 年 3 月 福島県立安積高等学校 普通科
 - 2009 年 4 月 - 2013 年 3 月 東京大学 理科 I 類 → 工学部 物理工学科
@@ -44,6 +44,30 @@ Personal web は[こちら](https://www.yusaito.com)。
 3. 第 8 回 日本学術振興会 育志賞（日本学術振興会）
 4. Elings Prize Fellowship in Science 2018（カリフォルニア大学サンタバーバラ校）
 5. 平成 29 年度 工学系研究科長賞（東京大学）
+
+## スキル
+
+### プロジェクトレベル
+
+- ナノデバイスの作製と超低温測定の技術 (原子間力顕微鏡, 電子ビーム描画装置, 蒸着機, 希釈冷凍機など)
+- 実験系固体物理、特に量子物質（超伝導体、グラフェンなど）に関する知見
+- 深層生成モデルの開発と改良（特にデジタルヒューマンと創薬領域）
+- FastAPI などを用いたバックエンド開発
+- Kaggle におけるデータ分析
+- R&D 全般のプロジェクトマネジメント
+
+### 言語、ツール、ライブラリなど
+
+Analysis of financial time series data for auto-trading cryptocurrencies
+Project management on R&D
+computer related
+Languages: Python(Advanced, 3+years), C/C++(basic), Go(basic), Rust(basic), shell script (basic)
+Backend Framework: FastAPI, Flask
+Hardware control : LabRAD
+Pipeline : Gokart, Luigi, MLflow
+Cloud: Azure, GCP
+Tools: Git, Docker
+Kaggle Competition Expert, Atcoder [green]
 
 ## 趣味・特技
 

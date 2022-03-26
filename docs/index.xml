@@ -71,9 +71,11 @@ import cv2 from concurrent.futures import ThreadPoolExecutor cv2.setNumThreads(0
       
       <guid>https://www.yusaito.com/blog/about/</guid>
       <description>自己紹介 東京大学大学院の岩佐研究室にて電界誘起 2 次元超伝導の研究を行い、2018 年 3 月に博士（工学）を取得。その後理化学研究所 AIP分子情報科学チームを経て、カリフォルニア大学サンタバーバラ校のAndrea Young グループで日本人初のElings Prize Fellowとして、twisted 2 層グラフェンの超伝導・電子相関・トポロジカル物性の研究に取り組む。現在はデータグリッドのシニアエンジニアとして機械学習関連プロジェクトに従事。研究内容の詳細はこちら
-LinkedIn, GitHub, Google Scholar
-Personal web はこちら。
- UCSB ポスドク時代はこのような実験をやっていました。  ####略歴
+  LinkedIn
+  GitHub
+  Google Scholar
+  UCSB ポスドク時代はこのような実験をやっていました。
+  ##　略歴
  2006 年 4 月 - 2009 年 3 月 福島県立安積高等学校 普通科 2009 年 4 月 - 2013 年 3 月 東京大学 理科 I 類 → 工学部 物理工学科 2013 年 4 月 - 2018 年 3 月 東京大学 大学院工学系研究科 物理工学専攻 博士（工学） 2018 年 4 月 - 2018 年 9 月 理化学研究所 革新知能統合研究センター 特別研究員 2018 年 4 月 - 2020 年 9 月 カリフォルニア大学サンタバーバラ校 Elings Prize Fellow 2021 年 10 月 - 株式会社データグリッド シニアエンジニア  主な研究成果  Isospin Pomeranchuk 効果の発見（Y.</description>
     </item>
     
