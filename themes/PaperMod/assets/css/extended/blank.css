@@ -170,6 +170,13 @@ img {
   }
 }
 
+@media print, screen and (min-width: 480px) {
+  code {
+    font-size: 20px !important;
+    line-height: 1.7;
+  }
+}
+
 /* prism */
 @media print, screen and (min-width: 480px) {
   .highlight {
@@ -192,13 +199,6 @@ img {
     line-height: 1.7;
   }
 } */
-
-@media print, screen and (min-width: 480px) {
-  code {
-    font-size: 20px;
-    line-height: 1.7;
-  }
-}
 
 /* @media print, screen and (max-width: 479px) {
   .code {
