@@ -172,8 +172,8 @@ img {
 
 @media print, screen and (min-width: 480px) {
   code {
-    font-size: 20px !important;
-    line-height: 1.7;
+    font-size: 18px !important;
+    line-height: 1.9;
   }
 }
 

@@ -47,8 +47,6 @@
 }
 
 .hljs {
-  font-size: 16px !important;
-  line-height: 1.6 !important;
   display: block;
   overflow-x: auto;
   background: #1a2638;
@@ -57,6 +55,18 @@
   padding-right: 1.3em !important;
   padding-top: 0.8em !important;
   padding-bottom: 0.8em !important;
+}
+
+@media print, screen and (min-width: 480px) {
+  .hljs {
+    font-size: 16px !important;
+    line-height: 1.6 !important;
+}
+
+@media print, screen and (min-width: 479px) {
+  .hljs {
+    font-size: 10pt !important;
+    line-height: 1.5 !important;
 }
 
 .hljs-emphasis {
