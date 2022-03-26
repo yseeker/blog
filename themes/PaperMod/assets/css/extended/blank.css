@@ -33,7 +33,7 @@ img {
 
 @media print, screen and (min-width: 480px) {
   .post-title {
-    font-size: 28px !important;
+    font-size: 29px !important;
     line-height: 1.4 !important;
   }
 }
