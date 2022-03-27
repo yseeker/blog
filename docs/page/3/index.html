@@ -163,152 +163,81 @@ if (!doNotTrack) {
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>AzureでA100x8（V100x4）のPytorch環境構築とエラー対処
+    <h2>本格水冷 GPU マシンを導入した (ASUS EKWB RTX3090 &#43; Ryzen Threadripper 3970X)
     </h2>
   </header>
   <section class="entry-content">
-    <p>Azure の web で VM インスタンスを作成 VM インスタンスの作成はこちら 秘密鍵をダウンロードして、read 権限を与えていおく。
-cp ~/Downloads/your_key_name.pem ~/.ssh/keys/azure_vm_key.pem chmod 400 ~/.ssh/keys/azure_vm_key.pem ssh を使って VM にアクセス
-ssh -i ~/.ssh/keys/azure_vm_key.pem azureuser@&lt;public ip address of VM instance&gt; Cuda をインストール wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/cuda-ubuntu1804.pin sudo mv cuda-ubuntu1804.pin /etc/apt/preferences.d/cuda-repository-pin-600 wget https://developer.download.nvidia.com/compute/cuda/11.5.0/local_installers/cuda-repo-ubuntu1804-11-5-local_11.5.0-495.29.05-1_amd64.deb sudo dpkg -i cuda-repo-ubuntu1804-11-5-local_11.5.0-495.29.05-1_amd64.deb sudo apt-key add /var/cuda-repo-ubuntu1804-11-5-local/7fa2af80.pub sudo apt-get update sudo apt-get -y install cuda Data Center GPU manager のインストール（A100x8 の場合） bandwidthTest を行う 詳細は、こちらを参照。 A100x8 ではここでエラーが出る、V100x4 では出ない
-git clone https://github.com/NVIDIA/cuda-samples.git cd cuda-samples/Samples/bandwidthTest make ....</p>
+    <p>機械学習の分野、特に深層学習の分野だと GPU がないとかなり厳しいので自宅にオンプレ GPU マシンが前々から欲しかったが、アメリカでポスドクをしていたこともあり、本帰国してから導入すればいいやと思っていた。
+GCP や Azure の VM インスタンスは V100x2 とかで運用すると長期的にはかなりコストがかかるし、Colab Pro, Pro&#43;は、コスパはとても良いが割当 GPU のランダム性やデータを一々配置し直す必要があるのが面倒くさい。そもそもいつまでサービスが続くかも分からない。 とはいっても GPU でちょっと遊ぶくらいなら Colab は間違いなく便利なサービスだと思う。
+Lambda PC（GPU Workstation）なども検討したが、RTX3090 をフルで回したらファンの音が煩そうなので本格水冷の GPU マシンが欲しいと思っていた。ただそうはいっても自作できる技量はないので、大枚はたいて各種パーツを購入し、MOMA GARAGEさんにお願いし、本格水冷の GPU マシン を組み立ててもらった。（門馬さん、ありがとうございます！）
+組み立て後の PC の中身 MO-RA3 360 PRO (冷却用ラジエーター) 主なパーツ  マザーボード : ASUS ROG Zenith II Extreme Alpha CPU : Ryzen Threadripper 3970X GPU : ASUS EKWB RTX3090 24GB GDD6X RAM メモリ : G.Skill F4-3200C 16D-32GTZRX SSD : SAMSUNG 980 PRO MZ-V8PT0B 冷却用ラジエーター 1 : Watercool MO-RA3 360 PRO stainless steel 冷却用ラジエーター 2 : Black Ice Nemesis 480GTS CPU ウォーターブロック : EK WaterBlocks EK-Quantum Velocity sTR4 D-RGB - Full Nickel  本格水冷の効果 RTX3090 ２枚をフルで回しても、nvidia-smi で確認する限りは 45 度くらいまでしか GPU の温度は上昇しなかった。空冷だと経験上 65-70 度くらいまで上昇するので、水冷の冷却効果が極めて高いことが分かった。...</p>
   </section>
-  <footer class="entry-footer"><span title='2022-01-11 00:00:00 +0000 UTC'>January 11, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to AzureでA100x8（V100x4）のPytorch環境構築とエラー対処" href="https://www.yusaito.com/blog/posts/tech/linux/azure-vm-cuda-docker-setup/"></a>
+  <footer class="entry-footer"><span title='2022-02-24 00:00:00 +0000 UTC'>February 24, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to 本格水冷 GPU マシンを導入した (ASUS EKWB RTX3090 &#43; Ryzen Threadripper 3970X)" href="https://www.yusaito.com/blog/posts/tech/pc/fully-water-cooled-3090-pc-arrived/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>エラーメモ：IOError: image file is truncated
+    <h2>Pathlibで相対パスを有効活用する
     </h2>
   </header>
   <section class="entry-content">
-    <p>IOError: image file is truncated jpg で結構大きめの画像を Pillow で読み込むときに下記のエラーが出た。
-IOError: image file is truncated 解決策 from PIL import ImageFile ImageFile.LOAD_TRUNCATED_IMAGES = True 参考  </p>
+    <p>自走プログラマー~Python の先輩が教えるプロジェクト開発のベストプラクティス 120を読んだのでその中で気になった「ファイルパスはプログラムからの相対パスで組み立てるという箇所は実践的でとても勉強になったのでメモしておく。
+├──　run.py ├──　data ├── input.txt └── images みたいなディレクトリがある場合は
+import csv from pathlib import Path current_dir = Path(__file__).parent image_path = current_dir / &#34;data&#34; / &#34;images&#34; inuput_path = current_dir / &#34;input.txt&#34; とすればよい。</p>
   </section>
-  <footer class="entry-footer"><span title='2022-01-03 00:00:00 +0000 UTC'>January 3, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to エラーメモ：IOError: image file is truncated" href="https://www.yusaito.com/blog/posts/tech/python/ioerror-image-file-is-truncated/"></a>
+  <footer class="entry-footer"><span title='2022-02-18 00:00:00 +0000 UTC'>February 18, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to Pathlibで相対パスを有効活用する" href="https://www.yusaito.com/blog/posts/tech/python/relative-path-with-pathlib/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>Python : itertoolsの使い方 -その２-
+    <h2>tqdmでターミナルの横幅を狭めるとバグる問題を解消する
     </h2>
   </header>
   <section class="entry-content">
-    <p>product は便利そうだけど、starmap は一行別で生成したほうが分かりやすそう。
-itertools.groupby 同じキーをもつような要素からなる イテレーターのグループに対して、キーとグループを返すようなイテレータを作成する。通常、イテレーターは同じキー関数でソート済みである必要がある。
-使い方 for k, g in itertools.groupby(&#39;AAAABBBCCDAABBB&#39;): print(k) # --&gt; A B C D A B for k, g in itertools.groupby(&#39;AAAABBBCCD&#39;): print(list(g)) # --&gt; AAAA BBB CC D itertools.islice 要素を選択・スライスして返すイテレータを生成。
-使い方 for n in itertools.islice(&#39;ABCDEFG&#39;, 2): print(n) # --&gt; A B itertools.pairwise 隣同士をペアにしたイテレータを返す。
-使い方 for n in itertools.pairwise(&#39;ABCDEFG&#39;): print(n) # --&gt; AB BC CD DE EF FG itertools.permutations 特定の長さの順列を返す。
-使い方 for n in itertools.permutations(&#39;ABCD&#39;, 2): print(n) # --&gt; AB AC AD BA BC BD CA CB CD DA DB DC itertools....</p>
+    <p>問題 : tqdm を標準出力している状態でターミナルの横幅を狭めるとバグる 解決策 : dynamic_ncols=True にする 下記のように tqdm を定義すればよい（参考）
+from functools import partial from tqdm import tqdm as std_tqdm tqdm = partial(std_tqdm, dynamic_ncols=True) 参考  </p>
   </section>
-  <footer class="entry-footer"><span title='2021-12-21 00:00:00 +0000 UTC'>December 21, 2021</span></footer>
-  <a class="entry-link" aria-label="post link to Python : itertoolsの使い方 -その２-" href="https://www.yusaito.com/blog/posts/tech/python/how-to-use-itertools-2/"></a>
+  <footer class="entry-footer"><span title='2022-02-17 00:00:00 +0000 UTC'>February 17, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to tqdmでターミナルの横幅を狭めるとバグる問題を解消する" href="https://www.yusaito.com/blog/posts/tech/python/tqdm-dynamic-ncols/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>Python : itertoolsの使い方 -その１-
+    <h2>loggerとprintとtqdmの併用
     </h2>
   </header>
   <section class="entry-content">
-    <p>Atcoder などを昔解いていたときに itertools 便利だなーと思いつつも使いこなせていなかったので総まとめ。
-itertools の解説その１ itertools.accumulate 累積和を返すイテレータを作成できる。
-使い方 for n in itertools.accumulate([1,2,3,4,5]): print(n) # --&gt; 1 3 6 10 15 itertools.chain ２つのシーケンスを１つのシーケンスとして扱う。
-使い方 for n in itertools.chain(&#39;ABC&#39;, &#39;DEF&#39;): print(n) # --&gt; A B C D E F itertools.combinations 特定の長さの組み合わせを返す。出力は辞書式でソートされている。
-使い方 for n in itertools.combinations(&#39;ABCD&#39;, 2): print(n) # --&gt; AB AC AD BC BD CD itertools.combinations_with_replacement 特定の長さの組み合わせを返す。出力は辞書式でソートされている。同じ要素が複数回現れることを許容。
-使い方 for n in itertools.combinations_with_replacement(&#39;ABC&#39;, 2): print(n) # --&gt; AA AB AC BB BC CC itertools....</p>
+    <p>logger と print と tqdm を併用する場合は以下のコードをコピペする。
+import contextlib import logging import logging.handlers import sys from time import sleep from tqdm import tqdm from tqdm.contrib import DummyTqdmFile class TqdmLoggingHandler(logging.Handler): colors = {&#34;INFO&#34;: &#34;\033[37m{}\033[0m&#34;} def __init__(self, level=logging.NOTSET): super().__init__(level) def emit(self, record): try: record.msg = TqdmLoggingHandler.colors.get(record.levelname, &#34;{}&#34;).format( record.msg ) msg = self.format(record) tqdm.write(msg, file=sys.stderr) self.flush() except Exception: self.handleError(record) class CustomFormatter(logging.Formatter): grey = &#34;\x1b[38;20m&#34; green = &#34;\x1b[32;20m&#34; yellow = &#34;\x1b[33;20m&#34; red = &#34;\x1b[31;20m&#34; bold_red = &#34;\x1b[31;1m&#34; reset = &#34;\x1b[0m&#34; format = &#34;[%(asctime)s] [%(levelname)s] [%(process)d] [%(name)s] [%(funcName)s] [%(lineno)d] %(message)s&#34; FORMATS = { logging....</p>
   </section>
-  <footer class="entry-footer"><span title='2021-12-20 00:00:00 +0000 UTC'>December 20, 2021</span></footer>
-  <a class="entry-link" aria-label="post link to Python : itertoolsの使い方 -その１-" href="https://www.yusaito.com/blog/posts/tech/python/how-to-use-itertools-1/"></a>
+  <footer class="entry-footer"><span title='2022-02-13 00:00:00 +0000 UTC'>February 13, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to loggerとprintとtqdmの併用" href="https://www.yusaito.com/blog/posts/tech/python/tqdm-logging-print/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>Pandas.DataFrame/Series と numpy.ndarray と list の相互変換
+    <h2>Pythonでファイルリストからの並列処理
     </h2>
   </header>
   <section class="entry-content">
-    <p>Pandas.DataFrame/Series と numpy.ndarray と list の相互変換 (複数の) list から pd.DataFrame へ変換 大きく２つの方法がある。
-df = pd.DataFrame({&#39;list_1&#39;:list_1, &#39;list_2&#39;:list_2, &#39;list_3&#39;=list_3}) df = pd.DataFrame( data=zip(list_1, list_2, list_3), columns=[&#34;list_1&#34;, &#34;list_2&#34;, &#34;list_3&#34;], ) numpy.ndarray から pd.DataFrame へ変換 # numpy_array # [[ 0 1 2] # [ 3 4 5] # [ 6 7 8]] df = pd.DataFrame(data=numpy_array,columns=[&#39;col_1&#39;,&#39;col_2&#39;,&#39;col_3&#39;]) # col_1 col_2 col_3 # 0 0.0 1.0 2.0 # 1 3.0 4.0 5.0 # 2 6.0 7.0 8.0 pd....</p>
+    <p>ファイルのリストを受け取って何らかの並列処理をする。 from concurrent.futures import ProcessPoolExecutor, ThreadPoolExecutor from functools import partial from pathlib import Path from typing import List def list_file_paths(dir_path: str) -&gt; List[str]: &#34;&#34;&#34; List file paths in a directory. Parameters ---------- dir_path : str Path of the directory Returns ------- List[str] List of the file paths in the directory &#34;&#34;&#34; return sorted([str(path) for path in Path(dir_path).rglob(&#34;*&#34;) if path.is_file()]) def task(same_value, same_value2, diffent_values): return None def multiprocess_task(task, same_value, same_value2, diffent_values): with ProcessPoolExecutor() as executor: results = list(executor....</p>
   </section>
-  <footer class="entry-footer"><span title='2021-12-02 00:00:00 +0000 UTC'>December 2, 2021</span></footer>
-  <a class="entry-link" aria-label="post link to Pandas.DataFrame/Series と numpy.ndarray と list の相互変換" href="https://www.yusaito.com/blog/posts/tech/python/pandas-dataframe-series-convert-numpy-list/"></a>
+  <footer class="entry-footer"><span title='2022-02-03 00:00:00 +0000 UTC'>February 3, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to Pythonでファイルリストからの並列処理" href="https://www.yusaito.com/blog/posts/tech/python/multiprocess-multithreading-utils/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>Last day in Santa Barbara
+    <h2>Pythonでjpgからpngへ一括変換
     </h2>
   </header>
   <section class="entry-content">
-    <p>この日にサンタバーバラに来てからあっという間に３年間が経った。２年間住んだ Berkshire Terrace ともお別れである。 家具の大部分は FaceBook のコミュニティを通して UCSB の学生に買い取ってもらったので大きいもので捨てるものはほとんど無かった。
-窓際のL字型の机キッチン＆ダイニングアパートと壺2年間住んだアパート。Berkshire Terraceバスの中から見たダウンタウン  空港への道中</p>
+    <p>jpg から png への一括変換 (マルチプロセス) from concurrent.futures import ProcessPoolExecutor, ThreadPoolExecutor from functools import partial from pathlib import Path from typing import List from PIL import Image, ImageFile ImageFile.LOAD_TRUNCATED_IMAGES = True def list_file_paths(dir_path: str) -&gt; List[str]: &#34;&#34;&#34; List file paths in a directory. Parameters ---------- dir_path : str Path of the directory Returns ------- List[str] List of the file paths in the directory &#34;&#34;&#34; return sorted([str(path) for path in Path(dir_path).rglob(&#34;*&#34;) if path....</p>
   </section>
-  <footer class="entry-footer"><span title='2021-09-11 00:00:00 +0000 UTC'>September 11, 2021</span></footer>
-  <a class="entry-link" aria-label="post link to Last day in Santa Barbara" href="https://www.yusaito.com/blog/posts/us-life/last-day-in-santabarbara/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>UCSBポスドク記
-    </h2>
-  </header>
-  <section class="entry-content">
-    <p>Henly Gateキャンパス内キャンパスビーチとラグーン2017 年秋　海外ポスドクを志す 昔からいつかはアメリカで研究してみたいという漠然とした思いがあった。博士号取得後の 2018 年 4 月からの勤務先は決まっていたが、もしもうまく海外ポスドク先が決まれば退職して海外へ行くという意向をボス（予定）に相談したところ快諾して頂いた。この時期から海外ポスドク先を探し始めた。ラボ選びの方針は以前の記事で書いた通りである。また同時期にElings Prize Fellowshipにも応募した。
-2018 年 2 月 Elings Prize Fellowship のオファー 幸運にもカリフォルニア大学サンタバーバラ校から Elings Prize Fellowship のオファーレターを頂き（日本人初）、同大学のAndrea Young グループに同年 10 月から行くことが決定した。
-※上のオファーレターによると 2018 年では Elings Prize Fellowship の年間給与予定額は 60000USD (~ 660 万円)だが、2021 年現在は公式サイトにある通り 65000USD になっている。また UC サンタバーバラのポスドクの給与は年間 2%上昇する（これはフェローシップに限らない）。したがって 2021 年現在 Elings Prize Fellowship を獲得すると 1 年目 65000USD, 2 年目 66300USD, 3 年目 67626USD (~ 743 万円) となる。
-2018 年 3 月　博士（工学）取得 博論審査を無事に通過して、東大から博士号が授与された。同時期に幸運にも日本学術振興会育志賞も頂いた。...</p>
-  </section>
-  <footer class="entry-footer"><span title='2021-09-10 00:00:00 +0000 UTC'>September 10, 2021</span></footer>
-  <a class="entry-link" aria-label="post link to UCSBポスドク記" href="https://www.yusaito.com/blog/posts/us-life/ucsb-postdoc-memory/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>海外ポスドクになる方法と現地フェローシップ
-    </h2>
-  </header>
-  <section class="entry-content">
-    <p>ポスドク（Postdoctoral Researcher; 博士研究員）のポジションは世界中に無数にあるので博士号さえ持っていれば容易になれる（なりたいかどうかはもちろん人による）。日本から海外のポスドクを目指す際に多くの人はまず第一に海外学振をとることを目指すと思うが、少なくともアメリカに関しては、応募先のラボがある程度以上に研究費が潤沢であれば応募者側に明らかに問題がない限り（例えばコミュニケーションに極端に難がある、前所属で何らかの問題を起こしたなど）フェローシップ無しでもポスドクに応募して落ちることはまずない。“研究費に困っていない&#34;ラボの主宰者（PI）が、応募してくるポスドクを断る理由がほぼないのである。論文が 1 本もないからと言って海外ポスドクを諦める人をたまに見かけるが、アメリカには論文無しで学位をとってポスドクやってる人なんて山ほどいるから基本的には問題にはならないと思う。従って、海外ポスドクになりたい場合はいくつか研究費が潤沢そうで“良さげなラボ”の候補を決めてとりあえずメールを送ってみるのが良いと思う。ラボの PI のもとにはかなり多く（数十から 100 以上）の迷惑メールが届くので（メールアドレスを論文の責任著者として各論文誌の web サイトに公開しているため）、返信がなくともめげずに何度も送って見るのが良い。もちろんメールを送る前に学会などで顔見知りになっていればなお良いと思う。
-海外ポスドクになる方法 海外ポスドクになるには、1) フェローシップ無しで現地のラボに直接応募する（アメリカでは最も一般的）、2) 海外学振を獲得する、以外にも 3) 現地のフェローシップを獲得するという方法がある。現地のフェローシップというの国や地域、そして各研究機関が出しているフェローシップのことである。フェローシップ獲得のメリットは、お給料が同じ研究機関のポスドクよりも 100 万円前後高くなる（特に各研究機関が出している場合）のと、アカデミックキャリアを目指すのであれば研究費獲得実績と言う点でプラスになることである。デメリットは倍率が高い（例えば 30 倍-100 倍以上）のである程度は運である点である。例えば私が知っている物理関連分野で応募できるものをぱっと上げると
- Pappalardo Fellowship (MIT, 物理分野) Miller Research Fellowship (UC Berkeley, 基礎研究全般) Kavli Institute at Cornell Postdoctoral Fellowships (Cornell, ナノサイエンス) Materials Science Postdoctoral Fellowship (Princeton, 材料科学) Elings Prize Fellowship (UC Santa Barbara, ナノサイエンス)  地域・国単位だと例えば
- Marie Skłodowska-Curie Fellowship (ヨーロッパ) Banting Postdoctoral Fellowships (カナダ)  などがある。
-要求される応募書類 どの fellowship も似たような書類が要求される。例えば私が獲得した Elings Prize Fellowship の公式サイトから要求される書類を見てみると（特に太字の箇所はどこの応募する際にも要求されると思う）、...</p>
-  </section>
-  <footer class="entry-footer"><span title='2021-09-08 00:00:00 +0000 UTC'>September 8, 2021</span></footer>
-  <a class="entry-link" aria-label="post link to 海外ポスドクになる方法と現地フェローシップ" href="https://www.yusaito.com/blog/posts/us-life/how-to-get-fellowship/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Kaggle：SETIコンペ参加記（ソロ銅：71th/768 teams）
-    </h2>
-  </header>
-  <section class="entry-content">
-    <p>SETI Breakthrough Listen - E.T. Signal Searchという Kaggle の画像分類コンペに参加しました。
-結果 774 チーム中 74 位でソロ銅でした。
-コンペの概要 Overview のページには
- In this competition, use your data science skills to help identify anomalous signals in scans of Breakthrough Listen targets. Because there are no confirmed examples of alien signals to use to train machine learning algorithms, the team included some simulated signals (that they call “needles”) in the haystack of data from the telescope....</p>
-  </section>
-  <footer class="entry-footer"><span title='2021-08-19 00:00:00 +0000 UTC'>August 19, 2021</span></footer>
-  <a class="entry-link" aria-label="post link to Kaggle：SETIコンペ参加記（ソロ銅：71th/768 teams）" href="https://www.yusaito.com/blog/posts/tech/kaggle/seti-breakthrough-listen/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>写真で振り返るサンタバーバラ滞在記
-    </h2>
-  </header>
-  <section class="entry-content">
-    <p>渡米直後 渡米直後に最初に住んだ部屋。アイラビスタの Trigo Rd にある 7-8 人くらいが住めるシェアハウス。同じ時期に ICU から交換留学のような制度で女子学生が二人来ていた。彼女達は二人とも英語がペラペラでキャンパスの情報などを時折仕入れてくれたり、時には日本食をプレゼントしてくれたりなどとてもお世話になった。（学部生の彼女達からみたら私は毎日深夜頃にラボから部屋に帰ってくる異様な存在だったのではないかと思う。）
-アイラビスタの街並み アイラビスタは人口の大半が学生の街である。スケボーに乗ってる人やサーフボードを持ってる人を多数見かける。治安はとても良い。ニューヨークと比べて時間がとてもゆっくり流れていて、穏やかな人が多く、これといった（人種）差別を受けたことは 3 年間で一度もない。ただし、たまによそ見をしているスケボーダーが突っ込んできたり、スケボーダーが転んだ際にボードがこちらに突っ込んでくることがあるので注意。
-カリフォルニア大学サンタバーバラ校（UCSB） 多分 UCSB の正門（キャンパスの東側にある）。めったに使わない。 キャンパス内 キャンパスビーチ 研究で疲れたときはぼーっとビーチを見ると癒やされる。 Downtown 赤い屋根が特徴的なスペイン風の美しい建物が多い。ワイナリーや海鮮系のレストランも多い。 サンタバーバラはウニの名産地なので、Sushi Go Go と Shell fish company というお店で妻とウニを食べた。 以下はサンタバーバラ外の場所である。
-チャンネル諸島（Channel island） @ Ventura チャンネル諸島は、サンタバーバラ近くにベンチュラ郡に属する 8 つの島々で構成される諸島で国立公園にもなっている。シマハイイロギツネ(Island fox)という小柄なキツネが多数生息する。かなり人馴れしている。 リンダウ・ノーベル賞受賞者会議 @ Linadu, Germany 毎年 30 名程度のノーベル賞受賞者が世界中から招待され、若手研究者（大学院生やポスドク）に対して講演やディスカッションを行って下さる会議でドイツのリンダウで開催されている。 日本人は 10 名程度参加していた。詳細はこちら
-The Institute of Photonic Sciences @ Castelldefels, Spain リンダウの帰りにスペインのカステイダフェルス（Castelldefels）にある ICFO（The Institute of Photonic Sciences）という研究機関の中の Dimitri Efetov 研を訪問した。Prof. Efetov の大学院時代の研究テーマが私の大学院時代の研究テーマと似た内容だったために興味をもってもらい、大学院時代の研究テーマでセミナーをさせて頂いた。 ニューヨーク大学 @ NYC 2019 年 12 月頃（covid19 が中国で発見されたあたり？）にベクトルマグネット付きの希釈冷凍機を借りるためにニューヨーク大学の Javad Shabani 研究室を訪問した。冬のニューヨーク市は極寒で日によってはマイナス 10 度を下回ったりして顔中凍るかと思った。ニューヨーク市滞在中に体調を崩し、そこそこの熱（38 度以上）とひどい咳が出た。これがコロナの症状だったかどうかは今となっては知る由もない。ちなみに実験はうまくいかなかった（サンプルが全滅した）。 </p>
-  </section>
-  <footer class="entry-footer"><span title='2021-08-15 00:00:00 +0000 UTC'>August 15, 2021</span></footer>
-  <a class="entry-link" aria-label="post link to 写真で振り返るサンタバーバラ滞在記" href="https://www.yusaito.com/blog/posts/us-life/santabarbara-pictures/"></a>
+  <footer class="entry-footer"><span title='2022-01-25 00:00:00 +0000 UTC'>January 25, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to Pythonでjpgからpngへ一括変換" href="https://www.yusaito.com/blog/posts/tech/python/image-convert-jpg-png-multiprocess/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Python | YS&#39;s blog</title>
+<title>Tech | YS&#39;s blog</title>
 <meta name="keywords" content="" />
 <meta name="description" content="">
 <meta name="author" content="">
-<link rel="canonical" href="https://www.yusaito.com/blog/categories/python/" />
+<link rel="canonical" href="https://www.yusaito.com/blog/categories/tech/" />
 <meta name="google-site-verification" content="7pz_dAQx7-r3P-mr6XGvIVQx47QN5DmiWRVLEocHAIM" />
 <link crossorigin="anonymous" href="/blog/assets/css/stylesheet.min.1cd9e312f3a69e6de0e965d45a9ec4bb6e3eb39d37fd85b495232a376daaf019.css" integrity="sha256-HNnjEvOmnm3g6WXUWp7Eu24&#43;s503/YW0lSMqN22q8Bk=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://www.yusaito.com/blog/favicon.ico">
@@ -20,7 +20,7 @@
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
 <meta name="generator" content="Hugo 0.91.2" />
-<link rel="alternate" type="application/rss+xml" href="https://www.yusaito.com/blog/categories/python/index.xml">
+<link rel="alternate" type="application/rss+xml" href="https://www.yusaito.com/blog/categories/tech/index.xml">
 <noscript>
     <style>
         #theme-toggle,
@@ -68,15 +68,15 @@ if (!doNotTrack) {
 	gtag('config', 'G-X5LTDFN76J', { 'anonymize_ip': false });
 }
 </script>
-<meta property="og:title" content="Python" />
+<meta property="og:title" content="Tech" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.yusaito.com/blog/categories/python/" /><meta property="og:image" content="https://www.yusaito.com/blog/papermod-cover.png"/>
+<meta property="og:url" content="https://www.yusaito.com/blog/categories/tech/" /><meta property="og:image" content="https://www.yusaito.com/blog/papermod-cover.png"/>
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://www.yusaito.com/blog/papermod-cover.png"/>
 
-<meta name="twitter:title" content="Python"/>
+<meta name="twitter:title" content="Tech"/>
 <meta name="twitter:description" content=""/>
 
 </head>
@@ -147,92 +147,100 @@ if (!doNotTrack) {
 </header>
 <main class="main"> 
 <header class="page-header"><div class="breadcrumbs"><a href="https://www.yusaito.com/blog/">Home</a>&nbsp;»&nbsp;<a href="https://www.yusaito.com/blog/categories/">Categories</a></div>
-  <h1>Python</h1>
+  <h1>Tech</h1>
 </header>
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
-    <h2>Pandasでread_csvしたときに出現するUnnamed:0を消す方法
+    <h2>Pathlibの使い方
     </h2>
   </header>
   <section class="entry-content">
-    <p>問題：Pandas で csv を読むと謎の Unnamed:0 というコラムが出現 解決策 その１ : pd.read_csv で index_col = 0 を指定 df = pd.read_csv(&#39;test.csv&#39;, index_col=0) その２ : そもそも保存するときに index を消す df = pd.to_csv(&#39;test.csv&#39;, index = False) pandas の中身 ちなみに Unnamed:0 はこの辺りで追加されているらしい。
-# ref. https://github.com/pandas-dev/pandas/blob/ad190575aa75962d2d0eade2de81a5fe5a2e285b/pandas/tests/io/parser/test_mangle_dupes.py#L120-L140 @skip_pyarrow def test_mangled_unnamed_placeholders(all_parsers): # xref gh-13017 orig_key = &#34;0&#34; parser = all_parsers orig_value = [1, 2, 3] df = DataFrame({orig_key: orig_value}) # This test recursively updates `df`. for i in range(3): expected = DataFrame() for j in range(i &#43; 1): col_name = &#34;Unnamed: 0&#34; &#43; f&#34;....</p>
+    <p>今までパス操作は、組み込みのosとglob, pathlibが便利そうだったので調べてみる。
+基本操作 ファイル名取得 ディレクトリ名取得 from pathlib import Path path = Path(&#34;./dir/filename.txt&#34;)  ファイル名を取得 : path.name ファイル名拡張子抜き : path.stem ファイルの拡張子のみ : path.suffix ファイルのディレクトリを取得 : path.parents (list) パス連結 : / 演算子を使う（path.joinpath()） パスの存在確認：path.exists() ファイルかどうか確認 : path.is_file() ディレクトリかどうか確認 : path.is_dir() ディレクトリの作成 : path.mkdir(exist_ok=True, parents=True) ディレクトリの削除 : path.rmdir() ファイル/ディレクトリパス変更 : path.replace(tgt) ファイル/ディレクトリパス変更（末尾のみ）: path.rename(new_file_apth) 同じ階層に別名ファイルを作成 : path.with_name(&#39;file_new.txt&#39;).touch() 同じ階層に別拡張子ファイルを作成 : path.with_suffix(&#39;png&#39;).touch() 同じ階層のファイルとディレクトリ一覧を返す：path.iterdir() ファイルの存在ディレクトリのパスを取得：Path(__file__).parent  個人的によく使うモジュール ファイルを再帰的に探索  Pathlib の場合  # Pathlibの場合 from pathlib import Path from typing import List def list_file_paths(dir_path: str) -&gt; List[str]: &#34;&#34;&#34; List file paths in a directory....</p>
   </section>
-  <footer class="entry-footer"><span title='2022-03-22 00:00:00 +0000 UTC'>March 22, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to Pandasでread_csvしたときに出現するUnnamed:0を消す方法" href="https://www.yusaito.com/blog/posts/tech/python/pandas-read-csv-unnamed-name/"></a>
+  <footer class="entry-footer"><span title='2022-01-19 00:00:00 +0000 UTC'>January 19, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to Pathlibの使い方" href="https://www.yusaito.com/blog/posts/tech/python/how-to-use-pathlib/"></a>
 </article>
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
-    <h2>Python : hashlibを使って、ハッシュ値を求める
+    <h2>Python : Dataclassを試してみる
     </h2>
   </header>
   <section class="entry-content">
-    <p>ハッシュ値を求める import hashlib file_name = &#34;important_file.dat&#34; # MD5 ハッシュを生成する hs = hashlib.md5(file_name.encode()).hexdigest() # SHA224 ハッシュを生成する hs = hashlib.sha224(file_name.encode()).hexdigest() 自走プログラマー~Python の先輩が教えるプロジェクト開発のベストプラクティス 120の中でファイル名からハッシュ値を求め、そのハッシュ値の頭 3 文字を中間ディレクトリにして、１つのディレクトリにファイルを集中させないという手法が紹介されていた。
-例 file_name = &#34;important_file.dat&#34; hs = hashlib.md5(file_name.encode()).hexdigest() file_path = f&#34;dir_name/{hs[:3]}/{file_name}&#34; 参考  </p>
+    <p>Python3.7 から加わった Dataclass に関して全く知らなかったので参考煮上げた記事を読みながらメモ.
+通常の class と Dataclass の比較 通常の class class Person: def __init__(self, age = 20, gender = &#34;female&#34;): self.gender = gender self.age = age Dataclass from dataclasses import dataclass @dataclass class DataclassPerson: gender: str = &#34;female&#34; age: int = 20 DataClass の利点  可読性が高まる。 型アノテーションができる。 asdict で（ネストされたものでも）辞書に変換可能  参考  </p>
   </section>
-  <footer class="entry-footer"><span title='2022-03-20 00:00:00 +0000 UTC'>March 20, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to Python : hashlibを使って、ハッシュ値を求める" href="https://www.yusaito.com/blog/posts/tech/python/how-to-use-hashlib/"></a>
+  <footer class="entry-footer"><span title='2022-01-18 00:00:00 +0000 UTC'>January 18, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to Python : Dataclassを試してみる" href="https://www.yusaito.com/blog/posts/tech/python/python-dataclass/"></a>
 </article>
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
-    <h2>Pythonで並列処理 : MPIREの使い方
+    <h2>AzureでA100x8（V100x4）のPytorch環境構築とエラー対処
     </h2>
   </header>
   <section class="entry-content">
-    <p>Python では joblib や concurrent.futures などで簡単にマルチプロセスできるが、“MultiProcessing Is Really Easy&#34;という名の MPIRE というライブラリを見つけたので備忘録として残しておく。この記事によると、特定の場合では joblib や concurrent.futures よりも性能が良いらしい。
-MPIRE のインストール pip install mpire MPIRE の使い方 from mpire import WorkerPool def time_consuming_function(param): return None with WorkerPool(n_jobs=8) as pool: results = pool.map_unordered(time_consuming_function, interator, progress_bar=True) 参考  </p>
+    <p>Azure の web で VM インスタンスを作成 VM インスタンスの作成はこちら 秘密鍵をダウンロードして、read 権限を与えていおく。
+cp ~/Downloads/your_key_name.pem ~/.ssh/keys/azure_vm_key.pem chmod 400 ~/.ssh/keys/azure_vm_key.pem ssh を使って VM にアクセス
+ssh -i ~/.ssh/keys/azure_vm_key.pem azureuser@&lt;public ip address of VM instance&gt; Cuda をインストール wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/cuda-ubuntu1804.pin sudo mv cuda-ubuntu1804.pin /etc/apt/preferences.d/cuda-repository-pin-600 wget https://developer.download.nvidia.com/compute/cuda/11.5.0/local_installers/cuda-repo-ubuntu1804-11-5-local_11.5.0-495.29.05-1_amd64.deb sudo dpkg -i cuda-repo-ubuntu1804-11-5-local_11.5.0-495.29.05-1_amd64.deb sudo apt-key add /var/cuda-repo-ubuntu1804-11-5-local/7fa2af80.pub sudo apt-get update sudo apt-get -y install cuda Data Center GPU manager のインストール（A100x8 の場合） bandwidthTest を行う 詳細は、こちらを参照。 A100x8 ではここでエラーが出る、V100x4 では出ない
+git clone https://github.com/NVIDIA/cuda-samples.git cd cuda-samples/Samples/bandwidthTest make ....</p>
   </section>
-  <footer class="entry-footer"><span title='2022-03-19 00:00:00 +0000 UTC'>March 19, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to Pythonで並列処理 : MPIREの使い方" href="https://www.yusaito.com/blog/posts/tech/python/how-to-use-mpire-multiprocess/"></a>
+  <footer class="entry-footer"><span title='2022-01-11 00:00:00 +0000 UTC'>January 11, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to AzureでA100x8（V100x4）のPytorch環境構築とエラー対処" href="https://www.yusaito.com/blog/posts/tech/linux/azure-vm-cuda-docker-setup/"></a>
 </article>
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
-    <h2>PythonとopenCVで並列化
+    <h2>エラーメモ：IOError: image file is truncated
     </h2>
   </header>
   <section class="entry-content">
-    <p>openCV でマルチプロセス化しようとしてもシングルプロセスになっている問題に遭遇 Python で openCV を使った処理をマルチプロセス化してみたのだが、どうもシングルプロセスになってしまうという問題に遭遇した。
-解決策：cv2.setNumThreads(0)＆マルチプロセスをやめる。 cv2.setNumThreads(0) を加えて、かつマルチスレッド化（例えば、concurrent.future.ThreadPoolExecuterなど）することで効率的に並列処理可能になることが分かった。 cv2.setNumThreads(0)有りでもconcurrent.future.ProcessPoolExecuterでは、正しくマルチプロセスされなかった。
-以下テンプレート。
-import cv2 from concurrent.futures import ThreadPoolExecutor cv2.setNumThreads(0) def task_using_cv2(param): do_some_process_using_cv2() return with ThreadPoolExecutor() as executor: results = list(executor.map(task_using_cv2, param)) 参考   </p>
+    <p>IOError: image file is truncated jpg で結構大きめの画像を Pillow で読み込むときに下記のエラーが出た。
+IOError: image file is truncated 解決策 from PIL import ImageFile ImageFile.LOAD_TRUNCATED_IMAGES = True 参考  </p>
   </section>
-  <footer class="entry-footer"><span title='2022-03-18 00:00:00 +0000 UTC'>March 18, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to PythonとopenCVで並列化" href="https://www.yusaito.com/blog/posts/tech/python/opencv-setnumthreads-multithreading/"></a>
+  <footer class="entry-footer"><span title='2022-01-03 00:00:00 +0000 UTC'>January 3, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to エラーメモ：IOError: image file is truncated" href="https://www.yusaito.com/blog/posts/tech/python/ioerror-image-file-is-truncated/"></a>
 </article>
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
-    <h2>joblibの使い方
+    <h2>Python : itertoolsの使い方 -その２-
     </h2>
   </header>
   <section class="entry-content">
-    <p>joblib には主な機能として、1) 時間がかかる処理のキャッシュ化, 2)並列処理, 3)圧縮書き出しと読み込み、がある。
-joblib のインストール pip install joblib joblib の主な機能 時間がかかる処理のキャッシュ化 (Memory) 途中で止まってしまったら困る数分とか数時間とかかかる処理のキャッシュをとっておきたいときに使う。
-from joblib import Memory cachedir = &#39;cache_dir&#39; mem = Memory(cachedir) square = mem.cache(heavy_task_func) b = do_time_consuming_func(a) 並列処理 (Parallel, delayed) デフォルトはマルチプロセスだが、マルチスレッドも選択可能。
-マルチプロセス（デフォルト） from joblib import Parallel, delayed Parallel(n_jobs=-1)(delayed(task_func)(param) for param in iterator) マルチスレッド Parallel(n_jobs=-1, backend=&#39;threading&#39;)(delayed(task_func)(param) for param in iterator) オブジェクトの圧縮書き出し（永続化）と読み込み（dump, load） 書き出し（永続化） joblib.dump(object,file_path,compress=3) 読み込み object = joblib.load(file_path) 参考  </p>
+    <p>product は便利そうだけど、starmap は一行別で生成したほうが分かりやすそう。
+itertools.groupby 同じキーをもつような要素からなる イテレーターのグループに対して、キーとグループを返すようなイテレータを作成する。通常、イテレーターは同じキー関数でソート済みである必要がある。
+使い方 for k, g in itertools.groupby(&#39;AAAABBBCCDAABBB&#39;): print(k) # --&gt; A B C D A B for k, g in itertools.groupby(&#39;AAAABBBCCD&#39;): print(list(g)) # --&gt; AAAA BBB CC D itertools.islice 要素を選択・スライスして返すイテレータを生成。
+使い方 for n in itertools.islice(&#39;ABCDEFG&#39;, 2): print(n) # --&gt; A B itertools.pairwise 隣同士をペアにしたイテレータを返す。
+使い方 for n in itertools.pairwise(&#39;ABCDEFG&#39;): print(n) # --&gt; AB BC CD DE EF FG itertools.permutations 特定の長さの順列を返す。
+使い方 for n in itertools.permutations(&#39;ABCD&#39;, 2): print(n) # --&gt; AB AC AD BA BC BD CA CB CD DA DB DC itertools....</p>
   </section>
-  <footer class="entry-footer"><span title='2022-03-15 00:00:00 +0000 UTC'>March 15, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to joblibの使い方" href="https://www.yusaito.com/blog/posts/tech/python/how-to-use-joblib/"></a>
+  <footer class="entry-footer"><span title='2021-12-21 00:00:00 +0000 UTC'>December 21, 2021</span></footer>
+  <a class="entry-link" aria-label="post link to Python : itertoolsの使い方 -その２-" href="https://www.yusaito.com/blog/posts/tech/python/how-to-use-itertools-2/"></a>
 </article>
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
-    <h2>Ryzen Threadripper 3970XとNVIDIA RTX 3090を使ってnumpy(Intel MKL and OpenBLAS)とcupyでベンチマーク
+    <h2>Python : itertoolsの使い方 -その１-
     </h2>
   </header>
   <section class="entry-content">
-    <p>numpy でベンチマーク # ファイル名: numpy_benchmark.py import os os.environ[&#34;OPENBLAS_NUM_THREADS&#34;] = &#34;32&#34; # import mkl # mkl.set_num_threads(32) import numpy as np import time from threadpoolctl import threadpool_info from pprint import pp pp(threadpool_info()) np.show_config() N_LOOP = 5 calc_eigh_time_list = [] calc_inv_time_list = [] calc_dot_time_list = [] calc_norm_time_list = [] for size in [5000, 10000, 20000]: print(f&#34;size : {size}&#34;) for i in range(3): np.random.seed(i) X = np.random.randn(size, size) t_start = time.time() np.linalg.eigh(X @ X.T) calc_eigh_time_list....</p>
+    <p>Atcoder などを昔解いていたときに itertools 便利だなーと思いつつも使いこなせていなかったので総まとめ。
+itertools の解説その１ itertools.accumulate 累積和を返すイテレータを作成できる。
+使い方 for n in itertools.accumulate([1,2,3,4,5]): print(n) # --&gt; 1 3 6 10 15 itertools.chain ２つのシーケンスを１つのシーケンスとして扱う。
+使い方 for n in itertools.chain(&#39;ABC&#39;, &#39;DEF&#39;): print(n) # --&gt; A B C D E F itertools.combinations 特定の長さの組み合わせを返す。出力は辞書式でソートされている。
+使い方 for n in itertools.combinations(&#39;ABCD&#39;, 2): print(n) # --&gt; AB AC AD BC BD CD itertools.combinations_with_replacement 特定の長さの組み合わせを返す。出力は辞書式でソートされている。同じ要素が複数回現れることを許容。
+使い方 for n in itertools.combinations_with_replacement(&#39;ABC&#39;, 2): print(n) # --&gt; AA AB AC BB BC CC itertools....</p>
   </section>
-  <footer class="entry-footer"><span title='2022-02-28 00:00:00 +0000 UTC'>February 28, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to Ryzen Threadripper 3970XとNVIDIA RTX 3090を使ってnumpy(Intel MKL and OpenBLAS)とcupyでベンチマーク" href="https://www.yusaito.com/blog/posts/tech/python/numpy-benchmark-ryzen-threadripper/"></a>
+  <footer class="entry-footer"><span title='2021-12-20 00:00:00 +0000 UTC'>December 20, 2021</span></footer>
+  <a class="entry-link" aria-label="post link to Python : itertoolsの使い方 -その１-" href="https://www.yusaito.com/blog/posts/tech/python/how-to-use-itertools-1/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
-    <a class="next" href="https://www.yusaito.com/blog/categories/python/page/2/">Next Page »</a>
+    <a class="prev" href="https://www.yusaito.com/blog/categories/tech/page/3/">« Prev Page</a>
+    <a class="next" href="https://www.yusaito.com/blog/categories/tech/page/5/">Next Page »</a>
   </nav>
 </footer>
     </main>
