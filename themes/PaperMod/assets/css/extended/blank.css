@@ -212,7 +212,7 @@ img {
 }
 
 .header {
-  margin-bottom: 10px !important;
+  margin-bottom: -10px !important;
 }
 
 /* .home-info .entry-content {
