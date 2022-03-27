@@ -207,6 +207,7 @@ img {
 
 .home-info {
   padding: 10px !important;
+  margin: 10px !important;
 }
 /* @media print, screen and (min-width: 480px) {
   .code {
