@@ -206,7 +206,9 @@ img {
 }
 
 .first-entry {
-  min-height: 60px !important;
+  min-height: 40px !important;
+  /* margin-top: 10px !important;
+  margin-bottom: 10px !important; */
 }
 
 /* .home-info .entry-content {
