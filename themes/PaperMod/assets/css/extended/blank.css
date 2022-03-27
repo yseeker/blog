@@ -64,9 +64,8 @@ img {
   position: absolute;
   border-left: 5px solid #12007a !important;
   content: "";
-  top: 5%;
-  bottom: 5%;
-  right: -1px;
+  top: 20%;
+  bottom: 20%;
   font-size: 25px !important;
   padding: 4px 8px !important;
   margin-top: 75px !important;
