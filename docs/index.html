@@ -206,6 +206,19 @@ NOTE: The SHMEM allocation limit is set to the default of 64MB. This may be insu
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2>Pandas : サイズの大きいcsvファイルをpickleかfeatherに変換 
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>read_csv が遅い問題 20GB くらいの csv ファイルを pandas.DataFrame の read_csv で読み込んだ際に２分くらいかかったので、feather と pickle への書き出しを検討したのでその際のメモ。
+ read_csv : 130sec read_feather : 5sec read_pickle : 2.5sec  from contextlib import contextmanager from time import time import pandas as pd @contextmanager def timer(process_name): start = time() yield print(f&#34;[{process_name}] done in {time() - start:.2f}s&#34;) with timer(&#34;pkl&#34;): df = pd.read_pickle(&#34;data/input/train.pkl&#34;) with timer(&#34;feather&#34;): df = pd.read_feather(&#34;data/input/train.feather&#34;) with timer(&#34;csv&#34;): df = pd.read_csv(&#34;data/input/train.csv&#34;) ちなみに pickle の書き出しと、読み込みのときの pandas の version が違うと AttributeError: Can&#39;t get attribute &#39;_unpickle_block&#39; on &lt;module &#39;pandas....</p>
+  </section>
+  <footer class="entry-footer"><span title='2022-03-23 00:00:00 +0000 UTC'>March 23, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to Pandas : サイズの大きいcsvファイルをpickleかfeatherに変換 " href="https://www.yusaito.com/blog/posts/tech/python/pandas_read_csv_pickle_feather/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2>Pandasでread_csvしたときに出現するUnnamed:0を消す方法
     </h2>
   </header>
@@ -256,21 +269,6 @@ import cv2 from concurrent.futures import ThreadPoolExecutor cv2.setNumThreads(0
   </section>
   <footer class="entry-footer"><span title='2022-03-18 00:00:00 +0000 UTC'>March 18, 2022</span></footer>
   <a class="entry-link" aria-label="post link to PythonとopenCVで並列化" href="https://www.yusaito.com/blog/posts/tech/python/opencv-setnumthreads-multithreading/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>joblibの使い方
-    </h2>
-  </header>
-  <section class="entry-content">
-    <p>joblib には主な機能として、1) 時間がかかる処理のキャッシュ化, 2)並列処理, 3)圧縮書き出しと読み込み、がある。
-joblib のインストール pip install joblib joblib の主な機能 時間がかかる処理のキャッシュ化 (Memory) 途中で止まってしまったら困る数分とか数時間とかかかる処理のキャッシュをとっておきたいときに使う。
-from joblib import Memory cachedir = &#39;cache_dir&#39; mem = Memory(cachedir) square = mem.cache(heavy_task_func) b = do_time_consuming_func(a) 並列処理 (Parallel, delayed) デフォルトはマルチプロセスだが、マルチスレッドも選択可能。
-マルチプロセス（デフォルト） from joblib import Parallel, delayed Parallel(n_jobs=-1)(delayed(task_func)(param) for param in iterator) マルチスレッド Parallel(n_jobs=-1, backend=&#39;threading&#39;)(delayed(task_func)(param) for param in iterator) オブジェクトの圧縮書き出し（永続化）と読み込み（dump, load） 書き出し（永続化） joblib.dump(object,file_path,compress=3) 読み込み object = joblib.load(file_path) 参考  </p>
-  </section>
-  <footer class="entry-footer"><span title='2022-03-15 00:00:00 +0000 UTC'>March 15, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to joblibの使い方" href="https://www.yusaito.com/blog/posts/tech/python/how-to-use-joblib/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

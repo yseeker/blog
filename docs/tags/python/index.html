@@ -166,6 +166,19 @@ NOTE: The SHMEM allocation limit is set to the default of 64MB. This may be insu
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2>Pandas : サイズの大きいcsvファイルをpickleかfeatherに変換 
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>read_csv が遅い問題 20GB くらいの csv ファイルを pandas.DataFrame の read_csv で読み込んだ際に２分くらいかかったので、feather と pickle への書き出しを検討したのでその際のメモ。
+ read_csv : 130sec read_feather : 5sec read_pickle : 2.5sec  from contextlib import contextmanager from time import time import pandas as pd @contextmanager def timer(process_name): start = time() yield print(f&#34;[{process_name}] done in {time() - start:.2f}s&#34;) with timer(&#34;pkl&#34;): df = pd.read_pickle(&#34;data/input/train.pkl&#34;) with timer(&#34;feather&#34;): df = pd.read_feather(&#34;data/input/train.feather&#34;) with timer(&#34;csv&#34;): df = pd.read_csv(&#34;data/input/train.csv&#34;) ちなみに pickle の書き出しと、読み込みのときの pandas の version が違うと AttributeError: Can&#39;t get attribute &#39;_unpickle_block&#39; on &lt;module &#39;pandas....</p>
+  </section>
+  <footer class="entry-footer"><span title='2022-03-23 00:00:00 +0000 UTC'>March 23, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to Pandas : サイズの大きいcsvファイルをpickleかfeatherに変換 " href="https://www.yusaito.com/blog/posts/tech/python/pandas_read_csv_pickle_feather/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2>Pandasでread_csvしたときに出現するUnnamed:0を消す方法
     </h2>
   </header>
@@ -214,19 +227,6 @@ functools.partial の定義 # ref. https://docs.python.org/ja/3/library/functool
   </section>
   <footer class="entry-footer"><span title='2022-02-26 00:00:00 +0000 UTC'>February 26, 2022</span></footer>
   <a class="entry-link" aria-label="post link to Python : functools.partial 関数の引数を一部固定" href="https://www.yusaito.com/blog/posts/tech/python/how-to-use-functools-partial/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2>PythonとOpenCVで画像リストから動画を作成
-    </h2>
-  </header>
-  <section class="entry-content">
-    <p>openCV を使って画像リストから動画を作成する。 画像リストがあったときにそこから動画を生成するときに使う。
-from pathlib import Path from typing import List import cv2 def list_file_paths(dir_path: str) -&gt; List[str]: &#34;&#34;&#34; List file paths in a directory. Parameters ---------- dir_path : str Path of the directory Returns ------- List[str] List of the file paths in the directory &#34;&#34;&#34; return sorted([str(path) for path in Path(dir_path).rglob(&#34;*&#34;) if path.is_file()]) def create_mp4_video_from_image_path_list( output_video_path: str, image_path_list: List[str], fps: int, ) -&gt; None: &#34;&#34;&#34; Create mp4 video file from a image path list Parameters ---------- output_video_path : str Path of the output video image_path_list : List[str] Path of image file list fps : int fps (frames per second) &#34;&#34;&#34; height, width, _ = cv2....</p>
-  </section>
-  <footer class="entry-footer"><span title='2022-02-26 00:00:00 +0000 UTC'>February 26, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to PythonとOpenCVで画像リストから動画を作成" href="https://www.yusaito.com/blog/posts/tech/python/create-video-from-images-opencv/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

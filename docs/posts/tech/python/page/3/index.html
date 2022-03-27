@@ -182,6 +182,18 @@ if (!doNotTrack) {
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2>Pythonでファイルリストからの並列処理
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>ファイルのリストを受け取って何らかの並列処理をする。 from concurrent.futures import ProcessPoolExecutor, ThreadPoolExecutor from functools import partial from pathlib import Path from typing import List def list_file_paths(dir_path: str) -&gt; List[str]: &#34;&#34;&#34; List file paths in a directory. Parameters ---------- dir_path : str Path of the directory Returns ------- List[str] List of the file paths in the directory &#34;&#34;&#34; return sorted([str(path) for path in Path(dir_path).rglob(&#34;*&#34;) if path.is_file()]) def task(same_value, same_value2, diffent_values): return None def multiprocess_task(task, same_value, same_value2, diffent_values): with ProcessPoolExecutor() as executor: results = list(executor....</p>
+  </section>
+  <footer class="entry-footer"><span title='2022-02-03 00:00:00 +0000 UTC'>February 3, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to Pythonでファイルリストからの並列処理" href="https://www.yusaito.com/blog/posts/tech/python/multiprocess-multithreading-utils/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2>Pythonでjpgからpngへ一括変換
     </h2>
   </header>
@@ -246,23 +258,6 @@ itertools.groupby 同じキーをもつような要素からなる イテレー�
   </section>
   <footer class="entry-footer"><span title='2021-12-21 00:00:00 +0000 UTC'>December 21, 2021</span></footer>
   <a class="entry-link" aria-label="post link to Python : itertoolsの使い方 -その２-" href="https://www.yusaito.com/blog/posts/tech/python/how-to-use-itertools-2/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Python : itertoolsの使い方 -その１-
-    </h2>
-  </header>
-  <section class="entry-content">
-    <p>Atcoder などを昔解いていたときに itertools 便利だなーと思いつつも使いこなせていなかったので総まとめ。
-itertools の解説その１ itertools.accumulate 累積和を返すイテレータを作成できる。
-使い方 for n in itertools.accumulate([1,2,3,4,5]): print(n) # --&gt; 1 3 6 10 15 itertools.chain ２つのシーケンスを１つのシーケンスとして扱う。
-使い方 for n in itertools.chain(&#39;ABC&#39;, &#39;DEF&#39;): print(n) # --&gt; A B C D E F itertools.combinations 特定の長さの組み合わせを返す。出力は辞書式でソートされている。
-使い方 for n in itertools.combinations(&#39;ABCD&#39;, 2): print(n) # --&gt; AB AC AD BC BD CD itertools.combinations_with_replacement 特定の長さの組み合わせを返す。出力は辞書式でソートされている。同じ要素が複数回現れることを許容。
-使い方 for n in itertools.combinations_with_replacement(&#39;ABC&#39;, 2): print(n) # --&gt; AA AB AC BB BC CC itertools....</p>
-  </section>
-  <footer class="entry-footer"><span title='2021-12-20 00:00:00 +0000 UTC'>December 20, 2021</span></footer>
-  <a class="entry-link" aria-label="post link to Python : itertoolsの使い方 -その１-" href="https://www.yusaito.com/blog/posts/tech/python/how-to-use-itertools-1/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

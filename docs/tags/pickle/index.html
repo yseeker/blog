@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Categories | YS&#39;s blog</title>
+<title>pickle | YS&#39;s blog</title>
 <meta name="keywords" content="" />
 <meta name="description" content="">
 <meta name="author" content="">
-<link rel="canonical" href="https://www.yusaito.com/blog/categories/" />
+<link rel="canonical" href="https://www.yusaito.com/blog/tags/pickle/" />
 <meta name="google-site-verification" content="7pz_dAQx7-r3P-mr6XGvIVQx47QN5DmiWRVLEocHAIM" />
 <link crossorigin="anonymous" href="/blog/assets/css/stylesheet.min.79c5d3da1c61c9d2ca5724988eef6f9027d116df80ff439c8ca030db7ff5ad8d.css" integrity="sha256-ecXT2hxhydLKVySYju9vkCfRFt&#43;A/0OcjKAw23/1rY0=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://www.yusaito.com/blog/favicon.ico">
@@ -20,7 +20,7 @@
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
 <meta name="generator" content="Hugo 0.91.2" />
-<link rel="alternate" type="application/rss+xml" href="https://www.yusaito.com/blog/categories/index.xml">
+<link rel="alternate" type="application/rss+xml" href="https://www.yusaito.com/blog/tags/pickle/index.xml">
 <noscript>
     <style>
         #theme-toggle,
@@ -68,15 +68,15 @@ if (!doNotTrack) {
 	gtag('config', 'G-X5LTDFN76J', { 'anonymize_ip': false });
 }
 </script>
-<meta property="og:title" content="Categories" />
+<meta property="og:title" content="pickle" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.yusaito.com/blog/categories/" /><meta property="og:image" content="https://www.yusaito.com/blog/papermod-cover.png"/>
+<meta property="og:url" content="https://www.yusaito.com/blog/tags/pickle/" /><meta property="og:image" content="https://www.yusaito.com/blog/papermod-cover.png"/>
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://www.yusaito.com/blog/papermod-cover.png"/>
 
-<meta name="twitter:title" content="Categories"/>
+<meta name="twitter:title" content="pickle"/>
 <meta name="twitter:description" content=""/>
 
 </head>
@@ -129,7 +129,7 @@ if (!doNotTrack) {
             </li>
             <li>
                 <a href="https://www.yusaito.com/blog/categories/" title="Categories">
-                    <span class="active">Categories</span>
+                    <span>Categories</span>
                 </a>
             </li>
             <li>
@@ -145,40 +145,23 @@ if (!doNotTrack) {
         </ul>
     </nav>
 </header>
-<main class="main">
-<header class="page-header">
-    <h1>Categories</h1>
+<main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="https://www.yusaito.com/blog/">Home</a>&nbsp;»&nbsp;<a href="https://www.yusaito.com/blog/tags/">Tags</a></div>
+  <h1>pickle</h1>
 </header>
 
-<ul class="terms-tags">
-    <li>
-        <a href="https://www.yusaito.com/blog/categories/hugo/">Hugo <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="https://www.yusaito.com/blog/categories/kaggle/">Kaggle <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="https://www.yusaito.com/blog/categories/linux/">Linux <sup><strong><sup>3</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="https://www.yusaito.com/blog/categories/pc/">PC <sup><strong><sup>2</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="https://www.yusaito.com/blog/categories/python/">Python <sup><strong><sup>20</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="https://www.yusaito.com/blog/categories/tech/">Tech <sup><strong><sup>26</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="https://www.yusaito.com/blog/categories/%E3%82%A2%E3%83%A1%E3%83%AA%E3%82%AB%E7%94%9F%E6%B4%BB/">アメリカ生活 <sup><strong><sup>16</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="https://www.yusaito.com/blog/categories/%E5%B0%8F%E3%83%8D%E3%82%BF/">小ネタ <sup><strong><sup>2</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="https://www.yusaito.com/blog/categories/%E6%B5%B7%E5%A4%96/">海外 <sup><strong><sup>3</sup></strong></sup> </a>
-    </li>
-</ul>
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>Pandas : サイズの大きいcsvファイルをpickleかfeatherに変換 
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>read_csv が遅い問題 20GB くらいの csv ファイルを pandas.DataFrame の read_csv で読み込んだ際に２分くらいかかったので、feather と pickle への書き出しを検討したのでその際のメモ。
+ read_csv : 130sec read_feather : 5sec read_pickle : 2.5sec  from contextlib import contextmanager from time import time import pandas as pd @contextmanager def timer(process_name): start = time() yield print(f&#34;[{process_name}] done in {time() - start:.2f}s&#34;) with timer(&#34;pkl&#34;): df = pd.read_pickle(&#34;data/input/train.pkl&#34;) with timer(&#34;feather&#34;): df = pd.read_feather(&#34;data/input/train.feather&#34;) with timer(&#34;csv&#34;): df = pd.read_csv(&#34;data/input/train.csv&#34;) ちなみに pickle の書き出しと、読み込みのときの pandas の version が違うと AttributeError: Can&#39;t get attribute &#39;_unpickle_block&#39; on &lt;module &#39;pandas....</p>
+  </section>
+  <footer class="entry-footer"><span title='2022-03-23 00:00:00 +0000 UTC'>March 23, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to Pandas : サイズの大きいcsvファイルをpickleかfeatherに変換 " href="https://www.yusaito.com/blog/posts/tech/python/pandas_read_csv_pickle_feather/"></a>
+</article>
     </main>
     
 <footer class="footer">
