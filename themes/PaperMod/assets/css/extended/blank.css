@@ -205,10 +205,19 @@ img {
   }
 }
 
-.home-info {
-  padding: 10px !important;
-  margin: 10px !important;
+/* .home-info {
+  padding-top: 10px !important;
+  margin-top: 10px !important;
+  padding-bottom: 10px !important;
+  margin-bottom: 10px !important;
 }
+
+.first-entry .home-info {
+  padding-top: 10px !important;
+  margin-top: 10px !important;
+  padding-bottom: 10px !important;
+  margin-bottom: 10px !important;
+} */
 /* @media print, screen and (min-width: 480px) {
   .code {
     font-size: 20px !important;
