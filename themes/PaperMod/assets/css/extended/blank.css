@@ -205,9 +205,9 @@ img {
   }
 }
 
-/* .first-entry {
-  min-height: 120px !important;
-} */
+.first-entry {
+  min-height: 60px !important;
+}
 
 /* .home-info .entry-content {
   -webkit-line-clamp: unset;
