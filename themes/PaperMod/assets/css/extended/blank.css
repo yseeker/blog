@@ -211,6 +211,10 @@ img {
   margin-bottom: 10px !important;
 }
 
+.header {
+  margin-bottom: -20px !important;
+}
+
 /* .home-info .entry-content {
   -webkit-line-clamp: unset;
 } */
