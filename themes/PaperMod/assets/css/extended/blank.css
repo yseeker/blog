@@ -206,7 +206,7 @@ img {
 }
 
 .first-entry {
-  min-height: 120px;
+  min-height: 120px !important;
 }
 
 /* .home-info .entry-content {
