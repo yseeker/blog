@@ -66,6 +66,7 @@ img {
   content: "";
   top: 20%;
   bottom: 20%;
+  right: -1px;
   font-size: 25px !important;
   padding: 4px 8px !important;
   margin-top: 75px !important;
