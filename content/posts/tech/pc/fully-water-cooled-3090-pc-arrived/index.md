@@ -1,7 +1,7 @@
 ---
 #author: "Hugo Authors"
 title: "本格水冷 GPU マシンを導入した (ASUS EKWB RTX3090 + Ryzen Threadripper 3970X)"
-date: "2022-02-24"
+date: "2022-02-28"
 tags: ["watercooled", "RTX3090", "EKWB", "Ryzen Threadripper 3970X", "ASUS"]
 categories: ["Tech", "PC"]
 ShowToc: true

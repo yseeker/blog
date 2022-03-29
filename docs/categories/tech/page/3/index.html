@@ -11,7 +11,7 @@
 <meta name="author" content="">
 <link rel="canonical" href="https://www.yusaito.com/blog/categories/tech/" />
 <meta name="google-site-verification" content="7pz_dAQx7-r3P-mr6XGvIVQx47QN5DmiWRVLEocHAIM" />
-<link crossorigin="anonymous" href="/blog/assets/css/stylesheet.min.b624413065f328aca6cdb1209509000e30fb8692e1099db0a62ec71f40ce1fbb.css" integrity="sha256-tiRBMGXzKKymzbEglQkADjD7hpLhCZ2wpi7HH0DOH7s=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/blog/assets/css/stylesheet.min.6087d4478ef1a6e4b70f2e688623594f1c21e0195679a9b4e682779aef3fc091.css" integrity="sha256-YIfUR47xpuS3Dy5ohiNZTxwh4BlWeam05oJ3mu8/wJE=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://www.yusaito.com/blog/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://www.yusaito.com/blog/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://www.yusaito.com/blog/favicon-32x32.png">
@@ -152,31 +152,15 @@ if (!doNotTrack) {
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
-    <h2>家のネット環境の改善
+    <h2>Python : functools.partial 関数の引数を一部固定
     </h2>
   </header>
   <section class="entry-content">
-    <p>RT-AX86U の導入 日本に本帰国してから家の Wi-Fi の環境を快適にしたいと考えてを ASUS の RT-AX86U を導入した。NURO 光の ONU に加えるので二重ルータになることになるが下記の記事を参考に設定すると問題なくルーターとして機能させることができた。時間帯にもよるが、上りも下りも 500-700Mbps くらい出た。ちなみに NURO 光の ONU は F660A である。
-参考  https://digitalnetlife.com/asus-wifi6-nuro-internet/ https://raife.jp/network-router-rtax86u-f660a/  ゲーミング LAN ポートで有線接続すると、700-900Mbps くらい出て自宅サーバーへの scp や rsync でのファイル転送も、80-90MB/s くらいで快適にできるようになった。
-ドアの隙間から有線 LAN を通す。 上で導入した RT-AX86 は部屋の外においてあるので、なんとか部屋の中にあるサーバーに有線 LAN を通したいということでドアの隙間から通せるエレコム LAN ケーブル 0.4m 隙間 CAT6A 準拠 シルバー LD-VAPF6A/SV04 を購入した。写真の通り、ドアの隙間から LAN を通すことに成功し、700-900Mbps を維持することができた。 </p>
+    <p>functools.partial は、関数の特定の引数を固定したい場合に使う 個人的に concurrent.futures の ProcessPoolExecuter や ThreadPoolExecuter の map を使うときに併用することが多い。
+functools.partial の定義 # ref. https://docs.python.org/ja/3/library/functools.html#functools.partial def partial(func, /, *args, **keywords): def newfunc(*fargs, **fkeywords): newkeywords = {**keywords, **fkeywords} return func(*args, *fargs, **newkeywords) newfunc.func = func newfunc.args = args newfunc.keywords = keywords return newfunc 使い方：引数を固定する from functools import partial def product_xyz(x, y, z): return x * y * z # xとyの値を固定する product_z = partial(product_xyz, x=2, y=3) product_z(4) # 24 参考  </p>
   </section>
-  <footer class="entry-footer"><span title='2022-02-24 00:00:00 +0000 UTC'>February 24, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to 家のネット環境の改善" href="https://www.yusaito.com/blog/posts/tech/pc/wifi-setup-rt-ax86u/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2>本格水冷 GPU マシンを導入した (ASUS EKWB RTX3090 &#43; Ryzen Threadripper 3970X)
-    </h2>
-  </header>
-  <section class="entry-content">
-    <p>機械学習の分野、特に深層学習の分野だと GPU がないとかなり厳しいので自宅にオンプレ GPU マシンが前々から欲しかったが、アメリカでポスドクをしていたこともあり、本帰国してから導入すればいいやと思っていた。
-GCP や Azure の VM インスタンスは V100x2 とかで運用すると長期的にはかなりコストがかかるし、Colab Pro, Pro&#43;は、コスパはとても良いが割当 GPU のランダム性やデータを一々配置し直す必要があるのが面倒くさい。そもそもいつまでサービスが続くかも分からない。 とはいっても GPU でちょっと遊ぶくらいなら Colab は間違いなく便利なサービスだと思う。
-Lambda PC（GPU Workstation）なども検討したが、RTX3090 をフルで回したらファンの音が煩そうなので本格水冷の GPU マシンが欲しいと思っていた。ただそうはいっても自作できる技量はないので、大枚はたいて各種パーツを購入し、MOMA GARAGEさんにお願いし、本格水冷の GPU マシン を組み立ててもらった。（門馬さん、ありがとうございます！）
-組み立て後の PC の中身 MO-RA3 360 PRO (冷却用ラジエーター) 主なパーツ  マザーボード : ASUS ROG Zenith II Extreme Alpha CPU : Ryzen Threadripper 3970X GPU : ASUS EKWB RTX3090 24GB GDD6X RAM メモリ : G.Skill F4-3200C 16D-32GTZRX SSD : SAMSUNG 980 PRO MZ-V8PT0B 冷却用ラジエーター 1 : Watercool MO-RA3 360 PRO stainless steel 冷却用ラジエーター 2 : Black Ice Nemesis 480GTS CPU ウォーターブロック : EK WaterBlocks EK-Quantum Velocity sTR4 D-RGB - Full Nickel  本格水冷の効果 RTX3090 ２枚をフルで回しても、nvidia-smi で確認する限りは 45 度くらいまでしか GPU の温度は上昇しなかった。空冷だと経験上 65-70 度くらいまで上昇するので、水冷の冷却効果が極めて高いことが分かった。...</p>
-  </section>
-  <footer class="entry-footer"><span title='2022-02-24 00:00:00 +0000 UTC'>February 24, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to 本格水冷 GPU マシンを導入した (ASUS EKWB RTX3090 &#43; Ryzen Threadripper 3970X)" href="https://www.yusaito.com/blog/posts/tech/pc/fully-water-cooled-3090-pc-arrived/"></a>
+  <footer class="entry-footer"><span title='2022-01-26 00:00:00 +0000 UTC'>January 26, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to Python : functools.partial 関数の引数を一部固定" href="https://www.yusaito.com/blog/posts/tech/python/how-to-use-functools-partial/"></a>
 </article>
 
 <article class="post-entry tag-entry"> 
@@ -189,7 +173,7 @@ Lambda PC（GPU Workstation）なども検討したが、RTX3090 をフルで回
 ├──　run.py ├──　data ├── input.txt └── images みたいなディレクトリがある場合は
 import csv from pathlib import Path current_dir = Path(__file__).parent image_path = current_dir / &#34;data&#34; / &#34;images&#34; inuput_path = current_dir / &#34;input.txt&#34; とすればよい。</p>
   </section>
-  <footer class="entry-footer"><span title='2022-02-18 00:00:00 +0000 UTC'>February 18, 2022</span></footer>
+  <footer class="entry-footer"><span title='2022-01-18 00:00:00 +0000 UTC'>January 18, 2022</span></footer>
   <a class="entry-link" aria-label="post link to Pathlibで相対パスを有効活用する" href="https://www.yusaito.com/blog/posts/tech/python/relative-path-with-pathlib/"></a>
 </article>
 
@@ -199,10 +183,10 @@ import csv from pathlib import Path current_dir = Path(__file__).parent image_pa
     </h2>
   </header>
   <section class="entry-content">
-    <p>問題 : tqdm を標準出力している状態でターミナルの横幅を狭めるとバグる 解決策 : dynamic_ncols=True にする 下記のように tqdm を定義すればよい（参考）
+    <p>問題 : tqdm で標準出力している状態でターミナルの横幅を狭めるとバグる 解決策 : dynamic_ncols=True にする 下記のように tqdm を定義すればよい（参考）
 from functools import partial from tqdm import tqdm as std_tqdm tqdm = partial(std_tqdm, dynamic_ncols=True) 参考  </p>
   </section>
-  <footer class="entry-footer"><span title='2022-02-17 00:00:00 +0000 UTC'>February 17, 2022</span></footer>
+  <footer class="entry-footer"><span title='2022-01-17 00:00:00 +0000 UTC'>January 17, 2022</span></footer>
   <a class="entry-link" aria-label="post link to tqdmでターミナルの横幅を狭めるとバグる問題を解消する" href="https://www.yusaito.com/blog/posts/tech/python/tqdm-dynamic-ncols/"></a>
 </article>
 
@@ -212,23 +196,39 @@ from functools import partial from tqdm import tqdm as std_tqdm tqdm = partial(s
     </h2>
   </header>
   <section class="entry-content">
-    <p>logger と print と tqdm を併用する場合は以下のコードをコピペする。
+    <p>logger と print と tqdm を併用する場合は以下のコードをコピペする。tqdm の出力に色付けできる。
 import contextlib import logging import logging.handlers import sys from time import sleep from tqdm import tqdm from tqdm.contrib import DummyTqdmFile class TqdmLoggingHandler(logging.Handler): colors = {&#34;INFO&#34;: &#34;\033[37m{}\033[0m&#34;} def __init__(self, level=logging.NOTSET): super().__init__(level) def emit(self, record): try: record.msg = TqdmLoggingHandler.colors.get(record.levelname, &#34;{}&#34;).format( record.msg ) msg = self.format(record) tqdm.write(msg, file=sys.stderr) self.flush() except Exception: self.handleError(record) class CustomFormatter(logging.Formatter): grey = &#34;\x1b[38;20m&#34; green = &#34;\x1b[32;20m&#34; yellow = &#34;\x1b[33;20m&#34; red = &#34;\x1b[31;20m&#34; bold_red = &#34;\x1b[31;1m&#34; reset = &#34;\x1b[0m&#34; format = &#34;[%(asctime)s] [%(levelname)s] [%(process)d] [%(name)s] [%(funcName)s] [%(lineno)d] %(message)s&#34; FORMATS = { logging....</p>
   </section>
-  <footer class="entry-footer"><span title='2022-02-13 00:00:00 +0000 UTC'>February 13, 2022</span></footer>
+  <footer class="entry-footer"><span title='2022-01-13 00:00:00 +0000 UTC'>January 13, 2022</span></footer>
   <a class="entry-link" aria-label="post link to loggerとprintとtqdmの併用" href="https://www.yusaito.com/blog/posts/tech/python/tqdm-logging-print/"></a>
 </article>
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
-    <h2>Pythonでファイルリストからの並列処理
+    <h2>AzureでA100x8（V100x4）のPytorch環境構築とエラー対処
     </h2>
   </header>
   <section class="entry-content">
-    <p>ファイルのリストを受け取って何らかの並列処理をする。 from concurrent.futures import ProcessPoolExecutor, ThreadPoolExecutor from functools import partial from pathlib import Path from typing import List def list_file_paths(dir_path: str) -&gt; List[str]: &#34;&#34;&#34; List file paths in a directory. Parameters ---------- dir_path : str Path of the directory Returns ------- List[str] List of the file paths in the directory &#34;&#34;&#34; return sorted([str(path) for path in Path(dir_path).rglob(&#34;*&#34;) if path.is_file()]) def task(same_value, same_value2, diffent_values): return None def multiprocess_task(task, same_value, same_value2, diffent_values): with ProcessPoolExecutor() as executor: results = list(executor....</p>
+    <p>Azure の web で VM インスタンスを作成 VM インスタンスの作成はこちら 秘密鍵をダウンロードして、read 権限を与えていおく。
+cp ~/Downloads/your_key_name.pem ~/.ssh/keys/azure_vm_key.pem chmod 400 ~/.ssh/keys/azure_vm_key.pem ssh を使って VM にアクセス
+ssh -i ~/.ssh/keys/azure_vm_key.pem azureuser@&lt;public ip address of VM instance&gt; Cuda をインストール wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/cuda-ubuntu1804.pin sudo mv cuda-ubuntu1804.pin /etc/apt/preferences.d/cuda-repository-pin-600 wget https://developer.download.nvidia.com/compute/cuda/11.5.0/local_installers/cuda-repo-ubuntu1804-11-5-local_11.5.0-495.29.05-1_amd64.deb sudo dpkg -i cuda-repo-ubuntu1804-11-5-local_11.5.0-495.29.05-1_amd64.deb sudo apt-key add /var/cuda-repo-ubuntu1804-11-5-local/7fa2af80.pub sudo apt-get update sudo apt-get -y install cuda Data Center GPU manager のインストール（A100x8 の場合） bandwidthTest を行う 詳細は、こちらを参照。 A100x8 ではここでエラーが出る、V100x4 では出ない
+git clone https://github.com/NVIDIA/cuda-samples.git cd cuda-samples/Samples/bandwidthTest make ....</p>
   </section>
-  <footer class="entry-footer"><span title='2022-02-03 00:00:00 +0000 UTC'>February 3, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to Pythonでファイルリストからの並列処理" href="https://www.yusaito.com/blog/posts/tech/python/multiprocess-multithreading-utils/"></a>
+  <footer class="entry-footer"><span title='2022-01-12 00:00:00 +0000 UTC'>January 12, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to AzureでA100x8（V100x4）のPytorch環境構築とエラー対処" href="https://www.yusaito.com/blog/posts/tech/linux/azure-vm-cuda-docker-setup/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>Pandas : サイズの大きいcsvファイルをpickleかfeatherに変換 
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>read_csv が遅い問題 20GB くらいの csv ファイルを pandas.DataFrame の read_csv で読み込んだ際に２分くらいかかったので、feather と pickle への書き出しを検討したのでその際のメモ。
+ read_csv : 130sec read_feather : 5sec read_pickle : 2.5sec  from contextlib import contextmanager from time import time import pandas as pd @contextmanager def timer(process_name): start = time() yield print(f&#34;[{process_name}] done in {time() - start:.2f}s&#34;) with timer(&#34;pkl&#34;): df = pd.read_pickle(&#34;data/input/train.pkl&#34;) with timer(&#34;feather&#34;): df = pd.read_feather(&#34;data/input/train.feather&#34;) with timer(&#34;csv&#34;): df = pd.read_csv(&#34;data/input/train.csv&#34;) ちなみに pickle の書き出しと、読み込みのときの pandas の version が違うと AttributeError: Can&#39;t get attribute &#39;_unpickle_block&#39; on &lt;module &#39;pandas....</p>
+  </section>
+  <footer class="entry-footer"><span title='2022-01-08 00:00:00 +0000 UTC'>January 8, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to Pandas : サイズの大きいcsvファイルをpickleかfeatherに変換 " href="https://www.yusaito.com/blog/posts/tech/python/pandas_read_csv_pickle_feather/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

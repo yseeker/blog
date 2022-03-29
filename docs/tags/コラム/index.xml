@@ -10,11 +10,11 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Tue, 22 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.yusaito.com/blog/tags/%E3%82%B3%E3%83%A9%E3%83%A0/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 25 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.yusaito.com/blog/tags/%E3%82%B3%E3%83%A9%E3%83%A0/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pandasでread_csvしたときに出現するUnnamed:0を消す方法</title>
       <link>https://www.yusaito.com/blog/posts/tech/python/pandas-read-csv-unnamed-name/</link>
-      <pubDate>Tue, 22 Mar 2022 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 25 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/posts/tech/python/pandas-read-csv-unnamed-name/</guid>
       <description>問題：Pandas で csv を読むと謎の Unnamed:0 というコラムが出現 解決策 その１ : pd.read_csv で index_col = 0 を指定 df = pd.read_csv(&amp;#39;test.csv&amp;#39;, index_col=0) その２ : そもそも保存するときに index を消す df = pd.to_csv(&amp;#39;test.csv&amp;#39;, index = False) pandas の中身 ちなみに Unnamed:0 はこの辺りで追加されているらしい。

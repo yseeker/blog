@@ -13,7 +13,7 @@
     <item>
       <title>nvcr.io/nvidia/pytorchのイメージからdockerコンテナを作成したときのNOTE</title>
       <link>https://www.yusaito.com/blog/posts/tech/linux/docker-nvcr-pytorch-ipc-host-ulimit-memlock/</link>
-      <pubDate>Wed, 23 Mar 2022 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 23 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/posts/tech/linux/docker-nvcr-pytorch-ipc-host-ulimit-memlock/</guid>
       <description>NGC 提供の Pytorch イメージを使って docker コンテナを立ち上げる。 NVIDIA NGC | CATALOGから NGC(NVIDIA GPU CLOUD)が提供している、Pytorch の docker イメージをとりあえずdocker runをしてみる。

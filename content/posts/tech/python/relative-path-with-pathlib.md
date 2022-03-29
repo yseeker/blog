@@ -1,7 +1,7 @@
 ---
 #author: "Hugo Authors"
 title: "Pathlibで相対パスを有効活用する"
-date: "2022-02-18"
+date: "2022-01-18"
 tags:
   [
     "Pathlib",

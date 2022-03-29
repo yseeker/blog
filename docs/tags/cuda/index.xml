@@ -10,11 +10,20 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sat, 05 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.yusaito.com/blog/tags/cuda/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 18 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.yusaito.com/blog/tags/cuda/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ryzen Threadripper 3970XとNVIDIA RTX 3090を使ってnumpy(Intel MKL and OpenBLAS)とcupyでベンチマーク</title>
+      <link>https://www.yusaito.com/blog/posts/tech/python/numpy-benchmark-ryzen-threadripper/</link>
+      <pubDate>Fri, 18 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/posts/tech/python/numpy-benchmark-ryzen-threadripper/</guid>
+      <description>numpy でベンチマーク # ファイル名: numpy_benchmark.py import os os.environ[&amp;#34;OPENBLAS_NUM_THREADS&amp;#34;] = &amp;#34;32&amp;#34; # import mkl # mkl.set_num_threads(32) import numpy as np import time from threadpoolctl import threadpool_info from pprint import pp pp(threadpool_info()) np.show_config() N_LOOP = 5 calc_eigh_time_list = [] calc_inv_time_list = [] calc_dot_time_list = [] calc_norm_time_list = [] for size in [5000, 10000, 20000]: print(f&amp;#34;size : {size}&amp;#34;) for i in range(3): np.random.seed(i) X = np.random.randn(size, size) t_start = time.time() np.linalg.eigh(X @ X.T) calc_eigh_time_list.</description>
+    </item>
+    
     <item>
       <title>Ubuntu 20.04 LTSセットアップ（自宅サーバー用）とリモート環境用の諸々の初期設定（docker &#43; cuda &#43; ssh &#43; vscode）</title>
       <link>https://www.yusaito.com/blog/posts/tech/linux/ubuntu-server-ssh-docker-setup/</link>
-      <pubDate>Sat, 05 Mar 2022 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 11 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/posts/tech/linux/ubuntu-server-ssh-docker-setup/</guid>
       <description>Ubuntu 20.04 LTS の導入 こちらの記事に従って、Ubuntu 20.04 LTS を入れた。
@@ -23,18 +32,9 @@ sudo apt-get --purge remove nvidia-* sudo apt-get --purge remove cuda-*  Nvidia 
     </item>
     
     <item>
-      <title>Ryzen Threadripper 3970XとNVIDIA RTX 3090を使ってnumpy(Intel MKL and OpenBLAS)とcupyでベンチマーク</title>
-      <link>https://www.yusaito.com/blog/posts/tech/python/numpy-benchmark-ryzen-threadripper/</link>
-      <pubDate>Mon, 28 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.yusaito.com/blog/posts/tech/python/numpy-benchmark-ryzen-threadripper/</guid>
-      <description>numpy でベンチマーク # ファイル名: numpy_benchmark.py import os os.environ[&amp;#34;OPENBLAS_NUM_THREADS&amp;#34;] = &amp;#34;32&amp;#34; # import mkl # mkl.set_num_threads(32) import numpy as np import time from threadpoolctl import threadpool_info from pprint import pp pp(threadpool_info()) np.show_config() N_LOOP = 5 calc_eigh_time_list = [] calc_inv_time_list = [] calc_dot_time_list = [] calc_norm_time_list = [] for size in [5000, 10000, 20000]: print(f&amp;#34;size : {size}&amp;#34;) for i in range(3): np.random.seed(i) X = np.random.randn(size, size) t_start = time.time() np.linalg.eigh(X @ X.T) calc_eigh_time_list.</description>
-    </item>
-    
-    <item>
       <title>AzureでA100x8（V100x4）のPytorch環境構築とエラー対処</title>
       <link>https://www.yusaito.com/blog/posts/tech/linux/azure-vm-cuda-docker-setup/</link>
-      <pubDate>Tue, 11 Jan 2022 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 12 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/posts/tech/linux/azure-vm-cuda-docker-setup/</guid>
       <description>Azure の web で VM インスタンスを作成 VM インスタンスの作成はこちら 秘密鍵をダウンロードして、read 権限を与えていおく。

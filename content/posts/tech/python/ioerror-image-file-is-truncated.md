@@ -1,7 +1,7 @@
 ---
 #author: "Hugo Authors"
 title: "エラーメモ：IOError: image file is truncated"
-date: "2022-01-03"
+date: "2021-12-03"
 tags:
   [
     "python",

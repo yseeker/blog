@@ -1,7 +1,7 @@
 ---
 #author: "Hugo Authors"
 title: "Pathlibの使い方"
-date: "2022-01-19"
+date: "2021-12-19"
 tags: ["Pathlib", "Path", "Python", "os", "glob"]
 categories: ["Tech", "Python"]
 ShowToc: true

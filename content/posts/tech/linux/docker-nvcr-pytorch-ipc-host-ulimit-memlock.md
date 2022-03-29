@@ -1,7 +1,7 @@
 ---
 #author: "Hugo Authors"
 title: "nvcr.io/nvidia/pytorchのイメージからdockerコンテナを作成したときのNOTE"
-date: "2022-03-23"
+date: "2022-02-23"
 tags:
   [
     "Pytorch",

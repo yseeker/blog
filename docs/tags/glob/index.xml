@@ -10,11 +10,11 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Wed, 19 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.yusaito.com/blog/tags/glob/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.yusaito.com/blog/tags/glob/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pathlibの使い方</title>
       <link>https://www.yusaito.com/blog/posts/tech/python/how-to-use-pathlib/</link>
-      <pubDate>Wed, 19 Jan 2022 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 19 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/posts/tech/python/how-to-use-pathlib/</guid>
       <description>今までパス操作は、組み込みのosとglob, pathlibが便利そうだったので調べてみる。

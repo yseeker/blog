@@ -1,7 +1,7 @@
 ---
 #author: "Hugo Authors"
 title: "Pandas.DataFrame/Series と numpy.ndarray と list の相互変換"
-date: "2021-12-02"
+date: "2021-11-02"
 tags:
   [
     "python",

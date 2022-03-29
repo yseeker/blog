@@ -1,8 +1,8 @@
 ---
 #author: "Hugo Authors"
 title: "loggerとprintとtqdmの併用"
-date: "2022-02-13"
-tags: ["python", "tqdm", "logging", "print", "標準出力"]
+date: "2022-01-13"
+tags: ["python", "tqdm", "logging", "print", "標準出力", "色をつける"]
 categories: ["Tech", "Python"]
 ShowToc: true
 TocOpen: true
@@ -12,7 +12,7 @@ aliases:
   - /posts/tech/python/tqdm_logging/
 ---
 
-logger と print と tqdm を併用する場合は以下のコードをコピペする。
+logger と print と tqdm を併用する場合は以下のコードをコピペする。tqdm の出力に色付けできる。
 
 ```python
 import contextlib

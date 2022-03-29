@@ -10,11 +10,11 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Fri, 18 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.yusaito.com/blog/tags/path/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 18 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.yusaito.com/blog/tags/path/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pathlibで相対パスを有効活用する</title>
       <link>https://www.yusaito.com/blog/posts/tech/python/relative-path-with-pathlib/</link>
-      <pubDate>Fri, 18 Feb 2022 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 18 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/posts/tech/python/relative-path-with-pathlib/</guid>
       <description>自走プログラマー~Python の先輩が教えるプロジェクト開発のベストプラクティス 120を読んだのでその中で気になった「ファイルパスはプログラムからの相対パスで組み立てるという箇所は実践的でとても勉強になったのでメモしておく。
@@ -25,7 +25,7 @@ import csv from pathlib import Path current_dir = Path(__file__).parent image_pa
     <item>
       <title>Pythonでファイルリストからの並列処理</title>
       <link>https://www.yusaito.com/blog/posts/tech/python/multiprocess-multithreading-utils/</link>
-      <pubDate>Thu, 03 Feb 2022 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 03 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/posts/tech/python/multiprocess-multithreading-utils/</guid>
       <description>ファイルのリストを受け取って何らかの並列処理をする。 from concurrent.futures import ProcessPoolExecutor, ThreadPoolExecutor from functools import partial from pathlib import Path from typing import List def list_file_paths(dir_path: str) -&amp;gt; List[str]: &amp;#34;&amp;#34;&amp;#34; List file paths in a directory. Parameters ---------- dir_path : str Path of the directory Returns ------- List[str] List of the file paths in the directory &amp;#34;&amp;#34;&amp;#34; return sorted([str(path) for path in Path(dir_path).rglob(&amp;#34;*&amp;#34;) if path.is_file()]) def task(same_value, same_value2, diffent_values): return None def multiprocess_task(task, same_value, same_value2, diffent_values): with ProcessPoolExecutor() as executor: results = list(executor.</description>
@@ -34,7 +34,7 @@ import csv from pathlib import Path current_dir = Path(__file__).parent image_pa
     <item>
       <title>Pathlibの使い方</title>
       <link>https://www.yusaito.com/blog/posts/tech/python/how-to-use-pathlib/</link>
-      <pubDate>Wed, 19 Jan 2022 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 19 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/posts/tech/python/how-to-use-pathlib/</guid>
       <description>今までパス操作は、組み込みのosとglob, pathlibが便利そうだったので調べてみる。

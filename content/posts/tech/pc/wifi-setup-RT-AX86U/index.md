@@ -1,7 +1,7 @@
 ---
 #author: "Hugo Authors"
 title: "家のネット環境の改善"
-date: "2022-02-24"
+date: "2022-02-20"
 tags: ["Wi-Fi", "ドアの隙間", "有線LAN", "RT-AX86U", "ASUS"]
 categories: ["Tech", "PC"]
 ShowToc: true

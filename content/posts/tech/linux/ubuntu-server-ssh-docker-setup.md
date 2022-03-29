@@ -1,7 +1,7 @@
 ---
 #author: "Hugo Authors"
 title: "Ubuntu 20.04 LTSセットアップ（自宅サーバー用）とリモート環境用の諸々の初期設定（docker + cuda + ssh + vscode）"
-date: "2022-03-05"
+date: "2022-03-11"
 tags:
   [
     "Ubunu",

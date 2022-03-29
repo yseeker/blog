@@ -10,11 +10,11 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Tue, 21 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.yusaito.com/blog/tags/itertools-%E7%B5%84%E3%81%BF%E5%90%88%E3%82%8F%E3%81%9B/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 21 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.yusaito.com/blog/tags/itertools-%E7%B5%84%E3%81%BF%E5%90%88%E3%82%8F%E3%81%9B/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Python : itertoolsの使い方 -その２-</title>
       <link>https://www.yusaito.com/blog/posts/tech/python/how-to-use-itertools-2/</link>
-      <pubDate>Tue, 21 Dec 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 21 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/posts/tech/python/how-to-use-itertools-2/</guid>
       <description>product は便利そうだけど、starmap は一行別で生成したほうが分かりやすそう。
@@ -28,7 +28,7 @@ itertools.groupby 同じキーをもつような要素からなる イテレー�
     <item>
       <title>Python : itertoolsの使い方 -その１-</title>
       <link>https://www.yusaito.com/blog/posts/tech/python/how-to-use-itertools-1/</link>
-      <pubDate>Mon, 20 Dec 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 20 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/posts/tech/python/how-to-use-itertools-1/</guid>
       <description>Atcoder などを昔解いていたときに itertools 便利だなーと思いつつも使いこなせていなかったので総まとめ。

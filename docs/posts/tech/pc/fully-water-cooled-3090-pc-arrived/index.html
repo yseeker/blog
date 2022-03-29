@@ -14,7 +14,7 @@ Lambda PC（GPU Workstation）なども検討したが、RTX3090 をフルで回
 <meta name="author" content="">
 <link rel="canonical" href="https://www.yusaito.com/blog/posts/tech/pc/fully-water-cooled-3090-pc-arrived/" />
 <meta name="google-site-verification" content="7pz_dAQx7-r3P-mr6XGvIVQx47QN5DmiWRVLEocHAIM" />
-<link crossorigin="anonymous" href="/blog/assets/css/stylesheet.min.b624413065f328aca6cdb1209509000e30fb8692e1099db0a62ec71f40ce1fbb.css" integrity="sha256-tiRBMGXzKKymzbEglQkADjD7hpLhCZ2wpi7HH0DOH7s=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/blog/assets/css/stylesheet.min.6087d4478ef1a6e4b70f2e688623594f1c21e0195679a9b4e682779aef3fc091.css" integrity="sha256-YIfUR47xpuS3Dy5ohiNZTxwh4BlWeam05oJ3mu8/wJE=" rel="preload stylesheet" as="style">
 <script defer crossorigin="anonymous" src="/blog/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js" integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5&#43;kdJvBz5iKbt6B5PJI="
     onload="hljs.initHighlightingOnLoad();"></script>
 <link rel="icon" href="https://www.yusaito.com/blog/favicon.ico">
@@ -79,8 +79,8 @@ Lambda PC（GPU Workstation）なども検討したが、RTX3090 をフルで回
 組み立て後の PC の中身 MO-RA3 360 PRO (冷却用ラジエーター) 主なパーツ  マザーボード : ASUS ROG Zenith II Extreme Alpha CPU : Ryzen Threadripper 3970X GPU : ASUS EKWB RTX3090 24GB GDD6X RAM メモリ : G.Skill F4-3200C 16D-32GTZRX SSD : SAMSUNG 980 PRO MZ-V8PT0B 冷却用ラジエーター 1 : Watercool MO-RA3 360 PRO stainless steel 冷却用ラジエーター 2 : Black Ice Nemesis 480GTS CPU ウォーターブロック : EK WaterBlocks EK-Quantum Velocity sTR4 D-RGB - Full Nickel  本格水冷の効果 RTX3090 ２枚をフルで回しても、nvidia-smi で確認する限りは 45 度くらいまでしか GPU の温度は上昇しなかった。空冷だと経験上 65-70 度くらいまで上昇するので、水冷の冷却効果が極めて高いことが分かった。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.yusaito.com/blog/posts/tech/pc/fully-water-cooled-3090-pc-arrived/" /><meta property="og:image" content="https://www.yusaito.com/blog/papermod-cover.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-02-24T00:00:00&#43;00:00" />
-<meta property="article:modified_time" content="2022-02-24T00:00:00&#43;00:00" />
+<meta property="article:published_time" content="2022-02-28T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2022-02-28T00:00:00&#43;00:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://www.yusaito.com/blog/papermod-cover.png"/>
@@ -112,6 +112,12 @@ Lambda PC（GPU Workstation）なども検討したが、RTX3090 をフルで回
     {
       "@type": "ListItem",
       "position":  3 ,
+      "name": "PC",
+      "item": "https://www.yusaito.com/blog/posts/tech/pc/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  4 ,
       "name": "本格水冷 GPU マシンを導入した (ASUS EKWB RTX3090 + Ryzen Threadripper 3970X)",
       "item": "https://www.yusaito.com/blog/posts/tech/pc/fully-water-cooled-3090-pc-arrived/"
     }
@@ -131,8 +137,8 @@ Lambda PC（GPU Workstation）なども検討したが、RTX3090 をフルで回
   "articleBody": "機械学習の分野、特に深層学習の分野だと GPU がないとかなり厳しいので自宅にオンプレ GPU マシンが前々から欲しかったが、アメリカでポスドクをしていたこともあり、本帰国してから導入すればいいやと思っていた。\nGCP や Azure の VM インスタンスは V100x2 とかで運用すると長期的にはかなりコストがかかるし、Colab Pro, Pro+は、コスパはとても良いが割当 GPU のランダム性やデータを一々配置し直す必要があるのが面倒くさい。そもそもいつまでサービスが続くかも分からない。 とはいっても GPU でちょっと遊ぶくらいなら Colab は間違いなく便利なサービスだと思う。\nLambda PC（GPU Workstation）なども検討したが、RTX3090 をフルで回したらファンの音が煩そうなので本格水冷の GPU マシンが欲しいと思っていた。ただそうはいっても自作できる技量はないので、大枚はたいて各種パーツを購入し、MOMA GARAGEさんにお願いし、本格水冷の GPU マシン を組み立ててもらった。（門馬さん、ありがとうございます！）\n組み立て後の PC の中身 MO-RA3 360 PRO (冷却用ラジエーター) 主なパーツ  マザーボード : ASUS ROG Zenith II Extreme Alpha CPU : Ryzen Threadripper 3970X GPU : ASUS EKWB RTX3090 24GB GDD6X RAM メモリ : G.Skill F4-3200C 16D-32GTZRX SSD : SAMSUNG 980 PRO MZ-V8PT0B 冷却用ラジエーター 1 : Watercool MO-RA3 360 PRO stainless steel 冷却用ラジエーター 2 : Black Ice Nemesis 480GTS CPU ウォーターブロック : EK WaterBlocks EK-Quantum Velocity sTR4 D-RGB - Full Nickel  本格水冷の効果 RTX3090 ２枚をフルで回しても、nvidia-smi で確認する限りは 45 度くらいまでしか GPU の温度は上昇しなかった。空冷だと経験上 65-70 度くらいまで上昇するので、水冷の冷却効果が極めて高いことが分かった。\n今後の抱負 家で GPU を眠らせることのないように Kaggle とかその他の趣味で積極的に使っていきたい。\n",
   "wordCount" : "116",
   "inLanguage": "en",
-  "datePublished": "2022-02-24T00:00:00Z",
-  "dateModified": "2022-02-24T00:00:00Z",
+  "datePublished": "2022-02-28T00:00:00Z",
+  "dateModified": "2022-02-28T00:00:00Z",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://www.yusaito.com/blog/posts/tech/pc/fully-water-cooled-3090-pc-arrived/"
@@ -217,11 +223,11 @@ Lambda PC（GPU Workstation）なども検討したが、RTX3090 をフルで回
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://www.yusaito.com/blog/">Home</a>&nbsp;»&nbsp;<a href="https://www.yusaito.com/blog/posts/">Posts</a>&nbsp;»&nbsp;<a href="https://www.yusaito.com/blog/posts/tech/">Tech</a></div>
+    <div class="breadcrumbs"><a href="https://www.yusaito.com/blog/">Home</a>&nbsp;»&nbsp;<a href="https://www.yusaito.com/blog/posts/">Posts</a>&nbsp;»&nbsp;<a href="https://www.yusaito.com/blog/posts/tech/">Tech</a>&nbsp;»&nbsp;<a href="https://www.yusaito.com/blog/posts/tech/pc/">PC</a></div>
     <h1 class="post-title">
       本格水冷 GPU マシンを導入した (ASUS EKWB RTX3090 &#43; Ryzen Threadripper 3970X)
     </h1>
-    <div class="post-meta"><span title='2022-02-24 00:00:00 +0000 UTC'>February 24, 2022</span>
+    <div class="post-meta"><span title='2022-02-28 00:00:00 +0000 UTC'>February 28, 2022</span>
 
 </div>
   </header> <div class="toc">
@@ -297,15 +303,15 @@ MO-RA3 360 PRO (冷却用ラジエーター)
       <li><a href="https://www.yusaito.com/blog/tags/asus/">ASUS</a></li>
     </ul>
 <nav class="paginav">
-  <a class="prev" href="https://www.yusaito.com/blog/posts/tech/pc/wifi-setup-rt-ax86u/">
+  <a class="prev" href="https://www.yusaito.com/blog/posts/tech/python/how-to-use-joblib/">
     <span class="title">« Prev Page</span>
     <br>
-    <span>家のネット環境の改善</span>
+    <span>joblibの使い方</span>
   </a>
-  <a class="next" href="https://www.yusaito.com/blog/posts/tech/python/relative-path-with-pathlib/">
+  <a class="next" href="https://www.yusaito.com/blog/posts/tech/python/pandas-read-csv-unnamed-name/">
     <span class="title">Next Page »</span>
     <br>
-    <span>Pathlibで相対パスを有効活用する</span>
+    <span>Pandasでread_csvしたときに出現するUnnamed:0を消す方法</span>
   </a>
 </nav>
 

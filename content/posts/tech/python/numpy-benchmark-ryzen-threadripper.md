@@ -1,7 +1,7 @@
 ---
 #author: "Hugo Authors"
 title: "Ryzen Threadripper 3970XとNVIDIA RTX 3090を使ってnumpy(Intel MKL and OpenBLAS)とcupyでベンチマーク"
-date: "2022-02-28"
+date: "2022-03-18"
 tags:
   [
     "numpy",

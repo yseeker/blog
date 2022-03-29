@@ -11,7 +11,7 @@
 <meta name="author" content="">
 <link rel="canonical" href="https://www.yusaito.com/blog/" />
 <meta name="google-site-verification" content="7pz_dAQx7-r3P-mr6XGvIVQx47QN5DmiWRVLEocHAIM" />
-<link crossorigin="anonymous" href="/blog/assets/css/stylesheet.min.b624413065f328aca6cdb1209509000e30fb8692e1099db0a62ec71f40ce1fbb.css" integrity="sha256-tiRBMGXzKKymzbEglQkADjD7hpLhCZ2wpi7HH0DOH7s=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/blog/assets/css/stylesheet.min.6087d4478ef1a6e4b70f2e688623594f1c21e0195679a9b4e682779aef3fc091.css" integrity="sha256-YIfUR47xpuS3Dy5ohiNZTxwh4BlWeam05oJ3mu8/wJE=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://www.yusaito.com/blog/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://www.yusaito.com/blog/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://www.yusaito.com/blog/favicon-32x32.png">
@@ -192,68 +192,14 @@ if (!doNotTrack) {
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>nvcr.io/nvidia/pytorchのイメージからdockerコンテナを作成したときのNOTE
+    <h2>Ryzen Threadripper 3970XとNVIDIA RTX 3090を使ってnumpy(Intel MKL and OpenBLAS)とcupyでベンチマーク
     </h2>
   </header>
   <section class="entry-content">
-    <p>NGC 提供の Pytorch イメージを使って docker コンテナを立ち上げる。 NVIDIA NGC | CATALOGから NGC(NVIDIA GPU CLOUD)が提供している、Pytorch の docker イメージをとりあえずdocker runをしてみる。
-docker run --gpus all -it --rm nvcr.io/nvidia/pytorch:21.12-py3 /bin/bash すると、下記のような NOTE が一番下に現れたので調べてみた。
-NOTE: The SHMEM allocation limit is set to the default of 64MB. This may be insufficient for PyTorch. NVIDIA recommends the use of the following flags: docker run --gpus all --ipc=host --ulimit memlock=-1 --ulimit stack=67108864 ... The SHMEM allocation limit is set to the default of 64MB 一時ファイル領域の/dev/shm のサイズでデフォルト値は 64GB。--shm-size 2g みたいにしておけばよい。...</p>
+    <p>numpy でベンチマーク # ファイル名: numpy_benchmark.py import os os.environ[&#34;OPENBLAS_NUM_THREADS&#34;] = &#34;32&#34; # import mkl # mkl.set_num_threads(32) import numpy as np import time from threadpoolctl import threadpool_info from pprint import pp pp(threadpool_info()) np.show_config() N_LOOP = 5 calc_eigh_time_list = [] calc_inv_time_list = [] calc_dot_time_list = [] calc_norm_time_list = [] for size in [5000, 10000, 20000]: print(f&#34;size : {size}&#34;) for i in range(3): np.random.seed(i) X = np.random.randn(size, size) t_start = time.time() np.linalg.eigh(X @ X.T) calc_eigh_time_list....</p>
   </section>
-  <footer class="entry-footer"><span title='2022-03-23 00:00:00 +0000 UTC'>March 23, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to nvcr.io/nvidia/pytorchのイメージからdockerコンテナを作成したときのNOTE" href="https://www.yusaito.com/blog/posts/tech/linux/docker-nvcr-pytorch-ipc-host-ulimit-memlock/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Pandas : サイズの大きいcsvファイルをpickleかfeatherに変換 
-    </h2>
-  </header>
-  <section class="entry-content">
-    <p>read_csv が遅い問題 20GB くらいの csv ファイルを pandas.DataFrame の read_csv で読み込んだ際に２分くらいかかったので、feather と pickle への書き出しを検討したのでその際のメモ。
- read_csv : 130sec read_feather : 5sec read_pickle : 2.5sec  from contextlib import contextmanager from time import time import pandas as pd @contextmanager def timer(process_name): start = time() yield print(f&#34;[{process_name}] done in {time() - start:.2f}s&#34;) with timer(&#34;pkl&#34;): df = pd.read_pickle(&#34;data/input/train.pkl&#34;) with timer(&#34;feather&#34;): df = pd.read_feather(&#34;data/input/train.feather&#34;) with timer(&#34;csv&#34;): df = pd.read_csv(&#34;data/input/train.csv&#34;) ちなみに pickle の書き出しと、読み込みのときの pandas の version が違うと AttributeError: Can&#39;t get attribute &#39;_unpickle_block&#39; on &lt;module &#39;pandas....</p>
-  </section>
-  <footer class="entry-footer"><span title='2022-03-23 00:00:00 +0000 UTC'>March 23, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to Pandas : サイズの大きいcsvファイルをpickleかfeatherに変換 " href="https://www.yusaito.com/blog/posts/tech/python/pandas_read_csv_pickle_feather/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Pandasでread_csvしたときに出現するUnnamed:0を消す方法
-    </h2>
-  </header>
-  <section class="entry-content">
-    <p>問題：Pandas で csv を読むと謎の Unnamed:0 というコラムが出現 解決策 その１ : pd.read_csv で index_col = 0 を指定 df = pd.read_csv(&#39;test.csv&#39;, index_col=0) その２ : そもそも保存するときに index を消す df = pd.to_csv(&#39;test.csv&#39;, index = False) pandas の中身 ちなみに Unnamed:0 はこの辺りで追加されているらしい。
-# ref. https://github.com/pandas-dev/pandas/blob/ad190575aa75962d2d0eade2de81a5fe5a2e285b/pandas/tests/io/parser/test_mangle_dupes.py#L120-L140 @skip_pyarrow def test_mangled_unnamed_placeholders(all_parsers): # xref gh-13017 orig_key = &#34;0&#34; parser = all_parsers orig_value = [1, 2, 3] df = DataFrame({orig_key: orig_value}) # This test recursively updates `df`. for i in range(3): expected = DataFrame() for j in range(i &#43; 1): col_name = &#34;Unnamed: 0&#34; &#43; f&#34;....</p>
-  </section>
-  <footer class="entry-footer"><span title='2022-03-22 00:00:00 +0000 UTC'>March 22, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to Pandasでread_csvしたときに出現するUnnamed:0を消す方法" href="https://www.yusaito.com/blog/posts/tech/python/pandas-read-csv-unnamed-name/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Python : hashlibを使って、ハッシュ値を求める
-    </h2>
-  </header>
-  <section class="entry-content">
-    <p>ハッシュ値を求める import hashlib file_name = &#34;important_file.dat&#34; # MD5 ハッシュを生成する hs = hashlib.md5(file_name.encode()).hexdigest() # SHA224 ハッシュを生成する hs = hashlib.sha224(file_name.encode()).hexdigest() 自走プログラマー~Python の先輩が教えるプロジェクト開発のベストプラクティス 120の中でファイル名からハッシュ値を求め、そのハッシュ値の頭 3 文字を中間ディレクトリにして、１つのディレクトリにファイルを集中させないという手法が紹介されていた。
-例 file_name = &#34;important_file.dat&#34; hs = hashlib.md5(file_name.encode()).hexdigest() file_path = f&#34;dir_name/{hs[:3]}/{file_name}&#34; 参考  </p>
-  </section>
-  <footer class="entry-footer"><span title='2022-03-20 00:00:00 +0000 UTC'>March 20, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to Python : hashlibを使って、ハッシュ値を求める" href="https://www.yusaito.com/blog/posts/tech/python/how-to-use-hashlib/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Pythonで並列処理 : MPIREの使い方
-    </h2>
-  </header>
-  <section class="entry-content">
-    <p>Python では joblib や concurrent.futures などで簡単にマルチプロセスできるが、“MultiProcessing Is Really Easy&#34;という名の MPIRE というライブラリを見つけたので備忘録として残しておく。この記事によると、特定の場合では joblib や concurrent.futures よりも性能が良いらしい。
-MPIRE のインストール pip install mpire MPIRE の使い方 from mpire import WorkerPool def time_consuming_function(param): return None with WorkerPool(n_jobs=8) as pool: results = pool.map_unordered(time_consuming_function, interator, progress_bar=True) 参考  </p>
-  </section>
-  <footer class="entry-footer"><span title='2022-03-19 00:00:00 +0000 UTC'>March 19, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to Pythonで並列処理 : MPIREの使い方" href="https://www.yusaito.com/blog/posts/tech/python/how-to-use-mpire-multiprocess/"></a>
+  <footer class="entry-footer"><span title='2022-03-18 00:00:00 +0000 UTC'>March 18, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to Ryzen Threadripper 3970XとNVIDIA RTX 3090を使ってnumpy(Intel MKL and OpenBLAS)とcupyでベンチマーク" href="https://www.yusaito.com/blog/posts/tech/python/numpy-benchmark-ryzen-threadripper/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -267,8 +213,65 @@ MPIRE のインストール pip install mpire MPIRE の使い方 from mpire impo
 以下テンプレート。
 import cv2 from concurrent.futures import ThreadPoolExecutor cv2.setNumThreads(0) def task_using_cv2(param): do_some_process_using_cv2() return with ThreadPoolExecutor() as executor: results = list(executor.map(task_using_cv2, param)) 参考   </p>
   </section>
-  <footer class="entry-footer"><span title='2022-03-18 00:00:00 +0000 UTC'>March 18, 2022</span></footer>
+  <footer class="entry-footer"><span title='2022-03-17 00:00:00 +0000 UTC'>March 17, 2022</span></footer>
   <a class="entry-link" aria-label="post link to PythonとopenCVで並列化" href="https://www.yusaito.com/blog/posts/tech/python/opencv-setnumthreads-multithreading/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>Python : hashlibを使って、ハッシュ値を求める
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>ハッシュ値を求める import hashlib file_name = &#34;important_file.dat&#34; # MD5 ハッシュを生成する hs = hashlib.md5(file_name.encode()).hexdigest() # SHA224 ハッシュを生成する hs = hashlib.sha224(file_name.encode()).hexdigest() 自走プログラマー~Python の先輩が教えるプロジェクト開発のベストプラクティス 120の中でファイル名からハッシュ値を求め、そのハッシュ値の頭 3 文字を中間ディレクトリにして、１つのディレクトリにファイルを集中させないという手法が紹介されていた。
+例 file_name = &#34;important_file.dat&#34; hs = hashlib.md5(file_name.encode()).hexdigest() file_path = f&#34;dir_name/{hs[:3]}/{file_name}&#34; 参考  </p>
+  </section>
+  <footer class="entry-footer"><span title='2022-03-12 00:00:00 +0000 UTC'>March 12, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to Python : hashlibを使って、ハッシュ値を求める" href="https://www.yusaito.com/blog/posts/tech/python/how-to-use-hashlib/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>Ubuntu 20.04 LTSセットアップ（自宅サーバー用）とリモート環境用の諸々の初期設定（docker &#43; cuda &#43; ssh &#43; vscode）
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>Ubuntu 20.04 LTS の導入 こちらの記事に従って、Ubuntu 20.04 LTS を入れた。
+ライブ USB の作成  Rufus をダウンロード ubuntu の iso ファイルをダウンロード USB を挿して、Rufus を使ってライブ USB を作成  Ubuntu 20.04 LTS のインストール  細かい設定はこちらの記事を参照  インストール後にログインループになってログインできなくなった  ctrl &#43; alt &#43; F2で tty 仮想コンソールを開く Nvidia ドライバ, cuda があるかどうか確認  dpkg -l | grep nvidia dpkg -l | grep cuda ※もしですでにある場合は削除しておく
+sudo apt-get --purge remove nvidia-* sudo apt-get --purge remove cuda-*  Nvidia ドライバが無かったら下記で Nvidia ドライバと cuda を入れる  sudo ubuntu-drivers install sudo reboot または version 指定して入れる。...</p>
+  </section>
+  <footer class="entry-footer"><span title='2022-03-11 00:00:00 +0000 UTC'>March 11, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to Ubuntu 20.04 LTSセットアップ（自宅サーバー用）とリモート環境用の諸々の初期設定（docker &#43; cuda &#43; ssh &#43; vscode）" href="https://www.yusaito.com/blog/posts/tech/linux/ubuntu-server-ssh-docker-setup/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>Pythonで並列処理 : MPIREの使い方
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>Python では joblib や concurrent.futures などで簡単にマルチプロセスできるが、“MultiProcessing Is Really Easy&#34;という名の MPIRE というライブラリを見つけたので備忘録として残しておく。この記事によると、特定の場合では joblib や concurrent.futures よりも性能が良いらしい。
+MPIRE のインストール pip install mpire MPIRE の使い方 from mpire import WorkerPool def time_consuming_function(param): return None with WorkerPool(n_jobs=8) as pool: results = pool.map_unordered(time_consuming_function, interator, progress_bar=True) 参考  </p>
+  </section>
+  <footer class="entry-footer"><span title='2022-03-09 00:00:00 +0000 UTC'>March 9, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to Pythonで並列処理 : MPIREの使い方" href="https://www.yusaito.com/blog/posts/tech/python/how-to-use-mpire-multiprocess/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>Hugo : PaperModのテーマでjavascriptを非同期で読み込んで高速化
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>この web サイトは PaperMod というテンプレートから作成しているのが、シンタックスハイライトをいい感じにする Prism.js を導入したらPageSpeed Insightsのパフォーマンスが悪くなったので改善メモ。
+Javascript の読み込み時に defer を導入 Before モバイルでのパフォーマンスは、40-50 くらいだった。
+&lt;script src=&#34;{{ .Site.BaseURL }}/js/prism.js&#34;&gt;&lt;/script&gt; After モバイルでのパフォーマンスが、65-75 くらいに改善した。
+&lt;script type=&#34;text/javascript&#34; defer src=&#34;{{ .Site.BaseURL }}/js/prism.js&#34; &gt;&lt;/script&gt; 余談 ちなみに PaperMod はデフォルトでパフォーマンスが90-99くらい出る超高速なテンプレートである。（Prism.js の読み込みで大幅に速度が低下した。）
+上の javascript の読み込み部分をコメントアウトするとパフォーマンスは 90 以上まで戻る（笑）
+参考  </p>
+  </section>
+  <footer class="entry-footer"><span title='2022-03-03 00:00:00 +0000 UTC'>March 3, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to Hugo : PaperModのテーマでjavascriptを非同期で読み込んで高速化" href="https://www.yusaito.com/blog/posts/tech/other/hugo-papermod-prism-pagespeed-web-dev/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

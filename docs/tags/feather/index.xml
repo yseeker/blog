@@ -10,11 +10,11 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Wed, 23 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.yusaito.com/blog/tags/feather/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 08 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.yusaito.com/blog/tags/feather/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pandas : サイズの大きいcsvファイルをpickleかfeatherに変換 </title>
       <link>https://www.yusaito.com/blog/posts/tech/python/pandas_read_csv_pickle_feather/</link>
-      <pubDate>Wed, 23 Mar 2022 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/posts/tech/python/pandas_read_csv_pickle_feather/</guid>
       <description>read_csv が遅い問題 20GB くらいの csv ファイルを pandas.DataFrame の read_csv で読み込んだ際に２分くらいかかったので、feather と pickle への書き出しを検討したのでその際のメモ。

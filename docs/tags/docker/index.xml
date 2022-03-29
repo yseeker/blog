@@ -10,22 +10,11 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Wed, 23 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.yusaito.com/blog/tags/docker/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>nvcr.io/nvidia/pytorchのイメージからdockerコンテナを作成したときのNOTE</title>
-      <link>https://www.yusaito.com/blog/posts/tech/linux/docker-nvcr-pytorch-ipc-host-ulimit-memlock/</link>
-      <pubDate>Wed, 23 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.yusaito.com/blog/posts/tech/linux/docker-nvcr-pytorch-ipc-host-ulimit-memlock/</guid>
-      <description>NGC 提供の Pytorch イメージを使って docker コンテナを立ち上げる。 NVIDIA NGC | CATALOGから NGC(NVIDIA GPU CLOUD)が提供している、Pytorch の docker イメージをとりあえずdocker runをしてみる。
-docker run --gpus all -it --rm nvcr.io/nvidia/pytorch:21.12-py3 /bin/bash すると、下記のような NOTE が一番下に現れたので調べてみた。
-NOTE: The SHMEM allocation limit is set to the default of 64MB. This may be insufficient for PyTorch. NVIDIA recommends the use of the following flags: docker run --gpus all --ipc=host --ulimit memlock=-1 --ulimit stack=67108864 ... The SHMEM allocation limit is set to the default of 64MB 一時ファイル領域の/dev/shm のサイズでデフォルト値は 64GB。--shm-size 2g みたいにしておけばよい。</description>
-    </item>
-    
+    <lastBuildDate>Fri, 11 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.yusaito.com/blog/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ubuntu 20.04 LTSセットアップ（自宅サーバー用）とリモート環境用の諸々の初期設定（docker &#43; cuda &#43; ssh &#43; vscode）</title>
       <link>https://www.yusaito.com/blog/posts/tech/linux/ubuntu-server-ssh-docker-setup/</link>
-      <pubDate>Sat, 05 Mar 2022 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 11 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/posts/tech/linux/ubuntu-server-ssh-docker-setup/</guid>
       <description>Ubuntu 20.04 LTS の導入 こちらの記事に従って、Ubuntu 20.04 LTS を入れた。
@@ -34,9 +23,20 @@ sudo apt-get --purge remove nvidia-* sudo apt-get --purge remove cuda-*  Nvidia 
     </item>
     
     <item>
+      <title>nvcr.io/nvidia/pytorchのイメージからdockerコンテナを作成したときのNOTE</title>
+      <link>https://www.yusaito.com/blog/posts/tech/linux/docker-nvcr-pytorch-ipc-host-ulimit-memlock/</link>
+      <pubDate>Wed, 23 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/posts/tech/linux/docker-nvcr-pytorch-ipc-host-ulimit-memlock/</guid>
+      <description>NGC 提供の Pytorch イメージを使って docker コンテナを立ち上げる。 NVIDIA NGC | CATALOGから NGC(NVIDIA GPU CLOUD)が提供している、Pytorch の docker イメージをとりあえずdocker runをしてみる。
+docker run --gpus all -it --rm nvcr.io/nvidia/pytorch:21.12-py3 /bin/bash すると、下記のような NOTE が一番下に現れたので調べてみた。
+NOTE: The SHMEM allocation limit is set to the default of 64MB. This may be insufficient for PyTorch. NVIDIA recommends the use of the following flags: docker run --gpus all --ipc=host --ulimit memlock=-1 --ulimit stack=67108864 ... The SHMEM allocation limit is set to the default of 64MB 一時ファイル領域の/dev/shm のサイズでデフォルト値は 64GB。--shm-size 2g みたいにしておけばよい。</description>
+    </item>
+    
+    <item>
       <title>AzureでA100x8（V100x4）のPytorch環境構築とエラー対処</title>
       <link>https://www.yusaito.com/blog/posts/tech/linux/azure-vm-cuda-docker-setup/</link>
-      <pubDate>Tue, 11 Jan 2022 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 12 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/posts/tech/linux/azure-vm-cuda-docker-setup/</guid>
       <description>Azure の web で VM インスタンスを作成 VM インスタンスの作成はこちら 秘密鍵をダウンロードして、read 権限を与えていおく。

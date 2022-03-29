@@ -10,42 +10,11 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Wed, 23 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.yusaito.com/blog/tags/python/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>nvcr.io/nvidia/pytorchのイメージからdockerコンテナを作成したときのNOTE</title>
-      <link>https://www.yusaito.com/blog/posts/tech/linux/docker-nvcr-pytorch-ipc-host-ulimit-memlock/</link>
-      <pubDate>Wed, 23 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.yusaito.com/blog/posts/tech/linux/docker-nvcr-pytorch-ipc-host-ulimit-memlock/</guid>
-      <description>NGC 提供の Pytorch イメージを使って docker コンテナを立ち上げる。 NVIDIA NGC | CATALOGから NGC(NVIDIA GPU CLOUD)が提供している、Pytorch の docker イメージをとりあえずdocker runをしてみる。
-docker run --gpus all -it --rm nvcr.io/nvidia/pytorch:21.12-py3 /bin/bash すると、下記のような NOTE が一番下に現れたので調べてみた。
-NOTE: The SHMEM allocation limit is set to the default of 64MB. This may be insufficient for PyTorch. NVIDIA recommends the use of the following flags: docker run --gpus all --ipc=host --ulimit memlock=-1 --ulimit stack=67108864 ... The SHMEM allocation limit is set to the default of 64MB 一時ファイル領域の/dev/shm のサイズでデフォルト値は 64GB。--shm-size 2g みたいにしておけばよい。</description>
-    </item>
-    
-    <item>
-      <title>Pandas : サイズの大きいcsvファイルをpickleかfeatherに変換 </title>
-      <link>https://www.yusaito.com/blog/posts/tech/python/pandas_read_csv_pickle_feather/</link>
-      <pubDate>Wed, 23 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.yusaito.com/blog/posts/tech/python/pandas_read_csv_pickle_feather/</guid>
-      <description>read_csv が遅い問題 20GB くらいの csv ファイルを pandas.DataFrame の read_csv で読み込んだ際に２分くらいかかったので、feather と pickle への書き出しを検討したのでその際のメモ。
- read_csv : 130sec read_feather : 5sec read_pickle : 2.5sec  from contextlib import contextmanager from time import time import pandas as pd @contextmanager def timer(process_name): start = time() yield print(f&amp;#34;[{process_name}] done in {time() - start:.2f}s&amp;#34;) with timer(&amp;#34;pkl&amp;#34;): df = pd.read_pickle(&amp;#34;data/input/train.pkl&amp;#34;) with timer(&amp;#34;feather&amp;#34;): df = pd.read_feather(&amp;#34;data/input/train.feather&amp;#34;) with timer(&amp;#34;csv&amp;#34;): df = pd.read_csv(&amp;#34;data/input/train.csv&amp;#34;) ちなみに pickle の書き出しと、読み込みのときの pandas の version が違うと AttributeError: Can&#39;t get attribute &#39;_unpickle_block&#39; on &amp;lt;module &#39;pandas.</description>
-    </item>
-    
-    <item>
-      <title>Pandasでread_csvしたときに出現するUnnamed:0を消す方法</title>
-      <link>https://www.yusaito.com/blog/posts/tech/python/pandas-read-csv-unnamed-name/</link>
-      <pubDate>Tue, 22 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.yusaito.com/blog/posts/tech/python/pandas-read-csv-unnamed-name/</guid>
-      <description>問題：Pandas で csv を読むと謎の Unnamed:0 というコラムが出現 解決策 その１ : pd.read_csv で index_col = 0 を指定 df = pd.read_csv(&amp;#39;test.csv&amp;#39;, index_col=0) その２ : そもそも保存するときに index を消す df = pd.to_csv(&amp;#39;test.csv&amp;#39;, index = False) pandas の中身 ちなみに Unnamed:0 はこの辺りで追加されているらしい。
-# ref. https://github.com/pandas-dev/pandas/blob/ad190575aa75962d2d0eade2de81a5fe5a2e285b/pandas/tests/io/parser/test_mangle_dupes.py#L120-L140 @skip_pyarrow def test_mangled_unnamed_placeholders(all_parsers): # xref gh-13017 orig_key = &amp;#34;0&amp;#34; parser = all_parsers orig_value = [1, 2, 3] df = DataFrame({orig_key: orig_value}) # This test recursively updates `df`. for i in range(3): expected = DataFrame() for j in range(i + 1): col_name = &amp;#34;Unnamed: 0&amp;#34; + f&amp;#34;.</description>
-    </item>
-    
+    <lastBuildDate>Sat, 12 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.yusaito.com/blog/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Python : hashlibを使って、ハッシュ値を求める</title>
       <link>https://www.yusaito.com/blog/posts/tech/python/how-to-use-hashlib/</link>
-      <pubDate>Sun, 20 Mar 2022 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 12 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/posts/tech/python/how-to-use-hashlib/</guid>
       <description>ハッシュ値を求める import hashlib file_name = &amp;#34;important_file.dat&amp;#34; # MD5 ハッシュを生成する hs = hashlib.md5(file_name.encode()).hexdigest() # SHA224 ハッシュを生成する hs = hashlib.sha224(file_name.encode()).hexdigest() 自走プログラマー~Python の先輩が教えるプロジェクト開発のベストプラクティス 120の中でファイル名からハッシュ値を求め、そのハッシュ値の頭 3 文字を中間ディレクトリにして、１つのディレクトリにファイルを集中させないという手法が紹介されていた。
@@ -55,7 +24,7 @@ NOTE: The SHMEM allocation limit is set to the default of 64MB. This may be insu
     <item>
       <title>Pythonで並列処理 : MPIREの使い方</title>
       <link>https://www.yusaito.com/blog/posts/tech/python/how-to-use-mpire-multiprocess/</link>
-      <pubDate>Sat, 19 Mar 2022 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 09 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/posts/tech/python/how-to-use-mpire-multiprocess/</guid>
       <description>Python では joblib や concurrent.futures などで簡単にマルチプロセスできるが、&amp;ldquo;MultiProcessing Is Really Easy&amp;quot;という名の MPIRE というライブラリを見つけたので備忘録として残しておく。この記事によると、特定の場合では joblib や concurrent.futures よりも性能が良いらしい。
@@ -63,19 +32,30 @@ MPIRE のインストール pip install mpire MPIRE の使い方 from mpire impo
     </item>
     
     <item>
-      <title>Python : functools.partial 関数の引数を一部固定</title>
-      <link>https://www.yusaito.com/blog/posts/tech/python/how-to-use-functools-partial/</link>
-      <pubDate>Sat, 26 Feb 2022 00:00:00 +0000</pubDate>
+      <title>Pandasでread_csvしたときに出現するUnnamed:0を消す方法</title>
+      <link>https://www.yusaito.com/blog/posts/tech/python/pandas-read-csv-unnamed-name/</link>
+      <pubDate>Fri, 25 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.yusaito.com/blog/posts/tech/python/how-to-use-functools-partial/</guid>
-      <description>functools.partial は、関数の特定の引数を固定したい場合に使う 個人的に concurrent.futures の ProcessPoolExecuter や ThreadPoolExecuter の map を使うときに併用することが多い。
-functools.partial の定義 # ref. https://docs.python.org/ja/3/library/functools.html#functools.partial def partial(func, /, *args, **keywords): def newfunc(*fargs, **fkeywords): newkeywords = {**keywords, **fkeywords} return func(*args, *fargs, **newkeywords) newfunc.func = func newfunc.args = args newfunc.keywords = keywords return newfunc 使い方：引数を固定する from functools import partial def product_xyz(x, y, z): return x * y * z # xとyの値を固定する product_z = partial(product_xyz, x=2, y=3) product_z(4) # 24 参考  </description>
+      <guid>https://www.yusaito.com/blog/posts/tech/python/pandas-read-csv-unnamed-name/</guid>
+      <description>問題：Pandas で csv を読むと謎の Unnamed:0 というコラムが出現 解決策 その１ : pd.read_csv で index_col = 0 を指定 df = pd.read_csv(&amp;#39;test.csv&amp;#39;, index_col=0) その２ : そもそも保存するときに index を消す df = pd.to_csv(&amp;#39;test.csv&amp;#39;, index = False) pandas の中身 ちなみに Unnamed:0 はこの辺りで追加されているらしい。
+# ref. https://github.com/pandas-dev/pandas/blob/ad190575aa75962d2d0eade2de81a5fe5a2e285b/pandas/tests/io/parser/test_mangle_dupes.py#L120-L140 @skip_pyarrow def test_mangled_unnamed_placeholders(all_parsers): # xref gh-13017 orig_key = &amp;#34;0&amp;#34; parser = all_parsers orig_value = [1, 2, 3] df = DataFrame({orig_key: orig_value}) # This test recursively updates `df`. for i in range(3): expected = DataFrame() for j in range(i + 1): col_name = &amp;#34;Unnamed: 0&amp;#34; + f&amp;#34;.</description>
+    </item>
+    
+    <item>
+      <title>nvcr.io/nvidia/pytorchのイメージからdockerコンテナを作成したときのNOTE</title>
+      <link>https://www.yusaito.com/blog/posts/tech/linux/docker-nvcr-pytorch-ipc-host-ulimit-memlock/</link>
+      <pubDate>Wed, 23 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/posts/tech/linux/docker-nvcr-pytorch-ipc-host-ulimit-memlock/</guid>
+      <description>NGC 提供の Pytorch イメージを使って docker コンテナを立ち上げる。 NVIDIA NGC | CATALOGから NGC(NVIDIA GPU CLOUD)が提供している、Pytorch の docker イメージをとりあえずdocker runをしてみる。
+docker run --gpus all -it --rm nvcr.io/nvidia/pytorch:21.12-py3 /bin/bash すると、下記のような NOTE が一番下に現れたので調べてみた。
+NOTE: The SHMEM allocation limit is set to the default of 64MB. This may be insufficient for PyTorch. NVIDIA recommends the use of the following flags: docker run --gpus all --ipc=host --ulimit memlock=-1 --ulimit stack=67108864 ... The SHMEM allocation limit is set to the default of 64MB 一時ファイル領域の/dev/shm のサイズでデフォルト値は 64GB。--shm-size 2g みたいにしておけばよい。</description>
     </item>
     
     <item>
       <title>PythonとOpenCVで画像リストから動画を作成</title>
       <link>https://www.yusaito.com/blog/posts/tech/python/create-video-from-images-opencv/</link>
-      <pubDate>Sat, 26 Feb 2022 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 15 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/posts/tech/python/create-video-from-images-opencv/</guid>
       <description>openCV を使って画像リストから動画を作成する。 画像リストがあったときにそこから動画を生成するときに使う。
@@ -83,9 +63,19 @@ from pathlib import Path from typing import List import cv2 def list_file_paths(
     </item>
     
     <item>
+      <title>Python : functools.partial 関数の引数を一部固定</title>
+      <link>https://www.yusaito.com/blog/posts/tech/python/how-to-use-functools-partial/</link>
+      <pubDate>Wed, 26 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/posts/tech/python/how-to-use-functools-partial/</guid>
+      <description>functools.partial は、関数の特定の引数を固定したい場合に使う 個人的に concurrent.futures の ProcessPoolExecuter や ThreadPoolExecuter の map を使うときに併用することが多い。
+functools.partial の定義 # ref. https://docs.python.org/ja/3/library/functools.html#functools.partial def partial(func, /, *args, **keywords): def newfunc(*fargs, **fkeywords): newkeywords = {**keywords, **fkeywords} return func(*args, *fargs, **newkeywords) newfunc.func = func newfunc.args = args newfunc.keywords = keywords return newfunc 使い方：引数を固定する from functools import partial def product_xyz(x, y, z): return x * y * z # xとyの値を固定する product_z = partial(product_xyz, x=2, y=3) product_z(4) # 24 参考  </description>
+    </item>
+    
+    <item>
       <title>Pathlibで相対パスを有効活用する</title>
       <link>https://www.yusaito.com/blog/posts/tech/python/relative-path-with-pathlib/</link>
-      <pubDate>Fri, 18 Feb 2022 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 18 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/posts/tech/python/relative-path-with-pathlib/</guid>
       <description>自走プログラマー~Python の先輩が教えるプロジェクト開発のベストプラクティス 120を読んだのでその中で気になった「ファイルパスはプログラムからの相対パスで組み立てるという箇所は実践的でとても勉強になったのでメモしておく。
@@ -96,27 +86,37 @@ import csv from pathlib import Path current_dir = Path(__file__).parent image_pa
     <item>
       <title>tqdmでターミナルの横幅を狭めるとバグる問題を解消する</title>
       <link>https://www.yusaito.com/blog/posts/tech/python/tqdm-dynamic-ncols/</link>
-      <pubDate>Thu, 17 Feb 2022 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 17 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/posts/tech/python/tqdm-dynamic-ncols/</guid>
-      <description>問題 : tqdm を標準出力している状態でターミナルの横幅を狭めるとバグる 解決策 : dynamic_ncols=True にする 下記のように tqdm を定義すればよい（参考）
+      <description>問題 : tqdm で標準出力している状態でターミナルの横幅を狭めるとバグる 解決策 : dynamic_ncols=True にする 下記のように tqdm を定義すればよい（参考）
 from functools import partial from tqdm import tqdm as std_tqdm tqdm = partial(std_tqdm, dynamic_ncols=True) 参考  </description>
     </item>
     
     <item>
       <title>loggerとprintとtqdmの併用</title>
       <link>https://www.yusaito.com/blog/posts/tech/python/tqdm-logging-print/</link>
-      <pubDate>Sun, 13 Feb 2022 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 13 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/posts/tech/python/tqdm-logging-print/</guid>
-      <description>logger と print と tqdm を併用する場合は以下のコードをコピペする。
+      <description>logger と print と tqdm を併用する場合は以下のコードをコピペする。tqdm の出力に色付けできる。
 import contextlib import logging import logging.handlers import sys from time import sleep from tqdm import tqdm from tqdm.contrib import DummyTqdmFile class TqdmLoggingHandler(logging.Handler): colors = {&amp;#34;INFO&amp;#34;: &amp;#34;\033[37m{}\033[0m&amp;#34;} def __init__(self, level=logging.NOTSET): super().__init__(level) def emit(self, record): try: record.msg = TqdmLoggingHandler.colors.get(record.levelname, &amp;#34;{}&amp;#34;).format( record.msg ) msg = self.format(record) tqdm.write(msg, file=sys.stderr) self.flush() except Exception: self.handleError(record) class CustomFormatter(logging.Formatter): grey = &amp;#34;\x1b[38;20m&amp;#34; green = &amp;#34;\x1b[32;20m&amp;#34; yellow = &amp;#34;\x1b[33;20m&amp;#34; red = &amp;#34;\x1b[31;20m&amp;#34; bold_red = &amp;#34;\x1b[31;1m&amp;#34; reset = &amp;#34;\x1b[0m&amp;#34; format = &amp;#34;[%(asctime)s] [%(levelname)s] [%(process)d] [%(name)s] [%(funcName)s] [%(lineno)d] %(message)s&amp;#34; FORMATS = { logging.</description>
+    </item>
+    
+    <item>
+      <title>Pandas : サイズの大きいcsvファイルをpickleかfeatherに変換 </title>
+      <link>https://www.yusaito.com/blog/posts/tech/python/pandas_read_csv_pickle_feather/</link>
+      <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/posts/tech/python/pandas_read_csv_pickle_feather/</guid>
+      <description>read_csv が遅い問題 20GB くらいの csv ファイルを pandas.DataFrame の read_csv で読み込んだ際に２分くらいかかったので、feather と pickle への書き出しを検討したのでその際のメモ。
+ read_csv : 130sec read_feather : 5sec read_pickle : 2.5sec  from contextlib import contextmanager from time import time import pandas as pd @contextmanager def timer(process_name): start = time() yield print(f&amp;#34;[{process_name}] done in {time() - start:.2f}s&amp;#34;) with timer(&amp;#34;pkl&amp;#34;): df = pd.read_pickle(&amp;#34;data/input/train.pkl&amp;#34;) with timer(&amp;#34;feather&amp;#34;): df = pd.read_feather(&amp;#34;data/input/train.feather&amp;#34;) with timer(&amp;#34;csv&amp;#34;): df = pd.read_csv(&amp;#34;data/input/train.csv&amp;#34;) ちなみに pickle の書き出しと、読み込みのときの pandas の version が違うと AttributeError: Can&#39;t get attribute &#39;_unpickle_block&#39; on &amp;lt;module &#39;pandas.</description>
     </item>
     
     <item>
       <title>Pathlibの使い方</title>
       <link>https://www.yusaito.com/blog/posts/tech/python/how-to-use-pathlib/</link>
-      <pubDate>Wed, 19 Jan 2022 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 19 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/posts/tech/python/how-to-use-pathlib/</guid>
       <description>今までパス操作は、組み込みのosとglob, pathlibが便利そうだったので調べてみる。
@@ -126,7 +126,7 @@ import contextlib import logging import logging.handlers import sys from time im
     <item>
       <title>Python : Dataclassを試してみる</title>
       <link>https://www.yusaito.com/blog/posts/tech/python/python-dataclass/</link>
-      <pubDate>Tue, 18 Jan 2022 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 18 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/posts/tech/python/python-dataclass/</guid>
       <description>Python3.7 から加わった Dataclass に関して全く知らなかったので参考煮上げた記事を読みながらメモ.
@@ -136,7 +136,7 @@ import contextlib import logging import logging.handlers import sys from time im
     <item>
       <title>エラーメモ：IOError: image file is truncated</title>
       <link>https://www.yusaito.com/blog/posts/tech/python/ioerror-image-file-is-truncated/</link>
-      <pubDate>Mon, 03 Jan 2022 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 03 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/posts/tech/python/ioerror-image-file-is-truncated/</guid>
       <description>IOError: image file is truncated jpg で結構大きめの画像を Pillow で読み込むときに下記のエラーが出た。
@@ -146,7 +146,7 @@ IOError: image file is truncated 解決策 from PIL import ImageFile ImageFile.L
     <item>
       <title>Pandas.DataFrame/Series と numpy.ndarray と list の相互変換</title>
       <link>https://www.yusaito.com/blog/posts/tech/python/pandas-dataframe-series-convert-numpy-list/</link>
-      <pubDate>Thu, 02 Dec 2021 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/posts/tech/python/pandas-dataframe-series-convert-numpy-list/</guid>
       <description>Pandas.DataFrame/Series と numpy.ndarray と list の相互変換 (複数の) list から pd.DataFrame へ変換 大きく２つの方法がある。

@@ -1,7 +1,7 @@
 ---
 #author: "Hugo Authors"
 title: "Python : itertoolsの使い方 -その２-"
-date: "2021-12-21"
+date: "2021-11-21"
 tags:
   [
     "itertools",

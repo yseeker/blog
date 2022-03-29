@@ -12,7 +12,7 @@ df = pd.DataFrame({&#39;list_1&#39;:list_1, &#39;list_2&#39;:list_2, &#39;list_3
 <meta name="author" content="">
 <link rel="canonical" href="https://www.yusaito.com/blog/posts/tech/python/pandas-dataframe-series-convert-numpy-list/" />
 <meta name="google-site-verification" content="7pz_dAQx7-r3P-mr6XGvIVQx47QN5DmiWRVLEocHAIM" />
-<link crossorigin="anonymous" href="/blog/assets/css/stylesheet.min.b624413065f328aca6cdb1209509000e30fb8692e1099db0a62ec71f40ce1fbb.css" integrity="sha256-tiRBMGXzKKymzbEglQkADjD7hpLhCZ2wpi7HH0DOH7s=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/blog/assets/css/stylesheet.min.6087d4478ef1a6e4b70f2e688623594f1c21e0195679a9b4e682779aef3fc091.css" integrity="sha256-YIfUR47xpuS3Dy5ohiNZTxwh4BlWeam05oJ3mu8/wJE=" rel="preload stylesheet" as="style">
 <script defer crossorigin="anonymous" src="/blog/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js" integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5&#43;kdJvBz5iKbt6B5PJI="
     onload="hljs.initHighlightingOnLoad();"></script>
 <link rel="icon" href="https://www.yusaito.com/blog/favicon.ico">
@@ -75,8 +75,8 @@ if (!doNotTrack) {
 df = pd.DataFrame({&#39;list_1&#39;:list_1, &#39;list_2&#39;:list_2, &#39;list_3&#39;=list_3}) df = pd.DataFrame( data=zip(list_1, list_2, list_3), columns=[&#34;list_1&#34;, &#34;list_2&#34;, &#34;list_3&#34;], ) numpy.ndarray から pd.DataFrame へ変換 # numpy_array # [[ 0 1 2] # [ 3 4 5] # [ 6 7 8]] df = pd.DataFrame(data=numpy_array,columns=[&#39;col_1&#39;,&#39;col_2&#39;,&#39;col_3&#39;]) # col_1 col_2 col_3 # 0 0.0 1.0 2.0 # 1 3.0 4.0 5.0 # 2 6.0 7.0 8.0 pd." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.yusaito.com/blog/posts/tech/python/pandas-dataframe-series-convert-numpy-list/" /><meta property="og:image" content="https://www.yusaito.com/blog/papermod-cover.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2021-12-02T00:00:00&#43;00:00" />
-<meta property="article:modified_time" content="2021-12-02T00:00:00&#43;00:00" />
+<meta property="article:published_time" content="2021-11-02T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2021-11-02T00:00:00&#43;00:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://www.yusaito.com/blog/papermod-cover.png"/>
@@ -131,8 +131,8 @@ df = pd.DataFrame({&#39;list_1&#39;:list_1, &#39;list_2&#39;:list_2, &#39;list_3
   "articleBody": "Pandas.DataFrame/Series と numpy.ndarray と list の相互変換 (複数の) list から pd.DataFrame へ変換 大きく２つの方法がある。\ndf = pd.DataFrame({'list_1':list_1, 'list_2':list_2, 'list_3'=list_3}) df = pd.DataFrame( data=zip(list_1, list_2, list_3), columns=[\"list_1\", \"list_2\", \"list_3\"], ) numpy.ndarray から pd.DataFrame へ変換 # numpy_array # [[ 0 1 2] # [ 3 4 5] # [ 6 7 8]] df = pd.DataFrame(data=numpy_array,columns=['col_1','col_2','col_3']) # col_1 col_2 col_3 # 0 0.0 1.0 2.0 # 1 3.0 4.0 5.0 # 2 6.0 7.0 8.0 pd.DataFrame（Series） から list へ変換 # pandas.DataFrame to numpy.ndarray to list list_2d = df.to_numpy().tolist() # pandas.Series to numpy.ndarray to list list_1d = df[\"list_1d\"].to_numpy().tolist() 注意 df.values でも numpy.ndarray が取得できるが、現在は非推奨であり、df.to_numpy() が推奨されている。\n参考  ",
   "wordCount" : "99",
   "inLanguage": "en",
-  "datePublished": "2021-12-02T00:00:00Z",
-  "dateModified": "2021-12-02T00:00:00Z",
+  "datePublished": "2021-11-02T00:00:00Z",
+  "dateModified": "2021-11-02T00:00:00Z",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://www.yusaito.com/blog/posts/tech/python/pandas-dataframe-series-convert-numpy-list/"
@@ -221,7 +221,7 @@ df = pd.DataFrame({&#39;list_1&#39;:list_1, &#39;list_2&#39;:list_2, &#39;list_3
     <h1 class="post-title">
       Pandas.DataFrame/Series と numpy.ndarray と list の相互変換
     </h1>
-    <div class="post-meta"><span title='2021-12-02 00:00:00 +0000 UTC'>December 2, 2021</span>
+    <div class="post-meta"><span title='2021-11-02 00:00:00 +0000 UTC'>November 2, 2021</span>
 
 </div>
   </header> <div class="toc">
@@ -291,19 +291,19 @@ list_1d <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#34
 <h3>Related Posts</h3>
 <ul>
 	
+	<li><a href="/blog/posts/tech/python/pandas-read-csv-unnamed-name/">Pandasでread_csvしたときに出現するUnnamed:0を消す方法</a></li>
+	
 	<li><a href="/blog/posts/tech/python/pandas_read_csv_pickle_feather/">Pandas : サイズの大きいcsvファイルをpickleかfeatherに変換 </a></li>
 	
-	<li><a href="/blog/posts/tech/python/pandas-read-csv-unnamed-name/">Pandasでread_csvしたときに出現するUnnamed:0を消す方法</a></li>
+	<li><a href="/blog/posts/tech/python/numpy-benchmark-ryzen-threadripper/">Ryzen Threadripper 3970XとNVIDIA RTX 3090を使ってnumpy(Intel MKL and OpenBLAS)とcupyでベンチマーク</a></li>
 	
 	<li><a href="/blog/posts/tech/python/how-to-use-hashlib/">Python : hashlibを使って、ハッシュ値を求める</a></li>
 	
 	<li><a href="/blog/posts/tech/python/how-to-use-mpire-multiprocess/">Pythonで並列処理 : MPIREの使い方</a></li>
 	
-	<li><a href="/blog/posts/tech/python/numpy-benchmark-ryzen-threadripper/">Ryzen Threadripper 3970XとNVIDIA RTX 3090を使ってnumpy(Intel MKL and OpenBLAS)とcupyでベンチマーク</a></li>
+	<li><a href="/blog/posts/tech/python/create-video-from-images-opencv/">PythonとOpenCVで画像リストから動画を作成</a></li>
 	
 	<li><a href="/blog/posts/tech/python/how-to-use-functools-partial/">Python : functools.partial 関数の引数を一部固定</a></li>
-	
-	<li><a href="/blog/posts/tech/python/create-video-from-images-opencv/">PythonとOpenCVで画像リストから動画を作成</a></li>
 	
 	<li><a href="/blog/posts/tech/python/relative-path-with-pathlib/">Pathlibで相対パスを有効活用する</a></li>
 	

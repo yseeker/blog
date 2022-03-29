@@ -1,7 +1,7 @@
 ---
 #author: "Hugo Authors"
 title: "PythonとopenCVで並列化"
-date: "2022-03-18"
+date: "2022-03-17"
 tags:
   [
     "multithreading",

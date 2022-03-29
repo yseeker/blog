@@ -1,7 +1,7 @@
 ---
 #author: "Hugo Authors"
 title: "Pythonで並列処理 : MPIREの使い方"
-date: "2022-03-19"
+date: "2022-03-09"
 tags:
   [
     "Python",

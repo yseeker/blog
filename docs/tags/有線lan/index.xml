@@ -10,11 +10,11 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Thu, 24 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.yusaito.com/blog/tags/%E6%9C%89%E7%B7%9Alan/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.yusaito.com/blog/tags/%E6%9C%89%E7%B7%9Alan/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>家のネット環境の改善</title>
       <link>https://www.yusaito.com/blog/posts/tech/pc/wifi-setup-rt-ax86u/</link>
-      <pubDate>Thu, 24 Feb 2022 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 20 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/posts/tech/pc/wifi-setup-rt-ax86u/</guid>
       <description>RT-AX86U の導入 日本に本帰国してから家の Wi-Fi の環境を快適にしたいと考えてを ASUS の RT-AX86U を導入した。NURO 光の ONU に加えるので二重ルータになることになるが下記の記事を参考に設定すると問題なくルーターとして機能させることができた。時間帯にもよるが、上りも下りも 500-700Mbps くらい出た。ちなみに NURO 光の ONU は F660A である。

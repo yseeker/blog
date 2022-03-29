@@ -1,7 +1,7 @@
 ---
 #author: "Hugo Authors"
 title: "Python : Dataclassを試してみる"
-date: "2022-01-18"
+date: "2021-12-18"
 tags: ["Python", "dataclass"]
 categories: ["Tech", "Python"]
 ShowToc: true

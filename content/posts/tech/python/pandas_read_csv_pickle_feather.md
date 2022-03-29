@@ -1,7 +1,7 @@
 ---
 #author: "Hugo Authors"
 title: "Pandas : サイズの大きいcsvファイルをpickleかfeatherに変換 "
-date: "2022-03-23"
+date: "2022-01-08"
 tags: ["python", "pandas", "read_csv", "pickle", "feather"]
 categories: ["Tech", "Python"]
 ShowToc: true

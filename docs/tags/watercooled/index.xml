@@ -10,11 +10,11 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Thu, 24 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.yusaito.com/blog/tags/watercooled/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 28 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.yusaito.com/blog/tags/watercooled/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>本格水冷 GPU マシンを導入した (ASUS EKWB RTX3090 &#43; Ryzen Threadripper 3970X)</title>
       <link>https://www.yusaito.com/blog/posts/tech/pc/fully-water-cooled-3090-pc-arrived/</link>
-      <pubDate>Thu, 24 Feb 2022 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 28 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/posts/tech/pc/fully-water-cooled-3090-pc-arrived/</guid>
       <description>機械学習の分野、特に深層学習の分野だと GPU がないとかなり厳しいので自宅にオンプレ GPU マシンが前々から欲しかったが、アメリカでポスドクをしていたこともあり、本帰国してから導入すればいいやと思っていた。

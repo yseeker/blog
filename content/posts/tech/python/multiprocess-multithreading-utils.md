@@ -1,7 +1,7 @@
 ---
 #author: "Hugo Authors"
 title: "Pythonでファイルリストからの並列処理"
-date: "2022-02-03"
+date: "2022-01-03"
 tags:
   [
     "Pathlib",

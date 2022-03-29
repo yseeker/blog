@@ -1,7 +1,7 @@
 ---
 #author: "Hugo Authors"
 title: "Pandasでread_csvしたときに出現するUnnamed:0を消す方法"
-date: "2022-03-22"
+date: "2022-02-25"
 tags: ["python", "pandas", "read_csv", "コラム", "Unamed: 0"]
 categories: ["Tech", "Python"]
 ShowToc: true

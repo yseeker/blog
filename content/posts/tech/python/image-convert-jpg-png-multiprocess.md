@@ -1,7 +1,7 @@
 ---
 #author: "Hugo Authors"
 title: "Pythonでjpgからpngへ一括変換"
-date: "2022-01-25"
+date: "2021-12-29"
 tags:
   [
     "Pathlib",

@@ -12,7 +12,7 @@
 <meta name="author" content="">
 <link rel="canonical" href="https://www.yusaito.com/blog/posts/tech/python/how-to-use-pathlib/" />
 <meta name="google-site-verification" content="7pz_dAQx7-r3P-mr6XGvIVQx47QN5DmiWRVLEocHAIM" />
-<link crossorigin="anonymous" href="/blog/assets/css/stylesheet.min.b624413065f328aca6cdb1209509000e30fb8692e1099db0a62ec71f40ce1fbb.css" integrity="sha256-tiRBMGXzKKymzbEglQkADjD7hpLhCZ2wpi7HH0DOH7s=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/blog/assets/css/stylesheet.min.6087d4478ef1a6e4b70f2e688623594f1c21e0195679a9b4e682779aef3fc091.css" integrity="sha256-YIfUR47xpuS3Dy5ohiNZTxwh4BlWeam05oJ3mu8/wJE=" rel="preload stylesheet" as="style">
 <script defer crossorigin="anonymous" src="/blog/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js" integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5&#43;kdJvBz5iKbt6B5PJI="
     onload="hljs.initHighlightingOnLoad();"></script>
 <link rel="icon" href="https://www.yusaito.com/blog/favicon.ico">
@@ -75,8 +75,8 @@ if (!doNotTrack) {
 基本操作 ファイル名取得 ディレクトリ名取得 from pathlib import Path path = Path(&#34;./dir/filename.txt&#34;)  ファイル名を取得 : path.name ファイル名拡張子抜き : path.stem ファイルの拡張子のみ : path.suffix ファイルのディレクトリを取得 : path.parents (list) パス連結 : / 演算子を使う（path.joinpath()） パスの存在確認：path.exists() ファイルかどうか確認 : path.is_file() ディレクトリかどうか確認 : path.is_dir() ディレクトリの作成 : path.mkdir(exist_ok=True, parents=True) ディレクトリの削除 : path.rmdir() ファイル/ディレクトリパス変更 : path.replace(tgt) ファイル/ディレクトリパス変更（末尾のみ）: path.rename(new_file_apth) 同じ階層に別名ファイルを作成 : path.with_name(&#39;file_new.txt&#39;).touch() 同じ階層に別拡張子ファイルを作成 : path.with_suffix(&#39;png&#39;).touch() 同じ階層のファイルとディレクトリ一覧を返す：path.iterdir() ファイルの存在ディレクトリのパスを取得：Path(__file__).parent  個人的によく使うモジュール ファイルを再帰的に探索  Pathlib の場合  # Pathlibの場合 from pathlib import Path from typing import List def list_file_paths(dir_path: str) -&gt; List[str]: &#34;&#34;&#34; List file paths in a directory." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.yusaito.com/blog/posts/tech/python/how-to-use-pathlib/" /><meta property="og:image" content="https://www.yusaito.com/blog/papermod-cover.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-01-19T00:00:00&#43;00:00" />
-<meta property="article:modified_time" content="2022-01-19T00:00:00&#43;00:00" />
+<meta property="article:published_time" content="2021-12-19T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2021-12-19T00:00:00&#43;00:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://www.yusaito.com/blog/papermod-cover.png"/>
@@ -131,8 +131,8 @@ if (!doNotTrack) {
   "articleBody": "今までパス操作は、組み込みのosとglob, pathlibが便利そうだったので調べてみる。\n基本操作 ファイル名取得 ディレクトリ名取得 from pathlib import Path path = Path(\"./dir/filename.txt\")  ファイル名を取得 : path.name ファイル名拡張子抜き : path.stem ファイルの拡張子のみ : path.suffix ファイルのディレクトリを取得 : path.parents (list) パス連結 : / 演算子を使う（path.joinpath()） パスの存在確認：path.exists() ファイルかどうか確認 : path.is_file() ディレクトリかどうか確認 : path.is_dir() ディレクトリの作成 : path.mkdir(exist_ok=True, parents=True) ディレクトリの削除 : path.rmdir() ファイル/ディレクトリパス変更 : path.replace(tgt) ファイル/ディレクトリパス変更（末尾のみ）: path.rename(new_file_apth) 同じ階層に別名ファイルを作成 : path.with_name('file_new.txt').touch() 同じ階層に別拡張子ファイルを作成 : path.with_suffix('png').touch() 同じ階層のファイルとディレクトリ一覧を返す：path.iterdir() ファイルの存在ディレクトリのパスを取得：Path(__file__).parent  個人的によく使うモジュール ファイルを再帰的に探索  Pathlib の場合  # Pathlibの場合 from pathlib import Path from typing import List def list_file_paths(dir_path: str) - List[str]: \"\"\" List file paths in a directory. Parameters ---------- dir_path : str Path for the directory Returns ------- List[str] List of the file paths in the directory \"\"\" return sorted([str(path) for path in Path(dir_path).rglob(\"*\") if path.is_file()])  os + glob の場合  # os + globの場合 import os import glob from typing import List def list_file_paths(dir_path: str) - List[str]: \"\"\" List file paths in a directory. Parameters ---------- dir_path : str Path for the directory Returns ------- List[str] List of the file paths in the directory \"\"\" return sorted( [ path for path in glob.glob(os.path.join(dir_path, \"**\"), recursive=True) if os.path.isfile(path) ] ) ファイル名の一括変換 def add_suffix_to_all_file_paths(dir_path: str) - List[str]: \"\"\" Add suffix to all the file name Parameters ---------- dir_path : str Path for the directory Returns ------- List[str] List of the file paths in the directory \"\"\" return sorted( [ str( path.rename( str(path.parent / Path(path.stem + \"_suffix\" + path.suffix)) ) ) for path in Path(dir_path).rglob(\"*\") if path.is_file() ] ) ",
   "wordCount" : "231",
   "inLanguage": "en",
-  "datePublished": "2022-01-19T00:00:00Z",
-  "dateModified": "2022-01-19T00:00:00Z",
+  "datePublished": "2021-12-19T00:00:00Z",
+  "dateModified": "2021-12-19T00:00:00Z",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://www.yusaito.com/blog/posts/tech/python/how-to-use-pathlib/"
@@ -221,7 +221,7 @@ if (!doNotTrack) {
     <h1 class="post-title">
       Pathlibの使い方
     </h1>
-    <div class="post-meta"><span title='2022-01-19 00:00:00 +0000 UTC'>January 19, 2022</span>
+    <div class="post-meta"><span title='2021-12-19 00:00:00 +0000 UTC'>December 19, 2021</span>
 
 </div>
   </header> <div class="toc">
@@ -369,17 +369,17 @@ path <span style="color:#f92672">=</span> Path(<span style="color:#e6db74">&#34;
 	
 	<li><a href="/blog/posts/tech/python/multiprocess-multithreading-utils/">Pythonでファイルリストからの並列処理</a></li>
 	
-	<li><a href="/blog/posts/tech/python/pandas_read_csv_pickle_feather/">Pandas : サイズの大きいcsvファイルをpickleかfeatherに変換 </a></li>
-	
-	<li><a href="/blog/posts/tech/python/pandas-read-csv-unnamed-name/">Pandasでread_csvしたときに出現するUnnamed:0を消す方法</a></li>
-	
 	<li><a href="/blog/posts/tech/python/how-to-use-hashlib/">Python : hashlibを使って、ハッシュ値を求める</a></li>
 	
 	<li><a href="/blog/posts/tech/python/how-to-use-mpire-multiprocess/">Pythonで並列処理 : MPIREの使い方</a></li>
 	
-	<li><a href="/blog/posts/tech/python/how-to-use-functools-partial/">Python : functools.partial 関数の引数を一部固定</a></li>
+	<li><a href="/blog/posts/tech/python/pandas-read-csv-unnamed-name/">Pandasでread_csvしたときに出現するUnnamed:0を消す方法</a></li>
 	
 	<li><a href="/blog/posts/tech/python/create-video-from-images-opencv/">PythonとOpenCVで画像リストから動画を作成</a></li>
+	
+	<li><a href="/blog/posts/tech/python/how-to-use-functools-partial/">Python : functools.partial 関数の引数を一部固定</a></li>
+	
+	<li><a href="/blog/posts/tech/python/tqdm-dynamic-ncols/">tqdmでターミナルの横幅を狭めるとバグる問題を解消する</a></li>
 	
 </ul>
 

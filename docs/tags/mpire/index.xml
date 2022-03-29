@@ -10,11 +10,11 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sat, 19 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.yusaito.com/blog/tags/mpire/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 09 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.yusaito.com/blog/tags/mpire/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pythonで並列処理 : MPIREの使い方</title>
       <link>https://www.yusaito.com/blog/posts/tech/python/how-to-use-mpire-multiprocess/</link>
-      <pubDate>Sat, 19 Mar 2022 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 09 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/posts/tech/python/how-to-use-mpire-multiprocess/</guid>
       <description>Python では joblib や concurrent.futures などで簡単にマルチプロセスできるが、&amp;ldquo;MultiProcessing Is Really Easy&amp;quot;という名の MPIRE というライブラリを見つけたので備忘録として残しておく。この記事によると、特定の場合では joblib や concurrent.futures よりも性能が良いらしい。

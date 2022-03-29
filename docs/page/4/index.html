@@ -11,7 +11,7 @@
 <meta name="author" content="">
 <link rel="canonical" href="https://www.yusaito.com/blog/" />
 <meta name="google-site-verification" content="7pz_dAQx7-r3P-mr6XGvIVQx47QN5DmiWRVLEocHAIM" />
-<link crossorigin="anonymous" href="/blog/assets/css/stylesheet.min.b624413065f328aca6cdb1209509000e30fb8692e1099db0a62ec71f40ce1fbb.css" integrity="sha256-tiRBMGXzKKymzbEglQkADjD7hpLhCZ2wpi7HH0DOH7s=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/blog/assets/css/stylesheet.min.6087d4478ef1a6e4b70f2e688623594f1c21e0195679a9b4e682779aef3fc091.css" integrity="sha256-YIfUR47xpuS3Dy5ohiNZTxwh4BlWeam05oJ3mu8/wJE=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://www.yusaito.com/blog/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://www.yusaito.com/blog/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://www.yusaito.com/blog/favicon-32x32.png">
@@ -163,13 +163,25 @@ if (!doNotTrack) {
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2>Pythonでファイルリストからの並列処理
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>ファイルのリストを受け取って何らかの並列処理をする。 from concurrent.futures import ProcessPoolExecutor, ThreadPoolExecutor from functools import partial from pathlib import Path from typing import List def list_file_paths(dir_path: str) -&gt; List[str]: &#34;&#34;&#34; List file paths in a directory. Parameters ---------- dir_path : str Path of the directory Returns ------- List[str] List of the file paths in the directory &#34;&#34;&#34; return sorted([str(path) for path in Path(dir_path).rglob(&#34;*&#34;) if path.is_file()]) def task(same_value, same_value2, diffent_values): return None def multiprocess_task(task, same_value, same_value2, diffent_values): with ProcessPoolExecutor() as executor: results = list(executor....</p>
+  </section>
+  <footer class="entry-footer"><span title='2022-01-03 00:00:00 +0000 UTC'>January 3, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to Pythonでファイルリストからの並列処理" href="https://www.yusaito.com/blog/posts/tech/python/multiprocess-multithreading-utils/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2>Pythonでjpgからpngへ一括変換
     </h2>
   </header>
   <section class="entry-content">
     <p>jpg から png への一括変換 (マルチプロセス) from concurrent.futures import ProcessPoolExecutor, ThreadPoolExecutor from functools import partial from pathlib import Path from typing import List from PIL import Image, ImageFile ImageFile.LOAD_TRUNCATED_IMAGES = True def list_file_paths(dir_path: str) -&gt; List[str]: &#34;&#34;&#34; List file paths in a directory. Parameters ---------- dir_path : str Path of the directory Returns ------- List[str] List of the file paths in the directory &#34;&#34;&#34; return sorted([str(path) for path in Path(dir_path).rglob(&#34;*&#34;) if path....</p>
   </section>
-  <footer class="entry-footer"><span title='2022-01-25 00:00:00 +0000 UTC'>January 25, 2022</span></footer>
+  <footer class="entry-footer"><span title='2021-12-29 00:00:00 +0000 UTC'>December 29, 2021</span></footer>
   <a class="entry-link" aria-label="post link to Pythonでjpgからpngへ一括変換" href="https://www.yusaito.com/blog/posts/tech/python/image-convert-jpg-png-multiprocess/"></a>
 </article>
 
@@ -182,7 +194,7 @@ if (!doNotTrack) {
     <p>今までパス操作は、組み込みのosとglob, pathlibが便利そうだったので調べてみる。
 基本操作 ファイル名取得 ディレクトリ名取得 from pathlib import Path path = Path(&#34;./dir/filename.txt&#34;)  ファイル名を取得 : path.name ファイル名拡張子抜き : path.stem ファイルの拡張子のみ : path.suffix ファイルのディレクトリを取得 : path.parents (list) パス連結 : / 演算子を使う（path.joinpath()） パスの存在確認：path.exists() ファイルかどうか確認 : path.is_file() ディレクトリかどうか確認 : path.is_dir() ディレクトリの作成 : path.mkdir(exist_ok=True, parents=True) ディレクトリの削除 : path.rmdir() ファイル/ディレクトリパス変更 : path.replace(tgt) ファイル/ディレクトリパス変更（末尾のみ）: path.rename(new_file_apth) 同じ階層に別名ファイルを作成 : path.with_name(&#39;file_new.txt&#39;).touch() 同じ階層に別拡張子ファイルを作成 : path.with_suffix(&#39;png&#39;).touch() 同じ階層のファイルとディレクトリ一覧を返す：path.iterdir() ファイルの存在ディレクトリのパスを取得：Path(__file__).parent  個人的によく使うモジュール ファイルを再帰的に探索  Pathlib の場合  # Pathlibの場合 from pathlib import Path from typing import List def list_file_paths(dir_path: str) -&gt; List[str]: &#34;&#34;&#34; List file paths in a directory....</p>
   </section>
-  <footer class="entry-footer"><span title='2022-01-19 00:00:00 +0000 UTC'>January 19, 2022</span></footer>
+  <footer class="entry-footer"><span title='2021-12-19 00:00:00 +0000 UTC'>December 19, 2021</span></footer>
   <a class="entry-link" aria-label="post link to Pathlibの使い方" href="https://www.yusaito.com/blog/posts/tech/python/how-to-use-pathlib/"></a>
 </article>
 
@@ -195,23 +207,8 @@ if (!doNotTrack) {
     <p>Python3.7 から加わった Dataclass に関して全く知らなかったので参考煮上げた記事を読みながらメモ.
 通常の class と Dataclass の比較 通常の class class Person: def __init__(self, age = 20, gender = &#34;female&#34;): self.gender = gender self.age = age Dataclass from dataclasses import dataclass @dataclass class DataclassPerson: gender: str = &#34;female&#34; age: int = 20 DataClass の利点  可読性が高まる。 型アノテーションができる。 asdict で（ネストされたものでも）辞書に変換可能  参考  </p>
   </section>
-  <footer class="entry-footer"><span title='2022-01-18 00:00:00 +0000 UTC'>January 18, 2022</span></footer>
+  <footer class="entry-footer"><span title='2021-12-18 00:00:00 +0000 UTC'>December 18, 2021</span></footer>
   <a class="entry-link" aria-label="post link to Python : Dataclassを試してみる" href="https://www.yusaito.com/blog/posts/tech/python/python-dataclass/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>AzureでA100x8（V100x4）のPytorch環境構築とエラー対処
-    </h2>
-  </header>
-  <section class="entry-content">
-    <p>Azure の web で VM インスタンスを作成 VM インスタンスの作成はこちら 秘密鍵をダウンロードして、read 権限を与えていおく。
-cp ~/Downloads/your_key_name.pem ~/.ssh/keys/azure_vm_key.pem chmod 400 ~/.ssh/keys/azure_vm_key.pem ssh を使って VM にアクセス
-ssh -i ~/.ssh/keys/azure_vm_key.pem azureuser@&lt;public ip address of VM instance&gt; Cuda をインストール wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/cuda-ubuntu1804.pin sudo mv cuda-ubuntu1804.pin /etc/apt/preferences.d/cuda-repository-pin-600 wget https://developer.download.nvidia.com/compute/cuda/11.5.0/local_installers/cuda-repo-ubuntu1804-11-5-local_11.5.0-495.29.05-1_amd64.deb sudo dpkg -i cuda-repo-ubuntu1804-11-5-local_11.5.0-495.29.05-1_amd64.deb sudo apt-key add /var/cuda-repo-ubuntu1804-11-5-local/7fa2af80.pub sudo apt-get update sudo apt-get -y install cuda Data Center GPU manager のインストール（A100x8 の場合） bandwidthTest を行う 詳細は、こちらを参照。 A100x8 ではここでエラーが出る、V100x4 では出ない
-git clone https://github.com/NVIDIA/cuda-samples.git cd cuda-samples/Samples/bandwidthTest make ....</p>
-  </section>
-  <footer class="entry-footer"><span title='2022-01-11 00:00:00 +0000 UTC'>January 11, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to AzureでA100x8（V100x4）のPytorch環境構築とエラー対処" href="https://www.yusaito.com/blog/posts/tech/linux/azure-vm-cuda-docker-setup/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -223,7 +220,7 @@ git clone https://github.com/NVIDIA/cuda-samples.git cd cuda-samples/Samples/ban
     <p>IOError: image file is truncated jpg で結構大きめの画像を Pillow で読み込むときに下記のエラーが出た。
 IOError: image file is truncated 解決策 from PIL import ImageFile ImageFile.LOAD_TRUNCATED_IMAGES = True 参考  </p>
   </section>
-  <footer class="entry-footer"><span title='2022-01-03 00:00:00 +0000 UTC'>January 3, 2022</span></footer>
+  <footer class="entry-footer"><span title='2021-12-03 00:00:00 +0000 UTC'>December 3, 2021</span></footer>
   <a class="entry-link" aria-label="post link to エラーメモ：IOError: image file is truncated" href="https://www.yusaito.com/blog/posts/tech/python/ioerror-image-file-is-truncated/"></a>
 </article>
 
@@ -240,7 +237,7 @@ itertools.groupby 同じキーをもつような要素からなる イテレー�
 使い方 for n in itertools.pairwise(&#39;ABCDEFG&#39;): print(n) # --&gt; AB BC CD DE EF FG itertools.permutations 特定の長さの順列を返す。
 使い方 for n in itertools.permutations(&#39;ABCD&#39;, 2): print(n) # --&gt; AB AC AD BA BC BD CA CB CD DA DB DC itertools....</p>
   </section>
-  <footer class="entry-footer"><span title='2021-12-21 00:00:00 +0000 UTC'>December 21, 2021</span></footer>
+  <footer class="entry-footer"><span title='2021-11-21 00:00:00 +0000 UTC'>November 21, 2021</span></footer>
   <a class="entry-link" aria-label="post link to Python : itertoolsの使い方 -その２-" href="https://www.yusaito.com/blog/posts/tech/python/how-to-use-itertools-2/"></a>
 </article>
 <footer class="page-footer">

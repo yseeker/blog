@@ -1,7 +1,7 @@
 ---
 #author: "Hugo Authors"
 title: "joblibの使い方"
-date: "2022-03-15"
+date: "2022-03-01"
 tags:
   [
     "joblib",

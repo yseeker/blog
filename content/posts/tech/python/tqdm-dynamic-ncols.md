@@ -1,7 +1,7 @@
 ---
 #author: "Hugo Authors"
 title: "tqdmでターミナルの横幅を狭めるとバグる問題を解消する"
-date: "2022-02-17"
+date: "2022-01-17"
 tags: ["python", "tqdm", "logging", "print", "dynamic_ncols", "標準出力"]
 categories: ["Tech", "Python"]
 ShowToc: true
@@ -9,7 +9,7 @@ TocOpen: true
 draft: false
 ---
 
-## 問題 : tqdm を標準出力している状態でターミナルの横幅を狭めるとバグる
+## 問題 : tqdm で標準出力している状態でターミナルの横幅を狭めるとバグる
 
 ### 解決策 : dynamic_ncols=True にする
 

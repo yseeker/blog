@@ -11,7 +11,7 @@
 <meta name="author" content="">
 <link rel="canonical" href="https://www.yusaito.com/blog/tags/%E3%83%9E%E3%83%AB%E3%83%81%E3%83%97%E3%83%AD%E3%82%BB%E3%82%B9/" />
 <meta name="google-site-verification" content="7pz_dAQx7-r3P-mr6XGvIVQx47QN5DmiWRVLEocHAIM" />
-<link crossorigin="anonymous" href="/blog/assets/css/stylesheet.min.b624413065f328aca6cdb1209509000e30fb8692e1099db0a62ec71f40ce1fbb.css" integrity="sha256-tiRBMGXzKKymzbEglQkADjD7hpLhCZ2wpi7HH0DOH7s=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/blog/assets/css/stylesheet.min.6087d4478ef1a6e4b70f2e688623594f1c21e0195679a9b4e682779aef3fc091.css" integrity="sha256-YIfUR47xpuS3Dy5ohiNZTxwh4BlWeam05oJ3mu8/wJE=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://www.yusaito.com/blog/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://www.yusaito.com/blog/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://www.yusaito.com/blog/favicon-32x32.png">
@@ -152,19 +152,6 @@ if (!doNotTrack) {
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
-    <h2>Pythonで並列処理 : MPIREの使い方
-    </h2>
-  </header>
-  <section class="entry-content">
-    <p>Python では joblib や concurrent.futures などで簡単にマルチプロセスできるが、“MultiProcessing Is Really Easy&#34;という名の MPIRE というライブラリを見つけたので備忘録として残しておく。この記事によると、特定の場合では joblib や concurrent.futures よりも性能が良いらしい。
-MPIRE のインストール pip install mpire MPIRE の使い方 from mpire import WorkerPool def time_consuming_function(param): return None with WorkerPool(n_jobs=8) as pool: results = pool.map_unordered(time_consuming_function, interator, progress_bar=True) 参考  </p>
-  </section>
-  <footer class="entry-footer"><span title='2022-03-19 00:00:00 +0000 UTC'>March 19, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to Pythonで並列処理 : MPIREの使い方" href="https://www.yusaito.com/blog/posts/tech/python/how-to-use-mpire-multiprocess/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
     <h2>PythonとopenCVで並列化
     </h2>
   </header>
@@ -174,8 +161,21 @@ MPIRE のインストール pip install mpire MPIRE の使い方 from mpire impo
 以下テンプレート。
 import cv2 from concurrent.futures import ThreadPoolExecutor cv2.setNumThreads(0) def task_using_cv2(param): do_some_process_using_cv2() return with ThreadPoolExecutor() as executor: results = list(executor.map(task_using_cv2, param)) 参考   </p>
   </section>
-  <footer class="entry-footer"><span title='2022-03-18 00:00:00 +0000 UTC'>March 18, 2022</span></footer>
+  <footer class="entry-footer"><span title='2022-03-17 00:00:00 +0000 UTC'>March 17, 2022</span></footer>
   <a class="entry-link" aria-label="post link to PythonとopenCVで並列化" href="https://www.yusaito.com/blog/posts/tech/python/opencv-setnumthreads-multithreading/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>Pythonで並列処理 : MPIREの使い方
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>Python では joblib や concurrent.futures などで簡単にマルチプロセスできるが、“MultiProcessing Is Really Easy&#34;という名の MPIRE というライブラリを見つけたので備忘録として残しておく。この記事によると、特定の場合では joblib や concurrent.futures よりも性能が良いらしい。
+MPIRE のインストール pip install mpire MPIRE の使い方 from mpire import WorkerPool def time_consuming_function(param): return None with WorkerPool(n_jobs=8) as pool: results = pool.map_unordered(time_consuming_function, interator, progress_bar=True) 参考  </p>
+  </section>
+  <footer class="entry-footer"><span title='2022-03-09 00:00:00 +0000 UTC'>March 9, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to Pythonで並列処理 : MPIREの使い方" href="https://www.yusaito.com/blog/posts/tech/python/how-to-use-mpire-multiprocess/"></a>
 </article>
 
 <article class="post-entry tag-entry"> 
@@ -186,7 +186,7 @@ import cv2 from concurrent.futures import ThreadPoolExecutor cv2.setNumThreads(0
   <section class="entry-content">
     <p>ファイルのリストを受け取って何らかの並列処理をする。 from concurrent.futures import ProcessPoolExecutor, ThreadPoolExecutor from functools import partial from pathlib import Path from typing import List def list_file_paths(dir_path: str) -&gt; List[str]: &#34;&#34;&#34; List file paths in a directory. Parameters ---------- dir_path : str Path of the directory Returns ------- List[str] List of the file paths in the directory &#34;&#34;&#34; return sorted([str(path) for path in Path(dir_path).rglob(&#34;*&#34;) if path.is_file()]) def task(same_value, same_value2, diffent_values): return None def multiprocess_task(task, same_value, same_value2, diffent_values): with ProcessPoolExecutor() as executor: results = list(executor....</p>
   </section>
-  <footer class="entry-footer"><span title='2022-02-03 00:00:00 +0000 UTC'>February 3, 2022</span></footer>
+  <footer class="entry-footer"><span title='2022-01-03 00:00:00 +0000 UTC'>January 3, 2022</span></footer>
   <a class="entry-link" aria-label="post link to Pythonでファイルリストからの並列処理" href="https://www.yusaito.com/blog/posts/tech/python/multiprocess-multithreading-utils/"></a>
 </article>
 
@@ -198,7 +198,7 @@ import cv2 from concurrent.futures import ThreadPoolExecutor cv2.setNumThreads(0
   <section class="entry-content">
     <p>jpg から png への一括変換 (マルチプロセス) from concurrent.futures import ProcessPoolExecutor, ThreadPoolExecutor from functools import partial from pathlib import Path from typing import List from PIL import Image, ImageFile ImageFile.LOAD_TRUNCATED_IMAGES = True def list_file_paths(dir_path: str) -&gt; List[str]: &#34;&#34;&#34; List file paths in a directory. Parameters ---------- dir_path : str Path of the directory Returns ------- List[str] List of the file paths in the directory &#34;&#34;&#34; return sorted([str(path) for path in Path(dir_path).rglob(&#34;*&#34;) if path....</p>
   </section>
-  <footer class="entry-footer"><span title='2022-01-25 00:00:00 +0000 UTC'>January 25, 2022</span></footer>
+  <footer class="entry-footer"><span title='2021-12-29 00:00:00 +0000 UTC'>December 29, 2021</span></footer>
   <a class="entry-link" aria-label="post link to Pythonでjpgからpngへ一括変換" href="https://www.yusaito.com/blog/posts/tech/python/image-convert-jpg-png-multiprocess/"></a>
 </article>
     </main>
