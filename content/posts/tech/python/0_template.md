@@ -20,3 +20,9 @@ draft: true
 </div>
 
 <fieldset><legend>Box Info</legend><ul><li>Name: <a href=https://app.hackthebox.eu/machines/Horizontall><code>Horizontall</code></a></li><li>OS: <code>Linux</code></li><li>Difficulty: <code>Easy</code></li><li>IP: <code>10.10.11.105</code></li><li>Points: <code>20</code></li><li>Machine Creator: <a href=https://app.hackthebox.eu/users/4005><code>wail99</code></a></li></ul></fieldset>
+
+# docker-compose up -d
+
+ERROR: Couldn't connect to Docker daemon at http+docker://localhost - is it running?
+
+If it's at a non-standard location, specify the URL with the DOCKER_HOST environment variable.
