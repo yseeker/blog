@@ -163,6 +163,19 @@ if (!doNotTrack) {
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2>Pandas : サイズの大きいcsvファイルをpickleかfeatherに変換 
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>read_csv が遅い問題 20GB くらいの csv ファイルを pandas.DataFrame の read_csv で読み込んだ際に２分くらいかかったので、feather と pickle への書き出しを検討したのでその際のメモ。
+ read_csv : 130sec read_feather : 5sec read_pickle : 2.5sec  from contextlib import contextmanager from time import time import pandas as pd @contextmanager def timer(process_name): start = time() yield print(f&#34;[{process_name}] done in {time() - start:.2f}s&#34;) with timer(&#34;pkl&#34;): df = pd.read_pickle(&#34;data/input/train.pkl&#34;) with timer(&#34;feather&#34;): df = pd.read_feather(&#34;data/input/train.feather&#34;) with timer(&#34;csv&#34;): df = pd.read_csv(&#34;data/input/train.csv&#34;) ちなみに pickle の書き出しと、読み込みのときの pandas の version が違うと AttributeError: Can&#39;t get attribute &#39;_unpickle_block&#39; on &lt;module &#39;pandas....</p>
+  </section>
+  <footer class="entry-footer"><span title='2022-01-08 00:00:00 +0000 UTC'>January 8, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to Pandas : サイズの大きいcsvファイルをpickleかfeatherに変換 " href="https://www.yusaito.com/blog/posts/tech/python/pandas_read_csv_pickle_feather/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2>Pythonでファイルリストからの並列処理
     </h2>
   </header>
@@ -222,23 +235,6 @@ IOError: image file is truncated 解決策 from PIL import ImageFile ImageFile.L
   </section>
   <footer class="entry-footer"><span title='2021-12-03 00:00:00 +0000 UTC'>December 3, 2021</span></footer>
   <a class="entry-link" aria-label="post link to エラーメモ：IOError: image file is truncated" href="https://www.yusaito.com/blog/posts/tech/python/ioerror-image-file-is-truncated/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Python : itertoolsの使い方 -その２-
-    </h2>
-  </header>
-  <section class="entry-content">
-    <p>product は便利そうだけど、starmap は一行別で生成したほうが分かりやすそう。
-itertools.groupby 同じキーをもつような要素からなる イテレーターのグループに対して、キーとグループを返すようなイテレータを作成する。通常、イテレーターは同じキー関数でソート済みである必要がある。
-使い方 for k, g in itertools.groupby(&#39;AAAABBBCCDAABBB&#39;): print(k) # --&gt; A B C D A B for k, g in itertools.groupby(&#39;AAAABBBCCD&#39;): print(list(g)) # --&gt; AAAA BBB CC D itertools.islice 要素を選択・スライスして返すイテレータを生成。
-使い方 for n in itertools.islice(&#39;ABCDEFG&#39;, 2): print(n) # --&gt; A B itertools.pairwise 隣同士をペアにしたイテレータを返す。
-使い方 for n in itertools.pairwise(&#39;ABCDEFG&#39;): print(n) # --&gt; AB BC CD DE EF FG itertools.permutations 特定の長さの順列を返す。
-使い方 for n in itertools.permutations(&#39;ABCD&#39;, 2): print(n) # --&gt; AB AC AD BA BC BD CA CB CD DA DB DC itertools....</p>
-  </section>
-  <footer class="entry-footer"><span title='2021-11-21 00:00:00 +0000 UTC'>November 21, 2021</span></footer>
-  <a class="entry-link" aria-label="post link to Python : itertoolsの使い方 -その２-" href="https://www.yusaito.com/blog/posts/tech/python/how-to-use-itertools-2/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

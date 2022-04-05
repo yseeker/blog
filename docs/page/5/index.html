@@ -163,6 +163,23 @@ if (!doNotTrack) {
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2>Python : itertoolsの使い方 -その２-
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>product は便利そうだけど、starmap は一行別で生成したほうが分かりやすそう。
+itertools.groupby 同じキーをもつような要素からなる イテレーターのグループに対して、キーとグループを返すようなイテレータを作成する。通常、イテレーターは同じキー関数でソート済みである必要がある。
+使い方 for k, g in itertools.groupby(&#39;AAAABBBCCDAABBB&#39;): print(k) # --&gt; A B C D A B for k, g in itertools.groupby(&#39;AAAABBBCCD&#39;): print(list(g)) # --&gt; AAAA BBB CC D itertools.islice 要素を選択・スライスして返すイテレータを生成。
+使い方 for n in itertools.islice(&#39;ABCDEFG&#39;, 2): print(n) # --&gt; A B itertools.pairwise 隣同士をペアにしたイテレータを返す。
+使い方 for n in itertools.pairwise(&#39;ABCDEFG&#39;): print(n) # --&gt; AB BC CD DE EF FG itertools.permutations 特定の長さの順列を返す。
+使い方 for n in itertools.permutations(&#39;ABCD&#39;, 2): print(n) # --&gt; AB AC AD BA BC BD CA CB CD DA DB DC itertools....</p>
+  </section>
+  <footer class="entry-footer"><span title='2021-11-21 00:00:00 +0000 UTC'>November 21, 2021</span></footer>
+  <a class="entry-link" aria-label="post link to Python : itertoolsの使い方 -その２-" href="https://www.yusaito.com/blog/posts/tech/python/how-to-use-itertools-2/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2>Python : itertoolsの使い方 -その１-
     </h2>
   </header>
@@ -233,21 +250,6 @@ df = pd.DataFrame({&#39;list_1&#39;:list_1, &#39;list_2&#39;:list_2, &#39;list_3
   </section>
   <footer class="entry-footer"><span title='2021-09-08 00:00:00 +0000 UTC'>September 8, 2021</span></footer>
   <a class="entry-link" aria-label="post link to 海外ポスドクになる方法と現地フェローシップ" href="https://www.yusaito.com/blog/posts/us-life/how-to-get-fellowship/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Kaggle：SETIコンペ参加記（ソロ銅：71th/768 teams）
-    </h2>
-  </header>
-  <section class="entry-content">
-    <p>SETI Breakthrough Listen - E.T. Signal Searchという Kaggle の画像分類コンペに参加しました。
-結果 774 チーム中 74 位でソロ銅でした。
-コンペの概要 Overview のページには
- In this competition, use your data science skills to help identify anomalous signals in scans of Breakthrough Listen targets. Because there are no confirmed examples of alien signals to use to train machine learning algorithms, the team included some simulated signals (that they call “needles”) in the haystack of data from the telescope....</p>
-  </section>
-  <footer class="entry-footer"><span title='2021-08-19 00:00:00 +0000 UTC'>August 19, 2021</span></footer>
-  <a class="entry-link" aria-label="post link to Kaggle：SETIコンペ参加記（ソロ銅：71th/768 teams）" href="https://www.yusaito.com/blog/posts/tech/kaggle/seti-breakthrough-listen/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

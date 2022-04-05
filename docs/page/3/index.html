@@ -163,6 +163,20 @@ if (!doNotTrack) {
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2>続　アメリカで矯正歯科に行った話
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>日本に本帰国して無事に継続で矯正治療を行ってくれる矯正歯科を発見し、矯正治療をつい先日終えることができた。記念に矯正治療前と治療後の比較画像を貼っておく。
+矯正治療前は、上の前歯が 2 本前方にはみ出していてさらに、上の歯と下の歯が噛み合っていなかったが、上下４本抜歯をしてもらい、矯正治療を終えた結果、歯並びとかみ合わせが劇的に改善した。一方、下の前歯には若干ブラックトライアングル的なものができてしまったが、まあこのあたりは歯科矯正のトレードオフらしいので仕方がない。
+結論 歯科矯正は人生を変える。</p>
+  </section>
+  <footer class="entry-footer"><span title='2022-02-02 00:00:00 +0000 UTC'>February 2, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to 続　アメリカで矯正歯科に行った話" href="https://www.yusaito.com/blog/posts/us-life/orthodontics-beforeafter/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2>Python : functools.partial 関数の引数を一部固定
     </h2>
   </header>
@@ -227,19 +241,6 @@ git clone https://github.com/NVIDIA/cuda-samples.git cd cuda-samples/Samples/ban
   </section>
   <footer class="entry-footer"><span title='2022-01-12 00:00:00 +0000 UTC'>January 12, 2022</span></footer>
   <a class="entry-link" aria-label="post link to AzureでA100x8（V100x4）のPytorch環境構築とエラー対処" href="https://www.yusaito.com/blog/posts/tech/linux/azure-vm-cuda-docker-setup/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Pandas : サイズの大きいcsvファイルをpickleかfeatherに変換 
-    </h2>
-  </header>
-  <section class="entry-content">
-    <p>read_csv が遅い問題 20GB くらいの csv ファイルを pandas.DataFrame の read_csv で読み込んだ際に２分くらいかかったので、feather と pickle への書き出しを検討したのでその際のメモ。
- read_csv : 130sec read_feather : 5sec read_pickle : 2.5sec  from contextlib import contextmanager from time import time import pandas as pd @contextmanager def timer(process_name): start = time() yield print(f&#34;[{process_name}] done in {time() - start:.2f}s&#34;) with timer(&#34;pkl&#34;): df = pd.read_pickle(&#34;data/input/train.pkl&#34;) with timer(&#34;feather&#34;): df = pd.read_feather(&#34;data/input/train.feather&#34;) with timer(&#34;csv&#34;): df = pd.read_csv(&#34;data/input/train.csv&#34;) ちなみに pickle の書き出しと、読み込みのときの pandas の version が違うと AttributeError: Can&#39;t get attribute &#39;_unpickle_block&#39; on &lt;module &#39;pandas....</p>
-  </section>
-  <footer class="entry-footer"><span title='2022-01-08 00:00:00 +0000 UTC'>January 8, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to Pandas : サイズの大きいcsvファイルをpickleかfeatherに変換 " href="https://www.yusaito.com/blog/posts/tech/python/pandas_read_csv_pickle_feather/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
