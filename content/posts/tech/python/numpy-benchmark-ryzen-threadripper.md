@@ -1,6 +1,6 @@
 ---
 #author: "Hugo Authors"
-title: "Ryzen Threadripper 3970XとNVIDIA RTX 3090を使ってnumpy(Intel MKL and OpenBLAS)とcupyでベンチマーク"
+title: "Ryzen Threadripper 3970XとNVIDIA RTX 3090を使ってnumpy(Intel MKL and OpenBLAS)とcupyでベンチマーク [追記：jaxでも計測した]"
 date: "2022-03-18"
 tags:
   [

@@ -12,7 +12,7 @@
     <language>ja-jp</language>
     <lastBuildDate>Fri, 18 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.yusaito.com/blog/tags/intel-mkl/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Ryzen Threadripper 3970XとNVIDIA RTX 3090を使ってnumpy(Intel MKL and OpenBLAS)とcupyでベンチマーク</title>
+      <title>Ryzen Threadripper 3970XとNVIDIA RTX 3090を使ってnumpy(Intel MKL and OpenBLAS)とcupyでベンチマーク [追記：jaxでも計測した]</title>
       <link>https://www.yusaito.com/blog/posts/tech/python/numpy-benchmark-ryzen-threadripper/</link>
       <pubDate>Fri, 18 Mar 2022 00:00:00 +0000</pubDate>
       
