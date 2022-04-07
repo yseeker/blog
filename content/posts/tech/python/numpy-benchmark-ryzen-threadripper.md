@@ -298,5 +298,38 @@ cp.linalg.norm : 11.1704 s
 この４つの評価項目だと linalig.eigh （固有値計算） 以外は numpy (OpenBLAS)で良くて、固有値 は cupy で計算すれば良さそう。行列のサイズがもっと大きくなれば結果が変わるかもしれない。<br>
 （一概に CPU と GPU の比較といっても CPU 側ではスレッド数と BLAS でだいぶ結果が変わるので単純に比較はできなさそう。）
 
-**雑な結論**：サイズが 20000 までの行列なら Ryzen Threadripper 3970X ＆ numpy でだいたい OK。<br>
+## 雑な結論
+
+サイズが 20000 までの行列なら Ryzen Threadripper 3970X ＆ numpy でだいたい OK。<br>
 （ま、とは言っても普段行列計算しないんですけどね。）
+
+## 追記
+
+jax(コンパイル後の 2 回目以降) が最速だった。
+
+|     TH      | numpy (Intel MKL) | numpy (OpenBLAS) |    cupy     | 　 jax (jit + GPU) |
+| :---------: | :---------------: | :--------------: | :---------: | :----------------: |
+|     dot     |    7.9529 sec     |    6.3217 sec    | 11.0195 sec |     0.4152sec      |
+| linalg.inv  |    10.3558 sec    |   10.5088 sec    | 15.2210 sec |     1.2184sec      |
+| linalg.norm |    7.7727 sec     |    6.0329 sec    | 11.1704 sec |     0.00316sec     |
+| linalg.eigh |    61.9019 sec    |   138.9376 sec   | 37.9862 sec |        N/A         |
+
+### jax 計測用のザルなコード
+
+```python
+import time
+import jax.numpy as jnp
+from jax import jit
+
+x = jnp.arange(20000**2, dtype=jnp.float32).reshape(20000, 20000)
+
+@jit
+def static_jax_dot(x):
+    return jnp.linalg.norm(x)
+
+static_jax_dot(x).block_until_ready()
+
+start = time.time()
+static_jax_dot(x).block_until_ready()
+print(time.time() - start)
+```
