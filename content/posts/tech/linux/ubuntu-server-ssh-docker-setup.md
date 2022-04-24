@@ -222,6 +222,18 @@ sudo chmod 700 -R /home/user /home/user/.ssh
 sudo chmod 600 /home/user/.ssh/authorized_keys
 ```
 
+### 指定のディレクトリに一発で飛べるようにする
+
+```bash
+Host ubunru-server
+  HostName ubunru-server
+  RemoteCommand cd /home/hoge/target_dir; $SHELL -il
+  RequestTTY yes
+  User hoge
+  Port XXXX
+  IdentityFile ~/.ssh/ubunru-server/id_rsa
+```
+
 ## リモート VScode の設定
 
 Extention の　`Remote Development`をインストールしておく。
