@@ -153,8 +153,8 @@ img[src*="#center"] {
 
 .post-content h2 {
   font-size: 18pt !important;
-  padding: 4px 8px !important;
-  border-left: 5px solid #12007a !important;
+  /* padding: 4px 8px !important; */
+  /* border-left: 5px solid #12007a !important; */
   line-height: 1 !important;
 }
 
