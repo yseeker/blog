@@ -3,7 +3,7 @@
 title: "続　アメリカで矯正歯科に行った話"
 date: "2022-02-02"
 tags: ["歯", "矯正歯科"]
-categories: ["アメリカ生活"]
+categories: []
 ShowToc: true
 TocOpen: true
 draft: false
