@@ -102,6 +102,23 @@ gpu nvidia -smi
 sudo parted -l
 ```
 
+### マウント
+
+```bash
+sudo fdisk -l
+sudo mkdir /mnt/nvme1n1
+```
+
+```
+sudo mount /dev/nvme1n1 /mnt/nvme1n1
+```
+
+```
+sudo blkid /dev/sdX1
+sudo vi /etc/fstab
+UUID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx       /mnt/hdd        ext4    defaults        0       0
+```
+
 ## 言語を直しておく
 
 https://tech.librastudio.co.jp/entry/index.php/2017/12/20/post-1756/
@@ -286,3 +303,17 @@ USER と ssh サーバーで下記を設定
 - **indent rainbow**
 - **blacket pair** : いろいろある
 - **paste image**
+
+## マウント
+
+```bash
+sudo mkdir /mnt/nvme1n1
+sudo mount /dev/nvme1n1 /mnt/nvme1n1
+
+# UUIDを確認
+sudo blkid /dev/nvme1n1
+
+#VScodeで編集が良い？
+less /etc/fstab
+UUID=7d9c943f-xxxxxxxxx       /mnt/sd ext4    defaults        0       0
+```
