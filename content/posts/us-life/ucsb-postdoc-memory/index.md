@@ -32,7 +32,7 @@ Henly Gate
 
 ## 2017 年秋　海外ポスドクを志す
 
-昔からいつかはアメリカで研究してみたいという漠然とした思いがあった。博士号取得後の 2018 年 4 月からの勤務先は決まっていたが、もしもうまく海外ポスドク先が決まれば退職して海外へ行くという意向をボス（予定）に相談したところ快諾して頂いた。この時期から海外ポスドク先を探し始めた。ラボ選びの方針は[以前の記事](https://www.yusaito.com/blog/posts/us-life/how-to-choose-lab/)で書いた通りである。また同時期に[Elings Prize Fellowship](https://www.cnsi.ucsb.edu/resources/funding/elings-prize)にも応募した。
+昔からいつかはアメリカで研究してみたいという漠然とした思いがあった。博士号取得後の 2018 年 4 月からの勤務先は決まっていたが、もしもうまく海外ポスドク先が決まれば退職して海外へ行くという意向をボス（予定）に相談したところ快諾して頂いた。この時期から海外ポスドク先を探し始めた。ラボ選びの方針は[以前の記事](https://www.yusaito.com/blog/posts/us-life/how-to-choose-lab/)で書いた通りである。また同時期に[Elings Prize Fellowship](https://www.cnsi.ucsb.edu/programs/elings-fellowships)にも応募した。
 
 ## 2018 年 2 月 Elings Prize Fellowship のオファー
 

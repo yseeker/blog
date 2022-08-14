@@ -22,7 +22,7 @@ aliases:
 - [Miller Research Fellowship](https://miller.berkeley.edu/fellowship) (UC Berkeley, 基礎研究全般)
 - [Kavli Institute at Cornell Postdoctoral Fellowships](https://www.kicnano.cornell.edu/funding/postdocs/) (Cornell, ナノサイエンス)
 - [Materials Science Postdoctoral Fellowship](https://pccm.princeton.edu/education/materials-science-postdoctoral-fellowship-competition) (Princeton, 材料科学)
-- [Elings Prize Fellowship](https://www.cnsi.ucsb.edu/resources/funding/elings-prize) (UC Santa Barbara, ナノサイエンス)
+- [Elings Prize Fellowship](https://www.cnsi.ucsb.edu/programs/elings-fellowships) (UC Santa Barbara, ナノサイエンス)
 
 地域・国単位だと例えば
 
