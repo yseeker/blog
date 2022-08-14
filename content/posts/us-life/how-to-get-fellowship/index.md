@@ -36,7 +36,7 @@ aliases:
 ![](images/2022-03-31-23-02-02.png)
 photo by Annie Spratt on [Unsplash](https://unsplash.com/)
 
-どの fellowship も似たような書類が要求される。例えば私が獲得した Elings Prize Fellowship の[公式サイト](https://www.cnsi.ucsb.edu/resources/funding/elings-prize)から要求される書類を見てみると（特に太字の箇所はどこの応募する際にも要求されると思う）、
+どの fellowship も似たような書類が要求される。例えば私が獲得した Elings Prize Fellowship の[公式サイト](https://www.cnsi.ucsb.edu/programs/elings-fellowships)から要求される書類を見てみると（特に太字の箇所はどこの応募する際にも要求されると思う）、
 
 > a. A **cover letter** summarizing the applicant's background, indicating the area of proposed research, and listing the group(s) with which the research will be pursued.<br>
 > b. A complete **curriculum vitae** of the applicant's educational and professional experience, listing all publications, and summarizing the applicant’s contributions to teaching, mentorship and service.<br>
