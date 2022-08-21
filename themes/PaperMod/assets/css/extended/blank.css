@@ -203,7 +203,7 @@ h2:after {
   .highlight .language-fallback {
     font-size: 14px !important;
     line-height: 1.6 !important;
-    margin-bottom: 28px !important;
+    padding-left: 30px;
   }
 }
 
