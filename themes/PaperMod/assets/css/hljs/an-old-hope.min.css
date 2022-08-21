@@ -49,8 +49,8 @@
 .hljs {
   display: block;
   overflow-x: auto;
-  background: #06101f !important;
-  background-color: #06101f !important;
+  /* background: #06101f !important;
+  background-color: #06101f !important; */
   color: #c0c5ce;
   padding-left: 1.6em !important;
   padding-right: 1.6em !important;
@@ -64,7 +64,6 @@
   .hljs {
     font-size: 14px !important;
     line-height: 1.6 !important;
-    background: #06101f !important;
   }
 }
 
@@ -74,7 +73,6 @@
     line-height: 1.6 !important;
     padding-left: 1.6em !important;
     padding-right: 1.6em !important;
-    background: #06101f !important;
   }
 }
 
