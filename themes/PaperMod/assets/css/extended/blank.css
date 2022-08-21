@@ -193,7 +193,15 @@ h2:after {
 /* prism */
 @media print, screen and (min-width: 480px) {
   .highlight {
-    font-size: 12px !important;
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+    margin-bottom: 28px !important;
+  }
+}
+
+@media print, screen and (min-width: 480px) {
+  .highlight .language-fallback {
+    font-size: 14px !important;
     line-height: 1.6 !important;
     margin-bottom: 28px !important;
   }

@@ -61,7 +61,14 @@
 
 @media print, screen and (min-width: 480px) {
   .hljs {
-    font-size: 12px !important;
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+  }
+}
+
+@media print, screen and (min-width: 480px) {
+  .hljs .language-fallback {
+    font-size: 14px !important;
     line-height: 1.6 !important;
   }
 }
