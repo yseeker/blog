@@ -55,6 +55,8 @@
   padding-right: 1.4em !important;
   padding-top: 0.9em !important;
   padding-bottom: 0.9em !important;
+  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
 }
 
 @media print, screen and (min-width: 480px) {
