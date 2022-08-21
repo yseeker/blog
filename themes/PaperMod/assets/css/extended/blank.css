@@ -196,7 +196,6 @@ h2:after {
     font-size: 14px !important;
     line-height: 1.6 !important;
     margin-bottom: 28px !important;
-    padding-left: 25px !important;
   }
 }
 
@@ -204,7 +203,8 @@ h2:after {
   .highlight .language-fallback {
     font-size: 14px !important;
     line-height: 1.6 !important;
-    padding-left: 25px !important;
+    padding-left: 1.5em !important;
+    padding-right: 1.5em !important;
   }
 }
 
