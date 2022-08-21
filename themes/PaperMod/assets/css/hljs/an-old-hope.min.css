@@ -61,7 +61,7 @@
 
 @media print, screen and (min-width: 480px) {
   .hljs {
-    font-size: 15px !important;
+    font-size: 12px !important;
     line-height: 1.6 !important;
   }
 }
