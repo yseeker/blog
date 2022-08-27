@@ -16,7 +16,7 @@ tags:
 categories: ["Tech", "Python"]
 ShowToc: true
 TocOpen: true
-draft: false
+draft: true
 ---
 
 ## jpg から png への一括変換 (マルチプロセス)

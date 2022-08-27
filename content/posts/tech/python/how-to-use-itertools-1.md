@@ -13,7 +13,7 @@ tags:
 categories: ["Tech", "Python"]
 ShowToc: true
 TocOpen: true
-draft: false
+draft: true
 ---
 
 Atcoder などを昔解いていたときに itertools 便利だなーと思いつつも使いこなせていなかったので総まとめ。

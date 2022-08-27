@@ -13,7 +13,7 @@ tags:
 categories: ["Tech", "Python"]
 ShowToc: true
 TocOpen: true
-draft: false
+draft: true
 ---
 
 Python では joblib や concurrent.futures などで簡単にマルチプロセスできるが、"MultiProcessing Is Really Easy"という名の [MPIRE](https://slimmer-ai.github.io/mpire/) というライブラリを見つけたので備忘録として残しておく。[この記事](https://towardsdatascience.com/mpire-for-python-multiprocessing-is-really-easy-d2ae7999a3e9)によると、特定の場合では joblib や concurrent.futures よりも性能が良いらしい。

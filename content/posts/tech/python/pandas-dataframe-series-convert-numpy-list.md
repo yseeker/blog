@@ -16,7 +16,7 @@ tags:
 categories: ["Tech", "Python"]
 ShowToc: true
 TocOpen: true
-draft: false
+draft: true
 ---
 
 ## Pandas.DataFrame/Series と numpy.ndarray と list の相互変換

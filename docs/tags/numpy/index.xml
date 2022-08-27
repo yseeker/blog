@@ -20,15 +20,5 @@
       <description>numpy でベンチマーク # ファイル名: numpy_benchmark.py import os os.environ[&amp;#34;OPENBLAS_NUM_THREADS&amp;#34;] = &amp;#34;32&amp;#34; # import mkl # mkl.set_num_threads(32) import numpy as np import time from threadpoolctl import threadpool_info from pprint import pp pp(threadpool_info()) np.show_config() N_LOOP = 5 calc_eigh_time_list = [] calc_inv_time_list = [] calc_dot_time_list = [] calc_norm_time_list = [] for size in [5000, 10000, 20000]: print(f&amp;#34;size : {size}&amp;#34;) for i in range(3): np.random.seed(i) X = np.random.randn(size, size) t_start = time.time() np.linalg.eigh(X @ X.T) calc_eigh_time_list.</description>
     </item>
     
-    <item>
-      <title>Pandas.DataFrame/Series と numpy.ndarray と list の相互変換</title>
-      <link>https://www.yusaito.com/blog/posts/tech/python/pandas-dataframe-series-convert-numpy-list/</link>
-      <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.yusaito.com/blog/posts/tech/python/pandas-dataframe-series-convert-numpy-list/</guid>
-      <description>Pandas.DataFrame/Series と numpy.ndarray と list の相互変換 (複数の) list から pd.DataFrame へ変換 大きく２つの方法がある。
-df = pd.DataFrame({&amp;#39;list_1&amp;#39;:list_1, &amp;#39;list_2&amp;#39;:list_2, &amp;#39;list_3&amp;#39;=list_3}) df = pd.DataFrame( data=zip(list_1, list_2, list_3), columns=[&amp;#34;list_1&amp;#34;, &amp;#34;list_2&amp;#34;, &amp;#34;list_3&amp;#34;], ) numpy.ndarray から pd.DataFrame へ変換 # numpy_array # [[ 0 1 2] # [ 3 4 5] # [ 6 7 8]] df = pd.DataFrame(data=numpy_array,columns=[&amp;#39;col_1&amp;#39;,&amp;#39;col_2&amp;#39;,&amp;#39;col_3&amp;#39;]) # col_1 col_2 col_3 # 0 0.0 1.0 2.0 # 1 3.0 4.0 5.0 # 2 6.0 7.0 8.0 pd.</description>
-    </item>
-    
   </channel>
 </rss>

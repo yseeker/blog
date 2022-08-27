@@ -21,25 +21,5 @@
 # ref. https://github.com/pandas-dev/pandas/blob/ad190575aa75962d2d0eade2de81a5fe5a2e285b/pandas/tests/io/parser/test_mangle_dupes.py#L120-L140 @skip_pyarrow def test_mangled_unnamed_placeholders(all_parsers): # xref gh-13017 orig_key = &amp;#34;0&amp;#34; parser = all_parsers orig_value = [1, 2, 3] df = DataFrame({orig_key: orig_value}) # This test recursively updates `df`. for i in range(3): expected = DataFrame() for j in range(i + 1): col_name = &amp;#34;Unnamed: 0&amp;#34; + f&amp;#34;.</description>
     </item>
     
-    <item>
-      <title>Pandas : サイズの大きいcsvファイルをpickleかfeatherに変換 </title>
-      <link>https://www.yusaito.com/blog/posts/tech/python/pandas_read_csv_pickle_feather/</link>
-      <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.yusaito.com/blog/posts/tech/python/pandas_read_csv_pickle_feather/</guid>
-      <description>read_csv が遅い問題 20GB くらいの csv ファイルを pandas.DataFrame の read_csv で読み込んだ際に２分くらいかかったので、feather と pickle への書き出しを検討したのでその際のメモ。
- read_csv : 130sec read_feather : 5sec read_pickle : 2.5sec  from contextlib import contextmanager from time import time import pandas as pd @contextmanager def timer(process_name): start = time() yield print(f&amp;#34;[{process_name}] done in {time() - start:.2f}s&amp;#34;) with timer(&amp;#34;pkl&amp;#34;): df = pd.read_pickle(&amp;#34;data/input/train.pkl&amp;#34;) with timer(&amp;#34;feather&amp;#34;): df = pd.read_feather(&amp;#34;data/input/train.feather&amp;#34;) with timer(&amp;#34;csv&amp;#34;): df = pd.read_csv(&amp;#34;data/input/train.csv&amp;#34;) ちなみに pickle の書き出しと、読み込みのときの pandas の version が違うと AttributeError: Can&#39;t get attribute &#39;_unpickle_block&#39; on &amp;lt;module &#39;pandas.</description>
-    </item>
-    
-    <item>
-      <title>Pandas.DataFrame/Series と numpy.ndarray と list の相互変換</title>
-      <link>https://www.yusaito.com/blog/posts/tech/python/pandas-dataframe-series-convert-numpy-list/</link>
-      <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.yusaito.com/blog/posts/tech/python/pandas-dataframe-series-convert-numpy-list/</guid>
-      <description>Pandas.DataFrame/Series と numpy.ndarray と list の相互変換 (複数の) list から pd.DataFrame へ変換 大きく２つの方法がある。
-df = pd.DataFrame({&amp;#39;list_1&amp;#39;:list_1, &amp;#39;list_2&amp;#39;:list_2, &amp;#39;list_3&amp;#39;=list_3}) df = pd.DataFrame( data=zip(list_1, list_2, list_3), columns=[&amp;#34;list_1&amp;#34;, &amp;#34;list_2&amp;#34;, &amp;#34;list_3&amp;#34;], ) numpy.ndarray から pd.DataFrame へ変換 # numpy_array # [[ 0 1 2] # [ 3 4 5] # [ 6 7 8]] df = pd.DataFrame(data=numpy_array,columns=[&amp;#39;col_1&amp;#39;,&amp;#39;col_2&amp;#39;,&amp;#39;col_3&amp;#39;]) # col_1 col_2 col_3 # 0 0.0 1.0 2.0 # 1 3.0 4.0 5.0 # 2 6.0 7.0 8.0 pd.</description>
-    </item>
-    
   </channel>
 </rss>

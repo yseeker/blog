@@ -6,7 +6,7 @@ tags: ["python", "pandas", "read_csv", "pickle", "feather"]
 categories: ["Tech", "Python"]
 ShowToc: true
 TocOpen: true
-draft: false
+draft: true
 ---
 
 ## read_csv が遅い問題

@@ -14,7 +14,7 @@ tags:
 categories: ["Tech", "Python"]
 ShowToc: true
 TocOpen: true
-draft: false
+draft: true
 ---
 
 product は便利そうだけど、starmap は一行別で生成したほうが分かりやすそう。

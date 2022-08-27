@@ -6,7 +6,7 @@ tags: ["Python", "dataclass"]
 categories: ["Tech", "Python"]
 ShowToc: true
 TocOpen: true
-draft: false
+draft: true
 ---
 
 Python3.7 から加わった Dataclass に関して全く知らなかったので参考煮上げた記事を読みながらメモ.

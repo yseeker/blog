@@ -6,7 +6,7 @@ tags: ["python", "video", "opencv", "動画", "画像", "mp4", "cv2.VideoWriter"
 categories: ["Tech", "Python"]
 ShowToc: true
 TocOpen: true
-draft: false
+draft: true
 ---
 
 ## openCV を使って画像リストから動画を作成する。

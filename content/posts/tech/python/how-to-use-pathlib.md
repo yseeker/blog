@@ -6,7 +6,7 @@ tags: ["Pathlib", "Path", "Python", "os", "glob"]
 categories: ["Tech", "Python"]
 ShowToc: true
 TocOpen: true
-draft: false
+draft: true
 ---
 
 今までパス操作は、組み込みの`os`と`glob`, `pathlib`が便利そうだったので調べてみる。

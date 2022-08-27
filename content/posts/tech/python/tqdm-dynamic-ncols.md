@@ -6,7 +6,7 @@ tags: ["python", "tqdm", "logging", "print", "dynamic_ncols", "標準出力"]
 categories: ["Tech", "Python"]
 ShowToc: true
 TocOpen: true
-draft: false
+draft: true
 ---
 
 ## 問題 : tqdm で標準出力している状態でターミナルの横幅を狭めるとバグる

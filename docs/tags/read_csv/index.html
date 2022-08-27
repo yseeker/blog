@@ -157,19 +157,6 @@ if (!doNotTrack) {
   <footer class="entry-footer"><span title='2022-02-25 00:00:00 +0000 UTC'>February 25, 2022</span></footer>
   <a class="entry-link" aria-label="post link to Pandasでread_csvしたときに出現するUnnamed:0を消す方法" href="https://www.yusaito.com/blog/posts/tech/python/pandas-read-csv-unnamed-name/"></a>
 </article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2>Pandas : サイズの大きいcsvファイルをpickleかfeatherに変換 
-    </h2>
-  </header>
-  <section class="entry-content">
-    <p>read_csv が遅い問題 20GB くらいの csv ファイルを pandas.DataFrame の read_csv で読み込んだ際に２分くらいかかったので、feather と pickle への書き出しを検討したのでその際のメモ。
- read_csv : 130sec read_feather : 5sec read_pickle : 2.5sec  from contextlib import contextmanager from time import time import pandas as pd @contextmanager def timer(process_name): start = time() yield print(f&#34;[{process_name}] done in {time() - start:.2f}s&#34;) with timer(&#34;pkl&#34;): df = pd.read_pickle(&#34;data/input/train.pkl&#34;) with timer(&#34;feather&#34;): df = pd.read_feather(&#34;data/input/train.feather&#34;) with timer(&#34;csv&#34;): df = pd.read_csv(&#34;data/input/train.csv&#34;) ちなみに pickle の書き出しと、読み込みのときの pandas の version が違うと AttributeError: Can&#39;t get attribute &#39;_unpickle_block&#39; on &lt;module &#39;pandas....</p>
-  </section>
-  <footer class="entry-footer"><span title='2022-01-08 00:00:00 +0000 UTC'>January 8, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to Pandas : サイズの大きいcsvファイルをpickleかfeatherに変換 " href="https://www.yusaito.com/blog/posts/tech/python/pandas_read_csv_pickle_feather/"></a>
-</article>
     </main>
     
 <footer class="footer">
