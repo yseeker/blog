@@ -275,19 +275,6 @@ Lambda PC（GPU Workstation）なども検討したが、RTX3090 をフルで回
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>Pandasでread_csvしたときに出現するUnnamed:0を消す方法
-    </h2>
-  </header>
-  <section class="entry-content">
-    <p>問題：Pandas で csv を読むと謎の Unnamed:0 というコラムが出現 解決策 その１ : pd.read_csv で index_col = 0 を指定 df = pd.read_csv(&#39;test.csv&#39;, index_col=0) その２ : そもそも保存するときに index を消す df = pd.to_csv(&#39;test.csv&#39;, index = False) pandas の中身 ちなみに Unnamed:0 はこの辺りで追加されているらしい。
-# ref. https://github.com/pandas-dev/pandas/blob/ad190575aa75962d2d0eade2de81a5fe5a2e285b/pandas/tests/io/parser/test_mangle_dupes.py#L120-L140 @skip_pyarrow def test_mangled_unnamed_placeholders(all_parsers): # xref gh-13017 orig_key = &#34;0&#34; parser = all_parsers orig_value = [1, 2, 3] df = DataFrame({orig_key: orig_value}) # This test recursively updates `df`. for i in range(3): expected = DataFrame() for j in range(i &#43; 1): col_name = &#34;Unnamed: 0&#34; &#43; f&#34;....</p>
-  </section>
-  <footer class="entry-footer"><span title='2022-02-25 00:00:00 +0000 UTC'>February 25, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to Pandasでread_csvしたときに出現するUnnamed:0を消す方法" href="https://www.yusaito.com/blog/posts/tech/python/pandas-read-csv-unnamed-name/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
     <h2>nvcr.io/nvidia/pytorchのイメージからdockerコンテナを作成したときのNOTE
     </h2>
   </header>
@@ -393,6 +380,19 @@ git clone https://github.com/NVIDIA/cuda-samples.git cd cuda-samples/Samples/ban
   </section>
   <footer class="entry-footer"><span title='2022-01-03 00:00:00 +0000 UTC'>January 3, 2022</span></footer>
   <a class="entry-link" aria-label="post link to Pythonでファイルリストからの並列処理" href="https://www.yusaito.com/blog/posts/tech/python/multiprocess-multithreading-utils/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>Last day in Santa Barbara
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>この日にサンタバーバラに来てからあっという間に３年間が経った。２年間住んだ Berkshire Terrace ともお別れである。 家具の大部分は FaceBook のコミュニティを通して UCSB の学生に買い取ってもらったので大きいもので捨てるものはほとんど無かった。
+窓際のL字型の机キッチン＆ダイニングアパートと壺2年間住んだアパート。Berkshire Terraceバスの中から見たダウンタウン  空港への道中</p>
+  </section>
+  <footer class="entry-footer"><span title='2021-09-11 00:00:00 +0000 UTC'>September 11, 2021</span></footer>
+  <a class="entry-link" aria-label="post link to Last day in Santa Barbara" href="https://www.yusaito.com/blog/posts/us-life/last-day-in-santabarbara/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

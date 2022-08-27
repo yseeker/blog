@@ -45,16 +45,6 @@ from joblib import Memory cachedir = &amp;#39;cache_dir&amp;#39; mem = Memory(ca
     </item>
     
     <item>
-      <title>Pandasでread_csvしたときに出現するUnnamed:0を消す方法</title>
-      <link>https://www.yusaito.com/blog/posts/tech/python/pandas-read-csv-unnamed-name/</link>
-      <pubDate>Fri, 25 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.yusaito.com/blog/posts/tech/python/pandas-read-csv-unnamed-name/</guid>
-      <description>問題：Pandas で csv を読むと謎の Unnamed:0 というコラムが出現 解決策 その１ : pd.read_csv で index_col = 0 を指定 df = pd.read_csv(&amp;#39;test.csv&amp;#39;, index_col=0) その２ : そもそも保存するときに index を消す df = pd.to_csv(&amp;#39;test.csv&amp;#39;, index = False) pandas の中身 ちなみに Unnamed:0 はこの辺りで追加されているらしい。
-# ref. https://github.com/pandas-dev/pandas/blob/ad190575aa75962d2d0eade2de81a5fe5a2e285b/pandas/tests/io/parser/test_mangle_dupes.py#L120-L140 @skip_pyarrow def test_mangled_unnamed_placeholders(all_parsers): # xref gh-13017 orig_key = &amp;#34;0&amp;#34; parser = all_parsers orig_value = [1, 2, 3] df = DataFrame({orig_key: orig_value}) # This test recursively updates `df`. for i in range(3): expected = DataFrame() for j in range(i + 1): col_name = &amp;#34;Unnamed: 0&amp;#34; + f&amp;#34;.</description>
-    </item>
-    
-    <item>
       <title>Python : functools.partial 関数の引数を一部固定</title>
       <link>https://www.yusaito.com/blog/posts/tech/python/how-to-use-functools-partial/</link>
       <pubDate>Wed, 26 Jan 2022 00:00:00 +0000</pubDate>

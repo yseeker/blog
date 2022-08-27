@@ -6,7 +6,7 @@ tags: ["python", "pandas", "read_csv", "コラム", "Unamed: 0"]
 categories: ["Tech", "Python"]
 ShowToc: true
 TocOpen: true
-draft: False
+draft: true
 ---
 
 ## 問題：Pandas で csv を読むと謎の Unnamed:0 というコラムが出現

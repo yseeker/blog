@@ -381,51 +381,6 @@
     </item>
     
     <item>
-      <title>pandas</title>
-      <link>https://www.yusaito.com/blog/tags/pandas/</link>
-      <pubDate>Fri, 25 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.yusaito.com/blog/tags/pandas/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>python</title>
-      <link>https://www.yusaito.com/blog/tags/python/</link>
-      <pubDate>Fri, 25 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.yusaito.com/blog/tags/python/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>read_csv</title>
-      <link>https://www.yusaito.com/blog/tags/read_csv/</link>
-      <pubDate>Fri, 25 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.yusaito.com/blog/tags/read_csv/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Unamed: 0</title>
-      <link>https://www.yusaito.com/blog/tags/unamed-0/</link>
-      <pubDate>Fri, 25 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.yusaito.com/blog/tags/unamed-0/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>コラム</title>
-      <link>https://www.yusaito.com/blog/tags/%E3%82%B3%E3%83%A9%E3%83%A0/</link>
-      <pubDate>Fri, 25 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.yusaito.com/blog/tags/%E3%82%B3%E3%83%A9%E3%83%A0/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>--ipc=host</title>
       <link>https://www.yusaito.com/blog/tags/ipchost/</link>
       <pubDate>Wed, 23 Feb 2022 00:00:00 +0000</pubDate>
@@ -458,6 +413,15 @@
       <pubDate>Wed, 23 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.yusaito.com/blog/tags/ngc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://www.yusaito.com/blog/tags/python/</link>
+      <pubDate>Wed, 23 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/tags/python/</guid>
       <description></description>
     </item>
     
