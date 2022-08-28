@@ -55,32 +55,6 @@ sudo apt-get --purge remove nvidia-* sudo apt-get --purge remove cuda-*  Nvidia 
     </item>
     
     <item>
-      <title>Hugo : PaperModのテーマでjavascriptを非同期で読み込んで高速化</title>
-      <link>https://www.yusaito.com/blog/posts/tech/other/hugo-papermod-prism-pagespeed-web-dev/</link>
-      <pubDate>Thu, 03 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.yusaito.com/blog/posts/tech/other/hugo-papermod-prism-pagespeed-web-dev/</guid>
-      <description>この web サイトは PaperMod というテンプレートから作成しているのが、シンタックスハイライトをいい感じにする Prism.js を導入したらPageSpeed Insightsのパフォーマンスが悪くなったので改善メモ。
-Javascript の読み込み時に defer を導入 Before モバイルでのパフォーマンスは、40-50 くらいだった。
-&amp;lt;script src=&amp;#34;{{ .Site.BaseURL }}/js/prism.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; After モバイルでのパフォーマンスが、65-75 くらいに改善した。
-&amp;lt;script type=&amp;#34;text/javascript&amp;#34; defer src=&amp;#34;{{ .Site.BaseURL }}/js/prism.js&amp;#34; &amp;gt;&amp;lt;/script&amp;gt; 余談 ちなみに PaperMod はデフォルトでパフォーマンスが90-99くらい出る超高速なテンプレートである。（Prism.js の読み込みで大幅に速度が低下した。）
-上の javascript の読み込み部分をコメントアウトするとパフォーマンスは 90 以上まで戻る（笑）
-参考  </description>
-    </item>
-    
-    <item>
-      <title>joblibの使い方</title>
-      <link>https://www.yusaito.com/blog/posts/tech/python/how-to-use-joblib/</link>
-      <pubDate>Tue, 01 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.yusaito.com/blog/posts/tech/python/how-to-use-joblib/</guid>
-      <description>joblib には主な機能として、1) 時間がかかる処理のキャッシュ化, 2)並列処理, 3)圧縮書き出しと読み込み、がある。
-joblib のインストール pip install joblib joblib の主な機能 時間がかかる処理のキャッシュ化 (Memory) 途中で止まってしまったら困る数分とか数時間とかかかる処理のキャッシュをとっておきたいときに使う。
-from joblib import Memory cachedir = &amp;#39;cache_dir&amp;#39; mem = Memory(cachedir) square = mem.cache(heavy_task_func) b = do_time_consuming_func(a) 並列処理 (Parallel, delayed) デフォルトはマルチプロセスだが、マルチスレッドも選択可能。
-マルチプロセス（デフォルト） from joblib import Parallel, delayed Parallel(n_jobs=-1)(delayed(task_func)(param) for param in iterator) マルチスレッド Parallel(n_jobs=-1, backend=&amp;#39;threading&amp;#39;)(delayed(task_func)(param) for param in iterator) オブジェクトの圧縮書き出し（永続化）と読み込み（dump, load） 書き出し（永続化） joblib.dump(object,file_path,compress=3) 読み込み object = joblib.load(file_path) 参考  </description>
-    </item>
-    
-    <item>
       <title>本格水冷 GPU マシンを導入した (ASUS EKWB RTX3090 &#43; Ryzen Threadripper 3970X)</title>
       <link>https://www.yusaito.com/blog/posts/tech/pc/fully-water-cooled-3090-pc-arrived/</link>
       <pubDate>Mon, 28 Feb 2022 00:00:00 +0000</pubDate>
@@ -115,6 +89,16 @@ NOTE: The SHMEM allocation limit is set to the default of 64MB. This may be insu
     </item>
     
     <item>
+      <title>PythonとOpenCVで画像リストから動画を作成</title>
+      <link>https://www.yusaito.com/blog/posts/tech/python/create-video-from-images-opencv/</link>
+      <pubDate>Tue, 15 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.yusaito.com/blog/posts/tech/python/create-video-from-images-opencv/</guid>
+      <description>openCV を使って画像リストから動画を作成する。 画像リストがあったときにそこから動画を生成するときに使う。
+from pathlib import Path from typing import List import cv2 def list_file_paths(dir_path: str) -&amp;gt; List[str]: &amp;#34;&amp;#34;&amp;#34; List file paths in a directory. Parameters ---------- dir_path : str Path of the directory Returns ------- List[str] List of the file paths in the directory &amp;#34;&amp;#34;&amp;#34; return sorted([str(path) for path in Path(dir_path).rglob(&amp;#34;*&amp;#34;) if path.is_file()]) def create_mp4_video_from_image_path_list( output_video_path: str, image_path_list: List[str], fps: int, ) -&amp;gt; None: &amp;#34;&amp;#34;&amp;#34; Create mp4 video file from a image path list Parameters ---------- output_video_path : str Path of the output video image_path_list : List[str] Path of image file list fps : int fps (frames per second) &amp;#34;&amp;#34;&amp;#34; height, width, _ = cv2.</description>
+    </item>
+    
+    <item>
       <title>続　アメリカで矯正歯科に行った話</title>
       <link>https://www.yusaito.com/blog/posts/us-life/orthodontics-beforeafter/</link>
       <pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate>
@@ -123,27 +107,6 @@ NOTE: The SHMEM allocation limit is set to the default of 64MB. This may be insu
       <description>日本に本帰国して無事に継続で矯正治療を行ってくれる矯正歯科を発見し、矯正治療をつい先日終えることができた。記念に矯正治療前と治療後の比較画像を貼っておく。
 矯正治療前は、上の前歯が 2 本前方にはみ出していてさらに、上の歯と下の歯が噛み合っていなかったが、上下４本抜歯をしてもらい、矯正治療を終えた結果、歯並びとかみ合わせが劇的に改善した。一方、下の前歯には若干ブラックトライアングル的なものができてしまったが、まあこのあたりは歯科矯正のトレードオフらしいので仕方がない。
 結論 歯科矯正は人生を変える。</description>
-    </item>
-    
-    <item>
-      <title>Python : functools.partial 関数の引数を一部固定</title>
-      <link>https://www.yusaito.com/blog/posts/tech/python/how-to-use-functools-partial/</link>
-      <pubDate>Wed, 26 Jan 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.yusaito.com/blog/posts/tech/python/how-to-use-functools-partial/</guid>
-      <description>functools.partial は、関数の特定の引数を固定したい場合に使う 個人的に concurrent.futures の ProcessPoolExecuter や ThreadPoolExecuter の map を使うときに併用することが多い。
-functools.partial の定義 # ref. https://docs.python.org/ja/3/library/functools.html#functools.partial def partial(func, /, *args, **keywords): def newfunc(*fargs, **fkeywords): newkeywords = {**keywords, **fkeywords} return func(*args, *fargs, **newkeywords) newfunc.func = func newfunc.args = args newfunc.keywords = keywords return newfunc 使い方：引数を固定する from functools import partial def product_xyz(x, y, z): return x * y * z # xとyの値を固定する product_z = partial(product_xyz, x=2, y=3) product_z(4) # 24 参考  </description>
-    </item>
-    
-    <item>
-      <title>Pathlibで相対パスを有効活用する</title>
-      <link>https://www.yusaito.com/blog/posts/tech/python/relative-path-with-pathlib/</link>
-      <pubDate>Tue, 18 Jan 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.yusaito.com/blog/posts/tech/python/relative-path-with-pathlib/</guid>
-      <description>自走プログラマー~Python の先輩が教えるプロジェクト開発のベストプラクティス 120を読んだのでその中で気になった「ファイルパスはプログラムからの相対パスで組み立てるという箇所は実践的でとても勉強になったのでメモしておく。
-├──　run.py ├──　data ├── input.txt └── images みたいなディレクトリがある場合は
-import csv from pathlib import Path current_dir = Path(__file__).parent image_path = current_dir / &amp;#34;data&amp;#34; / &amp;#34;images&amp;#34; inuput_path = current_dir / &amp;#34;input.txt&amp;#34; とすればよい。</description>
     </item>
     
     <item>

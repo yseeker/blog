@@ -174,23 +174,6 @@ if (!doNotTrack) {
     その他の技術関連記事を書きます。
   </div>
 </header>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Hugo : PaperModのテーマでjavascriptを非同期で読み込んで高速化
-    </h2>
-  </header>
-  <section class="entry-content">
-    <p>この web サイトは PaperMod というテンプレートから作成しているのが、シンタックスハイライトをいい感じにする Prism.js を導入したらPageSpeed Insightsのパフォーマンスが悪くなったので改善メモ。
-Javascript の読み込み時に defer を導入 Before モバイルでのパフォーマンスは、40-50 くらいだった。
-&lt;script src=&#34;{{ .Site.BaseURL }}/js/prism.js&#34;&gt;&lt;/script&gt; After モバイルでのパフォーマンスが、65-75 くらいに改善した。
-&lt;script type=&#34;text/javascript&#34; defer src=&#34;{{ .Site.BaseURL }}/js/prism.js&#34; &gt;&lt;/script&gt; 余談 ちなみに PaperMod はデフォルトでパフォーマンスが90-99くらい出る超高速なテンプレートである。（Prism.js の読み込みで大幅に速度が低下した。）
-上の javascript の読み込み部分をコメントアウトするとパフォーマンスは 90 以上まで戻る（笑）
-参考  </p>
-  </section>
-  <footer class="entry-footer"><span title='2022-03-03 00:00:00 +0000 UTC'>March 3, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to Hugo : PaperModのテーマでjavascriptを非同期で読み込んで高速化" href="https://www.yusaito.com/blog/posts/tech/other/hugo-papermod-prism-pagespeed-web-dev/"></a>
-</article>
     </main>
     
 <footer class="footer">

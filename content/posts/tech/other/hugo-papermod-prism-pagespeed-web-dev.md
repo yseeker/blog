@@ -6,7 +6,7 @@ tags: ["Hugo", "PaperMod", "prism.js", "javascript", "defer"]
 categories: ["Tech", "Hugo"]
 ShowToc: true
 TocOpen: true
-draft: false
+draft: true
 ---
 
 この web サイトは [PaperMod](https://adityatelange.github.io/hugo-PaperMod/) というテンプレートから作成しているのが、シンタックスハイライトをいい感じにする Prism.js を導入したら[PageSpeed Insights](https://pagespeed.web.dev/)のパフォーマンスが悪くなったので改善メモ。

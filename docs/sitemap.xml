@@ -119,54 +119,6 @@
     <loc>https://www.yusaito.com/blog/tags/%E8%87%AA%E5%AE%85%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC/</loc>
     <lastmod>2022-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.yusaito.com/blog/tags/defer/</loc>
-    <lastmod>2022-03-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.yusaito.com/blog/tags/hugo/</loc>
-    <lastmod>2022-03-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.yusaito.com/blog/categories/hugo/</loc>
-    <lastmod>2022-03-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.yusaito.com/blog/posts/tech/other/hugo-papermod-prism-pagespeed-web-dev/</loc>
-    <lastmod>2022-03-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.yusaito.com/blog/tags/javascript/</loc>
-    <lastmod>2022-03-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.yusaito.com/blog/tags/papermod/</loc>
-    <lastmod>2022-03-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.yusaito.com/blog/tags/prism.js/</loc>
-    <lastmod>2022-03-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.yusaito.com/blog/posts/tech/other/</loc>
-    <lastmod>2022-03-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.yusaito.com/blog/tags/delayed/</loc>
-    <lastmod>2022-03-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.yusaito.com/blog/tags/joblib/</loc>
-    <lastmod>2022-03-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.yusaito.com/blog/tags/joblib.dump/</loc>
-    <lastmod>2022-03-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.yusaito.com/blog/tags/joblib.load/</loc>
-    <lastmod>2022-03-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.yusaito.com/blog/posts/tech/python/how-to-use-joblib/</loc>
-    <lastmod>2022-03-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.yusaito.com/blog/tags/parallel/</loc>
-    <lastmod>2022-03-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.yusaito.com/blog/tags/%E3%82%AD%E3%83%A3%E3%83%83%E3%82%B7%E3%83%A5/</loc>
-    <lastmod>2022-03-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.yusaito.com/blog/tags/%E4%BD%BF%E3%81%84%E6%96%B9/</loc>
-    <lastmod>2022-03-01T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://www.yusaito.com/blog/tags/asus/</loc>
     <lastmod>2022-02-28T00:00:00+00:00</lastmod>
   </url><url>
@@ -224,6 +176,24 @@
     <loc>https://www.yusaito.com/blog/tags/%E6%9C%89%E7%B7%9Alan/</loc>
     <lastmod>2022-02-20T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://www.yusaito.com/blog/tags/cv2.videowriter/</loc>
+    <lastmod>2022-02-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.yusaito.com/blog/tags/mp4/</loc>
+    <lastmod>2022-02-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.yusaito.com/blog/posts/tech/python/create-video-from-images-opencv/</loc>
+    <lastmod>2022-02-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.yusaito.com/blog/tags/video/</loc>
+    <lastmod>2022-02-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.yusaito.com/blog/tags/%E5%8B%95%E7%94%BB/</loc>
+    <lastmod>2022-02-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.yusaito.com/blog/tags/%E7%94%BB%E5%83%8F/</loc>
+    <lastmod>2022-02-15T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://www.yusaito.com/blog/posts/us-life/</loc>
     <lastmod>2022-02-02T00:00:00+00:00</lastmod>
   </url><url>
@@ -235,33 +205,6 @@
   </url><url>
     <loc>https://www.yusaito.com/blog/posts/us-life/orthodontics-beforeafter/</loc>
     <lastmod>2022-02-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.yusaito.com/blog/tags/functools/</loc>
-    <lastmod>2022-01-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.yusaito.com/blog/tags/functools.partial/</loc>
-    <lastmod>2022-01-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.yusaito.com/blog/posts/tech/python/how-to-use-functools-partial/</loc>
-    <lastmod>2022-01-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.yusaito.com/blog/tags/%E5%BC%95%E6%95%B0%E5%9B%BA%E5%AE%9A/</loc>
-    <lastmod>2022-01-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.yusaito.com/blog/tags/path/</loc>
-    <lastmod>2022-01-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.yusaito.com/blog/tags/pathlib/</loc>
-    <lastmod>2022-01-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.yusaito.com/blog/posts/tech/python/relative-path-with-pathlib/</loc>
-    <lastmod>2022-01-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.yusaito.com/blog/tags/%E7%9B%B8%E5%AF%BE%E3%83%91%E3%82%B9/</loc>
-    <lastmod>2022-01-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.yusaito.com/blog/tags/%E8%87%AA%E8%B5%B0%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9E%E3%83%BC~python-%E3%81%AE%E5%85%88%E8%BC%A9%E3%81%8C%E6%95%99%E3%81%88%E3%82%8B%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E9%96%8B%E7%99%BA%E3%81%AE%E3%83%99%E3%82%B9%E3%83%88%E3%83%97%E3%83%A9%E3%82%AF%E3%83%86%E3%82%A3%E3%82%B9-120/</loc>
-    <lastmod>2022-01-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.yusaito.com/blog/posts/tech/python/tqdm-logging-print/</loc>
     <lastmod>2022-01-13T00:00:00+00:00</lastmod>
@@ -305,7 +248,16 @@
     <loc>https://www.yusaito.com/blog/tags/gpu/</loc>
     <lastmod>2022-01-12T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://www.yusaito.com/blog/tags/joblib/</loc>
+    <lastmod>2022-01-03T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://www.yusaito.com/blog/tags/multiprocess/</loc>
+    <lastmod>2022-01-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.yusaito.com/blog/tags/path/</loc>
+    <lastmod>2022-01-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.yusaito.com/blog/tags/pathlib/</loc>
     <lastmod>2022-01-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.yusaito.com/blog/tags/processpoolexecutor/</loc>
@@ -532,5 +484,7 @@
     <loc>https://www.yusaito.com/blog/search/</loc>
   </url><url>
     <loc>https://www.yusaito.com/blog/series/</loc>
+  </url><url>
+    <loc>https://www.yusaito.com/blog/posts/tech/other/</loc>
   </url>
 </urlset>

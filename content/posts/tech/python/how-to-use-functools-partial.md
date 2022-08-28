@@ -6,7 +6,7 @@ tags: ["python", "functools.partial", "functools", "引数固定"]
 categories: ["Tech", "Python"]
 ShowToc: true
 TocOpen: true
-draft: false
+draft: true
 ---
 
 `functools.partial` は、関数の特定の引数を固定したい場合に使う 個人的に `concurrent.futures` の `ProcessPoolExecuter` や `ThreadPoolExecuter` の map を使うときに併用することが多い。

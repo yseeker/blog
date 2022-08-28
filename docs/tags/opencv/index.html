@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>openCV | YS&#39;s blog</title>
+<title>opencv | YS&#39;s blog</title>
 <meta name="keywords" content="" />
 <meta name="description" content="">
 <meta name="author" content="">
@@ -68,7 +68,7 @@ if (!doNotTrack) {
 	gtag('config', 'G-X5LTDFN76J', { 'anonymize_ip': false });
 }
 </script>
-<meta property="og:title" content="openCV" />
+<meta property="og:title" content="opencv" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://www.yusaito.com/blog/tags/opencv/" /><meta property="og:image" content="https://www.yusaito.com/blog/papermod-cover.png"/>
@@ -76,7 +76,7 @@ if (!doNotTrack) {
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://www.yusaito.com/blog/papermod-cover.png"/>
 
-<meta name="twitter:title" content="openCV"/>
+<meta name="twitter:title" content="opencv"/>
 <meta name="twitter:description" content=""/>
 
 </head>
@@ -142,7 +142,7 @@ if (!doNotTrack) {
 </header>
 <main class="main"> 
 <header class="page-header"><div class="breadcrumbs"><a href="https://www.yusaito.com/blog/">Home</a>&nbsp;»&nbsp;<a href="https://www.yusaito.com/blog/tags/">Tags</a></div>
-  <h1>openCV</h1>
+  <h1>opencv</h1>
 </header>
 
 <article class="post-entry tag-entry"> 
@@ -158,6 +158,19 @@ import cv2 from concurrent.futures import ThreadPoolExecutor cv2.setNumThreads(0
   </section>
   <footer class="entry-footer"><span title='2022-03-17 00:00:00 +0000 UTC'>March 17, 2022</span></footer>
   <a class="entry-link" aria-label="post link to PythonとopenCVで並列化" href="https://www.yusaito.com/blog/posts/tech/python/opencv-setnumthreads-multithreading/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>PythonとOpenCVで画像リストから動画を作成
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>openCV を使って画像リストから動画を作成する。 画像リストがあったときにそこから動画を生成するときに使う。
+from pathlib import Path from typing import List import cv2 def list_file_paths(dir_path: str) -&gt; List[str]: &#34;&#34;&#34; List file paths in a directory. Parameters ---------- dir_path : str Path of the directory Returns ------- List[str] List of the file paths in the directory &#34;&#34;&#34; return sorted([str(path) for path in Path(dir_path).rglob(&#34;*&#34;) if path.is_file()]) def create_mp4_video_from_image_path_list( output_video_path: str, image_path_list: List[str], fps: int, ) -&gt; None: &#34;&#34;&#34; Create mp4 video file from a image path list Parameters ---------- output_video_path : str Path of the output video image_path_list : List[str] Path of image file list fps : int fps (frames per second) &#34;&#34;&#34; height, width, _ = cv2....</p>
+  </section>
+  <footer class="entry-footer"><span title='2022-02-15 00:00:00 +0000 UTC'>February 15, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to PythonとOpenCVで画像リストから動画を作成" href="https://www.yusaito.com/blog/posts/tech/python/create-video-from-images-opencv/"></a>
 </article>
     </main>
     
